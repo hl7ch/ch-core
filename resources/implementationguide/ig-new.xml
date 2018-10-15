@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="CH-Core"/>
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+	ImplementationGuide for CH.Core                         
+        </div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/oliveregger/Documents/github/ch-core/resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/oliveregger/Documents/github/ch-core/examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="/Users/oliveregger/Documents/github/ch-core/pages"/>
+  </extension>
+  <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core"/>
+  <version value="1.0.0"/>
+  <name value="CH_Core"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2018-10-15"/>
+  <publisher value="HL7 Switzerland"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Oliver Egger"/>
+    <telecom>
+      <system value="email"/>
+      <value value="oliver.egger@ahdis.ch"/>
+    </telecom>
+  </contact>
+  <description value="ImplementationGuide for CH:Core"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <packageId value="ch.fhir.ig.core"/>
+  <license value="CC-BY-SA-4.0"/>
+  <fhirVersion value="3.6.0"/>
+  <fhirVersion value="3.6.0"/>
+  <definition>
+    <grouping>
+      <name value="CH:Core"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-patient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="IG Templage Homepage"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
