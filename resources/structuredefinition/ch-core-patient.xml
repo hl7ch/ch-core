@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-core-patient"/>
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+	StructureDefinition for CH Core Patient.
+        </div>
+    </text>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     <version value="1.0.1"/>
-    <name value="CH Core Patient Profile"/>
+    <name value="CHCorePatientProfile"/>
     <status value="draft"/>
     <date value="2018-10-15T00:00:00+10:00"/>
     <publisher value="HL7 Switzerland"/>
@@ -28,7 +34,7 @@
     <differential>
         <element id="Patient">
             <path value="Patient"/>
-            <short value="CH Core Patient "/>
+            <short value="CH Core Patient"/>
             <definition value="The CH Core Patient is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements in Switzerland."/>
             <mustSupport value="false"/>
             <isModifier value="false"/>

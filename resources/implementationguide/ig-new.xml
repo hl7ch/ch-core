@@ -56,6 +56,12 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="Patient/FranzMuster"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-patient"/>
       </reference>
       <exampleBoolean value="false"/>
