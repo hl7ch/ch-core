@@ -14,6 +14,10 @@
     "valueString" : "/Users/oliveregger/Documents/github/ch-core/examples"
   },
   {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "/Users/oliveregger/Documents/github/ch-core/examplesNonValid"
+  },
+  {
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/oliveregger/Documents/github/ch-core/pages"
   }],
@@ -62,9 +66,39 @@
     },
     {
       "reference" : {
+        "reference" : "Patient/UpiEprTestKrcmarevic"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-patient"
       },
       "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-core-humanname-minimal"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/NoName"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/OnlyFamilyName"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/OnlyGivenName"
+      },
+      "exampleBoolean" : true
     }],
     "page" : {
       "nameUrl" : "index.html",

@@ -14,6 +14,9 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="/Users/oliveregger/Documents/github/ch-core/examples"/>
   </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="/Users/oliveregger/Documents/github/ch-core/examplesNonValid"/>
+  </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
     <valueString value="/Users/oliveregger/Documents/github/ch-core/pages"/>
   </extension>
@@ -62,9 +65,39 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Patient/UpiEprTestKrcmarevic"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-patient"/>
       </reference>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-humanname-minimal"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/NoName"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/OnlyFamilyName"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/OnlyGivenName"/>
+      </reference>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>

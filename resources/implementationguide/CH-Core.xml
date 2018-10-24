@@ -51,9 +51,41 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Patient/UpiEprTestKrcmarevic"/>
+            </reference>
+            <exampleBoolean value="true"/>
+<!--            <exampleCanonical value="StructureDefinition/ch-core-patient"/> -->
+        </resource>
+        <resource>
+            <reference>
                 <reference value="StructureDefinition/ch-core-patient"/>
             </reference>
             <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ch-core-humanname-minimal"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+<!-- resources which should not be validated successfully -->
+        <resource>
+            <reference>
+                <reference value="Patient/NoName"/>
+            </reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/OnlyFamilyName"/>
+            </reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/OnlyGivenName"/>
+            </reference>
+            <exampleBoolean value="true"/>
         </resource>
         <page>
             <nameUrl value="index.html"/>

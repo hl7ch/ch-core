@@ -1,0 +1,42 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="UpiEprTestKrcmarevic"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
+    </meta>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <div>
+            <table>
+            <tr>
+            <th>EPR-SPID</th><th>DateOfBirth</th><th>Firstname</th><th>OfficialName</th><th>OriginalName</th><th>Sex  (*2)</th><th>MothersFirstname (*1)</th><th>MothersLastname  (*1)</th><th>FathersFirstname(*1)</th><th>FathersLastname(*1)</th><th>Nationality (*1)</th><th>CountryOfBirth (*1)</th><th>PlaceOfBirth (*1)</th>
+            </tr>
+            <tr>
+            <td>7560521127080</td><td>1982-03-20</td><td>Claude-Hélène Marguerite</td><td>Krcmarevic</td><td>Scheuble</td><td>2</td><td>Hui Xue	Dalkiliç</td><td>Fabio Nicola</td><td>Dalkiliç</td><td>8100</td><td>8100</td><td>11693</td>
+            </tr>
+            </table>
+            </div>
+            Note 1: Date is not yet defined structured below <br />
+            Note 2: Needs transformation to HL7 ValueSets <br />
+            Base Testdata for projectathon from UPI see <a href="https://docs.google.com/spreadsheets/d/11-ayGNU592D-MuQ1XPqJcAUrY4UpYEjGpuwEL23fvAQ/edit#gid=1781500762">Google Doc for more examples</a> 
+        </div>
+    </text>
+    <identifier>
+        <!-- EPR-SPID -->
+        <system value="urn:oid:2.16.756.5.30.1.127.3.10.3"/>
+        <value value="7560521127080"/>
+    </identifier>     
+    <name>
+        <use value="official" />
+        <family value="Krcmarevic"/>
+        <given value="Claude-Hélène Marguerite"/>
+    </name>
+    <name>
+        <use value="maiden" />
+        <family value="Scheuble"/>
+    </name>
+    <gender value="female"/>
+    <birthDate value="1982-03-20"/>
+</Patient>
+
+

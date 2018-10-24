@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-humanname-minimal"/>
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+	        StructureDefinition for CH Core HumanName Minimal 
+            HumanName with given and family name must be provided.
+        </div>
+    </text>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname-minimal"/>
+    <version value="0.1.0"/>
+    <name value="CHCoreHumanNameMinimalProfile"/>
+    <status value="draft"/>
+    <date value="2018-10-24T00:00:00+10:00"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="3.6.0" />
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="https://www.hl7.ch/default/assets/File/Publikationen/180612_CDA-CH_de.pdf"/>
+        <name value="CDA-CH 2017 V2"/>
+    </mapping>
+    <mapping>
+        <identity value="eCH-0011"/>
+        <uri value="http://www.ech.ch/standards/39485"/>
+        <name value="eCH-0011 Datenstandard Personendaten"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="HumanName"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HumanName"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="HumanName">
+            <path value="HumanName"/>
+            <short value="Name of a human - parts and usage"/>
+            <definition value="A human&#39;s name with the ability to identify parts and usage."/>
+            <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="HumanName.use">
+            <path value="HumanName.use"/>
+            <short value="usual | official"/>
+            <definition value="Identifies the purpose for this name."/>
+            <comment value="Applications can assume that a name is current unless it explicitly says that it is temporary or old."/>
+            <requirements value="Allows the appropriate name for a particular context of use to be selected from among a set of names."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="HumanName.family">
+            <path value="HumanName.family"/>
+            <short value="Family name (often called &#39;Surname&#39;)"/>
+            <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
+            <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."/>
+            <alias value="surname"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="v2"/>
+                <map value="XPN.1/FN.1"/>
+            </mapping>
+            <mapping>
+                <identity value="rim"/>
+                <map value="./part[partType = FAM]"/>
+            </mapping>
+            <mapping>
+                <identity value="servd"/>
+                <map value="./FamilyName"/>
+            </mapping>
+        </element>
+        <element id="HumanName.given">
+            <path value="HumanName.given"/>
+            <short value="Given names (not always &#39;first&#39;). Includes middle names"/>
+            <definition value="Given name."/>
+            <comment value="If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren&#39;t due to paractical limitations.  This element is not called &quot;first name&quot; since given names do not always come first."/>
+            <alias value="first name"/>
+            <alias value="middle name"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <orderMeaning value="Given Names appear in the correct order for presenting the name"/>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="v2"/>
+                <map value="XPN.2 + XPN.3"/>
+            </mapping>
+            <mapping>
+                <identity value="rim"/>
+                <map value="./part[partType = GIV]"/>
+            </mapping>
+            <mapping>
+                <identity value="servd"/>
+                <map value="./GivenNames"/>
+            </mapping>
+        </element>
+    </differential>
+</StructureDefinition>

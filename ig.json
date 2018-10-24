@@ -6,7 +6,8 @@
     "paths": {
       "resources": [
         "resources",
-        "examples"
+        "examples",
+        "examplesNonValid"
       ],
       "pages": "pages",
       "temp": "temp",
