@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-humanname"/>
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+	        StructureDefinition for CH Core HumanName  
+        </div>
+    </text>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname"/>
+    <version value="0.1.0"/>
+    <name value="CHCoreHumanNameMinimalProfile"/>
+    <status value="draft"/>
+    <date value="2018-10-24T00:00:00+10:00"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="3.6.0" />
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="https://www.hl7.ch/default/assets/File/Publikationen/180612_CDA-CH_de.pdf"/>
+        <name value="CDA-CH 2017 V2"/>
+    </mapping>
+    <mapping>
+        <identity value="eCH-0011"/>
+        <uri value="http://www.ech.ch/standards/39485"/>
+        <name value="eCH-0011 Datenstandard Personendaten"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="HumanName"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/HumanName"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="HumanName">
+            <path value="HumanName"/>
+            <short value="Name of a human - parts and usage"/>
+            <definition value="A human&#39;s name with the ability to identify parts and usage."/>
+            <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+    </differential>
+</StructureDefinition>

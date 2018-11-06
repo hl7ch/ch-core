@@ -1,5 +1,8 @@
 <Patient xmlns="http://hl7.org/fhir">
     <id value="FranzMuster"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
+    </meta>
     <identifier>
         <system value="urn:oid:2.16.756.5.30.999999.1"/>
         <value value="012/08.111111"/>

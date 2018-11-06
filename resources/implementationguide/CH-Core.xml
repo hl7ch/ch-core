@@ -64,7 +64,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="StructureDefinition/ch-core-humanname-minimal"/>
+                <reference value="StructureDefinition/ch-core-humanname"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>

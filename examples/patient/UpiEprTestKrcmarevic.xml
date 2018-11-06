@@ -16,9 +16,9 @@
             </tr>
             </table>
             </div>
-            Note 1: Date is not yet defined structured below <br />
-            Note 2: Needs transformation to HL7 ValueSets <br />
-            Base Testdata for projectathon from UPI see <a href="https://docs.google.com/spreadsheets/d/11-ayGNU592D-MuQ1XPqJcAUrY4UpYEjGpuwEL23fvAQ/edit#gid=1781500762">Google Doc for more examples</a> 
+            (*1): Values only in narrative here, not structured<br />
+            (*2): Needs transformation to HL7 ValueSets <br />
+            Base testdata for projectathon from UPI see <a href="https://docs.google.com/spreadsheets/d/11-ayGNU592D-MuQ1XPqJcAUrY4UpYEjGpuwEL23fvAQ/edit#gid=1781500762">Google Doc for more examples</a> 
         </div>
     </text>
     <identifier>

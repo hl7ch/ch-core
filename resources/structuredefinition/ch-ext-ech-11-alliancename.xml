@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-ext-ech-11-alliancename"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-alliancename"/>
+    <version value="3.6.0"/>
+    <name value="alliancename"/>
+    <status value="draft"/>
+    <date value="2018-11-05"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <description value="eCH-0011 - Datenstandard Personendaten. Allianzname (optional) – allianceName, siehe Kapitel 3.3.2.4"/>
+    <fhirVersion value="3.6.0" />
+    <mapping>
+        <identity value="eCH-0011"/>
+        <uri value="http://www.ech.ch/standards/39485"/>
+        <name value="eCH-0011 Datenstandard Personendaten"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="HumanName.family"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Portion derived from person's own surname"/>
+            <definition value="The portion of the family name that is derived from the person's own surname, as distinguished
+       from any portion that is derived from the surname of the person's partner or spouse."/>
+            <comment value="If the person's surname has legally changed to become (or incorporate) the surname of
+       the person's partner or spouse, this is the person's surname immediately prior to such
+       change. Often this is the person's &quot;maiden name&quot;."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-alliancename"/>
+        </element>
+        <element id="Extension.valueString">
+            <path value="Extension.valueString"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition> 

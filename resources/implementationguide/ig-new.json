@@ -78,7 +78,7 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/ch-core-humanname-minimal"
+        "reference" : "StructureDefinition/ch-core-humanname"
       },
       "exampleBoolean" : false
     },
