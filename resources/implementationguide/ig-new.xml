@@ -41,7 +41,6 @@
       <value value="oliver.egger@ahdis.ch"/>
     </telecom>
   </contact>
-  <description value="ImplementationGuide for CH:Core"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -65,9 +64,21 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Patient/PersonEch011"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/UpiEprTestKrcmarevic"/>
       </reference>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-11-namedatatype"/>
+      </reference>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
@@ -78,6 +89,30 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-humanname"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-firstname"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-name"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-firstnamedatatype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-namedatatype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -96,6 +131,12 @@
     <resource>
       <reference>
         <reference value="Patient/OnlyGivenName"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/Ech011Wrong"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>

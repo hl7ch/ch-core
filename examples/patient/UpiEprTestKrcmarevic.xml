@@ -9,16 +9,16 @@
             <div>
             <table>
             <tr>
-            <th>EPR-SPID</th><th>DateOfBirth</th><th>Firstname</th><th>OfficialName</th><th>OriginalName</th><th>Sex  (*2)</th><th>MothersFirstname (*1)</th><th>MothersLastname  (*1)</th><th>FathersFirstname(*1)</th><th>FathersLastname(*1)</th><th>Nationality (*1)</th><th>CountryOfBirth (*1)</th><th>PlaceOfBirth (*1)</th>
+            <th>EPR-SPID</th><th>DateOfBirth</th><th>Firstname</th><th>OfficialName</th><th>OriginalName</th><th>Sex  (*2)</th><th>MothersFirstname</th><th>MothersLastname</th><th>FathersFirstname</th><th>FathersLastname</th><th>Nationality (*1)</th><th>CountryOfBirth (*1)</th><th>PlaceOfBirth (*1)</th>
             </tr>
             <tr>
-            <td>7560521127080</td><td>1982-03-20</td><td>Claude-Hélène Marguerite</td><td>Krcmarevic</td><td>Scheuble</td><td>2</td><td>Hui Xue	Dalkiliç</td><td>Fabio Nicola</td><td>Dalkiliç</td><td>8100</td><td>8100</td><td>11693</td>
+            <td>7560521127080</td><td>1982-03-20</td><td>Claude-Hélène Marguerite</td><td>Krcmarevic</td><td>Scheuble</td><td>2</td><td>Hui Xue</td><td>Dalkiliç</td><td>Fabio Nicola</td><td>Dalkiliç</td><td>8100</td><td>8100</td><td>11693</td>
             </tr>
             </table>
             </div>
             (*1): Values only in narrative here, not structured<br />
             (*2): Needs transformation to HL7 ValueSets <br />
-            Base testdata for projectathon from UPI see <a href="https://docs.google.com/spreadsheets/d/11-ayGNU592D-MuQ1XPqJcAUrY4UpYEjGpuwEL23fvAQ/edit#gid=1781500762">Google Doc for more examples</a> 
+            Base testdata for projectathon from UPI see <a href="https://docs.google.com/spreadsheets/d/1yWPhTI7DDgYDMXPVFGRmdb50c8TuUnQp9fECM3iGTBo/edit#gid=0">Google Doc for more examples</a> 
         </div>
     </text>
     <identifier>
@@ -37,6 +37,33 @@
     </name>
     <gender value="female"/>
     <birthDate value="1982-03-20"/>
+    <!-- http://build.fhir.org/valueset-parent-relationship-codes.html -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+                <code value="MTH"/>
+                <display value="mother"/>
+            </coding>
+        </relationship>
+        <name>
+            <family value="Dalkiliç"/>
+            <given value="Hui Xue"/>
+        </name>
+    </contact>
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+                <code value="FTH"/>
+                <display value="father"/>
+            </coding>
+        </relationship>
+        <name>
+            <family value="Dalkiliç"/>
+            <given value="Fabio Nicola"/>
+        </name>
+    </contact>
 </Patient>
 
 

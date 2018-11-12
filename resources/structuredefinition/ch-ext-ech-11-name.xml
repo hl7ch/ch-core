@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-ext-ech-11-alliancename"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-alliancename"/>
+    <id value="ch-ext-ech-11-name"/>
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+	        Extension for eCH-011 name (family) 
+        </div>
+    </text>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"/>
     <version value="3.6.0"/>
-    <name value="alliancename"/>
+    <name value="ECH011Name"/>
     <status value="draft"/>
-    <date value="2018-11-05"/>
+    <date value="2018-11-07"/>
     <publisher value="HL7 Switzerland"/>
     <contact>
         <name value="HL7 Switzerland"/>
@@ -14,13 +20,13 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
+    <description value="eCH-0011: Extension to define first name type"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CH"/>
         </coding>
     </jurisdiction>
-    <description value="eCH-0011 - Datenstandard Personendaten. Allianzname (optional) – allianceName, siehe Kapitel 3.3.2.4"/>
     <fhirVersion value="3.6.0" />
     <mapping>
         <identity value="eCH-0011"/>
@@ -39,12 +45,8 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Portion derived from person's own surname"/>
-            <definition value="The portion of the family name that is derived from the person's own surname, as distinguished
-       from any portion that is derived from the surname of the person's partner or spouse."/>
-            <comment value="If the person's surname has legally changed to become (or incorporate) the surname of
-       the person's partner or spouse, this is the person's surname immediately prior to such
-       change. Often this is the person's &quot;maiden name&quot;."/>
+            <short value="Extension"/>
+            <definition value="Extension for eCH-0011 - namedatatype"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -57,13 +59,31 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-alliancename"/>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"/>
         </element>
-        <element id="Extension.valueString">
-            <path value="Extension.valueString"/>
+        <element id="Extension.valueCode">
+            <path value="Extension.valueCode"/>
+            <short value="Value of extension"/>
+            <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see
+       Extensibility in the spec for list)."/>
+            <min value="0"/>
+            <max value="1"/>
+            <base>
+                <path value="Extension.value[x]"/>
+                <min value="0"/>
+                <max value="1"/>
+            </base>
             <type>
-                <code value="string"/>
+                <code value="code"/>
             </type>
+            <isModifier value="false"/>
+            <isSummary value="false"/>
+            <binding>
+                <strength value="required"/>
+                <description value="A set of codes advising a system or user which name in a set of names to select for a
+         given purpose."/>
+                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-namedatatype"/>
+            </binding>
         </element>
     </differential>
 </StructureDefinition> 

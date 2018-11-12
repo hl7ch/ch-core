@@ -28,7 +28,6 @@
             <value value="oliver.egger@ahdis.ch"/>
         </telecom>
     </contact>
-    <description value="ImplementationGuide for CH:Core"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -43,6 +42,8 @@
         <grouping>
             <name value="CH:Core"/>
         </grouping>
+
+<!-- Examples -->        
         <resource>
             <reference>
                 <reference value="Patient/FranzMuster"/>
@@ -51,11 +52,26 @@
         </resource>
         <resource>
             <reference>
+                <reference value="Patient/PersonEch011"/>
+            </reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
                 <reference value="Patient/UpiEprTestKrcmarevic"/>
             </reference>
             <exampleBoolean value="true"/>
-<!--            <exampleCanonical value="StructureDefinition/ch-core-patient"/> -->
+            <!--            <exampleCanonical value="StructureDefinition/ch-core-patient"/> -->
         </resource>
+
+<!-- Conformance ressources -->
+        <resource>
+            <reference>
+                <reference value="CodeSystem/ech-11-namedatatype"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+
         <resource>
             <reference>
                 <reference value="StructureDefinition/ch-core-patient"/>
@@ -68,7 +84,32 @@
             </reference>
             <exampleBoolean value="false"/>
         </resource>
-<!-- resources which should not be validated successfully -->
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ch-ext-ech-11-firstname"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ch-ext-ech-11-name"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ech-11-firstnamedatatype"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="ValueSet/ech-11-namedatatype"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+
+        <!-- resources which should not be validated successfully -->
         <resource>
             <reference>
                 <reference value="Patient/NoName"/>
@@ -84,6 +125,12 @@
         <resource>
             <reference>
                 <reference value="Patient/OnlyGivenName"/>
+            </reference>
+            <exampleBoolean value="true"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="Patient/Ech011Wrong"/>
             </reference>
             <exampleBoolean value="true"/>
         </resource>

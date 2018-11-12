@@ -1,0 +1,60 @@
+
+
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ech-11-namedatatype"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>eCH-011 nameData</h2>
+            <p>eCH-011 defines different nameData Types, this ValueSet is the subset for the family name</p>
+        </div>
+    </text>
+    <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-namedatatype"/>
+    <version value="1.0.0"/>
+    <name value="ECH11NameDataTypes"/>
+    <title value="eCH-11-NameDataTypes"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2018-11-12"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="eCH-011 defines different nameData Types, this ValueSet is the subset for the family name" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-namedatatype"/>
+            <concept>
+                <code value="officialName"/>
+            </concept>
+            <concept>
+                <code value="originalName"/>
+            </concept>
+            <concept>
+                <code value="allianceName"/>
+            </concept>
+            <concept>
+                <code value="nameOnForeignPassport"/>
+            </concept>
+            <concept>
+                <code value="aliasName"/>
+            </concept>
+            <concept>
+                <code value="otherName"/>
+            </concept>
+            <concept>
+                <code value="declaredForeignName"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

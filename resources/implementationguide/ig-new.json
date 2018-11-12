@@ -42,7 +42,6 @@
       "value" : "oliver.egger@ahdis.ch"
     }]
   }],
-  "description" : "ImplementationGuide for CH:Core",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,9 +65,21 @@
     },
     {
       "reference" : {
+        "reference" : "Patient/PersonEch011"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
         "reference" : "Patient/UpiEprTestKrcmarevic"
       },
       "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/ech-11-namedatatype"
+      },
+      "exampleBoolean" : false
     },
     {
       "reference" : {
@@ -79,6 +90,30 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/ch-core-humanname"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-ext-ech-11-firstname"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-ext-ech-11-name"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ech-11-firstnamedatatype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ech-11-namedatatype"
       },
       "exampleBoolean" : false
     },
@@ -97,6 +132,12 @@
     {
       "reference" : {
         "reference" : "Patient/OnlyGivenName"
+      },
+      "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/Ech011Wrong"
       },
       "exampleBoolean" : true
     }],

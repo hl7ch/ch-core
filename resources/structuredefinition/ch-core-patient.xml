@@ -46,37 +46,41 @@
         <element id="Patient">
             <path value="Patient"/>
             <short value="CH Core Patient"/>
-            <definition value="The CH Core Patient is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements in Switzerland."/>
+            <definition value="The CH Core Patient is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements in Switzerland. See also https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.html for further information"/>
             <constraint>
                 <key value="ch-core-name-1"/>
                 <severity value="error"/>
                 <human value="At least one HumanName with given and family name must be provided."/>
                 <expression value="name.where(family.exists() and given.exists()).count()>0 or name.empty()"/>
             </constraint>
+            <constraint>
+                <key value="ch-core-name-2"/>
+                <severity value="error"/>
+                <human value="if officalName Extension is specified, it can only be put on a name where use attribute is official"/>
+                <expression value="name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName')).empty() or name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName')).use='official'"/>
+            </constraint>
+            <constraint>
+                <key value="ch-core-name-3"/>
+                <severity value="error"/>
+                <human value="if orginal Extension is specified, it can only be put on a name where use attribute is maiden"/>
+                <expression value="name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName')).empty() or name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName')).use='maiden'"/>
+            </constraint>
+            <!-- should be not necessary, extension is constrained to be on HumanName.family -->
+            <constraint>
+                <key value="ch-core-name-4"/>
+                <severity value="error"/>
+                <human value="ch-ext-ech-11-name can only be put on a family name"/>
+                <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name').count()=descendants().family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name').count()"/>
+            </constraint>
+            <constraint>
+                <key value="ch-core-name-5"/>
+                <severity value="error"/>
+                <human value="ch-ext-ech-11-firstname can only be put on a given name"/>
+                <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()=descendants().given.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()"/>
+            </constraint>
             <mustSupport value="false"/>
             <isModifier value="false"/>
         </element>
-
-       <element id="Patient.name">
-            <path value="Patient.name"/>
-            <short value="A name associated with the patient"/>
-            <definition value="A name associated with the individual."/>
-            <comment value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns."/>
-            <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name."/>
-            <min value="1"/>
-            <max value="*"/>
-            <base>
-                <path value="Patient.name"/>
-                <min value="0"/>
-                <max value="*"/>
-            </base>
-            <type>
-                <code value="HumanName"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname" />
-            </type>
-        </element>
-
-<!-- one possibility
         <element id="Patient.name">
             <path value="Patient.name"/>
             <short value="A name associated with the patient"/>
@@ -95,7 +99,27 @@
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname" />
             </type>
         </element>
--->        
+
+        <!-- one possibility
+        <element id="Patient.name">
+            <path value="Patient.name"/>
+            <short value="A name associated with the patient"/>
+            <definition value="A name associated with the individual."/>
+            <comment value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns."/>
+            <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name."/>
+            <min value="1"/>
+            <max value="*"/>
+            <base>
+                <path value="Patient.name"/>
+                <min value="0"/>
+                <max value="*"/>
+            </base>
+            <type>
+                <code value="HumanName"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname" />
+            </type>
+        </element>
+-->
 
         <!--  
         <element id="Patient.name">
