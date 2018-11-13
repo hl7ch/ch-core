@@ -22,7 +22,7 @@
     "valueString" : "/Users/oliveregger/Documents/github/ch-core/pages"
   }],
   "url" : "http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "CH_Core",
   "status" : "active",
   "experimental" : false,
@@ -116,30 +116,6 @@
         "reference" : "ValueSet/ech-11-namedatatype"
       },
       "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/NoName"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/OnlyFamilyName"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/OnlyGivenName"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/Ech011Wrong"
-      },
-      "exampleBoolean" : true
     }],
     "page" : {
       "nameUrl" : "index.html",

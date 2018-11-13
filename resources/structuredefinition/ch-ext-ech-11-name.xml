@@ -8,7 +8,7 @@
         </div>
     </text>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"/>
-    <version value="3.6.0"/>
+    <version value="0.1.0"/>
     <name value="ECH011Name"/>
     <status value="draft"/>
     <date value="2018-11-07"/>

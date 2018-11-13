@@ -21,7 +21,7 @@
     <valueString value="/Users/oliveregger/Documents/github/ch-core/pages"/>
   </extension>
   <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core"/>
-  <version value="1.0.0"/>
+  <version value="0.1.0"/>
   <name value="CH_Core"/>
   <status value="active"/>
   <experimental value="false"/>
@@ -115,30 +115,6 @@
         <reference value="ValueSet/ech-11-namedatatype"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/NoName"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/OnlyFamilyName"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/OnlyGivenName"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/Ech011Wrong"/>
-      </reference>
-      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>

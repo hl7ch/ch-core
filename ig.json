@@ -1,6 +1,6 @@
 {
     "tool": "jekyll",
-    "fixed-business-version": "1.0.0",
+    "fixed-business-version": "0.1.0",
     "license": "CC-BY-SA-4.0",
     "npm-name": "ch.fhir.ig.core",
     "paths": {
