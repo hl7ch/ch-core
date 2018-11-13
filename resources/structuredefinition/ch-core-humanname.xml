@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-core-humanname"/>
-    <text>
-        <status value="additional" />
-        <div xmlns="http://www.w3.org/1999/xhtml">
-	        StructureDefinition for CH Core HumanName  
-        </div>
-    </text>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname"/>
     <version value="0.1.0"/>
     <name value="CHCoreHumanNameMinimalProfile"/>

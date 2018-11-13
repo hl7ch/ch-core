@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-ext-ech-11-name"/>
-    <text>
-        <status value="additional" />
-        <div xmlns="http://www.w3.org/1999/xhtml">
-	        Extension for eCH-011 name (family) 
-        </div>
-    </text>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"/>
     <version value="0.1.0"/>
     <name value="ECH011Name"/>

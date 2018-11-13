@@ -1,16 +1,9 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ech-11-namedatatype"/>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>eCH-011 nameData</h2>
-            <p>eCH-011 defines different nameData Types</p>
-        </div>
-    </text>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-namedatatype"/>
     <version value="1.0.0"/>
-    <name value="ECH11NameDataTypes"/>
-    <title value="eCH-11-NameDataTypes"/>
+    <name value="ECH11NameDataType"/>
+    <title value="eCH-011 NameData Types"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2018-11-12"/>
@@ -22,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-011 defines different nameData Types" />
+    <description value="eCH-011 defines different NameData Types" />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
