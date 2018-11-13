@@ -14,12 +14,14 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
+    <description value="Core patient definition in the swiss context. Relevant are definitions by the eCH-xxx standards and CDA-CH V2 definitions."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="CH"/>
         </coding>
     </jurisdiction>
+    <purpose value="Core patient demographics which can be shared" />
     <fhirVersion value="3.6.0" />
     <mapping>
         <identity value="CDA-CH-V2"/>
@@ -42,35 +44,10 @@
             <short value="CH Core Patient"/>
             <definition value="The CH Core Patient is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements in Switzerland. See also https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.html for further information"/>
             <constraint>
-                <key value="ch-core-name-1"/>
+                <key value="ch-pat-1"/>
                 <severity value="error"/>
                 <human value="At least one HumanName with given and family name must be provided."/>
                 <expression value="name.where(family.exists() and given.exists()).count()>0 or name.empty()"/>
-            </constraint>
-            <constraint>
-                <key value="ch-core-name-2"/>
-                <severity value="error"/>
-                <human value="if officalName Extension is specified, it can only be put on a name where use attribute is official"/>
-                <expression value="name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName')).empty() or name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName')).use='official'"/>
-            </constraint>
-            <constraint>
-                <key value="ch-core-name-3"/>
-                <severity value="error"/>
-                <human value="if orginal Extension is specified, it can only be put on a name where use attribute is maiden"/>
-                <expression value="name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName')).empty() or name.where(family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName')).use='maiden'"/>
-            </constraint>
-            <!-- should be not necessary, extension is constrained to be on HumanName.family -->
-            <constraint>
-                <key value="ch-core-name-4"/>
-                <severity value="error"/>
-                <human value="ch-ext-ech-11-name can only be put on a family name"/>
-                <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name').count()=descendants().family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name').count()"/>
-            </constraint>
-            <constraint>
-                <key value="ch-core-name-5"/>
-                <severity value="error"/>
-                <human value="ch-ext-ech-11-firstname can only be put on a given name"/>
-                <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()=descendants().given.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()"/>
             </constraint>
             <mustSupport value="false"/>
             <isModifier value="false"/>

@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-011 defines different NameData Types" />
+    <description value="eCH-011 defines different NameData Types. They are further described from the [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.assetdetail.349276.html) in 'Amtlicher Katalog der Merkmale' (Official catalogue of characteristics), Copyright BFS, Neuchâtel 2014, ISBN 978-3-303-00504-0" />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -31,55 +31,142 @@
         <code value="officialName"/>
         <display value="Amtlicher Name (zwingend), 211"/>
         <definition value="The official name corresponds to the name in the Swiss civil status register. For foreign persons without civil status event in Switzerland, this name corresponds to the name in the foreign passport or on the identity card."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Amtlicher Name" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Nom officiel" />
+        </designation>
     </concept>
     <concept>
         <code value="originalName"/>
         <display value="Ledigname, 212"/>
         <definition value="Name in accordance with official documents, which a person maintained immediately before his first marriage or establishment of a registered partnership or, based on a decision to change the name, acquired as a new maiden name."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Ledigname" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Nom de célibataire" />
+        </designation>
     </concept>
     <concept>
         <code value="allianceName"/>
         <display value="Allianzname, 213"/>
         <definition value="The alliance name indicates the association of two persons who are married or living in a registered partnership. An already used alliance name can be used after dissolution of the marriage or partnership if the official name was not changed at the time of dissolution. The partner's maiden name or the partner's own maidne gname is appended to the official name with a hyphen. On request, the alliance name can be entered in the passport or on the ID card."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Allianzname" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Nom d’alliance" />
+        </designation>
     </concept>
     <concept>
         <code value="nameOnForeignPassport"/>
         <display value="Name im ausländischen Pass, 214"/>
         <definition value="This name corresponds to the entry in the passport according to the machine-readable zone (MRZ) of the passport."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Name im ausländischen Pass" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Nom selon le passeport étranger" />
+        </designation>
     </concept>
     <concept>
         <code value="aliasName"/>
         <display value="Aliasname, 215"/>
         <definition value="Name (e.g. artist's or order's name) that may be used on the basis of an approved request. The alias name can consist of one or more parts (e.g. also of alias first name and alias name)."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Aliasname" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Nom alias" />
+        </designation>
     </concept>
     <concept>
         <code value="otherName"/>
         <display value="Andere amtliche Name, 216"/>
         <definition value="Other official names according to Swiss civil status documents or foreign documents which are neither surnames nor first names."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Andere amtliche Name" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Autres noms" />
+        </designation>
     </concept>
     <concept>
         <code value="declaredForeignName"/>
         <display value="Name gemäss Deklaration, 217"/>
         <definition value="For persons of foreign nationality who do not possess official documents (mainly in the field of asylum)." />
+        <designation>
+            <language value="de-CH" />
+            <value value="Name gemäss Deklaration" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Nom selon déclaration" />
+        </designation>
     </concept>
     <concept>
         <code value="officalFirstName"/>
         <display value="Amtliche Vornamen (zwingend), 221"/>
         <definition value="First names as per birth certificate or civil register/Infostar in the order listed or as per foreign identity documents."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Amtliche Vornamen" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Prénoms officiels" />
+        </designation>
     </concept>
     <concept>
         <code value="callName"/>
         <display value="Rufname, 222"/>
         <definition value="A person has the right to choose a first name from the list of his official first names. The first name can consist of one or more first names."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Rufname" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Prénom usuel" />
+        </designation>
     </concept>
     <concept>
         <code value="firstNameOnForeignPassport"/>
         <display value="Vornamen im ausländischen Pass, 223"/>
         <definition value="First names for persons of foreign nationality. To use in conjunction with the name in the foreign passport as defined under 214"/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Vornamen im ausländischen Pass" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Prénoms selon passeport étranger" />
+        </designation>
     </concept>
     <concept>
         <code value="declaredForeignFirstName"/>
-        <display value="Rufname, 224"/>
+        <display value="Vorname(n) gemäss Deklaration, 224"/>
         <definition value="For persons of foreign nationality who do not possess official documents (mainly in the field of asylum)."/>
-    </concept>
+        <designation>
+            <language value="de-CH" />
+            <value value="Vorname(n) gemäss Deklaration" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Prénoms selon déclaration" />
+        </designation>    </concept>
 </CodeSystem>

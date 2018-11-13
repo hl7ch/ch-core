@@ -3,9 +3,9 @@
     <id value="ch-core-humanname"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname"/>
     <version value="0.1.0"/>
-    <name value="CHCoreHumanNameMinimalProfile"/>
+    <name value="CHCoreHumanNameProfile"/>
     <status value="draft"/>
-    <date value="2018-10-24T00:00:00+10:00"/>
+    <date value="2018-10-25T00:00:00+10:00"/>
     <publisher value="HL7 Switzerland"/>
     <contact>
         <name value="HL7 Switzerland"/>
@@ -44,6 +44,70 @@
             <comment value="Names may be changed, or repudiated, or people may have different names in different contexts. Names may be divided into parts of different type that have variable significance depending on context, though the division into parts does not always matter. With personal names, the different parts might or might not be imbued with some implicit meaning; various cultures associate different importance with the name parts and the degree to which systems must care about name parts around the world varies widely."/>
             <min value="0"/>
             <max value="*"/>
+            <constraint>
+                <key value="ch-core-hm-1"/>
+                <severity value="error"/>
+                <human value="if officalName with eCH-011 Extension is specified, it can only be put on a name where use attribute is official"/>
+                <expression value="family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName').empty() or (family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName') and use='official')"/>
+            </constraint>
+            <constraint>
+                <key value="ch-core-hm-2"/>
+                <severity value="error"/>
+                <human value="if orginalName with eCH-011 Extension is specified, it can only be put on a name where use attribute is maiden"/>
+                <expression value="family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName').empty() or (family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName') and use='maiden')"/>
+            </constraint>
+            <!-- should be not necessary, extension is constrained to be on HumanName.family -->
+            <constraint>
+                <key value="ch-core-hm-3"/>
+                <severity value="error"/>
+                <human value="ch-ext-ech-11-name can only be put on a family name"/>
+                <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name').count()=family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name').count()"/>
+            </constraint>
+            <constraint>
+                <key value="ch-core-hm-4"/>
+                <severity value="error"/>
+                <human value="ch-ext-ech-11-firstname can only be put on a given name"/>
+                <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()=given.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()"/>
+            </constraint>
+
+        </element>
+        <element id="HumanName.family.extension">
+            <path value="HumanName.family.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="HumanName.family.extension:echname">
+            <path value="HumanName.family.extension" />
+            <sliceName value="ech11name" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name" />
+            </type>
+        </element>
+        <element id="HumanName.given.extension">
+            <path value="HumanName.given.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="HumanName.given.extension:echfirstname">
+            <path value="HumanName.given.extension" />
+            <sliceName value="ech11firstname" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname" />
+            </type>
         </element>
     </differential>
 </StructureDefinition>

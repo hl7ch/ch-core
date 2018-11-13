@@ -108,8 +108,6 @@
             </reference>
             <exampleBoolean value="false"/>
         </resource>
-
-        <!-- resources which should not be validated successfully 
         <resource>
             <reference>
                 <reference value="Patient/NoName"/>
@@ -134,7 +132,6 @@
             </reference>
             <exampleBoolean value="true"/>
         </resource>
-        -->
         <page>
             <nameUrl value="index.html"/>
             <title value="IG Templage Homepage"/>

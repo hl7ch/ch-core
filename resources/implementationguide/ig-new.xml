@@ -116,6 +116,30 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/NoName"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/OnlyFamilyName"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/OnlyGivenName"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/Ech011Wrong"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="IG Templage Homepage"/>
