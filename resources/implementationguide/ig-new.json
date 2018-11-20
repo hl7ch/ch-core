@@ -140,6 +140,12 @@
         "reference" : "Patient/Ech011Wrong"
       },
       "exampleBoolean" : true
+    },
+    {
+      "reference" : {
+        "reference" : "Patient/UnknownGender"
+      },
+      "exampleBoolean" : true
     }],
     "page" : {
       "nameUrl" : "index.html",

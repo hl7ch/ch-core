@@ -14,7 +14,9 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Core patient definition in the swiss context. Relevant are definitions by the eCH-xxx standards and CDA-CH V2 definitions."/>
+    <description value="Core patient definition in the swiss context. Relevant are definitions by the eCH-xxx standards and CDA-CH V2 definitions.
+The CH Core Patient is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements in Switzerland. 
+See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.html) for further information"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33,6 +35,11 @@
         <uri value="http://www.ech.ch/standards/39485"/>
         <name value="eCH-0011 Datenstandard Personendaten"/>
     </mapping>
+    <mapping>
+        <identity value="EPR"/>
+        <uri value="https://art-decor.org/art-decor/decor-valuesets--ch-epr-"/>
+        <name value="EprGender "/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Patient"/>
@@ -48,6 +55,12 @@
                 <severity value="error"/>
                 <human value="At least one HumanName with given and family name must be provided."/>
                 <expression value="name.where(family.exists() and given.exists()).count()>0 or name.empty()"/>
+            </constraint>
+            <constraint>
+                <key value="ch-pat-2"/>
+                <severity value="warning"/>
+                <human value="gender unknown is currently not used in Switzerland in eCH and the EPR"/>
+                <expression value="gender.empty() or gender!='unknown'"/>
             </constraint>
             <mustSupport value="false"/>
             <isModifier value="false"/>
@@ -69,6 +82,95 @@
                 <code value="HumanName"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname" />
             </type>
+            <mapping>
+                <identity value="eCH-0011"/>
+                <map value="nameData"/>
+            </mapping>
+        </element>
+        <element id="Patient.telecom">
+            <path value="Patient.telecom"/>
+            <short value="A contact detail for the individual"/>
+            <definition value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted."/>
+            <comment value="A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner&#39;s phone)."/>
+            <requirements value="People have (primary) ways to contact them in some way such as phone, email."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="ContactPoint"/>
+            </type>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="v2"/>
+                <map value="PID-13, PID-14, PID-40"/>
+            </mapping>
+            <mapping>
+                <identity value="rim"/>
+                <map value="telecom"/>
+            </mapping>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".telecom"/>
+            </mapping>
+        </element>
+        <element id="Patient.gender">
+            <path value="Patient.gender"/>
+            <short value="male | female | other"/>
+            <definition value="Biological sex of the person or sex of the person defined by a court decision."/>
+            <requirements value="The indication of sex  may only be made for persons for whom the physical sex characteristics cannot be unambiguously assigned. Swiss law does not recognise this gender. Thus, only foreign persons who have not been registered by the Swiss civil status system can be provided with this characteristic in the population controls."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <isSummary value="true"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="AdministrativeGender"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+                    <valueBoolean value="true"/>
+                </extension>
+                <strength value="required"/>
+                <description value="The gender of a person used for administrative purposes."/>
+                <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+            </binding>
+            <mapping>
+                <identity value="eCH-0011"/>
+                <map value="eCH-0044:sexType, BFS-33, 1 Männlich: male, 2 Weiblich: female, 3 Unbestimmt: other"/>
+            </mapping>
+            <mapping>
+                <identity value="EPR"/>
+                <map value="Patient’s gender as per Annex 3  EPRO-FDHA, Chapter 2.10. Administrative Gender - urn:oid:2.16.840.1.113883.5.1, see http://hl7.org/fhir/ConceptMap/cm-administrative-gender-v3"/>
+            </mapping>
+        </element>
+        <element id="Patient.birthDate">
+            <path value="Patient.birthDate"/>
+            <short value="The date of birth for the individual"/>
+            <definition value="The date of birth for the individual."/>
+            <comment value="At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension &quot;patient-birthTime&quot; available that should be used where Time is required (such as in maternity/infant care systems)."/>
+            <requirements value="Age of the individual drives many clinical processes."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="date"/>
+            </type>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="v2"/>
+                <map value="PID-7"/>
+            </mapping>
+            <mapping>
+                <identity value="rim"/>
+                <map value="player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime"/>
+            </mapping>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".patient.birthTime"/>
+            </mapping>
+            <mapping>
+                <identity value="loinc"/>
+                <map value="21112-8"/>
+            </mapping>
         </element>
 
         <!-- one possibility

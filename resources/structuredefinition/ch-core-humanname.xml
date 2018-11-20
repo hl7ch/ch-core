@@ -14,6 +14,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
+    <description value="Name with extensions for ech-11"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -69,7 +70,6 @@
                 <human value="ch-ext-ech-11-firstname can only be put on a given name"/>
                 <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()=given.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()"/>
             </constraint>
-
         </element>
         <element id="HumanName.family.extension">
             <path value="HumanName.family.extension" />
@@ -80,6 +80,10 @@
                 </discriminator>
                 <rules value="open" />
             </slicing>
+            <mapping>
+                <identity value="eCH-0011"/>
+                <map value="officialName, originalName, allianceName, nameOnForeignPassport, aliasName, otherName, declaredForeignName" />
+            </mapping>
         </element>
         <element id="HumanName.family.extension:echname">
             <path value="HumanName.family.extension" />
