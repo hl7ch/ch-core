@@ -43,7 +43,7 @@
             <name value="CH:Core"/>
         </grouping>
 
-<!-- Examples -->        
+        <!-- Examples -->
         <resource>
             <reference>
                 <reference value="Patient/FranzMuster"/>
@@ -64,17 +64,34 @@
             <!--            <exampleCanonical value="StructureDefinition/ch-core-patient"/> -->
         </resource>
 
-<!-- Conformance ressources -->
+        <!-- Conformance ressources -->
         <resource>
             <reference>
                 <reference value="CodeSystem/ech-11-namedatatype"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>
-
         <resource>
             <reference>
                 <reference value="StructureDefinition/ch-core-patient"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ch-core-address-ech-11-placeofbirth"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+            </reference>
+            <exampleBoolean value="false"/>
+        </resource>
+        <resource>
+            <reference>
+                <reference value="StructureDefinition/ch-core-patient-ech-11-placeofbirth"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>

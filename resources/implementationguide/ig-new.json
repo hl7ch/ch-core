@@ -89,6 +89,24 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-core-address-ech-11-placeofbirth"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-ext-ech-11-bfsnumber"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-core-patient-ech-11-placeofbirth"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-humanname"
       },
       "exampleBoolean" : false

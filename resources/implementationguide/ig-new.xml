@@ -88,6 +88,24 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-address-ech-11-placeofbirth"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-patient-ech-11-placeofbirth"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-humanname"/>
       </reference>
       <exampleBoolean value="false"/>

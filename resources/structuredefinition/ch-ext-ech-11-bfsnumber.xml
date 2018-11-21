@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-ext-ech-11-name"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"/>
+    <id value="ch-ext-ech-11-bfsnumber"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber"/>
     <version value="0.1.0"/>
-    <name value="ECH011Name"/>
-    <title value="Name"/>
+    <name value="ECH011BFSNumber"/>
+    <title value="BFS Number"/>
     <status value="draft"/>
-    <date value="2018-11-07"/>
+    <date value="2018-11-21"/>
     <publisher value="HL7 Switzerland"/>
     <contact>
         <name value="HL7 Switzerland"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-0011: Extension to define first name type"/>
+    <description value="eCH-0011: Extension to define a BFS Number for a municipality"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -32,7 +32,7 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="HumanName.family"/>
+        <expression value="Address.city or Address.country"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -41,7 +41,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="Extension for eCH-0011 - namedatatype"/>
+            <definition value="Extension for eCH-0011 - birthPlace municipality bfs number"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -54,13 +54,12 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"/>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber"/>
         </element>
-        <element id="Extension.valueCode">
-            <path value="Extension.valueCode"/>
+        <element id="Extension.valueString">
+            <path value="Extension.valueString"/>
             <short value="Value of extension"/>
-            <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see
-       Extensibility in the spec for list)."/>
+            <definition value="BFS number of city in switzerland"/>
             <min value="0"/>
             <max value="1"/>
             <base>
@@ -69,16 +68,10 @@
                 <max value="1"/>
             </base>
             <type>
-                <code value="code"/>
+                <code value="string"/>
             </type>
             <isModifier value="false"/>
             <isSummary value="false"/>
-            <binding>
-                <strength value="required"/>
-                <description value="A set of codes advising a system or user which name in a set of names to select for a
-         given purpose."/>
-                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-namedatatype"/>
-            </binding>
         </element>
     </differential>
 </StructureDefinition> 
