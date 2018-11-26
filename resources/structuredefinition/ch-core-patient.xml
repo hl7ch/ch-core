@@ -291,8 +291,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact:contact">
             <path value="Patient.contact"/>
-            <short value="Contactdata if it is not address of patient"/>
             <sliceName value="contact"/>
+            <short value="Contactdata if it is not address of patient"/>
             <min value="0"/>
             <max value="1"/>
             <mapping>
@@ -371,8 +371,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact:nameOfFather">
             <path value="Patient.contact"/>
-            <short value="Name of Father"/>
             <sliceName value="nameOfFather"/>
+            <short value="Name of Father"/>
             <min value="0"/>
             <max value="1"/>
             <mapping>
@@ -410,8 +410,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact:nameOfMother">
             <path value="Patient.contact"/>
-            <short value="Name of Mother"/>
             <sliceName value="nameOfMother"/>
+            <short value="Name of Mother"/>
             <min value="0"/>
             <max value="1"/>
             <mapping>
@@ -446,8 +446,62 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <type>
                 <code value="HumanName"/>
             </type>
+        </element>       
+        <element id="Patient.communication">
+            <path value="Patient.communication"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="preferred"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+            <short value="A language which may be used to communicate with the patient about his or her health"/>
         </element>
-
+        <element id="Patient.communication:languageOfCorrespondance">
+            <path value="Patient.communication"/>
+            <sliceName value="languageOfCorrespondance"/>
+            <short value="A language which may be used to communicate with the patient about his or her health"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="BackboneElement"/>
+            </type>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:languageCommunication (0..*) / hl7:languageCode (1..1)"/>
+            </mapping>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.9 languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"/>
+            </mapping>
+        </element>
+        <element id="Patient.communication.language:languageOfCorrespondance">
+            <path value="Patient.communication.language"/>
+            <short value="The language which can be used to communicate with the patient about his or her health"/>
+            <definition value="The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English."/>
+            <comment value="The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems actually code this but instead have it as free text. Hence CodeableConcept instead of code as the data type."/>
+            <requirements value="Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+        </element>
+        <element id="Patient.communication.preferred:languageOfCorrespondance">
+            <path value="Patient.communication.preferred"/>
+            <short value="Language preference indicator"/>
+            <definition value="Indicates whether or not the patient prefers this language (over other languages he masters up a certain level)."/>
+            <comment value="This language is specifically identified for communicating healthcare information."/>
+            <requirements value="People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <fixedBoolean value="true" />
+        </element>
         <!-- one possibility
         <element id="Patient.name">
             <path value="Patient.name"/>

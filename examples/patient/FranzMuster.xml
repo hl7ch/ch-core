@@ -22,6 +22,10 @@
                 <b>gender</b>: male</p>
             <p>
                 <b>birthDate</b>: Jan 27, 1995</p>
+            <p>
+                <b>Zivilstand</b>: in eingetragener Partnerschaft</p>
+            <p>
+                <b>Korrrespondenzsprache</b>: deutsch</p>
         </div>
     </text>
     <identifier>
@@ -41,4 +45,14 @@
             <display value="in eingetragener Partnerschaft"/>
         </coding>
     </maritalStatus>
+    <communication>
+        <language>
+            <coding>
+                <system value="urn:ietf:bcp:47"/>
+                <code value="de-CH"/>
+            </coding>
+            <text value="Deutsch (Schweiz)"/>
+        </language>
+        <preferred value="true" />
+    </communication>
 </Patient>
