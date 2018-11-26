@@ -291,6 +291,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact:contact">
             <path value="Patient.contact"/>
+            <short value="Contactdata if it is not address of patient"/>
             <sliceName value="contact"/>
             <min value="0"/>
             <max value="1"/>
@@ -360,8 +361,17 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <min value="0"/>
             <max value="0"/>
         </element>
+        <element id="Patient.contact.address:contact">
+            <path value="Patient.contact.address"/>
+            <short value="Address for the contact person"/>
+            <definition value="Address for the contact person."/>
+            <requirements value="Need to keep track where the contact person can be contacted per postal mail or visited."/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
         <element id="Patient.contact:nameOfFather">
             <path value="Patient.contact"/>
+            <short value="Name of Father"/>
             <sliceName value="nameOfFather"/>
             <min value="0"/>
             <max value="1"/>
@@ -400,6 +410,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact:nameOfMother">
             <path value="Patient.contact"/>
+            <short value="Name of Mother"/>
             <sliceName value="nameOfMother"/>
             <min value="0"/>
             <max value="1"/>
