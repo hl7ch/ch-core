@@ -9,10 +9,10 @@
             <div>
             <table>
             <tr>
-            <th>EPR-SPID</th><th>DateOfBirth</th><th>Firstname</th><th>OfficialName</th><th>OriginalName</th><th>Sex  (*2)</th><th>MothersFirstname</th><th>MothersLastname</th><th>FathersFirstname</th><th>FathersLastname</th><th>Nationality (*1)</th><th>CountryOfBirth</th><th>PlaceOfBirth</th>
+            <th>EPR-SPID</th><th>DateOfBirth</th><th>Firstname</th><th>OfficialName</th><th>OriginalName</th><th>Sex  (*2)</th><th>MothersFirstname</th><th>MothersLastname</th><th>FathersFirstname</th><th>FathersLastname</th><th>Nationality</th><th>CountryOfBirth</th><th>PlaceOfBirth</th>
             </tr>
             <tr>
-            <td>7560521127080</td><td>1982-03-20</td><td>Claude-Hélène Marguerite</td><td>Krcmarevic</td><td>Scheuble</td><td>2</td><td>Hui Xue</td><td>Dalkiliç</td><td>Fabio Nicola</td><td>Dalkiliç</td><td>8100</td><td>Switzerland (8100)</td><td>Zürich (261)</td>
+            <td>7560521127080</td><td>1982-03-20</td><td>Claude-Hélène Marguerite</td><td>Krcmarevic</td><td>Scheuble</td><td>2</td><td>Hui Xue</td><td>Dalkiliç</td><td>Fabio Nicola</td><td>Dalkiliç</td><td>Switzerland (8100)</td><td>Switzerland (8100)</td><td>Zürich (261)</td>
             </tr>
             </table>
             </div>
@@ -21,6 +21,17 @@
             Base testdata for projectathon from UPI see <a href="https://docs.google.com/spreadsheets/d/1yWPhTI7DDgYDMXPVFGRmdb50c8TuUnQp9fECM3iGTBo/edit#gid=0">Google Doc for more examples</a> 
         </div>
     </text>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+        <extension url="code">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="http://ech.ch/eCH-0072/SG_BFSNR"/>
+                    <code value="8100"/>
+                    <display value="Switzerland"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+    </extension>
     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth">
         <valueAddress>
             <city value="Zürich">

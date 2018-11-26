@@ -83,6 +83,38 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <code value="Extension" />
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth" />
             </type>
+            <mapping>
+                <identity value="eCH-0011"/>
+                <map value="3.3.3.2 placeOfBirth BFS-322, BFS-323, BFS 324"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:birthplace (0..1)"/>
+            </mapping>
+        </element>
+        <element id="Patient.extension:citizenship">
+            <path value="Patient.extension" />
+            <sliceName value="citizenship" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-citizenship" />
+            </type>
+            <mapping>
+                <identity value="eCH-0011"/>
+                <map value="3.3.6 nationalityData BFS-412, BFS-413"/>
+            </mapping>
+             <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="Not supported by CDA-CH V2. Can be specified as a social history observation in the CDA body. See CDA-CH-SMCP for possible implementation: https://art-decor.org/art-decor/decor-templates--cdachsmcp-"/>
+            </mapping>
+        </element>
+        <element id="Patient.extension:religion">
+            <path value="Patient.extension" />
+            <sliceName value="religion" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-religion" />
+            </type>
         </element>
         <element id="Patient.name">
             <path value="Patient.name"/>
@@ -103,7 +135,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             </type>
             <mapping>
                 <identity value="eCH-0011"/>
-                <map value="nameData"/>
+                <map value="3.3.2 nameData"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
@@ -151,7 +183,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             </binding>
             <mapping>
                 <identity value="eCH-0011"/>
-                <map value="eCH-0044:sexType, BFS-33, 1 Männlich: male, 2 Weiblich: female, 3 Unbestimmt: other"/>
+                <map value="3.3.3 sex. sexType, BFS-33, 1 Männlich: male, 2 Weiblich: female, 3 Unbestimmt: other"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
@@ -171,7 +203,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <isSummary value="true"/>
             <mapping>
                 <identity value="eCH-0011"/>
-                <map value="eCH-0011:birthData, BFS-31"/>
+                <map value="3.3.3 birthData, BFS-31"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>

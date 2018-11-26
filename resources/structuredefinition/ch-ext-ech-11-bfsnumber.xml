@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-0011: Extension to define a BFS Number for a municipality"/>
+    <description value="eCH-0011: Extension to define a BFS Number for a municipality or a country"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41,7 +41,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="Extension for eCH-0011 - birthPlace municipality bfs number"/>
+            <definition value="Extension for eCH-0011 - bfs number (ministry of statistics number)"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -59,7 +59,7 @@
         <element id="Extension.valueString">
             <path value="Extension.valueString"/>
             <short value="Value of extension"/>
-            <definition value="BFS number of city in switzerland"/>
+            <definition value="BFS number"/>
             <min value="0"/>
             <max value="1"/>
             <base>
