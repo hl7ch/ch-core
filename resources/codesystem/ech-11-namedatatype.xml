@@ -1,7 +1,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ech-11-namedatatype"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-namedatatype"/>
-    <version value="1.0.0"/>
+    <version value="0.1.0"/>
     <name value="ECH11NameDataType"/>
     <title value="eCH-011 NameData Types"/>
     <status value="draft"/>

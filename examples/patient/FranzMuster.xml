@@ -34,4 +34,11 @@
     </name>
     <gender value="male"/>
     <birthDate value="1995-01-27"/>
+    <maritalStatus>
+        <coding>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"/>
+            <code value="6"/>
+            <display value="in eingetragener Partnerschaft"/>
+        </coding>
+    </maritalStatus>
 </Patient>

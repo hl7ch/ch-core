@@ -3,9 +3,9 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="ech-11-firstnamedatatype"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-firstnamedatatype"/>
-    <version value="1.0.0"/>
+    <version value="0.1.0"/>
     <name value="ECH11FirstNameDataTypes"/>
-    <title value="eCH-11-FirstNameDataTypes"/>
+    <title value="eCH-011 FirstNameDataTypes"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2018-11-12"/>

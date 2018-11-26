@@ -1,0 +1,32 @@
+
+
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ech-11-maritalstatus"/>
+    <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritalstatus"/>
+    <version value="0.1.0"/>
+    <name value="ECH11MaritalStatus"/>
+    <title value="eCH-011 MaritalStatus"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2018-11-12"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="eCH-011 defines maritalStaus Types" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"/>
+        </include>
+    </compose>
+</ValueSet>

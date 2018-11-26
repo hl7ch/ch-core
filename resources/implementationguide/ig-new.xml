@@ -76,7 +76,31 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/ech-11-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-11-namedatatype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-11-sex"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/maritalstatus-ech11-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/sex-ech11-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -136,6 +160,24 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/ech-11-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-sex"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ch-core-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/NoName"/>
       </reference>
       <exampleBoolean value="true"/>
@@ -161,6 +203,12 @@
     <resource>
       <reference>
         <reference value="Patient/UnknownGender"/>
+      </reference>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/WrongMaritalStatus"/>
       </reference>
       <exampleBoolean value="true"/>
     </resource>

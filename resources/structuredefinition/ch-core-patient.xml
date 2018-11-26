@@ -103,7 +103,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH-0011"/>
                 <map value="3.3.6 nationalityData BFS-412, BFS-413"/>
             </mapping>
-             <mapping>
+            <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="Not supported by CDA-CH V2. Can be specified as a social history observation in the CDA body. See CDA-CH-SMCP for possible implementation: https://art-decor.org/art-decor/decor-templates--cdachsmcp-"/>
             </mapping>
@@ -183,7 +183,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             </binding>
             <mapping>
                 <identity value="eCH-0011"/>
-                <map value="3.3.3 sex. sexType, BFS-33, 1 Männlich: male, 2 Weiblich: female, 3 Unbestimmt: other"/>
+                <map value="3.3.3 sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
@@ -208,6 +208,43 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:recordTarget (1..1 R) / hl7:patientRole (1..1 R) / hl7:patient (1..1 R) / hl7:birthTime (1..1 R)"/>
+            </mapping>
+        </element>
+        <element id="Patient.maritalStatus">
+            <path value="Patient.maritalStatus"/>
+            <short value="Marital (civil) status of a patient"/>
+            <definition value="This field contains a patient&#39;s most recent marital (civil) status."/>
+            <requirements value="Most, if not all systems capture it."/>
+            <min value="0"/>
+            <max value="1"/>
+            <base>
+                <path value="Patient.maritalStatus"/>
+                <min value="0"/>
+                <max value="1"/>
+            </base>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <isModifier value="false"/>
+            <isSummary value="false"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="MaritalStatus"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+                    <valueBoolean value="true"/>
+                </extension>
+                <strength value="required"/>
+                <description value="The domestic partnership status of a person."/>
+                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ch-core-maritalstatus"/>
+            </binding>
+           <mapping>
+                <identity value="eCH-0011"/>
+                <map value="3.3.5 maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:maritalStatusCode (0..1)"/>
             </mapping>
         </element>
 
