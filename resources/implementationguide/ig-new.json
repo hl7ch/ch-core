@@ -83,7 +83,7 @@
     },
     {
       "reference" : {
-        "reference" : "CodeSystem/ech-11-namedatatype"
+        "reference" : "CodeSystem/ech-11"
       },
       "exampleBoolean" : false
     },

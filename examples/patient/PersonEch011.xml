@@ -67,6 +67,24 @@
     </name>
     <gender value="female"/>
     <birthDate value="1982-03-20"/>
+    <!-- Zustelladresse falls es nicht die Adresse des Patienten direkt ist -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11"/>
+                <code value="contactData"/>
+            </coding>
+        </relationship>
+        <name>
+            <family value="Dalkiliç"/>
+            <given value="Fabio Nicola"/>
+        </name>
+        <address>
+            <line value="Strasse" />
+            <city value="Ort" />
+            <postalCode value="PLZ" />
+        </address>
+    </contact>
 </Patient>
 
 

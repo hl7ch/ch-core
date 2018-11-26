@@ -1,9 +1,9 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="ech-11-namedatatype"/>
-    <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-namedatatype"/>
+    <id value="ech-11"/>
+    <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11"/>
     <version value="0.1.0"/>
-    <name value="ECH11NameDataType"/>
-    <title value="eCH-011 NameData Types"/>
+    <name value="ECH11CodeSystem"/>
+    <title value="eCH-011 Types"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2018-11-12"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-011 defines different NameData Types. They are further described from the [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.assetdetail.349276.html) in 'Amtlicher Katalog der Merkmale' (Official catalogue of characteristics), Copyright BFS, Neuchâtel 2014, ISBN 978-3-303-00504-0" />
+    <description value="eCH-011 defines different Types like Names, contactAdress etc. They are further described from the [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.assetdetail.349276.html) in 'Amtlicher Katalog der Merkmale' (Official catalogue of characteristics), Copyright BFS, Neuchâtel 2014, ISBN 978-3-303-00504-0" />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -23,7 +23,6 @@
         </coding>
     </jurisdiction>
     <caseSensitive value="true"/>
-    <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-namedatatype"/>
     <compositional value="false"/>
     <versionNeeded value="true"/>
     <content value="complete"/>
@@ -168,5 +167,19 @@
         <designation>
             <language value="fr-CH" />
             <value value="Prénoms selon déclaration" />
-        </designation>    </concept>
+        </designation>
+    </concept>
+    <concept>
+        <code value="contactData"/>
+        <display value="Zustelladresse, BFS-61"/>
+        <definition value="Information on how the person can be contacted, at least with the contact address, and possibly further contact information such as identification of the person if the contact address is not the registered resident."/>
+        <designation>
+            <language value="de-CH" />
+            <value value="Zustelladresse" />
+        </designation>
+        <designation>
+            <language value="fr-CH" />
+            <value value="Adresse postale" />
+        </designation>
+    </concept>
 </CodeSystem>

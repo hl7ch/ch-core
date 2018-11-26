@@ -77,7 +77,7 @@
                 <strength value="required"/>
                 <description value="A set of codes advising a system or user which name in a set of names to select for a
          given purpose."/>
-                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-namedatatype"/>
+                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-11"/>
             </binding>
         </element>
     </differential>

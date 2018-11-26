@@ -26,7 +26,7 @@
     </jurisdiction>
     <compose>
         <include>
-            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-namedatatype"/>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11"/>
             <concept>
                 <code value="officalFirstName"/>
             </concept>

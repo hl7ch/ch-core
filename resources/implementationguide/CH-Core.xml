@@ -73,7 +73,7 @@
         </resource>
         <resource>
             <reference>
-                <reference value="CodeSystem/ech-11-namedatatype"/>
+                <reference value="CodeSystem/ech-11"/>
             </reference>
             <exampleBoolean value="false"/>
         </resource>

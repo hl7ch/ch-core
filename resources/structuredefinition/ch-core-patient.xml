@@ -32,9 +32,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <name value="CDA-CH 2017 V2"/>
     </mapping>
     <mapping>
-        <identity value="eCH-0011"/>
-        <uri value="http://www.ech.ch/standards/39485"/>
-        <name value="eCH-0011 Datenstandard Personendaten"/>
+        <identity value="eCH"/>
+        <uri value="http://www.ech.ch/"/>
+        <name value="eCH-Standardsx"/>
     </mapping>
     <mapping>
         <identity value="EPR"/>
@@ -84,8 +84,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth" />
             </type>
             <mapping>
-                <identity value="eCH-0011"/>
-                <map value="3.3.3.2 placeOfBirth BFS-322, BFS-323, BFS 324"/>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.3.2 placeOfBirth BFS-322, BFS-323, BFS 324"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
@@ -100,14 +100,15 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-citizenship" />
             </type>
             <mapping>
-                <identity value="eCH-0011"/>
-                <map value="3.3.6 nationalityData BFS-412, BFS-413"/>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.6 nationalityData BFS-412, BFS-413"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="Not supported by CDA-CH V2. Can be specified as a social history observation in the CDA body. See CDA-CH-SMCP for possible implementation: https://art-decor.org/art-decor/decor-templates--cdachsmcp-"/>
             </mapping>
         </element>
+        <!-- needed, feedback from meeting
         <element id="Patient.extension:religion">
             <path value="Patient.extension" />
             <sliceName value="religion" />
@@ -116,6 +117,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-religion" />
             </type>
         </element>
+        -->
         <element id="Patient.name">
             <path value="Patient.name"/>
             <short value="A name associated with the patient"/>
@@ -134,8 +136,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname" />
             </type>
             <mapping>
-                <identity value="eCH-0011"/>
-                <map value="3.3.2 nameData"/>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.2 nameData"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
@@ -182,8 +184,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
             </binding>
             <mapping>
-                <identity value="eCH-0011"/>
-                <map value="3.3.3 sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"/>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.3 sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
@@ -202,12 +204,38 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             </type>
             <isSummary value="true"/>
             <mapping>
-                <identity value="eCH-0011"/>
-                <map value="3.3.3 birthData, BFS-31"/>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.3 birthData, BFS-31"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:recordTarget (1..1 R) / hl7:patientRole (1..1 R) / hl7:patient (1..1 R) / hl7:birthTime (1..1 R)"/>
+            </mapping>
+        </element>
+        <element id="Patient.deceased[x]">
+            <path value="Patient.deceased[x]"/>
+            <short value="Indicates if the individual is deceased or not"/>
+            <definition value="Indicates if the individual is deceased or not."/>
+            <comment value="If there&#39;s no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive."/>
+            <requirements value="The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="boolean"/>
+            </type>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <isModifier value="true"/>
+            <isModifierReason value="This element is labeled as a modifier because once a patient is marked as deceased, the actions that are appropriate to perform on the patient may be significantly different."/>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.7 deathData, deathPeriod, dateFrom, BFS-361"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="Not supported by CDA-CH V2. Can be specified as observation in the CDA body. See Reporting Death Information from the EHR to Vital Records HL7 Public Health and Emergency Response WG; Structured Documents Work Group; HL7 Draft Standard for Trial Use; 2012"/>
             </mapping>
         </element>
         <element id="Patient.maritalStatus">
@@ -238,14 +266,175 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <description value="The domestic partnership status of a person."/>
                 <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ch-core-maritalstatus"/>
             </binding>
-           <mapping>
-                <identity value="eCH-0011"/>
-                <map value="3.3.5 maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.5 maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:maritalStatusCode (0..1)"/>
             </mapping>
+        </element>
+        <element id="Patient.contact">
+            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+                <valueString value="Contact"/>
+            </extension>
+            <path value="Patient.contact"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="relationship"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Patient.contact:contact">
+            <path value="Patient.contact"/>
+            <sliceName value="contact"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.8 contactData, BFS-61"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="Not supported by CDA-CH V2."/>
+            </mapping>
+        </element>
+        <element id="Patient.contact.relationship:contact">
+            <path value="Patient.contact.relationship"/>
+            <short value="The kind of relationship"/>
+            <definition value="The nature of the relationship between the patient and the contact person."/>
+            <requirements value="Used to determine which contact person is the most relevant to approach, depending on circumstances."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11" />
+                    <code value="contactData" />
+                </coding>
+            </fixedCodeableConcept>
+            <mapping>
+                <identity value="rim"/>
+                <map value="code"/>
+            </mapping>
+            <mapping>
+                <identity value="cda"/>
+                <map value="n/a"/>
+            </mapping>
+        </element>
+        <element id="Patient.contact.name:contact">
+            <path value="Patient.contact.name"/>
+            <short value="A name associated with the contact person"/>
+            <definition value="A name associated with the contact person."/>
+            <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="HumanName"/>
+            </type>
+            <mapping>
+                <identity value="v2"/>
+                <map value="NK1-2"/>
+            </mapping>
+            <mapping>
+                <identity value="rim"/>
+                <map value="name"/>
+            </mapping>
+            <mapping>
+                <identity value="cda"/>
+                <map value="n/a"/>
+            </mapping>
+        </element>
+        <element id="Patient.contact.telecom:contact">
+            <path value="Patient.contact.telecom"/>
+            <short value="A contact detail for the person"/>
+            <definition value="A contact detail for the person, e.g. a telephone number or an email address."/>
+            <comment value="Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification."/>
+            <requirements value="People have (primary) ways to contact them in some way such as phone, email."/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
+        <element id="Patient.contact:nameOfFather">
+            <path value="Patient.contact"/>
+            <sliceName value="nameOfFather"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0021: 4.1.4.1 nameOfFather"/>
+            </mapping>
+        </element>
+        <element id="Patient.contact.relationship:nameOfFather">
+            <path value="Patient.contact.relationship"/>
+            <short value="The kind of relationship"/>
+            <definition value="The nature of the relationship between the patient and the contact person."/>
+            <requirements value="Used to determine which contact person is the most relevant to approach, depending on circumstances."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+                    <code value="FTH" />
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Patient.contact.name:nameOfFather">
+            <path value="Patient.contact.name"/>
+            <short value="A name associated with the contact person"/>
+            <definition value="A name associated with the contact person."/>
+            <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="HumanName"/>
+            </type>
+        </element>
+        <element id="Patient.contact:nameOfMother">
+            <path value="Patient.contact"/>
+            <sliceName value="nameOfMother"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0021: 4.1.4.2 nameOfMother"/>
+            </mapping>
+        </element>
+        <element id="Patient.contact.relationship:nameOfMother">
+            <path value="Patient.contact.relationship"/>
+            <short value="The kind of relationship"/>
+            <definition value="The nature of the relationship between the patient and the contact person."/>
+            <requirements value="Used to determine which contact person is the most relevant to approach, depending on circumstances."/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
+                    <code value="MTH" />
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Patient.contact.name:nameOfMother">
+            <path value="Patient.contact.name"/>
+            <short value="A name associated with the contact person"/>
+            <definition value="A name associated with the contact person."/>
+            <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="HumanName"/>
+            </type>
         </element>
 
         <!-- one possibility
