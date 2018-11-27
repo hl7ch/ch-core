@@ -76,6 +76,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/ech-10"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-11-maritalstatus"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -112,6 +118,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-address-ech-10"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-address-ech-11-placeoforigin"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -119,12 +131,6 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-address-ech-11-placeofbirth"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -148,6 +154,18 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-10-line"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-ext-ech-11-firstname"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -155,6 +173,18 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-ext-ech-11-name"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ch-core-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-10-line"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -179,12 +209,6 @@
     <resource>
       <reference>
         <reference value="ValueSet/ech-11-sex"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ch-core-maritalstatus"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

@@ -258,6 +258,40 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <map value="Not supported by CDA-CH V2. Can be specified as observation in the CDA body. See Reporting Death Information from the EHR to Vital Records HL7 Public Health and Emergency Response WG; Structured Documents Work Group; HL7 Draft Standard for Trial Use; 2012"/>
             </mapping>
         </element>
+        <element id="Patient.address">
+            <path value="Patient.address"/>
+            <short value="An address for the individual"/>
+            <definition value="An address for the individual."/>
+            <comment value="Patient may have multiple addresses with different uses or applicable periods."/>
+            <requirements value="May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Address"/>
+            </type>
+        </element>
+        <element id="Patient.address.extension">
+            <path value="Patient.address.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="Patient.address.extension:post-address-ech10">
+            <path value="Patient.address.extension" />
+            <sliceName value="post-address-ech10" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-10" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: postal address" />
+            </mapping>
+        </element>
         <element id="Patient.maritalStatus">
             <path value="Patient.maritalStatus"/>
             <short value="Marital (civil) status of a patient"/>
@@ -388,6 +422,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <requirements value="Need to keep track where the contact person can be contacted per postal mail or visited."/>
             <min value="1"/>
             <max value="1"/>
+            <type>
+                <code value="Address"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-10" />
+            </type>
         </element>
         <element id="Patient.contact:nameOfFather">
             <path value="Patient.contact"/>

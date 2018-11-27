@@ -1,0 +1,42 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ech-10-line"/>
+    <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-10-line"/>
+    <version value="0.1.0"/>
+    <name value="ECH10AddressLine"/>
+    <title value="eCH-010 Address Line"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2018-11-27"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="eCH-010 defines different address lines" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-10"/>
+            <concept>
+                <code value="addressLine1"/>
+            </concept>
+            <concept>
+                <code value="addressLine2"/>
+            </concept>
+            <concept>
+                <code value="street"/>
+            </concept>
+            <concept>
+                <code value="postOfficeBox"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

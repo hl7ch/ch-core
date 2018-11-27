@@ -24,9 +24,9 @@
     </jurisdiction>
     <fhirVersion value="3.6.0" />
     <mapping>
-        <identity value="eCH-0011"/>
-        <uri value="http://www.ech.ch/standards/39485"/>
-        <name value="eCH-0011 Datenstandard Personendaten"/>
+        <identity value="eCH"/>
+        <uri value="http://www.ech.ch/"/>
+        <name value="eCH-Standards"/>
     </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
@@ -67,6 +67,23 @@
                 <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()=given.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()"/>
             </constraint>
         </element>
+        <element id="HumanName.family">
+            <path value="HumanName.family"/>
+            <short value="Family name (often called &#39;Surname&#39;)"/>
+            <definition value="The part of a name that links to the genealogy. In some cultures (e.g. Eritrea) the family name of a son is the first name of his father."/>
+            <comment value="Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures)."/>
+            <alias value="surname"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: lastName" />
+            </mapping>
+        </element>
         <element id="HumanName.family.extension">
             <path value="HumanName.family.extension" />
             <slicing>
@@ -76,10 +93,6 @@
                 </discriminator>
                 <rules value="open" />
             </slicing>
-            <mapping>
-                <identity value="eCH-0011"/>
-                <map value="officialName, originalName, allianceName, nameOnForeignPassport, aliasName, otherName, declaredForeignName" />
-            </mapping>
         </element>
         <element id="HumanName.family.extension:echname">
             <path value="HumanName.family.extension" />
@@ -89,6 +102,29 @@
                 <code value="Extension" />
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name" />
             </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: officialName, originalName, allianceName, nameOnForeignPassport, aliasName, otherName, declaredForeignName" />
+            </mapping>
+        </element>
+        <element id="HumanName.given">
+            <path value="HumanName.given"/>
+            <short value="Given names (not always &#39;first&#39;). Includes middle names"/>
+            <definition value="Given name."/>
+            <comment value="If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren&#39;t due to paractical limitations.  This element is not called &quot;first name&quot; since given names do not always come first."/>
+            <alias value="first name"/>
+            <alias value="middle name"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <orderMeaning value="Given Names appear in the correct order for presenting the name"/>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: firstName equivalent to callName of eCH-0011" />
+            </mapping>
         </element>
         <element id="HumanName.given.extension">
             <path value="HumanName.given.extension" />
@@ -108,6 +144,26 @@
                 <code value="Extension" />
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname" />
             </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: officalFirstName, callName, allianceName, firstNameOnForeignPassport, declaredForeignFirstName1" />
+            </mapping>
+        </element>
+        <element id="HumanName.prefix">
+            <path value="HumanName.prefix"/>
+            <short value="Parts that come before the name"/>
+            <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <orderMeaning value="Prefixes appear in the correct order for presenting the name"/>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: mrMrs, title" />
+            </mapping>
         </element>
     </differential>
 </StructureDefinition>

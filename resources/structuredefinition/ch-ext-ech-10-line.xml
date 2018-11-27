@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-ext-ech-10-line"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line"/>
+    <version value="0.1.0"/>
+    <name value="ECH011FirstName"/>
+    <title value="FirstName"/>
+    <status value="draft"/>
+    <date value="2018-11-27"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="eCH-0010: Extension to define adress lines"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="3.6.0" />
+   <mapping>
+        <identity value="eCH"/>
+        <uri value="https://www.ech.ch/"/>
+        <name value="eCH-0010 Datenstandard Postadresse"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Address.line"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Extension"/>
+            <definition value="eCH-0010: Extension to define adress lines"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line"/>
+        </element>
+        <element id="Extension.valueCode">
+            <path value="Extension.valueCode"/>
+            <short value="Value of extension"/>
+            <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see
+       Extensibility in the spec for list)."/>
+            <min value="0"/>
+            <max value="1"/>
+            <base>
+                <path value="Extension.value[x]"/>
+                <min value="0"/>
+                <max value="1"/>
+            </base>
+            <type>
+                <code value="code"/>
+            </type>
+            <isModifier value="false"/>
+            <isSummary value="false"/>
+            <binding>
+                <strength value="required"/>
+                <description value="A set of codes advising a system or user which name in a set of names to select for a
+         given purpose."/>
+                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-10-line"/>
+            </binding>
+        </element>
+    </differential>
+</StructureDefinition> 

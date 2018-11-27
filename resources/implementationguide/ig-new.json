@@ -77,6 +77,12 @@
     },
     {
       "reference" : {
+        "reference" : "CodeSystem/ech-10"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "CodeSystem/ech-11-maritalstatus"
       },
       "exampleBoolean" : false
@@ -113,6 +119,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-core-address-ech-10"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-address-ech-11-placeoforigin"
       },
       "exampleBoolean" : false
@@ -120,12 +132,6 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/ch-core-address-ech-11-placeofbirth"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "StructureDefinition/ch-ext-ech-11-bfsnumber"
       },
       "exampleBoolean" : false
     },
@@ -149,6 +155,18 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-ext-ech-11-bfsnumber"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-ext-ech-10-line"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-ext-ech-11-firstname"
       },
       "exampleBoolean" : false
@@ -156,6 +174,18 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/ch-ext-ech-11-name"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ch-core-maritalstatus"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ech-10-line"
       },
       "exampleBoolean" : false
     },
@@ -180,12 +210,6 @@
     {
       "reference" : {
         "reference" : "ValueSet/ech-11-sex"
-      },
-      "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "ValueSet/ch-core-maritalstatus"
       },
       "exampleBoolean" : false
     },
