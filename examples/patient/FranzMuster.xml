@@ -26,8 +26,25 @@
                 <b>Zivilstand</b>: in eingetragener Partnerschaft</p>
             <p>
                 <b>Korrrespondenzsprache</b>: deutsch</p>
+            <p>
+                <b>Heimatort</b>: Köniz, BE</p>
+            <p>
+                <b>Geburstort</b>: Paris, Franreich</p>
+
         </div>
     </text>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth">
+        <valueAddress>
+            <city value="Paris" />
+            <country value="Frankreich" />
+        </valueAddress>
+    </extension>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin">
+        <valueAddress>
+            <city value="Köniz" />
+            <state value="BE" />
+        </valueAddress>
+    </extension>
     <identifier>
         <system value="urn:oid:2.16.756.5.30.999999.1"/>
         <value value="012/08.111111"/>

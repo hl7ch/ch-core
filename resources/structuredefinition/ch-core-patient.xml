@@ -34,7 +34,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
     <mapping>
         <identity value="eCH"/>
         <uri value="http://www.ech.ch/"/>
-        <name value="eCH-Standardsx"/>
+        <name value="eCH-Standards"/>
     </mapping>
     <mapping>
         <identity value="EPR"/>
@@ -79,6 +79,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.extension:birthPlace">
             <path value="Patient.extension" />
             <sliceName value="birthPlace" />
+            <min value="0"/>
+            <max value="1"/>
             <type>
                 <code value="Extension" />
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth" />
@@ -90,6 +92,24 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:birthplace (0..1)"/>
+            </mapping>
+        </element>
+        <element id="Patient.extension:placeOfOrigin">
+            <path value="Patient.extension" />
+            <sliceName value="placeOfOrigin" />
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.10 placeOfOrigin, BFS-42" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="Not supported by CDA-CH V2. Can be specified as observation in the CDA body. See also citizenship/nationality."/>
             </mapping>
         </element>
         <element id="Patient.extension:citizenship">
@@ -446,7 +466,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <type>
                 <code value="HumanName"/>
             </type>
-        </element>       
+        </element>
         <element id="Patient.communication">
             <path value="Patient.communication"/>
             <slicing>

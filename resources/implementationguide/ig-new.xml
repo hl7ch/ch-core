@@ -112,6 +112,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-address-ech-11-placeoforigin"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-address-ech-11-placeofbirth"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -125,6 +131,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-patient-ech-11-placeofbirth"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-patient-ech-11-placeoforigin"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
