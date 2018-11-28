@@ -113,6 +113,12 @@
     },
     {
       "reference" : {
+        "reference" : "NamingSystem/epr-spid"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-patient"
       },
       "exampleBoolean" : false

@@ -28,6 +28,11 @@
         <uri value="https://www.ech.ch/" />
         <name value="eCH Standards"/>
     </mapping>
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="https://www.hl7.ch/default/assets/File/Publikationen/180612_CDA-CH_de.pdf"/>
+        <name value="CDA-CH 2017 V2"/>
+    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Address"/>
@@ -44,6 +49,10 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.5 addressInformation"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="https://art-decor.org/art-decor/decor-templates--hl7chcda-?section=templates&amp;id=2.16.756.5.30.1.1.10.9.35"/>
             </mapping>
         </element>
         <element id="Address.type">
@@ -90,6 +99,10 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.12 addressLine1 and addressLine2, 5.13 street, 5.16 postOfficeBox, 5.17 postOfficeBoxText" />
             </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:streetAddressLine (0..1)"/>
+            </mapping>
         </element>
         <element id="Address.line.extension:houseNumber">
             <path value="Address.line.extension" />
@@ -102,6 +115,10 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.14 houseNumber" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:houseNumber (0..1)"/>
             </mapping>
         </element>
         <element id="Address.line.extension:unitID">
@@ -116,6 +133,10 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.15 dwellingNumber" />
             </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:additionalLocator (0..1)"/>
+            </mapping>
         </element>
         <element id="Address.line.extension:postBox">
             <path value="Address.line.extension" />
@@ -128,6 +149,10 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.16 postOfficeBox" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:postBox (0..1 C)"/>
             </mapping>
         </element>
         <element id="Address.city">
@@ -142,6 +167,10 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.23 town"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:city (1..1 R)"/>
             </mapping>
         </element>
         <element id="Address.district">
@@ -171,6 +200,10 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.22 locality"/>
             </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:state (0..1)"/>
+            </mapping>
         </element>
         <element id="Address.postalCode">
             <path value="Address.postalCode"/>
@@ -186,6 +219,10 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.18 swissZipCode, 5.19 swissZipCodeAddOn, 5.20 swissZipCodeId, 5.21 foreignZipCode"/>
             </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:postalCode (1..1 R)"/>
+            </mapping>
         </element>
         <element id="Address.country">
             <path value="Address.country"/>
@@ -197,6 +234,10 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.24 country"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:country (1..1 R)"/>
             </mapping>
         </element>
         <element id="Address.period">

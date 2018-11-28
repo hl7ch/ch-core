@@ -1,0 +1,99 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "validate ressource with ig",
+            "command": "java",
+            "args": [
+                "-jar",
+                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${file}",
+                "-ig",
+                "${workspaceRoot}/resources/ValueSet/",
+                "-ig",
+                "${workspaceRoot}/resources/CodeSystem/",
+                "-ig",
+                "${workspaceRoot}/resources/StructureDefinition/"
+            ],
+            "problemMatcher": {
+                "owner": "fhirvalidator",
+                "fileLocation": [
+                    "absolute"
+                ],
+                "pattern": [
+                    {
+                        "regexp": "^.*validating\\s*([^:]*)",
+                        "file": 1
+                    },
+                    {
+                        "regexp": "^.\\s*([^\\s]*).*@\\s*([^\\s]*).*\\(line\\s*(\\d+),.*col(\\d+)[^:]*:\\s(.*)",
+                        "line": 3,
+                        "column": 4,
+                        "severity": 1,
+                        "message": 5,
+                        "code": 2,
+                        "loop": true
+                    }
+                ]
+            }
+        },
+        {
+            "label": "validate ressource without terminology server",
+            "command": "java",
+            "args": [
+                "-jar",
+                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${file}",
+                "-tx",
+                "n/a"
+            ],
+            "problemMatcher": {
+                "owner": "fhirvalidator",
+                "fileLocation": [
+                    "absolute"
+                ],
+                "pattern": [
+                    {
+                        "regexp": "^.*validating\\s*([^:]*)",
+                        "file": 1
+                    },
+                    {
+                        "regexp": "^.\\s*([^\\s]*).*@\\s*([^\\s]*).*\\(line\\s*(\\d+),.*col(\\d+)[^:]*:\\s(.*)",
+                        "line": 3,
+                        "column": 4,
+                        "severity": 1,
+                        "message": 5,
+                        "code": 2,
+                        "loop": true
+                    }
+                ]
+            }
+        },
+        {
+            "label": "generate narrative",
+            "command": "java",
+            "args": [
+                "-jar",
+                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${file}",
+                "-narrative",
+                "-output",
+                "${file}",
+            ]
+        },
+        {
+            "label": "publish ig",
+            "command": "java",
+            "args": [
+                "-jar",
+                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.igpublisher.jar",
+                "-web",
+                "-ig",
+                "${workspaceRoot}/ig.json"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
