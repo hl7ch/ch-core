@@ -1,75 +1,96 @@
-<Patient xmlns="http://hl7.org/fhir">
-    <id value="FranzMuster"/>
-    <meta>
-        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>
-                <b>Generated Narrative with Details</b>
-            </p>
-            <p>
-                <b>id</b>: FranzMuster</p>
-            <p>
-                <b>meta</b>: 
-            </p>
-            <p>
-                <b>identifier</b>: 012/08.111111</p>
-            <p>
-                <b>name</b>: Franz Muster </p>
-            <p>
-                <b>gender</b>: male</p>
-            <p>
-                <b>birthDate</b>: Jan 27, 1995</p>
-            <p>
-                <b>Zivilstand</b>: in eingetragener Partnerschaft</p>
-            <p>
-                <b>Korrrespondenzsprache</b>: deutsch</p>
-            <p>
-                <b>Heimatort</b>: Köniz, BE</p>
-            <p>
-                <b>Geburstort</b>: Paris, Frankreich</p>
+<?xml version="1.0" encoding="UTF-8"?>
 
-        </div>
-    </text>
-    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth">
-        <valueAddress>
-            <city value="Paris" />
-            <country value="Frankreich" />
-        </valueAddress>
-    </extension>
-    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin">
-        <valueAddress>
-            <city value="Köniz" />
-            <state value="BE" />
-        </valueAddress>
-    </extension>
-    <identifier>
-        <system value="urn:oid:2.16.756.5.30.999999.1"/>
-        <value value="012/08.111111"/>
-    </identifier>
-    <name>
-        <family value="Muster"/>
-        <given value="Franz"/>
-    </name>
-    <gender value="male"/>
-    <birthDate value="1995-01-27"/>
-    <maritalStatus>
-        <coding>
-            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"/>
-            <code value="6"/>
-            <display value="in eingetragener Partnerschaft"/>
-        </coding>
-    </maritalStatus>
-    <communication>
-        <language>
-            <coding>
-                <system value="urn:ietf:bcp:47"/>
-                <code value="de-CH"/>
-            </coding>
-            <text value="Deutsch (Schweiz)"/>
-        </language>
-        <preferred value="true" />
-    </communication>
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="FranzMuster"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>id</b>: FranzMuster
+      </p>
+      <p>
+        <b>meta</b>: 
+      </p>
+      <p>
+        <b>identifier</b>: 012/08.111111
+      </p>
+      <p>
+        <b>name</b>: Franz Muster 
+      </p>
+      <p>
+        <b>gender</b>: MALE
+      </p>
+      <p>
+        <b>birthDate</b>: Jan 27, 1995
+      </p>
+      <p>
+        <b>maritalStatus</b>: in eingetragener Partnerschaft 
+        <span style="background: LightGoldenRodYellow">(Details : {http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus code &#39;6&#39; = &#39;6&#39;, given as &#39;in eingetragener Partnerschaft&#39;})</span>
+      </p>
+      <h3>Communications</h3>
+      <table class="grid">
+        <tr>
+          <td>-</td>
+          <td>
+            <b>Language</b>
+          </td>
+          <td>
+            <b>Preferred</b>
+          </td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Deutsch (Schweiz) 
+            <span style="background: LightGoldenRodYellow">(Details : {urn:ietf:bcp:47 code &#39;de-CH&#39; = &#39;German (Region=Switzerland))</span>
+          </td>
+          <td>true</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth">
+    <valueAddress>
+      <city value="Paris"/>
+      <country value="Frankreich"/>
+    </valueAddress>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin">
+    <valueAddress>
+      <city value="K&#xF6;niz"/>
+      <state value="BE"/>
+    </valueAddress>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.756.5.30.999999.1"/>
+    <value value="012/08.111111"/>
+  </identifier>
+  <name>
+    <family value="Muster"/>
+    <given value="Franz"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1995-01-27"/>
+  <maritalStatus>
+    <coding>
+      <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"/>
+      <code value="6"/>
+      <display value="in eingetragener Partnerschaft"/>
+    </coding>
+  </maritalStatus>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="de-CH"/>
+      </coding>
+      <text value="Deutsch (Schweiz)"/>
+    </language>
+    <preferred value="true"/>
+  </communication>
 </Patient>

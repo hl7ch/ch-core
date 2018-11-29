@@ -3,7 +3,7 @@
   "id" : "CH-Core",
   "text" : {
     "status" : "additional",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\tImplementationGuide for CH.Core                         \n        </div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\tImplementationGuide for CH.Core                         \n        \n      <hr/>\n      <h2>CH_Core</h2>\n      <p>The official URL for this implementation guide is: </p>\n      <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>\n    </div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
@@ -61,19 +61,19 @@
       "reference" : {
         "reference" : "Patient/FranzMuster"
       },
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"
     },
     {
       "reference" : {
         "reference" : "Patient/PersonEch011"
       },
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"
     },
     {
       "reference" : {
         "reference" : "Patient/UpiEprTestKrcmarevic"
       },
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"
     },
     {
       "reference" : {
@@ -108,6 +108,12 @@
     {
       "reference" : {
         "reference" : "ConceptMap/sex-ech11-to-fhir"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "NamingSystem/ahvn13-navs13"
       },
       "exampleBoolean" : false
     },
@@ -218,42 +224,6 @@
         "reference" : "ValueSet/ech-11-sex"
       },
       "exampleBoolean" : false
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/NoName"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/OnlyFamilyName"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/OnlyGivenName"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/Ech011Wrong"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/UnknownGender"
-      },
-      "exampleBoolean" : true
-    },
-    {
-      "reference" : {
-        "reference" : "Patient/WrongMaritalStatus"
-      },
-      "exampleBoolean" : true
     }],
     "page" : {
       "nameUrl" : "index.html",

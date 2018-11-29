@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NamingSystem xmlns="http://hl7.org/fhir">
-  <id value="epr-spid"/>
+  <id value="ahvn13-navs13"/>
   <text>
     <status value="generated"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -8,7 +8,7 @@
         <b>Generated Narrative with Details</b>
       </p>
       <p>
-        <b>name</b>: EPR_SPID
+        <b>name</b>: AHVN13_NAVS13
       </p>
       <p>
         <b>status</b>: ACTIVE
@@ -17,23 +17,23 @@
         <b>kind</b>: IDENTIFIER
       </p>
       <p>
-        <b>date</b>: Nov 28, 2018
+        <b>date</b>: Nov 27, 2018
       </p>
       <p>
-        <b>publisher</b>: HL7 Switzerland on behalf of eHealthSuisse
+        <b>publisher</b>: HL7 Switzerland on behalf of Central Compensation Office CCO (CCO)
       </p>
       <p>
         <b>contact</b>: 
       </p>
       <p>
-        <b>responsible</b>: Ministry of Health / Switzerland
+        <b>responsible</b>: The Federal Department of Finance (FDF) / Central Compensation Office CCO
       </p>
       <p>
         <b>type</b>: IHI 
         <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0203 code &#39;NI&#39; = &#39;National unique individual identifier&#39;, given as &#39;National unique individual identifier&#39;})</span>
       </p>
       <p>
-        <b>description</b>: The patient identification number (EPR-SPID) is a randomly generated number as an identification characteristic of the Patients for the EPR. The EPR-SPID is managed by the ZAS and stores the identification database (UPI database). The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries.
+        <b>description</b>: The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the [Central Compensation Office](https://www.zas.admin.ch/zas/de/home/partenaires-et-institutions-/navs13.html). It is available to all organisations and communities for which there is a legal basis.
       </p>
       <p>
         <b>jurisdiction</b>: Switzerland 
@@ -56,17 +56,17 @@
         <tr>
           <td>*</td>
           <td>OID</td>
-          <td>2.16.756.5.30.1.127.3.10.3</td>
+          <td>2.16.756.5.32</td>
           <td>This is the official identifier</td>
         </tr>
       </table>
     </div>
   </text>
-  <name value="EPR_SPID"/>
+  <name value="AHVN13_NAVS13"/>
   <status value="active"/>
   <kind value="identifier"/>
-  <date value="2018-11-28"/>
-  <publisher value="HL7 Switzerland on behalf of eHealthSuisse"/>
+  <date value="2018-11-27"/>
+  <publisher value="HL7 Switzerland on behalf of Central Compensation Office CCO (CCO)"/>
   <contact>
     <name value="HL7 Switzerland"/>
     <telecom>
@@ -74,7 +74,7 @@
       <value value="https://www.hl7.ch/"/>
     </telecom>
   </contact>
-  <responsible value="Ministry of Health / Switzerland"/>
+  <responsible value="The Federal Department of Finance (FDF) / Central Compensation Office CCO"/>
   <type>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
@@ -83,7 +83,7 @@
     </coding>
     <text value="IHI"/>
   </type>
-  <description value="The patient identification number (EPR-SPID) is a randomly generated number as an identification characteristic of the Patients for the EPR. The EPR-SPID is managed by the ZAS and stores the identification database (UPI database). The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries."/>
+  <description value="The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the [Central Compensation Office](https://www.zas.admin.ch/zas/de/home/partenaires-et-institutions-/navs13.html). It is available to all organisations and communities for which there is a legal basis."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -92,7 +92,7 @@
   </jurisdiction>
   <uniqueId>
     <type value="oid"/>
-    <value value="2.16.756.5.30.1.127.3.10.3"/>
+    <value value="2.16.756.5.32"/>
     <comment value="This is the official identifier"/>
   </uniqueId>
 </NamingSystem>

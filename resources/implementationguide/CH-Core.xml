@@ -1,267 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-    <id value="CH-Core"/>
-    <text>
-        <status value="additional"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">
+  <id value="CH-Core"/>
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
 	ImplementationGuide for CH.Core                         
-        </div>
-    </text>
-    <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core"/>
-    <version value="0.1.0"/>
-    <name value="CH_Core"/>
-    <status value="active"/>
-    <experimental value="false"/>
-    <date value="2018-10-15"/>
-    <publisher value="HL7 Switzerland"/>
-    <contact>
-        <name value="HL7 Switzerland"/>
-        <telecom>
-            <system value="url"/>
-            <value value="https://www.hl7.ch/"/>
-        </telecom>
-    </contact>
-    <contact>
-        <name value="Oliver Egger"/>
-        <telecom>
-            <system value="email"/>
-            <value value="oliver.egger@ahdis.ch"/>
-        </telecom>
-    </contact>
-    <jurisdiction>
-        <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CH"/>
-        </coding>
-    </jurisdiction>
-    <copyright value="CC-BY-SA-4.0"/>
-    <packageId value="ch.fhir.ig.core"/>
-    <license value="CC-BY-SA-4.0"/>
-    <fhirVersion value="3.6.0"/>
-    <definition>
-        <grouping>
-            <name value="CH:Core"/>
-        </grouping>
-
-        <!-- Examples -->
-        <resource>
-            <reference>
-                <reference value="Patient/FranzMuster"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/PersonEch011"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/UpiEprTestKrcmarevic"/>
-            </reference>
-            <exampleBoolean value="true"/>
-            <!--            <exampleCanonical value="StructureDefinition/ch-core-patient"/> -->
-        </resource>
-
-        <!-- Conformance ressources -->
-        <resource>
-            <reference>
-                <reference value="CodeSystem/ech-10"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/ech-11-maritalstatus"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/ech-11"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="CodeSystem/ech-11-sex"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ConceptMap/maritalstatus-ech11-to-fhir"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ConceptMap/sex-ech11-to-fhir"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="NamingSystem/epr-spid"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-core-patient"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-core-address-ech-10"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-core-address-ech-11-placeoforigin"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-core-address-ech-11-placeofbirth"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-core-patient-ech-11-placeofbirth"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-core-patient-ech-11-placeoforigin"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-core-humanname"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-ext-ech-10-line"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-ext-ech-11-firstname"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="StructureDefinition/ch-ext-ech-11-name"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ch-core-maritalstatus"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ech-10-line"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ech-11-firstnamedatatype"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ech-11-namedatatype"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ech-11-maritalstatus"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="ValueSet/ech-11-sex"/>
-            </reference>
-            <exampleBoolean value="false"/>
-        </resource>
-
-        <resource>
-            <reference>
-                <reference value="Patient/NoName"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/OnlyFamilyName"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/OnlyGivenName"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/Ech011Wrong"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/UnknownGender"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="Patient/WrongMaritalStatus"/>
-            </reference>
-            <exampleBoolean value="true"/>
-        </resource>
-        <page>
-            <nameUrl value="index.html"/>
-            <title value="IG Templage Homepage"/>
-            <generation value="html"/>
-        </page>
-        <parameter>
-            <code value="generate-json"/>
-            <value value="true"/>
-        </parameter>
-        <parameter>
-            <code value="generate-xml"/>
-            <value value="true"/>
-        </parameter>
-        <parameter>
-            <code value="generate-turtle"/>
-            <value value="false"/>
-        </parameter>
-    </definition>
+        
+      <hr/>
+      <h2>CH_Core</h2>
+      <p>The official URL for this implementation guide is: </p>
+      <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>
+    </div>
+  </text>
+  <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core"/>
+  <version value="0.1.0"/>
+  <name value="CH_Core"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2018-10-15"/>
+  <publisher value="HL7 Switzerland"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Oliver Egger"/>
+    <telecom>
+      <system value="email"/>
+      <value value="oliver.egger@ahdis.ch"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <packageId value="ch.fhir.ig.core"/>
+  <license value="CC-BY-SA-4.0"/>
+  <fhirVersion value="3.6.0"/>
+  <definition>
+    <grouping>
+      <name value="CH:Core"/>
+    </grouping>
+    <resource>
+      <reference>
+        <reference value="Patient/FranzMuster"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/PersonEch011"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/UpiEprTestKrcmarevic"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-10"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-11-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-11"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-11-sex"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/maritalstatus-ech11-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/sex-ech11-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/ahvn13-navs13"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/epr-spid"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-patient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-address-ech-10"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-address-ech-11-placeoforigin"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-address-ech-11-placeofbirth"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-patient-ech-11-placeofbirth"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-patient-ech-11-placeoforigin"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-humanname"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-10-line"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-firstname"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-name"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ch-core-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-10-line"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-firstnamedatatype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-namedatatype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-sex"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="index.html"/>
+      <title value="IG Templage Homepage"/>
+      <generation value="html"/>
+    </page>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="false"/>
+    </parameter>
+  </definition>
 </ImplementationGuide>

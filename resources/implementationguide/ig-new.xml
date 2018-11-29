@@ -6,7 +6,17 @@
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
 	ImplementationGuide for CH.Core                         
-        </div>
+        
+      
+      <hr/>
+      
+      <h2>CH_Core</h2>
+      
+      <p>The official URL for this implementation guide is: </p>
+      
+      <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>
+    
+    </div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
     <valueString value="/Users/oliveregger/Documents/github/ch-core/resources"/>
@@ -60,19 +70,19 @@
       <reference>
         <reference value="Patient/FranzMuster"/>
       </reference>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/PersonEch011"/>
       </reference>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/UpiEprTestKrcmarevic"/>
       </reference>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
@@ -107,6 +117,12 @@
     <resource>
       <reference>
         <reference value="ConceptMap/sex-ech11-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/ahvn13-navs13"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -217,42 +233,6 @@
         <reference value="ValueSet/ech-11-sex"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/NoName"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/OnlyFamilyName"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/OnlyGivenName"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/Ech011Wrong"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/UnknownGender"/>
-      </reference>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Patient/WrongMaritalStatus"/>
-      </reference>
-      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="index.html"/>

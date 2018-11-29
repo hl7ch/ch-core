@@ -80,8 +80,9 @@
                 "${file}",
                 "-narrative",
                 "-output",
-                "${file}",
-            ]
+                "${file}"
+            ],
+            "problemMatcher": []
         },
         {
             "label": "publish ig",

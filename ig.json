@@ -23,6 +23,7 @@
       }
     },
     "template": "https://github.com/ahdis/test-template",
+    "devtemplate": "/Users/oliveregger/Documents/github/test-template",
     "canonicalBase": "http://fhir.ch/ig/ch-core",
     "source": "implementationguide/CH-Core.xml",
     "sct-edition": "http://snomed.info/sct/900000000000207008",
