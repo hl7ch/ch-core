@@ -62,9 +62,23 @@
   </extension>
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin">
     <valueAddress>
-      <city value="K&#xF6;niz"/>
+      <city value="Köniz"/>
       <state value="BE"/>
     </valueAddress>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-religion">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-religion"/>
+        <code value="111"/>
+        <display value="evangelisch-reformierte (protestantische) Kirche"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation/"/>
+        <code value="1077"/>
+        <display value="Protestant"/>
+      </coding>
+    </valueCodeableConcept>
   </extension>
   <identifier>
     <system value="urn:oid:2.16.756.5.30.999999.1"/>

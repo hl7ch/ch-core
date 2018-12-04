@@ -128,16 +128,24 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <map value="Not supported by CDA-CH V2. Can be specified as a social history observation in the CDA body. See CDA-CH-SMCP for possible implementation: https://art-decor.org/art-decor/decor-templates--cdachsmcp-"/>
             </mapping>
         </element>
-        <!-- needed, feedback from meeting
         <element id="Patient.extension:religion">
             <path value="Patient.extension" />
             <sliceName value="religion" />
+            <min value="0"/>
+            <max value="*"/>
             <type>
                 <code value="Extension" />
-                <profile value="http://hl7.org/fhir/StructureDefinition/patient-religion" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-religion" />
             </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.4.1 religion, BFS-711" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:religiousAffiliationCode (0..1)"/>
+            </mapping>
         </element>
-        -->
         <element id="Patient.name">
             <path value="Patient.name"/>
             <short value="A name associated with the patient"/>

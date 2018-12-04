@@ -15,13 +15,6 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <contact>
-        <name value="Oliver Egger"/>
-        <telecom>
-            <system value="email"/>
-            <value value="oliver.egger@ahdis.ch"/>
-        </telecom>
-    </contact>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -30,7 +23,7 @@
     </jurisdiction>
     <copyright value="CC-BY-SA-4.0"/>
     <sourceUri value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-sex"/>
-    <targetUri value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+    <targetUri value="http://terminology.hl7.org/ValueSet/administrative-gender"/>
     <group>
         <source value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-sex"/>
         <target value="http://hl7.org/fhir/ValueSet/administrative-gender"/>

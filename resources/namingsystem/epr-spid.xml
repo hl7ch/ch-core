@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="epr-spid"/>
   <text>
@@ -33,7 +34,7 @@
         <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0203 code &#39;NI&#39; = &#39;National unique individual identifier&#39;, given as &#39;National unique individual identifier&#39;})</span>
       </p>
       <p>
-        <b>description</b>: The patient identification number (EPR-SPID) is a randomly generated number as an identification characteristic of the Patients for the EPR. The EPR-SPID is managed by the ZAS and stores the identification database (UPI database). The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries.
+        <b>description</b>: EPR-SPID: The Central Compensation Office (ZAS; CCO) assigns and manages the new patient identification number according to the EPRA (EPR-SPID), which is only linked internally in the CCO with the AHV number. It maintains the UPI identification database (Unique Personal Identifier Database), which the EPR communities may access. The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries.
       </p>
       <p>
         <b>jurisdiction</b>: Switzerland 
@@ -83,7 +84,7 @@
     </coding>
     <text value="IHI"/>
   </type>
-  <description value="The patient identification number (EPR-SPID) is a randomly generated number as an identification characteristic of the Patients for the EPR. The EPR-SPID is managed by the ZAS and stores the identification database (UPI database). The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries."/>
+  <description value="EPR-SPID: The Central Compensation Office (ZAS; CCO) assigns and manages the new patient identification number according to the EPRA (EPR-SPID), which is only linked internally in the CCO with the AHV number. It maintains the UPI identification database (Unique Personal Identifier Database), which the EPR communities may access. The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -34,13 +34,6 @@
       "system" : "url",
       "value" : "https://www.hl7.ch/"
     }]
-  },
-  {
-    "name" : "Oliver Egger",
-    "telecom" : [{
-      "system" : "email",
-      "value" : "oliver.egger@ahdis.ch"
-    }]
   }],
   "jurisdiction" : [{
     "coding" : [{
@@ -95,6 +88,12 @@
     },
     {
       "reference" : {
+        "reference" : "CodeSystem/ech-11-religion"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "CodeSystem/ech-11-sex"
       },
       "exampleBoolean" : false
@@ -102,6 +101,12 @@
     {
       "reference" : {
         "reference" : "ConceptMap/maritalstatus-ech11-to-fhir"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ConceptMap/religion-ech11-to-fhir"
       },
       "exampleBoolean" : false
     },
@@ -161,6 +166,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-core-patient-religion"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-humanname"
       },
       "exampleBoolean" : false
@@ -197,6 +208,12 @@
     },
     {
       "reference" : {
+        "reference" : "ValueSet/ch-core-religion"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/ech-10-line"
       },
       "exampleBoolean" : false
@@ -216,6 +233,12 @@
     {
       "reference" : {
         "reference" : "ValueSet/ech-11-maritalstatus"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/ech-11-religion"
       },
       "exampleBoolean" : false
     },

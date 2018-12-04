@@ -44,13 +44,6 @@
       <value value="https://www.hl7.ch/"/>
     </telecom>
   </contact>
-  <contact>
-    <name value="Oliver Egger"/>
-    <telecom>
-      <system value="email"/>
-      <value value="oliver.egger@ahdis.ch"/>
-    </telecom>
-  </contact>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -104,6 +97,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/ech-11-religion"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-11-sex"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -111,6 +110,12 @@
     <resource>
       <reference>
         <reference value="ConceptMap/maritalstatus-ech11-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/religion-ech11-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -170,6 +175,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-patient-religion"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-humanname"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -206,6 +217,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/ch-core-religion"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/ech-10-line"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -225,6 +242,12 @@
     <resource>
       <reference>
         <reference value="ValueSet/ech-11-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-religion"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

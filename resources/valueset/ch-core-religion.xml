@@ -1,0 +1,33 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ch-core-religion"/>
+    <url value="http://fhir.ch/ig/ch-core/ValueSet/ch-core-religion"/>
+    <version value="0.1.0"/>
+    <name value="ChCoreReligion"/>
+    <title value="ChCoreReligion"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2018-11-26"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Religion combined by fhir and eCH-11" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <valueSet value="http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation"/>
+        </include>
+        <include>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-religion"/>
+        </include>
+    </compose>
+</ValueSet>
