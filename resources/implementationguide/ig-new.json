@@ -136,6 +136,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-core-humanname"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-address-ech-10"
       },
       "exampleBoolean" : false
@@ -172,7 +178,7 @@
     },
     {
       "reference" : {
-        "reference" : "StructureDefinition/ch-core-humanname"
+        "reference" : "StructureDefinition/ch-core-practitioner"
       },
       "exampleBoolean" : false
     },

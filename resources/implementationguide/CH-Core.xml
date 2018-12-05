@@ -127,6 +127,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-humanname"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-address-ech-10"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -163,7 +169,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-core-humanname"/>
+        <reference value="StructureDefinition/ch-core-practitioner"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
