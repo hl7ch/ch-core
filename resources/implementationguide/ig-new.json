@@ -70,6 +70,12 @@
     },
     {
       "reference" : {
+        "reference" : "Practitioner/AgparMarc"
+      },
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"
+    },
+    {
+      "reference" : {
         "reference" : "CodeSystem/ech-10"
       },
       "exampleBoolean" : false
@@ -125,6 +131,30 @@
     {
       "reference" : {
         "reference" : "NamingSystem/epr-spid"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "NamingSystem/gln"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "NamingSystem/k"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "NamingSystem/nif"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "NamingSystem/zsr"
       },
       "exampleBoolean" : false
     },

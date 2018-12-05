@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+    <id value="AgparMarc"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+    </meta>
+    <identifier>
+        <system value="urn:oid:2.51.1.3"/>
+        <value value="7601000050717"/>
+    </identifier>
+    <name>
+        <family value="Agpar"/>
+        <given value="Marc"/>
+    </name>
+</Practitioner> 

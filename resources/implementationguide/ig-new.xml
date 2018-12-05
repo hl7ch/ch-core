@@ -79,6 +79,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Practitioner/AgparMarc"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-10"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -134,6 +140,30 @@
     <resource>
       <reference>
         <reference value="NamingSystem/epr-spid"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/gln"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/k"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/nif"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="NamingSystem/zsr"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

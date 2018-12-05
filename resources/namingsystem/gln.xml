@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="gln"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>name</b>: GLN
+      </p>
+      <p>
+        <b>status</b>: ACTIVE
+      </p>
+      <p>
+        <b>kind</b>: IDENTIFIER
+      </p>
+      <p>
+        <b>date</b>: Dec 5, 2018
+      </p>
+      <p>
+        <b>publisher</b>: HL7 Switzerland on behalf of GS1
+      </p>
+      <p>
+        <b>contact</b>: 
+      </p>
+      <p>
+        <b>responsible</b>: GS1
+      </p>
+      <p>
+        <b>description</b>: Each healthcare partner (natural or legal person) is referenced with a unique code of type GLN (former name: EAN code) of the [GS1](https://www.gs1.ch/de/home) system. See [refdata](https://www.refdata.ch/content/partner_d.aspx)
+      </p>
+      <p>
+        <b>jurisdiction</b>: Switzerland 
+        <span style="background: LightGoldenRodYellow">(Details : {urn:iso:std:iso:3166 code &#39;CH&#39; = &#39;Switzerland)</span>
+      </p>
+      <h3>UniqueIds</h3>
+      <table class="grid">
+        <tr>
+          <td>-</td>
+          <td>
+            <b>Type</b>
+          </td>
+          <td>
+            <b>Value</b>
+          </td>
+          <td>
+            <b>Comment</b>
+          </td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>OID</td>
+          <td>2.51.1.3</td>
+          <td>This is the official identifier</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <name value="GLN"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2018-12-05"/>
+  <publisher value="HL7 Switzerland on behalf of GS1"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <responsible value="GS1"/>
+  <description value="Each healthcare partner (natural or legal person) is referenced with a unique code of type GLN (former name: EAN code) of the [GS1](https://www.gs1.ch/de/home) system. See [refdata](https://www.refdata.ch/content/partner_d.aspx)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+  <uniqueId>
+    <type value="oid"/>
+    <value value="2.51.1.3"/>
+    <comment value="This is the official identifier"/>
+  </uniqueId>
+</NamingSystem>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="zsr"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>name</b>: ZSR
+      </p>
+      <p>
+        <b>status</b>: ACTIVE
+      </p>
+      <p>
+        <b>kind</b>: IDENTIFIER
+      </p>
+      <p>
+        <b>date</b>: Dec 5, 2018
+      </p>
+      <p>
+        <b>publisher</b>: HL7 Switzerland on behalf of SASI
+      </p>
+      <p>
+        <b>contact</b>: 
+      </p>
+      <p>
+        <b>responsible</b>: SASIS
+      </p>
+      <p>
+        <b>description</b>: The ZSR number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance. See [Sasis](https://www.sasis.ch/de/779)
+      </p>
+      <p>
+        <b>jurisdiction</b>: Switzerland 
+        <span style="background: LightGoldenRodYellow">(Details : {urn:iso:std:iso:3166 code &#39;CH&#39; = &#39;Switzerland)</span>
+      </p>
+      <h3>UniqueIds</h3>
+      <table class="grid">
+        <tr>
+          <td>-</td>
+          <td>
+            <b>Type</b>
+          </td>
+          <td>
+            <b>Value</b>
+          </td>
+          <td>
+            <b>Comment</b>
+          </td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>OID</td>
+          <td>2.16.756.5.30.1.123.100.2.1.1</td>
+          <td>This is the official identifier</td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <name value="ZSR"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2018-12-05"/>
+  <publisher value="HL7 Switzerland on behalf of SASI"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <responsible value="SASIS"/>
+  <description value="The ZSR number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance. See [Sasis](https://www.sasis.ch/de/779)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+  <uniqueId>
+    <type value="oid"/>
+    <value value="2.16.756.5.30.1.123.100.2.1.1"/>
+    <comment value="This is the official identifier"/>
+  </uniqueId>
+</NamingSystem>

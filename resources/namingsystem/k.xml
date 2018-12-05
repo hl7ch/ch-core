@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="k"/>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>
+        <b>Generated Narrative with Details</b>
+      </p>
+      <p>
+        <b>name</b>: K
+      </p>
+      <p>
+        <b>status</b>: ACTIVE
+      </p>
+      <p>
+        <b>kind</b>: IDENTIFIER
+      </p>
+      <p>
+        <b>date</b>: Dec 5, 2018
+      </p>
+      <p>
+        <b>publisher</b>: HL7 Switzerland on behalf of SASI
+      </p>
+      <p>
+        <b>contact</b>: 
+      </p>
+      <p>
+        <b>responsible</b>: SASIS
+      </p>
+      <p>
+        <b>description</b>: TThe K number is issued to service providers who perform services for the health insurance companies in an employment relationship. See [Sasis](https://www.sasis.ch/de/780)
+      </p>
+      <p>
+        <b>jurisdiction</b>: Switzerland 
+        <span style="background: LightGoldenRodYellow">(Details : {urn:iso:std:iso:3166 code &#39;CH&#39; = &#39;Switzerland)</span>
+      </p>
+    </div>
+  </text>
+  <name value="K"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2018-12-05"/>
+  <publisher value="HL7 Switzerland on behalf of SASI"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <responsible value="SASIS"/>
+  <description value="TThe K number is issued to service providers who perform services for the health insurance companies in an employment relationship. See [Sasis](https://www.sasis.ch/de/780)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CH"/>
+    </coding>
+  </jurisdiction>
+</NamingSystem>
