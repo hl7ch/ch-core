@@ -11,11 +11,7 @@
                 "${workspaceRoot}/../fhir/publish/org.hl7.fhir.validator.jar",
                 "${file}",
                 "-ig",
-                "${workspaceRoot}/resources/ValueSet/",
-                "-ig",
-                "${workspaceRoot}/resources/CodeSystem/",
-                "-ig",
-                "${workspaceRoot}/resources/StructureDefinition/"
+                "${workspaceRoot}/output/"
             ],
             "problemMatcher": {
                 "owner": "fhirvalidator",
@@ -40,7 +36,7 @@
             }
         },
         {
-            "label": "validate ressource without terminology server",
+            "label": "validate ressource without ig, without terminology server",
             "command": "java",
             "args": [
                 "-jar",

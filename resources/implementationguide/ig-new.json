@@ -52,6 +52,12 @@
     }],
     "resource" : [{
       "reference" : {
+        "reference" : "Patient/ElisabethBroennimannByBFH"
+      },
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"
+    },
+    {
+      "reference" : {
         "reference" : "Patient/FranzMuster"
       },
       "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"

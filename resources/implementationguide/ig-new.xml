@@ -61,6 +61,12 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="Patient/ElisabethBroennimannByBFH"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/FranzMuster"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
