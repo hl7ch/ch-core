@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Patient xmlns="http://hl7.org/fhir">
   <id value="ElisabethBroennimannByBFH"/>
   <meta>
+    <source value="https://www.ti.bfh.ch/de/bachelor/medizininformatik.html"/>
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
   </meta>
   <text>
@@ -21,7 +21,7 @@
         <b>name</b>: Elisabeth Br&#xF6;nnimann-Bertholet 
       </p>
       <p>
-        <b>telecom</b>: ph: +41 32 321 61 11 HOME), elisabeth@broennimann.today
+        <b>telecom</b>: ph: +41 32 321 61 11(HOME), elisabeth@broennimann.today
       </p>
       <p>
         <b>gender</b>: FEMALE
@@ -34,14 +34,9 @@
       </p>
       <p>
         <b>maritalStatus</b>: verheiratet 
-        Details : {http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus code &#39;2&#39; = &#39;2&#39;, given as &#39;verheiratet&#39;}; 
-        {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code &#39;M&#39; = &#39;Married&#39;, given as &#39;married&#39;})
+        <span style="background: LightGoldenRodYellow">(Details : {http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus code &#39;2&#39; = &#39;2&#39;, given as &#39;verheiratet&#39;}; {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code &#39;M&#39; = &#39;Married&#39;, given as &#39;married&#39;})</span>
       </p>
-     <p> 
-         <span style="background: LightGoldenRodYellow">  <b><a href="https://www.ti.bfh.ch/de/bachelor/medizininformatik.html">Quelle BFH Medizininformatik</a> (https://www.ti.bfh.ch/de/bachelor/medizininformatik.html)</b></span>
-     </p>
- 
-    </div>    
+    </div>
   </text>
   <name>
     <family value="Brönnimann-Bertholet"/>
@@ -49,7 +44,7 @@
   </name>
   <telecom>
     <system value="phone"/>
-    <value value="++41 32 321 61 11 "/>
+    <value value="+41 32 321 61 11"/>
     <use value="home"/>
   </telecom>
   <telecom>
@@ -62,7 +57,7 @@
     <use value="home"/>
     <line value="Kreuzweg 11"/>
     <city value="Biel/Bienne"/>
-    <postalCode value="250o"/>
+    <postalCode value="2500"/>
   </address>
   <maritalStatus>
     <coding>
