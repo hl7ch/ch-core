@@ -188,7 +188,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <min value="1" />
             <fixedUri value="urn:oid:2.16.756.5.32" />
         </element>
-        <element id="Patient.identifier:EPR-SPID.value">
+        <element id="Patient.identifier:AHVN13.value">
             <path value="Patient.identifier.value" />
             <short value="AHVN13 / NAVS1 of the patient (13 digits starting ith 756)" />
             <definition value="AHVN13 / NAVS1 of the patient (13 digits starting ith 756)"/>

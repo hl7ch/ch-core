@@ -82,6 +82,12 @@
     },
     {
       "reference" : {
+        "reference" : "Practitioner/HanspeterWengerByBFH"
+      },
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"
+    },
+    {
+      "reference" : {
         "reference" : "CodeSystem/ech-10"
       },
       "exampleBoolean" : false

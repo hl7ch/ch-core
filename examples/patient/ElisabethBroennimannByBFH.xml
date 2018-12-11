@@ -71,4 +71,7 @@
       <display value="married"/>
     </coding>
   </maritalStatus>
+  <generalPractitioner>
+    <reference value="Practitioner/HanspeterWengerByBFH" />
+  </generalPractitioner>
 </Patient>

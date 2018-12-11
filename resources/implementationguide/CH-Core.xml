@@ -73,6 +73,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Practitioner/HanspeterWengerByBFH"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-10"/>
       </reference>
       <exampleBoolean value="false"/>
