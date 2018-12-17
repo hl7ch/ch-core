@@ -23,7 +23,7 @@
         </coding>
     </jurisdiction>
     <purpose value="Core practitioner data which can be shared" />
-    <fhirVersion value="3.6.0" />
+    <fhirVersion value="4.0.0" />
     <mapping>
         <identity value="CDA-CH-V2"/>
         <uri value="https://www.hl7.ch/default/assets/File/Publikationen/180612_CDA-CH_de.pdf"/>

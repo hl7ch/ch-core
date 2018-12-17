@@ -44,8 +44,8 @@
   "copyright" : "CC-BY-SA-4.0",
   "packageId" : "ch.fhir.ig.core",
   "license" : "CC-BY-SA-4.0",
-  "fhirVersion" : ["3.6.0",
-  "3.6.0"],
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
   "definition" : {
     "grouping" : [{
       "name" : "CH:Core"

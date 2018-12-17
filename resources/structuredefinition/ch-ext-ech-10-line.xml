@@ -22,7 +22,7 @@
             <code value="CH"/>
         </coding>
     </jurisdiction>
-    <fhirVersion value="3.6.0" />
+    <fhirVersion value="4.0.0" />
    <mapping>
         <identity value="eCH"/>
         <uri value="https://www.ech.ch/"/>
