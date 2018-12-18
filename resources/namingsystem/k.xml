@@ -30,7 +30,7 @@
         <b>responsible</b>: SASIS
       </p>
       <p>
-        <b>description</b>: TThe K number is issued to service providers who perform services for the health insurance companies in an employment relationship. See [Sasis](https://www.sasis.ch/de/780)
+        <b>description</b>: The K number is issued to service providers in an employment relationship who perform services at the expense of the health insurance companies. See [Sasis](https://www.sasis.ch/de/780)
       </p>
       <p>
         <b>jurisdiction</b>: Switzerland 
@@ -51,7 +51,7 @@
     </telecom>
   </contact>
   <responsible value="SASIS"/>
-  <description value="TThe K number is issued to service providers who perform services for the health insurance companies in an employment relationship. See [Sasis](https://www.sasis.ch/de/780)"/>
+  <description value="The K number is issued to service providers in an employment relationship who perform services at the expense of the health insurance companies. See [Sasis](https://www.sasis.ch/de/780)"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
