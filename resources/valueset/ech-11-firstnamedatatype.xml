@@ -1,5 +1,3 @@
-
-
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="ech-11-firstnamedatatype"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-firstnamedatatype"/>
@@ -29,18 +27,67 @@
             <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11"/>
             <concept>
                 <code value="officalFirstName"/>
+                <display value="Amtliche Vornamen (zwingend), BFS-221"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Amtliche Vornamen" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Prénoms officiels" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="Nomi ufficiali" />
+                </designation>
             </concept>
             <concept>
                 <code value="callName"/>
-            </concept>
-            <concept>
-                <code value="allianceName"/>
+                <display value="Rufname, BFS-222"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Rufname" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Prénom usuel" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="Nome abituale" />
+                </designation>
             </concept>
             <concept>
                 <code value="firstNameOnForeignPassport"/>
+                <display value="Vornamen im ausländischen Pass, BFS-223"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Vornamen im ausländischen Pass" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Prénoms selon passeport étranger" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="Nomi riportati sul passaporto straniero" />
+                </designation>
             </concept>
             <concept>
                 <code value="declaredForeignFirstName"/>
+                <display value="Vorname(n) gemäss Deklaration, BFS-224"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Vorname(n) gemäss Deklaration" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Prénoms selon déclaration" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="Nomi dichiarati" />
+                </designation>
             </concept>
         </include>
     </compose>

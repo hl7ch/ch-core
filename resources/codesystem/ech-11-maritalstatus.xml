@@ -30,129 +30,33 @@
     <concept>
         <code value="1"/>
         <display value="ledig"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="ledig" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="célibataire" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="celibe/nubile" />
-        </designation>
     </concept>
     <concept>
         <code value="2"/>
         <display value="verheiratet"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="verheiratet" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="marié-e" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="coniugato/a" />
-        </designation>
     </concept>
     <concept>
         <code value="3"/>
         <display value="verwitwet"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="verwitwet" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="veuf/veuve" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="vedovo/vedova" />
-        </designation>
     </concept>
     <concept>
         <code value="4"/>
         <display value="geschieden"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="geschieden" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="divorcé-e" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="divorziato/a" />
-        </designation>
     </concept>
     <concept>
         <code value="5"/>
         <display value="unverheiratet"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="unverheiratet" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="non marié-e" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="non coniugato/a" />
-        </designation>
     </concept>
     <concept>
         <code value="6"/>
         <display value="in eingetragener Partnerschaft"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="in eingetragener Partnerschaft" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="lié-e par un partenariat enregistré" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="in unione domestica registrata" />
-        </designation>
     </concept>
     <concept>
         <code value="7"/>
         <display value="aufgelöste Partnerschaft"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="aufgelöste Partnerschaft" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="partenariat dissous" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="unione domestica sciolta" />
-        </designation>
     </concept>
     <concept>
         <code value="9"/>
         <display value="unbekannt"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="unbekannt" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="inconnu" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="sconosciuto" />
-        </designation>
     </concept>
 </CodeSystem>

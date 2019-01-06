@@ -30,49 +30,13 @@
     <concept>
         <code value="1"/>
         <display value="männlich"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="männlich" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="masculin" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="sesso maschile" />
-        </designation>
     </concept>
     <concept>
         <code value="2"/>
         <display value="weiblich"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="weiblich" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="féminin" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="sesso femminile" />
-        </designation>
     </concept>
     <concept>
         <code value="3"/>
         <display value="unbestimmt"/>
-        <designation>
-            <language value="de-CH" />
-            <value value="unbestimmt" />
-        </designation>
-        <designation>
-            <language value="fr-CH" />
-            <value value="indéterminé" />
-        </designation>
-        <designation>
-            <language value="it-CH" />
-            <value value="indeterminato" />
-        </designation>
     </concept>
 </CodeSystem>

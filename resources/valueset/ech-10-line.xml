@@ -27,15 +27,51 @@
             <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-10"/>
             <concept>
                 <code value="addressLine1"/>
+                <display value="addressLine1"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Adresszeile 1 (optional)" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Ligne d’adresse 1 (facultatif)" />
+                </designation>
             </concept>
             <concept>
                 <code value="addressLine2"/>
+                <display value="addressLine2"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Adresszeile 2 (optional)" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Ligne d’adresse 2 (facultatif)" />
+                </designation>
             </concept>
             <concept>
                 <code value="street"/>
+                <display value="street"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Adressierung Strasse / Wohnung (optional)" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Adressage rue / appartement (facultatif)" />
+                </designation>
             </concept>
             <concept>
                 <code value="postOfficeBox"/>
+                <display value="postOfficeBox"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Adressierung Postfach (optional)" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Adressage case postale (facultatif)" />
+                </designation>
             </concept>
         </include>
     </compose>

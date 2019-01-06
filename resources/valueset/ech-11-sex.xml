@@ -1,5 +1,3 @@
-
-
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="ech-11-sex"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-sex"/>
@@ -27,6 +25,54 @@
     <compose>
         <include>
             <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-sex"/>
+            <concept>
+                <code value="1"/>
+                <display value="männlich"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="männlich" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="masculin" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="sesso maschile" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="2"/>
+                <display value="weiblich"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="weiblich" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="féminin" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="sesso femminile" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="3"/>
+                <display value="unbestimmt"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="unbestimmt" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="indéterminé" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="indeterminato" />
+                </designation>
+            </concept>
         </include>
     </compose>
 </ValueSet>

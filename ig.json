@@ -16,6 +16,10 @@
       "txCache": "txCache",
       "specification": "http://build.fhir.org/"
     },
+    "language" : "en", 
+    "languages" : [ 
+      "en", "de-CH", "fr-CH", "it-CH"
+    ],
     "path-pattern": "[type]-[id].html",
     "defaults": {
       "Any": {
