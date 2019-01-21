@@ -235,6 +235,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-practitionerrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
       </reference>
       <exampleBoolean value="false"/>

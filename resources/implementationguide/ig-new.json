@@ -226,6 +226,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-core-practitionerrole"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-ext-ech-11-bfsnumber"
       },
       "exampleBoolean" : false
