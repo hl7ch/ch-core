@@ -89,7 +89,7 @@
         </element>
         <element id="Practitioner.identifier:GLN.value">
             <path value="Practitioner.identifier.value" />
-            <short value="GLN of the practitioner (13 digits starting ith 7601)" />
+            <short value="GLN of the practitioner (13 digits starting with 7601 for Swiss accredited practitioners)" />
             <definition value="Each healthcare partner (natural or legal person) is referenced with a unique code of type GLN (former name: EAN code) of the GS1."/>
             <min value="1" />
         </element>

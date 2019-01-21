@@ -14,7 +14,7 @@
       "output": "output",
       "qa": "qa",
       "txCache": "txCache",
-      "specification": "http://build.fhir.org/"
+      "specification": "http:/hl7.org/fhir/r4"
     },
     "language" : "en", 
     "languages" : [ 
