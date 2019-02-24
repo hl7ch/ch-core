@@ -8,10 +8,10 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.validator.jar",
                 "${file}",
                 "-ig",
-                "${workspaceRoot}/output/"
+                "${workspaceFolder}/output/"
             ],
             "problemMatcher": {
                 "owner": "fhirvalidator",
@@ -40,7 +40,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.validator.jar",
                 "${file}",
                 "-tx",
                 "n/a"
@@ -72,7 +72,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.validator.jar",
                 "${file}",
                 "-narrative",
                 "-output",
@@ -85,10 +85,10 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceRoot}/../fhir/publish/org.hl7.fhir.igpublisher.jar",
+                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.igpublisher.jar",
                 "-web",
                 "-ig",
-                "${workspaceRoot}/ig.json"
+                "${workspaceFolder}/ig.json"
             ],
             "problemMatcher": []
         }

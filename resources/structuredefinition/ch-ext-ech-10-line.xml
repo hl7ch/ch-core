@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line"/>
     <version value="0.1.0"/>
     <name value="ECH011FirstName"/>
-    <title value="FirstName"/>
+    <title value="Address line"/>
     <status value="draft"/>
     <date value="2018-11-27"/>
     <publisher value="HL7 Switzerland"/>

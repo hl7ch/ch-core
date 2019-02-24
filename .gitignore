@@ -3,5 +3,5 @@ qa
 txCache
 temp
 org.hl7.fhir.igpublisher.jar
-org.ht7.fhir.validator.jar
+org.hl7.fhir.validation.cli.jar
 template
