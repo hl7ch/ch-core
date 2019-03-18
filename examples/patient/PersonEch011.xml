@@ -30,18 +30,18 @@
     </text>
     <name>
         <!-- Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Extension is optional, but when used the use attribute value must be offical -->
-        <use value="official" />
+        <use value="official" /> 
         <family value="Amtlicher Name">
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
                 <valueCode value="officialName"/>
             </extension>
-        </family>
+        </family> 
         <!-- Amtliche Vornamen (zwingend) – firstName, siehe Kapitel 3.3.2.2 -->
         <given value="Amtliche Vornamen (zwingend)">
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname">
                 <valueCode value="officalFirstName"/>
             </extension>
-        </given>
+        </given> 
     </name>
     <!-- Allianzname (optional) – allianceName, siehe Kapitel 3.3.2.4 -->
     <name>

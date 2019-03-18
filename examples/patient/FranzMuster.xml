@@ -74,7 +74,7 @@
         <display value="evangelisch-reformierte (protestantische) Kirche"/>
       </coding>
       <coding>
-        <system value="http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation/"/>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
         <code value="1077"/>
         <display value="Protestant"/>
       </coding>

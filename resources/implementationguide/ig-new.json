@@ -1,6 +1,6 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "CH-Core",
+  "id" : "ch.fhir.ig.core-0.1.0",
   "text" : {
     "status" : "additional",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\tImplementationGuide for CH.Core                         \n        \n      <hr/>\n      <h2>CH_Core</h2>\n      <p>The official URL for this implementation guide is: </p>\n      <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>\n    </div>"
@@ -21,7 +21,7 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
     "valueString" : "/Users/oliveregger/Documents/github/ch-core/pages"
   }],
-  "url" : "http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core",
+  "url" : "http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.core-0.1.0",
   "version" : "0.1.0",
   "name" : "CH_Core",
   "status" : "active",

@@ -50,13 +50,13 @@
                 <key value="ch-core-hm-1"/>
                 <severity value="error"/>
                 <human value="if officalName with eCH-011 Extension is specified, it can only be put on a name where use attribute is official"/>
-                <expression value="family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName').empty() or (family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName') and use='official')"/>
+                <expression value="family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName').empty() or (family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='officialName').exists() and use='official')"/>
             </constraint>
             <constraint>
                 <key value="ch-core-hm-2"/>
                 <severity value="error"/>
                 <human value="if orginalName with eCH-011 Extension is specified, it can only be put on a name where use attribute is maiden"/>
-                <expression value="family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName').empty() or (family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName') and use='maiden')"/>
+                <expression value="family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName').empty() or ((family.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name' and valueCode='originalName').exists() and use='maiden'))"/>
             </constraint>
             <!-- should be not necessary, extension is constrained to be on HumanName.family -->
             <constraint>
