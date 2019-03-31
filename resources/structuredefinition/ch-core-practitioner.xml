@@ -96,7 +96,7 @@
         <element id="Practitioner.identifier:ZSR">
             <path value="Practitioner.identifier" />
             <sliceName value="ZSR" />
-            <short value="ZSR " />
+            <short value="ZSR" />
             <definition value="The ZSR number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance." />
         </element>
         <element id="Practitioner.identifier:ZSR.system">
