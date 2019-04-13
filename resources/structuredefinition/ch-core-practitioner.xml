@@ -3,8 +3,8 @@
     <id value="ch-core-practitioner"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     <version value="0.1.0"/>
-    <name value="CHCorePractitionerProfile"/>
-    <title value="Practitioner"/>
+    <name value="CHCorePractitioner"/>
+    <title value="CH Core Practitioner Profile"/>
     <status value="draft"/>
     <date value="2018-12-05"/>
     <publisher value="HL7 Switzerland"/>

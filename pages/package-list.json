@@ -1,13 +1,22 @@
 {
-    "package-id" : "ch.fhir.ig.core",
-    "title" : "CH Core (R4)",
-    "introduction" : "Core FHIR profiles for Switzerland in development by the HL7 Switzerland FHIR workgroup",
-    "canonical" : "http://fhir.ch/ig/ch-core",
-    "list" : [{
-      "version" : "current",
-      "date" : "n/a",
-      "desc" : "Continuous Integration Build (latest in version control)",
-      "path" : "http://build.fhir.org/ig/hl7ch/ch-core/index.html",
-      "status" : "ci-build"
-      }]
-  }
+  "package-id": "ch.fhir.ig.core",
+  "title": "CH Core (R4)",
+  "introduction": "Core FHIR profiles for Switzerland in development by the HL7 Switzerland FHIR workgroup",
+  "canonical": "http://fhir.ch/ig/ch-core",
+  "list": [
+    {
+      "version": "current",
+      "date": "n/a",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://fhir.ch/ig/ch-core/index.html",
+      "status": "ci-build"
+    },
+    {
+      "version": "dev",
+      "date": "n/a",
+      "desc": "Continuous Integration Build (latest in version control)",
+      "path": "http://build.fhir.org/ig/hl7ch/ch-core/index.html",
+      "status": "ci-build"
+    }
+  ]
+}

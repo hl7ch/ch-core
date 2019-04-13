@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition 
+	xmlns="http://hl7.org/fhir">
+    <id value="ch-core-document"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
+    <version value="0.1.0"/>
+    <name value="CHCoreDocument"/>
+    <title value="CH Core Document Profile"/>
+    <status value="draft"/>
+    <date value="2019-04-13T00:00:00+00:00"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Base definition for a document with the CH Core profiles."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.0"/>
+	<kind value="resource" />
+	<abstract value="false" />
+	<type value="Bundle" />
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+	<derivation value="constraint" />
+	<differential>
+		<element id="Bundle">
+			<path value="Bundle"/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="Bundle.type">
+			<path value="Bundle.type" />
+			<short value="document" />
+			<fixedCode value="document" />
+		</element>
+		<element id="Bundle.entry">
+			<path value="Bundle.entry" />
+			<slicing>
+				<discriminator>
+					<type value="profile" />
+					<path value="resource" />
+				</discriminator>
+				<rules value="open" />
+			</slicing>
+		</element>
+		<element id="Bundle.entry:Composition">
+			<path value="Bundle.entry" />
+			<sliceName value="Composition" />
+			<short value="Composition" />
+			<min value="1" />
+			<max value="1" />
+		</element>
+		<element id="Bundle.entry:Composition.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Composition" />
+				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition" />
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

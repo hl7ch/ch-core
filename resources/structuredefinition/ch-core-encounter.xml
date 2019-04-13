@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-encounter"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
+    <version value="0.1.0"/>
+    <name value="CHCoreEncounter"/>
+    <title value="CH Core Encounter Profile"/>
+    <status value="draft"/>
+    <date value="2019-04-13T00:00:00+00:00"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="The Encounter referenced in the CH Core profiles."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Core patient demographics which can be shared" />
+    <fhirVersion value="4.0.0"/>
+    <mapping>
+        <identity value="workflow"/>
+        <uri value="http://hl7.org/fhir/workflow"/>
+        <name value="Workflow Pattern"/>
+    </mapping>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="w5"/>
+        <uri value="http://hl7.org/fhir/fivews"/>
+        <name value="FiveWs Pattern Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Encounter"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Encounter">
+            <path value="Encounter"/>
+            <short value="CH Core Encounter Profile"/>
+            <definition value="This is basic constraint on Encounter for use in CH Core resources."/>
+        </element>
+        <element id="Encounter.identifier">
+            <path value="Encounter.identifier"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Encounter.identifier.system">
+            <path value="Encounter.identifier.system"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="uri"/>
+            </type>
+        </element>
+        <element id="Encounter.identifier.value">
+            <path value="Encounter.identifier.value"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Encounter.status">
+            <path value="Encounter.status"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+        </element>
+        <element id="Encounter.class">
+            <path value="Encounter.class"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Coding"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <!-- 
+        <element id="Encounter.type">
+            <path value="Encounter.type"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+            <binding>
+                <strength value="extensible"/>
+                <description value="Valueset to describe the Encounter Type"/>
+                <valueSet value="http://hl7.org/fhir/us/core/ValueSet/us-core-encounter-type"/>
+            </binding>
+        </element>
+        -->
+        <element id="Encounter.subject">
+            <path value="Encounter.subject"/>
+            <alias value="patient"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.participant">
+            <path value="Encounter.participant"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.participant.type">
+            <path value="Encounter.participant.type"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.participant.period">
+            <path value="Encounter.participant.period"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Period"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.participant.individual">
+            <path value="Encounter.participant.individual"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+            </type>
+        </element>
+        <element id="Encounter.period">
+            <path value="Encounter.period"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Period"/>
+            </type>
+        </element>
+        <element id="Encounter.reasonCode">
+            <path value="Encounter.reasonCode"/>
+            <alias value="Indication"/>
+            <alias value="Admission diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <!-- -
+        <element id="Encounter.diagnosis">
+            <path value="Encounter.diagnosis"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="BackboneElement"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.diagnosis.condition">
+            <path value="Encounter.diagnosis.condition"/>
+            <alias value="Admission diagnosis"/>
+            <alias value="discharge diagnosis"/>
+            <alias value="indication"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.diagnosis.rank">
+            <path value="Encounter.diagnosis.rank"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.hospitalization">
+            <path value="Encounter.hospitalization"/>
+            <min value="0"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <element id="Encounter.hospitalization.dischargeDisposition">
+            <path value="Encounter.hospitalization.dischargeDisposition"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        -->
+        <element id="Encounter.location">
+            <path value="Encounter.location"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mustSupport value="true"/>
+            <isModifier value="false"/>
+        </element>
+        <!--
+        <element id="Encounter.location.location">
+            <path value="Encounter.location.location"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"/>
+            </type>
+        </element>
+        -->
+    </differential>
+</StructureDefinition>

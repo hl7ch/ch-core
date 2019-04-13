@@ -5,11 +5,11 @@
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-	ImplementationGuide for CH.Core                         
-        
+      ImplementationGuide for CH.Core
+
       <hr/>
       <h2>CH_Core</h2>
-      <p>The official URL for this implementation guide is: </p>
+      <p>The official URL for this implementation guide is:</p>
       <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>
     </div>
   </text>
@@ -163,13 +163,43 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-composition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-document"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-patient"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-encounter"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-humanname"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-location"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-organization"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

@@ -3,7 +3,7 @@
   "id" : "ch.fhir.ig.core-0.1.0",
   "text" : {
     "status" : "additional",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\tImplementationGuide for CH.Core                         \n        \n      <hr/>\n      <h2>CH_Core</h2>\n      <p>The official URL for this implementation guide is: </p>\n      <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>\n    </div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      ImplementationGuide for CH.Core\n\n      <hr/>\n      <h2>CH_Core</h2>\n      <p>The official URL for this implementation guide is:</p>\n      <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>\n    </div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
@@ -172,13 +172,43 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-core-composition"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-core-document"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-patient"
       },
       "exampleBoolean" : false
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/ch-core-encounter"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "StructureDefinition/ch-core-humanname"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-core-location"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-core-organization"
       },
       "exampleBoolean" : false
     },

@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-10"/>
     <version value="0.1.0"/>
     <name value="CHCoreAddressECH10"/>
-    <title value="Postal Adress according to eCH-0010"/>
+    <title value="CH Core Address Profile"/>
     <status value="draft"/>
     <date value="2018-11-27T00:00:00+02:00"/>
     <publisher value="HL7 Switzerland"/>

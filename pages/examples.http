@@ -1,0 +1,10 @@
+@host = http://test.fhir.ch/r4
+
+GET {{host}}/Patient?gender=female HTTP/1.1
+Content-Type: application/xml
+
+###
+
+GET {{host}}/Patient?name=Brönnimann HTTP/1.1
+Content-Type: application/xml
+
