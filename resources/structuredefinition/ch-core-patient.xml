@@ -98,7 +98,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <path value="Patient.extension" />
             <sliceName value="placeOfOrigin" />
             <min value="0"/>
-            <max value="1"/>
+            <max value="*"/>
             <type>
                 <code value="Extension" />
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin" />

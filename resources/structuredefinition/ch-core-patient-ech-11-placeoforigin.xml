@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="The registered place of birth of the patient. A sytem may use the address.text if they don&#39;t store the birthPlace address in discrete elements."/>
+    <description value="The place of origin of the patient. A sytem may use the address.text if they don&#39;t store the birthPlace address in discrete elements."/>
     <fhirVersion value="4.0.0"/>
     <mapping>
         <identity value="rim"/>
