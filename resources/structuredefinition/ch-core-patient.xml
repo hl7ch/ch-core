@@ -79,6 +79,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.extension:birthPlace">
             <path value="Patient.extension" />
             <sliceName value="birthPlace" />
+            <short value="Place of birth of patient"/>
             <min value="0"/>
             <max value="1"/>
             <type>
@@ -97,6 +98,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.extension:placeOfOrigin">
             <path value="Patient.extension" />
             <sliceName value="placeOfOrigin" />
+            <short value="Place of origin(s) of patient"/>
             <min value="0"/>
             <max value="*"/>
             <type>
@@ -115,6 +117,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.extension:citizenship">
             <path value="Patient.extension" />
             <sliceName value="citizenship" />
+            <short value="Citizenships of patient"/>
+            <min value="0"/>
+            <max value="*"/>
             <type>
                 <code value="Extension" />
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-citizenship" />
@@ -131,8 +136,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.extension:religion">
             <path value="Patient.extension" />
             <sliceName value="religion" />
+            <short value="Religion of patient"/>
             <min value="0"/>
-            <max value="*"/>
+            <max value="1"/>
             <type>
                 <code value="Extension" />
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-religion" />
