@@ -25,19 +25,9 @@
     <purpose value="Core patient demographics which can be shared" />
     <fhirVersion value="4.0.0"/>
     <mapping>
-        <identity value="workflow"/>
-        <uri value="http://hl7.org/fhir/workflow"/>
-        <name value="Workflow Pattern"/>
-    </mapping>
-    <mapping>
         <identity value="rim"/>
         <uri value="http://hl7.org/v3"/>
         <name value="RIM Mapping"/>
-    </mapping>
-    <mapping>
-        <identity value="w5"/>
-        <uri value="http://hl7.org/fhir/fivews"/>
-        <name value="FiveWs Pattern Mapping"/>
     </mapping>
     <mapping>
         <identity value="v2"/>

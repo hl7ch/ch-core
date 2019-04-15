@@ -163,6 +163,30 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-10-line"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-firstname"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-name"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-composition"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -248,30 +272,6 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-practitionerrole"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ch-ext-ech-10-line"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ch-ext-ech-11-firstname"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ch-ext-ech-11-name"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
