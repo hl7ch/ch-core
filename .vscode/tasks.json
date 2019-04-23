@@ -8,7 +8,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
                 "${file}",
                 "-ig",
                 "${workspaceFolder}/output/"
@@ -40,7 +40,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
                 "${file}",
                 "-tx",
                 "n/a"
@@ -72,7 +72,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.validator.jar",
+                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
                 "${file}",
                 "-narrative",
                 "-output",
@@ -85,10 +85,30 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../fhir/publish/org.hl7.fhir.igpublisher.jar",
+                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
                 "-web",
                 "-ig",
                 "${workspaceFolder}/ig.json"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "convert R3 to R4 xml through matchbox localhost",
+            "command": "curl",
+            "args": [
+                "--request",
+                "POST",
+                "--url",
+                "http://localhost:8080/r4/$convert",
+                "--header",
+                "Content-Type: application/fhir+xml; fhirVersion=3.0",
+                "--header",
+                "Accept: application/fhir+xml",
+                "--http1.1",
+                "--data",
+                "@${file}",
+                "-o",
+                "${file}"
             ],
             "problemMatcher": []
         }

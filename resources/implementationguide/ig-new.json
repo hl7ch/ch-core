@@ -52,6 +52,12 @@
     }],
     "resource" : [{
       "reference" : {
+        "reference" : "Encounter/EncounterAmbulantBroennimann"
+      },
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"
+    },
+    {
+      "reference" : {
         "reference" : "Patient/ElisabethBroennimannByBFH"
       },
       "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"
@@ -88,6 +94,54 @@
     },
     {
       "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-17-admitsource"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-18-admittype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-19-admitrole"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-20-encounterclass"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-21-encountertype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-27-dischargedecision"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-28-dischargedestination"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "CodeSystem/bfs-medstats-29-dischargeencounter"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "CodeSystem/ech-10"
       },
       "exampleBoolean" : false
@@ -113,6 +167,12 @@
     {
       "reference" : {
         "reference" : "CodeSystem/ech-11-sex"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ConceptMap/bfs-encounter-class-to-fhir"
       },
       "exampleBoolean" : false
     },
@@ -167,6 +227,24 @@
     {
       "reference" : {
         "reference" : "NamingSystem/zsr"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-ext-bfs-ms-admitrole"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-ext-bfs-ms-dischargedecision"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-ext-bfs-ms-dischargedestination"
       },
       "exampleBoolean" : false
     },
@@ -281,6 +359,54 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/ch-core-practitionerrole"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-17-admitsource"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-18-admittype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-19-admitrole"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-20-encounterclass"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-21-encountertype"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-27-dischargedecision"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-28-dischargedestination"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/bfs-medstats-29-dischargeencounter"
       },
       "exampleBoolean" : false
     },

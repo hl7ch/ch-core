@@ -26,7 +26,7 @@
     <targetUri value="http://terminology.hl7.org/ValueSet/administrative-gender"/>
     <group>
         <source value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-sex"/>
-        <target value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
+        <target value="http://hl7.org/fhir/administrative-gender"/>
         <element>
             <code value="1"/>
             <display value="männlich"/>

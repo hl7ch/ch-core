@@ -1,0 +1,55 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="bfs-medstats-27-dischargedecision"/>
+    <url value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-27-dischargedecision"/>
+    <version value="0.1.0"/>
+    <name value="BfsMedstats27Dischargedecision"/>
+    <title value="BFS Medizinische Statistik - 27 1.5.V02 - Entscheid für Austritt / Décision de sortie / Decisione dell’uscita"/>
+    <status value="draft"/>
+    <date value="2019-01-01"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Wer hat den Klinikaustritt veranlasst?" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <caseSensitive value="true"/>
+    <compositional value="false"/>
+    <content value="complete"/>
+    <concept>
+        <code value="1"/>
+        <display value="auf Initiative des Behandelnden"/>
+    </concept>
+    <concept>
+        <code value="2"/>
+        <display value="auf Initiative des Patienten (gegen Ansicht des Behandelnden)"/>
+    </concept>
+    <concept>
+        <code value="3"/>
+        <display value="auf Initiative einer Drittperson"/>
+    </concept>
+    <concept>
+        <code value="4"/>
+        <display value="interner Übertritt"/>
+    </concept>
+    <concept>
+        <code value="5"/>
+        <display value="gestorben"/>
+    </concept>
+    <concept>
+        <code value="8"/>
+        <display value="anderes"/>
+    </concept>
+    <concept>
+        <code value="9"/>
+        <display value="unbekannt"/>
+    </concept>
+</CodeSystem>

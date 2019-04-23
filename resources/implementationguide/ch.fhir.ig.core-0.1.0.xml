@@ -43,6 +43,12 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="Encounter/EncounterAmbulantBroennimann"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
@@ -79,6 +85,54 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/bfs-medstats-17-admitsource"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/bfs-medstats-18-admittype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+        <resource>
+      <reference>
+        <reference value="CodeSystem/bfs-medstats-19-admitrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/bfs-medstats-20-encounterclass"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/bfs-medstats-21-encountertype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/bfs-medstats-27-dischargedecision"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/bfs-medstats-28-dischargedestination"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/bfs-medstats-29-dischargeencounter"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-10"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -104,6 +158,12 @@
     <resource>
       <reference>
         <reference value="CodeSystem/ech-11-sex"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/bfs-encounter-class-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -158,6 +218,24 @@
     <resource>
       <reference>
         <reference value="NamingSystem/zsr"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-bfs-ms-admitrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-bfs-ms-dischargedecision"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-bfs-ms-dischargedestination"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -275,6 +353,54 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-17-admitsource"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+  <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-18-admittype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+        <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-19-admitrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-20-encounterclass"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-21-encountertype"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-27-dischargedecision"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-28-dischargedestination"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/bfs-medstats-29-dischargeencounter"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>    
     <resource>
       <reference>
         <reference value="ValueSet/ch-core-maritalstatus"/>
