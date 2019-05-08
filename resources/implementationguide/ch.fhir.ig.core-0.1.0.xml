@@ -163,6 +163,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/edqm-standardterms"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ConceptMap/bfs-encounter-class-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -446,6 +452,18 @@
     <resource>
       <reference>
         <reference value="ValueSet/ech-11-sex"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/edqm-routeofadministration"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/edqm-pharmaceuticaldoseform"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

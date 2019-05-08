@@ -181,6 +181,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/edqm-standardterms"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ConceptMap/bfs-encounter-class-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -467,6 +473,18 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/edqm-routeofadministration"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/edqm-pharmaceuticaldoseform"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <nameUrl value="index.html"/>
       <title value="IG Templage Homepage"/>
@@ -482,11 +500,19 @@
     </parameter>
     <parameter>
       <code value="generate-turtle"/>
-      <value value="true"/>
+      <value value="false"/>
     </parameter>
     <parameter>
       <code value="apply"/>
       <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="xml"/>
+    </parameter>
+    <parameter>
+      <code value="generate"/>
+      <value value="JSON"/>
     </parameter>
   </definition>
 </ImplementationGuide>

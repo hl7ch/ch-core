@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<project name="art-decor" basedir="." default="default">
+	<target name="init">
+		<mkdir dir="templates" />
+		<mkdir dir="xslt" />
+		<mkdir dir="output" />
+		<property name="canonicalBase" value="http://fhir.ch/ig/ch-core" />
+	</target>
+	<target name="clean">
+		<delete dir="templates" />
+		<delete dir="output" />
+	</target>
+	<target name="xslt">
+		<xslt style="xslt/${xsl}" in="${in}" out="${out}" basedir="${basedir}">
+			<classpath>
+				<pathelement location="${basedir}/saxon9he.jar" />
+			</classpath>
+			<param name="canonicalBase" expression="${canonicalBase}" type="STRING" />
+			<param name="resourceId" expression="${resourceId}" type="STRING" />
+			<param name="templateId" expression="${templateId}" type="STRING" />
+			<param name="codeSystem" expression="${codeSystem}" type="STRING" />
+		</xslt>
+	</target>
+	<target name="transform" depends="init">
+		<delete file="output/${resourceId}.xml" failonerror="false" />
+		<antcall target="xslt">
+			<param name="xsl" value="${xsl}" />
+			<param name="in" value="templates/${templateId}.xml" />
+			<param name="out" value="output/${resourceId}.xml" />
+			<param name="resourceId" value="${resourceId}" />
+			<param name="templateId" value="${templateId}" />
+            <param name="codeSystem" value="${codeSystem}" />
+		</antcall>
+		<!-- stupid  nfhir: prefix due to xslt -->
+		<replace file="output/${resourceId}.xml" token="fhir:" value="" />
+		<!-- xmlns:fhir="http://hl7.org/fhir" -->
+		<replace file="output/${resourceId}.xml" token=" xmlns:fhir=&quot;http://hl7.org/fhir&quot;" value="" />
+	</target>
+	<target name="getPharmValueSet" depends="init">
+		<get src="http://art-decor.org/fhir/4.0/ch-pharm-/ValueSet/${templateId}" dest="templates/${templateId}.xml" skipexisting="true" />
+	</target>
+	<target name="transformPharmValueSet" depends="init">
+		<antcall target="getPharmValueSet">
+			<param name="templateId" value="${templateId}" />
+		</antcall>
+		<antcall target="transform">
+			<param name="xsl" value="adaptValueSetToIg.xsl" />
+			<param name="templateId" value="${templateId}" />
+			<param name="resourceId" value="${resourceId}" />
+		</antcall>
+		<copy file="output/${resourceId}.xml" tofile="../resources/valueset/${resourceId}.xml" />
+	</target>
+	<target name="transformValueSetsToCodeSystem" depends="init">
+		<antcall target="transform">
+			<param name="xsl" value="convertValueSetToCodeSystem.xsl" />
+			<param name="templateId" value="${templateId}" />
+			<param name="resourceId" value="${resourceId}" />
+			<param name="codeSystem" value="${codeSystem}" />
+		</antcall>
+		<copy file="output/${resourceId}.xml" tofile="../resources/codesystem/${resourceId}.xml" />
+	</target>
+	<target name="transformPharmValueSetRoa" depends="init">
+		<antcall target="transformPharmValueSet">
+			<param name="resourceId" value="edqm-routeofadministration" />
+			<param name="templateId" value="2.16.756.5.30.1.1.11.2" />
+		</antcall>
+	</target>
+	<target name="transformPharmValueSetDoseForm" depends="init">
+		<antcall target="transformPharmValueSet">
+			<param name="resourceId" value="edqm-pharmaceuticaldoseform" />
+			<param name="templateId" value="2.16.756.5.30.1.1.11.3" />
+		</antcall>
+	</target>
+	<target name="transformPharmValueSetToCodeSystem" depends="init">
+		<antcall target="transformValueSetsToCodeSystem">
+			<param name="resourceId" value="edqm-standardterms" />
+			<param name="codeSystem" value="0.4.0.127.0.16.1.1.2.1" />
+			<param name="templateId" value="2.16.756.5.30.1.1.11.3" />
+		</antcall>
+	</target>
+	<target name="default">
+		<antcall target="transformPharmValueSetRoa" />
+		<antcall target="transformPharmValueSetDoseForm" />
+		<antcall target="transformPharmValueSetToCodeSystem" />
+	</target>
+</project>

@@ -172,6 +172,12 @@
     },
     {
       "reference" : {
+        "reference" : "CodeSystem/edqm-standardterms"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "ConceptMap/bfs-encounter-class-to-fhir"
       },
       "exampleBoolean" : false
@@ -457,6 +463,18 @@
         "reference" : "ValueSet/ech-11-sex"
       },
       "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/edqm-routeofadministration"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "ValueSet/edqm-pharmaceuticaldoseform"
+      },
+      "exampleBoolean" : false
     }],
     "page" : {
       "nameUrl" : "index.html",
@@ -473,11 +491,19 @@
     },
     {
       "code" : "generate-turtle",
-      "value" : "true"
+      "value" : "false"
     },
     {
       "code" : "apply",
       "value" : "version"
+    },
+    {
+      "code" : "generate",
+      "value" : "xml"
+    },
+    {
+      "code" : "generate",
+      "value" : "JSON"
     }]
   }
 }

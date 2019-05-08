@@ -8,10 +8,10 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
+                "org.hl7.fhir.validation.cli.jar",
                 "${file}",
                 "-ig",
-                "${workspaceFolder}/output/"
+                "${fileDirname}/../../output"
             ],
             "problemMatcher": {
                 "owner": "fhirvalidator",
@@ -111,6 +111,55 @@
                 "${file}"
             ],
             "problemMatcher": []
+        },         {
+            "label": "convert R4 to R3 xml through matchbox localhost",
+            "command": "curl",
+            "args": [
+                "--request",
+                "POST",
+                "--url",
+                "http://localhost:8080/r4/$convert",
+                "--header",
+                "Content-Type: application/fhir+xml",
+                "--header",
+                "Accept: application/fhir+xml; fhirVersion=3.0",
+                "--http1.1",
+                "--data",
+                "@${file}",
+                "-o",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "xsl bundle to qr",
+            "args": [
+                "-jar",
+                "${workspaceRoot}/tools/saxon9he.jar",
+                "-s:${file}",
+                "-xsl:${workspaceRoot}/chmed16aq/chmed16af_to_aq.xsl",
+                "-o:${workspaceRoot}/chmed16aq/chmed16aq-output.xml"
+            ]
+        },        
+        {
+            "label": "xsl qr to bundle",
+            "command": "java",
+            "args": [
+                "-jar",
+                "${workspaceRoot}/tools/saxon9he.jar",
+                "-s:${file}",
+                "-xsl:${workspaceRoot}/chmed16aq/chmed16aq_to_af.xsl",
+                "-o:${workspaceRoot}/chmed16aq/chmed16af-output.xml"
+            ]
+        },         {
+            "label": "xsd: validate xml with chmed16aq.xsd",
+            "command": "java",
+            "args": [
+                "-jar",
+                "${workspaceRoot}/tools/xsdv.jar",
+                "${workspaceRoot}/chmed16aq/chmed16aq.xsd",
+                "${file}"                
+            ]
         }
     ]
 }

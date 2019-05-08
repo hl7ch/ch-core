@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+   <id value="edqm-routeofadministration"/>
+   <meta>
+      <source value="http://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.1.11.2--20180405172834"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+      <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+   </meta>
+   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+      <valuePeriod>
+         <start value="2018-04-05T17:28:34+02:00"/>
+      </valuePeriod>
+   </extension>
+   <url
+             value="http://fhir.ch/ig/ch-core/ValueSet/edqm-routeofadministration"/>
+   <identifier>
+      <use value="official"/>
+      <system value="http://art-decor.org/ns/oids/vs"/>
+      <value value="2.16.756.5.30.1.1.11.2"/>
+   </identifier>
+   <version value="2018-04-05T17:28:34"/>
+   <name value="RouteOfAdministrationEDQM"/>
+   <title value="RouteOfAdministration (EDQM)"/>
+   <status value="draft"/>
+   <experimental value="false"/>
+   <publisher value="eHealth Suisse"/>
+   <contact>
+      <name value="eHealth Suisse"/>
+      <telecom>
+         <system value="url"/>
+         <value value="www.e-health-suisse.ch"/>
+      </telecom>
+   </contact>
+   <description value="Valueset RouteOufAdministration from EQM, ROA, export 24.4.2018, see https://standardterms.edqm.eu/#"/>
+   <immutable value="false"/>
+   <compose>
+      <include>
+         <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the ear."/>
+            </extension>
+            <code value="20001000"/>
+            <display value="Auricular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Anwendung am Ohr"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie auriculaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso auricolare"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the buccal cavity (pouch located between the cheek and the gum) to obtain a systemic effect"/>
+            </extension>
+            <code value="20002500"/>
+            <display value="Buccal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Buccale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie buccogingivale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the skin and/or cutaneous wounds and/or nails and/or hair in order to obtain a local effect."/>
+            </extension>
+            <code value="20003000"/>
+            <display value="Cutaneous use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Anwendung auf der Haut"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie cutanée"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso cutaneo"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to and/or in the teeth or, on and/or around the nerves supplying the teeth."/>
+            </extension>
+            <code value="20004000"/>
+            <display value="Dental use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="dentale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie dentaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso dentale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the cervix uteri."/>
+            </extension>
+            <code value="20006000"/>
+            <display value="Endocervical use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="endozervikale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie endocervicale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso endocervicale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the sinuses to obtain a local effect."/>
+            </extension>
+            <code value="20007000"/>
+            <display value="Endosinusial use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Anwendung in den Nebenhöhlen"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie endosinusale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso endosinusiale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the trachea and/or bronchiae by instillation (preparations for inhalation are excluded; see inhalation use)."/>
+            </extension>
+            <code value="20008000"/>
+            <display value="Endotracheopulmonary use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="endotracheopulmonale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie endotrachéobronchique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso endotracheobronchiale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the epidural space."/>
+            </extension>
+            <code value="20009000"/>
+            <display value="Epidural use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="epidurale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie péridurale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso epidurale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product onto a lesion."/>
+            </extension>
+            <code value="20010000"/>
+            <display value="Epilesional use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zum Auftragen auf die Wunde"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie épilésionnelle"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso epilesionale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product between chorion and amnion."/>
+            </extension>
+            <code value="20011000"/>
+            <display value="Extraamniotic use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="extraamniotische Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie extra-amniotique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso extra-amniotico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Use of a medicinal product outside the body"/>
+            </extension>
+            <code value="20011500"/>
+            <display value="Extracorporeal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="extrakorporale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie extracorporelle"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the stomach or duodenum gastroenteral tract by means of an appropriate device. For use only when gastric use and intestinal use do not apply."/>
+            </extension>
+            <code value="20013000"/>
+            <display value="Gastroenteral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="gastrointestinale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie gastro-entérale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso gastrointestinale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the stomach by means of an appropriate device"/>
+            </extension>
+            <code value="20013500"/>
+            <display value="Gastric use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur Anwendung mittels Magensonde"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie gastrique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso gastrico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the gingivae."/>
+            </extension>
+            <code value="20014000"/>
+            <display value="Gingival use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Anwendung am Zahnfleisch"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie gingivale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso gengivale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Clearance of the blood by means of a semipermeable membrane. [Previous English term 'Hemodialysis' corrected 04/07/11.]"/>
+            </extension>
+            <code value="20015000"/>
+            <display value="Haemodialysis"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Hämodialyse"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Hémodialyse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Emodialisi"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Insertion of an implant or living tissue equivalent into living tissue."/>
+            </extension>
+            <code value="20015500"/>
+            <display value="Implantation"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur Implantation"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Implantation"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Method of administration, usually by injection, whereby a fluid passes into a target tissue (e.g. anaesthetic infiltration)"/>
+            </extension>
+            <code value="20019500"/>
+            <display value="Infiltration"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Infiltration"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Infiltration"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the respiratory system by inhalation to obtain a systemic or a local effect in the lower respiratory tract. Nasal use and endotracheopulmonary use are excluded"/>
+            </extension>
+            <code value="20020000"/>
+            <display value="Inhalation use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur Inhalation"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie inhalée"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso inalatorio"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the intestine (duodenum, jejunum, ileum and colon) by means of an appropriate device. Gastroenteral use is excluded"/>
+            </extension>
+            <code value="20021000"/>
+            <display value="Intestinal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intestinale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intestinale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intestinale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the amniotic cavity."/>
+            </extension>
+            <code value="20022000"/>
+            <display value="Intraamniotic use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraamniotische Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraamniotique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intra-amniotico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into an artery."/>
+            </extension>
+            <code value="20023000"/>
+            <display value="Intraarterial use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraarterielle Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraartérielle"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso endoarterioso"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into an articular cavity."/>
+            </extension>
+            <code value="20024000"/>
+            <display value="Intraarticular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraartikuläre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraarticulaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intra-articolare"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into bursae and tendons."/>
+            </extension>
+            <code value="20025000"/>
+            <display value="Intrabursal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrabursale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intrabursale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intrabursale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product directly into the anterior chamber of the eye"/>
+            </extension>
+            <code value="20025500"/>
+            <display value="Intracameral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrakamerale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracamérulaire"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the cardiac muscle and/or cardiac cavity."/>
+            </extension>
+            <code value="20026000"/>
+            <display value="Intracardiac use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intracardiale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracardiaque"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracardiaco"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the cartilage"/>
+            </extension>
+            <code value="20026500"/>
+            <display value="Intracartilaginous use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrakartilaginäre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracartilagineuse"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the corpus cavernosum."/>
+            </extension>
+            <code value="20027000"/>
+            <display value="Intracavernous use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrakavernöse Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracaverneuse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracavernoso"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product directly to the brain tissue."/>
+            </extension>
+            <code value="20027010"/>
+            <display value="Intracerebral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Intrazerebrale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracérébrale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracerebrale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the cervix uteri."/>
+            </extension>
+            <code value="20028000"/>
+            <display value="Intracervical use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrazervikale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracervicale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracervicale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the bile duct and the pancreatic duct, for example via a cannula introduced into the ampulla of Vater (the common opening of the ducts), usually for the administration of a contrast medium for techniques such as endoscopic retrograde cholangiopancreatography (ERCP)."/>
+            </extension>
+            <code value="20028300"/>
+            <display value="Intracholangiopancreatic use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur Anwendung in der Cholangiopankreatikographie"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracholangiopancréatique"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the Cisterna Magna"/>
+            </extension>
+            <code value="20028500"/>
+            <display value="Intracisternal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intracisternale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracisternale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the coronary artery."/>
+            </extension>
+            <code value="20029000"/>
+            <display value="Intracoronary use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrakoronare Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracoronaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intracoronarico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the dermis."/>
+            </extension>
+            <code value="20030000"/>
+            <display value="Intradermal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intradermale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intradermique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intradermico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the nucleus pulposus of an intervertebral disc."/>
+            </extension>
+            <code value="20031000"/>
+            <display value="Intradiscal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intradiskale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intradiscale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intradiscale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the epidermis"/>
+            </extension>
+            <code value="20031500"/>
+            <display value="Intraepidermal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraepidermale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraépidermique"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product directly into a gland, usually by injection. Only to be used where more-specific terms such as 'Intraprostatic use' and 'Intramammary use' do not apply."/>
+            </extension>
+            <code value="20031700"/>
+            <display value="Intraglandular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraglanduläre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraglandulaire"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration by injection or any other means of a medicinal product directly to a lesion."/>
+            </extension>
+            <code value="20032000"/>
+            <display value="Intralesional use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraläsionale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intralésionnelle"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intralesionale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into a lymphatic vessel."/>
+            </extension>
+            <code value="20033000"/>
+            <display value="Intralymphatic use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intralymphatische Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intralymphatique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intralinfatico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into muscular tissue."/>
+            </extension>
+            <code value="20035000"/>
+            <display value="Intramuscular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intramuskuläre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intramusculaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intramuscolare"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the eye. The term 'intraocular use' is only for use when a more specific term (e.g. 'intracameral use', 'intravitreal use') does not apply. Ocular use and subconjunctival use are excluded."/>
+            </extension>
+            <code value="20036000"/>
+            <display value="Intraocular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraokulare Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraoculaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intraoculare"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the bone marrow. Intrasternal use is excluded."/>
+            </extension>
+            <code value="20036500"/>
+            <display value="Intraosseous use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraossäre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraosseuse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intraosseo"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product to the pericardium."/>
+            </extension>
+            <code value="20037000"/>
+            <display value="Intrapericardial use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Intraperikardial"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intrapéricardiaque"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intrapericardico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the peritoneal cavity."/>
+            </extension>
+            <code value="20038000"/>
+            <display value="Intraperitoneal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraperitoneale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intrapéritonéale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intraperitoneale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the pleural cavity."/>
+            </extension>
+            <code value="20039000"/>
+            <display value="Intrapleural use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrapleurale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intrapleurale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intrapleurico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection/infusion of a medicinal product into the hepatic portal vein for local delivery to the liver."/>
+            </extension>
+            <code value="20039200"/>
+            <display value="Intraportal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraportale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraportale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the prostate"/>
+            </extension>
+            <code value="20039500"/>
+            <display value="Intraprostatic use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intraprostatische Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraprostatique"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the bone marrow of the sternum."/>
+            </extension>
+            <code value="20041000"/>
+            <display value="Intrasternal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrasternale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intrasternale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intrasternale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product through the dura to the subarachnoid cavity."/>
+            </extension>
+            <code value="20042000"/>
+            <display value="Intrathecal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrathekale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intrathécale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intratecale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into a tumor."/>
+            </extension>
+            <code value="20043000"/>
+            <display value="Intratumoral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intratumorale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intratumorale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intratumorale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the cavity of the uterus."/>
+            </extension>
+            <code value="20044000"/>
+            <display value="Intrauterine use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intrauterine Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intra-utérine"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intrauterino"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into a vein."/>
+            </extension>
+            <code value="20045000"/>
+            <display value="Intravenous use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intravenöse Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intraveineuse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso endovenoso"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the urinary bladder."/>
+            </extension>
+            <code value="20046000"/>
+            <display value="Intravesical use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intravesikale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intravésicale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso endovescicale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the rear chamber of the eye."/>
+            </extension>
+            <code value="20047000"/>
+            <display value="Intravitreal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Intravitreal"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intravitréenne"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso intravitreo"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Introduction of (an) ionised active substance(s) through the intact skin by application of a direct electric current"/>
+            </extension>
+            <code value="20047500"/>
+            <display value="Iontophoresis"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur Iontophorese"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Iontophorèse"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="0"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the laryngopharynx for a local effect (anaesthetics)."/>
+            </extension>
+            <code value="20048000"/>
+            <display value="Laryngopharyngeal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur Anwendung im Rachen und am Kehlkopf"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie laryngopharyngée"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso laringofaringeo"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the nose to obtain a systemic or local effect. Inhalation therapy intended for the lower respiratory tract is excluded; see inhalation use."/>
+            </extension>
+            <code value="20049000"/>
+            <display value="Nasal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="nasale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie nasale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso nasale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product upon the eyeball and/or conjunctiva."/>
+            </extension>
+            <code value="20051000"/>
+            <display value="Ocular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Anwendung am Auge"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie ophtalmique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso oftalmico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Taking a medicinal product by means of swallowing."/>
+            </extension>
+            <code value="20053000"/>
+            <display value="Oral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zum Einnehmen"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie orale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso orale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the oral cavity to obtain either a systemic or a local effect. The term oromucosal is only for use when a more specific term (e.g. buccal, gingival, sublingual...) does not apply. Oral use is excluded."/>
+            </extension>
+            <code value="20054000"/>
+            <display value="Oromucosal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Anwendung in der Mundhöhle"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie buccale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Per mucosa orale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the oropharynx (throat) to obtain a local effect."/>
+            </extension>
+            <code value="20055000"/>
+            <display value="Oropharyngeal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur Anwendung im Mund- und Rachenraum"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie oropharyngée"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso orofaringeo"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product around a joint."/>
+            </extension>
+            <code value="20057000"/>
+            <display value="Periarticular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="periartikuläre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie périarticulaire"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso periarticolare"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product into the direct surroundings of one or more nerves."/>
+            </extension>
+            <code value="20058000"/>
+            <display value="Perineural use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="perineurale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie périneurale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso perineurale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration to the pouch between the tooth and the gingiva."/>
+            </extension>
+            <code value="20059000"/>
+            <display value="Periodontal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="zur periodontalen Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie périodontale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso periodontale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product on or around the bone"/>
+            </extension>
+            <code value="20059300"/>
+            <display value="Periosseous use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="periossäre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie périosseuse"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product directly into the region surrounding a tumour."/>
+            </extension>
+            <code value="20059400"/>
+            <display value="Peritumoral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="peritumorale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie péritumorale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product beneath the sub-tenon membrane of the sclera (i.e. in the episcleral space), adjacent to the macula."/>
+            </extension>
+            <code value="20059500"/>
+            <display value="Posterior juxtascleral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="posteriore juxtasclerale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie juxta-sclérale postérieure"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso iuxtasclerale posteriore"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the rectum in order to obtain a local or systemic effect."/>
+            </extension>
+            <code value="20061000"/>
+            <display value="Rectal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="rektale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie rectale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso rettale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product behind the eyeball"/>
+            </extension>
+            <code value="20061500"/>
+            <display value="Retrobulbar use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="retrobulbäre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie rétrobulbaire"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Applies to medicinal products not directly coming into contact with the body of the patient, or administration to various or non-specified anatomical sites."/>
+            </extension>
+            <code value="20062000"/>
+            <display value="Route of administration not applicable"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Art der Anwendung nicht spezifizierbar"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Autre(s)"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Via di somministrazione non specificabile"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product by scratching the skin."/>
+            </extension>
+            <code value="20063000"/>
+            <display value="Skin scarification"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Einritzen der Haut"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Scarification"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Scarificazione"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product underneath the conjunctiva."/>
+            </extension>
+            <code value="20065000"/>
+            <display value="Subconjunctival use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="subkonjunktivale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie sous-conjonctivale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso subcongiuntivale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product directly underneath the skin, i.e. subdermally"/>
+            </extension>
+            <code value="20066000"/>
+            <display value="Subcutaneous use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="subkutane Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie sous-cutanée"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso sottocutaneo"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product under the tongue to obtain a systemic effect."/>
+            </extension>
+            <code value="20067000"/>
+            <display value="Sublingual use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Sublingual"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie sublinguale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso sublinguale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Injection of a medicinal product directly underneath a mucosa"/>
+            </extension>
+            <code value="20067500"/>
+            <display value="Submucosal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="submuköse Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie sous-muqueuse"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the skin in order to obtain a systemic effect after passing through the skin barrier."/>
+            </extension>
+            <code value="20070000"/>
+            <display value="Transdermal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="transdermale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie transdermique"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso transdermico"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the urethra."/>
+            </extension>
+            <code value="20071000"/>
+            <display value="Urethral use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Anwendung in der Harnröhre"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie urétrale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso uretrale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product to the vagina."/>
+            </extension>
+            <code value="20072000"/>
+            <display value="Vaginal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="vaginale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie vaginale"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="Uso vaginale"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product into the cerebral ventricles (cerebral ventricular system) of the brain."/>
+            </extension>
+            <code value="20080000"/>
+            <display value="Intracerebroventricular use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="intracerebroventrikuläre Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie intracérébroventriculaire"/>
+            </designation>
+         </concept>
+         <concept>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+               <valueString value="Administration of a medicinal product between the sensory retina (neural retina) and the retinal pigment epithelium of the eye."/>
+            </extension>
+            <code value="20081000"/>
+            <display value="Subretinal use"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="subretinale Anwendung"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="Voie subrétinale"/>
+            </designation>
+         </concept>
+      </include>
+   </compose>
+</ValueSet>

@@ -1,44 +1,110 @@
 {
-    "tool": "jekyll",
-    "version": "4.0.0",
-    "fixed-business-version": "0.1.0",
-    "license": "CC-BY-SA-4.0",
-    "npm-name": "ch.fhir.ig.core",
-    "paths": {
-      "resources": [
-        "resources",
-        "examples",
-        "examplesNonValid"
-      ],
-      "pages": "pages",
-      "temp": "temp",
-      "output": "output",
-      "qa": "qa",
-      "txCache": "txCache",
-      "specification": "http:/hl7.org/fhir/r4"
-    },
-    "language" : "en", 
-    "languages" : [ 
-      "en", "de-CH", "fr-CH", "it-CH"
+  "tool": "jekyll",
+  "version": "4.0.0",
+  "fixed-business-version": "0.1.0",
+  "license": "CC-BY-SA-4.0",
+  "npm-name": "ch.fhir.ig.core",
+  "paths": {
+    "resources": [
+      "resources",
+      "examples",
+      "examplesNonValid"
     ],
-    "path-pattern": "[type]-[id].html",
-    "defaults": {
-      "Any": {
-        "java": false
-      }
+    "pages": "pages",
+    "temp": "temp",
+    "output": "output",
+    "qa": "qa",
+    "txCache": "txCache",
+    "specification": "http:/hl7.org/fhir/r4"
+  },
+  "language": "en",
+  "languages": [
+    "en",
+    "de-CH",
+    "fr-CH",
+    "it-CH"
+  ],
+  "path-pattern": "[type]-[id].html",
+  "defaults": {
+    "_documentation": "defaults and extraTemplate be moved to the base template, however did not bring it to work yet",
+    "Any": {
+      "xml": true,
+      "json": true,
+      "ttl": true,
+      "xml-html": true,
+      "json-html": true,
+      "ttl-html": true,
+      "template-format": "template/instance-template-format.html",
+      "template-base": "template/instance-template-base.html"
     },
-    "template": "https://github.com/ahdis/test-template",
-    "devtemplate": "/Users/oliveregger/Documents/github/test-template",
-    "canonicalBase": "http://fhir.ch/ig/ch-core",
-    "source": "implementationguide/ch.fhir.ig.core-0.1.0.xml",
-    "sct-edition": "http://snomed.info/sct/900000000000207008",
-    "resources": {},
-    "suppressedWarningFile": "suppressedwarnings.txt",
-    "logging": [
-      "init",
-      "progress",
-      "context",
-      "html",
-      "tx" 
-    ]
-  }
+    "CodeSystem": {
+      "summary": true,
+      "cld": true,
+      "content": true,
+      "xref": true
+    },
+    "ValueSet": {
+      "summary": true,
+      "cld": true,
+      "xref": true,
+      "expansion": true
+    },
+    "ConceptMap": {
+      "summary": true,
+      "content": true,
+      "xref": true
+    },
+    "StructureDefinition": {
+      "shex": true,
+      "sch": true,
+      "json-schema": true,
+      "summary": true,
+      "header": true,
+      "diff": true,
+      "snapshot": true,
+      "pseudo-xml": true,
+      "pseudo-json": true,
+      "pseudo-ttl": true,
+      "uml": true,
+      "tx": true,
+      "inv": true,
+      "dict": true,
+      "maps": true,
+      "xref": true,
+      "template-base": "template/instance-template-sd.html",
+      "template-defns": "template/instance-template-sd-definitions.html",
+      "template-mappings": "template/instance-template-sd-mappings.html",
+      "template-examples": "template/instance-template-sd-examples.html"
+    }
+  },
+  "extraTemplates": [
+    {
+      "name": "mappings",
+      "description": "Mappings"
+    },
+    {
+      "name": "examples",
+      "description": "Examples"
+    }
+  ],
+  "hl7template": "https://github.com/FHIR/test-template",
+  "template": "https://github.com/ahdis/test-template",
+  "devtemplate": "/Users/oliveregger/Documents/github/test-template",
+  "canonicalBase": "http://fhir.ch/ig/ch-core",
+  "source": "implementationguide/ch.fhir.ig.core-0.1.0.xml",
+  "sct-edition": "http://snomed.info/sct/900000000000207008",
+  "resources": {},
+  "suppressedWarningFile": "suppressedwarnings.txt",
+  "logging": [
+    "init",
+    "progress",
+    "context",
+    "html",
+    "tx"
+  ],
+  "special-urls": [
+    "urn:oid:2.16.756.5.30.1.1.11.2",
+    "urn:oid:2.16.756.5.30.1.1.11.3",
+    "urn:oid:0.4.0.127.0.16.1.1.2.1"
+  ]
+}
