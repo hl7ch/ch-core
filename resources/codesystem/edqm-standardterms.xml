@@ -16,8 +16,8 @@
       <value value="2.16.756.5.30.1.1.11.3"/>
    </identifier>
    <version value="2018-04-10T16:57:30"/>
-   <name value="PharmaceuticalDoseFormEDQM"/>
-   <title value="Pharmaceutical Dose Form (EDQM)"/>
+   <name value="EdqmStandardTerms"/>
+   <title value="EDQM - Standard Terms"/>
    <status value="draft"/>
    <experimental value="false"/>
    <publisher value="eHealth Suisse"/>
@@ -28,7 +28,7 @@
          <value value="www.e-health-suisse.ch"/>
       </telecom>
    </contact>
-   <description value="Valueset RouteOuPharmaceutical Dose Form from EDQM, PDF, export 24.4.2018, see https://standardterms.edqm.eu/#"/>
+   <description value="EDQM - Standard Terms used in Swizerland (aggregations of codes of ValueSets RouteOfAdmministartion, Dose Form, see original codes system defined in https://standardterms.edqm.eu/#)"/>
    <content value="complete"/>
    <concept>
       <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">

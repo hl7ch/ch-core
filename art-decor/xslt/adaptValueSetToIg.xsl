@@ -27,12 +27,26 @@
       </fhir:meta>      
     </xsl:template>
 
-
     <xsl:template match="fhir:ValueSet/fhir:url">
       <fhir:url>
 			<xsl:attribute name="value"><xsl:value-of select="$canonicalBase" />/ValueSet/<xsl:value-of select="$resourceId" />
          </xsl:attribute>
       </fhir:url>   
+    </xsl:template>
+
+    <!-- RouteOfAdministration (EDQM) map to EDQM - RouteOfAdministration -->
+    <xsl:template match="fhir:ValueSet/fhir:title">
+      <xsl:choose>
+          <xsl:when test="contains(@value, ' (EDQM)')">
+            <fhir:title>
+              <xsl:attribute name="value"><xsl:value-of select="concat('EDQM - ',substring-before(@value, ' (EDQM)'))" />
+              </xsl:attribute>
+            </fhir:title>
+          </xsl:when>
+        <xsl:otherwise>
+          <xsl:apply-templates />
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:template>
 
     <!-- The Coding provided is not in the value set http://hl7.org/fhir/ValueSet/designation-use (http://hl7.org/fhir/ValueSet/designation-use, and a code should come from this value set unless it has no suitable code) (error message = The code system "http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType" is not known; The code provided (http://art-decor.org/ADAR/rv/DECOR.xsd#DesignationType#preferred) is not valid in the value set DesignationUse) -->
