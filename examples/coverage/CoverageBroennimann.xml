@@ -1,0 +1,24 @@
+<Coverage xmlns="http://hl7.org/fhir">
+    <id value="CoverageBroennimann"/>
+    <meta>
+        <source value="https://www.ti.bfh.ch/de/bachelor/medizininformatik.html"/>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
+    </meta>
+    <contained>
+        <Organization>
+            <id value="sanitas" />
+            <name value="Sanitas" />
+        </Organization>
+    </contained>
+    <identifier>
+        <system value="urn:oid:2.16.756.5.30.1.123.100.1.1.1" />
+        <value value="80756015090002647590" />
+    </identifier>
+    <status value="active" />
+    <beneficiary>
+        <reference value="Patient/ElisabethBroennimannByBFH"/>    
+    </beneficiary>
+    <payor>
+        <reference value="#sanitas"/>    
+    </payor>
+</Coverage>    

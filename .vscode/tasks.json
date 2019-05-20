@@ -85,7 +85,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
+                "${workspaceFolder}/../ch-core/org.hl7.fhir.igpublisher.jar",
                 "-web",
                 "-ig",
                 "${workspaceFolder}/ig.json"

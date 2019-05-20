@@ -43,6 +43,12 @@
     </grouping>
     <resource>
       <reference>
+        <reference value="Coverage/CoverageBroennimann"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Encounter/EncounterAmbulantBroennimann"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
@@ -272,6 +278,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-composition"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-coverage"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

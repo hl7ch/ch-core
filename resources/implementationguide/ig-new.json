@@ -52,6 +52,12 @@
     }],
     "resource" : [{
       "reference" : {
+        "reference" : "Coverage/CoverageBroennimann"
+      },
+      "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"
+    },
+    {
+      "reference" : {
         "reference" : "Encounter/EncounterAmbulantBroennimann"
       },
       "exampleCanonical" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"
@@ -281,6 +287,12 @@
     {
       "reference" : {
         "reference" : "StructureDefinition/ch-core-composition"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
+        "reference" : "StructureDefinition/ch-core-coverage"
       },
       "exampleBoolean" : false
     },
