@@ -47,27 +47,16 @@
         </element>
         <element id="Encounter.identifier">
             <path value="Encounter.identifier"/>
+            <short value="Visitnumber (Fallnummer)"/>
             <min value="0"/>
             <max value="*"/>
             <type>
                 <code value="Identifier"/>
             </type>
-        </element>
-        <element id="Encounter.identifier.system">
-            <path value="Encounter.identifier.system"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="uri"/>
-            </type>
-        </element>
-        <element id="Encounter.identifier.value">
-            <path value="Encounter.identifier.value"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="string"/>
-            </type>
+            <mapping>
+                <identity value="v2"/>
+                <map value="PV1-19"/>
+            </mapping>
         </element>
         <element id="Encounter.status">
             <path value="Encounter.status"/>
