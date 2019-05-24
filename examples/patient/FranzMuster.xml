@@ -81,6 +81,12 @@
     </valueCodeableConcept>
   </extension>
   <identifier>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/v2/0203" />
+        <code value="MR" />
+      </coding>
+    </type>
     <system value="urn:oid:2.16.756.5.30.999999.1"/>
     <value value="012/08.111111"/>
   </identifier>
