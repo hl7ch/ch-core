@@ -8,7 +8,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "org.hl7.fhir.validation.cli.jar",
+                "org.hl7.fhir.validator.jar",
                 "${file}",
                 "-ig",
                 "${fileDirname}/../../output"
@@ -40,7 +40,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
+                "${workspaceFolder}/../ch-core/org.hl7.fhir.validator.jar",
                 "${file}",
                 "-tx",
                 "n/a"
@@ -72,7 +72,7 @@
             "command": "java",
             "args": [
                 "-jar",
-                "${workspaceFolder}/../ch-core/org.hl7.fhir.validation.cli.jar",
+                "${workspaceFolder}/../ch-core/org.hl7.fhir.validator.jar",
                 "${file}",
                 "-narrative",
                 "-output",
@@ -131,6 +131,65 @@
             ],
             "problemMatcher": []
         },
+        {
+            "label": "convert R3 to R4 xml through matchbox fhir.ch",
+            "command": "curl",
+            "args": [
+                "--request",
+                "POST",
+                "--url",
+                "https://test.fhir.ch/r4/$convert",
+                "--header",
+                "Content-Type: application/fhir+xml; fhirVersion=3.0",
+                "--header",
+                "Accept: application/fhir+xml",
+                "--http1.1",
+                "--data",
+                "@${file}",
+                "-o",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },         {
+            "label": "convert R4 to R3 xml through matchbox hc",
+            "command": "curl",
+            "args": [
+                "--request",
+                "POST",
+                "--url",
+                "https://test.fhir.ch/r4/$convert",
+                "--header",
+                "Content-Type: application/fhir+xml",
+                "--header",
+                "Accept: application/fhir+xml; fhirVersion=3.0",
+                "--http1.1",
+                "--data",
+                "@${file}",
+                "-o",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "convert CHMED16AF 0.1.0 to 0.2.0 xml through matchbox localhost",
+            "command": "curl",
+            "args": [
+                "--request",
+                "POST",
+                "--url",
+                "http://localhost:8080/r4/$convert",
+                "--header",
+                "Content-Type: application/fhir+xml; fhirVersion=3.0",
+                "--header",
+                "Accept: application/fhir+xml",
+                "--http1.1",
+                "--data",
+                "@${file}",
+                "-o",
+                "${file}"
+            ],
+            "problemMatcher": []
+        },         
         {
             "label": "xsl bundle to qr",
             "args": [
