@@ -71,7 +71,7 @@
             <path value="Address.line"/>
             <short value="Street name, number, direction &amp; P.O. Box etc."/>
             <definition value="This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information."/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="*"/>
             <type>
                 <code value="string"/>
@@ -210,7 +210,7 @@
             <short value="Postal code for area"/>
             <definition value="A postal code designating a region defined by the postal service."/>
             <alias value="Zip"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="string"/>
@@ -226,7 +226,7 @@
         </element>
         <element id="Address.country">
             <path value="Address.country"/>
-            <min value="0"/>
+            <min value="1"/>
             <max value="1"/>
             <type>
                 <code value="string"/>
