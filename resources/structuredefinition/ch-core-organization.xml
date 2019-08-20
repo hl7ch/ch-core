@@ -111,15 +111,6 @@
             <path value="Organization.address"/>
             <min value="1"/>
             <max value="*"/>
-            <type>
-                <code value="Address"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-10"/>
-            </type>
-            <isModifier value="false"/>
-            <mapping>
-                <identity value="servd"/>
-                <map value="n/a"/>
-            </mapping>
         </element>
         <element id="Organization.endpoint">
             <path value="Organization.endpoint"/>
