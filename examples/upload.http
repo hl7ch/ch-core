@@ -1,0 +1,19 @@
+@host = http://test.fhir.ch/r4
+
+###
+PUT {{host}}/Practitioner/HanspeterWengerByBFH HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./practitioner/HanspeterWengerByBFH.xml
+
+###
+PUT {{host}}/Patient/ElisabethBroennimannByBFH HTTP/1.1
+Content-Type: application/fhir+xml
+
+< ./patient/ElisabethBroennimannByBFH.xml
+
+
+
+###
+GET {{host}}/Patient/ElisabethBroennimannByBFH HTTP/1.1
+Content-Type: application/fhir+xml
