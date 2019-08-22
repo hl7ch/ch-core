@@ -351,32 +351,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <type>
                 <code value="Address"/>
             </type>
-            <mapping>
-                <identity value="eCH"/>
-                <map value="eCH-0010: 3.4.5 dwellingAddress - Wohnadresse" />
-            </mapping>
-        </element>
-        <element id="Patient.address.extension">
-            <path value="Patient.address.extension" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="url" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-        </element>
-        <element id="Patient.address.extension:post-address-ech10">
-            <path value="Patient.address.extension" />
-            <sliceName value="post-address-ech10" />
-            <type>
-                <code value="Extension" />
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-10" />
-            </type>
-            <mapping>
-                <identity value="eCH"/>
-                <map value="eCH-0010: postal address" />
-            </mapping>
         </element>
         <element id="Patient.maritalStatus">
             <path value="Patient.maritalStatus"/>

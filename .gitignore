@@ -4,3 +4,8 @@ txCache
 temp
 org.hl7.*.jar
 template
+ig.ini
+resources/implementationguide/ig-expansion-parameters.json
+resources/implementationguide/ig-new.json
+resources/implementationguide/ig-new.xml
+resources/implementationguide/ig-validation-parameters.json
