@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ch.fhir.ig.core-0.1.0"/>
+  <id value="ch.fhir.ig.core"/>
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -13,7 +13,7 @@
       <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>
     </div>
   </text>
-  <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.core-0.1.0"/>
+  <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.core"/>
   <version value="0.1.0"/>
   <name value="CH_Core"/>
   <status value="active"/>
