@@ -37,6 +37,13 @@
   ],
   "template": "https://github.com/ahdis/ig-template",
   "canonicalBase": "http://fhir.ch/ig/ch-core",
+  "dependencyList": [
+    {
+      "name": "cheprterm",
+      "package": "ch.fhir.ig.ch-epr-term",
+      "version": "dev"
+    }
+  ],
   "source": "implementationguide/ch.fhir.ig.core.xml",
   "sct-edition": "http://snomed.info/sct/900000000000207008",
   "resources": {},
