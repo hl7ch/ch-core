@@ -154,7 +154,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/> 
             </type>
             <isSummary value="true"/>
             <mapping>
@@ -170,7 +170,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
             </type>
             <isSummary value="true"/>
             <mapping>
@@ -250,7 +250,7 @@
             <max value="*"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-location"/>
             </type>
             <isSummary value="true"/>
             <mapping>
