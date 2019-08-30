@@ -85,6 +85,17 @@
             </type>
             <isModifier value="false"/>
         </element>
+        <element id="Organization.type">
+            <path value="Organization.type"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="OrganizationType"/>
+                </extension>
+                <strength value="preferred"/>
+                <description value="Used to categorize the organization."/>
+                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.healthcareFacilityTypeCode"/>
+            </binding>
+        </element>
         <element id="Organization.name">
             <path value="Organization.name"/>
             <min value="1"/>

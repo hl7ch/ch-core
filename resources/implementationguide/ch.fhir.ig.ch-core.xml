@@ -295,6 +295,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-documentreference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-patient"/>
       </reference>
       <exampleBoolean value="false"/>
