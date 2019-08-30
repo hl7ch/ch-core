@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "fixed-business-version": "0.1.0",
   "license": "CC-BY-SA-4.0",
-  "npm-name": "ch.fhir.ig.core",
+  "npm-name": "ch.fhir.ig.ch-core",
   "paths": {
     "resources": [
       "resources",
@@ -44,7 +44,7 @@
       "version": "dev"
     }
   ],
-  "source": "implementationguide/ch.fhir.ig.core.xml",
+  "source": "implementationguide/ch.fhir.ig.ch-core.xml",
   "sct-edition": "http://snomed.info/sct/900000000000207008",
   "resources": {},
   "suppressedWarningFile": "suppressedwarnings.txt",
