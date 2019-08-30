@@ -1,41 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ch.fhir.ig.core-0.1.0"/>
+  <id value="ch.fhir.ig.ch-core"/>
   <text>
     <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
       ImplementationGuide for CH.Core
 
-      
       <hr/>
-      
       <h2>CH_Core</h2>
-      
       <p>The official URL for this implementation guide is:</p>
-      
       <pre>http://fhir.ch/ig/ch-core/ImplementationGuide/CH-Core</pre>
-    
     </div>
   </text>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/oliveregger/Documents/github/ch-core/resources"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/oliveregger/Documents/github/ch-core/examples"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/oliveregger/Documents/github/ch-core/examplesNonValid"/>
-  </extension>
-  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/oliveregger/Documents/github/ch-core/pages"/>
-  </extension>
-  <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.core-0.1.0"/>
+  <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
   <version value="0.1.0"/>
   <name value="CH_Core"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2018-10-15T00:00:00+02:00"/>
+  <date value="2018-10-15"/>
   <publisher value="HL7 Switzerland"/>
   <contact>
     <name value="HL7 Switzerland"/>
@@ -51,9 +34,8 @@
     </coding>
   </jurisdiction>
   <copyright value="CC-BY-SA-4.0"/>
-  <packageId value="ch.fhir.ig.core"/>
+  <packageId value="ch.fhir.ig.ch-core"/>
   <license value="CC-BY-SA-4.0"/>
-  <fhirVersion value="4.0.0"/>
   <fhirVersion value="4.0.0"/>
   <definition>
     <grouping>
@@ -119,7 +101,7 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-    <resource>
+        <resource>
       <reference>
         <reference value="CodeSystem/bfs-medstats-19-admitrole"/>
       </reference>
@@ -313,6 +295,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-documentreference"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-patient"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -395,13 +383,13 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-    <resource>
+  <resource>
       <reference>
         <reference value="ValueSet/bfs-medstats-18-admittype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-    <resource>
+        <resource>
       <reference>
         <reference value="ValueSet/bfs-medstats-19-admitrole"/>
       </reference>
@@ -436,7 +424,7 @@
         <reference value="ValueSet/bfs-medstats-29-dischargeencounter"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
+    </resource>    
     <resource>
       <reference>
         <reference value="ValueSet/ch-core-maritalstatus"/>
@@ -513,18 +501,6 @@
     <parameter>
       <code value="generate-turtle"/>
       <value value="false"/>
-    </parameter>
-    <parameter>
-      <code value="apply"/>
-      <value value="version"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="xml"/>
-    </parameter>
-    <parameter>
-      <code value="generate"/>
-      <value value="JSON"/>
     </parameter>
   </definition>
 </ImplementationGuide>

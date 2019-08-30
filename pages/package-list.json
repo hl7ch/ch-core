@@ -1,5 +1,5 @@
 {
-  "package-id": "ch.fhir.ig.core",
+  "package-id": "ch.fhir.ig.ch-core",
   "title": "CH Core (R4)",
   "introduction": "Core FHIR profiles for Switzerland in development by the HL7 Switzerland FHIR workgroup",
   "canonical": "http://fhir.ch/ig/ch-core",
