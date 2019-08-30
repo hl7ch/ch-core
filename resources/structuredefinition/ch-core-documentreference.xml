@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="ch-core-documentreference"/>
+	<url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference"/>
+	<version value="0.1.0"/>
+	<name value="CHCoreDocumentReference"/>
+	<title value="CH Core DocumentReference Profile"/>
+	<status value="draft"/>
+	<date value="2019-08-29T00:00:00+00:00"/>
+	<publisher value="HL7 Switzerland"/>
+	<contact>
+		<name value="HL7 Switzerland"/>
+		<telecom>
+			<system value="url"/>
+			<value value="https://www.hl7.ch/"/>
+		</telecom>
+	</contact>
+	<description value="Base definition for a document reference with the CH Core profiles."/>
+	<jurisdiction>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="CH"/>
+		</coding>
+	</jurisdiction>
+	<fhirVersion value="4.0.0"/>
+	<kind value="resource" />
+	<abstract value="false" />
+	<type value="DocumentReference" />
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+	<derivation value="constraint" />
+	<differential>
+		<element id="DocumentReference">
+			<path value="DocumentReference"/>
+		</element>
+		<element id="DocumentReference.type">
+			<path value="DocumentReference.type"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="DocumentC80Type"/>
+				</extension>
+				<strength value="preferred"/>
+				<description value="Precise type of clinical document."/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode"/>
+			</binding>
+		</element>
+		<element id="DocumentReference.category">
+			<path value="DocumentReference.category"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="DocumentC80Class"/>
+				</extension>
+				<strength value="preferred"/>
+				<description value="High-level kind of a clinical document at a macro level."/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.classCode"/>
+			</binding>
+		</element>
+		<element id="DocumentReference.securityLabel">
+			<path value="DocumentReference.securityLabel"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="SecurityLabels"/>
+				</extension>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
+					<valueBoolean value="true"/>
+				</extension>
+				<strength value="preferred"/>
+				<description value="Security Labels from the Healthcare Privacy and Security Classification System."/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode"/>
+			</binding>
+		</element>
+		<element id="DocumentReference.content">
+			<path value="DocumentReference.content"/>
+		</element>
+		<element id="DocumentReference.content.attachment">
+			<path value="DocumentReference.content.attachment"/>
+		</element>
+		<element id="DocumentReference.content.attachment.contentType">
+			<path value="DocumentReference.content.attachment.contentType"/>
+			<binding>
+				<strength value="preferred"/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType"/>
+			</binding>
+		</element>
+		<element id="DocumentReference.content.attachment.language">
+			<path value="DocumentReference.content.attachment.language"/>
+			<binding>
+				<strength value="preferred"/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.languageCode"/>
+			</binding>
+		</element>
+		<element id="DocumentReference.content.format">
+			<path value="DocumentReference.content.format"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="DocumentFormat"/>
+				</extension>
+				<strength value="preferred"/>
+				<description value="Document Format Codes."/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.formatCode"/>
+			</binding>
+		</element>
+		<element id="DocumentReference.context">
+			<path value="DocumentReference.context"/>
+		</element>
+		<element id="DocumentReference.context.facilityType">
+			<path value="DocumentReference.context.facilityType"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="DocumentC80FacilityType"/>
+				</extension>
+				<strength value="preferred"/>
+				<description value="XDS Facility Type."/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.healthcareFacilityTypeCode"/>
+			</binding>
+		</element>
+		<element id="DocumentReference.context.practiceSetting">
+			<path value="DocumentReference.context.practiceSetting"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="DocumentC80PracticeSetting"/>
+				</extension>
+				<strength value="preferred"/>
+				<description value="Additional details about where the content was created (e.g. clinical specialty)."/>
+				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.practiceSettingCode"/>
+			</binding>
+		</element>
+	</differential>
+</StructureDefinition>
