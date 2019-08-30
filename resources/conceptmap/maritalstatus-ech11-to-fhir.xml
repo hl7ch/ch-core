@@ -68,21 +68,27 @@
             <code value="5"/>
             <display value="unverheiratet"/>
             <target>
-                <equivalence value="unmatched"/>
+                <code value="A"/>
+                <display value="Annulled"/>
+                <equivalence value="equivalent"/>
             </target>
         </element>
         <element>
             <code value="6"/>
             <display value="in eingetragener Partnerschaft"/>
             <target>
-                <equivalence value="unmatched"/>
+                <code value="M"/>
+                <display value="Married"/>
+                <equivalence value="equivalent"/>
             </target>
         </element>
         <element>
             <code value="7"/>
             <display value="aufgelöste Partnerschaft"/>
             <target>
-                <equivalence value="unmatched"/>
+                <code value="D"/>
+                <display value="Divorced"/>
+                <equivalence value="equivalent"/>
             </target>
         </element>
     </group>
