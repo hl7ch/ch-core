@@ -23,6 +23,11 @@
 		</coding>
 	</jurisdiction>
 	<fhirVersion value="4.0.0"/>
+	<mapping>
+		<identity value="EPR-XDS"/>
+		<uri value="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf"/>
+		<name value="XDS"/>
+	</mapping>
 	<kind value="resource" />
 	<abstract value="false" />
 	<type value="DocumentReference" />
@@ -31,6 +36,14 @@
 	<differential>
 		<element id="DocumentReference">
 			<path value="DocumentReference"/>
+		</element>
+		<element id="DocumentReference.status">
+			<path value="DocumentReference.status"/>
+			<mapping>
+				<identity value="EPR-XDS"/>
+				<map value="Table 4.5.1.1-1 (FHIR DocumentReference mapping to DocumentEntry): approved -> status=current,
+							deprecated -> status=superseded. Other status values are allowed but are not defined in this mapping to XDS."/>
+			</mapping>
 		</element>
 		<element id="DocumentReference.type">
 			<path value="DocumentReference.type"/>
