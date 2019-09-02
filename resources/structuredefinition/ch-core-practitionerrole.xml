@@ -154,7 +154,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/> 
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
             </type>
             <isSummary value="true"/>
             <mapping>
@@ -194,9 +194,9 @@
                 <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
                     <valueString value="PractitionerRole"/>
                 </extension>
-                <strength value="example"/>
+                <strength value="preferred"/>
                 <description value="The role a person plays representing an organization."/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/practitioner-role"/>
+                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/HCProfessional.hcProfession"/>
             </binding>
             <mapping>
                 <identity value="v2"/>
@@ -227,7 +227,7 @@
                 </extension>
                 <strength value="preferred"/>
                 <description value="Specific specialty associated with the agency."/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/c80-practice-codes"/>
+                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/HCProfessional.hcSpecialisation"/>
             </binding>
             <mapping>
                 <identity value="v2"/>
