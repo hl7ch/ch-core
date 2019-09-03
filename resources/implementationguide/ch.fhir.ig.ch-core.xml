@@ -49,9 +49,21 @@
     </resource>
     <resource>
       <reference>
+        <reference value="DocumentReference/Docu"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Encounter/EncounterAmbulantBroennimann"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/SpitalSeeblick"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     </resource>
     <resource>
       <reference>
@@ -91,6 +103,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="PractitionerRole/HPWengerRole"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/bfs-medstats-17-admitsource"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -101,7 +119,7 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-        <resource>
+    <resource>
       <reference>
         <reference value="CodeSystem/bfs-medstats-19-admitrole"/>
       </reference>
@@ -383,13 +401,13 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-  <resource>
+    <resource>
       <reference>
         <reference value="ValueSet/bfs-medstats-18-admittype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-        <resource>
+    <resource>
       <reference>
         <reference value="ValueSet/bfs-medstats-19-admitrole"/>
       </reference>
@@ -424,7 +442,7 @@
         <reference value="ValueSet/bfs-medstats-29-dischargeencounter"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>    
+    </resource>
     <resource>
       <reference>
         <reference value="ValueSet/ch-core-maritalstatus"/>

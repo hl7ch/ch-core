@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="SpitalSeeblick"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+    </meta>
+    <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="2.16.840.1.113883.19.5"/>
+    </identifier>
+    <active value="true"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="22232009"/>
+            <display value="Hospital"/>
+        </coding>
+    </type>
+    <name value="Spital Seeblick"/>
+    <telecom>
+        <system value="phone"/>
+        <value value="032 863 12 01"/>
+    </telecom>
+    <address>
+        <line value="Ausblick 11"/>
+        <city value="8000"/>
+        <postalCode value="Zürich"/>
+    </address>
+</Organization> 

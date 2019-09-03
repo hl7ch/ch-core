@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="The Encounter referenced in the CH Core profiles."/>
+    <description value="Base definition for a composition with the CH Core profiles."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
