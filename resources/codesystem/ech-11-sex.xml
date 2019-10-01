@@ -23,7 +23,6 @@
         </coding>
     </jurisdiction>
     <caseSensitive value="true"/>
-    <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-sex"/>
     <compositional value="false"/>
     <versionNeeded value="true"/>
     <content value="complete"/>
