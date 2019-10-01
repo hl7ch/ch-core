@@ -241,6 +241,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="NamingSystem/uidb"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="NamingSystem/zsr"/>
       </reference>
       <exampleBoolean value="false"/>
