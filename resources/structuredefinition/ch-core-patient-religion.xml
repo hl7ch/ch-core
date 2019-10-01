@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Religion of patient according to fhir and eCH-0011"/>
+    <description value="Religion of patient according to eCH-0011"/>
     <fhirVersion value="4.0.0"/>
     <mapping>
         <identity value="rim"/>
@@ -29,12 +29,12 @@
         <expression value="Patient"/>
     </context>
     <type value="Extension"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/patient-religion"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Religion for patient according to fhir and eCH-0011"/>
+            <short value="Religion for patient according to eCH-0011"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -56,7 +56,7 @@
             </type>
             <binding>
                 <strength value="extensible"/>
-                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ch-core-religion"/>
+                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-religion"/>
             </binding>
         </element>
     </differential>
