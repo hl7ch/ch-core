@@ -301,6 +301,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-ext-informationrecipient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-composition"/>
       </reference>
       <exampleBoolean value="false"/>
