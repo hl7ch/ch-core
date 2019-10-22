@@ -43,6 +43,26 @@
             <path value="Composition"/>
             <short value="CH Core Composition"/>
         </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:informationRecipient">
+            <path value="Composition.extension"/>
+            <sliceName value="informationRecipient"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient"/>
+            </type>
+        </element>
         <element id="Composition.language">
             <path value="Composition.language"/>
             <binding>
