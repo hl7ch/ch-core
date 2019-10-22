@@ -55,5 +55,28 @@
             <path value="Composition.subject.reference"/>
             <min value="1"/>
         </element>
+        <element id="Composition.confidentiality">
+            <path value="Composition.confidentiality"/>
+        </element>
+        <element id="Composition.confidentiality.extension">
+            <path value="Composition.confidentiality.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.confidentiality.extension:confidentialityCode">
+            <path value="Composition.confidentiality.extension"/>
+            <sliceName value="confidentialityCode"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
+            </type>
+        </element>
     </differential>
 </StructureDefinition>
