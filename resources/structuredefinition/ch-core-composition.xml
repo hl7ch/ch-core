@@ -49,6 +49,10 @@
                 <strength value="required"/>
                 <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.languageCode"/>
             </binding>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".languageCode"/>
+            </mapping>
         </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
