@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+  </meta>
+  <status value="final"/>
+  
+</Composition>
