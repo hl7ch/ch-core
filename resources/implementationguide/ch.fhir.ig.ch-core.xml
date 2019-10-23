@@ -43,12 +43,12 @@
     </grouping>
 
     <!-- references for examples -->
-    <!--<resource>
+    <resource>
       <reference>
         <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
-    </resource>-->
+    </resource>
     <resource>
       <reference>
         <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
@@ -75,6 +75,18 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Organization/GruppenpraxisCH"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/Radiologieinstitut"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Organization/SpitalSeeblick"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
@@ -88,6 +100,12 @@
     <resource>
       <reference>
         <reference value="Patient/FranzMuster"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/MaxMuster"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>

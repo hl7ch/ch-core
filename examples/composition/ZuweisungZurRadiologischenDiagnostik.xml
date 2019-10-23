@@ -4,6 +4,13 @@
   <meta>
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
   </meta>
+  <language value="de-CH"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
+    <valueString value="2"/>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+    <valueReference value="Organization/Radiologieinstitut"/>
+  </extension>
   <status value="final"/>
   <type>
     <coding>
@@ -12,6 +19,9 @@
       <display value="Transfer summary report"/>
     </coding>
   </type>
+  <subject>
+    <reference value="Patient/MaxMuster"/>
+  </subject>
   <date value="2017-10-03T17:33:00+01:00"/>
   <author>
     <reference value="Practitioner/AllzeitBereit"/>
@@ -28,4 +38,65 @@
       </valueCodeableConcept>
     </extension>
   </confidentiality>
+  <attester>
+    <id value="2.16.756.5.30.1.1.10.2.5"/>
+    <mode value="legal"/>
+    <time value="2017-10-03"/>
+    <party>
+      <reference value="Practitioner/AllzeitBereit"/>
+    </party>
+  </attester>
+  <custodian>
+    <reference value="Organization/GruppenpraxisCH"/>
+  </custodian>
+  <section>
+    <title value="Gewünschte Untersuchung"/>
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        Der Patient erwartet Ihr Aufgebot zur Untersuchung.<br/>
+        <i>Spezifizierung der gewünschten Untersuchung</i><br/>
+      </div>
+    </text>
+  </section>
+  <section>
+    <title value="Dringlichkeit / Wunschtermin"/>
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <i>Angaben zum gewünschten Termin</i>
+      </div>
+    </text>
+  </section>
+  <section>
+    <title value="Fragestellung"/>
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <i>Grund für die Durchführung der Untersuchung und Angaben zum aktuellen Leiden resp. zum Grund der Untersuchung</i>
+      </div>
+    </text>
+  </section>
+  <section>
+    <title value="Angaben zum Patienten"/>
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <i>Erfolgte Voruntersuchungen<br/>
+        Befundkopie – Empfänger</i><br/>
+      </div>
+    </text>
+  </section>
+  <section>
+    <title value="Klinische Angaben"/>
+    <text>
+      <status value="additional"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <i>Beschreibung des aktuellen Leidens<br/>
+				Schwangerschaft ja / nein<br/>
+				Laborwerte (Quick / Tc, Kreatinin)<br/>
+				Bekannte Allergien</i><br/>
+      </div>
+    </text>
+  </section>
 </Composition>

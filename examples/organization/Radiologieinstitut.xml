@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="Radiologieinstitut"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+    </meta>
+    <identifier> <!-- fehlt im Beispiel -->
+        <system value="urn:oid:2.51.1.3"/>
+        <value value="7601000201041"/>
+    </identifier>
+    <active value="true"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="722171005"/>
+            <display value="Diagnostic institution"/>
+        </coding>
+    </type>
+    <name value="RoDiag Radiologieinstitut"/>
+    <telecom> <!-- fehlt im Beispiel -->
+        <system value="phone"/>
+        <value value="+41322345566"/>
+        <use value="work"/>
+    </telecom>
+    <address>
+        <use value="work"/>
+        <line value="Röntgenstr."/>
+        <line value="1"/>
+        <city value="Musterhausen"/>
+        <postalCode value="8888"/>
+        <country value="CH"/>
+    </address>
+</Organization>

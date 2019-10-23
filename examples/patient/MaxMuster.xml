@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="MaxMuster"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:8733"/>
+    <value value="2.16.756.888888.3.1"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Muster">
+      <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+        <valueCode value="officialName"/>
+      </extension>
+    </family>
+    <given value="Max">
+      <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname">
+        <valueCode value="officalFirstName"/>
+      </extension>
+    </given>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+41326851234"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="+41321237788"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="max.muster@sampledomain.ch"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1938-12-12"/>
+  <address>
+    <use value="home"/>
+    <line value="Leidensweg"/>
+    <line value="10"/>
+    <city value="Specimendorf"/>
+    <postalCode value="9999"/>
+    <country value="CH"/>
+  </address>
+  <managingOrganization>
+    <reference value="Organization/GruppenpraxisCH" />
+  </managingOrganization>
+</Patient>
