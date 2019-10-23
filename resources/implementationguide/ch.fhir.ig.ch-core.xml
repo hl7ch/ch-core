@@ -43,9 +43,15 @@
     </grouping>
 
     <!-- references for examples -->
+    <!--<resource>
+      <reference>
+        <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
+    </resource>-->
     <resource>
       <reference>
-        <reference value="Composition/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+        <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
     </resource>
@@ -100,6 +106,12 @@
     <resource>
       <reference>
         <reference value="Practitioner/AgparMarc"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/AllzeitBereit"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>

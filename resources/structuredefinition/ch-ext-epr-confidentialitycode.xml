@@ -45,13 +45,13 @@
             </type>
             <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
         </element>
-        <element id="Extension.valueCode">
-            <path value="Extension.valueCode"/>
+        <element id="Extension.valueCodeableConcept">
+            <path value="Extension.valueCodeableConcept"/>
             <short value="Value of extension"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="code"/>
+                <code value="CodeableConcept"/>
             </type>
             <binding>
                 <strength value="required"/>

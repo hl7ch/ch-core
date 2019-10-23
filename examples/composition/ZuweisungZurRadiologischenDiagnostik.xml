@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="ZuweisungZurRadiologischenDiagnostik"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+  </meta>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="371535009"/>
+      <display value="Transfer summary report"/>
+    </coding>
+  </type>
+  <date value="2017-10-03T17:33:00+01:00"/>
+  <author>
+    <reference value="Practitioner/AllzeitBereit"/>
+  </author>
+  <title value="Zuweisung zur Radiologischen Diagnostik"/>
+  <confidentiality>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normal"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+</Composition>
