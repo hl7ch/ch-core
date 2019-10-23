@@ -41,6 +41,14 @@
     <grouping>
       <name value="CH:Core"/>
     </grouping>
+
+    <!-- references for examples -->
+    <resource>
+      <reference>
+        <reference value="Composition/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Coverage/CoverageBroennimann"/>
@@ -107,6 +115,8 @@
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
     </resource>
+
+    <!-- references for code systems -->
     <resource>
       <reference>
         <reference value="CodeSystem/bfs-medstats-17-admitsource"/>
@@ -185,6 +195,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for concept maps -->
     <resource>
       <reference>
         <reference value="ConceptMap/bfs-encounter-class-to-fhir"/>
@@ -209,6 +221,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for naming systems -->
     <resource>
       <reference>
         <reference value="NamingSystem/ahvn13-navs13"/>
@@ -245,6 +259,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for structure definitions -->
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-ext-bfs-ms-admitrole"/>
@@ -401,6 +417,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for value sets -->
     <resource>
       <reference>
         <reference value="ValueSet/bfs-medstats-17-admitsource"/>
@@ -497,6 +515,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- page, parameters -->
     <page>
       <nameUrl value="index.html"/>
       <title value="IG Templage Homepage"/>
