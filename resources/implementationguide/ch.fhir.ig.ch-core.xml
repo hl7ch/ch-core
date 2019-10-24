@@ -261,6 +261,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="NamingSystem/ber"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="NamingSystem/epr-spid"/>
       </reference>
       <exampleBoolean value="false"/>
