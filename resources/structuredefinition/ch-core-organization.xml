@@ -111,8 +111,6 @@
         </element>
         <element id="Organization.telecom">
             <path value="Organization.telecom"/>
-            <min value="1"/>
-            <max value="*"/>
             <type>
                 <code value="ContactPoint"/>
             </type>
@@ -120,8 +118,6 @@
         </element>
         <element id="Organization.address">
             <path value="Organization.address"/>
-            <min value="1"/>
-            <max value="*"/>
         </element>
         <element id="Organization.endpoint">
             <path value="Organization.endpoint"/>

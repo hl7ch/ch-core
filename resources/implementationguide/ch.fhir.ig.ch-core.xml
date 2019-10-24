@@ -41,6 +41,20 @@
     <grouping>
       <name value="CH:Core"/>
     </grouping>
+
+    <!-- references for examples -->
+    <resource>
+      <reference>
+        <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+    </resource>
     <resource>
       <reference>
         <reference value="Coverage/CoverageBroennimann"/>
@@ -61,6 +75,18 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Organization/GruppenpraxisCH"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/Radiologieinstitut"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Organization/SpitalSeeblick"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
@@ -74,6 +100,12 @@
     <resource>
       <reference>
         <reference value="Patient/FranzMuster"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Patient/MaxMuster"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
@@ -97,6 +129,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Practitioner/AllzeitBereit"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Practitioner/HanspeterWengerByBFH"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
@@ -107,6 +145,8 @@
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
     </resource>
+
+    <!-- references for code systems -->
     <resource>
       <reference>
         <reference value="CodeSystem/bfs-medstats-17-admitsource"/>
@@ -185,6 +225,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for concept maps -->
     <resource>
       <reference>
         <reference value="ConceptMap/bfs-encounter-class-to-fhir"/>
@@ -209,6 +251,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for naming systems -->
     <resource>
       <reference>
         <reference value="NamingSystem/ahvn13-navs13"/>
@@ -251,6 +295,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for structure definitions -->
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-ext-bfs-ms-admitrole"/>
@@ -290,6 +336,18 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-ext-ech-11-name"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-epr-confidentialitycode"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-informationrecipient"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -395,6 +453,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- references for value sets -->
     <resource>
       <reference>
         <reference value="ValueSet/bfs-medstats-17-admitsource"/>
@@ -491,6 +551,8 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+
+    <!-- page, parameters -->
     <page>
       <nameUrl value="index.html"/>
       <title value="IG Templage Homepage"/>
