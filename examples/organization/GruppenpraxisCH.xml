@@ -7,7 +7,6 @@
     <identifier>
         <system value="urn:oid:2.51.1.3"/>
         <value value="7601000201041"/>
-        <!--<value value="7609999999999"/> unterschiedlich im Beispiel?-->
     </identifier>
     <active value="true"/>
     <type>

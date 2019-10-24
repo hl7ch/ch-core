@@ -5,8 +5,14 @@
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
   </meta>
   <identifier>
-    <system value="urn:ietf:rfc:8733"/>
-    <value value="2.16.756.888888.3.1"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+      </coding>
+    </type>
+    <system value="urn:oid:2.16.756.888888.3.1"/>
+    <value value="8733"/>
   </identifier>
   <name>
     <use value="official"/>

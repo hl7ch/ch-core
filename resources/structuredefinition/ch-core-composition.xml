@@ -65,10 +65,6 @@
         </element>
         <element id="Composition.language">
             <path value="Composition.language"/>
-            <binding>
-                <strength value="required"/>
-                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.languageCode"/>
-            </binding>
             <mapping>
                 <identity value="cda"/>
                 <map value=".languageCode"/>

@@ -45,35 +45,6 @@
             </type>
             <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient"/>
         </element>
-        <!--<element id="Extension.valueReference:valueReference">
-            <path value="Extension.valueReference"/>
-            <sliceName value="valueReference"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-            </type>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-            </type>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
-            </type>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-            </type>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-            </type>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
-            </type>
-        </element>-->
         <element id="Extension.valueReference">
             <path value="Extension.valueReference"/>
             <min value="1"/>

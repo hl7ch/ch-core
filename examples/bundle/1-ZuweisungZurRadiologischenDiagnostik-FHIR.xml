@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
    <meta>
-      <lastUpdated value="2019-10-23T15:12:07.376+00:00"/>
+      <lastUpdated value="2019-10-24T11:37:41.052+00:00"/>
       <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
    </meta>
    <identifier>
@@ -15,13 +15,18 @@
          <Composition xmlns="http://hl7.org/fhir">
             <id value="ZuweisungZurRadiologischenDiagnostik"/>
             <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-10-23T15:10:55.082+00:00"/>
+               <versionId value="2"/>
+               <lastUpdated value="2019-10-24T11:37:34.319+00:00"/>
                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
             </meta>
             <language value="de-CH"/>
             <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
                <valueString value="2"/>
+            </extension>
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+               <valueReference>
+                  <reference value="Organization/Radiologieinstitut"/>
+               </valueReference>
             </extension>
             <status value="final"/>
             <type>
@@ -39,7 +44,7 @@
                <reference value="Practitioner/AllzeitBereit"/>
             </author>
             <title value="Zuweisung zur Radiologischen Diagnostik"/>
-            <confidentiality>
+            <confidentiality value="N">
                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
                   <valueCodeableConcept>
                      <coding>
@@ -50,7 +55,7 @@
                   </valueCodeableConcept>
                </extension>
             </confidentiality>
-            <attester id="2.16.756.5.30.1.1.10.2.5">
+            <attester>
                <mode value="legal"/>
                <time value="2017-10-03"/>
                <party>
@@ -65,9 +70,9 @@
                <text>
                   <status value="additional"/>
                   <div xmlns="http://www.w3.org/1999/xhtml"> Der Patient erwartet Ihr Aufgebot zur Untersuchung.
-                     <br/> 
+                     <br/>
                      <i>Spezifizierung der gewünschten Untersuchung</i>
-                     <br/> 
+                     <br/>
                   </div>
                </text>
             </section>
@@ -75,8 +80,8 @@
                <title value="Dringlichkeit / Wunschtermin"/>
                <text>
                   <status value="additional"/>
-                  <div xmlns="http://www.w3.org/1999/xhtml"> 
-                     <i>Angaben zum gewünschten Termin</i> 
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <i>Angaben zum gewünschten Termin</i>
                   </div>
                </text>
             </section>
@@ -84,8 +89,8 @@
                <title value="Fragestellung"/>
                <text>
                   <status value="additional"/>
-                  <div xmlns="http://www.w3.org/1999/xhtml"> 
-                     <i>Grund für die Durchführung der Untersuchung und Angaben zum aktuellen Leiden resp. zum Grund der Untersuchung</i> 
+                  <div xmlns="http://www.w3.org/1999/xhtml">
+                     <i>Grund für die Durchführung der Untersuchung und Angaben zum aktuellen Leiden resp. zum Grund der Untersuchung</i>
                   </div>
                </text>
             </section>
@@ -93,11 +98,12 @@
                <title value="Angaben zum Patienten"/>
                <text>
                   <status value="additional"/>
-                  <div xmlns="http://www.w3.org/1999/xhtml"> 
+                  <div xmlns="http://www.w3.org/1999/xhtml">
                      <i>Erfolgte Voruntersuchungen
-                        <br/> Befundkopie – Empfänger
+                        <br/>
+ Befundkopie – Empfänger
                      </i>
-                     <br/> 
+                     <br/>
                   </div>
                </text>
             </section>
@@ -105,13 +111,16 @@
                <title value="Klinische Angaben"/>
                <text>
                   <status value="additional"/>
-                  <div xmlns="http://www.w3.org/1999/xhtml"> 
+                  <div xmlns="http://www.w3.org/1999/xhtml">
                      <i>Beschreibung des aktuellen Leidens
-                        <br/> Schwangerschaft ja / nein
-                        <br/> Laborwerte (Quick / Tc, Kreatinin)
-                        <br/> Bekannte Allergien
+                        <br/>
+ Schwangerschaft ja / nein
+                        <br/>
+ Laborwerte (Quick / Tc, Kreatinin)
+                        <br/>
+ Bekannte Allergien
                      </i>
-                     <br/> 
+                     <br/>
                   </div>
                </text>
             </section>
@@ -124,13 +133,19 @@
          <Patient xmlns="http://hl7.org/fhir">
             <id value="MaxMuster"/>
             <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-10-23T15:09:51.654+00:00"/>
+               <versionId value="2"/>
+               <lastUpdated value="2019-10-24T11:36:45.550+00:00"/>
                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
             </meta>
             <identifier>
-               <system value="urn:ietf:rfc:8733"/>
-               <value value="2.16.756.888888.3.1"/>
+               <type>
+                  <coding>
+                     <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                     <code value="MR"/>
+                  </coding>
+               </type>
+               <system value="urn:oid:2.16.756.888888.3.1"/>
+               <value value="8733"/>
             </identifier>
             <name>
                <use value="official"/>
@@ -206,13 +221,12 @@
          <Organization xmlns="http://hl7.org/fhir">
             <id value="GruppenpraxisCH"/>
             <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-10-23T15:08:34.914+00:00"/>
+               <versionId value="2"/>
+               <lastUpdated value="2019-10-24T11:36:34.439+00:00"/>
                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
             </meta>
             <identifier>
                <system value="urn:oid:2.51.1.3"/>
-               <!--<value value="7609999999999"/> unterschiedlich im Beispiel?-->
                <value value="7601000201041"/>
             </identifier>
             <active value="true"/>

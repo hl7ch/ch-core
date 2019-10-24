@@ -9,7 +9,9 @@
     <valueString value="2"/>
   </extension>
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
-    <valueReference value="Organization/Radiologieinstitut"/>
+    <valueReference>
+      <reference value="Organization/Radiologieinstitut"/>
+    </valueReference>
   </extension>
   <status value="final"/>
   <type>
@@ -27,7 +29,7 @@
     <reference value="Practitioner/AllzeitBereit"/>
   </author>
   <title value="Zuweisung zur Radiologischen Diagnostik"/>
-  <confidentiality>
+  <confidentiality value="N">
     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
       <valueCodeableConcept>
         <coding>
@@ -39,7 +41,6 @@
     </extension>
   </confidentiality>
   <attester>
-    <id value="2.16.756.5.30.1.1.10.2.5"/>
     <mode value="legal"/>
     <time value="2017-10-03"/>
     <party>
