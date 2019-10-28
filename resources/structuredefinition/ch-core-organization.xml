@@ -56,25 +56,87 @@
         </element>
         <element id="Organization.identifier">
             <path value="Organization.identifier"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
             <min value="1"/>
             <max value="*"/>
-            <type>
-                <code value="Identifier"/>
-            </type>
-            <isModifier value="false"/>
             <mapping>
                 <identity value="servd"/>
                 <map value="n/a"/>
             </mapping>
         </element>
-        <element id="Organization.identifier.system">
-            <path value="Organization.identifier.system"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="uri"/>
-            </type>
-            <isModifier value="false"/>
+        <element id="Organization.identifier:BER">
+            <path value="Organization.identifier" />
+            <sliceName value="BER" />
+            <short value="BER (Business and Enterprise Register)" />
+            <definition value="BER (Business and Enterprise Register)" />
+            <max value="1" />
+            <patternIdentifier>
+                <system value="urn:oid:2.16.756.5.45" />
+            </patternIdentifier>
+        </element>
+        
+        <element id="Organization.identifier:BER.value">
+            <path value="Organization.identifier.value" />
+            <short value="BER of the organization" />
+            <definition value="BER of the organization"/>
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:UIDB">
+            <path value="Organization.identifier" />
+            <sliceName value="UIDB" />
+            <short value="Unique IDentification Business (UIDB)" />
+            <definition value="Unique IDentification Business (UIDB)" />
+            <max value="1" />
+            <patternIdentifier>
+                <system value="urn:oid:2.16.756.5.35" />
+            </patternIdentifier>
+        </element>
+        
+        <element id="Organization.identifier:UIDB.value">
+            <path value="Organization.identifier.value" />
+            <short value="UIDB of the Organization" />
+            <definition value="UIDB of the Organization" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:ZSR">
+            <path value="Organization.identifier" />
+            <sliceName value="ZSR" />
+            <short value="Zahlstellenregister (ZSR)" />
+            <definition value="Zahlstellenregister (ZSR)" />
+            <max value="1" />
+            <patternIdentifier>
+                <system value="urn:oid:2.16.756.5.30.1.123.100.2.1.1" />
+            </patternIdentifier>
+        </element>
+        
+        <element id="Organization.identifier:ZSR.value">
+            <path value="Organization.identifier.value" />
+            <short value="ZSR of the Organization" />
+            <definition value="ZSR of the Organization" />
+            <min value="1" />
+        </element>
+        <element id="Organization.identifier:GLN">
+            <path value="Organization.identifier" />
+            <sliceName value="GLN" />
+            <short value="Global Location Number (GLN)" />
+            <definition value="Global Location Number (GLN)" />
+            <max value="1" />
+            <patternIdentifier>
+                <system value="urn:oid:2.51.1.3" />
+            </patternIdentifier>
+        </element>
+        
+        <element id="Organization.identifier:GLN.value">
+            <path value="Organization.identifier.value" />
+            <short value="GLN of the Organization" />
+            <definition value="GLN of the Organization" />
+            <min value="1" />
         </element>
         <element id="Organization.active">
             <path value="Organization.active"/>
@@ -111,8 +173,6 @@
         </element>
         <element id="Organization.telecom">
             <path value="Organization.telecom"/>
-            <min value="1"/>
-            <max value="*"/>
             <type>
                 <code value="ContactPoint"/>
             </type>
@@ -120,8 +180,6 @@
         </element>
         <element id="Organization.address">
             <path value="Organization.address"/>
-            <min value="1"/>
-            <max value="*"/>
         </element>
         <element id="Organization.endpoint">
             <path value="Organization.endpoint"/>

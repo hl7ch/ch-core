@@ -35,6 +35,18 @@
 			<min value="0"/>
 			<max value="*"/>
 		</element>
+		<element id="Bundle.identifier">
+			<path value="Bundle.identifier"/>
+			<min value="1"/>
+		</element>
+		<element id="Bundle.identifier.system">
+			<path value="Bundle.identifier.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Bundle.identifier.value">
+			<path value="Bundle.identifier.value"/>
+			<min value="1"/>
+		</element>
 		<element id="Bundle.type">
 			<path value="Bundle.type" />
 			<short value="document" />

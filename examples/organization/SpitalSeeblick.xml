@@ -23,7 +23,7 @@
     </telecom>
     <address>
         <line value="Ausblick 11"/>
-        <city value="8000"/>
-        <postalCode value="Zürich"/>
+        <city value="Zürich"/>
+        <postalCode value="8000"/>
     </address>
 </Organization> 
