@@ -36,7 +36,7 @@
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Composition"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/clinicaldocument"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Composition">
