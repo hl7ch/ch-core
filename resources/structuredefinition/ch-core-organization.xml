@@ -16,7 +16,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Defines basic constraints and extensions on the Organization resource for use with other US Core resources"/>
+    <description value="Defines basic constraints and extensions on the Organization resource for use with other CH Core resources"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
