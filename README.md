@@ -16,13 +16,13 @@ see [http://wiki.hl7.org/index.php?title=Using_the_FHIR_Validator](http://wiki.h
 then terminal, command prompt:
 
 ```
-java -jar org.hl7.fhir.validation.cli-3.8.0.jar <<pathtofile>> -ig http://build.fhir.org/ig/hl7ch/ch-core/ -version 4.0.0
+java -jar org.hl7.fhir.validation.cli-3.8.0.jar <<pathtofile>> -ig http://build.fhir.org/ig/hl7ch/ch-core/ -version 4.0.1
 ```
 
 if you want to validate a specific profile, e.g. the ch core patient profile
 
 ```
-java -jar org.hl7.fhir.validation.cli-3.8.0.jar <<pathtofile>> -ig  http://build.fhir.org/ig/hl7ch/ch-core/ -version 4.0.0 -profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
+java -jar org.hl7.fhir.validation.cli-3.8.0.jar <<pathtofile>> -ig  http://build.fhir.org/ig/hl7ch/ch-core/ -version 4.0.1 -profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
 ```
 
 ## validating against https://test.fhir.ch/r4
