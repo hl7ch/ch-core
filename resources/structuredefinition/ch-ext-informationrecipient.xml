@@ -16,7 +16,7 @@
         </telecom>
     </contact>
     <description value="Extension to define information about recipient"/>
-    <fhirVersion value="4.0.0"/>
+    <fhirVersion value="4.0.1"/>
     <kind value="primitive-type"/>
     <abstract value="false"/>
     <context>
