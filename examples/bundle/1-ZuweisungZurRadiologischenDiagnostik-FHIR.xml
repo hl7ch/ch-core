@@ -9,6 +9,7 @@
       <value value="urn:uuid:31397B31-BE60-47E1-BEC6-F37816D42B0C"/>
    </identifier>
    <type value="document"/>
+   <timestamp value="2019-10-24T11:37:41.052+00:00"/>
    <entry>
       <fullUrl value="http://test.fhir.ch/r4/Composition/ZuweisungZurRadiologischenDiagnostik"/>
       <resource>
