@@ -16,6 +16,11 @@
   <status value="final"/>
   <type>
     <coding>
+      <system value="http://loinc.org"/>
+      <code value="28616-1"/>
+      <display value="Physician Transfer note"/>
+    </coding>
+    <coding>
       <system value="http://snomed.info/sct"/>
       <code value="371535009"/>
       <display value="Transfer summary report"/>
