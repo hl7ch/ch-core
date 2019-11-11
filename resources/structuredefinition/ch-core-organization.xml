@@ -138,15 +138,6 @@
             <definition value="GLN of the Organization" />
             <min value="1" />
         </element>
-        <element id="Organization.active">
-            <path value="Organization.active"/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="boolean"/>
-            </type>
-            <isModifier value="false"/>
-        </element>
         <element id="Organization.type">
             <path value="Organization.type"/>
             <binding>

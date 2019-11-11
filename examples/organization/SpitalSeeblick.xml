@@ -8,7 +8,6 @@
         <system value="urn:ietf:rfc:3986"/>
         <value value="2.16.840.1.113883.19.5"/>
     </identifier>
-    <active value="true"/>
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>

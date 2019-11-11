@@ -8,7 +8,6 @@
         <system value="urn:oid:2.51.1.3"/>
         <value value="7601000618627"/>
     </identifier>
-    <active value="true"/>
     <type>
         <coding>
             <system value="http://snomed.info/sct"/>
