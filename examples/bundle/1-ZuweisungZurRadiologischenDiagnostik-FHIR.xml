@@ -236,13 +236,6 @@
                <value value="7601000201041"/>
             </identifier>
             <active value="true"/>
-            <type>
-               <coding>
-                  <system value="http://snomed.info/sct"/>
-                  <code value="264358009"/>
-                  <display value="General practice premises"/>
-               </coding>
-            </type>
             <name value="Gruppenpraxis CH"/>
             <telecom>
                <system value="phone"/>
