@@ -41,7 +41,7 @@
     {
       "name": "cheprterm",
       "package": "ch.fhir.ig.ch-epr-term",
-      "version": "current"
+      "version": "2.0.1"
     }
   ],
   "source": "implementationguide/ch.fhir.ig.ch-core.xml",
