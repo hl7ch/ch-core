@@ -42,7 +42,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="DocumentC80Type"/>
 				</extension>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<description value="Precise type of clinical document."/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode"/>
 			</binding>
@@ -54,7 +54,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="DocumentC80Class"/>
 				</extension>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<description value="High-level kind of a clinical document at a macro level."/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.classCode"/>
 			</binding>
@@ -102,7 +102,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
 					<valueBoolean value="true"/>
 				</extension>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<description value="Security Labels from the Healthcare Privacy and Security Classification System."/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode"/>
 			</binding>
@@ -117,7 +117,7 @@
 			<path value="DocumentReference.content.attachment.contentType"/>
 			<min value="1"/>
 			<binding>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType"/>
 			</binding>
 		</element>
@@ -125,7 +125,7 @@
 			<path value="DocumentReference.content.attachment.language"/>
 			<min value="1"/>
 			<binding>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.languageCode"/>
 			</binding>
 		</element>
@@ -140,7 +140,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="DocumentFormat"/>
 				</extension>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<description value="Document Format Codes."/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.formatCode"/>
 			</binding>
@@ -154,7 +154,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="DocumentC80FacilityType"/>
 				</extension>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<description value="XDS Facility Type."/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.healthcareFacilityTypeCode"/>
 			</binding>
@@ -165,7 +165,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="DocumentC80PracticeSetting"/>
 				</extension>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<description value="Additional details about where the content was created (e.g. clinical specialty)."/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.practiceSettingCode"/>
 			</binding>

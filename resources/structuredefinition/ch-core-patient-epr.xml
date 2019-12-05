@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-patient-epr"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+    <version value="0.1.0"/>
+    <name value="CHCorePatientEPR"/>
+    <title value="CH Core Patient Profile EPR"/>
+    <status value="draft"/>
+    <date value="2019-12-05"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Core patient definition in the context of the electronic patient record (EPR)."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Core patient demographics which can be shared" />
+    <fhirVersion value="4.0.1" />
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="https://www.hl7.ch/default/assets/File/Publikationen/180612_CDA-CH_de.pdf"/>
+        <name value="CDA-CH 2017 V2"/>
+    </mapping>
+    <mapping>
+        <identity value="eCH"/>
+        <uri value="http://www.ech.ch/"/>
+        <name value="eCH-Standards"/>
+    </mapping>
+    <mapping>
+        <identity value="EPR"/>
+        <uri value="https://art-decor.org/art-decor/decor-valuesets--ch-epr-"/>
+        <name value="EPR ValueSets"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Patient"/>
+    <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Patient">
+            <path value="Patient"/>
+        </element>
+        <element id="Patient.identifier">
+            <path value="Patient.identifier"/>
+            <min value="1"/>
+        </element>  
+        <element id="Patient.identifier:EPR-SPID">
+            <path value="Patient.identifier"/>
+            <sliceName value="EPR-SPID"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element> 
+        <element id="Patient.identifier:AHVN13">
+            <path value="Patient.identifier"/>
+            <sliceName value="AHVN13"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>  
+        <element id="Patient.name">
+            <path value="Patient.name"/>
+            <min value="1"/>
+        </element> 
+        <element id="Patient.telecom">
+            <path value="Patient.telecom"/>
+        </element>  
+        <element id="Patient.gender">
+            <path value="Patient.gender"/>
+            <min value="1"/>
+        </element>  
+        <element id="Patient.birthDate">
+            <path value="Patient.birthDate"/>
+            <min value="1"/>
+        </element>  
+        <element id="Patient.address">
+            <path value="Patient.address"/>
+        </element>
+    </differential>
+</StructureDefinition>

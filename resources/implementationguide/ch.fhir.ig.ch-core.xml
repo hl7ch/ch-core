@@ -53,7 +53,7 @@
       <reference>
         <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
     </resource>
     <resource>
       <reference>
@@ -77,13 +77,13 @@
       <reference>
         <reference value="Organization/GruppenpraxisCH"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/Radiologieinstitut"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
       <reference>
@@ -101,7 +101,7 @@
       <reference>
         <reference value="Patient/FranzMuster"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
     </resource>
     <resource>
       <reference>
@@ -131,13 +131,19 @@
       <reference>
         <reference value="Practitioner/AllzeitBereit"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/HanspeterWengerByBFH"/>
       </reference>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/SchreibKraft"/>
+      </reference>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </resource>
     <resource>
       <reference>
@@ -353,7 +359,31 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-ext-informationrecipient"/>
+        <reference value="StructureDefinition/ch-ext-epr-dataenterer"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-epr-informationrecipient"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-epr-setid"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-epr-versionnumber"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-composition-epr"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -387,6 +417,12 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+     <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-patient-epr"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-patient"/>
@@ -408,6 +444,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-location"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-organization-epr"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -450,6 +492,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-patient-religion"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-practitioner-epr"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

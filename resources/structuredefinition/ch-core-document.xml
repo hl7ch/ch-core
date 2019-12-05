@@ -52,6 +52,10 @@
 			<short value="document" />
 			<fixedCode value="document" />
 		</element>
+		<element id="Bundle.timestamp">
+			<path value="Bundle.timestamp" />
+			<min value="1"/>
+		</element>
 		<element id="Bundle.entry">
 			<path value="Bundle.entry" />
 			<slicing>

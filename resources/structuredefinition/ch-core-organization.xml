@@ -131,7 +131,6 @@
                 <system value="urn:oid:2.51.1.3" />
             </patternIdentifier>
         </element>
-        
         <element id="Organization.identifier:GLN.value">
             <path value="Organization.identifier.value" />
             <short value="GLN of the Organization" />

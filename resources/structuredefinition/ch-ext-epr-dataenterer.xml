@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-ext-informationrecipient"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient"/>
+    <id value="ch-ext-epr-dataenterer"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"/>
     <version value="0.1.0"/>
-    <name value="InformationRecipient"/>
-    <title value="Information Recipient"/>
+    <name value="EPRDataEnterer"/>
+    <title value="EPR Data Enterer"/>
     <status value="draft"/>
-    <date value="2019-10-22"/>
+    <date value="2019-12-04"/>
     <publisher value="HL7 Switzerland"/>
     <contact>
         <name value="HL7 Switzerland"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define information about recipient"/>
+    <description value="Extension to define the information about the person that entered data"/>
     <fhirVersion value="4.0.1"/>
     <kind value="primitive-type"/>
     <abstract value="false"/>
@@ -30,7 +30,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="Extension to define information about recipient"/>
+            <definition value="Extension to define the information about the person that entered data"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -43,19 +43,15 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient"/>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"/>
         </element>
         <element id="Extension.valueReference">
             <path value="Extension.valueReference"/>
+            <short value="Person other than the author but only when this is relevant for some reason"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
             </type>
         </element>
     </differential>
