@@ -144,6 +144,10 @@
         <element id="Composition.subject">
             <path value="Composition.subject"/>
             <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+            </type>
         </element>
         <element id="Composition.subject.reference">
             <path value="Composition.subject.reference"/>
@@ -155,12 +159,15 @@
             <path value="Composition.author"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
             </type>
+        </element>
+        <element id="Composition.author.reference">
+            <path value="Composition.author.reference"/>
         </element>
         <element id="Composition.title">
             <path value="Composition.title"/>
@@ -219,19 +226,25 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
             </type>
+        </element>
+        <element id="Composition.attester.party.reference:legalAuthenticator">
+            <path value="Composition.attester.party.reference"/>
         </element>
         <element id="Composition.custodian">
             <path value="Composition.custodian"/>
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
             </type>
+        </element>
+        <element id="Composition.custodian.reference">
+            <path value="Composition.custodian.reference"/>
         </element>
     </differential>
 </StructureDefinition>
