@@ -43,6 +43,14 @@
             <path value="Composition"/>
             <short value="CH Core Composition"/>
         </element>
+        <element id="Composition.language">
+            <path value="Composition.language"/>
+            <min value="1"/>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".languageCode"/>
+            </mapping>
+        </element>
         <element id="Composition.extension">
             <path value="Composition.extension"/>
             <slicing>
@@ -107,14 +115,6 @@
             <mapping>
                 <identity value="cda"/>
                 <map value=".dataEnterer.assignedEntity"/>
-            </mapping>
-        </element>
-        <element id="Composition.language">
-            <path value="Composition.language"/>
-            <min value="1"/>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".languageCode"/>
             </mapping>
         </element>
         <element id="Composition.identifier">
