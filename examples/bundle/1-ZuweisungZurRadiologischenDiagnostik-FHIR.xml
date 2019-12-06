@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
    <meta>
-      <lastUpdated value="2019-10-24T11:37:41.052+00:00"/>
+      <lastUpdated value="2019-12-05T07:53:22.889+00:00"/>
       <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
    </meta>
    <identifier>
@@ -9,26 +9,41 @@
       <value value="urn:uuid:31397B31-BE60-47E1-BEC6-F37816D42B0C"/>
    </identifier>
    <type value="document"/>
-   <timestamp value="2019-10-24T11:37:41.052+00:00"/>
+   <timestamp value="2017-10-03T17:33:00+01:00"/>
    <entry>
       <fullUrl value="http://test.fhir.ch/r4/Composition/ZuweisungZurRadiologischenDiagnostik"/>
       <resource>
          <Composition xmlns="http://hl7.org/fhir">
             <id value="ZuweisungZurRadiologischenDiagnostik"/>
             <meta>
-               <versionId value="2"/>
-               <lastUpdated value="2019-10-24T11:37:34.319+00:00"/>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+               <versionId value="1"/>
+               <lastUpdated value="2019-12-05T07:53:12.886+00:00"/>
+               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
             </meta>
             <language value="de-CH"/>
-            <extension url="http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber">
-               <valueString value="2"/>
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
+               <valueIdentifier>
+                  <system value="urn:ietf:rfc:3986"/>
+                  <value value="urn:uuid:807563C2-5146-11D5-A672-00B0D022E945"/>
+               </valueIdentifier>
             </extension>
-            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
+               <valueInteger value="2"/>
+            </extension>
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
                <valueReference>
                   <reference value="Organization/Radiologieinstitut"/>
                </valueReference>
             </extension>
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
+               <valueReference>
+                  <reference value="Practitioner/SchreibKraft"/>
+               </valueReference>
+            </extension>
+            <identifier>
+               <system value="urn:ietf:rfc:3986"/>
+               <value value="urn:uuid:31397B31-BE60-47E1-BEC6-F37816D42B0C"/>
+            </identifier>
             <status value="final"/>
             <type>
                <coding>
@@ -134,13 +149,37 @@
       </resource>
    </entry>
    <entry>
+      <fullUrl value="http://test.fhir.ch/r4/Practitioner/AllzeitBereit"/>
+      <resource>
+         <Practitioner xmlns="http://hl7.org/fhir">
+            <id value="AllzeitBereit"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-12-05T07:52:50.224+00:00"/>
+               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+            </meta>
+            <identifier>
+               <system value="urn:oid:2.51.1.3"/>
+               <value value="7601000201041"/>
+            </identifier>
+            <name>
+               <use value="official"/>
+               <family value="Bereit"/>
+               <given value="Allzeit"/>
+               <prefix value="Dr. med."/>
+               <suffix value="Facharzt für Allgemeine Medizin"/>
+            </name>
+         </Practitioner>
+      </resource>
+   </entry>
+   <entry>
       <fullUrl value="http://test.fhir.ch/r4/Patient/MaxMuster"/>
       <resource>
          <Patient xmlns="http://hl7.org/fhir">
             <id value="MaxMuster"/>
             <meta>
-               <versionId value="2"/>
-               <lastUpdated value="2019-10-24T11:36:45.550+00:00"/>
+               <versionId value="1"/>
+               <lastUpdated value="2019-12-05T07:53:10.477+00:00"/>
                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
             </meta>
             <identifier>
@@ -198,37 +237,13 @@
       </resource>
    </entry>
    <entry>
-      <fullUrl value="http://test.fhir.ch/r4/Practitioner/AllzeitBereit"/>
-      <resource>
-         <Practitioner xmlns="http://hl7.org/fhir">
-            <id value="AllzeitBereit"/>
-            <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-10-23T15:06:01.225+00:00"/>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-            </meta>
-            <identifier>
-               <system value="urn:oid:2.51.1.3"/>
-               <value value="7601000201041"/>
-            </identifier>
-            <name>
-               <use value="official"/>
-               <family value="Bereit"/>
-               <given value="Allzeit"/>
-               <prefix value="Dr. med."/>
-               <suffix value="Facharzt für Allgemeine Medizin"/>
-            </name>
-         </Practitioner>
-      </resource>
-   </entry>
-   <entry>
       <fullUrl value="http://test.fhir.ch/r4/Organization/GruppenpraxisCH"/>
       <resource>
          <Organization xmlns="http://hl7.org/fhir">
             <id value="GruppenpraxisCH"/>
             <meta>
-               <versionId value="2"/>
-               <lastUpdated value="2019-10-24T11:36:34.439+00:00"/>
+               <versionId value="1"/>
+               <lastUpdated value="2019-12-05T07:52:58.369+00:00"/>
                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
             </meta>
             <identifier>

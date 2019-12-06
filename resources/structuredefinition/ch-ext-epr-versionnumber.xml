@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-ext-epr-versionnumber"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber"/>
+    <version value="0.1.0"/>
+    <name value="EPRVersionNumber"/>
+    <title value="EPR Version Number"/>
+    <status value="draft"/>
+    <date value="2019-12-04"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Extension to define the version number of the document"/>
+    <fhirVersion value="4.0.1"/>
+    <kind value="primitive-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="Composition"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Extension"/>
+            <definition value="Extension to define the version number of the document"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber"/>
+        </element>
+        <element id="Extension.valueInteger">
+            <path value="Extension.valueInteger"/>
+            <short value="Value of extension"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="integer"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

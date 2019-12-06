@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-composition-epr"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
+    <version value="0.1.0"/>
+    <name value="CHCoreCompositionEPR"/>
+    <title value="CH Core Composition Profile EPR"/>
+    <status value="draft"/>
+    <date value="2019-12-04"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Base definition for a composition in the context of the electronic patient record (EPR)."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="rim"/>
+        <uri value="http://hl7.org/v3"/>
+        <name value="RIM Mapping"/>
+    </mapping>
+    <mapping>
+        <identity value="cda"/>
+        <uri value="http://hl7.org/v3/cda"/>
+        <name value="CDA (R2)"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="Composition"/>
+    <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Composition">
+            <path value="Composition"/>
+            <short value="CH Core Composition"/>
+        </element>
+        <element id="Composition.extension">
+            <path value="Composition.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.extension:setId">
+            <path value="Composition.extension"/>
+            <sliceName value="setId"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid"/>
+            </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".setId"/>
+            </mapping>
+        </element>
+        <element id="Composition.extension:versionNumber">
+            <path value="Composition.extension"/>
+            <sliceName value="versionNumber"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber"/>
+            </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".versionNumber"/>
+            </mapping>
+        </element>
+        <element id="Composition.extension:informationRecipient">
+            <path value="Composition.extension"/>
+            <sliceName value="informationRecipient"/>
+            <min value="1"/>
+            <max value="*"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"/>
+            </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".informationRecipient.intendedRecipient"/>
+            </mapping>
+        </element>
+        <element id="Composition.extension:dataEnterer">
+            <path value="Composition.extension"/>
+            <sliceName value="dataEnterer"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"/>
+            </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".dataEnterer.assignedEntity"/>
+            </mapping>
+        </element>
+        <element id="Composition.language">
+            <path value="Composition.language"/>
+            <min value="1"/>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".languageCode"/>
+            </mapping>
+        </element>
+        <element id="Composition.identifier">
+            <path value="Composition.identifier"/>
+            <min value="1"/>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".id"/>
+            </mapping>
+        </element>
+        <element id="Composition.status">
+            <path value="Composition.status"/>
+            <fixedCode value="final"/>
+        </element>
+        <element id="Composition.type">
+            <path value="Composition.type"/>
+            <min value="1"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="DocumentC80Class"/>
+                </extension>
+                <strength value="required"/>
+                <description value="High-level kind of a clinical document at a macro level."/>
+                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.classCode"/>
+            </binding>
+        </element>
+        <element id="Composition.subject">
+            <path value="Composition.subject"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+            </type>
+        </element>
+        <element id="Composition.subject.reference">
+            <path value="Composition.subject.reference"/>
+        </element>
+        <element id="Composition.date">
+            <path value="Composition.date"/>
+        </element>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+            </type>
+        </element>
+        <element id="Composition.author.reference">
+            <path value="Composition.author.reference"/>
+        </element>
+        <element id="Composition.title">
+            <path value="Composition.title"/>
+        </element>
+        <element id="Composition.confidentiality">
+            <path value="Composition.confidentiality"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.confidentiality.extension">
+            <path value="Composition.confidentiality.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.confidentiality.extension:confidentialityCode">
+            <path value="Composition.confidentiality.extension"/>
+            <sliceName value="confidentialityCode"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
+            </type>
+        </element>
+        <element id="Composition.attester">
+            <path value="Composition.attester"/>
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="mode" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="Composition.attester:legalAuthenticator">
+            <path value="Composition.attester"/>
+            <sliceName value="legalAuthenticator"/>
+            <short value="legal authenticator"/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.attester.mode:legalAuthenticator">
+            <path value="Composition.attester.mode"/>
+            <fixedCode value="legal"/>
+        </element>
+        <element id="Composition.attester.time:legalAuthenticator">
+            <path value="Composition.attester.time"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.attester.party:legalAuthenticator">
+            <path value="Composition.attester.party"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            </type>
+        </element>
+        <element id="Composition.attester.party.reference:legalAuthenticator">
+            <path value="Composition.attester.party.reference"/>
+        </element>
+        <element id="Composition.custodian">
+            <path value="Composition.custodian"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+            </type>
+        </element>
+        <element id="Composition.custodian.reference">
+            <path value="Composition.custodian.reference"/>
+        </element>
+    </differential>
+</StructureDefinition>

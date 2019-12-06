@@ -43,33 +43,6 @@
             <path value="Composition"/>
             <short value="CH Core Composition"/>
         </element>
-        <element id="Composition.extension">
-            <path value="Composition.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Composition.extension:informationRecipient">
-            <path value="Composition.extension"/>
-            <sliceName value="informationRecipient"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-informationrecipient"/>
-            </type>
-        </element>
-        <element id="Composition.language">
-            <path value="Composition.language"/>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".languageCode"/>
-            </mapping>
-        </element>
         <element id="Composition.subject">
             <path value="Composition.subject"/>
             <definition value="Who or what the composition is about. &#xD;&#xA;In general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).&#xD;&#xA;For the IPS the subject is always the patient."/>
@@ -82,28 +55,50 @@
             <path value="Composition.subject.reference"/>
             <min value="1"/>
         </element>
-        <element id="Composition.confidentiality">
-            <path value="Composition.confidentiality"/>
-        </element>
-        <element id="Composition.confidentiality.extension">
-            <path value="Composition.confidentiality.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Composition.confidentiality.extension:confidentialityCode">
-            <path value="Composition.confidentiality.extension"/>
-            <sliceName value="confidentialityCode"/>
-            <min value="0"/>
-            <max value="1"/>
+        <element id="Composition.author">
+            <path value="Composition.author"/>
             <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
             </type>
+        </element>
+        <element id="Composition.author.reference">
+            <path value="Composition.author.reference"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.attester">
+            <path value="Composition.attester"/>
+        </element>
+        <element id="Composition.attester.party">
+            <path value="Composition.attester.party"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+            </type>
+        </element>
+        <element id="Composition.attester.party.reference">
+            <path value="Composition.attester.party.reference"/>
+            <min value="1"/>
+        </element>
+        <element id="Composition.custodian">
+            <path value="Composition.custodian"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+            </type>
+        </element>
+        <element id="Composition.custodian.reference">
+            <path value="Composition.custodian.reference"/>
+            <min value="1"/>
         </element>
     </differential>
 </StructureDefinition>

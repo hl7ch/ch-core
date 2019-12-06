@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define confidentiality code"/>
+    <description value="Extension to define the confidentiality code of the document"/>
     <fhirVersion value="4.0.1"/>
     <kind value="primitive-type"/>
     <abstract value="false"/>
@@ -30,7 +30,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="Extension to define confidentiality code"/>
+            <definition value="Extension to define the confidentiality code of the document"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -57,6 +57,26 @@
                 <strength value="required"/>
                 <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode"/>
             </binding>
+        </element>
+        <element id="Extension.valueCodeableConcept.coding">
+            <path value="Extension.valueCodeableConcept.coding"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.valueCodeableConcept.coding.system">
+            <path value="Extension.valueCodeableConcept.coding.system"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.valueCodeableConcept.coding.code">
+            <path value="Extension.valueCodeableConcept.coding.code"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Extension.valueCodeableConcept.coding.display">
+            <path value="Extension.valueCodeableConcept.coding.display"/>
+            <min value="1"/>
+            <max value="1"/>
         </element>
     </differential>
 </StructureDefinition>
