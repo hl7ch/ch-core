@@ -52,6 +52,7 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
             </type>
         </element>
     </differential>

@@ -134,11 +134,11 @@
             <min value="1"/>
             <binding>
                 <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-                    <valueString value="DocumentC80Class"/>
+                    <valueString value="DocumentC80Type"/>
                 </extension>
                 <strength value="required"/>
-                <description value="High-level kind of a clinical document at a macro level."/>
-                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.classCode"/>
+                <description value="Precise type of clinical document."/>
+                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.typeCode"/>
             </binding>
         </element>
         <element id="Composition.subject">
