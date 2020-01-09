@@ -238,8 +238,13 @@
         <reference value="ConceptMap/bfs-encounter-class-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>
+    </resource> 
     <resource>
+      <reference>
+        <reference value="ConceptMap/documententry-confidentialitycode-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>    <resource>
       <reference>
         <reference value="ConceptMap/maritalstatus-ech11-to-fhir"/>
       </reference>
