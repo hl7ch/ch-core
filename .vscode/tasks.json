@@ -189,6 +189,22 @@
                 "${file}"
             ],
             "problemMatcher": []
+        },
+        {
+            "label": "add map to matchbox localhost",
+            "command": "curl",
+            "args": [
+                "--request",
+                "POST",
+                "--url",
+                "http://localhost:8080/r4/StructureMap",
+                "--header",
+                "Content-Type: text/fhir-mapping",
+                "--http1.1",
+                "--data-binary",
+                "@${file}"
+            ],
+            "problemMatcher": []
         },         
         {
             "label": "xsl bundle to qr",
