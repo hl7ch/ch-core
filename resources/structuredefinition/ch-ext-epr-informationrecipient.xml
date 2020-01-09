@@ -32,7 +32,7 @@
             <short value="Extension"/>
             <definition value="Extension to define the information about the recipient"/>
             <min value="0"/>
-            <max value="1"/>
+            <max value="*"/>
         </element>
         <element id="Extension.extension">
             <path value="Extension.extension"/>
