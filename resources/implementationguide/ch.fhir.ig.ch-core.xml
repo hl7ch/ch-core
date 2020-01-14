@@ -101,13 +101,13 @@
       <reference>
         <reference value="Patient/FranzMuster"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/MaxMuster"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
     </resource>
     <resource>
       <reference>
@@ -424,7 +424,7 @@
     </resource>
      <resource>
       <reference>
-        <reference value="StructureDefinition/ch-core-patient-epr"/>
+        <reference value="StructureDefinition/ch-core-composition-patient-epr"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

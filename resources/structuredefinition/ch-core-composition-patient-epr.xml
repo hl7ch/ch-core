@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-core-patient-epr"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+    <id value="ch-core-composition-patient-epr"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
     <version value="0.1.0"/>
-    <name value="CHCorePatientEPR"/>
-    <title value="CH Core Patient Profile EPR"/>
+    <name value="CHCoreCompositionPatientEPR"/>
+    <title value="CH Core Composition Patient Profile EPR"/>
     <status value="draft"/>
     <date value="2019-12-05"/>
     <publisher value="HL7 Switzerland"/>
@@ -15,7 +15,8 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Core patient definition in the context of the electronic patient record (EPR)."/>
+    <description value="Core patient definition in the context of the electronic patient record (EPR). 
+                        It is used to include the patient in an EPR document (referenced in Composition/DocumentReference)."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

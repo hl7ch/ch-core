@@ -89,10 +89,12 @@
 		</element>
 		<element id="DocumentReference.content.attachment.contentType">
 			<path value="DocumentReference.content.attachment.contentType"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType"/>
-			</binding>
+			<constraint>
+				<key value="ch-docref-1"/>
+				<severity value="warning"/>
+				<human value="The following ValueSet is preferred: http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType"/>
+				<expression value="exists()"/>
+			</constraint>
 		</element>
 		<element id="DocumentReference.content.attachment.language">
 			<path value="DocumentReference.content.attachment.language"/>
