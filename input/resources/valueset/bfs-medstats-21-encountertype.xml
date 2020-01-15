@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="bfs-medstats-21-encountertype"/>
+    <url value="http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-21-encountertype"/>
+    <version value="0.1.0"/>
+    <name value="BfsMedstats21Encountertype"/>
+    <title value="BFS Medizinische Statistik - 21 1.3.V02 - Klasse / Classe / Classe"/>
+    <status value="draft"/>
+    <date value="2019-01-01"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Im Rahmen des Spitalaufenthaltes belegte Liegeklasse, nicht BFS die Versicherungskategorie. Bei Wechsel der Klasse ist die im Wesentlichen beanspruchte Klasse anzugeben." />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-21-encountertype"/>
+            <concept>
+                <code value="1"/>
+                <display value="allgemein"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="allgemein" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Chambre commune" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="comune" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="2"/>
+                <display value="halbprivat"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="halbprivat" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Semi-privé" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="semiprivata" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="3"/>
+                <display value="privat"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="privat" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Privé" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="privata" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="9"/>
+                <display value="unbekannt"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="unbekannt" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Inconnu" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="sconosciuto" />
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

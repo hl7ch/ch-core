@@ -1,6 +1,0 @@
-<Patient xmlns="http://hl7.org/fhir">
-    <id value="NoName"/>
-    <meta>
-        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
-    </meta>
-</Patient>

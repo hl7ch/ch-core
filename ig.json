@@ -6,9 +6,9 @@
   "npm-name": "ch.fhir.ig.ch-core",
   "paths": {
     "resources": [
-      "resources",
-      "examples",
-      "examplesNonValid"
+      "input/resources",
+      "input/examples",
+      "input/examplesNonValid"
     ],
     "pages": "pages",
     "temp": "temp",
@@ -25,17 +25,7 @@
     "it-CH"
   ],
   "path-pattern": "[type]-[id].html",
-  "extraTemplates": [
-    {
-      "name": "mappings",
-      "description": "Mappings"
-    },
-    {
-      "name": "examples",
-      "description": "Examples"
-    }
-  ],
-  "template": "https://github.com/ahdis/ig-template",
+  "template": "hl7.fhir.template",
   "canonicalBase": "http://fhir.ch/ig/ch-core",
   "dependencyList": [
     {
@@ -44,10 +34,9 @@
       "version": "2.0.1"
     }
   ],
-  "source": "implementationguide/ch.fhir.ig.ch-core.xml",
+  "source": "ch.fhir.ig.ch-core.xml",
   "sct-edition": "http://snomed.info/sct/900000000000207008",
   "resources": {},
-  "suppressedWarningFile": "suppressedwarnings.txt",
   "logging": [
     "init",
     "progress",
