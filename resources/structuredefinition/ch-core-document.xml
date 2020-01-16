@@ -77,7 +77,7 @@
 			<path value="Bundle.entry.resource" />
 			<min value="1" />
 			<type>
-				<code value="Composition" />
+				<code value="Resource" />
 				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition" />
 			</type>
 		</element>
