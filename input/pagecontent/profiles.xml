@@ -1,0 +1,10 @@
+<div xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+  
+  <p>
+    The following profiles set the minimum expectations to record, search and fetch health data associated with a Patient:
+  </p>
+  <div>
+    {% include list-profiles.xhtml %}
+  </div>
+</div>

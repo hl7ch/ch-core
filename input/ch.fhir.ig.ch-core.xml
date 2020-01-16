@@ -37,6 +37,11 @@
   <packageId value="ch.fhir.ig.ch-core"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn>
+    <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
+    <packageId value="ch.fhir.ig.ch-epr-term"/>
+    <version value="2.0.1"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="CH:Core"/>
@@ -627,6 +632,21 @@
         <title value="Home"/>
         <generation value="markdown"/>
       </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="html"/>
+      </page>
     </page>
     <parameter>
       <code value="generate-json"/>
@@ -640,5 +660,9 @@
       <code value="generate-turtle"/>
       <value value="false"/>
     </parameter>
+    <!-- TBD: "special-urls": [
+    "urn:oid:2.16.756.5.30.1.1.11.2",
+    "urn:oid:2.16.756.5.30.1.1.11.3"
+  ] -->
   </definition>
 </ImplementationGuide>
