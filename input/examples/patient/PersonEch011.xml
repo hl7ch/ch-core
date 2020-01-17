@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="PersonEch011"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
+    </meta>
+    <text>
+        <status value="additional"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            Example according to eCH-011
+
+            3.3.2 nameData – Namensangaben
+            <ul>
+                <li>Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1</li>
+                <li>Amtliche Vornamen (zwingend) – firstName, siehe Kapitel 3.3.2.2</li>
+                <li>Ledigname (optional) – originalName, siehe Kapitel 3.3.2.3</li>
+                <li>Allianzname (optional) – allianceName, siehe Kapitel 3.3.2.4</li>
+                <li>Aliasname (optional) – aliasName, siehe Kapitel 3.3.2.5</li>
+                <li>Andere amtliche Name (optional) – otherName, siehe Kapitel 3.3.2.6</li>
+                <li>Rufname (optional) – callName, siehe Kapitel 3.3.2.7</li>
+                <li>
+                    entweder
+            Name im ausländischen Pass (optional) - nameOnForeignPassport, siehe Kapitel 3.3.2.8
+            oder
+            Name gemäss Deklaration (optional) – declaredForeignName, siehe Kapitel 3.3.2.9
+                </li>
+            </ul>
+
+            Zusätzlich Beispiel für Zustelladresse falls es nicht die Adresse des Patienten direkt ist mit Angaben von eCH-0010
+        </div>
+    </text>
+    <name>
+        <!-- Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Extension is optional, but when used the use attribute value must be offical -->
+        <use value="official" /> 
+        <family value="Amtlicher Name">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+                <valueCode value="officialName"/>
+            </extension>
+        </family> 
+        <!-- Amtliche Vornamen (zwingend) – firstName, siehe Kapitel 3.3.2.2 -->
+        <given value="Amtliche Vornamen (zwingend)">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname">
+                <valueCode value="officalFirstName"/>
+            </extension>
+        </given> 
+    </name>
+    <!-- Allianzname (optional) – allianceName, siehe Kapitel 3.3.2.4 -->
+    <name>
+        <family value="Allianzname">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+                <valueCode value="allianceName"/>
+            </extension>
+        </family>
+    </name>
+    <name>
+        <use value="maiden" />
+        <!-- Ledigname (optional) – originalName, siehe Kapitel 3.3.2.3 -->
+        <family value="Ledigname (optional) – originalName">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+                <valueCode value="originalName"/>
+            </extension>
+        </family>
+    </name>
+    <name>
+        <family value="Alias name">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+                <valueCode value="aliasName"/>
+            </extension>
+        </family>
+    </name>
+    <gender value="female"/>
+    <birthDate value="1982-03-20"/>
+    <!-- Zustelladresse falls es nicht die Adresse des Patienten direkt ist -->
+    <contact>
+        <relationship>
+            <coding>
+                <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11"/>
+                <code value="contactData"/>
+            </coding>
+        </relationship>
+        <name>
+            <family value="Dalkiliç"/>
+            <given value="Fabio Nicola"/>
+        </name>
+        <address>
+            <line value="addressLine1 sollte für personifizierte Adressangaben verwendet werden (z.B. c/o- Adresse).">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line">
+                    <valueCode value="addressLine1"/>
+                </extension>
+            </line>
+            <line value="addressLine2 solle für unpersonifizierte Adressangaben verwendet werden (z.B. Zu- satzangaben zur Lokalisation, z.B. Chalet Edelweiss).">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line">
+                    <valueCode value="addressLine2"/>
+                </extension>
+            </line>
+            <line value="Strassenbezeichnungen in Postadressen. Es kann sich dabei auch um den Namen einer Lokalität, eines Weilers etc. handeln. No. 10 Wohung 5">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line">
+                    <valueCode value="street"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                    <valueString value="10"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
+                    <valueString value="5"/>
+                </extension>
+            </line>
+            <city value="Ort" />
+            <postalCode value="PLZ" />
+            <country value="CH" />
+        </address>
+    </contact>
+</Patient>
+
+

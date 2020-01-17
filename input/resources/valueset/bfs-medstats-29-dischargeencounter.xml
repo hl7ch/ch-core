@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="bfs-medstats-29-dischargeencounter"/>
+    <url value="http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-29-dischargeencounter"/>
+    <version value="0.1.0"/>
+    <name value="BfsMedstats29Dischargeencounter"/>
+    <title value="BFS Medizinische Statistik - 29 1.5.V04 - Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita" />
+    <status value="draft"/>
+    <date value="2019-01-01"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="BFS defines variables for medical statistic (german, french, italian) see [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html). Behandlung, Pflege, Rehabilitation nach dem Spitalaufenthalt. Es geht darum, den Behandlungserfolg resp. den Abhängigkeitsgrad bei Austritt anzugeben. Nur die am besten zutreffende Kategorie auswählen." />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-29-dischargeencounter"/>
+            <concept>
+                <code value="1"/>
+                <display value="geheilt/kein Behandlungsbedarf"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="geheilt/kein Behandlungsbedarf" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Guéri, aucun besoin de suivi" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="guarito/nessun bisogno di trattamento" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="2"/>
+                <display value="ambulante Behandlung"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="ambulante Behandlung" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Soins ou traitement ambulatoires (cabinet médical ou en établissement)" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="trattamento ambulatoriale" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="3"/>
+                <display value="ambulante Pflege (z.B. SPITEX)"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="ambulante Pflege (z.B. SPITEX)" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Soins à domicile" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="cure ambulatoriali (p.es. SPITEX)" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="4"/>
+                <display value="stationäre Behandlung oder Pflege"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="stationäre Behandlung oder Pflege" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Soins ou traitement stationnaires" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="trattamento o cure stazionari" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="5"/>
+                <display value="Rehabilitation (amb. oder stat.)"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Rehabilitation (amb. oder stat.)" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Réadaptation ambulatoire ou stationnaire" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="riabilitazione (ambulatoriale o stazionaria)" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="8"/>
+                <display value="andere"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="andere" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Autre" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="altro" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="9"/>
+                <display value="unbekannt"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="unbekannt" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="Inconnu" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="sconosciuto" />
+                </designation>
+            </concept>
+            <concept>
+                <code value="0"/>
+                <display value="Todesfall"/>
+                <designation>
+                    <language value="de-CH" />
+                    <value value="Todesfall" />
+                </designation>
+                <designation>
+                    <language value="fr-CH" />
+                    <value value="décédé" />
+                </designation>
+                <designation>
+                    <language value="it-CH" />
+                    <value value="decesso" />
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

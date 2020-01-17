@@ -1,0 +1,23 @@
+<div xmlns="http://www.w3.org/1999/xhtml" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+
+  <h3>ValueSets</h3>
+  <div>
+    {% include list-simple-valuesets.xhtml %}
+  </div>
+
+  <h3>CodeSystems</h3>
+  <div>
+    {% include list-simple-codesystems.xhtml %}
+  </div>
+
+  <h3>ConceptMaps</h3>
+  <div>
+    {% include list-simple-conceptmaps.xhtml %}
+  </div>
+
+  <h3>NamingSystems</h3>
+  <div>
+    {% include list-simple-namingsystems.xhtml %}
+  </div>
+</div>

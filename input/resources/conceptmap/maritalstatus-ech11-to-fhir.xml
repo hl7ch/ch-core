@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="maritalstatus-ech11-to-fhir"/>
+    <url value="http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir" />
+    <version value="0.1.0"/>
+    <name value="MaritalStatusECH011ToFHIRMapping" />
+    <title value="MaritalStatus eCH-011 to FHIR mapping"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2018-11-26"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="MaritalStatus mapping form eCH-011 to FHIR. See [maritalData - Zivilstandsangaben eCH-11](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html) and/or [BFS Amtlicher Katalog der Merkmale](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html)." />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="CC-BY-SA-4.0"/>
+    <sourceUri value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritalstatus"/>
+    <targetUri value="http://terminology.hl7.org/ValueSet/marital-status"/>
+    <group>
+        <source value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"/>
+        <target value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+        <element>
+            <code value="1"/>
+            <display value="ledig"/>
+            <target>
+                <code value="S"/>
+                <display value="Never married"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="2"/>
+            <display value="verheiratet"/>
+            <target>
+                <code value="M"/>
+                <display value="Married"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="3"/>
+            <display value="verwitwet"/>
+            <target>
+                <code value="W"/>
+                <display value="Widowed"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="4"/>
+            <display value="geschieden"/>
+            <target>
+                <code value="D"/>
+                <display value="Divorced"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="5"/>
+            <display value="unverheiratet"/>
+            <target>
+                <code value="A"/>
+                <display value="Annulled"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="6"/>
+            <display value="in eingetragener Partnerschaft"/>
+            <target>
+                <code value="M"/>
+                <display value="Married"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="7"/>
+            <display value="aufgelöste Partnerschaft"/>
+            <target>
+                <code value="D"/>
+                <display value="Divorced"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"/>
+        <target value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <element>
+            <code value="9"/>
+            <display value="unbekannt"/>
+            <target>
+                <code value="UNK"/>
+                <display value="unknown"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

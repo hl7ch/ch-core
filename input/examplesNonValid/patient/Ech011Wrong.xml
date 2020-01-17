@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="Ech011Wrong"/>
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
+    </meta>
+    <name>
+        <!-- Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Wrong place of extension -->
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+            <valueCode value="officialName"/>
+        </extension>
+        <family value="Amtlicher Name (zwingend)">
+        </family>
+        <given value="Amtliche Vornamen (zwingend)"/>
+    </name>
+    <!-- Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Extension is optional, but when used the use value is needed as offical -->
+    <name>
+        <use value="nickname" />
+        <family value="Amtlicher Name (zwingend)">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+                <valueCode value="officialName"/>
+            </extension>
+        </family>
+        <given value="Amtliche Vornamen (zwingend)"/>
+    </name>
+    <name>
+        <!--    Aliasname (optional) – aliasName, siehe Kapitel 3.3.2.5 needs to be coupled with maiden -->
+        <use value="official" />
+        <family value="Amtlicher Name (zwingend)">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+                <valueCode value="originalName"/>
+            </extension>
+        </family>
+        <given value="Amtliche Vornamen (zwingend)"/>
+    </name>
+    <name>
+        <!-- extension should be in family, not in venen -->
+        <given value="Amtlicher Name (zwingend)">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name">
+                <valueCode value="originalName"/>
+            </extension>
+        </given>
+    </name>
+    <!-- extension should be in given, not in family -->
+    <name>
+        <use value="maiden" />
+        <family value="Amtlicher Vornaame (zwingend)">
+            <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname">
+                <valueCode value="officalFirstName"/>
+            </extension>
+        </family>
+    </name>
+</Patient>
+
+
