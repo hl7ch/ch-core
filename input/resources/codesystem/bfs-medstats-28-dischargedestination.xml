@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-28-dischargedestination"/>
     <version value="0.1.0"/>
     <name value="BfsMedstats28Dischargedestination"/>
-    <title value="BFS Medizinische Statistik - 28 1.5.V03 - Aufenthalt nach Austritt / Sejour après la sortie / Destinazione dopo l’uscita" />
+    <title value="BFS Medizinische Statistik - 28 1.5.V03 - Aufenthalt nach Austritt / Séjour après la sortie / Destinazione dopo l’uscita" />
     <status value="draft"/>
     <date value="2019-01-01"/>
     <publisher value="HL7 Switzerland"/>

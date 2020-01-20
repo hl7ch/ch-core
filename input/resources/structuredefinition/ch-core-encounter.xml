@@ -193,9 +193,9 @@
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-admitrole" />
             </type>
         </element>
-        <element id="Encounter.hospitalization.extension:BfsDischargeDecision">
+        <element id="Encounter.hospitalization.extension:BfsDischargeDécision">
             <path value="Encounter.hospitalization.extension" />
-            <sliceName value="BfsDischargeDecision" />
+            <sliceName value="BfsDischargeDécision" />
             <short value="BFS Medizinische Statistik - Entscheid für Austritt"/>
             <min value="0"/>
             <max value="1"/>
@@ -217,8 +217,8 @@
         </element>
         <element id="Encounter.hospitalization.admitSource">
             <path value="Encounter.hospitalization.admitSource"/>
-            <short value="BFS Medizinische Statistik - Aufenthaltsort vor dem Eintritt / Sejour avant l’admission / Luogo di soggiorno prima dell’ammissione"/>
-            <definition value="BFS Medizinische Statistik - Aufenthaltsort vor dem Eintritt / Sejour avant l’admission / Luogo di soggiorno prima dell’ammissione"/>
+            <short value="BFS Medizinische Statistik - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"/>
+            <definition value="BFS Medizinische Statistik - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"/>
             <min value="0"/>
             <max value="1"/>
             <type>

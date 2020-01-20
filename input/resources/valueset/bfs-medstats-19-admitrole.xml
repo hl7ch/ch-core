@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-19-admitrole"/>
     <version value="0.1.0"/>
     <name value="BfsMedstats19Admitrole"/>
-    <title value="BFS Medizinische Statistik - 19 1.2.V04 - Einweisende Instanz / Decision d’envoi / Istanza ricoverante"/>
+    <title value="BFS Medizinische Statistik - 19 1.2.V04 - Einweisende Instanz / Décision d’envoi / Istanza ricoverante"/>
     <status value="draft"/>
     <date value="2019-01-01"/>
     <publisher value="HL7 Switzerland"/>
