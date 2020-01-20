@@ -47,6 +47,7 @@
     <differential>
         <element id="Organization">
             <path value="Organization"/>
+            <short value="CH Core Organization EPR"/>
         </element>
         <element id="Organization.identifier">
             <path value="Organization.identifier"/>

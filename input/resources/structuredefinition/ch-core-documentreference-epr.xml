@@ -31,6 +31,7 @@
 	<differential>
 		<element id="DocumentReference">
 			<path value="DocumentReference"/>
+			<short value="CH Core DocumentReference EPR"/>
 		</element>
 		<element id="DocumentReference.status">
 			<path value="DocumentReference.status"/>

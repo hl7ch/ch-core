@@ -42,7 +42,7 @@
     <differential>
         <element id="Encounter">
             <path value="Encounter"/>
-            <short value="CH Core Encounter Profile"/>
+            <short value="CH Core Encounter"/>
             <definition value="This is basic constraint on Encounter for use in CH Core resources."/>
         </element>
         <element id="Encounter.identifier">

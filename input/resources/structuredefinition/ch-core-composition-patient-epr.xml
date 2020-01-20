@@ -48,6 +48,7 @@
     <differential>
         <element id="Patient">
             <path value="Patient"/>
+            <short value="CH Core Patient EPR (to include the patient in an EPR document)"/>
         </element>
         <element id="Patient.identifier">
             <path value="Patient.identifier"/>

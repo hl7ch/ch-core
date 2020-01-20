@@ -47,7 +47,7 @@
     <differential>
         <element id="Organization">
             <path value="Organization"/>
-            <short value="CH Core Organization Profile"/>
+            <short value="CH Core Organization"/>
             <isModifier value="false"/>
             <mapping>
                 <identity value="servd"/>

@@ -3,7 +3,7 @@
    <id value="1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
    <meta>
       <lastUpdated value="2019-12-05T07:53:22.889+00:00"/>
-      <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
+      <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
    </meta>
    <identifier>
       <system value="urn:ietf:rfc:3986"/>

@@ -42,7 +42,7 @@
     <differential>
         <element id="Location">
             <path value="Location"/>
-            <short value="CH Core Location Profile"/>
+            <short value="CH Core Location"/>
             <mustSupport value="false"/>
             <isModifier value="false"/>
             <mapping>

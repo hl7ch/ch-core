@@ -47,6 +47,7 @@
     <differential>
         <element id="Practitioner">
             <path value="Practitioner"/>
+            <short value="CH Core Practitioner EPR"/>
         </element>
         <element id="Practitioner.identifier">
             <path value="Practitioner.identifier"/>

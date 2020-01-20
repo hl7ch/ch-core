@@ -42,7 +42,7 @@
     <differential>
         <element id="Coverage">
             <path value="Coverage"/>
-            <short value="CH Core Coverage Profile"/>
+            <short value="CH Core Coverage"/>
             <definition value="This is basic constraint on Coverage for use in CH Core resources."/>
         </element>
         <element id="Coverage.identifier">

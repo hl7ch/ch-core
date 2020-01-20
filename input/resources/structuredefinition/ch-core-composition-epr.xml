@@ -41,7 +41,7 @@
     <differential>
         <element id="Composition">
             <path value="Composition"/>
-            <short value="CH Core Composition"/>
+            <short value="CH Core Composition EPR"/>
         </element>
         <element id="Composition.language">
             <path value="Composition.language"/>
