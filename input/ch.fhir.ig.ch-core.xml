@@ -52,109 +52,109 @@
       <reference>
         <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-document-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-composition-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Coverage/CoverageBroennimann"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-coverage"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
     </resource>
     <resource>
       <reference>
         <reference value="DocumentReference/Docu"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-documentreference"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference"/>
     </resource>
     <resource>
       <reference>
         <reference value="Encounter/EncounterAmbulantBroennimann"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-encounter"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/GruppenpraxisCH"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-organization-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/Radiologieinstitut"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-organization-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/SpitalSeeblick"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-organization"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-patient"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/FranzMuster"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-patient"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/MaxMuster"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-composition-patient-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/PersonEch011"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-patient"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/UpiEprTestKrcmarevic"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-patient"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/AgparMarc"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-practitioner"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/AllzeitBereit"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-practitioner-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/HanspeterWengerByBFH"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-practitioner"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/SchreibKraft"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-practitioner-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="PractitionerRole/HPWengerRole"/>
       </reference>
-      <exampleCanonical value="StructureDefinition/ch-core-practitionerrole"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
     </resource>
 
     <!-- references for code systems -->
