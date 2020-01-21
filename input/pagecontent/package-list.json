@@ -9,17 +9,18 @@
       "date": "n/a",
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/hl7ch/ch-core",
-      "status": "ci-build",
-      "fhirVersion": "4.0.1",
-      "current": true  
+      "status": "draft",
+      "fhirVersion": "4.0.1"        
     },
     {
       "version": "0.1.0",
-      "date": "n/a",
-      "desc": "Continuous Integration Build (latest in version control)",
-      "path": "http://build.fhir.org/ig/hl7ch/ch-core",
+      "date": "2020-01-21",
+      "desc": "Draft",
+      "path": "http://fhir.ch/ig/ch-core",
       "status": "draft",
-      "fhirVersion": "4.0.1"
+      "sequence" : "STU",
+      "fhirVersion": "4.0.1",
+      "current": true
     }
   ]
 }
