@@ -1,10 +1,7 @@
-qa
-input-cache/org.hl7.fhir.publisher.jar
 input-cache/**
 output/**
 temp/**
 template/**
 .vscode/**
-txCache/**
 resources/implementationguide/ig-*.*
 org.hl7.*.jar
