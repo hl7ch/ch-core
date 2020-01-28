@@ -247,5 +247,60 @@
         <element id="Composition.custodian.reference">
             <path value="Composition.custodian.reference"/>
         </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/>
+            <slicing>
+                <discriminator>
+                    <type value="pattern"/>
+                    <path value="code"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section:originalRepresentation">
+            <path value="Composition.section"/>
+            <sliceName value="originalRepresentation"/>
+            <short value="Original representation"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section.title:originalRepresentation">
+            <path value="Composition.section.title"/>
+            <short value="Original representation"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section.code:originalRepresentation">
+            <path value="Composition.section.code"/>
+            <min value="1"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="55108-5"/>
+                    <display value="Clinical presentation"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Composition.section.text:originalRepresentation">
+            <path value="Composition.section.text"/>
+            <short value="Representation of the original view"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Composition.section.entry:originalRepresentation">
+            <path value="Composition.section.entry"/>
+            <short value="PDF"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+            </type>
+        </element>
+        <element id="Composition.section.section:originalRepresentation">
+            <path value="Composition.section.section"/>
+            <min value="0"/>
+            <max value="0"/>
+        </element>
     </differential>
 </StructureDefinition>
