@@ -28,8 +28,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
     <fhirVersion value="4.0.1" />
     <mapping>
         <identity value="CDA-CH-V2"/>
-        <uri value="https://www.hl7.ch/default/assets/File/Publikationen/180612_CDA-CH_de.pdf"/>
-        <name value="CDA-CH 2017 V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
     </mapping>
     <mapping>
         <identity value="eCH"/>
