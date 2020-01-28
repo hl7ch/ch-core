@@ -63,6 +63,9 @@
             </subject>
             <date value="2017-10-03T17:33:00+01:00"/>
             <author>
+               <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+                  <valueDateTime value="2017-10-03T16:09:00+01:00"/>
+               </extension>
                <reference value="Practitioner/AllzeitBereit"/>
             </author>
             <title value="Zuweisung zur Radiologischen Diagnostik"/>
