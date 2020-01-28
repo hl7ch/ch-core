@@ -167,6 +167,16 @@
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
             </type>
         </element>
+        <element id="Composition.author.extension">
+            <path value="Composition.author.extension"/>
+            <short value="Timestamp of the authorship/data input"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+            </type>
+        </element>
         <element id="Composition.author.reference">
             <path value="Composition.author.reference"/>
         </element>
