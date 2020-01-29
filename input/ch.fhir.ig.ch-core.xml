@@ -148,7 +148,7 @@
       <reference>
         <reference value="Practitioner/SchreibKraft"/>
       </reference>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
       <reference>

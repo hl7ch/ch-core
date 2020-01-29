@@ -15,9 +15,9 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define the information about the person that entered data"/>
+    <description value="Extension to define the information about the person that entered data and the time of the data input"/>
     <fhirVersion value="4.0.1"/>
-    <kind value="primitive-type"/>
+    <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
@@ -30,14 +30,54 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="Extension to define the information about the person that entered data"/>
-            <min value="0"/>
+            <definition value="Extension to define the information about the person that entered data and the time of the data input"/>
+            <!--<min value="0"/>-->
             <max value="1"/>
         </element>
-        <element id="Extension.extension">
+        <element id="Extension.extension:enterer">
             <path value="Extension.extension"/>
+            <sliceName value="enterer"/>
+            <short value="Information about the person that entered data"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+            </type>
+        </element>
+        <element id="Extension.extension:enterer.extension">
+            <path value="Extension.extension.extension"/>
             <max value="0"/>
         </element>
+        <element id="Extension.extension:enterer.url">
+            <path value="Extension.extension.url"/>
+            <type>
+                <code value="uri"/>
+            </type>
+            <fixedUri value="enterer"/>
+        </element>
+        <element id="Extension.extension:enterer.valueReference">
+            <path value="Extension.extension.valueReference"/>
+            <short value="Person other than the author"/>
+            <min value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
+            </type>
+        </element>
+
+        <element id="Extension.extension:timestamp">
+            <path value="Extension.extension"/>
+            <sliceName value="timestamp"/>
+            <short value="Timestamp of the authorship/data input"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
+            </type>
+        </element>
+
         <element id="Extension.url">
             <path value="Extension.url"/>
             <type>
@@ -45,15 +85,10 @@
             </type>
             <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"/>
         </element>
-        <element id="Extension.valueReference">
-            <path value="Extension.valueReference"/>
-            <short value="Person other than the author but only when this is relevant for some reason"/>
-            <min value="1"/>
-            <type>
-                <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person"/>
-            </type>
+        <element id="Extension.value[x]">
+            <path value="Extension.value[x]"/>
+            <min value="0"/>
+            <max value="0"/>
         </element>
     </differential>
 </StructureDefinition>

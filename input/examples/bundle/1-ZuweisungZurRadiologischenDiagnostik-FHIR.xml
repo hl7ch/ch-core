@@ -37,9 +37,14 @@
                </valueReference>
             </extension>
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
-               <valueReference>
-                  <reference value="Practitioner/SchreibKraft"/>
-               </valueReference>
+               <extension url="enterer">
+                  <valueReference>
+                     <reference value="Practitioner/SchreibKraft"/>
+                  </valueReference>
+               </extension>
+               <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
+                  <valueDateTime value="2017-10-03T13:15:00+01:00"/>
+               </extension>
             </extension>
             <identifier>
                <system value="urn:ietf:rfc:3986"/>
