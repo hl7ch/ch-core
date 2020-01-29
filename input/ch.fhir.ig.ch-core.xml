@@ -673,6 +673,14 @@
       <value value="false"/>
     </parameter>
     <parameter>
+      <code value="releaselabel"/>
+      <value value="CI build"/>
+    </parameter>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2020+"/>
+    </parameter>
+    <parameter>
       <code value="special-url"/>
       <value value="urn:oid:2.16.840.1.113883.6.316"/>
     </parameter>
