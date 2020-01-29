@@ -192,8 +192,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.identifier.value:AHVN13">
             <path value="Patient.identifier.value" />
-            <short value="AHVN13 / NAVS1 of the patient (13 digits starting ith 756)" />
-            <definition value="AHVN13 / NAVS1 of the patient (13 digits starting ith 756)"/>
+            <short value="AHVN13 / NAVS13 of the patient (13 digits starting ith 756)" />
+            <definition value="AHVN13 / NAVS13 of the patient (13 digits starting ith 756)"/>
             <min value="1" />
         </element>
         <element id="Patient.identifier:LocalPid">

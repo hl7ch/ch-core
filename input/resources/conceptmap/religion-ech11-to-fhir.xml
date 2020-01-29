@@ -77,6 +77,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
+    <description value="Religion eCH-011 to FHIR mapping"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
