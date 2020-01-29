@@ -53,108 +53,144 @@
       <reference>
         <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
       </reference>
+      <name value="1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+      <description value="Example for EPR-Bundle"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
       </reference>
+      <name value="ZuweisungZurRadiologischenDiagnostik"/>
+      <description value="Example for EPR-Composition"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Coverage/CoverageBroennimann"/>
       </reference>
+      <name value="CoverageBroennimann"/>
+      <description value="Example for Coverage"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
     </resource>
     <resource>
       <reference>
         <reference value="DocumentReference/Docu"/>
       </reference>
+      <name value="Docu"/>
+      <description value="Example for DocumentReference"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference"/>
     </resource>
     <resource>
       <reference>
         <reference value="Encounter/EncounterAmbulantBroennimann"/>
       </reference>
+      <name value="EncounterAmbulantBroennimann"/>
+      <description value="Example for Encounter"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/GruppenpraxisCH"/>
       </reference>
+      <name value="GruppenpraxisCH"/>
+      <description value="Example for EPR-Organization"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/Radiologieinstitut"/>
       </reference>
+      <name value="Radiologieinstitut"/>
+      <description value="Example for EPR-Organization"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Organization/SpitalSeeblick"/>
       </reference>
+      <name value="SpitalSeeblick"/>
+      <description value="Example for Organization"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
+      <name value="ElisabethBroennimannByBFH"/>
+      <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/FranzMuster"/>
       </reference>
+      <name value="FranzMuster"/>
+      <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/MaxMuster"/>
       </reference>
+      <name value="MaxMuster"/>
+      <description value="Example for EPR-Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/PersonEch011"/>
       </reference>
+      <name value="PersonEch011"/>
+      <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Patient/UpiEprTestKrcmarevic"/>
       </reference>
+      <name value="UpiEprTestKrcmarevic"/>
+      <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/AgparMarc"/>
       </reference>
+      <name value="AgparMarc"/>
+      <description value="Example for Practitioner"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/AllzeitBereit"/>
       </reference>
+      <name value="AllzeitBereit"/>
+      <description value="Example for EPR-Practitioner"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/HanspeterWengerByBFH"/>
       </reference>
+      <name value="HanspeterWengerByBFH"/>
+      <description value="Example for Practitioner"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
       <reference>
         <reference value="Practitioner/SchreibKraft"/>
       </reference>
+      <name value="SchreibKraft"/>
+      <description value="Example for Practitoner"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
       <reference>
         <reference value="PractitionerRole/HPWengerRole"/>
       </reference>
+      <name value="HPWengerRole"/>
+      <description value="Example for PractitionerRole"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
     </resource>
 
@@ -244,13 +280,14 @@
         <reference value="ConceptMap/bfs-encounter-class-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource> 
+    </resource>
     <resource>
       <reference>
         <reference value="ConceptMap/documententry-confidentialitycode-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
-    </resource>    <resource>
+    </resource>
+    <resource>
       <reference>
         <reference value="ConceptMap/maritalstatus-ech11-to-fhir"/>
       </reference>
@@ -274,48 +311,56 @@
       <reference>
         <reference value="NamingSystem/ahvn13-navs13"/>
       </reference>
+      <name value="ahvn13-navs13"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/ber"/>
       </reference>
+      <name value="ber"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/epr-spid"/>
       </reference>
+      <name value="epr-spid"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/gln"/>
       </reference>
+      <name value="gln"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/k"/>
       </reference>
+      <name value="k"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/nif"/>
       </reference>
+      <name value="nif"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/uidb"/>
       </reference>
+      <name value="uidb"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/zsr"/>
       </reference>
+      <name value="zsr"/>
       <exampleBoolean value="false"/>
     </resource>
 
@@ -440,7 +485,7 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
-     <resource>
+    <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-composition-patient-epr"/>
       </reference>
