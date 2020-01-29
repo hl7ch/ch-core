@@ -17,7 +17,7 @@
     </contact>
     <description value="Extension to define the set id of the document"/>
     <fhirVersion value="4.0.1"/>
-    <kind value="primitive-type"/>
+    <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>

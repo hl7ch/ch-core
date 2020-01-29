@@ -17,7 +17,7 @@
     </contact>
     <description value="Extension to define the information about the recipient"/>
     <fhirVersion value="4.0.1"/>
-    <kind value="primitive-type"/>
+    <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
