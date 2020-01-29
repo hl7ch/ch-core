@@ -32,7 +32,11 @@
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Address.city or Address.country"/>
+        <expression value="Address.city"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Address.country"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

@@ -428,12 +428,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <type>
                 <code value="CodeableConcept"/>
             </type>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11" />
                     <code value="contactData" />
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
             <mapping>
                 <identity value="rim"/>
                 <map value="code"/>
@@ -508,12 +508,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <type>
                 <code value="CodeableConcept"/>
             </type>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
                     <code value="FTH" />
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
         </element>
         <element id="Patient.contact.name:nameOfFather">
             <path value="Patient.contact.name"/>
@@ -547,12 +547,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <type>
                 <code value="CodeableConcept"/>
             </type>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
                     <code value="MTH" />
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
         </element>
         <element id="Patient.contact.name:nameOfMother">
             <path value="Patient.contact.name"/>

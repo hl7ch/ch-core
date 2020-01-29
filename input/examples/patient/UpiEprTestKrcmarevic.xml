@@ -25,10 +25,10 @@
         <extension url="code">
             <valueCodeableConcept>
                 <coding>
-                    <system value="http://ech.ch/eCH-0072/SG_BFSNR"/>
                     <code value="8100"/>
                     <display value="Switzerland"/>
                 </coding>
+                <text value="Switzerland"/>
             </valueCodeableConcept>
         </extension>
     </extension>
