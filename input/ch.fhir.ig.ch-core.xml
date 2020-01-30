@@ -334,7 +334,8 @@
       <name value="gln"/>
       <exampleBoolean value="false"/>
     </resource>
-    <resource>
+    <!-- uncommented because of missing uniqueId -->
+    <!--<resource>
       <reference>
         <reference value="NamingSystem/k"/>
       </reference>
@@ -347,7 +348,7 @@
       </reference>
       <name value="nif"/>
       <exampleBoolean value="false"/>
-    </resource>
+    </resource>-->
     <resource>
       <reference>
         <reference value="NamingSystem/uidb"/>
