@@ -47,12 +47,13 @@
                 <equivalence value="equivalent"/>
             </target>
         </element>
-        <element>
+        <!-- uncommented because of the following error: The link 'null#equivalent' for "equivalent" cannot be resolved --> 
+        <!--<element>
             <code value="9"/>
             <display value="unbekannt"/>
             <target>
                 <equivalence value="unmatched"/>
             </target>
-        </element>
+        </element>-->
     </group>
 </ConceptMap>
