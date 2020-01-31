@@ -59,6 +59,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Bundle/CdaContainingOriginalRepresentationAsPdfA"/>
+      </reference>
+      <name value="CdaContainingOriginalRepresentationAsPdfA"/>
+      <description value="Example for EPR-Bundle"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
       </reference>
       <name value="ZuweisungZurRadiologischenDiagnostik"/>
