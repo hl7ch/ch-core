@@ -6,5 +6,4 @@ Code System URI 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' is unkn
 The display "Normally accessible" is not a valid display for the code {http://snomed.info/sct}17621005 - should be one of [Normal,Unremarkable,"Normal (qualifier value)"]
 The display "Clinical presentation" is not a valid display for the code {http://loinc.org}55108-5 - should be one of ["Clinical presentation Document","Clinical presentation Doc","Clinical presentation Doc"]
 The display "Clinical presentation" is not a valid display for the code {http://loinc.org}55108-5 - should be one of ["Clinical presentation Document","Clinical presentation Doc"]
-
 Profile http://hl7.org/fhir/StructureDefinition/NamingSystem, Element 'NamingSystem.uniqueId': minimum required = 1, but only found 0
