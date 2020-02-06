@@ -50,12 +50,12 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             </type>
         </element>
     </differential>
