@@ -269,6 +269,28 @@
                 <rules value="open"/>
             </slicing>
         </element>
+
+        <element id="Composition.section.extension">
+            <path value="Composition.section.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section.extension:sectionId">
+            <path value="Composition.section.extension"/>
+            <sliceName value="sectionId"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid"/>
+            </type>
+        </element>
+
         <element id="Composition.section:originalRepresentation">
             <path value="Composition.section"/>
             <sliceName value="originalRepresentation"/>

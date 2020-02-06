@@ -435,6 +435,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-ext-epr-sectionid"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-ext-epr-setid"/>
       </reference>
       <exampleBoolean value="false"/>
