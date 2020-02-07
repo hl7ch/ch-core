@@ -14,8 +14,8 @@
     },
     {
       "version": "0.1.0",
-      "date": "2020-01-21",
-      "desc": "Draft",
+      "date": "2020-02-14",
+      "desc": "HL7 Switzerland STU Ballot",
       "path": "http://fhir.ch/ig/ch-core",
       "status": "draft",
       "sequence" : "STU",
