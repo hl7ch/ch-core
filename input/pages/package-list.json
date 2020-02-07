@@ -6,7 +6,6 @@
   "list": [
     {
       "version": "dev",
-      "date": "n/a",
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/hl7ch/ch-core",
       "status": "ci-build",
