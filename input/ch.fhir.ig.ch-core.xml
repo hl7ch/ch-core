@@ -16,6 +16,7 @@
   <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
   <version value="0.1.0"/>
   <name value="CH_Core"/>
+  <title value="CH Core (R4)"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2020-02-14"/>
@@ -734,7 +735,8 @@
     </parameter>
     <parameter>
       <code value="releaselabel"/>
-      <value value="CI build"/>
+      <!--<value value="CI build"/>-->
+      <value value="STU Ballot"/>
     </parameter>
     <parameter>
       <code value="path-pages" />
