@@ -46,7 +46,7 @@
         <use value="maiden" />
         <family value="Amtlicher Vornaame (zwingend)">
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname">
-                <valueCode value="officalFirstName"/>
+                <valueCode value="officialFirstName"/>
             </extension>
         </family>
     </name>

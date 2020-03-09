@@ -163,7 +163,7 @@
             </type>
             <mapping>
                 <identity value="eCH"/>
-                <map value="eCH-0011: officalFirstName, callName, allianceName, firstNameOnForeignPassport, declaredForeignFirstName1" />
+                <map value="eCH-0011: officialFirstName, callName, allianceName, firstNameOnForeignPassport, declaredForeignFirstName1" />
             </mapping>
         </element>
         <element id="HumanName.prefix">
