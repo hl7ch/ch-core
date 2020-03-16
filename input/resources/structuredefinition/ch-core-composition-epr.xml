@@ -290,11 +290,10 @@
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid"/>
             </type>
         </element>
-
         <element id="Composition.section:originalRepresentation">
             <path value="Composition.section"/>
             <sliceName value="originalRepresentation"/>
-            <short value="Original representation"/>
+            <short value="Contains the original representation of the current document as it has been seen by the legal authenticator while signing."/>
             <max value="1"/>
         </element>
         <element id="Composition.section.title:originalRepresentation">
@@ -328,6 +327,27 @@
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Binary"/>
+            </type>
+        </element>
+        <element id="Composition.section.entry.extension:originalRepresentation">
+            <path value="Composition.section.entry.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.section.entry.extension:originalRepresentation:narativeLink">
+            <path value="Composition.section.entry.extension"/>
+            <sliceName value="narrativeLink"/>
+            <short value="narrativeLink to img src attribute" />
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/narrativeLink"/>
             </type>
         </element>
         <element id="Composition.section.section:originalRepresentation">
