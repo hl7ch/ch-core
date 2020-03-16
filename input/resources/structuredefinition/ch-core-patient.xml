@@ -141,7 +141,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <max value="1"/>
             <type>
                 <code value="Extension" />
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-religion" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-religion" />
             </type>
             <mapping>
                 <identity value="eCH"/>

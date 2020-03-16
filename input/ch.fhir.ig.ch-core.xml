@@ -271,12 +271,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="CodeSystem/ech-11-religion"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="CodeSystem/ech-11-sex"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -574,12 +568,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-core-patient-religion"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/ch-core-practitioner-epr"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -649,12 +637,6 @@
     <resource>
       <reference>
         <reference value="ValueSet/ch-core-maritalstatus"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ch-core-religion"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

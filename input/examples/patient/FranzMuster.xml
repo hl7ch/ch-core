@@ -66,13 +66,8 @@
       <state value="BE"/>
     </valueAddress>
   </extension>
-  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-religion">
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
     <valueCodeableConcept>
-      <coding>
-        <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-religion"/>
-        <code value="111"/>
-        <display value="evangelisch-reformierte (protestantische) Kirche"/>
-      </coding>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
         <code value="1077"/>
