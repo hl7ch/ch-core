@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-address"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address"/>
+    <version value="0.1.0"/>
+    <name value="CHCoreAddress"/>
+    <title value="CH Core Address Profile"/>
+    <status value="draft"/>
+    <date value="2018-11-27T00:00:00+02:00"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="address incorporating eCH-0010 postal address extensions"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1" />
+    <mapping>
+        <identity value="eCH"/>
+        <uri value="https://www.ech.ch/" />
+        <name value="eCH Standards"/>
+    </mapping>
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Address"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Address"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Address">
+            <path value="Address"/>
+            <short value="An address expressed using postal conventions (as opposed to GPS or other location definition formats)"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.5 addressInformation"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="https://art-decor.org/art-decor/decor-templates--hl7chcda-?section=templates&amp;id=2.16.756.5.30.1.1.10.9.35"/>
+            </mapping>
+        </element>
+        <element id="Address.type">
+            <path value="Address.type"/>
+            <short value="postal"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="postal"/>
+        </element>
+        <element id="Address.line">
+            <path value="Address.line"/>
+            <short value="Street name, number, direction &amp; P.O. Box etc."/>
+            <definition value="This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information."/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Address.line.extension">
+            <path value="Address.line.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="Address.line.extension:ech10line">
+            <path value="Address.line.extension" />
+            <sliceName value="ech10line" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.12 addressLine1 and addressLine2, 5.13 street, 5.16 postOfficeBox, 5.17 postOfficeBoxText" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:streetAddressLine (0..1)"/>
+            </mapping>
+        </element>
+        <element id="Address.line.extension:houseNumber">
+            <path value="Address.line.extension" />
+            <sliceName value="houseNumber" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.14 houseNumber" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:houseNumber (0..1)"/>
+            </mapping>
+        </element>
+        <element id="Address.line.extension:unitID">
+            <path value="Address.line.extension" />
+            <sliceName value="unitID" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.15 dwellingNumber" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:additionalLocator (0..1)"/>
+            </mapping>
+        </element>
+        <element id="Address.line.extension:postBox">
+            <path value="Address.line.extension" />
+            <sliceName value="postBox" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.16 postOfficeBox" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:postBox (0..1 C)"/>
+            </mapping>
+        </element>
+        <element id="Address.city">
+            <path value="Address.city"/>
+            <alias value="Municpality"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.23 town"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:city (1..1 R)"/>
+            </mapping>
+        </element>
+        <element id="Address.district">
+            <path value="Address.district"/>
+            <short value="District name (aka county)"/>
+            <definition value="The name of the administrative area (county)."/>
+            <comment value="District is sometimes known as county, but in some regions &#39;county&#39; is used in place of city (municipality), so county name should be conveyed in city instead."/>
+            <alias value="County"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <isSummary value="true"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.22 locality"/>
+            </mapping>
+        </element>
+        <element id="Address.state">
+            <path value="Address.state"/>
+            <alias value="Province"/>
+            <alias value="Territory"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.22 locality"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:state (0..1)"/>
+            </mapping>
+        </element>
+        <element id="Address.postalCode">
+            <path value="Address.postalCode"/>
+            <short value="Postal code for area"/>
+            <definition value="A postal code designating a region defined by the postal service."/>
+            <alias value="Zip"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.18 swissZipCode, 5.19 swissZipCodeAddOn, 5.20 swissZipCodeId, 5.21 foreignZipCode"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:postalCode (1..1 R)"/>
+            </mapping>
+        </element>
+        <element id="Address.country">
+            <path value="Address.country"/>
+            <type>
+                <code value="string"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.24 country"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:country (1..1 R)"/>
+            </mapping>
+        </element>
+        <element id="Address.period">
+            <path value="Address.period"/>
+            <short value="Time period when address was/is in use"/>
+            <definition value="Time period when address was/is in use."/>
+            <requirements value="Allows addresses to be placed in historical context."/>
+            <min value="0"/>
+            <max value="0"/>
+            <type>
+                <code value="Period"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

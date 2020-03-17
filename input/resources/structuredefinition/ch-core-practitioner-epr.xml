@@ -63,11 +63,11 @@
             <path value="Practitioner.name"/>
             <min value="1"/>
         </element>
-        <element id="Practitioner.address">
-            <path value="Practitioner.address"/>
-        </element>
         <element id="Practitioner.telecom">
             <path value="Practitioner.telecom"/>
         </element>
+        <element id="Practitioner.address">
+            <path value="Practitioner.address"/>
+        </element>     
     </differential>
 </StructureDefinition>

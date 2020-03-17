@@ -538,6 +538,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-address"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-address-ech-10"/>
       </reference>
       <exampleBoolean value="false"/>

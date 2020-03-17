@@ -150,6 +150,13 @@
                 <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:telecom (1..* R)"/>
             </mapping>
         </element>
+        <element id="Practitioner.address">
+            <path value="Practitioner.address"/>
+            <type>
+                <code value="Address"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
+            </type>
+        </element>     
         <element id="Practitioner.gender">
             <path value="Practitioner.gender"/>
             <short value="male | female | other"/>

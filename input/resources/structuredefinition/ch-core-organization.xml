@@ -170,6 +170,10 @@
         </element>
         <element id="Organization.address">
             <path value="Organization.address"/>
+            <type>
+                <code value="Address"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
+            </type>            
         </element>
         <element id="Organization.endpoint">
             <path value="Organization.endpoint"/>

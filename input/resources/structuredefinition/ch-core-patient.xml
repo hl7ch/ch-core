@@ -350,6 +350,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <max value="*"/>
             <type>
                 <code value="Address"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
             </type>
         </element>
         <element id="Patient.maritalStatus">
