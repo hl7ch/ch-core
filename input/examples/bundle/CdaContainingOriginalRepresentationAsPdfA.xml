@@ -162,6 +162,12 @@
       <Patient>
         <id value="14352087-86af-4bd3-a388-33eeea1d2b9a"/>
         <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
+          </type>
           <system value="urn:oid:2.999"/>
           <value value="8733"/>
         </identifier>
