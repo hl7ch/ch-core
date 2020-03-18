@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-ext-ech-11-bfsnumber"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+    <id value="ch-ext-ech-7-municipalityid"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid"/>
     <version value="0.1.0"/>
-    <name value="ECH011BFSNumber"/>
+    <name value="eCH-0007 municipalityId – BFS Gemeindenummer"/>
     <title value="BFS Number"/>
     <status value="draft"/>
     <date value="2018-11-21"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-0011: Extension to define a BFS Number for a municipality or a country"/>
+    <description value="eCH-0007: Extension to define a BFS Number for a municipality"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -33,10 +33,6 @@
     <context>
         <type value="element"/>
         <expression value="Address.city"/>
-    </context>
-    <context>
-        <type value="element"/>
-        <expression value="Address.country"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -58,7 +54,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid"/>
         </element>
         <element id="Extension.valueString">
             <path value="Extension.valueString"/>

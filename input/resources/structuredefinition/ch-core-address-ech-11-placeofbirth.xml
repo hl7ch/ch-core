@@ -31,7 +31,7 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Address"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Address"/>
+    <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Address">
@@ -103,24 +103,9 @@
                 <map value="Name of birth place (BFS-323, BFS-324)"/>
             </mapping>
         </element>
-        <element id="Address.city.extension">
-            <path value="Address.city.extension" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="url" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-        </element>
-        <element id="Address.city.extension:bfs">
+       <element id="Address.city.extension:bfs">
             <path value="Address.city.extension" />
             <sliceName value="bfs" />
-            <max value="1" />
-            <type>
-                <code value="Extension" />
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber" />
-            </type>
             <mapping>
                 <identity value="eCH-0011"/>
                 <map value="placeOfBirth - BFS Number for municipality Switzerland - BFS-323" />
@@ -196,29 +181,6 @@
             <mapping>
                 <identity value="eCH-0011"/>
                 <map value="BFS-322"/>
-            </mapping>
-        </element>
-        <element id="Address.country.extension">
-            <path value="Address.country.extension" />
-            <slicing>
-                <discriminator>
-                    <type value="value" />
-                    <path value="url" />
-                </discriminator>
-                <rules value="open" />
-            </slicing>
-        </element>
-        <element id="Address.country.extension:bfs">
-            <path value="Address.country.extension" />
-            <sliceName value="bfs" />
-            <max value="1" />
-            <type>
-                <code value="Extension" />
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber" />
-            </type>
-            <mapping>
-                <identity value="eCH-0011"/>
-                <map value="placeOfBirth - BFS Number for country - BFS-322" />
             </mapping>
         </element>
         <element id="Address.period">
