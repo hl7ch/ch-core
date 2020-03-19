@@ -62,7 +62,7 @@
                 <code value="code"/>
             </type>
             <fixedCode value="postal"/>
-        </element>        
+        </element>
         <element id="Address.city">
             <path value="Address.city"/>
             <alias value="Municpality"/>
@@ -115,6 +115,17 @@
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:country (1..1 R)"/>
             </mapping>
+        </element>
+        <element id="Address.period">
+            <path value="Address.period"/>
+            <short value="Time period when address was/is in use"/>
+            <definition value="Time period when address was/is in use."/>
+            <requirements value="Allows addresses to be placed in historical context."/>
+            <min value="0"/>
+            <max value="0"/>
+            <type>
+                <code value="Period"/>
+            </type>
         </element>
     </differential>
 </StructureDefinition>
