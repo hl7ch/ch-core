@@ -271,6 +271,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/ech-11-religion"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-11-sex"/>
       </reference>
       <exampleBoolean value="false"/>
