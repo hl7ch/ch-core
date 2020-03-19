@@ -50,13 +50,13 @@
             </type>
             <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber"/>
         </element>
-        <element id="Extension.valueInteger">
-            <path value="Extension.valueInteger"/>
+        <element id="Extension.valueUnsignedInt">
+            <path value="Extension.valueUnsignedInt"/>
             <short value="Value of extension"/>
             <min value="1"/>
             <max value="1"/>
             <type>
-                <code value="integer"/>
+                <code value="unsignedInt"/>
             </type>
             <mapping>
                 <identity value="CDA-CH-V2"/>
