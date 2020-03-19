@@ -84,17 +84,17 @@
         </name>
         <address>
             <line value="addressLine1 sollte für personifizierte Adressangaben verwendet werden (z.B. c/o- Adresse).">
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype">
                     <valueCode value="addressLine1"/>
                 </extension>
             </line>
             <line value="addressLine2 solle für unpersonifizierte Adressangaben verwendet werden (z.B. Zu- satzangaben zur Lokalisation, z.B. Chalet Edelweiss).">
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype">
                     <valueCode value="addressLine2"/>
                 </extension>
             </line>
             <line value="Strassenbezeichnungen in Postadressen. Es kann sich dabei auch um den Namen einer Lokalität, eines Weilers etc. handeln. No. 10 Wohung 5">
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype">
                     <valueCode value="street"/>
                 </extension>
                 <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
@@ -102,6 +102,14 @@
                 </extension>
                 <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
                     <valueString value="5"/>
+                </extension>
+            </line>
+            <line value="Postfach">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype">
+                    <valueCode value="postOfficeBoxText"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+                    <valueString value="12345678"/>
                 </extension>
             </line>
             <city value="Ort" />

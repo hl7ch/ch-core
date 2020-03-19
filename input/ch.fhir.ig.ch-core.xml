@@ -394,7 +394,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-ext-ech-10-line"/>
+        <reference value="StructureDefinition/ch-ext-ech-10-linetype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -648,7 +648,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/ech-10-line"/>
+        <reference value="ValueSet/ech-10-linetype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

@@ -53,6 +53,16 @@
                 <map value="https://art-decor.org/art-decor/decor-templates--hl7chcda-?section=templates&amp;id=2.16.756.5.30.1.1.10.9.35"/>
             </mapping>
         </element>
+        <element id="Address.type">
+            <path value="Address.type"/>
+            <short value="postal"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="code"/>
+            </type>
+            <fixedCode value="postal"/>
+        </element>        
         <element id="Address.city">
             <path value="Address.city"/>
             <alias value="Municpality"/>

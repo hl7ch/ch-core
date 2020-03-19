@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-ext-ech-10-line"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line"/>
+    <id value="ch-ext-ech-10-linetype"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype"/>
     <version value="0.1.0"/>
-    <name value="ECH0010AddressLine"/>
-    <title value="Address line"/>
+    <name value="ECH0010AddressLineType"/>
+    <title value="Address line type"/>
     <status value="draft"/>
     <date value="2018-11-27"/>
     <publisher value="HL7 Switzerland"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-0010: Extension to define adress lines"/>
+    <description value="eCH-0010: Extension to define line types for and address"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -41,7 +41,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="eCH-0010: Extension to define adress lines"/>
+            <definition value="eCH-0010: Extension to define line types for and address"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -54,7 +54,7 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line"/>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype"/>
         </element>
         <element id="Extension.valueCode">
             <path value="Extension.valueCode"/>
@@ -77,7 +77,7 @@
                 <strength value="required"/>
                 <description value="A set of codes advising a system or user which name in a set of names to select for a
          given purpose."/>
-                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-10-line"/>
+                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-10-linetype"/>
             </binding>
         </element>
     </differential>
