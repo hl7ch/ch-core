@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-0010: Extension to define line types for and address"/>
+    <description value="eCH-0010: Extension to define line types for addresses"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

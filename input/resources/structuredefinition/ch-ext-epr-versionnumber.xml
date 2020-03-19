@@ -15,8 +15,13 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define the version number of the document"/>
+    <description value="A CDA document can have a versionNumber element. This element MUST contain the value 1 for the very first version of that document. For later versions, the version number MUST be increased by 1 each. With this extension the versionNumber can be specified for a FHIR Composition"/>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
+    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -53,6 +58,10 @@
             <type>
                 <code value="integer"/>
             </type>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:versionNumber"/>
+            </mapping>
         </element>
     </differential>
 </StructureDefinition>

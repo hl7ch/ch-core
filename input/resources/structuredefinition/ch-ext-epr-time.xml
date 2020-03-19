@@ -15,8 +15,13 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define the timestamp of the authorship/data input"/>
+    <description value="CDA documents have the ability to add additional timestamps for the author or other elements. This extensions allows to add CDA timestamps to the respective FHIR elements."/>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
+    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -26,6 +31,18 @@
     <context>
         <type value="element"/>
         <expression value="Composition.author"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Composition.section.author"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationStatement.informationSource"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationStatement.extension"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -57,6 +74,10 @@
             <type>
                 <code value="dateTime"/>
             </type>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:author / hl7:time, hl7:section / hl7:author / hl7:time,  hl7:substanceAdministration / hl7:author / hl7:time"/>
+            </mapping>
         </element>
     </differential>
 </StructureDefinition>

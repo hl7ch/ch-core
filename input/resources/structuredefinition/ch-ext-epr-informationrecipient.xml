@@ -15,8 +15,13 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define the information about the recipient"/>
+    <description value="Extension for a recipient of this document (corresponds to the addressee of a letter - person or organization), equivalent to CDA informationRecipient"/>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
+    </mapping>   
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -57,6 +62,10 @@
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
             </type>
-        </element>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:informationRecipient"/>
+            </mapping>
+        </element>        
     </differential>
 </StructureDefinition>
