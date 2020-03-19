@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin"/>
     <version value="0.1.0"/>
     <name value="ChCorePatientEch11PlaceOfOrigin"/>
-    <title value="Place of Origin according to eCH-0011"/>
+    <title value="Place of origin according to eCH-0011"/>
     <status value="draft"/>
     <date value="2018-11-21T16:12:58+00:00"/>
     <publisher value="HL7 Switzerland"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="The place of origin of the patient. A sytem may use the address.text if they don&#39;t store the birthPlace address in discrete elements."/>
+    <description value="The place of origin of the patient."/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="rim"/>
@@ -34,7 +34,7 @@
     <differential>
         <element id="Extension">
             <path value="Extension"/>
-            <short value="Place of Origin for patient according to eCH-0011"/>
+            <short value="Place of origin for patient according to eCH-0011"/>
             <definition value="The registered place of origin of the patient."/>
             <min value="0"/>
             <max value="*"/>

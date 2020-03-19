@@ -76,9 +76,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <rules value="open" />
             </slicing>
         </element>
-        <element id="Patient.extension:birthPlace">
+        <element id="Patient.extension:placeOfBirth">
             <path value="Patient.extension" />
-            <sliceName value="birthPlace" />
+            <sliceName value="placeOfBirth" />
             <short value="Place of birth of patient"/>
             <min value="0"/>
             <max value="1"/>

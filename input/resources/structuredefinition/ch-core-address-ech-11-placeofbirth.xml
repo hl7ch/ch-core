@@ -89,7 +89,7 @@
         </element>
         <element id="Address.city">
             <path value="Address.city"/>
-            <short value="Name of birth place (municipality)"/>
+            <short value="Place of Birth (municipality)"/>
             <definition value="optional if country is not Switzerland"/>
             <alias value="Municpality"/>
             <min value="0"/>
@@ -100,7 +100,7 @@
             <isSummary value="true"/>
             <mapping>
                 <identity value="eCH-0011"/>
-                <map value="Name of birth place (BFS-323, BFS-324)"/>
+                <map value="Place of Birth (BFS-323, BFS-324)"/>
             </mapping>
         </element>
        <element id="Address.city.extension:bfs">
@@ -170,8 +170,8 @@
         </element>
         <element id="Address.country">
             <path value="Address.country"/>
-            <short value="Country if birth place is not Switzerland"/>
-            <definition value="Country if birth place is not Switzerland"/>
+            <short value="Country if place of Birth is not Switzerland"/>
+            <definition value="Country if place of Birth is not Switzerland"/>
             <min value="0"/>
             <max value="1"/>
             <type>
