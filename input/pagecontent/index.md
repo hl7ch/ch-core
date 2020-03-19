@@ -43,13 +43,7 @@ This document presents Swiss use concepts defined via FHIR processable artefacts
 
 ### Governance
 
-FHIR profiles are managed under HL7 Switzerland in the HL7 Switzerland FHIR working group:
-
-* [HL7 Switzerland Technical Comitee](https://www.hl7.ch/technisches-komitee/)
-* [Source](https://github.com/hl7ch/ch-core)
-* [Wiki](https://github.com/hl7ch/ch-core)
-
-
+The CH-Core implementation guide is managed by HL7 Switzerland in the [HL7 Switzerland FHIR technical committee](https://www.hl7.ch/technisches-komitee/), see also [source](https://github.com/hl7ch/ch-core).
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
