@@ -177,6 +177,10 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
             </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".author.time"/>
+            </mapping>
         </element>
         <element id="Composition.author.reference">
             <path value="Composition.author.reference"/>
@@ -207,6 +211,10 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
             </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".confidentialityCode"/>
+            </mapping>
         </element>
         <element id="Composition.attester">
             <path value="Composition.attester"/>
@@ -289,6 +297,10 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid"/>
             </type>
+            <mapping>
+                <identity value="cda"/>
+                <map value=".id"/>
+            </mapping>
         </element>
         <element id="Composition.section:originalRepresentation">
             <path value="Composition.section"/>

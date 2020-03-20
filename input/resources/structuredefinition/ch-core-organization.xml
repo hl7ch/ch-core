@@ -25,6 +25,11 @@
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
     <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
+    </mapping>
+    <mapping>
         <identity value="servd"/>
         <uri value="http://www.omg.org/spec/ServD/1.0/"/>
         <name value="ServD"/>
@@ -49,6 +54,10 @@
             <path value="Organization"/>
             <short value="CH Core Organization"/>
             <isModifier value="false"/>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:author (1..*) / hl7:assignedAuthor (1..1) / hl7:representedOrganization (0..1)"/>
+            </mapping>
             <mapping>
                 <identity value="servd"/>
                 <map value="Organization"/>

@@ -65,6 +65,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             </constraint>
             <mustSupport value="false"/>
             <isModifier value="false"/>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1)"/>
+            </mapping>
         </element>
         <element id="Patient.extension">
             <path value="Patient.extension" />
@@ -168,6 +172,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 </discriminator>
                 <rules value="open" />
             </slicing>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:id (1..*)"/>
+            </mapping>
         </element>
         <element id="Patient.identifier:EPR-SPID">
             <path value="Patient.identifier" />
@@ -359,6 +367,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <code value="Address"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
             </type>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:addr (0..*)"/>
+            </mapping>
         </element>
         <element id="Patient.maritalStatus">
             <path value="Patient.maritalStatus"/>
