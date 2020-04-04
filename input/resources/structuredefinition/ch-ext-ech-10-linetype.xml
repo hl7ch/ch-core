@@ -41,7 +41,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="eCH-0010: Extension to define line types for and address"/>
+            <definition value="eCH-0010: Extension to define line types for an address"/>
             <min value="0"/>
             <max value="1"/>
         </element>
