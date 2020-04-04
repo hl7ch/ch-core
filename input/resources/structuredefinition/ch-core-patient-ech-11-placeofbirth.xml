@@ -43,13 +43,6 @@
             <path value="Extension.extension"/>
             <max value="0"/>
         </element>
-        <element id="Extension.url">
-            <path value="Extension.url"/>
-            <type>
-                <code value="uri"/>
-            </type>
-            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth"/>
-        </element>
         <element id="Extension.valueAddress">
             <path value="Extension.valueAddress"/>
             <type>

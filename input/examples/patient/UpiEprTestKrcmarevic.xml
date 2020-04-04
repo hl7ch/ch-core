@@ -32,7 +32,7 @@
             </valueCodeableConcept>
         </extension>
     </extension>
-    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth">
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
         <valueAddress>
             <city value="Zürich">
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid">
