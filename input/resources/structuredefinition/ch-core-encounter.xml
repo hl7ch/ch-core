@@ -128,6 +128,14 @@
                 <code value="CodeableConcept"/>
             </type>
             <isModifier value="false"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="ParticipantType"/>
+                </extension>
+                <strength value="extensible"/>
+                <description value="Role of participant in encounter."/>
+                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ch-core-encounter-participation-type"/>
+            </binding>
         </element>
         <element id="Encounter.participant.period">
             <path value="Encounter.participant.period"/>

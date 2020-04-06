@@ -648,6 +648,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/ch-core-encounter-participation-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/ch-core-maritalstatus"/>
       </reference>
       <exampleBoolean value="false"/>
