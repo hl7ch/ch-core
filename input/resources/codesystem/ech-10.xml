@@ -40,7 +40,7 @@
         <display value="street"/>
     </concept>
   <concept>
-        <code value="postOfficeBox"/>
-        <display value="postOfficeBox"/>
+        <code value="postOfficeBoxText"/>
+        <display value="postOfficeBoxText"/>
     </concept>   
 </CodeSystem>

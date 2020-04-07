@@ -42,7 +42,7 @@
   <dependsOn id="cheprterm">
     <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
     <packageId value="ch.fhir.ig.ch-epr-term"/>
-    <version value="2.0.1"/>
+    <version value="current"/>
   </dependsOn>
   <definition>
     <grouping>
@@ -394,13 +394,13 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-ext-ech-11-bfsnumber"/>
+        <reference value="StructureDefinition/ch-ext-ech-7-municipalityid"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-ext-ech-10-line"/>
+        <reference value="StructureDefinition/ch-ext-ech-10-linetype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -544,6 +544,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-address"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-address-ech-10"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -569,12 +575,6 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-patient-ech-11-placeoforigin"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/ch-core-patient-religion"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -648,19 +648,19 @@
     </resource>
     <resource>
       <reference>
+        <reference value="ValueSet/ch-core-encounter-participation-type"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/ch-core-maritalstatus"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
-        <reference value="ValueSet/ch-core-religion"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/ech-10-line"/>
+        <reference value="ValueSet/ech-10-linetype"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

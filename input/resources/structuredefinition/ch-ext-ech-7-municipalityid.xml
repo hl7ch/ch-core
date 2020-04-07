@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-ext-ech-10-line"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line"/>
+    <id value="ch-ext-ech-7-municipalityid"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid"/>
     <version value="0.1.0"/>
-    <name value="ECH0010AddressLine"/>
-    <title value="Address line"/>
+    <name value="ECH007MunicipalityId"/>
+    <title value="eCH-0007 municipalityId – BFS Gemeindenummer"/>
     <status value="draft"/>
-    <date value="2018-11-27"/>
+    <date value="2018-11-21"/>
     <publisher value="HL7 Switzerland"/>
     <contact>
         <name value="HL7 Switzerland"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-0010: Extension to define adress lines"/>
+    <description value="eCH-0007: Extension to define a BFS Number for a municipality"/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -23,16 +23,16 @@
         </coding>
     </jurisdiction>
     <fhirVersion value="4.0.1" />
-   <mapping>
-        <identity value="eCH"/>
-        <uri value="https://www.ech.ch/"/>
-        <name value="eCH-0010 Datenstandard Postadresse"/>
+    <mapping>
+        <identity value="eCH-0011"/>
+        <uri value="http://www.ech.ch/standards/39485"/>
+        <name value="eCH-0011 Datenstandard Personendaten"/>
     </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
         <type value="element"/>
-        <expression value="Address.line"/>
+        <expression value="Address.city"/>
     </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
@@ -41,7 +41,7 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="eCH-0010: Extension to define adress lines"/>
+            <definition value="Extension for eCH-0011 - bfs number (ministry of statistics number)"/>
             <min value="0"/>
             <max value="1"/>
         </element>
@@ -54,13 +54,12 @@
             <type>
                 <code value="uri"/>
             </type>
-            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-line"/>
+            <fixedUri value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid"/>
         </element>
-        <element id="Extension.valueCode">
-            <path value="Extension.valueCode"/>
+        <element id="Extension.valueString">
+            <path value="Extension.valueString"/>
             <short value="Value of extension"/>
-            <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see
-       Extensibility in the spec for list)."/>
+            <definition value="BFS number"/>
             <min value="0"/>
             <max value="1"/>
             <base>
@@ -69,16 +68,10 @@
                 <max value="1"/>
             </base>
             <type>
-                <code value="code"/>
+                <code value="string"/>
             </type>
             <isModifier value="false"/>
             <isSummary value="false"/>
-            <binding>
-                <strength value="required"/>
-                <description value="A set of codes advising a system or user which name in a set of names to select for a
-         given purpose."/>
-                <valueSet value="http://fhir.ch/ig/ch-core/ValueSet/ech-10-line"/>
-            </binding>
         </element>
     </differential>
 </StructureDefinition> 

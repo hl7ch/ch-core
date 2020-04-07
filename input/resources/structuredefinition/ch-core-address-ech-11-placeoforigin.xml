@@ -31,7 +31,7 @@
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Address"/>
-    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Address"/>
+    <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address"/>
     <derivation value="constraint"/>
     <differential>
         <element id="Address">
@@ -89,7 +89,7 @@
         </element>
         <element id="Address.city">
             <path value="Address.city"/>
-            <short value="Name of birth place (municipality)"/>
+            <short value="Name of place of origin (municipality)"/>
             <definition value="optional if country is not Switzerland"/>
             <alias value="Municpality"/>
             <min value="0"/>
@@ -146,14 +146,34 @@
         </element>
         <element id="Address.country">
             <path value="Address.country"/>
-            <short value="Country if birth place is not Switzerland"/>
-            <definition value="Country if birth place is not Switzerland"/>
+            <short value="Country if place of orgin is not Switzerland"/>
+            <definition value="Country if place of orgin is not Switzerland"/>
             <min value="0"/>
             <max value="0"/>
             <type>
                 <code value="string"/>
             </type>
             <isSummary value="true"/>
+        </element>
+        <element id="Address.country.extension:countrycode">
+            <path value="Address.country.extension" />
+            <sliceName value="countrycode" />
+            <short value="ISO Country Alpha-2 or ISO Country Alpha-3 code"/>
+            <definition value="The content of the country code element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, if the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.6 nationalityData"/>
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="Not supported by CDA-CH V2. Can be specified as a social history observation in the CDA body. See CDA-CH-SMCP for possible implementation: https://art-decor.org/art-decor/decor-templates--cdachsmcp-"/>
+            </mapping>
         </element>
         <element id="Address.period">
             <path value="Address.period"/>

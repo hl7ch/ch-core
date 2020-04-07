@@ -63,6 +63,10 @@
             </constraint>
             <mustSupport value="false"/>
             <isModifier value="false"/>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:author (1..* R)"/>
+            </mapping>
         </element>
         <element id="Practitioner.identifier">
             <path value="Practitioner.identifier" />
@@ -73,6 +77,10 @@
                 </discriminator>
                 <rules value="open" />
             </slicing>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:id (1..* R)"/>
+            </mapping>
         </element>
         <element id="Practitioner.identifier:GLN">
             <path value="Practitioner.identifier" />
@@ -150,6 +158,17 @@
                 <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:telecom (1..* R)"/>
             </mapping>
         </element>
+        <element id="Practitioner.address">
+            <path value="Practitioner.address"/>
+            <type>
+                <code value="Address"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
+            </type>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:addr (0..*)"/>
+            </mapping>
+        </element>     
         <element id="Practitioner.gender">
             <path value="Practitioner.gender"/>
             <short value="male | female | other"/>

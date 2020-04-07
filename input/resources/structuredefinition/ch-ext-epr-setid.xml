@@ -15,8 +15,13 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define the set id of the document"/>
+    <description value="A CDA document can have a setId element to specify the identifier of the first version of that CDA document. With this extension the CDA setId identifier can be added to the FHIR composition."/>
     <fhirVersion value="4.0.1"/>
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
+    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -53,6 +58,10 @@
             <type>
                 <code value="Identifier"/>
             </type>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:setId"/>
+            </mapping>
         </element>
     </differential>
 </StructureDefinition>

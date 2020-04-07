@@ -27,7 +27,7 @@
         <include>
             <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11"/>
             <concept>
-                <code value="officalFirstName"/>
+                <code value="officialFirstName"/>
                 <display value="Amtliche Vornamen (zwingend), BFS-221"/>
                 <designation>
                     <language value="de-CH" />

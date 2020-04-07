@@ -25,23 +25,26 @@
         <extension url="code">
             <valueCodeableConcept>
                 <coding>
-                    <code value="8100"/>
-                    <display value="Switzerland"/>
+                    <system value="urn:iso:std:iso:3166" />
+                    <code value="CH"/>
+                    <display value="Switzerland" />
                 </coding>
-                <text value="Switzerland"/>
             </valueCodeableConcept>
         </extension>
     </extension>
-    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeofbirth">
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
         <valueAddress>
             <city value="Zürich">
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber">
+                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid">
                     <valueString value="261"/>
                 </extension>
             </city>
             <country value="Switzerland">
-                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-bfsnumber">
-                    <valueString value="8100"/>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+                    <valueCoding>
+                        <system value="urn:iso:std:iso:3166" />
+                        <code value="CH"/>
+                    </valueCoding>
                 </extension>
             </country>
         </valueAddress>

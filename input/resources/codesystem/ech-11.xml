@@ -62,7 +62,7 @@
         <display value="Name gemäss Deklaration, BFS-217"/>
     </concept>
     <concept>
-        <code value="officalFirstName"/>
+        <code value="officialFirstName"/>
         <display value="Amtliche Vornamen (zwingend), BFS-221"/>
         <definition value="First names as per birth certificate or civil register/Infostar in the order listed or as per foreign identity documents."/>
     </concept>

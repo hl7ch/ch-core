@@ -65,6 +65,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             </constraint>
             <mustSupport value="false"/>
             <isModifier value="false"/>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1)"/>
+            </mapping>
         </element>
         <element id="Patient.extension">
             <path value="Patient.extension" />
@@ -76,9 +80,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <rules value="open" />
             </slicing>
         </element>
-        <element id="Patient.extension:birthPlace">
+        <element id="Patient.extension:placeOfBirth">
             <path value="Patient.extension" />
-            <sliceName value="birthPlace" />
+            <sliceName value="placeOfBirth" />
             <short value="Place of birth of patient"/>
             <min value="0"/>
             <max value="1"/>
@@ -118,15 +122,22 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <path value="Patient.extension" />
             <sliceName value="citizenship" />
             <short value="Citizenships of patient"/>
+            <definition value="The content of the country code element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, if the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
             <min value="0"/>
             <max value="*"/>
             <type>
                 <code value="Extension" />
                 <profile value="http://hl7.org/fhir/StructureDefinition/patient-citizenship" />
             </type>
+            <constraint>
+                <key value="ch-pat-3"/>
+                <severity value="error"/>
+                <human value="ISO Country Alpha-2 or ISO Country Alpha-3 code"/>
+                <expression value="((extension.where(url='code').valueCodeableConcept.coding.code.length()=2) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2')) or ((extension.where(url='code').valueCodeableConcept.coding.code.length() = 3) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" /> 
+            </constraint>
             <mapping>
                 <identity value="eCH"/>
-                <map value="eCH-0011: 3.3.6 nationalityData BFS-412, BFS-413"/>
+                <map value="eCH-0011: 3.3.6 nationalityData"/>
             </mapping>
             <mapping>
                 <identity value="CDA-CH-V2"/>
@@ -141,7 +152,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <max value="1"/>
             <type>
                 <code value="Extension" />
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-religion" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/patient-religion" />
             </type>
             <mapping>
                 <identity value="eCH"/>
@@ -161,6 +172,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 </discriminator>
                 <rules value="open" />
             </slicing>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:id (1..*)"/>
+            </mapping>
         </element>
         <element id="Patient.identifier:EPR-SPID">
             <path value="Patient.identifier" />
@@ -350,7 +365,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <max value="*"/>
             <type>
                 <code value="Address"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
             </type>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:addr (0..*)"/>
+            </mapping>
         </element>
         <element id="Patient.maritalStatus">
             <path value="Patient.maritalStatus"/>
