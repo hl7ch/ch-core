@@ -14,7 +14,7 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="CH_Core"/>
   <title value="CH Core (R4)"/>
   <status value="active"/>
