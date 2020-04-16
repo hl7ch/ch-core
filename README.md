@@ -25,9 +25,9 @@ If you are in the main directory of the Implementation Guide you can check your 
 ```
 wget https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.validator.jar -O org.hl7.fhir.validator.jar
 ```
-- Validate the resource: 
+- Validate the resource against ch-core-patient: 
 ```
-java -jar org.hl7.fhir.validator.jar [file path] -version 4.0.1
+java -jar org.hl7.fhir.validator.jar [file path] -version 4.0.1 -ig output -profile output http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
  ```
 
 
