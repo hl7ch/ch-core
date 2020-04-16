@@ -103,6 +103,7 @@
       <coding>
         <system value="urn:ietf:bcp:47"/>
         <code value="de-CH"/>
+        <display value="German (Switzerland)"/>
       </coding>
       <text value="Deutsch (Schweiz)"/>
     </language>
