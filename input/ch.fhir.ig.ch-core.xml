@@ -735,8 +735,8 @@
     </parameter>
     <parameter>
       <code value="releaselabel"/>
-      <!--<value value="CI build"/>-->
-      <value value="Trial use"/>
+      <value value="CI build"/>
+      <!--<value value="Trial use"/>-->
     </parameter>
     <parameter>
       <code value="path-pages" />
