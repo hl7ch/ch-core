@@ -43,3 +43,4 @@ wget https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar -O org.h
 ```
 java -jar org.hl7.fhir.validator.jar [file path] -version 4.0.1 -ig ch.fhir.ig.ch-core#current -profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
 ```
+
