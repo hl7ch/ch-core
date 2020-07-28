@@ -11,11 +11,11 @@ You can build the Implementation Guide with the [IG Publisher](https://confluenc
 - Clone this repository and change into its main directory.
 - Download the latest version of IG Publisher:
 ```
-wget https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar -O org.hl7.fhir.publisher.jar
+wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O publisher.jar
 ```
 - Build the Implementation Guide:
 ```
-java -Xms3550m -Xmx3550m -jar org.hl7.fhir.publisher.jar -ig ig.ini
+java -Xms3550m -Xmx3550m -jar publisher.jar -ig ig.ini
 ```
 
 ### Validate a Resource
@@ -23,11 +23,11 @@ If you are in the main directory of the Implementation Guide you can check your 
 
 - Download the latest version of Validator: 
 ```
-wget https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar -O org.hl7.fhir.validator.jar
+wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator_cli.jar
 ```
 - Validate the resource against a profile (e.g. ch-core-patient): 
 ```
-java -jar org.hl7.fhir.validator.jar [file path] -version 4.0.1 -ig output -profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
+java -jar validator_cli.jar [file path] -version 4.0.1 -ig output -profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
  ```
 
 
@@ -37,11 +37,11 @@ If you do not want to build the IG locally, you can validate your example agains
 
 - Download the latest version of Validator: 
 ```
-wget https://storage.googleapis.com/ig-build/org.hl7.fhir.validator.jar -O org.hl7.fhir.validator.jar
+wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator_cli.jar
 ```
 - Validate the resource:
 ```
-java -jar org.hl7.fhir.validator.jar [file path] -version 4.0.1 -ig ch.fhir.ig.ch-core#current -profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
+java -jar validator_cli.jar [file path] -version 4.0.1 -ig ch.fhir.ig.ch-core#current -profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient
 ```
 
 In case the current published IG (#current) is not found, replace #current with the current version (e.g. #1.0.0) of the published IG (http://fhir.ch/ig/ch-core/history.html)
