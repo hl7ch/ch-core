@@ -94,8 +94,8 @@
                 <map value="hl7:streetAddressLine (0..1)"/>
             </mapping>
         </element>
-        <element id="Address.line.extension.value[x]:addressLine1">
-            <path value="Address.line.extension.value[x]" />
+        <element id="Address.line.extension.valueCode:addressLine1">
+            <path value="Address.line.extension.valueCode" />
             <min value="1" />
             <type>
                 <code value="code" />
@@ -119,8 +119,8 @@
                 <map value="hl7:streetAddressLine (0..1)"/>
             </mapping>
         </element>  
-        <element id="Address.line.extension.value[x]:addressLine2">
-            <path value="Address.line.extension.value[x]" />
+        <element id="Address.line.extension.valueCode:addressLine2">
+            <path value="Address.line.extension.valueCode" />
             <min value="1" />
             <type>
                 <code value="code" />
@@ -144,8 +144,8 @@
                 <map value="hl7:streetAddressLine (0..1)"/>
             </mapping>
         </element>        
-        <element id="Address.line.extension.value[x]:street">
-            <path value="Address.line.extension.value[x]" />
+        <element id="Address.line.extension.valueCode:street">
+            <path value="Address.line.extension.valueCode" />
             <min value="1" />
             <type>
                 <code value="code" />
@@ -206,8 +206,8 @@
                 <map value="hl7:streetAddressLine (0..1)"/>
             </mapping>
         </element>        
-        <element id="Address.line.extension.value[x]:postOfficeBoxText">
-            <path value="Address.line.extension.value[x]" />
+        <element id="Address.line.extension.valueCode:postOfficeBoxText">
+            <path value="Address.line.extension.valueCode" />
             <min value="1" />
             <type>
                 <code value="code" />
