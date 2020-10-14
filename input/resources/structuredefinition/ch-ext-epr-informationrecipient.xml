@@ -55,12 +55,10 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
             </type>
             <mapping>
                 <identity value="CDA-CH-V2"/>
