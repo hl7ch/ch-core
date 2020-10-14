@@ -64,7 +64,7 @@
         <element id="Composition.extension:setId">
             <path value="Composition.extension"/>
             <sliceName value="setId"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
@@ -78,7 +78,7 @@
         <element id="Composition.extension:versionNumber">
             <path value="Composition.extension"/>
             <sliceName value="versionNumber"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
