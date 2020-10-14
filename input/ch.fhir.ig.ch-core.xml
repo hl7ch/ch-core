@@ -265,6 +265,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="CodeSystem/ech-11-maritaldata-separation"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="CodeSystem/ech-11"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -413,6 +419,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-ext-ech-11-name"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-11-maritaldata-separation"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -679,6 +691,12 @@
     <resource>
       <reference>
         <reference value="ValueSet/ech-11-maritalstatus"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-11-maritaldata-separation"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
