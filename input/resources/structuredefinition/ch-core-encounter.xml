@@ -68,8 +68,8 @@
         </element>
         <element id="Encounter.class">
             <path value="Encounter.class"/>
-            <short value="AMB | INP : See mapping from BFS Medizinsiche Statistik BFS Encounter Class to FHIR"/>
-            <definition value="See mapping from BFS Medizinsiche Statistik [BFS Encounter Class to FHIR mapping](../output/ConceptMap-bfs-encounter-class-to-fhir.html)"/>
+            <short value="AMB | IMP : See mapping from BFS Medizinische Statistik BFS Encounter Class to FHIR"/>
+            <definition value="See mapping from BFS Medizinische Statistik [BFS Encounter Class to FHIR mapping](../output/ConceptMap-bfs-encounter-class-to-fhir.html)"/>
             <min value="1"/>
             <max value="1"/>
             <type>
