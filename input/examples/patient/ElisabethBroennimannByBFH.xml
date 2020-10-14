@@ -6,11 +6,8 @@
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
   </meta>
   <text>
-    <status value="generated"/>
+    <status value="additional"/>
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>
-        <b>Generated Narrative with Details</b>
-      </p>
       <p>
         <b>id</b>: ElisabethBroennimannByBFH
       </p>
