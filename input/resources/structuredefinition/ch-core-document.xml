@@ -65,6 +65,16 @@
 				<rules value="open" />
 			</slicing>
 		</element>
+		<element id="Bundle.entry.fullUrl">
+			<path value="Bundle.entry.fullUrl"/>
+			<min value="1"/>
+			<constraint>
+                <key value="ch-core-doc-1"/>
+                <severity value="error"/>
+                <human value="The fullUrl must be an absolute URL server address or an URI for UUID/OID"/>
+				<expression value="startsWith('http') or startsWith('urn:uuid:') = true"/>
+            </constraint>
+		</element>
 		<element id="Bundle.entry:Composition">
 			<path value="Bundle.entry" />
 			<sliceName value="Composition" />
