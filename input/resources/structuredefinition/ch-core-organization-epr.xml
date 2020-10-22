@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-core-organization-epr"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
-    <version value="4.0.1"/>
+    <version value="1.1.0"/>
     <name value="CHCoreOrganizationEPR"/>
     <title value="CH Core Organization Profile EPR"/>
     <status value="active"/>

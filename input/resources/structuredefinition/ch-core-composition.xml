@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-core-composition"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
-    <version value="0.1.0"/>
+    <version value="1.1.0"/>
     <name value="CHCoreComposition"/>
     <title value="CH Core Composition Profile"/>
     <status value="draft"/>

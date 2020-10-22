@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="bfs-medstats-18-admittype"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-18-admittype"/>
-    <version value="0.1.0"/>
+    <version value="1.1.0"/>
     <name value="BfsMedstats17Admittype"/>
     <title value="BFS Medizinische Statistik - 18 1.2.V03 - Eintrittsart / Mode d’admission / Genere di ricovero"/>
     <status value="draft"/>

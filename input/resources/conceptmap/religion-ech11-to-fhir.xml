@@ -63,7 +63,7 @@
         </div>
     </text>
     <url value="http://fhir.ch/ig/ch-core/ConceptMap/religion-ech11-to-fhir" />
-    <version value="0.1.0"/>
+    <version value="1.1.0"/>
     <name value="ReligionECH011ToFHIRMapping" />
     <title value="Religion eCH-011 to FHIR mapping"/>
     <status value="draft"/>

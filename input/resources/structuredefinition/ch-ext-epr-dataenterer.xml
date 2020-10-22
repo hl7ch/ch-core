@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-ext-epr-dataenterer"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"/>
-    <version value="0.1.0"/>
+    <version value="1.1.0"/>
     <name value="EPRDataEnterer"/>
     <title value="EPR Data Enterer"/>
     <status value="draft"/>

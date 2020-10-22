@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ech-11-sex"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-sex"/>
-    <version value="0.1.0"/>
+    <version value="1.1.0"/>
     <name value="ECH11sex"/>
     <title value="eCH-011 Sex"/>
     <status value="draft"/>
