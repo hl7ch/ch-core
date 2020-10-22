@@ -12,7 +12,17 @@
         <use value="official"/>
         <family value="Bereit"/>
         <given value="Allzeit"/>
-        <prefix value="Dr. med."/>
+        <prefix value="Herr" />
+        <prefix value="Dr. med.">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                <valueCode value="AC"/>
+            </extension>
+        </prefix>
+        <prefix value="Allg. Gruppenpraxis AG">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                <valueCode value="LS"/>
+            </extension>
+        </prefix>
         <suffix value="Facharzt für Allgemeine Medizin"/>
     </name>
 </Practitioner> 
