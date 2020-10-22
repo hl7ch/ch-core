@@ -10,6 +10,8 @@ This document is a working specification that is expected to be implemented and 
 
 **Note**: This implementation guide is not (yet) a FHIR API specification, this will be a goal for the next iteration.
 
+**Download**: You can download this implementation guide in npm format from [here](package.tgz).
+
 ### Relation to the Swiss EPR
 
 The Annexes in the Swiss [Electronic Patient Record](https://www.patientendossier.ch/en) specify the technical and semantical requirements.
