@@ -17,15 +17,15 @@
                 <li>Allianzname (optional) – allianceName, siehe Kapitel 3.3.2.4</li>
                 <li>Aliasname (optional) – aliasName, siehe Kapitel 3.3.2.5</li>
                 <li>Andere amtliche Name (optional) – otherName, siehe Kapitel 3.3.2.6</li>
-                <li>Rufname (optional) – callName, siehe Kapitel 3.3.2.7</li>
+                <li>Rufname (optional) – callName, siehe Kapitel 3.3.2.7</li>                
                 <li>
                     entweder
             Name im ausländischen Pass (optional) - nameOnForeignPassport, siehe Kapitel 3.3.2.8
             oder
             Name gemäss Deklaration (optional) – declaredForeignName, siehe Kapitel 3.3.2.9
                 </li>
-            </ul>
-
+                <li>Zivilstand in eingetragener Partnerschaft (married) aber freiwillig getrennt lebend</li>
+             </ul>   
             Zusätzlich Beispiel für Zustelladresse falls es nicht die Adresse des Patienten direkt ist mit Angaben von eCH-0010
         </div>
     </text>
@@ -70,6 +70,27 @@
     </name>
     <gender value="female"/>
     <birthDate value="1982-03-20"/>
+	<maritalStatus>
+		<extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-maritaldata-separation">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritaldata-separation"/>
+					<code value="1"/>
+					<display value="Freiwillig getrennt"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+			<code value="M"/>
+			<display value="married"/>
+		</coding>
+		<coding>
+			<system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus"/>
+			<code value="6"/>
+			<display value="in eingetragener Partnerschaft"/>
+		</coding>
+	</maritalStatus>
     <!-- Zustelladresse falls es nicht die Adresse des Patienten direkt ist -->
     <contact>
         <relationship>
@@ -125,5 +146,3 @@
         </address>
     </contact>
 </Patient>
-
-
