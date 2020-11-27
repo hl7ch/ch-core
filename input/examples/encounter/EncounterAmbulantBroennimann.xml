@@ -6,6 +6,13 @@
         <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
     </meta>
     <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="VN" />
+                <display value="Visit number" />
+            </coding>
+        </type>
         <system value="http://www.ti.bfh.ch/example/fallnummerdomain" />
         <value value="1234" />
     </identifier>
