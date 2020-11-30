@@ -195,7 +195,7 @@
         <element id="HumanName.prefix.extension:salutationandtitle">
             <path value="HumanName.prefix.extension" />
             <sliceName value="salutationandtitle" />
-            <definition value="For academical titles and legal status use the http://hl7.org/fhir/ExtensionDefinition/iso21090-EN-qualifier with the codes AC, LS. For a salutation use a prefix without an the iso21090-EN-qualifier extension."/>
+            <definition value="For academical titles and legal status use the http://hl7.org/fhir/ExtensionDefinition/iso21090-EN-qualifier with the codes AC, LS. For a salutation use a prefix without the iso21090-EN-qualifier extension."/>
             <max value="*" />
             <type>
                 <code value="Extension" />
