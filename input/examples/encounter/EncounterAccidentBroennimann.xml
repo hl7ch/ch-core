@@ -52,6 +52,9 @@
                 <valueDateTime value="2020-12-20T15:15:00+02:00" />
             </extension>
         </extension>
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-encounter-susp-readmission">
+            <valueBoolean value="false" />
+        </extension>
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedecision">
             <valueCoding>
                 <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-27-dischargedecision"/>
