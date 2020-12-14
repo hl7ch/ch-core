@@ -226,6 +226,17 @@
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-admitrole" />
             </type>
         </element>
+        <element id="Encounter.hospitalization.extension:accident">
+            <path value="Encounter.hospitalization.extension" />
+            <sliceName value="accident" />
+            <short value="Flag if hospitalization was due to an accident"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-accident" />
+            </type>
+        </element>        
         <element id="Encounter.hospitalization.extension:BfsDischargeDecision">
             <path value="Encounter.hospitalization.extension" />
             <sliceName value="BfsDischargeDecision" />

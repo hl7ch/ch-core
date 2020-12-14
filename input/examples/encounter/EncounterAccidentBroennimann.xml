@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="EncounterAccidentBroennimann"/>
+    <meta>
+        <source value="https://www.ti.bfh.ch/de/bachelor/medizininformatik.html"/>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
+    </meta>
+    <identifier>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="VN" />
+                <display value="Visit number" />
+            </coding>
+        </type>
+        <system value="http://www.ti.bfh.ch/example/fallnummerdomain" />
+        <value value="12345" />
+    </identifier>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="IMP"/>
+        <display value="inpatient encounter"/>
+    </class>
+    <priority>
+        <coding>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-18-admittype" />
+            <code value="1" />
+            <display value="Notfall (Behandlung innerhalb von 12 Std. unabdingbar)" />
+        </coding>
+    </priority>
+    <subject>
+        <reference value="Patient/ElisabethBroennimannByBFH"/>
+    </subject>
+    <period>
+        <start value="2020-12-20T16:00:00+02:00" />
+        <end value="2020-12-22T16:15:00+02:00" />
+    </period>
+    <hospitalization>
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-admitrole">
+            <valueCoding>
+                <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-19-admitrole"/>
+                <code value="2"/>
+                <display value="Rettungsdienst (Ambulanz, Polizei)"/>
+            </valueCoding>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-accident">
+            <extension url="tag">
+                <valueBoolean value="true" />
+            </extension>
+            <extension url="dateTime">
+                <valueDateTime value="2020-12-20T15:15:00+02:00" />
+            </extension>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedecision">
+            <valueCoding>
+                <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-27-dischargedecision"/>
+                <code value="1"/>
+                <display value="auf Initiative des Behandelnden"/>
+            </valueCoding>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedestination">
+            <valueCoding>
+                <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-28-dischargedestination"/>
+                <code value="1"/>
+                <display value="Zuhause"/>
+            </valueCoding>
+        </extension>
+        <admitSource>
+            <coding>
+                <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-17-admitsource" />
+                <code value="1" />
+                <display value="Zuhause" />
+            </coding>
+        </admitSource>
+        <dischargeDisposition>
+            <coding>
+                <system value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-29-dischargeencounter" />
+                <code value="1" />
+                <display value="geheilt/kein Behandlungsbedarf" />
+            </coding>
+        </dischargeDisposition>
+    </hospitalization>
+</Encounter>
