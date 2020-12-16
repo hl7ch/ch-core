@@ -432,6 +432,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-ext-encounter-susp-readmission"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-ext-epr-confidentialitycode"/>
       </reference>
       <exampleBoolean value="false"/>
