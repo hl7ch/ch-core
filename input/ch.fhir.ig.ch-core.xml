@@ -317,6 +317,23 @@
       <exampleBoolean value="false"/>
     </resource>
 
+    <resource>
+      <reference>
+        <reference value="Consent/PatientHasEpr"/>
+      </reference>
+      <name value="Consent for Swiss EPR"/>
+      <description value="Example for a consent that Patient has a Swiss EPR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/EncounterExcludedForEpr"/>
+      </reference>
+      <name value="Consent for Swiss EPR with Encounter exclusions"/>
+      <description value="Example for a consent that Patient has a Swiss EPR but exclude it for a specific encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+
     <!-- references for naming systems -->
     <resource>
       <reference>
