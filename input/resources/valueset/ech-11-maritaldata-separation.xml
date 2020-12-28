@@ -3,8 +3,8 @@
     <id value="ech-11-maritaldata-separation"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritaldata-separation"/>
     <version value="0.1.0"/>
-    <name value="ECH11maritalstatusSeparation"/>
-    <title value="eCH-011 maritaldata-separation"/>
+    <name value="ECH11MaritaldataSeparation"/>
+    <title value="eCH-011 MaritalData Separation"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2020-10-14"/>
@@ -16,7 +16,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-011 defines maritalStatus separation Types" />
+    <description value="eCH-011 defines maritalData separation types" />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
