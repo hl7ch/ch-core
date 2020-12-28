@@ -3,8 +3,8 @@
     <id value="ech-11-maritaldata-separation"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritaldata-separation"/>
     <version value="0.1.0"/>
-    <name value="ECH11MaritalstatusSeparation"/>
-    <title value="eCH-011 maritaldata-separation"/>
+    <name value="ECH11MaritaldataSeparation"/>
+    <title value="eCH-011 MaritalData Separation"/>
     <status value="draft"/>
     <experimental value="true"/>
     <date value="2020-10-14"/>
@@ -16,7 +16,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="eCH-011 defines different maritaldata-separation Types. See [maritalData - Zivilstandsangaben eCH-11](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html) and/or [BFS Amtlicher Katalog der Merkmale](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html)." />
+    <description value="eCH-011 defines different maritalData separation zypes. See [maritalData - Zivilstandsangaben eCH-11](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html) and/or [BFS Amtlicher Katalog der Merkmale](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.349276.html)." />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>

@@ -409,6 +409,31 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:maritalStatusCode (0..1)"/>
             </mapping>
         </element>
+        <element id="Patient.maritalStatus.extension">
+            <path value="Patient.maritalStatus.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="Patient.maritalStatus.extension:maritalDataSeparation">
+            <path value="Patient.maritalStatus.extension" />
+            <sliceName value="maritalDataSeparation" />
+            <short value="MaritalData Separation"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-maritaldata-separation" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0011: 3.3.5.5 separation - Trennung BFS-343"/>
+            </mapping>
+        </element>        
         <element id="Patient.contact">
             <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
                 <valueString value="Contact"/>
