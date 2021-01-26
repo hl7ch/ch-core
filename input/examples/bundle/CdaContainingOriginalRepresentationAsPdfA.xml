@@ -31,7 +31,7 @@
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
           <extension url="enterer">
             <valueReference>
-              <reference value="Person/cac33923-b081-4060-bd57-46ee35dd5a33"/>
+              <reference value="Practitioner/cac33923-b081-4060-bd57-46ee35dd5a33"/>
             </valueReference>
           </extension>
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
@@ -344,7 +344,7 @@
   <entry>
     <fullUrl value="urn:uuid:cac33923-b081-4060-bd57-46ee35dd5a33"/>
     <resource>
-      <Person>
+      <Practitioner>
         <id value="cac33923-b081-4060-bd57-46ee35dd5a33"/>
         <identifier>
           <system value="urn:oid:2.999"/>
@@ -355,7 +355,7 @@
           <family value="Kristin"/>
           <given value="Stabilo"/>
         </name>
-      </Person>
+      </Practitioner>
     </resource>
   </entry>
   <entry>

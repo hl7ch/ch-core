@@ -22,7 +22,7 @@
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
     <extension url="enterer">
       <valueReference>
-        <reference value="Person/SchreibKraft"/>
+        <reference value="Practitioner/SchreibKraft"/>
       </valueReference>
     </extension>
     <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
