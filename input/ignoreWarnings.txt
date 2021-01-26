@@ -1,16 +1,15 @@
 == Suppressed Messages ==
 
-# The following code systems are external and not supported by terminology server
+# The following code systems/value sets cannot be validated
 Code System URI 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' is unknown so the code cannot be validated
+Unable to check if http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check
 
 # The following display values do not correspond to the exact wording
+The display "Normally accessible" is not a valid display for the code {http://snomed.info/sct}17621005 - should be one of [Normal,Unremarkable,"Normal (qualifier value)"] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#17621005'
 The display "Normally accessible" is not a valid display for the code {http://snomed.info/sct}17621005 - should be one of [Normal,Unremarkable,"Normal (qualifier value)"] (from http://tx.fhir.org/r4)
-Internal error: The display "Normally accessible" is not a valid display for the code {http://snomed.info/sct}17621005 - should be one of [Normal,Unremarkable,"Normal (qualifier value)"] (from http://tx.fhir.org/r4)
-Internal error: The display "Clinical presentation" is not a valid display for the code {http://loinc.org}55108-5 - should be one of ["Clinical presentation Document","Clinical presentation Doc","Clinical presentation Doc"] (from http://tx.fhir.org/r4)
-Internal error: The display "Clinical presentation" is not a valid display for the code {http://loinc.org}55108-5 - should be one of ["Clinical presentation Document","Clinical presentation Doc"] (from http://tx.fhir.org/r4)
+The display "Clinical presentation" is not a valid display for the code {http://loinc.org}55108-5 - should be one of ["Clinical presentation Document","Clinical presentation Doc","Clinical presentation Doc"] (from http://tx.fhir.org/r4) for 'http://loinc.org#55108-5'
+The display "Clinical presentation" is not a valid display for the code {http://loinc.org}55108-5 - should be one of ["Clinical presentation Document","Clinical presentation Doc"] (from http://tx.fhir.org/r4) for 'http://loinc.org#55108-5'
 
-# Others
-Binding http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType could not be expanded
-The value provided ('de-CH') is not in the value set http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.languageCode (http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.languageCode, and a code is recommended to come from this value set) (error message = Unknown code system uri 'urn:oid:2.16.840.1.113883.6.316')
-The Coding provided is not in the value set http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.formatCode, and a code is recommended to come from this value set. (error message = Unknown code system uri 'urn:oid:2.16.756.5.30.1.127.3.10.10')
-Profile http://hl7.org/fhir/StructureDefinition/NamingSystem, Element 'NamingSystem.uniqueId': minimum required = 1, but only found 0
+# All important examples are included
+The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no examples for this extension
