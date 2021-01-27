@@ -6,7 +6,8 @@
     "coding": [
       {
         "system": "http://terminology.hl7.org/CodeSystem/consentscope",
-        "code": "patient-privacy"
+        "code": "patient-privacy",
+        "display": "Privacy Consent"
       }
     ]
   },
@@ -14,10 +15,10 @@
     {
       "coding": [
         {
-          "system": "http://loinc.org",
-          "code": "59284-0",
-          "display": "Patient Consent"
-        }
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "IDSCL",
+          "display": "information disclosure"
+}
       ]
     }
   ],
@@ -39,8 +40,8 @@
   "policyRule": {
     "coding": [
       {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "OPTIN"
+        "system": "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+        "code": "ch-epr"
       }
     ]
   },
@@ -50,6 +51,7 @@
       {
         "meaning": "instance",
         "reference": {
+          "type" : "Encounter",
           "reference": "Encounter/EncounterAccidentBroennimann"
         }
       }
