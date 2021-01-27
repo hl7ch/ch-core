@@ -1,6 +1,11 @@
 {
     "resourceType": "Consent",
     "id": "PatientHasEpr",
+    "meta": {
+        "profile": [
+            "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"
+        ]
+    },
     "status": "active",
     "scope": {
         "coding": [
@@ -41,7 +46,8 @@
         "coding": [
             {
                 "system": "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
-                "code": "ch-epr"                    }
+                "code": "ch-epr"
+            }
         ]
     }
 }
