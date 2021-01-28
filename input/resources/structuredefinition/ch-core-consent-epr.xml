@@ -54,13 +54,17 @@
             </patternCodeableConcept>
         </element>
         <element id="Consent.patient">
-            <path value="Consent.patient"/> 
-            <short value="Who the consent applies to"/> 
-            <definition value="The patient to whom this EPR consent applies."/> 
-            <comment value="The patient to whom this EPR consent applies."/> 
-            <min value="1"/> 
-            <max value="1"/> 
-        </element>    
+            <path value="Consent.patient"/>
+            <short value="Who the consent applies to"/>
+            <definition value="The patient to whom this EPR consent applies."/>
+            <comment value="The patient to whom this EPR consent applies."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+            </type>
+        </element>
         <element id="Consent.policyRule">
             <path value="Consent.policyRule"/>
             <fixedCodeableConcept>
@@ -101,7 +105,7 @@
             <max value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
             </type>
         </element>
     </differential>
