@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-consent-epr"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
+    <version value="1.1.0"/>
+    <name value="CHCoreConsent EPR"/>
+    <title value="CH Core for Consent EPR Profile"/>
+    <status value="draft"/>
+    <date value="2021-01-27T00:00:00+00:00"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Base profile for a consent profile to document that a patient has an Electronic Patient Record (EPR) in Switzerland. The actual consent conditions are held within the EPR, this consent is the documentation in an organization that the patient has stated he has an EPR and this needs to be verified at the time of document publishing or reading. In addition a patient can reqeuest that specific information will not be published from the organization to the EPR. This can be documented with one or more references to encounters to exclude the consent for these."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1"/>
+    <kind value="resource" />
+    <abstract value="false" />
+    <type value="Consent" />
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
+    <derivation value="constraint" />
+    <differential>
+        <element id="Consent">
+            <path value="Consent"/>
+            <short value="CH Core Consent for EPR"/>
+        </element>
+        <element id="Consent.scope">
+            <path value="Consent.scope"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+                    <code value="patient-privacy"/>
+                    <display value="Privacy Consent"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Consent.category">
+            <path value="Consent.category"/>
+            <patternCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="IDSCL"/>
+                    <display value="information disclosure"/>
+                </coding>
+            </patternCodeableConcept>
+        </element>
+        <element id="Consent.patient">
+            <path value="Consent.patient"/>
+            <short value="Who the consent applies to"/>
+            <definition value="The patient to whom this EPR consent applies."/>
+            <comment value="The patient to whom this EPR consent applies."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+            </type>
+        </element>
+        <element id="Consent.policyRule">
+            <path value="Consent.policyRule"/>
+            <fixedCodeableConcept>
+                <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/consentpolicycodes"/>
+                    <code value="ch-epr"/>
+                </coding>
+            </fixedCodeableConcept>
+        </element>
+        <element id="Consent.provision">
+            <path value="Consent.provision"/>
+            <short value="Exceptions to the EPR consent"/>
+            <definition value="An exception to the base policy of this consent. An exception can be an addition or removal
+         of access permissions."/>
+            <min value="0"/>
+            <max value="1"/>
+        </element>
+        <element id="Consent.provision.type">
+            <path value="Consent.provision.type"/>
+            <short value="deny"/>
+            <definition value="encounters can be added here where the consent for the EPR does not apply."/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="deny" />
+        </element>
+        <element id="Consent.provision.data">
+            <path value="Consent.provision.data"/>
+        </element>
+        <element id="Consent.provision.data.meaning">
+            <path value="Consent.provision.data.meaning"/>
+            <fixedCode value="instance" />
+        </element>
+        <element id="Consent.provision.data.reference">
+            <path value="Consent.provision.data.reference"/>
+            <short value="Excluded encounter for EP"/>
+            <definition value="A reference to the encounter where the consent for the EPR does not apply."/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
