@@ -6,7 +6,7 @@
     <name value="DocumentEntryConfidentialityCodeToFHIRMapping" />
     <title value="DocumentEntry.confidentialityCode to FHIR mapping"/>
     <status value="active"/>
-    <experimental value="true"/>
+    <experimental value="false"/>
     <date value="2019-12-27"/>
     <publisher value="HL7 Switzerland"/>
     <contact>
