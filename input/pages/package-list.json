@@ -9,8 +9,6 @@
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/hl7ch/ch-core",
       "status": "ci-build",
-      "sequence":"Current Versions",
-      "fhirversion": "4.0.1",
       "current": true       
     },
     {

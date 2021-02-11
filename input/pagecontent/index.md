@@ -1,5 +1,5 @@
 <div markdown="1" class="stu-note">
-This implementation guide is under the ballot for STU 2. Balloters can add their comments on the relevant page via the link <b>Propose a change</b> in the footer.
+This implementation guide is under ballot for STU 2. Balloters can add their comments on the relevant page via the link <b>Propose a change</b> in the footer.
 </div>
 
 ### Introduction
