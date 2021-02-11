@@ -5,7 +5,7 @@
     <version value="1.1.0"/>
     <name value="BfsMedstats29Dischargeencounter"/>
     <title value="BFS Medizinische Statistik - 29 1.5.V04 - Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita" />
-    <status value="draft"/>
+    <status value="active"/>
     <date value="2019-01-01"/>
     <publisher value="HL7 Switzerland"/>
     <contact>

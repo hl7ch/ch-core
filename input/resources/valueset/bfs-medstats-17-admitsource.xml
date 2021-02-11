@@ -5,7 +5,7 @@
     <version value="1.1.0"/>
     <name value="BfsMedstats17Admitsource"/>
     <title value="BFS Medizinische Statistik - 17 1.2.V02 - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"/>
-    <status value="draft"/>
+    <status value="active"/>
     <date value="2019-01-01"/>
     <publisher value="HL7 Switzerland"/>
     <contact>
