@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-core-coverage"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
     <name value="CHCoreCoverage"/>
     <title value="CH Core Coverage Profile"/>
     <status value="active"/>

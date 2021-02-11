@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-core-composition-patient-epr"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
     <name value="CHCoreCompositionPatientEPR"/>
     <title value="CH Core Composition Patient Profile EPR"/>
     <status value="active"/>

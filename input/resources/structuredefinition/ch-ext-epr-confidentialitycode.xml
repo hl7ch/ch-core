@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-ext-epr-confidentialitycode"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
     <name value="EPRConfidentialityCode"/>
     <title value="EPR Confidentiality Code"/>
     <status value="active"/>

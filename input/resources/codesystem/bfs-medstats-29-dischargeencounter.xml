@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="bfs-medstats-29-dischargeencounter"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-29-dischargeencounter"/>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
     <name value="BfsMedstats29Dischargeencounter"/>
     <title value="BFS Medizinische Statistik - 29 1.5.V04 - Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita" />
     <status value="active"/>

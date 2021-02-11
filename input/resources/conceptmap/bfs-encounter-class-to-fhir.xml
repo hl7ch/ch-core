@@ -2,7 +2,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="bfs-encounter-class-to-fhir"/>
     <url value="http://fhir.ch/ig/ch-core/ConceptMap/bfs-encounter-class-to-fhir" />
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
     <name value="BfsEncounterClassToFhir" />
     <title value="BFS Encounter Class to FHIR mapping"/>
     <status value="active"/>

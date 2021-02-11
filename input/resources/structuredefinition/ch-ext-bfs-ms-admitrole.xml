@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-ext-bfs-ms-admitrole"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-admitrole"/>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
     <name value="BfsMsAdmitRole"/>
     <title value="BFS Extension Medical Statistic: Admit Role for Encounter"/>
     <status value="active"/>
