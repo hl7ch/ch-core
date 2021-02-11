@@ -5,22 +5,32 @@
   "canonical": "http://fhir.ch/ig/ch-core",
   "list": [
     {
-      "version": "dev",
+      "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/hl7ch/ch-core",
       "status": "ci-build",
-      "fhirVersion": "4.0.1",
-      "sequence":"STU"        
+      "sequence":"Current Versions",
+      "fhirversion": "4.0.1",
+      "current": true       
+    },
+    {
+      "version": "1.2.0",
+      "date": "2021-02-12",
+      "desc": "HL7 Switzerland STU 2 Ballot",
+      "path": "http://fhir.ch/ig/ch-core",
+      "status": "trial-use",
+      "sequence" : "STU 2",
+      "fhirversion": "4.0.1",
+      "current": true
     },
     {
       "version": "1.0.0",
       "date": "2020-04-21",
       "desc": "HL7 Switzerland STU 1 Final Publication",
-      "path": "http://fhir.ch/ig/ch-core",
+      "path": "http://fhir.ch/ig/ch-core/1.0.0",
       "status": "trial-use",
       "sequence" : "STU 1",
-      "fhirVersion": "4.0.1",
-      "current": true
+      "fhirversion": "4.0.1"      
     },
     {
       "version": "0.1.0",
@@ -29,7 +39,7 @@
       "path": "http://fhir.ch/ig/ch-core/0.1.0",
       "status": "trial-use",
       "sequence" : "STU 1",
-      "fhirVersion": "4.0.1"
+      "fhirversion": "4.0.1"
     }
   ]
 }
