@@ -3,7 +3,7 @@
     <id value="ch-core-consent-epr"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
     <version value="1.1.0"/>
-    <name value="CHCoreConsent EPR"/>
+    <name value="CHCoreConsentEPR"/>
     <title value="CH Core for Consent EPR Profile"/>
     <status value="draft"/>
     <date value="2021-01-27T00:00:00+00:00"/>
