@@ -1,5 +1,6 @@
 <div markdown="1" class="stu-note">
-This implementation guide is under the ballot for STU 2. Balloters can add their comments on the relevant page via the link <b>Propose a change</b> in the footer.</div>
+This implementation guide is under the ballot for STU 2. Balloters can add their comments on the relevant page via the link <b>Propose a change</b> in the footer.
+</div>
 
 ### Introduction
 This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> FHIR in Switzerland.
