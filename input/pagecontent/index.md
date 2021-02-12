@@ -1,5 +1,5 @@
 <div markdown="1" class="stu-note">
-This implementation guide is under ballot for STU 2 by [HL7 Switzerland](https://www.hl7.ch/) until March 15th, 2021 midnight. Please add your feedback via the 'Propose a change'-link in the footer on the page where you have comments.
+This implementation guide is under ballot for STU 2 by [HL7 Switzerland](https://www.hl7.ch/) until March 15th, 2021 midnight. Please add your feedback via the 'Propose a change'-link in the footer on the page where you have comments. [Changelog to STU 1](comparison-v1.0.0/index.html)
 </div>
 
 ### Introduction
