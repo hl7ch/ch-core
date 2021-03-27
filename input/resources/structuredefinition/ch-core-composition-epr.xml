@@ -305,7 +305,7 @@
         <element id="Composition.section:originalRepresentation">
             <path value="Composition.section"/>
             <sliceName value="originalRepresentation"/>
-            <short value="Contains the original representation of the current document as it has been seen by the legal authenticator while signing."/>
+            <short value="Contains the original representation as a PDF of the current document as it has been seen by the legal authenticator while signing."/>
             <max value="1"/>
         </element>
         <element id="Composition.section.title:originalRepresentation">
@@ -333,7 +333,7 @@
         </element>
         <element id="Composition.section.entry:originalRepresentation">
             <path value="Composition.section.entry"/>
-            <short value="PDF"/>
+            <short value="According to the EPR ordonnance the PDF has to be in PDF/A-1 or PDF/A-2 format."/>
             <min value="1"/>
             <max value="1"/>
             <type>
