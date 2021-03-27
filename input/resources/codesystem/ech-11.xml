@@ -69,7 +69,7 @@
     <concept>
         <code value="callName"/>
         <display value="Rufname, BFS-222"/>
-        <definition value="A person has the right to choose a first name from the list of his official first names. The first name can consist of one or more first names."/>
+        <definition value="A person has the right to choose a call name from the list of his official first names. The call name can consist of one or more first names."/>
     </concept>
     <concept>
         <code value="firstNameOnForeignPassport"/>
