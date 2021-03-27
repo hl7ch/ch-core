@@ -61,20 +61,6 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.extension:setId">
-            <path value="Composition.extension"/>
-            <sliceName value="setId"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid"/>
-            </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".setId"/>
-            </mapping>
-        </element>
         <element id="Composition.extension:versionNumber">
             <path value="Composition.extension"/>
             <sliceName value="versionNumber"/>
@@ -120,9 +106,16 @@
         <element id="Composition.identifier">
             <path value="Composition.identifier"/>
             <min value="1"/>
+        </element>
+        <element id="Composition.identifier.system">
+            <path value="Composition.identifier.system"/>
+            <fixedUri value="urn:ietf:rfc:3986" />
+        </element>
+        <element id="Composition.identifier.value">
+            <path value="Composition.identifier.value"/>
             <mapping>
                 <identity value="cda"/>
-                <map value=".id"/>
+                <map value="ClinicalDocument.setId.root as uuid"/>
             </mapping>
         </element>
         <element id="Composition.status">

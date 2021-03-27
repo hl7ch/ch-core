@@ -49,7 +49,7 @@
 			<path value="Bundle.identifier.value"/>
             <mapping>
                 <identity value="cda"/>
-                <map value="ClinicalDocument.id as uuid"/>
+                <map value="ClinicalDocument.id.root as uuid"/>
             </mapping>
 		</element>
 		<element id="Bundle.type">

@@ -5,12 +5,6 @@
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
   </meta>
   <language value="de-CH"/>
-  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-setid">
-    <valueIdentifier>
-      <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:uuid:807563C2-5146-11D5-A672-00B0D022E945"/>
-   </valueIdentifier>
-  </extension>
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
     <valueUnsignedInt value="2"/>
   </extension>

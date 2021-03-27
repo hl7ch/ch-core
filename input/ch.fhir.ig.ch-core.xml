@@ -488,12 +488,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-ext-epr-setid"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/ch-ext-epr-time"/>
       </reference>
       <exampleBoolean value="false"/>
