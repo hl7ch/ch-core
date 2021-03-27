@@ -168,7 +168,7 @@
         </element>
         <element id="HumanName.prefix">
             <path value="HumanName.prefix"/>
-            <short value="Parts that come before the name"/>
+            <short value="For a salutation use a prefix without the iso21090-EN-qualifier extension. For academical titles and legal status use the http://hl7.org/fhir/ExtensionDefinition/iso21090-EN-qualifier with the codes AC, LS."/>
             <definition value="Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."/>
             <min value="0"/>
             <max value="*"/>
@@ -195,7 +195,7 @@
         <element id="HumanName.prefix.extension:salutationandtitle">
             <path value="HumanName.prefix.extension" />
             <sliceName value="salutationandtitle" />
-            <definition value="For academical titles and legal status use the http://hl7.org/fhir/ExtensionDefinition/iso21090-EN-qualifier with the codes AC, LS. For a salutation use a prefix without the iso21090-EN-qualifier extension."/>
+            <short value="For academical titles and legal status use the http://hl7.org/fhir/ExtensionDefinition/iso21090-EN-qualifier with the codes AC, LS."/>
             <max value="*" />
             <type>
                 <code value="Extension" />
