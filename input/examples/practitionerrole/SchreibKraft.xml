@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="SchreibKraft"/>
+    <practitioner>
+        <reference value="http://test.fhir.ch/r4/Practitioner/SchreibKraft"/>
+    </practitioner>
+    <organization>
+        <reference value="Organization/GruppenpraxisCH"/>
+    </organization>
+</PractitionerRole>

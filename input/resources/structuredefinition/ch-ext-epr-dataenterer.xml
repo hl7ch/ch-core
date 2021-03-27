@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define the information about the person that entered data and the time of the data input, equivalent to the dataEnterer from a CDA document"/>
+    <description value="Extension to define the information about the person and organisation that entered data and the time of the data input, equivalent to the dataEnterer from a CDA document"/>
     <fhirVersion value="4.0.1"/>
     <mapping>
         <identity value="CDA-CH-V2"/>
@@ -35,14 +35,14 @@
         <element id="Extension">
             <path value="Extension"/>
             <short value="Extension"/>
-            <definition value="Extension to define the information about the person that entered data and the time of the data input"/>
+            <definition value="Extension to define the information about the person and organization that entered data and the time of the data input"/>
             <!--<min value="0"/>-->
             <max value="1"/>
         </element>
         <element id="Extension.extension:enterer">
             <path value="Extension.extension"/>
             <sliceName value="enterer"/>
-            <short value="Information about the person that entered data"/>
+            <short value="Information about the person and organization that entered data"/>
             <min value="1"/>
             <max value="1"/>
             <type>
@@ -70,7 +70,7 @@
             <min value="1"/>
             <type>
                 <code value="Reference"/>
-                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
             </type>
             <mapping>
                 <identity value="CDA-CH-V2"/>

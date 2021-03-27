@@ -210,6 +210,14 @@
       <description value="Example for PractitionerRole"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/SchreibKraft"/>
+      </reference>
+      <name value="HPWengerRole"/>
+      <description value="Example for PractitionerRole as Data Enterer"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+    </resource>
 
     <!-- references for code systems -->
     <resource>

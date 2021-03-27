@@ -31,7 +31,7 @@
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
           <extension url="enterer">
             <valueReference>
-              <reference value="Practitioner/cac33923-b081-4060-bd57-46ee35dd5a33"/>
+              <reference value="PractitionerRole/cac33923-b081-4060-bd57-46ee35dd5a33"/>
             </valueReference>
           </extension>
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
@@ -344,8 +344,20 @@
   <entry>
     <fullUrl value="urn:uuid:cac33923-b081-4060-bd57-46ee35dd5a33"/>
     <resource>
-      <Practitioner>
+      <PractitionerRole>
         <id value="cac33923-b081-4060-bd57-46ee35dd5a33"/>
+        <practitioner>
+          <reference value="urn:uuid:be3ba855-6bef-4c36-92a1-8b76fefd3629"/>
+          <type value="Practitioner"/>
+        </practitioner>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:be3ba855-6bef-4c36-92a1-8b76fefd3629"/>
+    <resource>
+      <Practitioner>
+        <id value="urn:uuid:be3ba855-6bef-4c36-92a1-8b76fefd3629"/>
         <identifier>
           <system value="urn:oid:2.999"/>
           <value value="0812763"/>

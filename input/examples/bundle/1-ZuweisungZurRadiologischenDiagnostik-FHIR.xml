@@ -39,7 +39,7 @@
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
                <extension url="enterer">
                   <valueReference>
-                     <reference value="Practitioner/SchreibKraft"/>
+                     <reference value="PractitionerRole/SchreibKraft"/>
                   </valueReference>
                </extension>
                <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
@@ -322,6 +322,20 @@
          </Organization>
       </resource>
    </entry>
+   <entry>
+      <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/SchreibKraft"/>
+      <resource>
+        <PractitionerRole>
+          <id value="SchreibKraft"/>
+          <practitioner>
+            <reference value="http://test.fhir.ch/r4/Practitioner/SchreibKraft"/>
+          </practitioner>
+          <organization>
+            <reference value="Organization/GruppenpraxisCH"/>
+          </organization>
+        </PractitionerRole>
+      </resource>
+    </entry>   
    <entry>
       <fullUrl value="http://test.fhir.ch/r4/Practitioner/SchreibKraft"/>
       <resource>
