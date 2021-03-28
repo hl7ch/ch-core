@@ -68,6 +68,57 @@
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.classCode"/>
 			</binding>
 		</element>
+		<element id="DocumentReference.subject">
+			<path value="DocumentReference.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+			</type>
+		</element>
+		<element id="DocumentReference.date">
+			<path value="DocumentReference.date"/>
+		</element>
+		<element id="DocumentReference.author">
+			<path value="DocumentReference.author"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+			</type>
+		</element>
+		<element id="DocumentReference.authenticator">
+			<path value="DocumentReference.authenticator"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+			</type>
+		</element>
+		<element id="DocumentReference.custodian">
+			<path value="DocumentReference.custodian"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+			</type>
+		</element>
+		<element id="DocumentReference.relatesTo">
+			<path value="DocumentReference.relatesTo"/>
+		</element>
+		<element id="DocumentReference.relatesTo.target">
+			<path value="DocumentReference.relatesTo.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference"/>
+			</type>
+		</element>
 		<element id="DocumentReference.securityLabel">
 			<path value="DocumentReference.securityLabel"/>
 			<binding>
@@ -118,6 +169,14 @@
 		<element id="DocumentReference.context">
 			<path value="DocumentReference.context"/>
 		</element>
+		<element id="DocumentReference.context.encounter">
+			<path value="DocumentReference.context.encounter"/> 
+			<type> 
+			  <code value="Reference"/> 
+			  <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/> 
+			  <targetProfile value="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"/> 
+			</type> 
+		</element>
 		<element id="DocumentReference.context.facilityType">
 			<path value="DocumentReference.context.facilityType"/>
 			<binding>
@@ -139,6 +198,13 @@
 				<description value="Additional details about where the content was created (e.g. clinical specialty)."/>
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.practiceSettingCode"/>
 			</binding>
+		</element>
+		<element id="DocumentReference.context.sourcePatientInfo">
+			<path value="DocumentReference.context.sourcePatientInfo"/> 
+			<type> 
+			  <code value="Reference"/> 
+			  <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/> 
+			</type>
 		</element>
 	</differential>
 </StructureDefinition>
