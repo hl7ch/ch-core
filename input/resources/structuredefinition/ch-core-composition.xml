@@ -55,6 +55,13 @@
             <path value="Composition.subject.reference"/>
             <min value="1"/>
         </element>
+        <element id="Composition.encounter">
+            <path value="Composition.encounter"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
+            </type>
+        </element>
         <element id="Composition.author">
             <path value="Composition.author"/>
             <type>
@@ -99,6 +106,34 @@
         <element id="Composition.custodian.reference">
             <path value="Composition.custodian.reference"/>
             <min value="1"/>
+        </element>
+        <element id="Composition.relatesTo">
+            <path value="Composition.relatesTo"/> 
+        </element>
+        <element id="Composition.relatesTo.target[x]">
+            <path value="Composition.relatesTo.target[x]"/> 
+            <type> 
+              <code value="Identifier"/> 
+            </type> 
+            <type> 
+              <code value="Reference"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/> 
+            </type> 
+        </element>
+        <element id="Composition.section">
+            <path value="Composition.section"/> 
+        </element>
+        <element id="Composition.section.author">
+            <path value="Composition.section.author"/> 
+            <type> 
+              <code value="Reference"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+              <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+              <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+            </type> 
         </element>
     </differential>
 </StructureDefinition>
