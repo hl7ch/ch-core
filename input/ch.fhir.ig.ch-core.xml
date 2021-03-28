@@ -152,7 +152,7 @@
       </reference>
       <name value="MaxMuster"/>
       <description value="Example for EPR-Patient"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-patient-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
     </resource>
     <resource>
       <reference>
@@ -542,7 +542,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-core-composition-patient-epr"/>
+        <reference value="StructureDefinition/ch-core-patient-epr"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
