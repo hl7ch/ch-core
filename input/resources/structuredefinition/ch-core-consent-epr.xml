@@ -65,6 +65,24 @@
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
             </type>
         </element>
+        <element id="Consent.performer">
+            <path value="Consent.performer"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+            </type>
+        </element>
+        <element id="Consent.organization">
+            <path value="Consent.organization"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+            </type>
+        </element>
         <element id="Consent.policyRule">
             <path value="Consent.policyRule"/>
             <fixedCodeableConcept>

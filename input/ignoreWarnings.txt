@@ -13,3 +13,6 @@ The display "Clinical presentation" is not a valid display for the code {http://
 # All important examples are included
 The Implementation Guide contains no examples for this profile
 The Implementation Guide contains no examples for this extension
+
+# wrong example in the base specification for the consent resource
+if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
