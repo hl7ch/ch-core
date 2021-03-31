@@ -305,7 +305,7 @@
         <element id="Composition.section:originalRepresentation">
             <path value="Composition.section"/>
             <sliceName value="originalRepresentation"/>
-            <short value="Contains the original representation as a PDF of the current document as it has been seen by the legal authenticator while signing."/>
+            <short value="Contains the original representation as a PDF of the current document."/>
             <max value="1"/>
         </element>
         <element id="Composition.section.title:originalRepresentation">
