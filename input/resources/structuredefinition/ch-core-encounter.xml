@@ -270,6 +270,15 @@
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedestination" />
             </type>
         </element>
+        <element id="Encounter.hospitalization.origin">
+            <path value="Encounter.hospitalization.origin"/>
+            <short value="The location/organization from which the patient came before admission"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-location"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+            </type>
+        </element>
         <element id="Encounter.hospitalization.admitSource">
             <path value="Encounter.hospitalization.admitSource"/>
             <short value="BFS Medizinische Statistik - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"/>
@@ -296,7 +305,15 @@
                 <map value=".admissionReferralSourceCode"/>
             </mapping>
         </element>
-        <element id="Encounter.hospitalization.dischargeDisposition">
+        <element id="Encounter.hospitalization.destination">
+            <path value="Encounter.hospitalization.destination"/> 
+            <type> 
+              <code value="Reference"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-location"/>
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+            </type> 
+          </element> 
+          <element id="Encounter.hospitalization.dischargeDisposition">
             <path value="Encounter.hospitalization.dischargeDisposition"/>
             <short value="BFS Medizinische Statistik - Behandlung nach Austritt"/>
             <definition value="BFS Medizinische Statistik - Behandlung nach Austritt."/>
@@ -324,5 +341,19 @@
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-location"/>
             </type>
         </element>
+        <element id="Encounter.serviceProvider">
+            <path value="Encounter.serviceProvider"/> 
+            <type> 
+              <code value="Reference"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/> 
+            </type> 
+          </element> 
+          <element id="Encounter.partOf">
+            <path value="Encounter.partOf"/> 
+            <type> 
+              <code value="Reference"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/> 
+            </type> 
+          </element>     
     </differential>
 </StructureDefinition>
