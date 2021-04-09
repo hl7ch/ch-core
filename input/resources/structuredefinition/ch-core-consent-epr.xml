@@ -31,7 +31,7 @@
     <differential>
         <element id="Consent">
             <path value="Consent"/>
-            <short value="CH Core Consent for EPR"/>
+            <short value="CH Core Consent EPR"/>
         </element>
         <element id="Consent.scope">
             <path value="Consent.scope"/>
