@@ -322,7 +322,7 @@
         <PractitionerRole>
           <id value="SchreibKraft"/>
           <practitioner>
-            <reference value="http://test.fhir.ch/r4/Practitioner/SchreibKraft"/>
+            <reference value="Practitioner/SchreibKraft"/>
           </practitioner>
           <organization>
             <reference value="Organization/GruppenpraxisCH"/>
