@@ -259,6 +259,16 @@
         <element id="Composition.custodian.reference">
             <path value="Composition.custodian.reference"/>
         </element>
+        <element id="Composition.relatesTo.target[x]">
+            <path value="Composition.relatesTo.target[x]"/> 
+            <type> 
+              <code value="Identifier"/> 
+            </type> 
+            <type> 
+              <code value="Reference"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/> 
+            </type> 
+        </element> 
         <element id="Composition.section">
             <path value="Composition.section"/>
             <slicing>
@@ -270,7 +280,6 @@
                 <rules value="open"/>
             </slicing>
         </element>
-
         <element id="Composition.section.extension">
             <path value="Composition.section.extension"/>
             <slicing>
@@ -294,6 +303,18 @@
                 <identity value="cda"/>
                 <map value=".id"/>
             </mapping>
+        </element>
+        <element id="Composition.section.author">
+            <path value="Composition.section.author"/> 
+            <type> 
+              <code value="Reference"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+              <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+              <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/> 
+              <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+            </type> 
         </element>
         <element id="Composition.section:originalRepresentation">
             <path value="Composition.section"/>
@@ -360,5 +381,5 @@
             <min value="0"/>
             <max value="0"/>
         </element>
-    </differential>
+     </differential>
 </StructureDefinition>

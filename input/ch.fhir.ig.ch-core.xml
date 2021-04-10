@@ -209,12 +209,13 @@
       <name value="HPWengerRole"/>
       <description value="Example for PractitionerRole"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="PractitionerRole/SchreibKraft"/>
       </reference>
-      <name value="HPWengerRole"/>
+      <name value="SchreibKraft"/>
       <description value="Example for PractitionerRole as Data Enterer"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
     </resource>
@@ -639,6 +640,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-practitionerrole"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-practitionerrole-epr"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

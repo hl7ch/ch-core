@@ -82,7 +82,7 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
-				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
@@ -92,7 +92,22 @@
 			<path value="DocumentReference.author.reference"/>
 			<min value="1"/>
 		</element>
-		<element id="DocumentReference.securityLabel">
+		<element id="DocumentReference.authenticator">
+			<path value="DocumentReference.authenticator"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+			</type>
+		</element>
+		<element id="DocumentReference.custodian">
+			<path value="DocumentReference.custodian"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+			</type>
+		</element>		<element id="DocumentReference.securityLabel">
 			<path value="DocumentReference.securityLabel"/>
 			<min value="1"/>
 			<binding>
@@ -170,6 +185,12 @@
 				<valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.practiceSettingCode"/>
 			</binding>
 		</element>
+		<element id="DocumentReference.context.sourcePatientInfo">
+			<path value="DocumentReference.context.sourcePatientInfo"/> 
+			<type> 
+			  <code value="Reference"/> 
+			  <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/> 
+			</type>
+		</element>
 	</differential>
-
 </StructureDefinition>

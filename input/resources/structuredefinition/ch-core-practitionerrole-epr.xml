@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-practitionerrole-epr"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+    <version value="1.2.0"/>
+    <name value="CHCorePractitionerRoleEpr"/>
+    <title value="CH Core Practitioner Role Profile EPR"/>
+    <status value="active"/>
+    <date value="2021-03-28"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Core PractitionerRole definition in the swiss context of the electronic patient record (EPR)."/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <purpose value="Core PractitionerRole EPR data which can be shared" />
+    <fhirVersion value="4.0.1" />
+    <mapping>
+        <identity value="CDA-CH-V2"/>
+        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
+        <name value="CDA-CH 2020 V2.1"/>
+    </mapping>
+    <mapping>
+        <identity value="eCH"/>
+        <uri value="http://www.ech.ch/"/>
+        <name value="eCH-Standards"/>
+    </mapping>
+    <mapping>
+        <identity value="EPR"/>
+        <uri value="https://art-decor.org/art-decor/decor-valuesets--ch-epr-"/>
+        <name value="EPR ValueSets"/>
+    </mapping>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="PractitionerRole"/>
+    <baseDefinition value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="PractitionerRole">
+            <path value="PractitionerRole"/>
+        </element>
+        <element id="PractitionerRole.practitioner">
+            <path value="PractitionerRole.practitioner"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+            </type>
+        </element>
+        <element id="PractitionerRole.organization">
+            <path value="PractitionerRole.organization"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+            </type>
+        </element>
+        <element id="PractitionerRole.specialty">
+            <path value="PractitionerRole.specialty"/>
+            <short value="Specific specialty of the practitioner"/>
+            <definition value="Specific specialty of the practitioner."/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="CodeableConcept"/>
+            </type>
+            <isSummary value="true"/>
+            <binding>
+                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+                    <valueString value="PractitionerSpecialty"/>
+                </extension>
+                <strength value="required"/>
+                <description value="Specific specialty associated with the agency."/>
+                <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/HCProfessional.hcSpecialisation"/>
+            </binding>
+            <mapping>
+                <identity value="v2"/>
+                <map value="PRA-5"/>
+            </mapping>
+            <mapping>
+                <identity value="rim"/>
+                <map value=".player.HealthCareProvider[@classCode = &#39;PROV&#39;].code"/>
+            </mapping>
+            <mapping>
+                <identity value="servd"/>
+                <map value="./Specialty"/>
+            </mapping>
+        </element>
+    </differential>
+</StructureDefinition>
