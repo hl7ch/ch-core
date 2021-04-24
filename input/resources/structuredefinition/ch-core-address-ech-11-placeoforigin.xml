@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-core-address-ech-11-placeoforigin"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-11-placeoforigin"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="CHCoreAddressECH11PlaceOfOrigin"/>
     <title value="Address for place of Origin"/>
     <status value="active"/>

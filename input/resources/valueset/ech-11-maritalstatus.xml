@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="ech-11-maritalstatus"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritalstatus"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="ECH11MaritalStatus"/>
     <title value="eCH-011 MaritalStatus"/>
     <status value="active"/>

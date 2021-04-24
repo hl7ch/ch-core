@@ -3,7 +3,7 @@
 	xmlns="http://hl7.org/fhir">
     <id value="ch-core-document"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="CHCoreDocument"/>
     <title value="CH Core Document Profile"/>
     <status value="active"/>

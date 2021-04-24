@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="ch-core-religion"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/ch-core-religion"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="ChCoreReligion"/>
     <title value="ChCoreReligion"/>
     <status value="active"/>

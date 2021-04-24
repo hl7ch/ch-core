@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="bfs-medstats-17-admitsource"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-17-admitsource"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="BfsMedstats17Admitsource"/>
     <title value="BFS Medizinische Statistik - 17 1.2.V02 - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"/>
     <status value="active"/>

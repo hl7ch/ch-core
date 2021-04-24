@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="bfs-medstats-27-dischargedecision"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-27-dischargedecision"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="BfsMedstats27Dischargedecision"/>
     <title value="BFS Medizinische Statistik - 27 1.5.V02 - Entscheid für Austritt / Décision de sortie / Décisione dell’uscita"/>
     <status value="active"/>

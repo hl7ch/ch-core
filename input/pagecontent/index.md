@@ -1,12 +1,3 @@
-<div markdown="1" class="stu-note">
-This implementation guide is under ballot for STU 2 by [HL7 Switzerland](https://www.hl7.ch/) and has all open
-comments for this ballot resolved. If there is no objection till Monday 19.4.2021, 24.00 this is the version
-which will be published:
-
-resolved issues:
-{% include_relative changes-stu2.md %}
-</div>
-
 ### Introduction
 This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> FHIR in Switzerland.
 

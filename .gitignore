@@ -8,3 +8,6 @@ org.hl7.*.jar
 *.jar
 qa/**
 txcache/**
+www/*
+!www/package-list.json
+!www/publish.ini

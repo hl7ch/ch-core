@@ -2,7 +2,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="documententry-confidentialitycode-to-fhir"/>
     <url value="http://fhir.ch/ig/ch-core/ConceptMap/documententry-confidentialitycode-to-fhir" />
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="DocumentEntryConfidentialityCodeToFHIRMapping" />
     <title value="DocumentEntry.confidentialityCode to FHIR mapping"/>
     <status value="active"/>

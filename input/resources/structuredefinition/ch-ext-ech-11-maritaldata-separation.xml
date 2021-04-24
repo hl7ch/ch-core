@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-ext-ech-11-maritaldata-separation"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-maritaldata-separation"/>
-    <version value="0.1.0"/>
+    <version value="2.0.0"/>
     <name value="ECH011MaritalDataSeparation"/>
     <title value="MaritalData - Separation Type"/>
     <status value="active"/>

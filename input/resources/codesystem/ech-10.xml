@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ech-10"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-10"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="ECH11CodeSystem"/>
     <title value="eCH-010 Types"/>
     <status value="active"/>

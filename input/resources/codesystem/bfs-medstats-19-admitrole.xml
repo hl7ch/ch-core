@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="bfs-medstats-19-admitrole"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-19-admitrole"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="BfsMedstats19Admitrole"/>
     <title value="BFS Medizinische Statistik - 19 1.2.V04 - Einweisende Instanz / Décision d’envoi / Istanza ricoverante"/>
     <status value="active"/>

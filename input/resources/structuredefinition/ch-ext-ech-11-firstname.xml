@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-ext-ech-11-firstname"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="ECH011FirstName"/>
     <title value="FirstName"/>
     <status value="active"/>

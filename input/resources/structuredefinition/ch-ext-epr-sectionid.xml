@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
     <id value="ch-ext-epr-sectionid"/>
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid"/>
-    <version value="1.2.0"/>
+    <version value="2.0.0"/>
     <name value="EPRSectionId"/>
     <title value="EPR Section ID"/>
     <status value="active"/>
