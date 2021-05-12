@@ -109,10 +109,12 @@
         </element>
         <element id="Composition.identifier.system">
             <path value="Composition.identifier.system"/>
+            <min value="1"/>
             <fixedUri value="urn:ietf:rfc:3986" />
         </element>
         <element id="Composition.identifier.value">
             <path value="Composition.identifier.value"/>
+            <min value="1"/>
             <mapping>
                 <identity value="cda"/>
                 <map value="ClinicalDocument.setId.root as uuid"/>
