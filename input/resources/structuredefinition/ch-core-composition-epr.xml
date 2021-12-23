@@ -252,7 +252,6 @@
         </element>
         <element id="Composition.custodian">
             <path value="Composition.custodian"/>
-            <min value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
