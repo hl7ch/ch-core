@@ -10,6 +10,12 @@ This guide is a working specification. We anticipate that it will be implemented
 
 **Note**: This implementation guide is not (yet) a FHIR API specification, this will be a goal for the next iteration.
 
+<div markdown="1" class="stu-note">
+
+[Significant Changes, Open and Closed Issues](changelog.html)
+
+</div>
+
 **Download**: You can download this implementation guide in npm format from [here](package.tgz).
 
 ### Relation to the Swiss EPR

@@ -14,12 +14,12 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
-  <version value="2.0.0"/>
+  <version value="2.1.0"/>
   <name value="CH_Core"/>
   <title value="CH Core (R4)"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-04-24"/>
+  <date value="2022-04-12"/>
   <publisher value="HL7 Switzerland"/>
   <contact>
     <name value="HL7 Switzerland"/>
@@ -774,6 +774,11 @@
         <generation value="html"/>
       </page>
       <page>
+        <nameUrl value="changelog.html"/>
+        <title value="Change Log"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="changes-stu2.html"/>
         <title value="Changes STU2"/>
         <generation value="markdown"/>
@@ -781,8 +786,8 @@
     </page>
     <parameter>
       <code value="releaselabel"/>
-<!--      <value value="CI build"/> -->
-      <value value="STU 2"/>
+      <value value="CI build"/>
+<!--      <value value="STU 2"/> -->
     </parameter>
     <parameter>
       <code value="path-pages" />
