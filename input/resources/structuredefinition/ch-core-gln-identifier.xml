@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ch-core-gln-identifier"/>
+  <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-gln-identifier"/>
+  <version value="2.1.0"/>
+  <name value="GLNIdentifier"/>
+  <title value="GLN Identifier"/>
+  <status value="draft"/>
+  <date value="2022-04-12T15:54:24Z"/>
+  <publisher value="HL7 Switzerland"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <description value="Identifier holding a 13 digit GLN"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="v2"/>
+    <uri value="http://hl7.org/v2"/>
+    <name value="HL7 v2 Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <mapping>
+    <identity value="servd"/>
+    <uri value="http://www.omg.org/spec/ServD/1.0/"/>
+    <name value="ServD"/>
+  </mapping>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Identifier"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Identifier">
+      <path value="Identifier"/>
+    </element>
+    <element id="Identifier.system">
+      <path value="Identifier.system"/>
+      <min value="1"/>
+      <fixedUri value="urn:oid:2.51.1.3"/>
+    </element>
+    <element id="Identifier.value">
+      <path value="Identifier.value"/>
+      <min value="1"/>
+      <constraint>
+        <key value="gln-length"/>
+        <severity value="error"/>
+        <human value="GLN must be exactly 13 characters long"/>
+        <expression value="value.matches(&#39;^[0-9]{13}$&#39;)"/>
+      </constraint>
+      <constraint>
+        <key value="gln-modulus-10"/>
+        <severity value="error"/>
+        <human value="GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually"/>
+        <expression value="((&#xA;    (value.substring(0,1).toInteger()*1)+&#xA;    (value.substring(1,1).toInteger()*3)+&#xA;    (value.substring(2,1).toInteger()*1)+&#xA;    (value.substring(3,1).toInteger()*3)+&#xA;    (value.substring(4,1).toInteger()*1)+&#xA;    (value.substring(5,1).toInteger()*3)+&#xA;    (value.substring(6,1).toInteger()*1)+&#xA;    (value.substring(7,1).toInteger()*3)+&#xA;    (value.substring(8,1).toInteger()*1)+&#xA;    (value.substring(9,1).toInteger()*3)+&#xA;    (value.substring(10,1).toInteger()*1)+&#xA;    (value.substring(11,1).toInteger()*3)&#xA;    ) mod(10)+value.substring(12,1).toInteger()=10)"/>
+        <source value=""/>
+      </constraint>
+      <constraint>
+        <key value="gln-startswith7601"/>
+        <severity value="error"/>
+        <human value="GLN must start with 7601 for swiss hcp"/>
+        <expression value="value.startsWith('7601')"/>
+        <source value=""/>
+      </constraint>
+    </element>
+  </differential>
+</StructureDefinition>

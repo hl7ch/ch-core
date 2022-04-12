@@ -89,7 +89,7 @@
                 <system value="urn:oid:2.16.756.5.45" />
             </patternIdentifier>
         </element>
-        
+
         <element id="Organization.identifier:BER.value">
             <path value="Organization.identifier.value" />
             <short value="BER of the organization" />
@@ -106,7 +106,7 @@
                 <system value="urn:oid:2.16.756.5.35" />
             </patternIdentifier>
         </element>
-        
+
         <element id="Organization.identifier:UIDB.value">
             <path value="Organization.identifier.value" />
             <short value="UIDB of the Organization" />
@@ -123,7 +123,7 @@
                 <system value="urn:oid:2.16.756.5.30.1.123.100.2.1.1" />
             </patternIdentifier>
         </element>
-        
+
         <element id="Organization.identifier:ZSR.value">
             <path value="Organization.identifier.value" />
             <short value="ZSR of the Organization" />
@@ -136,15 +136,13 @@
             <short value="Global Location Number (GLN)" />
             <definition value="Global Location Number (GLN)" />
             <max value="1" />
+            <type>
+                <code value="Identifier"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-gln-identifier"/>
+            </type>
             <patternIdentifier>
                 <system value="urn:oid:2.51.1.3" />
             </patternIdentifier>
-        </element>
-        <element id="Organization.identifier:GLN.value">
-            <path value="Organization.identifier.value" />
-            <short value="GLN of the Organization" />
-            <definition value="GLN of the Organization" />
-            <min value="1" />
         </element>
         <element id="Organization.type">
             <path value="Organization.type"/>
@@ -182,7 +180,7 @@
             <type>
                 <code value="Address"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
-            </type>            
+            </type>
         </element>
         <element id="Organization.endpoint">
             <path value="Organization.endpoint"/>

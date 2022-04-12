@@ -615,6 +615,18 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-epr-spid-identifier"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-gln-identifier"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-patient-ech-11-placeofbirth"/>
       </reference>
       <exampleBoolean value="false"/>
