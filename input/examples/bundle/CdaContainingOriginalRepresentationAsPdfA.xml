@@ -162,7 +162,7 @@
               <code value="MR"/>
             </coding>
           </type>
-          <system value="urn:oid:2.999"/>
+          <system value="urn:oid:2.999.1.2.3.4"/>
           <value value="8733"/>
         </identifier>
         <name>
@@ -353,7 +353,7 @@
       <Practitioner>
         <id value="urn:uuid:be3ba855-6bef-4c36-92a1-8b76fefd3629"/>
         <identifier>
-          <system value="urn:oid:2.999"/>
+          <system value="urn:oid:2.999.1.2.3.4"/>
           <value value="0812763"/>
         </identifier>
         <name>

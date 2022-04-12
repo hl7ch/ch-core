@@ -6,6 +6,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#131](https://github.com/hl7ch/ch-core/issues/131): Update change log/STU note box according to the latest requirements
 
 #### Changed / Updated
+* [#133](https://github.com/hl7ch/ch-core/issues/133): Fix example OIDs
+
+
 * [#x](https://github.com/hl7ch/ch-core/issues/x): TODO
 
 ### STU2 (2021-04-24)

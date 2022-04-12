@@ -5,7 +5,7 @@
         <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </meta>
     <identifier>
-        <system value="urn:oid:2.999"/>
+        <system value="urn:oid:2.999.1.2.3.4"/>
         <value value="0812763"/>
     </identifier>
     <name>
