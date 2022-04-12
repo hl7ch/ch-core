@@ -120,10 +120,6 @@
                 <map value="ClinicalDocument.setId.root as uuid"/>
             </mapping>
         </element>
-        <element id="Composition.status">
-            <path value="Composition.status"/>
-            <fixedCode value="final"/>
-        </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
             <min value="1"/>

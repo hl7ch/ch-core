@@ -7,8 +7,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed / Updated
 * [#133](https://github.com/hl7ch/ch-core/issues/133): Fix example OIDs
+* [#122](https://github.com/hl7ch/ch-core/issues/122): No fixed value for Status of Composition EPR
 * [#118](https://github.com/hl7ch/ch-core/issues/118): Typos
-
 
 * [#x](https://github.com/hl7ch/ch-core/issues/x): TODO
 
