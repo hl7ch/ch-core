@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 3 Ballot
 
 #### Added
+* [#123](https://github.com/hl7ch/ch-core/issues/123): gln and epr-spid checks #123
 * [#131](https://github.com/hl7ch/ch-core/issues/131): Update change log/STU note box according to the latest requirements
 
 #### Changed / Updated
