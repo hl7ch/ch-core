@@ -160,6 +160,17 @@
         </element>
         <element id="Composition.author.extension">
             <path value="Composition.author.extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="Composition.author.extension:time">
+            <path value="Composition.author.extension"/>
+            <sliceName value="time"/>
             <short value="Timestamp of the authorship/data input"/>
             <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
             <min value="0"/>
