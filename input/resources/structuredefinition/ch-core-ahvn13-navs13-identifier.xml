@@ -71,7 +71,7 @@
                 <key value="ahvn13-navs13-digit-check" />
                 <severity value="error" />
                 <human value="AHVN13 / NAVS13 must pass digit check - https://www.gs1.org/services/how-calculate-check-digit-manually" />
-                <expression value="(((10-((value.replace('.','').substring(0,1).toInteger()*1)+(value.replace('.','').substring(1,1).toInteger()*3)+(value.replace('.','').substring(2,1).toInteger()*1)+(value.replace('.','').substring(3,1).toInteger()*3)+(value.replace('.','').substring(4,1).toInteger()*1)+(value.replace('.','').substring(5,1).toInteger()*3)+(value.replace('.','').substring(6,1).toInteger()*1)+(value.replace('.','').substring(7,1).toInteger()*3)+(value.replace('.','').substring(8,1).toInteger()*1)+(value.replace('.','').substring(9,1).toInteger()*3)+(value.replace('.','').substring(10,1).toInteger()*1)+(value.replace('.','').substring(11,1).toInteger()*3))mod(10))mod(10))=value.replace('.','').substring(12,1).toInteger())" />
+                <expression value="(((10-(28+(value.replace('.','').substring(3,1).toInteger()*3)+(value.replace('.','').substring(4,1).toInteger()*1)+(value.replace('.','').substring(5,1).toInteger()*3)+(value.replace('.','').substring(6,1).toInteger()*1)+(value.replace('.','').substring(7,1).toInteger()*3)+(value.replace('.','').substring(8,1).toInteger()*1)+(value.replace('.','').substring(9,1).toInteger()*3)+(value.replace('.','').substring(10,1).toInteger()*1)+(value.replace('.','').substring(11,1).toInteger()*3))mod(10))mod(10))=value.replace('.','').substring(12,1).toInteger())" />
             </constraint>
         </element>
     </differential>
