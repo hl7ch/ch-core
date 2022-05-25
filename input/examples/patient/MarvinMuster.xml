@@ -18,7 +18,7 @@
             </p>
             <p>
                 <b>identifier</b>
-                : 756.2295.8830.70
+                : 7562295883070
             </p>
             <p>
                 <b>name</b>
@@ -82,7 +82,7 @@
     </extension>
     <identifier>
         <system value="urn:oid:2.16.756.5.32" />
-        <value value="756.2295.8830.70" />
+        <value value="7562295883070" />
     </identifier>
     <name>
         <family value="Muster" />
