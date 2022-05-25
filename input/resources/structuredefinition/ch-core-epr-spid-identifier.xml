@@ -60,21 +60,19 @@
         <key value="epr-spid-length"/>
         <severity value="error"/>
         <human value="EPR-SPID must be exactly 18 characters long"/>
-        <expression value="value.matches(&#39;^[0-9]{18}$&#39;)"/>
-      </constraint>
-      <constraint>
-        <key value="epr-spid-modulus-10"/>
-        <severity value="error"/>
-        <human value="EPR-SPID must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually"/>
-        <expression value="((&#xA; 68 + (value.substring(8,1).toInteger()*3)+&#xA;    (value.substring(9,1).toInteger()*1)+&#xA;    (value.substring(10,1).toInteger()*3)+&#xA;    (value.substring(11,1).toInteger()*1)+&#xA;    (value.substring(12,1).toInteger()*3)+&#xA;    (value.substring(13,1).toInteger()*1)+&#xA;    (value.substring(14,1).toInteger()*3)+&#xA;    (value.substring(15,1).toInteger()*1)+&#xA;    (value.substring(16,1).toInteger()*3)&#xA;    ) mod(10)+value.substring(17,1).toInteger()=10)"/>
-        <source value=""/>
+        <expression value="value.matches('^[0-9]{18}$')"/>
       </constraint>
       <constraint>
         <key value="epr-spid-startswith76133761"/>
         <severity value="error"/>
         <human value="EPR-SPID must start with 76133761"/>
         <expression value="value.startsWith('76133761')"/>
-        <source value=""/>
+      </constraint>
+      <constraint>
+        <key value="epr-spid-modulus-10"/>
+        <severity value="error"/>
+        <human value="EPR-SPID must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually"/>
+        <expression value="(((10-((68+(value.substring(8,1).toInteger()*3)+(value.substring(9,1).toInteger()*1)+(value.substring(10,1).toInteger()*3)+(value.substring(11,1).toInteger()*1)+(value.substring(12,1).toInteger()*3)+(value.substring(13,1).toInteger()*1)+(value.substring(14,1).toInteger()*3)+(value.substring(15,1).toInteger()*1)+(value.substring(16,1).toInteger()*3))mod(10)))mod(10))=value.substring(17,1).toInteger())"/>
       </constraint>
     </element>
   </differential>
