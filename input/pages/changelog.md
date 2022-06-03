@@ -12,7 +12,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#129](https://github.com/hl7ch/ch-core/issues/129): Wrong slicing for Composition.author.extension:ch-ext-epr-time profiles/structures
 * [#122](https://github.com/hl7ch/ch-core/issues/122): No fixed value for Status of Composition EPR
 * [#121](https://github.com/hl7ch/ch-core/issues/121): Relax Custodian cardinality in CH Core Composition EPR
-* [#118](https://github.com/hl7ch/ch-core/issues/118), [#127](https://github.com/hl7ch/ch-core/issues/127): Typos
+* [#118](https://github.com/hl7ch/ch-core/issues/118), [#127](https://github.com/hl7ch/ch-core/issues/127), [#142](https://github.com/hl7ch/ch-core/issues/142): Typos
 * [#132](https://github.com/hl7ch/ch-core/issues/132): Fix link of concept map
 
 ### STU 2 (2021-04-24)
