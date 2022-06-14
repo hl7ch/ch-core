@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
     <version value="2.0.0"/>
     <name value="CHCoreCoverage"/>
-    <title value="CH Core Coverage Profile"/>
+    <title value="CH Core Coverage"/>
     <status value="active"/>
     <date value="2019-05-20T00:00:00+00:00"/>
     <publisher value="HL7 Switzerland"/>

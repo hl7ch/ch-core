@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
     <version value="2.0.0"/>
     <name value="CHCoreComposition"/>
-    <title value="CH Core Composition Profile"/>
+    <title value="CH Core Composition"/>
     <status value="active"/>
     <date value="2019-04-13T00:00:00+00:00"/>
     <publisher value="HL7 Switzerland"/>
