@@ -64,6 +64,7 @@
 				</discriminator>
 				<rules value="open" />
 			</slicing>
+			<min value="1"/>
 		</element>
 		<element id="Bundle.entry.fullUrl">
 			<path value="Bundle.entry.fullUrl"/>
@@ -75,10 +76,10 @@
 				<expression value="startsWith('http') or startsWith('urn:uuid:') = true"/>
             </constraint>
 		</element>
+
 		<element id="Bundle.entry:Composition">
 			<path value="Bundle.entry" />
 			<sliceName value="Composition" />
-			<short value="Composition" />
 			<min value="1" />
 			<max value="1" />
 		</element>
@@ -90,5 +91,110 @@
 				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition" />
 			</type>
 		</element>
+
+		<element id="Bundle.entry:Patient">
+			<path value="Bundle.entry" />
+			<sliceName value="Patient" />
+		</element>
+		<element id="Bundle.entry:Patient.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
+			</type>
+		</element>
+
+		<element id="Bundle.entry:Practitioner">
+			<path value="Bundle.entry" />
+			<sliceName value="Practitioner" />
+		</element>
+		<element id="Bundle.entry:Practitioner.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner" />
+			</type>
+		</element>
+
+		<element id="Bundle.entry:PractitionerRole">
+			<path value="Bundle.entry" />
+			<sliceName value="PractitionerRole" />
+		</element>
+		<element id="Bundle.entry:PractitionerRole.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole" />
+			</type>
+		</element>
+
+		<element id="Bundle.entry:Organization">
+			<path value="Bundle.entry" />
+			<sliceName value="Organization" />
+		</element>
+		<element id="Bundle.entry:Organization.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization" />
+			</type>
+		</element>
+
+		<element id="Bundle.entry:RelatedPerson">
+			<path value="Bundle.entry" />
+			<sliceName value="RelatedPerson" />
+		</element>
+		<element id="Bundle.entry:RelatedPerson.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+			</type>
+		</element>
+
+		<element id="Bundle.entry:Device">
+			<path value="Bundle.entry" />
+			<sliceName value="Device" />
+		</element>
+		<element id="Bundle.entry:Device.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://hl7.org/fhir/StructureDefinition/Device" />
+			</type>
+		</element>
+
+		<element id="Bundle.entry:Encounter">
+			<path value="Bundle.entry" />
+			<sliceName value="Encounter" />
+		</element>
+		<element id="Bundle.entry:Encounter.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter" />
+			</type>
+		</element>
+
+		<element id="Bundle.entry:Location">
+			<path value="Bundle.entry" />
+			<sliceName value="Location" />
+		</element>
+		<element id="Bundle.entry:Location.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-location" />
+			</type>
+		</element>
+
 	</differential>
 </StructureDefinition>

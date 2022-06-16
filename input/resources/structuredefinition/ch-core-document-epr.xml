@@ -70,10 +70,10 @@
 				<rules value="open" />
 			</slicing>
 		</element>
+
 		<element id="Bundle.entry:Composition">
 			<path value="Bundle.entry" />
 			<sliceName value="Composition" />
-			<short value="Composition EPR" />
 		</element>
 		<element id="Bundle.entry:Composition.resource">
 			<path value="Bundle.entry.resource" />
@@ -82,5 +82,18 @@
 				<profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr" />
 			</type>
 		</element>
+
+		<element id="Bundle.entry:Binary">
+			<path value="Bundle.entry" />
+			<sliceName value="Binary" />
+		</element>
+		<element id="Bundle.entry:Binary.resource">
+			<path value="Bundle.entry.resource" />
+			<min value="1" />
+			<type>
+				<code value="Resource" />
+				<profile value="http://hl7.org/fhir/StructureDefinition/Binary" />
+			</type>
+		</element>	
 	</differential>
 </StructureDefinition>
