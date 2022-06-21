@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/" />
         </telecom>
     </contact>
-    <description value="Identifier holding a 13 digit social security number" />
+    <description value="Identifier holding a 13 digit social security number. The number shall have exactly 13 digits and shall not contain point characters for separation." />
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166" />

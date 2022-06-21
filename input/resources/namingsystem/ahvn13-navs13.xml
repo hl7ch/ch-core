@@ -30,7 +30,7 @@
         <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0203 code &#39;NI&#39; = &#39;National unique individual identifier&#39;, given as &#39;National unique individual identifier&#39;})</span>
       </p>
       <p>
-        <b>description</b>: The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the [Central Compensation Office](https://www.zas.admin.ch/zas/de/home/partenaires-et-institutions-/navs13.html). It is available to all organisations and communities for which there is a legal basis.
+        <b>description</b>: The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the [Central Compensation Office](https://www.zas.admin.ch/zas/de/home/partenaires-et-institutions-/navs13.html). It is available to all organisations and communities for which there is a legal basis.  The AHVN13 / NAVS13 shall not contain point characters for separation.
       </p>
       <p>
         <b>jurisdiction</b>: Switzerland 
@@ -80,7 +80,7 @@
     </coding>
     <text value="IHI"/>
   </type>
-  <description value="The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the [Central Compensation Office](https://www.zas.admin.ch/zas/de/home/partenaires-et-institutions-/navs13.html). It is available to all organisations and communities for which there is a legal basis."/>
+  <description value="The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the [Central Compensation Office](https://www.zas.admin.ch/zas/de/home/partenaires-et-institutions-/navs13.html). It is available to all organisations and communities for which there is a legal basis. The AHVN13 / NAVS13 shall not contain point characters for separation."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
