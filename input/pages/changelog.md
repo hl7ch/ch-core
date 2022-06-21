@@ -6,7 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#123](https://github.com/hl7ch/ch-core/issues/123) ([#137](https://github.com/hl7ch/ch-core/issues/137), [#140](https://github.com/hl7ch/ch-core/issues/140)): GLN and EPR-SPID checks
 * [#135](https://github.com/hl7ch/ch-core/issues/135): Add an Identifier data type for AHVN13 with check for correctness
 * [#131](https://github.com/hl7ch/ch-core/issues/131): Update change log/STU note box according to the latest requirements
-
+  
 #### Changed / Updated
 * [#133](https://github.com/hl7ch/ch-core/issues/133): Fix example OIDs
 * [#129](https://github.com/hl7ch/ch-core/issues/129): Wrong slicing for Composition.author.extension:ch-ext-epr-time profiles/structures
@@ -15,6 +15,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#121](https://github.com/hl7ch/ch-core/issues/121): Relax Custodian cardinality in CH Core Composition EPR
 * [#118](https://github.com/hl7ch/ch-core/issues/118), [#127](https://github.com/hl7ch/ch-core/issues/127), [#142](https://github.com/hl7ch/ch-core/issues/142): Typos
 * [#132](https://github.com/hl7ch/ch-core/issues/132): Fix link of concept map
+* [#124](https://github.com/hl7ch/ch-core/issues/124): Fix description for a least one given/family HumanName if provided.
 
 ### STU 2 (2021-04-24)
 {% include_relative changes-stu2.md %}

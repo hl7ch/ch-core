@@ -52,7 +52,7 @@
             <constraint>
                 <key value="ch-pract-1"/>
                 <severity value="error"/>
-                <human value="At least one HumanName with given and family name must be provided."/>
+                <human value="If a HumanName is provided, at least one HumanName must have a given and family name."/>
                 <expression value="name.where(family.exists() and given.exists()).count()>0 or name.empty()"/>
             </constraint>
             <constraint>
