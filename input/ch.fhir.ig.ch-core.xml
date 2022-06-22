@@ -159,7 +159,7 @@
         <reference value="Patient/MarvinMuster"/>
       </reference>
       <name value="MarvinMuster"/>
-      <description value="Example for Patient with AHVN13 as identifier"/>
+      <description value="Example for Patient with AHVN13 / NAVS13 as identifier"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
