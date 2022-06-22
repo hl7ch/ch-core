@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     <version value="2.0.0"/>
     <name value="CHCoreOrganizationEPR"/>
-    <title value="CH Core Organization Profile EPR"/>
+    <title value="CH Core Organization EPR"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-12-05"/>

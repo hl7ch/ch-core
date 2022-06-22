@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     <version value="2.0.0"/>
     <name value="CHCorePatient"/>
-    <title value="CH Core Patient Profile"/>
+    <title value="CH Core Patient"/>
     <status value="active"/>
     <date value="2018-10-15T00:00:00+10:00"/>
     <publisher value="HL7 Switzerland"/>
