@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     <version value="2.0.0"/>
     <name value="CHCorePatient"/>
-    <title value="CH Core Patient Profile"/>
+    <title value="CH Core Patient"/>
     <status value="active"/>
     <date value="2018-10-15T00:00:00+10:00"/>
     <publisher value="HL7 Switzerland"/>
@@ -624,9 +624,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             </slicing>
             <short value="A language which may be used to communicate with the patient about his or her health"/>
         </element>
-        <element id="Patient.communication:languageOfCorrespondance">
+        <element id="Patient.communication:languageOfCorrespondence">
             <path value="Patient.communication"/>
-            <sliceName value="languageOfCorrespondance"/>
+            <sliceName value="languageOfCorrespondence"/>
             <short value="A language which may be used to communicate with the patient about his or her health"/>
             <min value="0"/>
             <max value="1"/>
@@ -642,7 +642,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <map value="eCH-0011: 3.3.9 languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"/>
             </mapping>
         </element>
-        <element id="Patient.communication.language:languageOfCorrespondance">
+        <element id="Patient.communication.language:languageOfCorrespondence">
             <path value="Patient.communication.language"/>
             <short value="The language which can be used to communicate with the patient about his or her health"/>
             <definition value="The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English."/>
@@ -654,7 +654,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <code value="CodeableConcept"/>
             </type>
         </element>
-        <element id="Patient.communication.preferred:languageOfCorrespondance">
+        <element id="Patient.communication.preferred:languageOfCorrespondence">
             <path value="Patient.communication.preferred"/>
             <short value="Language preference indicator"/>
             <definition value="Indicates whether or not the patient prefers this language (over other languages he masters up a certain level)."/>

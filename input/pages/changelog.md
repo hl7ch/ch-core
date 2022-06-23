@@ -3,19 +3,22 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 3 Ballot
 
 #### Added
-* [#123](https://github.com/hl7ch/ch-core/issues/123): gln and epr-spid checks #123
+* [#123](https://github.com/hl7ch/ch-core/issues/123) ([#137](https://github.com/hl7ch/ch-core/issues/137), [#140](https://github.com/hl7ch/ch-core/issues/140)): GLN and EPR-SPID checks
+* [#135](https://github.com/hl7ch/ch-core/issues/135): Add an Identifier data type for AHVN13 with check for correctness
 * [#131](https://github.com/hl7ch/ch-core/issues/131): Update change log/STU note box according to the latest requirements
 
 #### Changed / Updated
 * [#133](https://github.com/hl7ch/ch-core/issues/133): Fix example OIDs
-* [#127](https://github.com/hl7ch/ch-core/issues/129): Wrong slicing for Composition.author.extension:ch-ext-epr-time profiles/structures
+* [#129](https://github.com/hl7ch/ch-core/issues/129): Wrong slicing for Composition.author.extension:ch-ext-epr-time profiles/structures
+* [#144](https://github.com/hl7ch/ch-core/issues/144): Improve slicing that info entry[x] warnings are not shown (CH Core Document, CH Core Document EPR)
 * [#122](https://github.com/hl7ch/ch-core/issues/122): No fixed value for Status of Composition EPR
-* [#118](https://github.com/hl7ch/ch-core/issues/118), [#127](https://github.com/hl7ch/ch-core/issues/127): Typos
+* [#121](https://github.com/hl7ch/ch-core/issues/121): Relax Custodian cardinality in CH Core Composition EPR
+* [#118](https://github.com/hl7ch/ch-core/issues/118), [#127](https://github.com/hl7ch/ch-core/issues/127), [#142](https://github.com/hl7ch/ch-core/issues/142): Typos
+* [#132](https://github.com/hl7ch/ch-core/issues/132): Fix link of concept map
+* [#145](https://github.com/hl7ch/ch-core/issues/145): Update title of the profiles
 
-* [#x](https://github.com/hl7ch/ch-core/issues/x): TODO
-
-### STU2 (2021-04-24)
+### STU 2 (2021-04-24)
 {% include_relative changes-stu2.md %}
 
-### STU1 (2020-04-21)
+### STU 1 (2020-04-21)
 - [Initial version, summary of changes](https://github.com/hl7ch/ch-core/issues?q=is%3Aissue+milestone%3A%22v1.0.0+STU1+Final+Publication%22+is%3Aclosed)

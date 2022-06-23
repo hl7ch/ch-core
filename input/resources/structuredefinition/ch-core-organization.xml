@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     <version value="2.0.0"/>
     <name value="CHCoreOrganization"/>
-    <title value="CH Core Organization Profile"/>
+    <title value="CH Core Organization"/>
     <status value="active"/>
     <experimental value="false"/>
     <date value="2019-04-13T00:00:00+00:00"/>

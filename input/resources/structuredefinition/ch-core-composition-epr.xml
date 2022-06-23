@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
     <version value="2.0.0"/>
     <name value="CHCoreCompositionEPR"/>
-    <title value="CH Core Composition Profile EPR"/>
+    <title value="CH Core Composition EPR"/>
     <status value="active"/>
     <date value="2019-12-04"/>
     <publisher value="HL7 Switzerland"/>
