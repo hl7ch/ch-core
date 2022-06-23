@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 Ballot
+### STU 3 Ballot (2022-06-29)
 
 #### Added
 * [#123](https://github.com/hl7ch/ch-core/issues/123) ([#137](https://github.com/hl7ch/ch-core/issues/137), [#140](https://github.com/hl7ch/ch-core/issues/140)): GLN and EPR-SPID checks
