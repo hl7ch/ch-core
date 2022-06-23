@@ -19,7 +19,7 @@
   <title value="CH Core (R4)"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-04-12"/>
+  <date value="2022-06-29"/>
   <publisher value="HL7 Switzerland"/>
   <contact>
     <name value="HL7 Switzerland"/>
@@ -828,8 +828,8 @@
     </page>
     <parameter>
       <code value="releaselabel"/>
-      <value value="CI build"/>
-<!--      <value value="STU 2"/> -->
+      <!--<value value="CI build"/>-->
+      <value value="STU 3 Ballot"/>
     </parameter>
     <parameter>
       <code value="path-pages" />
