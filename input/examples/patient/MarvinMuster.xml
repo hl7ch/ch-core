@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="MarvinMuster" />
+    <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient" />
+    </meta>
+    <text>
+        <status value="additional" />
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>
+                <b>id</b>
+                : MarvinMuster
+            </p>
+            <p>
+                <b>meta</b>
+                :
+            </p>
+            <p>
+                <b>identifier</b>
+                : 7562295883070
+            </p>
+            <p>
+                <b>name</b>
+                : Marvin Muster
+            </p>
+            <p>
+                <b>gender</b>
+                : MALE
+            </p>
+            <p>
+                <b>birthDate</b>
+                : Jan 26, 1997
+            </p>
+            <p>
+                <b>maritalStatus</b>
+                : in eingetragener Partnerschaft
+                <span style="background: LightGoldenRodYellow">(Details : {http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus code &#39;6&#39; = &#39;6&#39;, given as &#39;in eingetragener Partnerschaft&#39;})</span>
+            </p>
+            <h3>Communications</h3>
+            <table class="grid">
+                <tr>
+                    <td>-</td>
+                    <td>
+                        <b>Language</b>
+                    </td>
+                    <td>
+                        <b>Preferred</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>
+                        Deutsch (Schweiz)
+                        <span style="background: LightGoldenRodYellow">(Details : {urn:ietf:bcp:47 code &#39;de-CH&#39; = &#39;German (Region=Switzerland))</span>
+                    </td>
+                    <td>true</td>
+                </tr>
+            </table>
+        </div>
+    </text>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+        <valueAddress>
+            <city value="Salzburg" />
+            <country value="Österreich" />
+        </valueAddress>
+    </extension>
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-ech-11-placeoforigin">
+        <valueAddress>
+            <city value="Zug" />
+            <state value="ZG" />
+        </valueAddress>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
+                <code value="1036" />
+                <display value="Orthodox" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <identifier>
+        <system value="urn:oid:2.16.756.5.32" />
+        <value value="7562295883070" />
+    </identifier>
+    <name>
+        <family value="Muster" />
+        <given value="Marvin" />
+    </name>
+    <gender value="male" />
+    <birthDate value="1997-01-26" />
+    <maritalStatus>
+        <coding>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus" />
+            <code value="6" />
+            <display value="in eingetragener Partnerschaft" />
+        </coding>
+    </maritalStatus>
+    <communication>
+        <language>
+            <coding>
+                <system value="urn:ietf:bcp:47" />
+                <code value="de-CH" />
+            </coding>
+            <text value="Deutsch (Schweiz)" />
+        </language>
+        <preferred value="true" />
+    </communication>
+</Patient>

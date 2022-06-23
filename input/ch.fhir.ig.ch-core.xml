@@ -164,6 +164,14 @@
     </resource>
     <resource>
       <reference>
+        <reference value="Patient/MarvinMuster"/>
+      </reference>
+      <name value="MarvinMuster"/>
+      <description value="Example for Patient with AHVN13 / NAVS13 as identifier"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Patient/ManuelaMuster"/>
       </reference>
       <name value="ManuelaMuster"/>
@@ -362,9 +370,9 @@
     <!-- references for naming systems -->
     <resource>
       <reference>
-        <reference value="NamingSystem/ahvn13-navs13"/>
+        <reference value="NamingSystem/ahvn13"/>
       </reference>
-      <name value="ahvn13-navs13"/>
+      <name value="ahvn13"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -638,6 +646,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-gln-identifier"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-ahvn13-identifier"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

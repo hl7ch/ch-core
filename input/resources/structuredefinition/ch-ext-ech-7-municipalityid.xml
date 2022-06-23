@@ -4,7 +4,7 @@
     <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid"/>
     <version value="2.0.0"/>
     <name value="ECH007MunicipalityId"/>
-    <title value="eCH-0007 municipalityId – BFS Gemeindenummer"/>
+    <title value="eCH-0007 Municipality Id – BFS Gemeindenummer"/>
     <status value="active"/>
     <date value="2018-11-21"/>
     <publisher value="HL7 Switzerland"/>

@@ -15,7 +15,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#121](https://github.com/hl7ch/ch-core/issues/121): Relax Custodian cardinality in CH Core Composition EPR
 * [#118](https://github.com/hl7ch/ch-core/issues/118), [#127](https://github.com/hl7ch/ch-core/issues/127), [#142](https://github.com/hl7ch/ch-core/issues/142): Typos
 * [#132](https://github.com/hl7ch/ch-core/issues/132): Fix link of concept map
-* [#124](https://github.com/hl7ch/ch-core/issues/124): Fix description for a least one given/family HumanName if provided.
+* [#124](https://github.com/hl7ch/ch-core/issues/124): Fix description for a least one given/family HumanName if provided
+* [#145](https://github.com/hl7ch/ch-core/issues/145): Update title of the profiles
 
 ### STU 2 (2021-04-24)
 {% include_relative changes-stu2.md %}
