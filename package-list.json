@@ -13,9 +13,9 @@
     },
     {
       "version": "2.1.0",
-      "date": "2022-06-23",
+      "date": "2022-07-06",
       "desc": "HL7 Switzerland STU 3 Ballot",
-      "path": "http://fhir.ch/ig/ch-core",
+      "path": "http://fhir.ch/ig/ch-core/2.1.0",
       "status": "trial-use",
       "sequence": "STU 3",
       "fhirversion": "4.0.1",
