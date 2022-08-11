@@ -14,12 +14,12 @@
     </div>
   </text>
   <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
-  <version value="2.1.0"/>
+  <version value="3.0.0"/>
   <name value="CH_Core"/>
   <title value="CH Core (R4)"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-07-06"/>
+  <date value="2022-08-11"/>
   <publisher value="HL7 Switzerland"/>
   <contact>
     <name value="HL7 Switzerland"/>
@@ -828,8 +828,8 @@
     </page>
     <parameter>
       <code value="releaselabel"/>
-      <!--<value value="CI build"/>-->
-      <value value="STU 3 Ballot"/>
+      <value value="CI build"/>
+      <!--<value value="STU 3 Ballot"/>-->
     </parameter>
     <parameter>
       <code value="path-pages" />

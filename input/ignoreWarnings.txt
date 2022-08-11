@@ -18,3 +18,5 @@ if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be
 
 # Build error
 The image source 'pdf1' cannot be resolved
+The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
+
