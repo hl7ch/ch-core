@@ -54,7 +54,7 @@
       <reference>
         <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
       </reference>
-      <name value="1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+      <name value="Zuweisung zur radiologischen Diagnostik"/>
       <description value="Example for EPR-Bundle"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
     </resource>
@@ -62,7 +62,7 @@
       <reference>
         <reference value="Bundle/CdaContainingOriginalRepresentationAsPdfA"/>
       </reference>
-      <name value="CdaContainingOriginalRepresentationAsPdfA"/>
+      <name value="CDA containing Original Representation as PDF-A"/>
       <description value="Example for EPR-Bundle"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
     </resource>
@@ -70,7 +70,7 @@
       <reference>
         <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
       </reference>
-      <name value="ZuweisungZurRadiologischenDiagnostik"/>
+      <name value="Zuweisung zur radiologischen Diagnostik"/>
       <description value="Example for EPR-Composition"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
     </resource>
@@ -78,7 +78,7 @@
       <reference>
         <reference value="Coverage/CoverageBroennimann"/>
       </reference>
-      <name value="CoverageBroennimann"/>
+      <name value="Coverage Broennimann"/>
       <description value="Example for Coverage"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
     </resource>
@@ -94,7 +94,7 @@
       <reference>
         <reference value="Encounter/EncounterAmbulantBroennimann"/>
       </reference>
-      <name value="EncounterAmbulantBroennimann"/>
+      <name value="Encounter Ambulant Broennimann"/>
       <description value="Example for Encounter"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
     </resource>
@@ -102,7 +102,7 @@
       <reference>
         <reference value="Encounter/EncounterAccidentBroennimann"/>
       </reference>
-      <name value="EncounterAccidentBroennimann"/>
+      <name value="Encounter Accident Broennimann"/>
       <description value="Example for Encounter which is flagged as an accident"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
     </resource>
@@ -110,7 +110,7 @@
       <reference>
         <reference value="Organization/GruppenpraxisCH"/>
       </reference>
-      <name value="GruppenpraxisCH"/>
+      <name value="Gruppenpraxis CH"/>
       <description value="Example for EPR-Organization"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
@@ -126,7 +126,7 @@
       <reference>
         <reference value="Organization/SpitalSeeblick"/>
       </reference>
-      <name value="SpitalSeeblick"/>
+      <name value="Spital Seeblick"/>
       <description value="Example for Organization"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     </resource>
@@ -134,7 +134,7 @@
       <reference>
         <reference value="Organization/PhysiotherapieCH"/>
       </reference>
-      <name value="PhysiotherapieCH"/>
+      <name value="Physiotherapie CH"/>
       <description value="Example for Organization with GLN ending on 0"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     </resource>
@@ -142,7 +142,7 @@
       <reference>
         <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
-      <name value="ElisabethBroennimannByBFH"/>
+      <name value="Elisabeth Broennimann by BFH"/>
       <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
@@ -150,7 +150,7 @@
       <reference>
         <reference value="Patient/FranzMuster"/>
       </reference>
-      <name value="FranzMuster"/>
+      <name value="Franz Muster"/>
       <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
@@ -158,7 +158,7 @@
       <reference>
         <reference value="Patient/MaxMuster"/>
       </reference>
-      <name value="MaxMuster"/>
+      <name value="Max Muster"/>
       <description value="Example for EPR-Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
     </resource>
@@ -166,7 +166,7 @@
       <reference>
         <reference value="Patient/MarvinMuster"/>
       </reference>
-      <name value="MarvinMuster"/>
+      <name value="Marvin Muster"/>
       <description value="Example for Patient with AHVN13 / NAVS13 as identifier"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
@@ -174,7 +174,7 @@
       <reference>
         <reference value="Patient/ManuelaMuster"/>
       </reference>
-      <name value="ManuelaMuster"/>
+      <name value="Manuela Muster"/>
       <description value="Example for Patient with EPR-SPID ending on 0"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
@@ -182,7 +182,7 @@
       <reference>
         <reference value="Patient/PersonEch011"/>
       </reference>
-      <name value="PersonEch011"/>
+      <name value="Person eCH-011"/>
       <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
@@ -190,7 +190,7 @@
       <reference>
         <reference value="Patient/UpiEprTestKrcmarevic"/>
       </reference>
-      <name value="UpiEprTestKrcmarevic"/>
+      <name value="UPI EPR Test Krcmarevic"/>
       <description value="Example for Patient"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
@@ -198,7 +198,7 @@
       <reference>
         <reference value="Practitioner/AgparMarc"/>
       </reference>
-      <name value="AgparMarc"/>
+      <name value="Agpar Marc"/>
       <description value="Example for Practitioner"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
@@ -206,7 +206,7 @@
       <reference>
         <reference value="Practitioner/AllzeitBereit"/>
       </reference>
-      <name value="AllzeitBereit"/>
+      <name value="Allzeit Bereit"/>
       <description value="Example for EPR-Practitioner"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </resource>
@@ -214,7 +214,7 @@
       <reference>
         <reference value="Practitioner/HanspeterWengerByBFH"/>
       </reference>
-      <name value="HanspeterWengerByBFH"/>
+      <name value="Hanspeter Wenger by BFH"/>
       <description value="Example for Practitioner"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
@@ -222,15 +222,15 @@
       <reference>
         <reference value="Practitioner/SchreibKraft"/>
       </reference>
-      <name value="SchreibKraft"/>
-      <description value="Example for Practitioner"/>
+      <name value="Schreib Kraft"/>
+      <description value="Example for Practitioner (with local identifier - neither GLN nor ZSR)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
       <reference>
         <reference value="PractitionerRole/HPWengerRole"/>
       </reference>
-      <name value="HPWengerRole"/>
+      <name value="Hanspeter Wenger (PractitionerRole)"/>
       <description value="Example for PractitionerRole"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
@@ -239,7 +239,7 @@
       <reference>
         <reference value="PractitionerRole/SchreibKraft"/>
       </reference>
-      <name value="SchreibKraft"/>
+      <name value="Schreib Kraft"/>
       <description value="Example for PractitionerRole as Data Enterer"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
     </resource>
