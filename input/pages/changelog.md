@@ -15,6 +15,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 
 #### Fixed
 * [#163](https://github.com/hl7ch/ch-core/issues/163): Typo
+* [#159](https://github.com/hl7ch/ch-core/issues/159): Add element 'experimental' (false) to CS/VS
 
 #### Issues resolved without amendment
 * [#39](https://github.com/hl7ch/ch-core/issues/39): Consent code for ch-epr has been added in [hl7.terminology](https://terminology.hl7.org/4.0.0/CodeSystem-consentpolicycodes.html) published 2022-09-14	(version 4.0.0)
