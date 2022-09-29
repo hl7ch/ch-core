@@ -11,6 +11,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 #### Added
 
 #### Changed / Updated
+* [#150](https://github.com/hl7ch/ch-core/issues/150): Expansion of the context of the extension [EPR Time](StructureDefinition-ch-ext-epr-time.html)
 
 #### Fixed
 
