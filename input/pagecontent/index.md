@@ -12,9 +12,7 @@ This guide is a working specification. We anticipate that it will be implemented
 
 <div markdown="1" class="stu-note">
 
-This implementation guide is under ballot for STU 3 by [HL7 Switzerland](https://www.hl7.ch/) until September 30th, 2022 midnight. Please add your feedback via the 'Propose a change'-link in the footer on the page where you have comments. 
-
-[Significant Changes, Open and Closed Issues](changelog.html)
+[Significant changes, open and closed issues](changelog.html)
 
 </div>
 
@@ -60,7 +58,7 @@ This guide is the product of collaborative work undertaken with participants fro
 * [HL7 Switzerland](https://www.hl7.ch)
 * [eHealth Suisse](https://www.e-health-suisse.ch/en/home.html)
 
-### Safety considerations
+### Safety Considerations
 This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: [https://www.hl7.org/FHIR/safety.html](https://www.hl7.org/FHIR/safety.html).
 
 Although the present specification does gives users the opportunity to observe data protection and data security regulations, its use does not guarantee compliance with these regulations. Effective compliance must be ensured by appropriate measures during implementation projects and in daily operations. The corresponding implementation measures are explained in the standard. 

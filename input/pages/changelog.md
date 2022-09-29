@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 3 (2022-xx-xx)
+### STU3 (2022-xx-xx)
 
 #### Open Issues
 During the ballot, the following comments came in, which will be taken into account in the further development of CH Core:
@@ -19,7 +19,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 
 
 
-### STU 3 Ballot (2022-06-29)
+### STU3 Ballot (2022-06-29)
 
 #### Added
 * [#123](https://github.com/hl7ch/ch-core/issues/123) ([#137](https://github.com/hl7ch/ch-core/issues/137), [#140](https://github.com/hl7ch/ch-core/issues/140)): GLN and EPR-SPID checks
@@ -37,8 +37,8 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#124](https://github.com/hl7ch/ch-core/issues/124): Fix description for a least one given/family HumanName if provided
 * [#145](https://github.com/hl7ch/ch-core/issues/145): Update title of the profiles
 
-### STU 2 (2021-04-24)
+### STU2 (2021-04-24)
 {% include_relative changes-stu2.md %}
 
-### STU 1 (2020-04-21)
+### STU1 (2020-04-21)
 - [Initial version, summary of changes](https://github.com/hl7ch/ch-core/issues?q=is%3Aissue+milestone%3A%22v1.0.0+STU1+Final+Publication%22+is%3Aclosed)
