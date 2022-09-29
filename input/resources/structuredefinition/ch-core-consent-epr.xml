@@ -117,7 +117,7 @@
         </element>
         <element id="Consent.provision.data.reference">
             <path value="Consent.provision.data.reference"/>
-            <short value="Excluded encounter for EP"/>
+            <short value="Excluded encounter for EPR"/>
             <definition value="A reference to the encounter where the consent for the EPR does not apply."/>
             <min value="1"/>
             <max value="1"/>
