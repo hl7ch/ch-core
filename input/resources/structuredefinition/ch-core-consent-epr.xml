@@ -43,16 +43,55 @@
                 </coding>
             </patternCodeableConcept>
         </element>
+
         <element id="Consent.category">
             <path value="Consent.category"/>
-            <patternCodeableConcept>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
-                    <code value="IDSCL"/>
-                    <display value="information disclosure"/>
-                </coding>
-            </patternCodeableConcept>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="coding.code"/>
+                </discriminator>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="coding.system"/>
+                </discriminator>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="coding.display"/>
+                </discriminator>
+                <ordered value="false"/>
+                <rules value="open"/>
+            </slicing>
         </element>
+        <element id="Consent.category:VSCat">
+            <path value="Consent.category"/>
+            <sliceName value="VSCat"/>
+            <min value="1"/>
+            <max value="1"/>
+        </element>
+        <element id="Consent.category:VSCat.coding">
+            <path value="Consent.category.coding"/>
+            <min value="1"/>
+        </element>
+        <element id="Consent.category:VSCat.coding.system">
+            <path value="Consent.category.coding.system"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        </element>
+        <element id="Consent.category:VSCat.coding.code">
+            <path value="Consent.category.coding.code"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedCode value="IDSCL"/>
+        </element>
+        <element id="Consent.category:VSCat.coding.display">
+            <path value="Consent.category.coding.display"/>
+            <min value="1"/>
+            <max value="1"/>
+            <fixedString value="information disclosure"/>
+        </element>
+
         <element id="Consent.patient">
             <path value="Consent.patient"/>
             <short value="Who the consent applies to"/>
