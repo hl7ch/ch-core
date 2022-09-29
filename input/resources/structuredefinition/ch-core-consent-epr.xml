@@ -85,12 +85,12 @@
         </element>
         <element id="Consent.policyRule">
             <path value="Consent.policyRule"/>
-            <fixedCodeableConcept>
+            <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/consentpolicycodes"/>
                     <code value="ch-epr"/>
                 </coding>
-            </fixedCodeableConcept>
+            </patternCodeableConcept>
         </element>
         <element id="Consent.provision">
             <path value="Consent.provision"/>
