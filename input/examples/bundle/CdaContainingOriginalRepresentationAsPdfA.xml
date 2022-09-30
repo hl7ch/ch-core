@@ -2,6 +2,10 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="CdaContainingOriginalRepresentationAsPdfA"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
+  </meta>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>
     <value value="urn:uuid:11778932-3d19-486b-afe6-e32a1165c978"/>

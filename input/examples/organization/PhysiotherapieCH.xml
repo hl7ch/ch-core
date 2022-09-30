@@ -3,6 +3,7 @@
     <id value="PhysiotherapieCH"/>
     <meta>
         <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </meta>
     <identifier>
         <system value="urn:oid:2.51.1.3"/>

@@ -7,7 +7,7 @@
     <text>
         <status value="additional"/>
         <div xmlns="http://www.w3.org/1999/xhtml">
-            Example according to eCH-011
+            <div>Example according to eCH-011</div>
 
             3.3.2 nameData – Namensangaben
             <ul>
@@ -18,15 +18,23 @@
                 <li>Aliasname (optional) – aliasName, siehe Kapitel 3.3.2.5</li>
                 <li>Andere amtliche Name (optional) – otherName, siehe Kapitel 3.3.2.6</li>
                 <li>Rufname (optional) – callName, siehe Kapitel 3.3.2.7</li>                
-                <li>
-                    entweder
-            Name im ausländischen Pass (optional) - nameOnForeignPassport, siehe Kapitel 3.3.2.8
-            oder
-            Name gemäss Deklaration (optional) – declaredForeignName, siehe Kapitel 3.3.2.9
+                <li>entweder
+                    <ul>
+                        <li>Name im ausländischen Pass (optional) - nameOnForeignPassport, siehe Kapitel 3.3.2.8 oder</li>
+                        <li>Name gemäss Deklaration (optional) – declaredForeignName, siehe Kapitel 3.3.2.9</li>
+                    </ul>
                 </li>
-                <li>Zivilstand in eingetragener Partnerschaft (married) aber freiwillig getrennt lebend</li>
-             </ul>   
-            Zusätzlich Beispiel für Zustelladresse falls es nicht die Adresse des Patienten direkt ist mit Angaben von eCH-0010
+            </ul>
+            
+            3.3.5 maritalData - Zivilstandsangaben
+            <ul>
+                <li>Zivilstand in eingetragener Partnerschaft (married), aber freiwillig getrennt lebend</li>
+            </ul>
+
+            3.3.8 contactData – Kontaktangaben   
+            <ul> 
+                <li>Zusätzlich Beispiel für Zustelladresse, falls es nicht die Adresse des Patienten direkt ist, mit Angaben von eCH-0010</li>
+            </ul>
         </div>
     </text>
     <name>
