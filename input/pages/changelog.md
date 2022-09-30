@@ -16,11 +16,12 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#154](https://github.com/hl7ch/ch-core/issues/154): Improve description of example instances, see [Artifacts](artifacts.html#example-example-instances)
 * [#162](https://github.com/hl7ch/ch-core/issues/162): Update narrative text in examples
 * [#176](https://github.com/hl7ch/ch-core/issues/162): Clean up differentials
+* [#175](https://github.com/hl7ch/ch-core/issues/175): Rename the profile [CH Core EPR-Consent](StructureDefinition-ch-core-epr-consent.html)
 
 #### Fixed
 * [#163](https://github.com/hl7ch/ch-core/issues/163): Typo
 * [#159](https://github.com/hl7ch/ch-core/issues/159): Add element 'experimental' (false) to CS/VS
-* [#161](https://github.com/hl7ch/ch-core/issues/161): Use 'patternCodeableConcept' instead of 'fixedCodeableConcept' for [Consent.policyRule](StructureDefinition-ch-core-consent-epr.html)
+* [#161](https://github.com/hl7ch/ch-core/issues/161): Use 'patternCodeableConcept' instead of 'fixedCodeableConcept' for [Consent.policyRule](StructureDefinition-ch-core-epr-consent.html)
 * [#167](https://github.com/hl7ch/ch-core/issues/167): Fix URIs in ConceptMaps ([MaritalStatus eCH-011 to FHIR mapping](ConceptMap-maritalstatus-ech11-to-fhir.html), [Sex eCH-011 to FHIR mapping](ConceptMap-sex-ech11-to-fhir.html))
 * [#152](https://github.com/hl7ch/ch-core/issues/152): Changes status form 'draft' to 'active'
 
