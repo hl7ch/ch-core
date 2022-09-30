@@ -14,6 +14,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#150](https://github.com/hl7ch/ch-core/issues/150): Expansion of the context of the extension [EPR Time](StructureDefinition-ch-ext-epr-time.html)
 * [#160](https://github.com/hl7ch/ch-core/issues/160): Slicing on repeating element
 * [#154](https://github.com/hl7ch/ch-core/issues/154): Improve description of example instances, see [Artifacts](artifacts.html#example-example-instances)
+* [#162](https://github.com/hl7ch/ch-core/issues/162): Update narrative text in examples
 
 #### Fixed
 * [#163](https://github.com/hl7ch/ch-core/issues/163): Typo
