@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-    <id value="ch-core-consent-epr"/>
-    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
+    <id value="ch-core-epr-consent"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-epr-consent"/>
     <version value="2.0.0"/>
-    <name value="CHCoreConsentEPR"/>
-    <title value="CH Core Consent EPR"/>
+    <name value="CHCoreEPRConsent"/>
+    <title value="CH Core EPR-Consent"/>
     <status value="active"/>
     <date value="2021-01-27T00:00:00+00:00"/>
     <publisher value="HL7 Switzerland"/>
@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Base profile for a consent profile to document that a patient has an Electronic Patient Record (EPR) in Switzerland. The actual consent conditions are held within the EPR, this consent is the documentation in an organization that the patient has stated he has an EPR and this needs to be verified at the time of document publishing or reading. In addition a patient can reqeuest that specific information will not be published from the organization to the EPR. This can be documented with one or more references to encounters to exclude the consent for these."/>
+    <description value="Base profile for a consent profile to document that a patient has an Electronic Patient Record (EPR) in Switzerland. The actual consent conditions are held within the EPR, this consent is the documentation in an organization that the patient has stated he has an EPR and this needs to be verified at the time of document publishing or reading. In addition a patient can request that specific information will not be published from the organization to the EPR. This can be documented with one or more references to encounters to exclude the consent for these."/>
     <jurisdiction>
         <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -31,7 +31,7 @@
     <differential>
         <element id="Consent">
             <path value="Consent"/>
-            <short value="CH Core Consent EPR"/>
+            <short value="CH Core EPR-Consent"/>
         </element>
         <element id="Consent.scope">
             <path value="Consent.scope"/>

@@ -80,7 +80,7 @@
       </reference>
       <name value="Consent for Swiss EPR"/>
       <description value="Consent that Patient has a Swiss EPR"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-epr-consent"/>
     </resource>
     <resource>
       <reference>
@@ -88,7 +88,7 @@
       </reference>
       <name value="Consent for Swiss EPR with Encounter exclusions"/>
       <description value="Consent that Patient has a Swiss EPR but exclude it for a specific Encounter"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-epr-consent"/>
     </resource>
     <resource>
       <reference>
@@ -571,7 +571,7 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/ch-core-consent-epr"/>
+        <reference value="StructureDefinition/ch-core-epr-consent"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
