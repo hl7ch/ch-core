@@ -17,6 +17,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#162](https://github.com/hl7ch/ch-core/issues/162): Update narrative text in examples
 * [#176](https://github.com/hl7ch/ch-core/issues/162): Clean up differentials
 * [#175](https://github.com/hl7ch/ch-core/issues/175): Rename the profile [CH Core EPR-Consent](StructureDefinition-ch-core-epr-consent.html)
+* [173](https://github.com/hl7ch/ch-core/issues/173): Define aggregation mode (contained, referenced) for [Coverage.payor](StructureDefinition-ch-core-coverage.html)
 
 #### Fixed
 * [#163](https://github.com/hl7ch/ch-core/issues/163): Typo
