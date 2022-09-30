@@ -61,8 +61,6 @@
                 <human value="gender unknown is currently not used in Switzerland in eCH and the EPR"/>
                 <expression value="gender.empty() or gender!='unknown'"/>
             </constraint>
-            <mustSupport value="false"/>
-            <isModifier value="false"/>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:author (1..* R)"/>
@@ -86,7 +84,6 @@
             <path value="Practitioner.identifier" />
             <sliceName value="GLN" />
             <short value="GLN (Global Location Number)" />
-            <definition value="GLN (Global Location Number" />
             <type>
                 <code value="Identifier"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-gln-identifier"/>
@@ -100,25 +97,17 @@
         </element>
         <element id="Practitioner.identifier:ZSR.system">
             <path value="Practitioner.identifier.system" />
-            <short value="oid of the ZSR" />
-            <definition value="oid of the ZSR" />
+            <short value="OID of the ZSR" />
             <min value="1" />
             <fixedUri value="urn:oid:2.16.756.5.30.1.123.100.2.1.1" />
         </element>
         <element id="Practitioner.identifier:ZSR.value">
             <path value="Practitioner.identifier.value" />
             <short value="ZSR of the practitioner" />
-            <definition value="ZSR of the practitioner" />
             <min value="1" />
         </element>
         <element id="Practitioner.name">
             <path value="Practitioner.name"/>
-            <short value="The name(s) associated with the practitioner"/>
-            <definition value="The name(s) associated with the practitioner."/>
-            <comment value="The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  &#xD;&#xD;In general, select the value to be used in the ResourceReference.display based on this:&#xD;&#xD;1. There is more than 1 name&#xD;2. Use = usual&#xD;3. Period is current to the date of the usage&#xD;4. Use = official&#xD;5. Other order as decided by internal business rules."/>
-            <requirements value="The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display."/>
-            <min value="0"/>
-            <max value="*"/>
             <type>
                 <code value="HumanName"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname" />
@@ -134,16 +123,6 @@
         </element>
         <element id="Practitioner.telecom">
             <path value="Practitioner.telecom"/>
-            <short value="A contact detail for the practitioner (that apply to all roles)"/>
-            <definition value="A contact detail for the practitioner, e.g. a telephone number or an email address."/>
-            <comment value="Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and to help with identification.  These typically will have home numbers, or mobile numbers that are not role specific."/>
-            <requirements value="Need to know how to reach a practitioner independent to any roles the practitioner may have."/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="ContactPoint"/>
-            </type>
-            <isSummary value="true"/>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:telecom (1..* R)"/>
@@ -163,25 +142,6 @@
         <element id="Practitioner.gender">
             <path value="Practitioner.gender"/>
             <short value="male | female | other"/>
-            <definition value="Administrative Gender - the gender that the person is considered to have for administration and record keeping purposes."/>
-            <requirements value="Needed to address the person correctly."/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="code"/>
-            </type>
-            <isSummary value="true"/>
-            <binding>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-                    <valueString value="AdministrativeGender"/>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-                    <valueBoolean value="true"/>
-                </extension>
-                <strength value="required"/>
-                <description value="The gender of a person used for administrative purposes."/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-            </binding>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.3 sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"/>
@@ -189,15 +149,6 @@
         </element>
         <element id="Practitioner.birthDate">
             <path value="Practitioner.birthDate"/>
-            <short value="The date  on which the practitioner was born"/>
-            <definition value="The date of birth for the practitioner."/>
-            <requirements value="Needed for identification."/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="date"/>
-            </type>
-            <isSummary value="true"/>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.3 birthData, BFS-31"/>
@@ -205,29 +156,6 @@
         </element>
         <element id="Practitioner.communication">
             <path value="Practitioner.communication"/>
-            <short value="A language the practitioner can use in patient communication"/>
-            <definition value="A language the practitioner can use in patient communication."/>
-            <comment value="The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type."/>
-            <requirements value="Knowing which language a practitioner speaks can help in facilitating communication with patients."/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <binding>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-                    <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages"/>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-                    <valueString value="Language"/>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-                    <valueBoolean value="true"/>
-                </extension>
-                <strength value="preferred"/>
-                <description value="A human language."/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
-            </binding>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.9 languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"/>

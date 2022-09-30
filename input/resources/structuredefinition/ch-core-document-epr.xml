@@ -36,7 +36,7 @@
 	<differential>
 		<element id="Bundle">
 			<path value="Bundle"/>
-			<short value="CH Core Bundle EPR"/>
+			<short value="CH Core Document EPR"/>
 		</element>
 		<element id="Bundle.identifier">
 			<path value="Bundle.identifier"/>

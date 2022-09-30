@@ -94,11 +94,8 @@
 
         <element id="Consent.patient">
             <path value="Consent.patient"/>
-            <short value="Who the consent applies to"/>
-            <definition value="The patient to whom this EPR consent applies."/>
-            <comment value="The patient to whom this EPR consent applies."/>
+            <short value="The patient to whom this EPR consent applies"/>
             <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
@@ -134,17 +131,12 @@
         <element id="Consent.provision">
             <path value="Consent.provision"/>
             <short value="Exceptions to the EPR consent"/>
-            <definition value="An exception to the base policy of this consent. An exception can be an addition or removal
-         of access permissions."/>
-            <min value="0"/>
-            <max value="1"/>
         </element>
         <element id="Consent.provision.type">
             <path value="Consent.provision.type"/>
             <short value="deny"/>
-            <definition value="encounters can be added here where the consent for the EPR does not apply."/>
+            <definition value="Encounters can be added here where the consent for the EPR does not apply."/>
             <min value="1"/>
-            <max value="1"/>
             <fixedCode value="deny" />
         </element>
         <element id="Consent.provision.data">
@@ -158,8 +150,6 @@
             <path value="Consent.provision.data.reference"/>
             <short value="Excluded encounter for EPR"/>
             <definition value="A reference to the encounter where the consent for the EPR does not apply."/>
-            <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>

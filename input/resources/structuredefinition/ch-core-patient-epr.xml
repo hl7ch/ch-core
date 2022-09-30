@@ -69,9 +69,6 @@
         <element id="Patient.name">
             <path value="Patient.name"/>
             <min value="1"/>
-        </element> 
-        <element id="Patient.telecom">
-            <path value="Patient.telecom"/>
         </element>  
         <element id="Patient.gender">
             <path value="Patient.gender"/>
@@ -81,8 +78,5 @@
             <path value="Patient.birthDate"/>
             <min value="1"/>
         </element>  
-        <element id="Patient.address">
-            <path value="Patient.address"/>
-        </element>
     </differential>
 </StructureDefinition>
