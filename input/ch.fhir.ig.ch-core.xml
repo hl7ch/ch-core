@@ -52,18 +52,18 @@
     <!-- references for examples -->
     <resource>
       <reference>
-        <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
+        <reference value="Bundle/CdaContainingOriginalRepresentationAsPdfA"/>
       </reference>
-      <name value="Zuweisung zur radiologischen Diagnostik"/>
-      <description value="Example for EPR-Bundle"/>
+      <name value="Transfer note for radiological diagnostics"/>
+      <description value="Document EPR containing original representation as PDF-A (fullUrls of entries with 'urn:uuid:')"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
     </resource>
     <resource>
       <reference>
-        <reference value="Bundle/CdaContainingOriginalRepresentationAsPdfA"/>
+        <reference value="Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
       </reference>
-      <name value="CDA containing Original Representation as PDF-A"/>
-      <description value="Example for EPR-Bundle"/>
+      <name value="Zuweisung zur radiologischen Diagnostik"/>
+      <description value="Document EPR (fullUrls of entries with 'http')"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
     </resource>
     <resource>
@@ -71,23 +71,39 @@
         <reference value="Composition/ZuweisungZurRadiologischenDiagnostik"/>
       </reference>
       <name value="Zuweisung zur radiologischen Diagnostik"/>
-      <description value="Example for EPR-Composition"/>
+      <description value="Composition EPR with the information about the transfer in different sections"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/PatientHasEpr"/>
+      </reference>
+      <name value="Consent for Swiss EPR"/>
+      <description value="Consent that Patient has a Swiss EPR"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Consent/EncounterExcludedForEpr"/>
+      </reference>
+      <name value="Consent for Swiss EPR with Encounter exclusions"/>
+      <description value="Consent that Patient has a Swiss EPR but exclude it for a specific Encounter"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="Coverage/CoverageBroennimann"/>
       </reference>
       <name value="Coverage Broennimann"/>
-      <description value="Example for Coverage"/>
+      <description value="Coverage with Mrs. Broenimann as beneficiary and the health insurance Sanitas as issuer of the policy (represented as contained resource)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-coverage"/>
     </resource>
     <resource>
       <reference>
         <reference value="DocumentReference/Docu"/>
       </reference>
-      <name value="Docu"/>
-      <description value="Example for DocumentReference"/>
+      <name value="DocumentReference to a PDF"/>
+      <description value="DocumentReference with metadata about the document and the referenced document (PDF) as Base64 attachment"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-documentreference"/>
     </resource>
     <resource>
@@ -95,7 +111,7 @@
         <reference value="Encounter/EncounterAmbulantBroennimann"/>
       </reference>
       <name value="Encounter Ambulant Broennimann"/>
-      <description value="Example for Encounter"/>
+      <description value="Ambulant Encounter of Mrs. Broennimann, representing the visit number (Fallnummer) and the BFS variables"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
     </resource>
     <resource>
@@ -103,7 +119,7 @@
         <reference value="Encounter/EncounterAccidentBroennimann"/>
       </reference>
       <name value="Encounter Accident Broennimann"/>
-      <description value="Example for Encounter which is flagged as an accident"/>
+      <description value="Inpatient Encounter of Mrs. Broennimann which is flagged as an accident"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-encounter"/>
     </resource>
     <resource>
@@ -111,7 +127,7 @@
         <reference value="Organization/GruppenpraxisCH"/>
       </reference>
       <name value="Gruppenpraxis CH"/>
-      <description value="Example for EPR-Organization"/>
+      <description value="Organization EPR with GLN, different contact details (e.g. phone, email) and address"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
@@ -119,7 +135,7 @@
         <reference value="Organization/Radiologieinstitut"/>
       </reference>
       <name value="Radiologieinstitut"/>
-      <description value="Example for EPR-Organization"/>
+      <description value="Organization EPR with specified healthcare facility type (Diagnostic institution)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
     </resource>
     <resource>
@@ -127,7 +143,7 @@
         <reference value="Organization/SpitalSeeblick"/>
       </reference>
       <name value="Spital Seeblick"/>
-      <description value="Example for Organization"/>
+      <description value="Organization with specified healthcare facility type (Hospital)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     </resource>
     <resource>
@@ -135,7 +151,7 @@
         <reference value="Organization/PhysiotherapieCH"/>
       </reference>
       <name value="Physiotherapie CH"/>
-      <description value="Example for Organization with GLN ending on 0"/>
+      <description value="Organization with GLN ending on 0"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
     </resource>
     <resource>
@@ -143,7 +159,7 @@
         <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
       <name value="Elisabeth Broennimann by BFH"/>
-      <description value="Example for Patient"/>
+      <description value="Patient with contact details, marital status (eCH &amp; FHIR) and reference to the general practitioner (GP)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
@@ -151,7 +167,7 @@
         <reference value="Patient/FranzMuster"/>
       </reference>
       <name value="Franz Muster"/>
-      <description value="Example for Patient"/>
+      <description value="Patient with place of birth, place of origin (Heimatort), religion, local PID and language of correspondence"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
@@ -159,7 +175,7 @@
         <reference value="Patient/MaxMuster"/>
       </reference>
       <name value="Max Muster"/>
-      <description value="Example for EPR-Patient"/>
+      <description value="Patient EPR with eCH-011 family &amp; and given name and reference to the organization that is the custodian of the patient record"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
     </resource>
     <resource>
@@ -167,7 +183,7 @@
         <reference value="Patient/MarvinMuster"/>
       </reference>
       <name value="Marvin Muster"/>
-      <description value="Example for Patient with AHVN13 / NAVS13 as identifier"/>
+      <description value="Patient with AHVN13/NAVS13 as identifier"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
@@ -175,7 +191,7 @@
         <reference value="Patient/ManuelaMuster"/>
       </reference>
       <name value="Manuela Muster"/>
-      <description value="Example for Patient with EPR-SPID ending on 0"/>
+      <description value="Patient with EPR-SPID ending on 0"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
@@ -183,7 +199,7 @@
         <reference value="Patient/PersonEch011"/>
       </reference>
       <name value="Person eCH-011"/>
-      <description value="Example for Patient"/>
+      <description value="Patient eCH-011 with names, marital status and separation type, delivery address if it is not the address of the patient (detailed explanation in narrative)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
@@ -191,7 +207,7 @@
         <reference value="Patient/UpiEprTestKrcmarevic"/>
       </reference>
       <name value="UPI EPR Test Krcmarevic"/>
-      <description value="Example for Patient"/>
+      <description value="Test Patient from UPI for Swiss EPR Projectathon"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
@@ -199,7 +215,7 @@
         <reference value="Practitioner/AgparMarc"/>
       </reference>
       <name value="Agpar Marc"/>
-      <description value="Example for Practitioner"/>
+      <description value="Practitioner with GLN and name"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
@@ -207,7 +223,7 @@
         <reference value="Practitioner/AllzeitBereit"/>
       </reference>
       <name value="Allzeit Bereit"/>
-      <description value="Example for EPR-Practitioner"/>
+      <description value="Practitioner EPR with name with prefixes (salutation, academic title, legal status) and suffix ('Facharzt für Allgemeine Medizin')"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </resource>
     <resource>
@@ -215,7 +231,7 @@
         <reference value="Practitioner/HanspeterWengerByBFH"/>
       </reference>
       <name value="Hanspeter Wenger by BFH"/>
-      <description value="Example for Practitioner"/>
+      <description value="Practitioner with GLN and ZSR, name with prefixes, gender and birth date"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </resource>
     <resource>
@@ -223,25 +239,24 @@
         <reference value="Practitioner/SchreibKraft"/>
       </reference>
       <name value="Schreib Kraft"/>
-      <description value="Example for Practitioner (with local identifier - neither GLN nor ZSR)"/>
+      <description value="Practitioner (physician assistants) with local identifier (neither GLN nor ZSR)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="PractitionerRole/HPWengerRole"/>
-      </reference>
-      <name value="Hanspeter Wenger (PractitionerRole)"/>
-      <description value="Example for PractitionerRole"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
     </resource>
     <resource>
       <reference>
         <reference value="PractitionerRole/SchreibKraft"/>
       </reference>
-      <name value="Schreib Kraft"/>
-      <description value="Example for PractitionerRole as Data Enterer"/>
+      <name value="Schreib Kraft @ Gruppenpraxis CH"/>
+      <description value="PractitionerRole with referenced practitioner and organization"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="PractitionerRole/HPWengerRole"/>
+      </reference>
+      <name value="Hanspeter Wenger @ Spital Seeblick"/>
+      <description value="PractitionerRole EPR with profession (role) and specialisation"/>
+      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
     </resource>
 
     <!-- references for code systems -->
@@ -350,50 +365,33 @@
       <exampleBoolean value="false"/>
     </resource>
 
-    <resource>
-      <reference>
-        <reference value="Consent/PatientHasEpr"/>
-      </reference>
-      <name value="Consent for Swiss EPR"/>
-      <description value="Example for a consent that Patient has a Swiss EPR"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="Consent/EncounterExcludedForEpr"/>
-      </reference>
-      <name value="Consent for Swiss EPR with Encounter exclusions"/>
-      <description value="Example for a consent that Patient has a Swiss EPR but exclude it for a specific encounter"/>
-      <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"/>
-    </resource>
-
     <!-- references for naming systems -->
     <resource>
       <reference>
         <reference value="NamingSystem/ahvn13"/>
       </reference>
-      <name value="ahvn13"/>
+      <name value="AHVN13 / NAVS13"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/ber"/>
       </reference>
-      <name value="ber"/>
+      <name value="BER"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/epr-spid"/>
       </reference>
-      <name value="epr-spid"/>
+      <name value="EPR-SPID"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/gln"/>
       </reference>
-      <name value="gln"/>
+      <name value="GLN"/>
       <exampleBoolean value="false"/>
     </resource>
     <!-- uncommented because of missing uniqueId -->
@@ -401,28 +399,28 @@
       <reference>
         <reference value="NamingSystem/k"/>
       </reference>
-      <name value="k"/>
+      <name value="K"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/nif"/>
       </reference>
-      <name value="nif"/>
+      <name value="NIF"/>
       <exampleBoolean value="false"/>
     </resource>-->
     <resource>
       <reference>
         <reference value="NamingSystem/uidb"/>
       </reference>
-      <name value="uidb"/>
+      <name value="UIDB"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <reference>
         <reference value="NamingSystem/zsr"/>
       </reference>
-      <name value="zsr"/>
+      <name value="ZSR"/>
       <exampleBoolean value="false"/>
     </resource>
 
