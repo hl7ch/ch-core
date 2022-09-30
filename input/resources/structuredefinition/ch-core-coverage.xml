@@ -98,11 +98,14 @@
         </element>
         <element id="Coverage.payor">
             <path value="Coverage.payor"/>
+            <short value="Issuer of the policy (if it is not the patient itself, represent it as a contained resource)"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
                 <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+                <aggregation value="contained"/>
+                <aggregation value="referenced"/>
             </type>
         </element>
     </differential>
