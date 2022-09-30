@@ -24,16 +24,6 @@
         </coding>
     </jurisdiction>
     <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="servd"/>
-        <uri value="http://www.omg.org/spec/ServD/1.0/"/>
-        <name value="ServD"/>
-    </mapping>
-    <mapping>
-        <identity value="rim"/>
-        <uri value="http://hl7.org/v3"/>
-        <name value="RIM Mapping"/>
-    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Location"/>
@@ -43,58 +33,26 @@
         <element id="Location">
             <path value="Location"/>
             <short value="CH Core Location"/>
-            <mustSupport value="false"/>
-            <isModifier value="false"/>
-            <mapping>
-                <identity value="servd"/>
-                <map value="Organization"/>
-            </mapping>
         </element>
         <element id="Location.status">
             <path value="Location.status"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="code"/>
-            </type>
         </element>
         <element id="Location.name">
             <path value="Location.name"/>
             <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="string"/>
-            </type>
-            <mapping>
-                <identity value="servd"/>
-                <map value="./PrimaryAddress and ./OtherAddresses"/>
-            </mapping>
         </element>
         <element id="Location.telecom">
             <path value="Location.telecom"/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="ContactPoint"/>
-            </type>
         </element>
         <element id="Location.address">
             <path value="Location.address"/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="Address"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-10"/>
             </type>
-            <mapping>
-                <identity value="servd"/>
-                <map value="n/a"/>
-            </mapping>
         </element>
         <element id="Location.managingOrganization">
             <path value="Location.managingOrganization"/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>

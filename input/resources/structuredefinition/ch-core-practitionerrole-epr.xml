@@ -64,14 +64,6 @@
         </element>
         <element id="PractitionerRole.specialty">
             <path value="PractitionerRole.specialty"/>
-            <short value="Specific specialty of the practitioner"/>
-            <definition value="Specific specialty of the practitioner."/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <isSummary value="true"/>
             <binding>
                 <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
                     <valueString value="PractitionerSpecialty"/>
@@ -80,18 +72,6 @@
                 <description value="Specific specialty associated with the agency."/>
                 <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/HCProfessional.hcSpecialisation"/>
             </binding>
-            <mapping>
-                <identity value="v2"/>
-                <map value="PRA-5"/>
-            </mapping>
-            <mapping>
-                <identity value="rim"/>
-                <map value=".player.HealthCareProvider[@classCode = &#39;PROV&#39;].code"/>
-            </mapping>
-            <mapping>
-                <identity value="servd"/>
-                <map value="./Specialty"/>
-            </mapping>
         </element>
     </differential>
 </StructureDefinition>
