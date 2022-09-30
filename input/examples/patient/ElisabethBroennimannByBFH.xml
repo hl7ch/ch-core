@@ -5,36 +5,6 @@
     <source value="https://www.ti.bfh.ch/de/bachelor/medizininformatik.html"/>
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
   </meta>
-  <text>
-    <status value="additional"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>
-        <b>id</b>: ElisabethBroennimannByBFH
-      </p>
-      <p>
-        <b>meta</b>: 
-      </p>
-      <p>
-        <b>name</b>: Elisabeth Br&#xF6;nnimann-Bertholet 
-      </p>
-      <p>
-        <b>telecom</b>: ph: +41 32 321 61 11(HOME), elisabeth@broennimann.today
-      </p>
-      <p>
-        <b>gender</b>: FEMALE
-      </p>
-      <p>
-        <b>birthDate</b>: May 3, 1937
-      </p>
-      <p>
-        <b>address</b>: Kreuzweg 11 Biel/Bienne 2500 (HOME)
-      </p>
-      <p>
-        <b>maritalStatus</b>: verheiratet 
-        <span style="background: LightGoldenRodYellow">(Details : {http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritalstatus code &#39;2&#39; = &#39;2&#39;, given as &#39;verheiratet&#39;}; {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code &#39;M&#39; = &#39;Married&#39;, given as &#39;married&#39;})</span>
-      </p>
-    </div>
-  </text>
   <name>
     <family value="Brönnimann-Bertholet"/>
     <given value="Elisabeth"/>

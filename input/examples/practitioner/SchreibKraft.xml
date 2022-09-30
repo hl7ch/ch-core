@@ -4,6 +4,7 @@
     <meta>
         <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
     </meta>
+    <!-- lokal Identifier -->
     <identifier>
         <system value="urn:oid:2.999.1.2.3.4"/>
         <value value="0812763"/>

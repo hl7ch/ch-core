@@ -2,7 +2,7 @@
 <PractitionerRole xmlns="http://hl7.org/fhir">
     <id value="HPWengerRole"/>
     <meta>
-        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
     </meta>
     <practitioner>
         <reference value="Practitioner/HanspeterWengerByBFH"/>

@@ -2,12 +2,12 @@
 <Bundle xmlns="http://hl7.org/fhir">
    <id value="1-ZuweisungZurRadiologischenDiagnostik-FHIR"/>
    <meta>
-      <lastUpdated value="2019-12-05T07:53:22.889+00:00"/>
+      <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
       <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
    </meta>
    <identifier>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:uuid:31397B31-BE60-47E1-BEC6-F37816D42B0C"/>
+      <value value="urn:uuid:31397b31-be60-47e1-bec6-f37816d42b0c"/>
    </identifier>
    <type value="document"/>
    <timestamp value="2017-10-03T17:33:00+01:00"/>
@@ -16,11 +16,6 @@
       <resource>
          <Composition xmlns="http://hl7.org/fhir">
             <id value="ZuweisungZurRadiologischenDiagnostik"/>
-            <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-12-05T07:53:12.886+00:00"/>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
-            </meta>
             <language value="de-CH"/>
             <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
                <valueUnsignedInt value="2"/>
@@ -42,7 +37,7 @@
             </extension>
             <identifier>
                <system value="urn:ietf:rfc:3986"/>
-               <value value="urn:uuid:31397B31-BE60-47E1-BEC6-F37816D42B0C"/>
+               <value value="urn:uuid:31397b31-be60-47e1-bec6-f37816d42b0c"/>
             </identifier>
             <status value="final"/>
             <type>
@@ -156,11 +151,6 @@
       <resource>
          <Practitioner xmlns="http://hl7.org/fhir">
             <id value="AllzeitBereit"/>
-            <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-12-05T07:52:50.224+00:00"/>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-            </meta>
             <identifier>
                <system value="urn:oid:2.51.1.3"/>
                <value value="7601000201041"/>
@@ -180,11 +170,6 @@
       <resource>
          <Patient xmlns="http://hl7.org/fhir">
             <id value="MaxMuster"/>
-            <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-12-05T07:53:10.477+00:00"/>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
-            </meta>
             <identifier>
                <type>
                   <coding>
@@ -244,11 +229,6 @@
       <resource>
          <Organization xmlns="http://hl7.org/fhir">
             <id value="GruppenpraxisCH"/>
-            <meta>
-               <versionId value="1"/>
-               <lastUpdated value="2019-12-05T07:52:58.369+00:00"/>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
-            </meta>
             <identifier>
                <system value="urn:oid:2.51.1.3"/>
                <value value="7601000201041"/>
@@ -290,9 +270,6 @@
       <resource>
          <Organization xmlns="http://hl7.org/fhir">
             <id value="Radiologieinstitut"/>
-            <meta>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
-            </meta>
             <identifier>
                <system value="urn:oid:2.51.1.3"/>
                <value value="7601000618627"/>
@@ -335,9 +312,6 @@
       <resource>
          <Practitioner xmlns="http://hl7.org/fhir">
             <id value="SchreibKraft"/>
-            <meta>
-               <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
-            </meta>
             <identifier>
                <system value="urn:oid:2.999.1.2.3.4"/>
                <value value="0812763"/>
