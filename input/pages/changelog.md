@@ -26,9 +26,10 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#167](https://github.com/hl7ch/ch-core/issues/167): Fix URIs in ConceptMaps ([MaritalStatus eCH-011 to FHIR mapping](ConceptMap-maritalstatus-ech11-to-fhir.html), [Sex eCH-011 to FHIR mapping](ConceptMap-sex-ech11-to-fhir.html))
 * [#152](https://github.com/hl7ch/ch-core/issues/152): Changes status form 'draft' to 'active'
 
-#### Issues resolved without amendment
+#### Issues resolved without amendment (in IG)
 * [#39](https://github.com/hl7ch/ch-core/issues/39): Consent code for ch-epr has been added in [hl7.terminology](https://terminology.hl7.org/4.0.0/CodeSystem-consentpolicycodes.html) published 2022-09-14	(version 4.0.0)
 * [#174](https://github.com/hl7ch/ch-core/issues/174): Verification/confirmation that the eCH-011 values for gender are still up-to-date
+* [#157](https://github.com/hl7ch/ch-core/issues/157): Fixed dead link on the [HL7.ch FHIR IG Balloting](https://github.com/hl7ch/ch-core/wiki/HL7.ch-FHIR-IG-Balloting) page
 
 
 ### STU3 Ballot (2022-06-29)
