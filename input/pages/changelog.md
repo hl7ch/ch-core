@@ -20,6 +20,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#173](https://github.com/hl7ch/ch-core/issues/173): Define aggregation mode (contained, referenced) for [Coverage.payor](StructureDefinition-ch-core-coverage.html)
 * [#170](https://github.com/hl7ch/ch-core/issues/170): Check the slicing and update suppressed messages
 * [#153](https://github.com/hl7ch/ch-core/issues/153): Rephrasing of the sentence for the exchange formats (current and general validity)
+* [#158](https://github.com/hl7ch/ch-core/issues/158): Update to FHIR Release #4B (v4.3.0)
 
 #### Fixed
 * [#163](https://github.com/hl7ch/ch-core/issues/163): Typo
