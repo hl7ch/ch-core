@@ -16,7 +16,7 @@
         </telecom>
     </contact>
     <description value="CDA documents have the ability to add additional timestamps for the author or other elements. This extensions allows to add CDA timestamps to the respective FHIR elements."/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="4.3.0"/>
     <mapping>
         <identity value="CDA-CH-V2"/>
         <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>

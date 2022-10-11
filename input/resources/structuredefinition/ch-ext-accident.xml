@@ -16,7 +16,7 @@
         </telecom>
     </contact>
     <description value="Extension to define an encounter that is caused by an accident and at which time the accident happened"/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="4.3.0"/>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>

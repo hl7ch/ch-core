@@ -16,7 +16,7 @@
         </telecom>
     </contact>
     <description value="Extension to define a section identifier. A CDA section has an optional identifier. With this extension the CDA section identifier can be added to the section of the FHIR composition."/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="4.3.0"/>
     <mapping>
         <identity value="CDA-CH-V2"/>
         <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>

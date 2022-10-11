@@ -16,7 +16,7 @@
   <url value="http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core"/>
   <version value="3.0.0"/>
   <name value="CH_Core"/>
-  <title value="CH Core (R4)"/>
+  <title value="CH Core (R4B)"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2022-09-29"/>
@@ -38,7 +38,7 @@
   <copyright value="CC-BY-SA-4.0"/>
   <packageId value="ch.fhir.ig.ch-core"/>
   <license value="CC-BY-SA-4.0"/>
-  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.3.0"/>
   <dependsOn id="cheprterm">
     <uri value="http://fhir.ch/ig/ch-epr-term/ImplementationGuide/ch.fhir.ig.ch-epr-term"/>
     <packageId value="ch.fhir.ig.ch-epr-term"/>

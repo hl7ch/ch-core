@@ -23,7 +23,7 @@
         </coding>
     </jurisdiction>
     <purpose value="Coverage information which can be shared" />
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="4.3.0"/>
     <mapping>
         <identity value="rim"/>
         <uri value="http://hl7.org/v3"/>

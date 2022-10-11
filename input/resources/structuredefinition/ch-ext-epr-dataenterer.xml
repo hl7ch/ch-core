@@ -16,7 +16,7 @@
         </telecom>
     </contact>
     <description value="Extension to define the information about the person and organisation that entered data and the time of the data input, equivalent to the dataEnterer from a CDA document"/>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="4.3.0"/>
     <mapping>
         <identity value="CDA-CH-V2"/>
         <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>

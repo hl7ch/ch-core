@@ -23,7 +23,7 @@
             <code value="CH"/>
         </coding>
     </jurisdiction>
-    <fhirVersion value="4.0.1"/>
+    <fhirVersion value="4.3.0"/>
     <mapping>
         <identity value="servd"/>
         <uri value="http://www.omg.org/spec/ServD/1.0/"/>

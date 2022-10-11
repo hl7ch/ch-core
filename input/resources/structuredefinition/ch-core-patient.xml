@@ -25,7 +25,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </coding>
     </jurisdiction>
     <purpose value="Core patient demographics which can be shared" />
-    <fhirVersion value="4.0.1" />
+    <fhirVersion value="4.3.0" />
     <mapping>
         <identity value="CDA-CH-V2"/>
         <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>

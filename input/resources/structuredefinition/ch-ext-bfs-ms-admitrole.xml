@@ -22,7 +22,7 @@
             <code value="CH"/>
         </coding>
     </jurisdiction>
-    <fhirVersion value="4.0.1" />
+    <fhirVersion value="4.3.0" />
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>

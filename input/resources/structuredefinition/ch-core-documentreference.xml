@@ -22,7 +22,7 @@
 			<code value="CH"/>
 		</coding>
 	</jurisdiction>
-	<fhirVersion value="4.0.1"/>
+	<fhirVersion value="4.3.0"/>
 	<mapping>
 		<identity value="EPR-XDS"/>
 		<uri value="https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf"/>
