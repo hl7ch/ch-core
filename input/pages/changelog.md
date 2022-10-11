@@ -9,6 +9,7 @@ During the ballot, the following comments came in, which will be taken into acco
 See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 
 #### Added
+* [#172](https://github.com/hl7ch/ch-core/issues/172): Generic CH Core extension [Author of the content](StructureDefinition-ch-ext-author.html) (fusion of the extensions from CH EMED and CH VACD)
 
 #### Changed / Updated
 * [#150](https://github.com/hl7ch/ch-core/issues/150): Expansion of the context of the extension [EPR Time](StructureDefinition-ch-ext-epr-time.html)
