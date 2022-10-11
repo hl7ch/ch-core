@@ -98,7 +98,7 @@
         </element>
         <element id="Coverage.payor">
             <path value="Coverage.payor"/>
-            <short value="Issuer of the policy (if it is not the patient itself, represent it as a contained resource)"/>
+            <short value="Issuer of the policy (if it is not the patient him/herself, represent the payor as a contained resource)"/>
             <type>
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
