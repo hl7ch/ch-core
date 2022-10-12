@@ -523,6 +523,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-ext-author"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-composition-epr"/>
       </reference>
       <exampleBoolean value="false"/>
