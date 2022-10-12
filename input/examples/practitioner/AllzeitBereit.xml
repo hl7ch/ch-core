@@ -2,6 +2,7 @@
 <Practitioner xmlns="http://hl7.org/fhir">
     <id value="AllzeitBereit"/>
     <meta>
+        <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
         <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
     </meta>
     <identifier>

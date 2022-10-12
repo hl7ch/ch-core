@@ -63,8 +63,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <human value="gender unknown is currently not used in Switzerland in eCH and the EPR"/>
                 <expression value="gender.empty() or gender!='unknown'"/>
             </constraint>
-            <mustSupport value="false"/>
-            <isModifier value="false"/>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1)"/>
@@ -121,7 +119,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.extension:citizenship">
             <path value="Patient.extension" />
             <sliceName value="citizenship" />
-            <short value="Citizenships of patient"/>
+            <short value="Citizenship(s) of patient"/>
             <definition value="The content of the country code element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, if the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
             <min value="0"/>
             <max value="*"/>
@@ -210,14 +208,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.identifier.value:AHVN13">
             <path value="Patient.identifier.value" />
             <short value="AHVN13 / NAVS13 of the patient (13 digits starting with 756, no separation points)" />
-            <definition value="AHVN13 / NAVS13 of the patient (13 digits starting with 756, no separation points)"/>
             <min value="1" />
         </element>
         <element id="Patient.identifier:LocalPid">
             <path value="Patient.identifier" />
             <sliceName value="LocalPid" />
-            <short value="Local patient identifiers" />
-            <definition value="Local patient identifiers" />
+            <short value="Local patient identifier(s)" />
             <min value="0" />
             <max value="*" />
             <patternIdentifier>
@@ -239,17 +235,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.name">
             <path value="Patient.name"/>
-            <short value="A name associated with the patient"/>
-            <definition value="A name associated with the individual."/>
-            <comment value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns."/>
-            <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name."/>
-            <min value="0"/>
-            <max value="*"/>
-            <base>
-                <path value="Patient.name"/>
-                <min value="0"/>
-                <max value="*"/>
-            </base>
             <type>
                 <code value="HumanName"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-humanname" />
@@ -265,16 +250,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.telecom">
             <path value="Patient.telecom"/>
-            <short value="A contact detail for the individual"/>
-            <definition value="A contact detail (e.g. a telephone number or an email address) by which the individual may be contacted."/>
-            <comment value="A Patient may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently and also to help with identification. The address might not go directly to the individual, but may reach another party that is able to proxy for the patient (i.e. home phone, or pet owner&#39;s phone)."/>
-            <requirements value="People have (primary) ways to contact them in some way such as phone, email."/>
-            <min value="0"/>
-            <max value="*"/>
-            <type>
-                <code value="ContactPoint"/>
-            </type>
-            <isSummary value="true"/>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:recordTarget (1..1 R) / hl7:patientRole (1..1 R) / hl7:telecom (0..*)"/>
@@ -283,25 +258,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <element id="Patient.gender">
             <path value="Patient.gender"/>
             <short value="male | female | other"/>
-            <definition value="Biological sex of the person or sex of the person defined by a court decision."/>
-            <requirements value="The indication of sex  may only be made for persons for whom the physical sex characteristics cannot be unambiguously assigned. Swiss law does not recognise this gender. Thus, only foreign persons who have not been registered by the Swiss civil status system can be provided with this characteristic in the population controls."/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="code"/>
-            </type>
-            <isSummary value="true"/>
-            <binding>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-                    <valueString value="AdministrativeGender"/>
-                </extension>
-                <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding">
-                    <valueBoolean value="true"/>
-                </extension>
-                <strength value="required"/>
-                <description value="The gender of a person used for administrative purposes."/>
-                <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
-            </binding>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.3 sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"/>
@@ -313,15 +269,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
-            <short value="The date of birth for the individual"/>
-            <definition value="The date of birth for the individual."/>
-            <comment value="The date of birth must be valid and entered in the date format YYYY-MM-DD. In exceptional cases where the day or month of the date of birth is not known, YYYY-MM or YYYYY formats will also be accepted."/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="date"/>
-            </type>
-            <isSummary value="true"/>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.3 birthData, BFS-31"/>
@@ -333,21 +280,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.deceased[x]">
             <path value="Patient.deceased[x]"/>
-            <short value="Indicates if the individual is deceased or not"/>
-            <definition value="Indicates if the individual is deceased or not."/>
-            <comment value="If there&#39;s no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive."/>
-            <requirements value="The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive."/>
-            <min value="0"/>
-            <max value="1"/>
             <type>
                 <code value="boolean"/>
             </type>
             <type>
                 <code value="dateTime"/>
             </type>
-            <isModifier value="true"/>
-            <isModifierReason value="This element is labeled as a modifier because once a patient is marked as deceased, the actions that are appropriate to perform on the patient may be significantly different."/>
-            <isSummary value="true"/>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.7 deathData, deathPeriod, dateFrom, BFS-361"/>
@@ -359,12 +297,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.address">
             <path value="Patient.address"/>
-            <short value="An address for the individual"/>
-            <definition value="An address for the individual."/>
-            <comment value="Patient may have multiple addresses with different uses or applicable periods."/>
-            <requirements value="May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification."/>
-            <min value="0"/>
-            <max value="*"/>
             <type>
                 <code value="Address"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
@@ -376,21 +308,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.maritalStatus">
             <path value="Patient.maritalStatus"/>
-            <short value="Marital (civil) status of a patient"/>
-            <definition value="This field contains a patient&#39;s most recent marital (civil) status."/>
-            <requirements value="Most, if not all systems capture it."/>
-            <min value="0"/>
-            <max value="1"/>
-            <base>
-                <path value="Patient.maritalStatus"/>
-                <min value="0"/>
-                <max value="1"/>
-            </base>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
-            <isModifier value="false"/>
-            <isSummary value="false"/>
             <binding>
                 <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
                     <valueString value="MaritalStatus"/>
@@ -435,11 +352,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.5.5 separation - Trennung BFS-343"/>
             </mapping>
-        </element>        
+        </element>       
+
         <element id="Patient.contact">
-            <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-                <valueString value="Contact"/>
-            </extension>
             <path value="Patient.contact"/>
             <slicing>
                 <discriminator>
@@ -450,10 +365,11 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <rules value="open"/>
             </slicing>
         </element>
+        <!-- slice contact -->
         <element id="Patient.contact:contact">
             <path value="Patient.contact"/>
             <sliceName value="contact"/>
-            <short value="Contactdata if it is not address of patient"/>
+            <short value="Contact data if it is not address of patient"/>
             <min value="0"/>
             <max value="1"/>
             <mapping>
@@ -467,77 +383,35 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact.relationship:contact">
             <path value="Patient.contact.relationship"/>
-            <short value="The kind of relationship"/>
-            <definition value="The nature of the relationship between the patient and the contact person."/>
-            <requirements value="Used to determine which contact person is the most relevant to approach, depending on circumstances."/>
-            <min value="0"/>
             <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-11" />
                     <code value="contactData" />
                 </coding>
             </patternCodeableConcept>
-            <mapping>
-                <identity value="rim"/>
-                <map value="code"/>
-            </mapping>
-            <mapping>
-                <identity value="cda"/>
-                <map value="n/a"/>
-            </mapping>
         </element>
         <element id="Patient.contact.name:contact">
             <path value="Patient.contact.name"/>
-            <short value="A name associated with the contact person"/>
-            <definition value="A name associated with the contact person."/>
-            <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person."/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="HumanName"/>
-            </type>
-            <mapping>
-                <identity value="v2"/>
-                <map value="NK1-2"/>
-            </mapping>
-            <mapping>
-                <identity value="rim"/>
-                <map value="name"/>
-            </mapping>
-            <mapping>
-                <identity value="cda"/>
-                <map value="n/a"/>
-            </mapping>
         </element>
         <element id="Patient.contact.telecom:contact">
             <path value="Patient.contact.telecom"/>
-            <short value="A contact detail for the person"/>
-            <definition value="A contact detail for the person, e.g. a telephone number or an email address."/>
-            <comment value="Contact may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification."/>
-            <requirements value="People have (primary) ways to contact them in some way such as phone, email."/>
             <min value="0"/>
             <max value="0"/>
         </element>
         <element id="Patient.contact.address:contact">
             <path value="Patient.contact.address"/>
-            <short value="Address for the contact person"/>
-            <definition value="Address for the contact person."/>
-            <requirements value="Need to keep track where the contact person can be contacted per postal mail or visited."/>
             <min value="1"/>
-            <max value="1"/>
             <type>
                 <code value="Address"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address-ech-10" />
             </type>
         </element>
+        <!-- slice nameOfFather -->
         <element id="Patient.contact:nameOfFather">
             <path value="Patient.contact"/>
             <sliceName value="nameOfFather"/>
-            <short value="Name of Father"/>
+            <short value="Name of father"/>
             <min value="0"/>
             <max value="1"/>
             <mapping>
@@ -547,14 +421,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact.relationship:nameOfFather">
             <path value="Patient.contact.relationship"/>
-            <short value="The kind of relationship"/>
-            <definition value="The nature of the relationship between the patient and the contact person."/>
-            <requirements value="Used to determine which contact person is the most relevant to approach, depending on circumstances."/>
-            <min value="0"/>
             <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
@@ -564,19 +431,13 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact.name:nameOfFather">
             <path value="Patient.contact.name"/>
-            <short value="A name associated with the contact person"/>
-            <definition value="A name associated with the contact person."/>
-            <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person."/>
             <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="HumanName"/>
-            </type>
         </element>
+        <!-- slice nameOfMother -->
         <element id="Patient.contact:nameOfMother">
             <path value="Patient.contact"/>
             <sliceName value="nameOfMother"/>
-            <short value="Name of Mother"/>
+            <short value="Name of mother"/>
             <min value="0"/>
             <max value="1"/>
             <mapping>
@@ -586,14 +447,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact.relationship:nameOfMother">
             <path value="Patient.contact.relationship"/>
-            <short value="The kind of relationship"/>
-            <definition value="The nature of the relationship between the patient and the contact person."/>
-            <requirements value="Used to determine which contact person is the most relevant to approach, depending on circumstances."/>
-            <min value="0"/>
             <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
             <patternCodeableConcept>
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
@@ -603,15 +457,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.contact.name:nameOfMother">
             <path value="Patient.contact.name"/>
-            <short value="A name associated with the contact person"/>
-            <definition value="A name associated with the contact person."/>
-            <requirements value="Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person."/>
             <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="HumanName"/>
-            </type>
         </element>
+
         <element id="Patient.communication">
             <path value="Patient.communication"/>
             <slicing>
@@ -622,17 +470,14 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
-            <short value="A language which may be used to communicate with the patient about his or her health"/>
         </element>
+        <!-- slice language of correspondence -->
         <element id="Patient.communication:languageOfCorrespondence">
             <path value="Patient.communication"/>
             <sliceName value="languageOfCorrespondence"/>
-            <short value="A language which may be used to communicate with the patient about his or her health"/>
+            <short value="Language of correspondence"/>
             <min value="0"/>
             <max value="1"/>
-            <type>
-                <code value="BackboneElement"/>
-            </type>
             <mapping>
                 <identity value="CDA-CH-V2"/>
                 <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:languageCommunication (0..*) / hl7:languageCode (1..1)"/>
@@ -644,27 +489,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.communication.language:languageOfCorrespondence">
             <path value="Patient.communication.language"/>
-            <short value="The language which can be used to communicate with the patient about his or her health"/>
-            <definition value="The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English."/>
-            <comment value="The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems actually code this but instead have it as free text. Hence CodeableConcept instead of code as the data type."/>
-            <requirements value="Most systems in multilingual countries will want to convey language. Not all systems actually need the regional dialect."/>
-            <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="CodeableConcept"/>
-            </type>
         </element>
         <element id="Patient.communication.preferred:languageOfCorrespondence">
             <path value="Patient.communication.preferred"/>
-            <short value="Language preference indicator"/>
-            <definition value="Indicates whether or not the patient prefers this language (over other languages he masters up a certain level)."/>
-            <comment value="This language is specifically identified for communicating healthcare information."/>
-            <requirements value="People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method."/>
             <min value="1"/>
-            <max value="1"/>
-            <type>
-                <code value="boolean"/>
-            </type>
             <fixedBoolean value="true" />
         </element>    
     </differential>

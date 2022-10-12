@@ -12,9 +12,7 @@ This guide is a working specification. We anticipate that it will be implemented
 
 <div markdown="1" class="stu-note">
 
-This implementation guide is under ballot for STU 3 by [HL7 Switzerland](https://www.hl7.ch/) until September 30th, 2022 midnight. Please add your feedback via the 'Propose a change'-link in the footer on the page where you have comments. 
-
-[Significant Changes, Open and Closed Issues](changelog.html)
+[Significant changes, open and closed issues](changelog.html)
 
 </div>
 
@@ -30,7 +28,7 @@ Metadata relating to the Swiss EPR is defined in Annexes 3 and 9 by the [Ministr
 
 #### Exchange formats (Annex 4)
 
-There are currently three exchange formats defined in the draft of Annex 4. Those three exchange formats are based on CDA-CH V2. Exchange formats can also be represented with FHIR documents.
+Exchange formats for the Swiss EPR are defined in Annex 4. Exchange formats can be represented as FHIR documents.
 
 - [CH Core Document Profile EPR](StructureDefinition-ch-core-document.html): the base definition for a structured document in the Swiss EPR; it corresponds to a [CDA-CH derived document](https://art-decor.org/art-decor/decor-project--hl7chcda-).
 - [CH Core Composition Profile EPR](StructureDefinition-ch-core-composition-epr.html): the base definition for a composition; it corresponds to the [CDA-CH v2.1 - structuredBody](https://art-decor.org/art-decor/decor-templates--hl7chcda-?section=templates&id=2.16.756.5.30.1.1.10.1.9&effectiveDate=2019-10-17T15:22:41&language=en-US) template.
@@ -60,7 +58,7 @@ This guide is the product of collaborative work undertaken with participants fro
 * [HL7 Switzerland](https://www.hl7.ch)
 * [eHealth Suisse](https://www.e-health-suisse.ch/en/home.html)
 
-### Safety considerations
+### Safety Considerations
 This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: [https://www.hl7.org/FHIR/safety.html](https://www.hl7.org/FHIR/safety.html).
 
 Although the present specification does gives users the opportunity to observe data protection and data security regulations, its use does not guarantee compliance with these regulations. Effective compliance must be ensured by appropriate measures during implementation projects and in daily operations. The corresponding implementation measures are explained in the standard. 

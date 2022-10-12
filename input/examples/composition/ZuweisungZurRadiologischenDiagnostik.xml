@@ -2,8 +2,9 @@
 <Composition xmlns="http://hl7.org/fhir">
   <id value="ZuweisungZurRadiologischenDiagnostik"/>
   <meta>
-    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
-  </meta>
+      <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"/>
+      <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"/>
+   </meta>
   <language value="de-CH"/>
   <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber">
     <valueUnsignedInt value="2"/>
@@ -25,7 +26,7 @@
   </extension>
   <identifier>
       <system value="urn:ietf:rfc:3986"/>
-      <value value="urn:uuid:31397B31-BE60-47E1-BEC6-F37816D42B0C"/>
+      <value value="urn:uuid:31397b31-be60-47e1-bec6-f37816d42b0c"/>
    </identifier>
   <status value="final"/>
   <type>

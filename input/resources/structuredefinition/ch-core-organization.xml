@@ -58,7 +58,6 @@
             <path value="Organization.identifier" />
             <sliceName value="BER" />
             <short value="BER (Business and Enterprise Register)" />
-            <definition value="BER (Business and Enterprise Register)" />
             <max value="1" />
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.45" />
@@ -74,8 +73,7 @@
         <element id="Organization.identifier:UIDB">
             <path value="Organization.identifier" />
             <sliceName value="UIDB" />
-            <short value="Unique IDentification Business (UIDB)" />
-            <definition value="Unique IDentification Business (UIDB)" />
+            <short value="Unique Identification Business (UIDB)" />
             <max value="1" />
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.35" />
@@ -83,8 +81,7 @@
         </element>
         <element id="Organization.identifier:UIDB.value">
             <path value="Organization.identifier.value" />
-            <short value="UIDB of the Organization" />
-            <definition value="UIDB of the Organization" />
+            <short value="UIDB of the organization" />
             <min value="1" />
         </element>
 
@@ -92,7 +89,6 @@
             <path value="Organization.identifier" />
             <sliceName value="ZSR" />
             <short value="Zahlstellenregister (ZSR)" />
-            <definition value="Zahlstellenregister (ZSR)" />
             <max value="1" />
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.30.1.123.100.2.1.1" />
@@ -100,8 +96,7 @@
         </element>
         <element id="Organization.identifier:ZSR.value">
             <path value="Organization.identifier.value" />
-            <short value="ZSR of the Organization" />
-            <definition value="ZSR of the Organization" />
+            <short value="ZSR of the organization" />
             <min value="1" />
         </element>
 
@@ -109,7 +104,6 @@
             <path value="Organization.identifier" />
             <sliceName value="GLN" />
             <short value="Global Location Number (GLN)" />
-            <definition value="Global Location Number (GLN)" />
             <max value="1" />
             <type>
                 <code value="Identifier"/>

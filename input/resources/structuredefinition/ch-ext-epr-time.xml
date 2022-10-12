@@ -44,6 +44,34 @@
         <type value="element"/>
         <expression value="MedicationStatement.extension"/>
     </context>
+    <context>
+        <type value="element"/>
+        <expression value="Observation.extension"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Observation.performer"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationDispense.extension"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationDispense.performer.actor"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationRequest.extension"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="MedicationRequest.performer"/>
+    </context>
+    <context>
+        <type value="element"/>
+        <expression value="Extension.valueReference"/>
+    </context>
     <type value="Extension"/>
     <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
     <derivation value="constraint"/>

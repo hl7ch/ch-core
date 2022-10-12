@@ -3,7 +3,7 @@
   "id": "EncounterExcludedForEpr",
   "meta": {
     "profile": [
-      "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-consent-epr"
+      "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-epr-consent"
     ]
   },
   "status": "active",
