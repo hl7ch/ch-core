@@ -2,14 +2,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### STU3 (2022-xx-xx)
 
-#### Open Issues
-During the ballot, the following comments came in, which will be taken into account in the further development of CH Core:
-* ...
-
-See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
-
 #### Added
 * [#172](https://github.com/hl7ch/ch-core/issues/172): Generic CH Core extension [Author of the content](StructureDefinition-ch-ext-author.html) (fusion of the extensions from CH EMED and CH VACD)
+* [#158](https://github.com/hl7ch/ch-core/issues/158), [#189](https://github.com/hl7ch/ch-core/issues/189): Include new IG fragments (IP Statements, Cross Version Analysis, Dependency Table, Globals Table); CH Core can be used for both R4 and R4B, packages are available for both versions
 
 #### Changed / Updated
 * [#150](https://github.com/hl7ch/ch-core/issues/150): Expansion of the context of the extension [EPR Time](StructureDefinition-ch-ext-epr-time.html)
