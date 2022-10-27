@@ -79,3 +79,19 @@ This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by pe
 
 **Logical Observation Identifiers Names and Codes LOINC**
 This material contains content from LOINC® (http://loinc.org). The LOINC table, LOINC codes, and LOINC panels and forms file are copyright © 1995-2013, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the license at http://loinc.org/terms-of-use.
+
+### IP Statements
+
+{% include ip-statements.xhtml %}
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Dependency Table
+
+{% include dependency-table.xhtml %}
+
+### Globals Table
+
+{% include globals-table.xhtml %}
