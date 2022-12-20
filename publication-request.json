@@ -1,0 +1,11 @@
+{
+  "package-id" : "ch.fhir.ig.ch-core",
+  "version" : "3.0.0",
+  "path" : "http://fhir.ch/ig/ch-core/3.0.0",
+  "milestone" : true,
+  "status" : "trial-use",
+  "sequence" : "STU 3",
+  "desc" : "HL7 Switzerland STU 3",
+  "desccmd": "HL7 Switzerland STU 3",
+  "changes" : "changelog.html"
+}
