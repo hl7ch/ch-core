@@ -19,7 +19,7 @@
   <title value="CH Core (R4)"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2022-12-20"/>
+  <date value="2022-12-21"/>
   <publisher value="HL7 Switzerland"/>
   <contact>
     <name value="HL7 Switzerland"/>
@@ -817,7 +817,7 @@
       <page>
         <nameUrl value="terminology.html"/>
         <title value="Terminology"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="changelog.html"/>
