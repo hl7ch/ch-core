@@ -78,7 +78,7 @@
         <element id="Composition.extension:informationRecipient">
             <path value="Composition.extension"/>
             <sliceName value="informationRecipient"/>
-            <min value="1"/>
+            <min value="0"/>
             <max value="*"/>
             <type>
                 <code value="Extension"/>
