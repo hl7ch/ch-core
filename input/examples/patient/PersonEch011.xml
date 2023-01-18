@@ -126,6 +126,9 @@
                 <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype">
                     <valueCode value="street"/>
                 </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                    <valueString value="Strassenbezeichnug"/>
+                </extension>
                 <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
                     <valueString value="10"/>
                 </extension>

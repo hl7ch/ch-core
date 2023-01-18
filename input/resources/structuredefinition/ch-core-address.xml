@@ -152,6 +152,24 @@
             </type>
             <fixedCode value="street" />
         </element>
+        <element id="Address.line.extension:streetName">
+            <path value="Address.line.extension" />
+            <short value="street part of the street line, e.g. withouth housenumber"/>
+            <sliceName value="streetName" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0010: 5.13 streetName" />
+            </mapping>
+            <mapping>
+                <identity value="CDA-CH-V2"/>
+                <map value="hl7:streetName (0..1)"/>
+            </mapping>
+        </element>
         <element id="Address.line.extension:houseNumber">
             <path value="Address.line.extension" />
             <short value="houseNumber part of the street line"/>
