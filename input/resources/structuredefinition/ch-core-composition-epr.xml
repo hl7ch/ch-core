@@ -343,7 +343,6 @@
                 <coding>
                     <system value="http://loinc.org"/>
                     <code value="55108-5"/>
-                    <display value="Clinical presentation"/>
                 </coding>
             </patternCodeableConcept>
         </element>
