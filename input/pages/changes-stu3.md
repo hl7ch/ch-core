@@ -1,4 +1,4 @@
-### STU3 (2022-12-20)
+### STU 3 (2022-12-20)
 
 #### Added
 * [#172](https://github.com/hl7ch/ch-core/issues/172): Generic CH Core extension [Author of the content](StructureDefinition-ch-ext-author.html) (fusion of the extensions from CH EMED and CH VACD)
@@ -29,7 +29,7 @@
 * [#156](https://github.com/hl7ch/ch-core/issues/156): Change default branch from 'master' to 'main' to postponed to a later publication due to dependence on IG Publisher
 
 
-### STU3 Ballot (2022-06-29)
+### STU 3 Ballot (2022-06-29)
 
 #### Added
 * [#123](https://github.com/hl7ch/ch-core/issues/123) ([#137](https://github.com/hl7ch/ch-core/issues/137), [#140](https://github.com/hl7ch/ch-core/issues/140)): GLN and EPR-SPID checks
@@ -46,9 +46,3 @@
 * [#132](https://github.com/hl7ch/ch-core/issues/132): Fix link of concept map
 * [#124](https://github.com/hl7ch/ch-core/issues/124): Fix description for a least one given/family HumanName if provided
 * [#145](https://github.com/hl7ch/ch-core/issues/145): Update title of the profiles
-
-### STU2 (2021-04-24)
-{% include_relative changes-stu2.md %}
-
-### STU1 (2020-04-21)
-- [Initial version, summary of changes](https://github.com/hl7ch/ch-core/issues?q=is%3Aissue+milestone%3A%22v1.0.0+STU1+Final+Publication%22+is%3Aclosed)

@@ -1,15 +1,15 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### Current (2023)
+### Current Ballot (2023)
 
 #### Changed / Updated
 * [#195](https://github.com/hl7ch/ch-core/issues/195): [CH Core Address](StructureDefinition-ch-core-address.html) - Add extension iso21090-ADXP-streetName to CH Core Address line
 * [#198](https://github.com/hl7ch/ch-core/issues/198): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr-definitions.html#diff_Composition.extension:informationRecipient): Relax information recipient cardinality to zero
 
-### STU 3 (2022-12-20)
+
 {% include_relative changes-stu3.md %}
 
-### STU 2 (2021-04-24)
+
 {% include_relative changes-stu2.md %}
 
 ### STU 1 (2020-04-21)
