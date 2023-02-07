@@ -159,7 +159,7 @@
         <reference value="Patient/ElisabethBroennimannByBFH"/>
       </reference>
       <name value="Elisabeth Broennimann by BFH"/>
-      <description value="Patient with contact details, marital status (eCH &amp; FHIR) and reference to the general practitioner (GP)"/>
+      <description value="Patient with insurance card number as identifier, contact details, marital status (eCH &amp; FHIR) and reference to the general practitioner (GP)"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"/>
     </resource>
     <resource>
@@ -656,6 +656,12 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/ch-core-ahvn13-identifier"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-veka-identifier"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
