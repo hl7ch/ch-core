@@ -39,7 +39,6 @@
                 <coding>
                     <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
                     <code value="patient-privacy"/>
-                    <display value="Privacy Consent"/>
                 </coding>
             </patternCodeableConcept>
         </element>
@@ -54,10 +53,6 @@
                 <discriminator>
                     <type value="value"/>
                     <path value="coding.system"/>
-                </discriminator>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="coding.display"/>
                 </discriminator>
                 <ordered value="false"/>
                 <rules value="open"/>
@@ -81,15 +76,10 @@
         </element>
         <element id="Consent.category:VSCat.coding.code">
             <path value="Consent.category.coding.code"/>
+            <short value="information disclosure"/>
             <min value="1"/>
             <max value="1"/>
             <fixedCode value="IDSCL"/>
-        </element>
-        <element id="Consent.category:VSCat.coding.display">
-            <path value="Consent.category.coding.display"/>
-            <min value="1"/>
-            <max value="1"/>
-            <fixedString value="information disclosure"/>
         </element>
 
         <element id="Consent.patient">

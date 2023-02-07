@@ -1,3 +1,5 @@
+### STU 2 (2021-04-24)
+
 - [#57](https://github.com/hl7ch/ch-core/issues/57) cardinality 0..1 for ch-ext-epr-versionNumber in Composition
 - [#58](https://github.com/hl7ch/ch-core/issues/58) IMP instead of INP in encounter
 - [#59](https://github.com/hl7ch/ch-core/issues/59) adapt extension EPR Information Recipient for ch-core
