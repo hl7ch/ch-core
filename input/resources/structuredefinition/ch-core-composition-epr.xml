@@ -235,15 +235,11 @@
             <min value="0"/>
             <max value="1"/>
         </element>
-        <element id="Composition.attester.mode:legalAuthenticator">
+        <element id="Composition.attester:legalAuthenticator.mode">
             <path value="Composition.attester.mode"/>
             <fixedCode value="legal"/>
         </element>
-        <element id="Composition.attester.time:legalAuthenticator">
-            <path value="Composition.attester.time"/>
-            <min value="1"/>
-        </element>
-        <element id="Composition.attester.party:legalAuthenticator">
+        <element id="Composition.attester:legalAuthenticator.party">
             <path value="Composition.attester.party"/>
             <min value="1"/>
             <type>
@@ -254,7 +250,7 @@
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
             </type>
         </element>
-        <element id="Composition.attester.party.reference:legalAuthenticator">
+        <element id="Composition.attester:legalAuthenticator.party.reference">
             <path value="Composition.attester.party.reference"/>
         </element>
         <element id="Composition.custodian">
