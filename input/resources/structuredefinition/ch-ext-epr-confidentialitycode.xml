@@ -82,10 +82,5 @@
             <min value="1"/>
             <max value="1"/>
         </element>
-        <element id="Extension.valueCodeableConcept.coding.display">
-            <path value="Extension.valueCodeableConcept.coding.display"/>
-            <min value="1"/>
-            <max value="1"/>
-        </element>
     </differential>
 </StructureDefinition>
