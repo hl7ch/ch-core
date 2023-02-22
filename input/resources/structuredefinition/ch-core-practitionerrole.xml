@@ -25,11 +25,6 @@
     <purpose value="Core PractitionerRole data which can be shared" />
     <fhirVersion value="4.0.1" />
     <mapping>
-        <identity value="CDA-CH-V2"/>
-        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
-        <name value="CDA-CH 2020 V2.1"/>
-    </mapping>
-    <mapping>
         <identity value="eCH"/>
         <uri value="http://www.ech.ch/"/>
         <name value="eCH-Standards"/>

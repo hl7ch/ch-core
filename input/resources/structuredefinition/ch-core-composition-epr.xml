@@ -28,11 +28,6 @@
         <uri value="http://hl7.org/v3"/>
         <name value="RIM Mapping"/>
     </mapping>
-    <mapping>
-        <identity value="cda"/>
-        <uri value="http://hl7.org/v3/cda"/>
-        <name value="CDA (R2)"/>
-    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Composition"/>
@@ -46,10 +41,6 @@
         <element id="Composition.language">
             <path value="Composition.language"/>
             <min value="1"/>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".languageCode"/>
-            </mapping>
         </element>
         <element id="Composition.extension">
             <path value="Composition.extension"/>
@@ -61,20 +52,6 @@
                 <rules value="open"/>
             </slicing>
         </element>
-        <element id="Composition.extension:versionNumber">
-            <path value="Composition.extension"/>
-            <sliceName value="versionNumber"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-versionnumber"/>
-            </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".versionNumber"/>
-            </mapping>
-        </element>
         <element id="Composition.extension:informationRecipient">
             <path value="Composition.extension"/>
             <sliceName value="informationRecipient"/>
@@ -84,10 +61,6 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"/>
             </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".informationRecipient.intendedRecipient"/>
-            </mapping>
         </element>
         <element id="Composition.extension:dataEnterer">
             <path value="Composition.extension"/>
@@ -98,10 +71,6 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"/>
             </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".dataEnterer.assignedEntity"/>
-            </mapping>
         </element>
         <element id="Composition.identifier">
             <path value="Composition.identifier"/>
@@ -115,10 +84,6 @@
         <element id="Composition.identifier.value">
             <path value="Composition.identifier.value"/>
             <min value="1"/>
-            <mapping>
-                <identity value="cda"/>
-                <map value="ClinicalDocument.setId.root as uuid"/>
-            </mapping>
         </element>
         <element id="Composition.type">
             <path value="Composition.type"/>
@@ -172,17 +137,12 @@
             <path value="Composition.author.extension"/>
             <sliceName value="time"/>
             <short value="Timestamp of the authorship/data input"/>
-            <!-- CDA-spec: author.time 1..1, here 0..1 to allow the representedOrganization to be validly mapped as composition.author -->
             <min value="0"/>
             <max value="1"/>
             <type>
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
             </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".author.time"/>
-            </mapping>
         </element>
         <element id="Composition.author.reference">
             <path value="Composition.author.reference"/>
@@ -213,10 +173,6 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"/>
             </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".confidentialityCode"/>
-            </mapping>
         </element>
         <element id="Composition.attester">
             <path value="Composition.attester"/>
@@ -283,30 +239,6 @@
                 <ordered value="false"/>
                 <rules value="open"/>
             </slicing>
-        </element>
-        <element id="Composition.section.extension">
-            <path value="Composition.section.extension"/>
-            <slicing>
-                <discriminator>
-                    <type value="value"/>
-                    <path value="url"/>
-                </discriminator>
-                <rules value="open"/>
-            </slicing>
-        </element>
-        <element id="Composition.section.extension:sectionId">
-            <path value="Composition.section.extension"/>
-            <sliceName value="sectionId"/>
-            <min value="0"/>
-            <max value="1"/>
-            <type>
-                <code value="Extension"/>
-                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-sectionid"/>
-            </type>
-            <mapping>
-                <identity value="cda"/>
-                <map value=".id"/>
-            </mapping>
         </element>
         <element id="Composition.section.author">
             <path value="Composition.section.author"/> 

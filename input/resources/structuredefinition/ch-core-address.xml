@@ -28,11 +28,6 @@
         <uri value="https://www.ech.ch/" />
         <name value="eCH Standards"/>
     </mapping>
-    <mapping>
-        <identity value="CDA-CH-V2"/>
-        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
-        <name value="CDA-CH 2020 V2.1"/>
-    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="Address"/>
@@ -47,10 +42,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.5 addressInformation"/>
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="https://art-decor.org/art-decor/decor-templates--hl7chcda-?section=templates&amp;id=2.16.756.5.30.1.1.10.9.35"/>
             </mapping>
         </element>
 
@@ -89,10 +80,6 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.12 addressLine1" />
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:streetAddressLine (0..1)"/>
-            </mapping>
         </element>
         <element id="Address.line.extension.valueCode:addressLine1">
             <path value="Address.line.extension.valueCode" />
@@ -114,10 +101,6 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.12 addressLine2" />
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:streetAddressLine (0..1)"/>
-            </mapping>
         </element>  
         <element id="Address.line.extension.valueCode:addressLine2">
             <path value="Address.line.extension.valueCode" />
@@ -138,10 +121,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.13 street" />
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:streetAddressLine (0..1)"/>
             </mapping>
         </element>        
         <element id="Address.line.extension.valueCode:street">
@@ -165,10 +144,6 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.13 streetName" />
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:streetName (0..1)"/>
-            </mapping>
         </element>
         <element id="Address.line.extension:houseNumber">
             <path value="Address.line.extension" />
@@ -182,10 +157,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.14 houseNumber" />
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:houseNumber (0..1)"/>
             </mapping>
         </element>
         <element id="Address.line.extension:unitID">
@@ -201,10 +172,6 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.15 dwellingNumber" />
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:additionalLocator (0..1)"/>
-            </mapping>
         </element>
         <element id="Address.line.extension:postOfficeBoxText">
             <path value="Address.line.extension" />
@@ -218,10 +185,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.17 postOfficeBoxText" />
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:streetAddressLine (0..1)"/>
             </mapping>
         </element>        
         <element id="Address.line.extension.valueCode:postOfficeBoxText">
@@ -245,10 +208,6 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.16 postOfficeBoxNumber" />
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:postBox (0..1 C)"/>
-            </mapping>
         </element>
         <element id="Address.city">
             <path value="Address.city"/>
@@ -260,10 +219,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.23 town"/>
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:city (1..1 R)"/>
             </mapping>
         </element>
         <element id="Address.city.extension">
@@ -312,10 +267,6 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.22 locality"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:state (0..1)"/>
-            </mapping>
         </element>
         <element id="Address.postalCode">
             <path value="Address.postalCode"/>
@@ -329,10 +280,6 @@
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.18 swissZipCode, 5.19 swissZipCodeAddOn, 5.20 swissZipCodeId, 5.21 foreignZipCode"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:postalCode (1..1 R)"/>
-            </mapping>
         </element>
         <element id="Address.country">
             <path value="Address.country"/>
@@ -342,10 +289,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: 5.24 country"/>
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:country (1..1 R)"/>
             </mapping>
         </element>
         <element id="Address.country.extension">

@@ -5,7 +5,6 @@ This guide is a working specification. We anticipate that it will be implemented
 - The guide provides guidance on essential resources for identifiers, code systems, value sets and naming systems in Switzerland, specifically in relation to the Swiss Electronic Patient Record ([EPR](https://www.patientendossier.ch/en)).
 - The guide defines extensions that are necessary for local use in Switzerland.
 - The guide covers the requirements for [eCH-0010 postal address](https://www.ech.ch/vechweb/page?p=dossier&documentNumber=eCH-0010&documentVersion=7.0) and [eCH-0011 personal data](https://www.ech.ch/vechweb/page?p=dossier&documentNumber=eCH-0011&documentVersion=8.1).
-- The guide defines data elements from HL7.ch CDA-CH V2.1 (2020) document standard (available in [German](https://www.hl7.ch/default/assets/File/Publikationen/20200406_CDA-CH-V2_1_de.pdf) and [French](https://www.hl7.ch/default/assets/File/Publikationen/20200406_CDA-CH-V2_1_fr.pdf)) in FHIR CH Core profiles.
 - The guide incorporates Federal Statistics Office (BFS) variables for medical statistics. See [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html) (available in German, French and Italian).
 
 **Note**: This implementation guide is not (yet) a FHIR API specification, this will be a goal for the next iteration.
@@ -30,8 +29,8 @@ Metadata relating to the Swiss EPR is defined in Annexes 3 and 9 by the [Ministr
 
 Exchange formats for the Swiss EPR are defined in Annex 4. Exchange formats can be represented as FHIR documents.
 
-- [CH Core Document Profile EPR](StructureDefinition-ch-core-document.html): the base definition for a structured document in the Swiss EPR; it corresponds to a [CDA-CH derived document](https://art-decor.org/art-decor/decor-project--hl7chcda-).
-- [CH Core Composition Profile EPR](StructureDefinition-ch-core-composition-epr.html): the base definition for a composition; it corresponds to the [CDA-CH v2.1 - structuredBody](https://art-decor.org/art-decor/decor-templates--hl7chcda-?section=templates&id=2.16.756.5.30.1.1.10.1.9&effectiveDate=2019-10-17T15:22:41&language=en-US) template.
+- [CH Core Document Profile EPR](StructureDefinition-ch-core-document.html): the base definition for a structured document in the Swiss EPR.
+- [CH Core Composition Profile EPR](StructureDefinition-ch-core-composition-epr.html): the base definition for a composition, providing the basic structure of the FHIR document. 
 
 #### XDS (Annex 5, Amendment 1)
 

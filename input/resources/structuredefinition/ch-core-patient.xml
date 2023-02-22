@@ -15,7 +15,7 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Core patient definition in the swiss context. Relevant are definitions by the eCH-0010 V7.0 data standard mailing address and eCH-0011 V8.1 data standard pesond data and CDA-CH V2 definitions.
+    <description value="Core patient definition in the swiss context. Relevant are definitions by the eCH-0010 V7.0 data standard mailing address and eCH-0011 V8.1 data standard pesond data.
 The CH Core Patient is based upon the core FHIR Patient Resource and designed to meet the applicable patient demographic data elements in Switzerland. 
 See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.html) for further information"/>
     <jurisdiction>
@@ -26,11 +26,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
     </jurisdiction>
     <purpose value="Core patient demographics which can be shared" />
     <fhirVersion value="4.0.1" />
-    <mapping>
-        <identity value="CDA-CH-V2"/>
-        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
-        <name value="CDA-CH 2020 V2.1"/>
-    </mapping>
     <mapping>
         <identity value="eCH"/>
         <uri value="http://www.ech.ch/"/>
@@ -63,10 +58,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <human value="gender unknown is currently not used in Switzerland in eCH and the EPR"/>
                 <expression value="gender.empty() or gender!='unknown'"/>
             </constraint>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1)"/>
-            </mapping>
         </element>
         <element id="Patient.extension">
             <path value="Patient.extension" />
@@ -92,10 +83,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.3.2 placeOfBirth BFS-322, BFS-323, BFS 324"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:birthplace (0..1)"/>
-            </mapping>
         </element>
         <element id="Patient.extension:placeOfOrigin">
             <path value="Patient.extension" />
@@ -110,10 +97,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.10 placeOfOrigin, BFS-42" />
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="Not supported by CDA-CH V2. Can be specified as observation in the CDA body. See also citizenship/nationality."/>
             </mapping>
         </element>
         <element id="Patient.extension:citizenship">
@@ -137,10 +120,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.6 nationalityData"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="Not supported by CDA-CH V2. Can be specified as a social history observation in the CDA body. See CDA-CH-SMCP for possible implementation: https://art-decor.org/art-decor/decor-templates--cdachsmcp-"/>
-            </mapping>
         </element>
         <element id="Patient.extension:religion">
             <path value="Patient.extension" />
@@ -156,10 +135,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.4.1 religion, BFS-711" />
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:religiousAffiliationCode (0..1)"/>
-            </mapping>
         </element>
 
         <element id="Patient.identifier">
@@ -171,10 +146,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 </discriminator>
                 <rules value="open" />
             </slicing>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:id (1..*)"/>
-            </mapping>
         </element>
         <!-- Slice EPR-SPID -->
         <element id="Patient.identifier:EPR-SPID">
@@ -271,17 +242,9 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.2 nameData"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1 R) / hl7:patientRole (1..1 R) / hl7:patient (1..1 R) / hl7:name (1..1 R)"/>
-            </mapping>
         </element>
         <element id="Patient.telecom">
             <path value="Patient.telecom"/>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1 R) / hl7:patientRole (1..1 R) / hl7:telecom (0..*)"/>
-            </mapping>
         </element>
         <element id="Patient.gender">
             <path value="Patient.gender"/>
@@ -290,20 +253,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.3 sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1 R) / hl7:patientRole (1..1 R) / hl7:patient (1..1 R) / hl7:administrativeGenderCode (1..1 R), see see http://hl7.org/fhir/ConceptMap/cm-administrative-gender-v3"/>
-            </mapping>
         </element>
         <element id="Patient.birthDate">
             <path value="Patient.birthDate"/>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.3 birthData, BFS-31"/>
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1 R) / hl7:patientRole (1..1 R) / hl7:patient (1..1 R) / hl7:birthTime (1..1 R)"/>
             </mapping>
         </element>
         <element id="Patient.deceased[x]">
@@ -318,10 +273,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.7 deathData, deathPeriod, dateFrom, BFS-361"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="Not supported by CDA-CH V2. Can be specified as observation in the CDA body. See Reporting Death Information from the EHR to Vital Records HL7 Public Health and Emergency Response WG; Structured Documents Work Group; HL7 Draft Standard for Trial Use; 2012"/>
-            </mapping>
         </element>
         <element id="Patient.address">
             <path value="Patient.address"/>
@@ -329,10 +280,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <code value="Address"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
             </type>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:addr (0..*)"/>
-            </mapping>
         </element>
         <element id="Patient.maritalStatus">
             <path value="Patient.maritalStatus"/>
@@ -350,10 +297,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.5 maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"/>
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:maritalStatusCode (0..1)"/>
             </mapping>
         </element>
         <element id="Patient.maritalStatus.extension">
@@ -403,10 +346,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.8 contactData, BFS-61"/>
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="Not supported by CDA-CH V2."/>
             </mapping>
         </element>
         <element id="Patient.contact.relationship:contact">
@@ -506,10 +445,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <short value="Language of correspondence"/>
             <min value="0"/>
             <max value="1"/>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:recordTarget (1..1) / hl7:patientRole (1..1) / hl7:patient (1..1) / hl7:languageCommunication (0..*) / hl7:languageCode (1..1)"/>
-            </mapping>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.9 languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"/>

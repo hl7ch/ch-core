@@ -25,11 +25,6 @@
     <purpose value="Core practitioner data which can be shared" />
     <fhirVersion value="4.0.1" />
     <mapping>
-        <identity value="CDA-CH-V2"/>
-        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
-        <name value="CDA-CH 2020 V2.1"/>
-    </mapping>
-    <mapping>
         <identity value="eCH"/>
         <uri value="http://www.ech.ch/"/>
         <name value="eCH-Standards"/>
@@ -61,10 +56,6 @@
                 <human value="gender unknown is currently not used in Switzerland in eCH and the EPR"/>
                 <expression value="gender.empty() or gender!='unknown'"/>
             </constraint>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:author (1..* R)"/>
-            </mapping>
         </element>
         <element id="Practitioner.identifier">
             <path value="Practitioner.identifier" />
@@ -75,10 +66,6 @@
                 </discriminator>
                 <rules value="open" />
             </slicing>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:id (1..* R)"/>
-            </mapping>
         </element>
         <element id="Practitioner.identifier:GLN">
             <path value="Practitioner.identifier" />
@@ -116,17 +103,9 @@
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.2 nameData"/>
             </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:assignedPerson (1..1 R) / hl7:name (1..1 R)"/>
-            </mapping>
         </element>
         <element id="Practitioner.telecom">
             <path value="Practitioner.telecom"/>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:telecom (1..* R)"/>
-            </mapping>
         </element>
         <element id="Practitioner.address">
             <path value="Practitioner.address"/>
@@ -134,10 +113,6 @@
                 <code value="Address"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-address" />
             </type>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:author (1..* R) / hl7:assignedAuthor (1..1 R) / hl7:addr (0..*)"/>
-            </mapping>
         </element>
         <element id="Practitioner.gender">
             <path value="Practitioner.gender"/>
