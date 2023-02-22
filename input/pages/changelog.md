@@ -10,6 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#198](https://github.com/hl7ch/ch-core/issues/198): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr-definitions.html#diff_Composition.extension:informationRecipient) - Relax information recipient cardinality to zero
 * [#194](https://github.com/hl7ch/ch-core/issues/194): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html) - Relax attester:legalAuthenticator.time cardinality to zero
 * [#200](https://github.com/hl7ch/ch-core/issues/200): Remove display values from patternCodeableConcepts or fixedValues, remove minimum cardinality = 1 for display values, using official display values in examples (valid with http://tx.fhir.org/r4).
+* [#31](https://github.com/hl7ch/ch-core/issues/31): Improve profiling for identifiers to avoid duplicated elements in the snapshot table
 
 
 {% include_relative changes-stu3.md %}
