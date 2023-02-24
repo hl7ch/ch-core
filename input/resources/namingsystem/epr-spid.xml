@@ -2,64 +2,6 @@
 
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="epr-spid"/>
-  <text>
-    <status value="additional"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <p>
-        <b>name</b>: EPR_SPID
-      </p>
-      <p>
-        <b>status</b>: ACTIVE
-      </p>
-      <p>
-        <b>kind</b>: IDENTIFIER
-      </p>
-      <p>
-        <b>date</b>: Nov 28, 2018
-      </p>
-      <p>
-        <b>publisher</b>: HL7 Switzerland on behalf of eHealthSuisse
-      </p>
-      <p>
-        <b>contact</b>: 
-      </p>
-      <p>
-        <b>responsible</b>: Ministry of Health / Switzerland
-      </p>
-      <p>
-        <b>type</b>: IHI 
-        <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/v2-0203 code &#39;NI&#39; = &#39;National unique individual identifier&#39;, given as &#39;National unique individual identifier&#39;})</span>
-      </p>
-      <p>
-        <b>description</b>: EPR-SPID: The Central Compensation Office (ZAS; CCO) assigns and manages the new patient identification number according to the EPRA (EPR-SPID), which is only linked internally in the CCO with the AHV number. It maintains the UPI identification database (Unique Personal Identifier Database), which the EPR communities may access. The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries.
-      </p>
-      <p>
-        <b>jurisdiction</b>: Switzerland 
-        <span style="background: LightGoldenRodYellow">(Details : {urn:iso:std:iso:3166 code &#39;CH&#39; = &#39;Switzerland)</span>
-      </p>
-      <h3>UniqueIds</h3>
-      <table class="grid">
-        <tr>
-          <td>-</td>
-          <td>
-            <b>Type</b>
-          </td>
-          <td>
-            <b>Value</b>
-          </td>
-          <td>
-            <b>Comment</b>
-          </td>
-        </tr>
-        <tr>
-          <td>*</td>
-          <td>OID</td>
-          <td>2.16.756.5.30.1.127.3.10.3</td>
-          <td>This is the official identifier</td>
-        </tr>
-      </table>
-    </div>
-  </text>
   <name value="EPR_SPID"/>
   <status value="active"/>
   <kind value="identifier"/>

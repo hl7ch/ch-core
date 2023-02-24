@@ -92,18 +92,18 @@
         <element id="Practitioner.identifier:ZSR">
             <path value="Practitioner.identifier" />
             <sliceName value="ZSR" />
-            <short value="ZSR" />
+            <short value="ZSR (Zahlstellenregister), RCC (Registre des codes-créanciers), RCC (Registro dei codici creditori)" />
             <definition value="The ZSR number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance." />
         </element>
         <element id="Practitioner.identifier:ZSR.system">
             <path value="Practitioner.identifier.system" />
-            <short value="OID of the ZSR" />
+            <short value="OID of the ZSR/RCC" />
             <min value="1" />
             <fixedUri value="urn:oid:2.16.756.5.30.1.123.100.2.1.1" />
         </element>
         <element id="Practitioner.identifier:ZSR.value">
             <path value="Practitioner.identifier.value" />
-            <short value="ZSR of the practitioner" />
+            <short value="ZSR/RCC of the practitioner" />
             <min value="1" />
         </element>
         <element id="Practitioner.name">
