@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#196](https://github.com/hl7ch/ch-core/issues/196): Data type profile [VEKAIdentifier](StructureDefinition-ch-core-veka-identifier.html) for [Coverage.identifier](StructureDefinition-ch-core-coverage.html) and new also for [Patient.identifier](StructureDefinition-ch-core-patient.html)
 
 #### Changed / Updated
+* [#191](https://github.com/hl7ch/ch-core/issues/191): [CH Core Patient](StructureDefinition-ch-core-patient.html) - Relax max cardinality to * for EPR-SPID and AHVN13
 * [#195](https://github.com/hl7ch/ch-core/issues/195): [CH Core Address](StructureDefinition-ch-core-address.html) - Add extension iso21090-ADXP-streetName to CH Core Address line
 * [#198](https://github.com/hl7ch/ch-core/issues/198): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr-definitions.html#diff_Composition.extension:informationRecipient) - Relax information recipient cardinality to zero
 * [#194](https://github.com/hl7ch/ch-core/issues/194): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html) - Relax attester:legalAuthenticator.time cardinality to zero
