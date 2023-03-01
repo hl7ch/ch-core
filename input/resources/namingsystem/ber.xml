@@ -15,9 +15,9 @@
   </contact>
   <responsible value="Swiss Federal Statistical Office (FSO)"/>
   <description value="The Business and Enterprise Register (BER) contains all enterprises and business in private and public law which are domiciled and exercise an economic activity in Switzerland.
-                      (in French, Registre des entreprises et des établissements (REE))
-                      (in German, Betriebs- und Unternehmensregister (BUR))
-                      (in Italian, Registro delle imprese e degli stabilimenti (RIS))"/>
+                      French: (REE) Registre des entreprises et des établissements. 
+                      German: (BUR) Betriebs- und Unternehmensregister,
+                      Italian: (RIS) Registro delle imprese e degli stabilimenti."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

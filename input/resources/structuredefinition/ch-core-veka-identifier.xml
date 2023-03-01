@@ -36,5 +36,9 @@
                 <expression value="value.startsWith('807560')" />
             </constraint>
         </element>
+        <element id="Identifier.period.end">
+            <path value="Identifier.period.end" />
+            <short value="Expiration date of the insurance card" />
+        </element>
     </differential>
 </StructureDefinition>
