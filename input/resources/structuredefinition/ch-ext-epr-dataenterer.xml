@@ -15,13 +15,8 @@
             <value value="https://www.hl7.ch/"/>
         </telecom>
     </contact>
-    <description value="Extension to define the information about the person and organisation that entered data and the time of the data input, equivalent to the dataEnterer from a CDA document"/>
-    <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="CDA-CH-V2"/>
-        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
-        <name value="CDA-CH 2020 V2.1"/>
-    </mapping>    
+    <description value="Extension to define the information about the person and organisation that entered data and the time of the data input"/>
+    <fhirVersion value="4.0.1"/>   
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -48,10 +43,6 @@
             <type>
                 <code value="Extension"/>
             </type>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:dataEnterer"/>
-            </mapping>
         </element>
         <element id="Extension.extension:enterer.extension">
             <path value="Extension.extension.extension"/>
@@ -72,10 +63,6 @@
                 <code value="Reference"/>
                 <targetProfile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
             </type>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:assignedEntity"/>
-            </mapping>
         </element>
         <element id="Extension.extension:timestamp">
             <path value="Extension.extension"/>
@@ -87,10 +74,6 @@
                 <code value="Extension"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"/>
             </type>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:time"/>
-            </mapping>
         </element>
         <element id="Extension.url">
             <path value="Extension.url"/>

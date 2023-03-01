@@ -28,11 +28,6 @@
         <uri value="http://www.ech.ch/"/>
         <name value="eCH-Standards"/>
     </mapping>
-    <mapping>
-        <identity value="CDA-CH-V2"/>
-        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
-        <name value="CDA-CH 2020 V2.1"/>
-    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <type value="HumanName"/>
@@ -71,10 +66,6 @@
                 <human value="ch-ext-ech-11-firstname can only be put on a given name"/>
                 <expression value="descendants().extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()=given.extension.where(url='http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-firstname').count()"/>
             </constraint>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="https://art-decor.org/art-decor/decor-templates--hl7chcda-?section=templates&amp;id=2.16.756.5.30.1.1.10.9.35"/>
-            </mapping>
         </element>
         <element id="HumanName.family">
             <path value="HumanName.family"/>
@@ -91,10 +82,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: lastName" />
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:name (1..1 R) / hl7:family (1..* R)"/>
             </mapping>
         </element>
         <element id="HumanName.family.extension">
@@ -137,10 +124,6 @@
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0010: firstName equivalent to callName of eCH-0011" />
-            </mapping>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:name (1..1 R) / hl7:given (1..* R)"/>
             </mapping>
         </element>
         <element id="HumanName.given.extension">

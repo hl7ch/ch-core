@@ -17,11 +17,6 @@
     </contact>
     <description value="Extension for the confidentiality code according to the Swiss EPR regulation"/>
     <fhirVersion value="4.0.1"/>
-    <mapping>
-        <identity value="CDA-CH-V2"/>
-        <uri value="http://e-health-wiki.ch/index.php/Ehscda:CDA-CH_2017_(specification)"/>
-        <name value="CDA-CH 2020 V2.1"/>
-    </mapping>
     <kind value="complex-type"/>
     <abstract value="false"/>
     <context>
@@ -62,10 +57,6 @@
                 <strength value="required"/>
                 <valueSet value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode"/>
             </binding>
-            <mapping>
-                <identity value="CDA-CH-V2"/>
-                <map value="hl7:confidentialityCode"/>
-            </mapping>
         </element>
         <element id="Extension.valueCodeableConcept.coding">
             <path value="Extension.valueCodeableConcept.coding"/>
