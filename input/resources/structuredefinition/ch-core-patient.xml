@@ -182,8 +182,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <sliceName value="EPR-SPID" />
             <short value="EPR-SPID" />
             <definition value="EPR-SPID: The Central Compensation Office (ZAS; CCO) assigns and manages the new patient identification number according to the EPRA (EPR-SPID), which is only linked internally in the CCO with the AHV number. It maintains the UPI identification database (Unique Personal Identifier Database), which the EPR communities may access. The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries." />
-            <min value="0" />
-            <max value="1" />
             <type>
                 <code value="Identifier"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-epr-spid-identifier"/>
@@ -198,8 +196,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <sliceName value="AHVN13" />
             <short value="AHVN13 / NAVS13" />
             <definition value="The AHVN13 / NAVS13 - (abbreviation for new thirteen-digit Social Security number) - is an administrative identifier for natural persons in Switzerland. It is issued, announced and administered by the Central Compensation Office. It is available to all organisations and communities for which there is a legal basis." />
-            <min value="0" />
-            <max value="1" />
             <type>
                 <code value="Identifier"/>
                 <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-ahvn13-identifier"/>
