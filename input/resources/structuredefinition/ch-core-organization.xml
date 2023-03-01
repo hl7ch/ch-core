@@ -61,7 +61,8 @@
         <element id="Organization.identifier:BER">
             <path value="Organization.identifier" />
             <sliceName value="BER" />
-            <short value="BER (Business and Enterprise Register)" />
+            <short value="BER (Business and Enterprise Register), BUR (Betriebs- und Unternehmensregister), REE (Registre des entreprises et des établissements), RIS (Registro delle imprese e degli stabilimenti)" />
+            <definition value="See [BER](NamingSystem-ber.html)" />
             <max value="1" />
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.45" />
@@ -71,7 +72,8 @@
         <element id="Organization.identifier:UIDB">
             <path value="Organization.identifier" />
             <sliceName value="UIDB" />
-            <short value="Unique Identification Business (UIDB)" />
+            <short value="UIDB (Unique Identification Business), UID (Verwendung der Unternehmens-Identifikationsnummer), IDE (Utilisation du numéro d'identification des entreprises), IDI (Utilizzo del numero d'identificazione delle imprese)" />
+            <definition value="See [UIDB](NamingSystem-uidb.html)" />
             <max value="1" />
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.35" />
@@ -81,7 +83,8 @@
         <element id="Organization.identifier:ZSR">
             <path value="Organization.identifier" />
             <sliceName value="ZSR" />
-            <short value="Zahlstellenregister (ZSR)" />
+            <short value="ZSR (Zahlstellenregister), RCC (Registre des codes-créanciers), RCC (Registro dei codici creditori)" />
+            <definition value="See [ZSR/RCC](NamingSystem-zsr.html)" />
             <max value="1" />
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.30.1.123.100.2.1.1" />
@@ -92,6 +95,7 @@
             <path value="Organization.identifier" />
             <sliceName value="GLN" />
             <short value="Global Location Number (GLN)" />
+            <definition value="See [GLN](NamingSystem-gln.html)" />
             <max value="1" />
             <type>
                 <code value="Identifier"/>
