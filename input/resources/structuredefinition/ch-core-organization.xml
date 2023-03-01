@@ -53,6 +53,10 @@
                 <rules value="open" />
             </slicing>
         </element>
+        <element id="Organization.identifier.value">
+            <path value="Organization.identifier.value"/>
+            <min value="1" />
+        </element>
 
         <element id="Organization.identifier:BER">
             <path value="Organization.identifier" />
@@ -62,12 +66,6 @@
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.45" />
             </patternIdentifier>
-        </element>
-        <element id="Organization.identifier:BER.value">
-            <path value="Organization.identifier.value" />
-            <short value="BER of the organization" />
-            <definition value="BER of the organization"/>
-            <min value="1" />
         </element>
 
         <element id="Organization.identifier:UIDB">
@@ -79,11 +77,6 @@
                 <system value="urn:oid:2.16.756.5.35" />
             </patternIdentifier>
         </element>
-        <element id="Organization.identifier:UIDB.value">
-            <path value="Organization.identifier.value" />
-            <short value="UIDB of the organization" />
-            <min value="1" />
-        </element>
 
         <element id="Organization.identifier:ZSR">
             <path value="Organization.identifier" />
@@ -93,11 +86,6 @@
             <patternIdentifier>
                 <system value="urn:oid:2.16.756.5.30.1.123.100.2.1.1" />
             </patternIdentifier>
-        </element>
-        <element id="Organization.identifier:ZSR.value">
-            <path value="Organization.identifier.value" />
-            <short value="ZSR of the organization" />
-            <min value="1" />
         </element>
 
         <element id="Organization.identifier:GLN">
