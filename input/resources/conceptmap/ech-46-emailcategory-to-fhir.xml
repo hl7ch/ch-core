@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="ech-46-emailcategory-to-fhir"/>
+    <url value="http://fhir.ch/ig/ch-core/ConceptMap/ech-46-emailcategory-to-fhir" />
+    <version value="3.1.0"/>
+    <name value="ECH46EmailCategoryToFHIRMapping" />
+    <title value="eCH-0046 Email Category to FHIR Mapping"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2023-03-10"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="ConceptMap to show the mapping from eCH-0046 e-mail category to FHIR"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="CC-BY-SA-4.0"/>
+    <sourceUri value="http://fhir.ch/ig/ch-core/ValueSet/ech-46-emailcategory"/>
+    <targetUri value="http://hl7.org/fhir/ValueSet/contact-point-use"/>
+    <group>
+        <source value="http://fhir.ch/ig/ch-core/CodeSystem/ech-46-emailcategory"/>
+        <target value="http://hl7.org/fhir/contact-point-use"/>
+        <element>
+            <code value="1"/>
+            <display value="private"/>
+            <target>
+                <code value="home"/>
+                <display value="Home"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="2"/>
+            <display value="business"/>
+            <target>
+                <code value="work"/>
+                <display value="Work"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

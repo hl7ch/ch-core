@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="ch-core-contactpoint-ech-46-phone"/>
+    <url value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-contactpoint-ech-46-phone"/>
+    <version value="3.1.0"/>
+    <name value="CHCoreContactPointECH46Phone"/>
+    <title value="CH Core ContactPoint eCH-0046 Phone"/>
+    <status value="active"/>
+    <date value="2023-03-10"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="Phone number as contact point of a person or organization according to eCH-0046"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <fhirVersion value="4.0.1" />
+    <mapping>
+        <identity value="eCH"/>
+        <uri value="https://www.ech.ch/" />
+        <name value="eCH Standards"/>
+    </mapping>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="ContactPoint"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ContactPoint"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="ContactPoint">
+            <path value="ContactPoint"/>
+            <short value="CH Core ContactPoint eCH-0046 Phone"/>
+            <min value="0"/>
+            <max value="*"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4 phone"/>
+            </mapping>
+        </element>
+
+        <element id="ContactPoint.system">
+            <path value="ContactPoint.system"/>
+            <min value="1"/>
+            <fixedCode value="phone"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4 phoneType" />
+            </mapping>
+        </element>
+
+        <element id="ContactPoint.value">
+            <path value="ContactPoint.value"/>
+            <min value="1"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4 phoneNumber" />
+            </mapping>
+        </element>
+
+        <element id="ContactPoint.use">
+            <path value="ContactPoint.use"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4 phoneCategory/otherPhoneCategory" />
+            </mapping>
+        </element>
+        <element id="ContactPoint.use.extension">
+            <path value="ContactPoint.use.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open" />
+            </slicing>
+        </element>
+        <element id="ContactPoint.use.extension:phoneCategory">
+            <path value="ContactPoint.use.extension" />
+            <sliceName value="phoneCategory" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-46-phonecategory" />
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4.1 phoneNumberCategory" />
+            </mapping>
+        </element>
+
+        <element id="ContactPoint.period">
+            <path value="ContactPoint.period"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4 validity" />
+            </mapping>
+        </element>
+        <element id="ContactPoint.period.start">
+            <path value="ContactPoint.period.start"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: dateFrom" />
+            </mapping>
+        </element>
+        <element id="ContactPoint.period.end">
+            <path value="ContactPoint.period.end"/>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: dateTo" />
+            </mapping>
+        </element>
+
+    </differential>
+</StructureDefinition>

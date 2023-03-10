@@ -114,7 +114,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <key value="ch-pat-3"/>
                 <severity value="error"/>
                 <human value="ISO Country Alpha-2 or ISO Country Alpha-3 code"/>
-                <expression value="((extension.where(url='code').valueCodeableConcept.coding.code.length()=2) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2')) or ((extension.where(url='code').valueCodeableConcept.coding.code.length() = 3) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" /> 
+                <expression value="((extension.where(url='code').valueCodeableConcept.coding.code.length()=2) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2')) or ((extension.where(url='code').valueCodeableConcept.coding.code.length() = 3) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" />
             </constraint>
             <mapping>
                 <identity value="eCH"/>
@@ -225,9 +225,66 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <map value="eCH-0011: 3.3.2 nameData"/>
             </mapping>
         </element>
+
         <element id="Patient.telecom">
-            <path value="Patient.telecom"/>
+            <path value="Patient.telecom" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="system" />
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: Contact"/>
+            </mapping>
         </element>
+        <element id="Patient.telecom.system">
+            <path value="Patient.telecom.system" />
+            <min value="1"/>
+        </element>
+        <element id="Patient.telecom.value">
+            <path value="Patient.telecom.value" />
+            <min value="1"/>
+        </element>
+        <element id="Patient.telecom:email">
+            <path value="Patient.telecom"/>
+            <sliceName value="email"/>
+            <type>
+                <code value="ContactPoint"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-contactpoint-ech-46-email"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.3 email"/>
+            </mapping>
+        </element>
+        <element id="Patient.telecom:phone">
+            <path value="Patient.telecom"/>
+            <sliceName value="phone"/>
+            <type>
+                <code value="ContactPoint"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-contactpoint-ech-46-phone"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4 phone"/>
+            </mapping>
+        </element>
+        <element id="Patient.telecom:internet">
+            <path value="Patient.telecom"/>
+            <sliceName value="internet"/>
+            <type>
+                <code value="ContactPoint"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-contactpoint-ech-46-internet"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.5 internet"/>
+            </mapping>
+        </element>
+
         <element id="Patient.gender">
             <path value="Patient.gender"/>
             <short value="male | female | other"/>
@@ -305,7 +362,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.5.5 separation - Trennung BFS-343"/>
             </mapping>
-        </element>       
+        </element>
 
         <element id="Patient.contact">
             <path value="Patient.contact"/>
@@ -439,6 +496,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <path value="Patient.communication.preferred"/>
             <min value="1"/>
             <fixedBoolean value="true" />
-        </element>    
+        </element>
     </differential>
 </StructureDefinition>

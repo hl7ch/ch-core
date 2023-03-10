@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ech-46-emailcategory"/>
+    <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-46-emailcategory"/>
+    <version value="3.1.0"/>
+    <name value="ECH46EmailCategory"/>
+    <title value="eCH-0046 Email Category"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <date value="2023-03-10"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="eCH-0046 defines these types of e-mail categories" />
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <compose>
+        <include>
+            <system value="http://fhir.ch/ig/ch-core/CodeSystem/ech-46-emailcategory"/>
+        </include>
+    </compose>
+</ValueSet>

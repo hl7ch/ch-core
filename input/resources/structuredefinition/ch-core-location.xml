@@ -41,9 +41,66 @@
             <path value="Location.name"/>
             <min value="1"/>
         </element>
+
         <element id="Location.telecom">
-            <path value="Location.telecom"/>
+            <path value="Location.telecom" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="system" />
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: Contact"/>
+            </mapping>
         </element>
+        <element id="Location.telecom.system">
+            <path value="Location.telecom.system" />
+            <min value="1"/>
+        </element>
+        <element id="Location.telecom.value">
+            <path value="Location.telecom.value" />
+            <min value="1"/>
+        </element>
+        <element id="Location.telecom:email">
+            <path value="Location.telecom"/>
+            <sliceName value="email"/>
+            <type>
+                <code value="ContactPoint"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-contactpoint-ech-46-email"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.3 email"/>
+            </mapping>
+        </element>
+        <element id="Location.telecom:phone">
+            <path value="Location.telecom"/>
+            <sliceName value="phone"/>
+            <type>
+                <code value="ContactPoint"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-contactpoint-ech-46-phone"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.4 phone"/>
+            </mapping>
+        </element>
+        <element id="Location.telecom:internet">
+            <path value="Location.telecom"/>
+            <sliceName value="internet"/>
+            <type>
+                <code value="ContactPoint"/>
+                <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-contactpoint-ech-46-internet"/>
+            </type>
+            <mapping>
+                <identity value="eCH"/>
+                <map value="eCH-0046: 4.5 internet"/>
+            </mapping>
+        </element>
+
         <element id="Location.address">
             <path value="Location.address"/>
             <type>
