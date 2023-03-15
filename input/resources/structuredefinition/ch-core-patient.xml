@@ -36,6 +36,11 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <uri value="https://art-decor.org/art-decor/decor-valuesets--ch-epr-"/>
         <name value="EPR ValueSets"/>
     </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Patient"/>
@@ -114,7 +119,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <key value="ch-pat-3"/>
                 <severity value="error"/>
                 <human value="ISO Country Alpha-2 or ISO Country Alpha-3 code"/>
-                <expression value="((extension.where(url='code').valueCodeableConcept.coding.code.length()=2) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2')) or ((extension.where(url='code').valueCodeableConcept.coding.code.length() = 3) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" /> 
+                <expression value="((extension.where(url='code').valueCodeableConcept.coding.code.length()=2) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2')) or ((extension.where(url='code').valueCodeableConcept.coding.code.length() = 3) and extension.where(url='code').valueCodeableConcept.coding.code.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" />
             </constraint>
             <mapping>
                 <identity value="eCH"/>
@@ -227,6 +232,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         </element>
         <element id="Patient.telecom">
             <path value="Patient.telecom"/>
+            <mapping>
+                <identity value="v2"/>
+                <map value="-> as of HL7 v2.7 PID-40 (leave PID-13 and PID-14 empty)"/>
+            </mapping>
         </element>
         <element id="Patient.gender">
             <path value="Patient.gender"/>
@@ -305,7 +314,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 <identity value="eCH"/>
                 <map value="eCH-0011: 3.3.5.5 separation - Trennung BFS-343"/>
             </mapping>
-        </element>       
+        </element>
 
         <element id="Patient.contact">
             <path value="Patient.contact"/>
@@ -439,6 +448,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
             <path value="Patient.communication.preferred"/>
             <min value="1"/>
             <fixedBoolean value="true" />
-        </element>    
+        </element>
     </differential>
 </StructureDefinition>
