@@ -36,6 +36,11 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
         <uri value="https://art-decor.org/art-decor/decor-valuesets--ch-epr-"/>
         <name value="EPR ValueSets"/>
     </mapping>
+    <mapping>
+        <identity value="v2"/>
+        <uri value="http://hl7.org/v2"/>
+        <name value="HL7 v2 Mapping"/>
+    </mapping>
     <kind value="resource"/>
     <abstract value="false"/>
     <type value="Patient"/>
@@ -235,6 +240,10 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
                 </discriminator>
                 <rules value="open"/>
             </slicing>
+            <mapping>
+                <identity value="v2"/>
+                <map value="-> as of HL7 v2.7 PID-40 (leave PID-13 and PID-14 empty)"/>
+            </mapping>
             <mapping>
                 <identity value="eCH"/>
                 <map value="eCH-0046: Contact"/>
