@@ -15,6 +15,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#193](https://github.com/hl7ch/ch-core/issues/193): Remove CDA elements (mapping, ch-ext-epr-sectionid, ch-ext-epr-versionnumber, adapt descriptions) 
 * [#31](https://github.com/hl7ch/ch-core/issues/31): Improve profiling for identifiers to avoid duplicated elements in the snapshot table
 * [#205](https://github.com/hl7ch/ch-core/issues/205): Concretization of the mapping of Patient.telecom for versions as of HL7 v2.7
+* [#181](https://github.com/hl7ch/ch-core/issues/181): Updated used eCH standards (incl. versions) to [introduction (home)](index.html#introduction) (standards themselves currently have no updates)
 
 
 {% include_relative changes-stu3.md %}
