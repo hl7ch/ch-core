@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Added
 * [#196](https://github.com/hl7ch/ch-core/issues/196): Data type profile [VEKAIdentifier](StructureDefinition-ch-core-veka-identifier.html) for [Coverage.identifier](StructureDefinition-ch-core-coverage.html) and new also for [Patient.identifier](StructureDefinition-ch-core-patient.html)
+* [#204](https://github.com/hl7ch/ch-core/issues/204): Introduce data type profiles for ContactPoints (email, phone, internet) according eCH-0046 (including extensions and terminology) and add them to the telecom element of Patient, Practitioner, Organization, Location
 
 #### Changed / Updated
 * [#206](https://github.com/hl7ch/ch-core/issues/206): Improve acronyms definition

@@ -174,7 +174,7 @@
         <reference value="Patient/MaxMuster"/>
       </reference>
       <name value="Max Muster"/>
-      <description value="Patient EPR with eCH-011 family &amp; and given name and reference to the organization that is the custodian of the patient record"/>
+      <description value="Patient EPR with eCH-0011 family &amp; and given name, eCH-0046 contact points and reference to the organization that is the custodian of the patient record"/>
       <exampleCanonical value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
     </resource>
     <resource>
@@ -337,6 +337,24 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-46-emailcategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-46-phonecategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="CodeSystem/ech-46-internetcategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
 
     <!-- references for concept maps -->
     <resource>
@@ -360,6 +378,24 @@
     <resource>
       <reference>
         <reference value="ConceptMap/sex-ech11-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/ech-46-emailcategory-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/ech-46-phonecategory-to-fhir"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ConceptMap/ech-46-internetcategory-to-fhir"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -516,6 +552,25 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-ext-ech-46-emailcategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-46-phonecategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-ext-ech-46-internetcategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-composition-epr"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -666,6 +721,24 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/ch-core-contactpoint-ech-46-email"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-contactpoint-ech-46-phone"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="StructureDefinition/ch-core-contactpoint-ech-46-internet"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="StructureDefinition/ch-core-practitioner-epr"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -786,6 +859,24 @@
       </reference>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-46-emailcategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-46-phonecategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ValueSet/ech-46-internetcategory"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
 
     <!-- pages, parameters -->
     <page>
@@ -800,12 +891,12 @@
       <page>
         <nameUrl value="profiles.html"/>
         <title value="Profiles"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="extensions.html"/>
         <title value="Extensions"/>
-        <generation value="html"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="terminology.html"/>

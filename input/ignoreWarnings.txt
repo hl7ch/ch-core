@@ -8,18 +8,10 @@ Unable to check if http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType
 The Implementation Guide contains no examples for this profile
 The Implementation Guide contains no examples for this extension
 
-# Example with identifier (local ID) which isn't defined in profile
-INFORMATION: Practitioner/SchreibKraft: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner|3.0.0
-
-# The element identifier is sliced using pattern, since the fixed values affect different elements (e.g. system, type)
-INFORMATION: StructureDefinition/ch-core-patient: StructureDefinition.snapshot.element[24].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/ch-core-patient-epr: StructureDefinition.snapshot.element[24].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
-
 # Wrong example in the base specification for the consent resource
 if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 
 # Build error
 The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
-
+The link 'www.sampledomain.ch' for "www.sampledomain.ch" cannot be resolved
