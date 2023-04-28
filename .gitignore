@@ -11,3 +11,4 @@ txcache/**
 www/*
 !www/package-list.json
 !www/publish.ini
+fsh-generated/**
