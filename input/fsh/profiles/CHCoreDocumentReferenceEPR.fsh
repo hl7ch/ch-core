@@ -25,10 +25,12 @@ Description: "Base definition for a document reference in the context of the ele
 * securityLabel from $DocumentEntry.confidentialityCode (required)
 
 * content.attachment.contentType 1..
-* content.attachment.contentType from $DocumentEntry.mimeType (required)
+// content.attachment.contentType from $DocumentEntry.mimeType (required) -> not allowed on a required binding in FHIR core -> add constraint, like in CHCoreDocumentReference
+* content.attachment.contentType obeys ch-docref-2
 * content.attachment.language 1..
 * content.attachment.language from $DocumentEntry.languageCode (required)
 * content.attachment.url 1..
+
 * content.format 1..
 * content.format from $DocumentEntry.formatCode (required)
 

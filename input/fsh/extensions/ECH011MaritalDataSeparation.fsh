@@ -13,9 +13,4 @@ Description: "eCH-0011: Extension to define the separation type. For married but
 * valueCodeableConcept from $ech-11-maritaldata-separation_1 (required)
 * valueCodeableConcept ^short = "Value of extension"
 * valueCodeableConcept ^definition = "CodeableConcept for separation type"
-* valueCodeableConcept ^base.path = "Extension.value[x]"
-* valueCodeableConcept ^base.min = 0
-* valueCodeableConcept ^base.max = "1"
-* valueCodeableConcept ^isModifier = false
-* valueCodeableConcept ^isSummary = false
 * valueCodeableConcept ^binding.description = "ValueSet separation type"

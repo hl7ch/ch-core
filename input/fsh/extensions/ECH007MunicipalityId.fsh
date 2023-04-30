@@ -12,8 +12,3 @@ Description: "eCH-0007: Extension to define a BFS Number for a municipality"
 * valueString only string
 * valueString ^short = "Value of extension"
 * valueString ^definition = "BFS number"
-* valueString ^base.path = "Extension.value[x]"
-* valueString ^base.min = 0
-* valueString ^base.max = "1"
-* valueString ^isModifier = false
-* valueString ^isSummary = false

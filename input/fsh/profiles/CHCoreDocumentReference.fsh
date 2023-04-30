@@ -19,8 +19,8 @@ Description: "Base definition for a document reference with the CH Core profiles
 
 * content.attachment.contentType obeys ch-docref-1
 * content.attachment.language from $DocumentEntry.languageCode (preferred)
-* content.format from $DocumentEntry.formatCode (preferred)
 
+* content.format from $DocumentEntry.formatCode (preferred)
 * context.encounter only Reference(CHCoreEncounter or EpisodeOfCare)
 * context.facilityType from $DocumentEntry.healthcareFacilityTypeCode (preferred)
 * context.practiceSetting from $DocumentEntry.practiceSettingCode (preferred)

@@ -4,7 +4,6 @@ Id: ch-core-composition
 Title: "CH Core Composition"
 Description: "Base definition for a composition with the CH Core profiles."
 
-* ^jurisdiction = urn:iso:std:iso:3166#CH
 * . ^short = "CH Core Composition"
 * subject only Reference(CHCorePatient)
 * subject.reference 1..

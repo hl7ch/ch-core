@@ -13,11 +13,15 @@ Description: "Ambulant Encounter of Mrs. Broennimann, representing the visit num
 * subject.reference = "Patient/ElisabethBroennimannByBFH"
 * period.start = "2019-04-22T16:00:00+02:00"
 * period.end = "2019-04-22T16:15:00+02:00"
-* hospitalization.extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-admitrole"
-* hospitalization.extension[=].valueCoding = $bfs-medstats-19-admitrole#1 "selbst, Angehörige"
-* hospitalization.extension[+].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedecision"
-* hospitalization.extension[=].valueCoding = $bfs-medstats-27-dischargedecision#1 "auf Initiative des Behandelnden"
-* hospitalization.extension[+].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedestination"
-* hospitalization.extension[=].valueCoding = $bfs-medstats-28-dischargedestination#1 "Zuhause"
+
+* hospitalization.extension[BfsAdmitRole].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-admitrole"
+* hospitalization.extension[BfsAdmitRole].valueCoding = $bfs-medstats-19-admitrole#1 "selbst, Angehörige"
+
+* hospitalization.extension[BfsDischargeDecision].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedecision"
+* hospitalization.extension[BfsDischargeDecision].valueCoding = $bfs-medstats-27-dischargedecision#1 "auf Initiative des Behandelnden"
+
+* hospitalization.extension[BfsDischargeDestination].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-bfs-ms-dischargedestination"
+* hospitalization.extension[BfsDischargeDestination].valueCoding = $bfs-medstats-28-dischargedestination#1 "Zuhause"
+
 * hospitalization.admitSource = $bfs-medstats-17-admitsource#1 "Zuhause"
 * hospitalization.dischargeDisposition = $bfs-medstats-29-dischargeencounter#1 "geheilt/kein Behandlungsbedarf"

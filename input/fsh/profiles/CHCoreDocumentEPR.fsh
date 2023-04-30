@@ -14,4 +14,4 @@ Description: "Base definition for a document in the context of the electronic pa
 * entry contains 
     Binary 0..*
 * entry[Binary].resource 1..
-* entry[Binary].resource only Binary
+* entry[Binary].resource ^type.profile = Canonical(Binary)

@@ -23,7 +23,6 @@ Description: "The Encounter referenced in the CH Core profiles."
 * subject 1..
 * subject only Reference(CHCorePatient)
 * participant.type from ChCoreEncounterParticipationType (extensible)
-
 * participant.individual only Reference(CHCorePractitioner)
 
 * hospitalization.extension ^slicing.discriminator.type = #value
@@ -48,6 +47,7 @@ Description: "The Encounter referenced in the CH Core profiles."
 * hospitalization.dischargeDisposition from $bfs-medstats-29-dischargeencounter_1 (preferred)
 * hospitalization.dischargeDisposition ^short = "BFS Medizinische Statistik - Behandlung nach Austritt"
 * hospitalization.dischargeDisposition ^binding.description = "BFS Medizinische Statistik - Behandlung nach Austritt"
+
 * location.location only Reference(CHCoreLocation)
 * serviceProvider only Reference(CHCoreOrganization)
 * partOf only Reference(CHCoreEncounter)
