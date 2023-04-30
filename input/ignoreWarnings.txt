@@ -2,7 +2,11 @@
 
 # The following code systems/value sets cannot be validated
 Code System URI 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' is unknown so the code cannot be validated
-Unable to check if http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.mimeType is a proper subset of http://hl7.org/fhir/ValueSet/mimetypes|4.0.1 - base value set is too large to check
+
+# Swiss specific values on a extensible value set
+None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/ech-11#contactData)
+None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH)
+None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH)
 
 # All important examples are included
 The Implementation Guide contains no examples for this profile
@@ -11,7 +15,45 @@ The Implementation Guide contains no examples for this extension
 # Wrong example in the base specification for the consent resource
 if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 
+# Pattern on those elements okay
+INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-coverage: StructureDefinition.snapshot.element[18].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-patient: StructureDefinition.snapshot.element[22].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-patient: StructureDefinition.snapshot.element[23].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-patient: StructureDefinition.snapshot.element[24].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-patient: StructureDefinition.snapshot.element[25].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-patient-epr: StructureDefinition.snapshot.element[16].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-patient-epr: StructureDefinition.snapshot.element[17].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
+# Additional slices that do not match a defined one 
+INFORMATION: Practitioner/SchreibKraft: Practitioner.identifier[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner|3.1.0
+INFORMATION: Composition/ZuweisungZurRadiologischenDiagnostik: Composition.section[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0  
+INFORMATION: Composition/ZuweisungZurRadiologischenDiagnostik: Composition.section[1]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Composition/ZuweisungZurRadiologischenDiagnostik: Composition.section[2]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Composition/ZuweisungZurRadiologischenDiagnostik: Composition.section[3]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Composition/ZuweisungZurRadiologischenDiagnostik: Composition.section[4]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR: Bundle.entry[0].resource.section[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR: Bundle.entry[0].resource.section[1]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0
+INFORMATION: Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR: Bundle.entry[0].resource.section[2]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0
+INFORMATION: Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR: Bundle.entry[0].resource.section[3]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0
+INFORMATION: Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR: Bundle.entry[0].resource.section[4]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0
+INFORMATION: Bundle/1-ZuweisungZurRadiologischenDiagnostik-FHIR: Bundle.entry[5].resource.entry[6].resource/*Practitioner/SchreibKraft*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner|3.1.0
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[10]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document|3.1.0 
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[0].resource.entry[4].resource/*Organization/74f3642a-835f-407a-a427-5e403fe8b0b3*/.telecom[1]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization|3.1.0 
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[8].resource.entry[9].resource/*Practitioner/be3ba855-6bef-4c36-92a1-8b76fefd3629*/.identifier[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner|3.1.0 
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[0].resource.section[0]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[0].resource.section[1]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[0].resource.section[2]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[0].resource.section[3]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[0].resource.section[4]: This element does not match any known slice defined in the profile http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr|3.1.0 
+
 # Build error
 The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The link 'www.sampledomain.ch' for "www.sampledomain.ch" cannot be resolved
+
+# Due to ongoing activities around the terminology server, see also https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/tx.2Efhir.2Eorg
+None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#VN)
+None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NI)
+The source display 'stationär' is not valid. Possible codes [stationär]
+The source display 'männlich' is not valid. Possible codes [männlich]

@@ -1,5 +1,5 @@
 ### Introduction
-This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> FHIR in Switzerland.
+This implementation guide is provided to support the use of FHIR<sup>&reg;&copy;</sup> in Switzerland.
 
 This guide is a working specification. We anticipate that it will be implemented and tested by FHIR system producers whose feedback will help improve its content. With this standard for trial use, we are looking for feedback on whether the following goals have been met: 
 - The guide provides guidance on essential resources for identifiers, code systems, value sets and naming systems in Switzerland, specifically in relation to the Swiss Electronic Patient Record ([EPR](https://www.patientendossier.ch/en)).

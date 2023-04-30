@@ -1,0 +1,180 @@
+id: ch.fhir.ig.ch-core
+canonical: http://fhir.ch/ig/ch-core
+url: http://fhir.ch/ig/ch-core/ImplementationGuide/ch.fhir.ig.ch-core
+name: CH_Core
+title: CH Core (R4)
+description: FHIR implementation guide CH Core
+status: active
+experimental: false
+date: 2023-04-28
+version: 3.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2020+
+releaselabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+publisher:
+  name: HL7 Switzerland
+  url: https://www.hl7.ch/
+contact:
+  - name: HL7 Switzerland
+    telecom:
+      - system: url
+        value: https://www.hl7.ch/
+        use: work
+license: CC-BY-SA-4.0
+copyright: CC-BY-SA-4.0
+jurisdiction: urn:iso:std:iso:3166#CH
+
+dependencies:
+  ch.fhir.ig.ch-epr-term: 2.0.8 # 2.0.x
+
+resources:
+  Bundle/CdaContainingOriginalRepresentationAsPdfA:
+    name: Transfer note for radiological diagnostics
+    description: Document EPR containing original representation as PDF-A (fullUrls of entries with ‘urn:uuid:’)
+    exampleBoolean: true
+  CodeSystem/bfs-medstats-17-admitsource:
+    exampleBoolean: false
+  CodeSystem/bfs-medstats-18-admittype:
+    exampleBoolean: false
+  CodeSystem/bfs-medstats-19-admitrole:
+    exampleBoolean: false
+  CodeSystem/bfs-medstats-20-encounterclass:
+    exampleBoolean: false
+  CodeSystem/bfs-medstats-21-encountertype:
+    exampleBoolean: false
+  CodeSystem/bfs-medstats-27-dischargedecision:
+    exampleBoolean: false  
+  CodeSystem/bfs-medstats-28-dischargedestination:
+    exampleBoolean: false  
+  CodeSystem/bfs-medstats-29-dischargeencounter:
+    exampleBoolean: false
+  CodeSystem/ech-10:
+    exampleBoolean: false  
+  CodeSystem/ech-11-maritalstatus:
+    exampleBoolean: false  
+  CodeSystem/ech-11-maritaldata-separation:
+    exampleBoolean: false  
+  CodeSystem/ech-11:
+    exampleBoolean: false  
+  CodeSystem/ech-11-sex:
+    exampleBoolean: false  
+  CodeSystem/ech-46-emailcategory:
+    exampleBoolean: false  
+  CodeSystem/ech-46-phonecategory:
+    exampleBoolean: false  
+  CodeSystem/ech-46-internetcategory:
+    exampleBoolean: false  
+  ConceptMap/bfs-encounter-class-to-fhir:
+    exampleBoolean: false 
+  ConceptMap/documententry-confidentialitycode-to-fhir:
+    exampleBoolean: false 
+  ConceptMap/maritalstatus-ech11-to-fhir:
+    exampleBoolean: false 
+  ConceptMap/sex-ech11-to-fhir:
+    exampleBoolean: false 
+  ConceptMap/ech-46-emailcategory-to-fhir:
+    exampleBoolean: false 
+  ConceptMap/ech-46-phonecategory-to-fhir:
+    exampleBoolean: false 
+  ConceptMap/ech-46-internetcategory-to-fhir:
+    exampleBoolean: false
+  NamingSystem/ahvn13:
+    exampleBoolean: false   
+    name: AHVN13 / NAVS13    
+  NamingSystem/ber:
+    exampleBoolean: false   
+    name: BER  
+  NamingSystem/epr-spid:
+    exampleBoolean: false   
+    name: EPR-SPID  
+  NamingSystem/gln:
+    exampleBoolean: false   
+    name: GLN  
+# uncommented because of missing uniqueId                       
+#  NamingSystem/k:
+#    exampleBoolean: false   
+#    name: K   
+#  NamingSystem/nif:
+#    exampleBoolean: false   
+#    name: NIF  
+  NamingSystem/uidb:
+    exampleBoolean: false   
+    name: UIDB  
+  NamingSystem/zsr:
+    exampleBoolean: false   
+    name: ZSR          
+  ValueSet/bfs-medstats-17-admitsource:
+    exampleBoolean: false
+  ValueSet/bfs-medstats-18-admittype:
+    exampleBoolean: false
+  ValueSet/bfs-medstats-19-admitrole:
+    exampleBoolean: false
+  ValueSet/bfs-medstats-20-encounterclass:
+    exampleBoolean: false
+  ValueSet/bfs-medstats-21-encountertype:
+    exampleBoolean: false
+  ValueSet/bfs-medstats-27-dischargedecision:
+    exampleBoolean: false
+  ValueSet/bfs-medstats-28-dischargedestination:
+    exampleBoolean: false
+  ValueSet/bfs-medstats-29-dischargeencounter:
+    exampleBoolean: false
+  ValueSet/ch-core-encounter-participation-type:
+    exampleBoolean: false
+  ValueSet/ch-core-maritalstatus:
+    exampleBoolean: false
+  ValueSet/ech-10-linetype:
+    exampleBoolean: false
+  ValueSet/ech-11-firstnamedatatype:
+    exampleBoolean: false
+  ValueSet/ech-11-namedatatype:
+    exampleBoolean: false
+  ValueSet/ech-11-maritalstatus:
+    exampleBoolean: false
+  ValueSet/ech-11-maritaldata-separation:
+    exampleBoolean: false
+  ValueSet/ech-11-sex:
+    exampleBoolean: false
+  ValueSet/ech-46-emailcategory:
+    exampleBoolean: false
+  ValueSet/ech-46-phonecategory:
+    exampleBoolean: false
+  ValueSet/ech-46-internetcategory:
+    exampleBoolean: false
+ 
+pages:
+  index.md:
+    title: Home
+  profiles.md:
+    title: Profiles
+  extensions.md:
+    title: Extensions
+  terminology.md:
+    title: Terminology 
+  changelog.md:
+    title: Change Log          
+
+menu:
+  Home: index.html
+  Profiles: profiles.html
+  Extensions: extensions.html
+  Terminology: terminology.html
+  Artifacts: artifacts.html
+      
+# For parameters defined by core FHIR see: 
+# http://build.fhir.org/codesystem-guide-parameter-code.html.
+# For parameters defined by the FHIR Tools IG  see:
+# http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+parameters:
+  excludettl: true
+  special-url:
+    - urn:oid:2.16.840.1.113883.6.316
+    - urn:oid:2.16.756.5.30.1.127.3.10.10
+  allow-extensible-warnings: true
+
+FSHOnly: false
+applyExtensionMetadataToRoot: false
+instanceOptions:
+  setMetaProfile: always
+  setId: always
+  manualSliceOrdering: true
