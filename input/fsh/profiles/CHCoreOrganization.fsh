@@ -15,17 +15,17 @@ Description: "Defines basic constraints and extensions on the Organization resou
     ZSR 0..1 and
     GLN 0..1
 * identifier[BER] ^short = "BER (Business and Enterprise Register), BUR (Betriebs- und Unternehmensregister), REE (Registre des entreprises et des établissements), RIS (Registro delle imprese e degli stabilimenti)"
-* identifier[BER] ^definition = "See [BER](NamingSystem-ber.html)"
+* identifier[BER] ^definition = "See [BER](http://fhir.ch/ig/ch-core/NamingSystem/ber)"
 * identifier[BER] ^patternIdentifier.system = "urn:oid:2.16.756.5.45"
 * identifier[UIDB] ^short = "UIDB (Unique Identification Business), UID (Verwendung der Unternehmens-Identifikationsnummer), IDE (Utilisation du numéro d'identification des entreprises), IDI (Utilizzo del numero d'identificazione delle imprese)"
-* identifier[UIDB] ^definition = "See [UIDB](NamingSystem-uidb.html)"
+* identifier[UIDB] ^definition = "See [UIDB](http://fhir.ch/ig/ch-core/NamingSystem/uidb)"
 * identifier[UIDB] ^patternIdentifier.system = "urn:oid:2.16.756.5.35"
 * identifier[ZSR] ^short = "ZSR (Zahlstellenregister), RCC (Registre des codes-créanciers), RCC (Registro dei codici creditori)"
-* identifier[ZSR] ^definition = "See [ZSR/RCC](NamingSystem-zsr.html)"
+* identifier[ZSR] ^definition = "See [ZSR/RCC](http://fhir.ch/ig/ch-core/NamingSystem/zsr)"
 * identifier[ZSR] ^patternIdentifier.system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
 * identifier[GLN] only GLNIdentifier
 * identifier[GLN] ^short = "Global Location Number (GLN)"
-* identifier[GLN] ^definition = "See [GLN](NamingSystem-gln.html)"
+* identifier[GLN] ^definition = "See [GLN](http://fhir.ch/ig/ch-core/NamingSystem/gln)"
 * identifier[GLN] ^patternIdentifier.system = "urn:oid:2.51.1.3"
 * type from $DocumentEntry.healthcareFacilityTypeCode (preferred)
 
