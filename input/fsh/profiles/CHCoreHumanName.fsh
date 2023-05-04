@@ -17,7 +17,7 @@ Description: "Name with extensions for ech-11"
 * family.extension ^slicing.discriminator.type = #value
 * family.extension ^slicing.discriminator.path = "url"
 * family.extension ^slicing.rules = #open
-* family.extension contains ECH011Name named echname 0..1
+* family.extension contains ECH011Name named ech11name 0..1
 * given 0..* SU
 * given only string
 * given ^short = "Given names (not always 'first'). Includes middle names"
@@ -29,7 +29,7 @@ Description: "Name with extensions for ech-11"
 * given.extension ^slicing.discriminator.type = #value
 * given.extension ^slicing.discriminator.path = "url"
 * given.extension ^slicing.rules = #open
-* given.extension contains ECH011FirstName named echfirstname 0..1
+* given.extension contains ECH011FirstName named ech11firstname 0..1
 * prefix 0..* SU
 * prefix only string
 * prefix ^short = "For a salutation use a prefix without the iso21090-EN-qualifier extension. For academical titles and legal status use the http://hl7.org/fhir/ExtensionDefinition/iso21090-EN-qualifier with the codes AC, LS."
@@ -48,7 +48,7 @@ Title: "eCH-Standards"
 Source: CHCoreHumanName
 Target: "http://www.ech.ch/"
 * family -> "eCH-0010: lastName"
-* family.extension[echname] -> "eCH-0011: officialName, originalName, allianceName, nameOnForeignPassport, aliasName, otherName, declaredForeignName"
+* family.extension[ech11name] -> "eCH-0011: officialName, originalName, allianceName, nameOnForeignPassport, aliasName, otherName, declaredForeignName"
 * given -> "eCH-0010: firstName equivalent to callName of eCH-0011"
-* given.extension[echfirstname] -> "eCH-0011: officialFirstName, callName, allianceName, firstNameOnForeignPassport, declaredForeignFirstName1"
+* given.extension[ech11firstname] -> "eCH-0011: officialFirstName, callName, allianceName, firstNameOnForeignPassport, declaredForeignFirstName1"
 * prefix -> "eCH-0010: mrMrs, title"
