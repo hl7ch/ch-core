@@ -6,4 +6,4 @@ Description: "Core PractitionerRole definition in the swiss context of the elect
 * ^purpose = "Core PractitionerRole EPR data which can be shared"
 * practitioner only Reference(CHCorePractitionerEPR)
 * organization only Reference(CHCoreOrganizationEPR)
-* specialty from $HCProfessional.hcSpecialisation (required)
+* specialty from $HCProfessional.hcSpecialisation (extensible)

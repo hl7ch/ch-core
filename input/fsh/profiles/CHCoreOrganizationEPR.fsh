@@ -5,5 +5,5 @@ Title: "CH Core Organization EPR"
 Description: "Core organization definition in the context of the electronic patient record (EPR)."
 
 * . ^short = "CH Core Organization EPR"
-* type from $DocumentEntry.healthcareFacilityTypeCode (required)
+* type from $DocumentEntry.healthcareFacilityTypeCode (extensible)
 * address ..1
