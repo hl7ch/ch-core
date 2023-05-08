@@ -31,7 +31,7 @@
         <target value="http://hl7.org/fhir/administrative-gender"/>
         <element>
             <code value="1"/>
-            <display value="männlich"/>
+            <display value="männlich"/>
             <target>
                 <code value="male"/>
                 <display value="Male"/>
