@@ -16,7 +16,7 @@ Description: "Base definition for a composition in the context of the electronic
 * identifier.system = "urn:ietf:rfc:3986" (exactly)
 * identifier.value 1..
 * type 1..
-* type from $DocumentEntry.typeCode (required)
+* type from $DocumentEntry.typeCode (extensible)
 
 * subject 1..
 * subject only Reference(CHCorePatientEPR)

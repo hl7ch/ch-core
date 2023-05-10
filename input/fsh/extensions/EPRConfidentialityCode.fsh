@@ -10,7 +10,7 @@ Description: "Extension for the confidentiality code according to the Swiss EPR 
 * url only uri
 * valueCodeableConcept 1..1
 * valueCodeableConcept only CodeableConcept
-* valueCodeableConcept from $DocumentEntry.confidentialityCode (required)
+* valueCodeableConcept from $DocumentEntry.confidentialityCode (extensible)
 * valueCodeableConcept ^short = "Value of extension"
 * valueCodeableConcept.coding 1..1
 * valueCodeableConcept.coding.system 1..1
