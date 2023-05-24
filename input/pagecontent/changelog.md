@@ -17,9 +17,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#31](https://github.com/hl7ch/ch-core/issues/31): Improve profiling for identifiers to avoid duplicated elements in the snapshot table
 * [#205](https://github.com/hl7ch/ch-core/issues/205): Concretization of the mapping of Patient.telecom for versions as of HL7 v2.7
 * [#181](https://github.com/hl7ch/ch-core/issues/181): Updated used eCH standards (incl. versions) to [introduction (home)](index.html#introduction) (standards themselves currently have no updates)
+* [#217](https://github.com/hl7ch/ch-core/issues/217): Add language tag to instances, to be able to validate the translation of codes
 * [#215](https://github.com/hl7ch/ch-core/issues/215): Relax binding strength to value sets from 'required' to 'extensible'
-
-
 
 
 ### STU 3 (2022-12-20)
