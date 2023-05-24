@@ -6,10 +6,10 @@ Description: "Base definition for a document reference in the context of the ele
 * . ^short = "CH Core DocumentReference EPR"
 
 * type 1..
-* type from $DocumentEntry.typeCode (required)
+* type from $DocumentEntry.typeCode (extensible)
 
 * category 1..
-* category from $DocumentEntry.classCode (required)
+* category from $DocumentEntry.classCode (extensible)
 
 * subject 1..
 * subject only Reference(CHCorePatientEPR)
@@ -22,18 +22,18 @@ Description: "Base definition for a document reference in the context of the ele
 * custodian only Reference(CHCoreOrganizationEPR)
 
 * securityLabel 1..
-* securityLabel from $DocumentEntry.confidentialityCode (required)
+* securityLabel from $DocumentEntry.confidentialityCode (extensible)
 
 * content.attachment.contentType 1..
-// content.attachment.contentType from $DocumentEntry.mimeType (required) -> not allowed on a required binding in FHIR core -> add constraint, like in CHCoreDocumentReference
+// content.attachment.contentType from $DocumentEntry.mimeType (extensible) -> not allowed on a required binding in FHIR core -> add constraint, like in CHCoreDocumentReference
 * content.attachment.contentType obeys ch-docref-2
 * content.attachment.language 1..
-* content.attachment.language from $DocumentEntry.languageCode (required)
+* content.attachment.language from $DocumentEntry.languageCode (extensible)
 * content.attachment.url 1..
 
 * content.format 1..
-* content.format from $DocumentEntry.formatCode (required)
+* content.format from $DocumentEntry.formatCode (extensible)
 
-* context.facilityType from $DocumentEntry.healthcareFacilityTypeCode (required)
-* context.practiceSetting from $DocumentEntry.practiceSettingCode (required)
+* context.facilityType from $DocumentEntry.healthcareFacilityTypeCode (extensible)
+* context.practiceSetting from $DocumentEntry.practiceSettingCode (extensible)
 * context.sourcePatientInfo only Reference(CHCorePatientEPR)

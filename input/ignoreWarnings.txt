@@ -8,6 +8,10 @@ None of the codings provided are in the value set 'Patient Contact Relationship 
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#MTH)
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#FTH)
 
+# No suitable code for Encounter.identifier / NamingSystem.type
+None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#VN)
+None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NI)
+
 # All important examples are included
 The Implementation Guide contains no examples for this profile
 The Implementation Guide contains no examples for this extension
@@ -51,9 +55,3 @@ INFORMATION: Bundle/CdaContainingOriginalRepresentationAsPdfA: Bundle.entry[0].r
 The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The link 'www.sampledomain.ch' for "www.sampledomain.ch" cannot be resolved
-
-# Due to ongoing activities around the terminology server, see also https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/tx.2Efhir.2Eorg
-None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#VN)
-None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NI)
-The source display 'stationär' is not valid. Possible codes [stationär]
-The source display 'männlich' is not valid. Possible codes [männlich]

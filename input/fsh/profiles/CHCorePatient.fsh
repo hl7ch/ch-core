@@ -64,7 +64,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * gender ^short = "male | female | other"
 * deceased[x] only boolean or dateTime
 * address only CHCoreAddress
-* maritalStatus from $ch-core-maritalstatus (required)
+* maritalStatus from $ch-core-maritalstatus (extensible)
 * maritalStatus.extension ^slicing.discriminator.type = #value
 * maritalStatus.extension ^slicing.discriminator.path = "url"
 * maritalStatus.extension ^slicing.rules = #open

@@ -18,7 +18,7 @@ Description: "The Encounter referenced in the CH Core profiles."
 * identifier[VisitNumber].value 1..
 * class ^short = "AMB | IMP : See mapping from BFS Medizinische Statistik BFS Encounter Class to FHIR"
 * class ^definition = "See mapping from BFS Medizinische Statistik [BFS Encounter Class to FHIR mapping](http://fhir.ch/ig/ch-core/ConceptMap/bfs-encounter-class-to-fhir)"
-* priority from $bfs-medstats-18-admittype_1 (required)
+* priority from $bfs-medstats-18-admittype_1 (extensible)
 * priority ^short = "BFS Medizinische Statistik - Eintrittsart / Mode d’admission / Genere di ricovero"
 * subject 1..
 * subject only Reference(CHCorePatient)
@@ -41,7 +41,7 @@ Description: "The Encounter referenced in the CH Core profiles."
 * hospitalization.extension[BfsDischargeDestination] ^short = "BFS Medizinische Statistik - Aufenthalt nach Austritt"
 
 * hospitalization.origin only Reference(CHCoreLocation or CHCoreOrganization)
-* hospitalization.admitSource from $bfs-medstats-17-admitsource_1 (required)
+* hospitalization.admitSource from $bfs-medstats-17-admitsource_1 (extensible)
 * hospitalization.admitSource ^short = "BFS Medizinische Statistik - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"
 * hospitalization.destination only Reference(CHCoreLocation or CHCoreOrganization)
 * hospitalization.dischargeDisposition from $bfs-medstats-29-dischargeencounter_1 (preferred)

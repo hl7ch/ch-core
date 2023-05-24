@@ -40,20 +40,19 @@
         </element>
         <element>
             <code value="3"/>
-            <display value="stationär"/>
+            <display value="stationär"/>
             <target>
                 <code value="IMP"/>
                 <display value="inpatient encounter"/>
                 <equivalence value="equivalent"/>
             </target>
-        </element>
-        <!-- uncommented because of the following error: The link 'null#equivalent' for "equivalent" cannot be resolved --> 
-        <!--<element>
+        </element> 
+        <element>
             <code value="9"/>
             <display value="unbekannt"/>
             <target>
                 <equivalence value="unmatched"/>
             </target>
-        </element>-->
+        </element>
     </group>
 </ConceptMap>
