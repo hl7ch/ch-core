@@ -1,4 +1,4 @@
-Instance: ns-forum-datenaustausch-tariff-type
+Instance: ch-core-forum-datenaustausch-tariff-ns
 InstanceOf: NamingSystem
 Usage: #definition
 * name = "NsForumDatenaustauschTariffType"
