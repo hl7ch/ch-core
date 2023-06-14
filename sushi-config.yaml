@@ -20,8 +20,8 @@ contact:
       - system: url
         value: https://www.hl7.ch/
         use: work
-license: CC-BY-SA-4.0
-copyright: CC-BY-SA-4.0
+license: CC0-1.0
+copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
