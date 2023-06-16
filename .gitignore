@@ -12,3 +12,4 @@ www/*
 !www/package-list.json
 !www/publish.ini
 fsh-generated/**
+.DS_Store
