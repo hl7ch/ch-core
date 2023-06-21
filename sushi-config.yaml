@@ -25,7 +25,7 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-epr-term: 2.0.8 # 2.0.x
+  ch.fhir.ig.ch-epr-term: current # 2.0.x
 
 resources:
   Bundle/CdaContainingOriginalRepresentationAsPdfA:
