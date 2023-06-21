@@ -23,7 +23,7 @@
             <code value="CH"/>
         </coding>
     </jurisdiction>
-    <copyright value="CC-BY-SA-4.0"/>
+    <copyright value="CC0-1.0"/>
     <sourceUri value="http://fhir.ch/ig/ch-core/ValueSet/ech-46-phonecategory"/>
     <targetUri value="http://hl7.org/fhir/ValueSet/contact-point-use"/>
     <group>
