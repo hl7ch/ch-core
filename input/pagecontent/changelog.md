@@ -5,7 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 * [#196](https://github.com/hl7ch/ch-core/issues/196): Data type profile [VEKAIdentifier](StructureDefinition-ch-core-veka-identifier.html) for [Coverage.identifier](StructureDefinition-ch-core-coverage.html) and new also for [Patient.identifier](StructureDefinition-ch-core-patient.html)
 * [#204](https://github.com/hl7ch/ch-core/issues/204): Introduce data type profiles for ContactPoints (email, phone, internet) according eCH-0046 (including extensions and terminology) and add them to the telecom element of Patient, Practitioner, Organization, Location
-* [#224](https://github.com/hl7ch/ch-core/issues/224)Forum Datenaustausch tariff Naming System
+* [#224](https://github.com/hl7ch/ch-core/issues/224): Forum Datenaustausch tariff Naming System
 
 #### Changed / Updated
 * [#206](https://github.com/hl7ch/ch-core/issues/206): Improve acronyms definition
@@ -20,6 +20,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#181](https://github.com/hl7ch/ch-core/issues/181): Updated used eCH standards (incl. versions) to [introduction (home)](index.html#introduction) (standards themselves currently have no updates)
 * [#217](https://github.com/hl7ch/ch-core/issues/217): Add language tag to instances, to be able to validate the translation of codes
 * [#215](https://github.com/hl7ch/ch-core/issues/215): Relax binding strength to value sets from 'required' to 'extensible'
+* [#225](https://github.com/hl7ch/ch-core/issues/225): Fix FHIRPath expression
 * [#226](https://github.com/hl7ch/ch-core/issues/226): Change license for ImplementationGuide / StructureDefinition to CC0 1.0 Universal (CC0 1.0)
 * [#222](https://github.com/hl7ch/ch-core/issues/222): PractitionerRole EPR: code binding
 
