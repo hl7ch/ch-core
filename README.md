@@ -1,7 +1,6 @@
 # CH Core Implementation Guide (R4) 
 Core FHIR profiles for Switzerland
 
-
 ## Building the Implementation Guide
 
 You can build the Implementation Guide with the [IG Publisher](https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation).
