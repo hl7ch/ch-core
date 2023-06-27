@@ -2,7 +2,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="ech-46-emailcategory"/>
     <url value="http://fhir.ch/ig/ch-core/ValueSet/ech-46-emailcategory"/>
-    <version value="3.1.0"/>
+    <version value="4.0.0-ballot"/>
     <name value="ECH46EmailCategory"/>
     <title value="eCH-0046 Email Category"/>
     <status value="active"/>

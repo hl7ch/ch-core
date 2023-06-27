@@ -2,7 +2,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="ech-46-internetcategory"/>
     <url value="http://fhir.ch/ig/ch-core/CodeSystem/ech-46-internetcategory"/>
-    <version value="3.1.0"/>
+    <version value="4.0.0-ballot"/>
     <name value="ECH46InternetCategory"/>
     <title value="eCH-0046 Internet Category"/>
     <status value="active"/>
