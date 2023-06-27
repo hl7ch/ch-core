@@ -1,11 +1,12 @@
 {
   "package-id" : "ch.fhir.ig.ch-core",
-  "version" : "3.1.0",
-  "path" : "http://fhir.ch/ig/ch-core/3.1.0",
-  "milestone" : false,
+  "version" : "4.0.0-ballot",
+  "path" : "http://fhir.ch/ig/ch-core/4.0.0-ballot",
+  "mode" : "milestone",
   "status" : "ballot",
-  "sequence" : "STU 4",
+  "sequence" : "STU",
   "desc" : "HL7 Switzerland STU 4",
-  "desccmd": "HL7 Switzerland STU 4",
-  "changes" : "changelog.html"
+  "desccmd": "HL7 Switzerland STU 4 Ballot",
+  "changes" : "changelog.html",
+  "first": false
 }

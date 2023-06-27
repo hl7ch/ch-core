@@ -2,7 +2,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="ech-46-internetcategory-to-fhir"/>
     <url value="http://fhir.ch/ig/ch-core/ConceptMap/ech-46-internetcategory-to-fhir" />
-    <version value="3.1.0"/>
+    <version value="4.0.0-ballot"/>
     <name value="ECH46InternetCategoryToFHIRMapping" />
     <title value="eCH-0046 Internet Category to FHIR Mapping"/>
     <status value="active"/>
