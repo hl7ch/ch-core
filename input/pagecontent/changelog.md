@@ -7,7 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 
 #### Fixed
-
+* [235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint
 
 
 
