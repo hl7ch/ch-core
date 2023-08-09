@@ -5,6 +5,7 @@ Title: "CH Core Address"
 Description: "address incorporating eCH-0010 postal address extensions"
 
 * . ^short = "An address expressed using postal conventions (as opposed to GPS or other location definition formats)"
+* obeys ch-addr-2
 * line.extension ^slicing.discriminator[0].type = #value
 * line.extension ^slicing.discriminator[=].path = "url"
 * line.extension ^slicing.discriminator[+].type = #value
@@ -42,7 +43,7 @@ Description: "address incorporating eCH-0010 postal address extensions"
 * city.extension ^slicing.rules = #open
 * city.extension contains 
     ECH007MunicipalityId named bfs 0..1
-
+* state ^short = "Use values from eCH-0007 Canton Abbreviation (incl. FL) for a Swiss address"
 * country.extension ^slicing.discriminator[0].type = #value
 * country.extension ^slicing.discriminator[=].path = "url"
 * country.extension ^slicing.rules = #open

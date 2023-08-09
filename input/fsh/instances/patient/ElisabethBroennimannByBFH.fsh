@@ -15,10 +15,60 @@ Description: "Patient with insurance card number as identifier, contact details,
 * telecom[=].value = "elisabeth@broennimann.today"
 * gender = #female
 * birthDate = "1937-05-03"
-* address.use = #home
-* address.line = "Kreuzweg 11"
-* address.city = "Biel/Bienne"
-* address.postalCode = "2500"
+// [0] ch-addr-2 correct
+* address[0].use = #home
+* address[=].line = "Kreuzweg 11"
+* address[=].city = "Biel/Bienne"
+* address[=].postalCode = "2500"
+* address[=].state = "BE"
+* address[=].country = "Schweiz"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+/* test cases for invariant ch-addr-2 
+// [1] ch-addr-2 correct
+* address[+].use = #home
+* address[=].line = "Kreuzweg 11"
+* address[=].city = "Biel/Bienne"
+* address[=].postalCode = "2500"
+* address[=].state = "BE"
+* address[=].country = "Schweiz"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CHE
+// [2] ch-addr-2 correct
+* address[+].use = #home
+* address[=].line = "Kreuzweg 11"
+* address[=].city = "Biel/Bienne"
+* address[=].postalCode = "2500"
+* address[=].state = "BE"
+* address[=].country = "Schweiz"
+// [3] ch-addr-2 correct
+* address[+].use = #home
+* address[=].line = "Kreuzweg 11"
+* address[=].city = "Biel/Bienne"
+* address[=].postalCode = "2500"
+* address[=].state = "BE"
+* address[=].country = "Schweiz"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#DE
+// [4] ch-addr-2 incorrect
+* address[+].use = #home
+* address[=].line = "Kreuzweg 11"
+* address[=].city = "Biel/Bienne"
+* address[=].postalCode = "2500"
+* address[=].state = "Bern"
+* address[=].country = "Schweiz"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+// [5] ch-addr-2correct
+* address[+].use = #home
+* address[=].line = "Kreuzweg 11"
+* address[=].city = "Biel/Bienne"
+* address[=].postalCode = "2500"
+* address[=].state = "Bern"
+* address[=].country = "Schweiz"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#DE
+*/
 * maritalStatus.coding[0] = $ech-11-maritalstatus#2 "verheiratet"
 * maritalStatus.coding[+] = $v3-MaritalStatus#M "married"
 * generalPractitioner.reference = "Practitioner/HanspeterWengerByBFH"
