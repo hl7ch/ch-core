@@ -26,6 +26,8 @@ Description: "Additional timestamp for the author or other elements."
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest.performer"
 * ^context[+].type = #element
+* ^context[=].expression = "MedicationRequest.requester"
+* ^context[+].type = #element
 * ^context[=].expression = "Extension.valueReference"
 
 * . ^definition = "Extension to define the timestamp of the authorship/data input"
