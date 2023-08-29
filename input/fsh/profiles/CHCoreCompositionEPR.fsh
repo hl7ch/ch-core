@@ -17,6 +17,7 @@ Description: "Base definition for a composition in the context of the electronic
 * identifier.value 1..
 * type 1..
 * type from $DocumentEntry.typeCode (extensible)
+* type ^short = "Kind of composition"
 
 * subject 1..
 * subject only Reference(CHCorePatientEPR)
