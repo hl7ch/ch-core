@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed / Updated
 * [242](https://github.com/hl7ch/ch-core/issues/242): Update the description for type of [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html)
+* [238](https://github.com/hl7ch/ch-core/issues/238): Update context of [Extension EPR Time](StructureDefinition-ch-ext-epr-time.html) with MedicationRequest.requester
 
 #### Fixed
 * [235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint
