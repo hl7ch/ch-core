@@ -43,7 +43,8 @@ Description: "address incorporating eCH-0010 postal address extensions"
 * city.extension ^slicing.rules = #open
 * city.extension contains 
     ECH007MunicipalityId named bfs 0..1
-* state ^short = "Use values from eCH-0007 Canton Abbreviation (incl. FL) for a Swiss or Liechtenstein address"
+* state from ECH007CantonFLAbbreviation (example)
+* state ^binding.description = "Use these values for a Swiss or Liechtenstein address"
 * country.extension ^slicing.discriminator[0].type = #value
 * country.extension ^slicing.discriminator[=].path = "url"
 * country.extension ^slicing.rules = #open
