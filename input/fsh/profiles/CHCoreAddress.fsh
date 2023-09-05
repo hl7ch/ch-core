@@ -5,9 +5,7 @@ Title: "CH Core Address"
 Description: "address incorporating eCH-0010 postal address extensions"
 
 * . ^short = "An address expressed using postal conventions (as opposed to GPS or other location definition formats)"
-* line only string
-* line ^short = "Street name, number, direction & P.O. Box etc."
-* line ^definition = "This component contains the house number, apartment number, street name, street direction,  P.O. Box number, delivery hints, and similar address information."
+* obeys ch-addr-2
 * line.extension ^slicing.discriminator[0].type = #value
 * line.extension ^slicing.discriminator[=].path = "url"
 * line.extension ^slicing.discriminator[+].type = #value
@@ -40,27 +38,13 @@ Description: "address incorporating eCH-0010 postal address extensions"
 * line.extension[postOfficeBoxText].valueCode only code
 * line.extension[postOfficeBoxText].valueCode = #postOfficeBoxText (exactly)
 * line.extension[postOfficeBoxNumber] ^short = "Optional postOfficeBoxNumber as a separate part of the postOfficeBoxText"
-* city only string
-* city SU
-* city ^alias[0] = "Municpality"
 * city.extension ^slicing.discriminator[0].type = #value
 * city.extension ^slicing.discriminator[=].path = "url"
 * city.extension ^slicing.rules = #open
 * city.extension contains 
     ECH007MunicipalityId named bfs 0..1
-* district only string
-* district SU
-* district ^short = "District name (aka county)"
-* district ^definition = "The name of the administrative area (county)."
-* district ^comment = "District is sometimes known as county, but in some regions 'county' is used in place of city (municipality), so county name should be conveyed in city instead."
-* district ^alias[0] = "County"
-* state ^alias[0] = "Province"
-* state ^alias[+] = "Territory"
-* postalCode only string
-* postalCode ^short = "Postal code for area"
-* postalCode ^definition = "A postal code designating a region defined by the postal service."
-* postalCode ^alias[0] = "Zip"
-* country only string
+* state from ECH007CantonFLAbbreviation (example)
+* state ^binding.description = "Use these values for a Swiss or Liechtenstein address"
 * country.extension ^slicing.discriminator[0].type = #value
 * country.extension ^slicing.discriminator[=].path = "url"
 * country.extension ^slicing.rules = #open
