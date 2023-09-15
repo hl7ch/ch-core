@@ -11,6 +11,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Fixed
 * [235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint
+* [#247](https://github.com/hl7ch/ch-core/issues/247): Fix constraint text and refactor expression (ch-core-doc-1)
 
 
 
