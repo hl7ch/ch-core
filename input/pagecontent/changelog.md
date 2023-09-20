@@ -6,13 +6,13 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#233](https://github.com/hl7ch/ch-core/issues/233): CH Core Address: Include eCH-0007 cantonAbbreviation
 
 #### Changed / Updated
-* [242](https://github.com/hl7ch/ch-core/issues/242): Update the description for type of [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html)
-* [238](https://github.com/hl7ch/ch-core/issues/238): Update context of [Extension EPR Time](StructureDefinition-ch-ext-epr-time.html) with MedicationRequest.requester
+* [#242](https://github.com/hl7ch/ch-core/issues/242): Update the description for type of [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html)
+* [#238](https://github.com/hl7ch/ch-core/issues/238): Update context of [Extension EPR Time](StructureDefinition-ch-ext-epr-time.html) with MedicationRequest.requester
+* [#246](https://github.com/hl7ch/ch-core/issues/246): Only allow an UUID as Bundle.identifier in the EPR context
 
 #### Fixed
-* [235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint
+* [#235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint
 * [#247](https://github.com/hl7ch/ch-core/issues/247): Fix constraint text and refactor expression (ch-core-doc-1)
-
 
 
 ### STU 4 Ballot (2023-06-27)
