@@ -11,7 +11,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#246](https://github.com/hl7ch/ch-core/issues/246): Only allow an UUID as Bundle.identifier in the EPR context
 
 #### Fixed
-* [235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint
+* [235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint 
 
 
 
