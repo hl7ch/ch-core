@@ -146,6 +146,8 @@ resources:
 pages:
   index.md:
     title: Home
+  guidance.md:
+    title: Guidance  
   profiles.md:
     title: Profiles
   extensions.md:
@@ -153,10 +155,11 @@ pages:
   terminology.md:
     title: Terminology 
   changelog.md:
-    title: Change Log          
+    title: Changelog          
 
 menu:
   Home: index.html
+  Guidance: guidance.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
