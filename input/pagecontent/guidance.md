@@ -8,7 +8,8 @@ SNOMED CT is designed so that the International Edition can be complemented by c
    * Edition URI: [http://snomed.info/sct/2011000195101](http://snomed.info/sct/2011000195101) 
 
 #### Usage in Swiss Exchange Formats
-To illustrate how the SNOMED CT codes (international vs. Swiss extension) are used, examples of the CH EMED exchange format are shown below.
+The guidance for Switzerland is that the `version` element should only be added when using codes from the Swiss extension.    
+To illustrate how the SNOMED CT codes (international vs. Swiss extension) are used, examples of the CH EMED exchange format are shown below.  
 
 **SNOMED CT international**: 721912009 "Medication summary document (record artifact)"   
 
