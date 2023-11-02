@@ -1,9 +1,9 @@
 Extension: EntryResourceCrossReferences
-Id: ch-vacd-ext-entry-resource-cross-references
+Id: ch-core-ext-entry-resource-cross-references
 Title: "Entry Resource Cross References"
 Description: "Extension to make a reference beween resources as entries in i.e. document bundles."
-* ^status = #draft
-* ^date = "2021-11-09T00:00:00+00:00"
+* ^status = #active
+* ^date = "2023-11-02T00:00:00+00:00"
 * ^publisher = "HL7 Schweiz"
 * ^context.type = #element
 * ^context.expression = "DomainResource"
