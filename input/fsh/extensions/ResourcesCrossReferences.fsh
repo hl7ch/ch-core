@@ -7,7 +7,6 @@ Description: "Extension to make a reference beween resources as entries in i.e. 
 * ^publisher = "HL7 Schweiz"
 * ^context.type = #element
 * ^context.expression = "DomainResource"
-* . MS
 * . 0..*
 * . ^short = "Entry Resource Cross References"
 * . ^definition = "Extension to make a reference beween resources as entries in i.e. document bundles."
@@ -25,14 +24,14 @@ Description: "Extension to make a reference beween resources as entries in i.e. 
    resource 1..1
 * extension[entry].extension[identifier] only Extension
 * extension[entry].extension[identifier].url only uri   
-* extension[entry].extension[identifier].valueIdentifier 1.. MS
+* extension[entry].extension[identifier].valueIdentifier 1.. 
 * extension[entry].extension[identifier].extension 0..0
 * extension[entry].extension[identifier].valueIdentifier ^short = "The identifier of the entry."
 * extension[entry].extension[identifier].extension 0..0
 * extension[entry].extension[resource] only Extension
 * extension[entry].extension[resource].url only uri   
-* extension[entry].extension[resource].valueString ^short = "The resource type of the entry."
-* extension[entry].extension[resource].extension 0..0
+* extension[entry].extension[resource].valueCode ^short = "The resource type of the entry."
+* extension[entry].extension[resource].valueCode from ResourceType (required)
 * extension[entry].extension[resource].extension 0..0
 
 * extension[container] only Extension
@@ -45,19 +44,20 @@ Description: "Extension to make a reference beween resources as entries in i.e. 
    resource 1..1
 * extension[container].extension[identifier] only Extension
 * extension[container].extension[identifier].url only uri   
-* extension[container].extension[identifier].valueIdentifier 1.. MS
+* extension[container].extension[identifier].valueIdentifier 1.. 
 * extension[container].extension[identifier].valueIdentifier ^short = "The identifier of the entry."
 * extension[container].extension[identifier].extension 0..0
 * extension[container].extension[resource] only Extension
 * extension[container].extension[resource].url only uri   
-* extension[container].extension[resource].valueString ^short = "The resource type of the entry."
+* extension[container].extension[resource].valueCode ^short = "The resource type of the entry."
+* extension[container].extension[resource].valueCode from ResourceType (required)
 * extension[container].extension[resource].extension 0..0
 
 * extension[relationcode] only Extension
 * extension[relationcode] ^short = "Reference to the related document"
 * extension[relationcode] ^definition = "Reference to the related document"
 * extension[relationcode].url only uri
-* extension[relationcode].valueCode 1.. MS
+* extension[relationcode].valueCode 1.. 
 * extension[relationcode].valueCode only code
 * extension[relationcode].valueCode from DocumentRelationshipType (required)
 * extension[relationcode].valueCode ^short = "The type of relationship between the elements in the documents."
