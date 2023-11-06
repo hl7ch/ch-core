@@ -25,7 +25,7 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-epr-term: 2.0.9
+  ch.fhir.ig.ch-epr-term: 2.0.x
   hl7.terminology: 5.1.0
 
 resources:
