@@ -126,8 +126,8 @@ Target: "http://www.ech.ch/"
 * maritalStatus -> "eCH-0011: 3.3.5 maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"
 * maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: 3.3.5.5 separation - Trennung BFS-343"
 * contact[contact] -> "eCH-0011: 3.3.8 contactData, BFS-61"
-* contact[nameOfFather] -> "eCH-0021: 4.1.4.1 nameOfFather"
-* contact[nameOfMother] -> "eCH-0021: 4.1.4.2 nameOfMother"
+* contact[nameOfFather] -> "eCH-0021: nameOfParent"
+* contact[nameOfMother] -> "eCH-0021: nameOfParent"
 * communication[languageOfCorrespondence] -> "eCH-0011: 3.3.9 languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
 
 Mapping: v2-for-CHCorePatient
