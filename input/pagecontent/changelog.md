@@ -10,7 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#242](https://github.com/hl7ch/ch-core/issues/242): Update the description for type of [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html)
 * [#238](https://github.com/hl7ch/ch-core/issues/238): Update context of [Extension EPR Time](StructureDefinition-ch-ext-epr-time.html) with MedicationRequest.requester
 * [#246](https://github.com/hl7ch/ch-core/issues/246): Only allow an UUID as Bundle.identifier in the EPR context
-* [#181](https://github.com/hl7ch/ch-core/issues/181): Update mapping of Patient.contact:nameOfFahter/nameOfMother according to eCH RFC 2019-9: _geschlechtsneutrale Bezeichnung für Namen der Eltern_ and remove chapter numbers in mapping of eCH
+* [#181](https://github.com/hl7ch/ch-core/issues/181): Change slicing from Patient.contact:nameOfFahter/nameOfMother to Patient.contact:nameOfParent according to eCH RFC 2019-9: _geschlechtsneutrale Bezeichnung für Namen der Eltern_ and remove chapter numbers in mapping of eCH
 
 #### Fixed
 * [#235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint

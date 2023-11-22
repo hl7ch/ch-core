@@ -78,22 +78,17 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * contact ^slicing.rules = #open
 * contact contains
     contact 0..1 and
-    nameOfFather 0..1 and
-    nameOfMother 0..1
+    nameOfParent 0..* 
 * contact[contact] ^short = "Contact data if it is not address of patient"
 * contact[contact].relationship ..1
 * contact[contact].relationship = $ech-11#contactData
 * contact[contact].telecom 0..0
 * contact[contact].address 1..
 * contact[contact].address only CHCoreAddressECH10
-* contact[nameOfFather] ^short = "Name of father"
-* contact[nameOfFather].relationship ..1
-* contact[nameOfFather].relationship = $v3-RoleCode#FTH
-* contact[nameOfFather].name 1..
-* contact[nameOfMother] ^short = "Name of mother"
-* contact[nameOfMother].relationship ..1
-* contact[nameOfMother].relationship = $v3-RoleCode#MTH
-* contact[nameOfMother].name 1..
+* contact[nameOfParent] ^short = "Name of parent"
+* contact[nameOfParent].relationship ..1
+* contact[nameOfParent].relationship = $v3-RoleCode#PRN
+* contact[nameOfParent].name 1..
 * communication ^slicing.discriminator.type = #value
 * communication ^slicing.discriminator.path = "preferred"
 * communication ^slicing.ordered = false
@@ -126,8 +121,7 @@ Target: "http://www.ech.ch/"
 * maritalStatus -> "eCH-0011: maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"
 * maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: separation - Trennung BFS-343"
 * contact[contact] -> "eCH-0011: contactData, BFS-61"
-* contact[nameOfFather] -> "eCH-0021: nameOfParent"
-* contact[nameOfMother] -> "eCH-0021: nameOfParent"
+* contact[nameOfParent] -> "eCH-0021: nameOfParent"
 * communication[languageOfCorrespondence] -> "eCH-0011: languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
 
 Mapping: v2-for-CHCorePatient
