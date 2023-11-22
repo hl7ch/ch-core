@@ -25,7 +25,7 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-epr-term: 2.0.9
+  ch.fhir.ig.ch-epr-term: 2.0.x
   hl7.terminology: 5.1.0
 
 resources:
@@ -146,6 +146,8 @@ resources:
 pages:
   index.md:
     title: Home
+  guidance.md:
+    title: Guidance  
   profiles.md:
     title: Profiles
   extensions.md:
@@ -153,10 +155,11 @@ pages:
   terminology.md:
     title: Terminology 
   changelog.md:
-    title: Change Log          
+    title: Changelog          
 
 menu:
   Home: index.html
+  Guidance: guidance.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html

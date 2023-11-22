@@ -1,7 +1,8 @@
 == Suppressed Messages ==
 
-# The following code systems/value sets cannot be validated
+# The following code systems/value sets/codes cannot be validated (external systems)
 Code System URI 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' is unknown so the code cannot be validated
+The code '1141000195107' comes from the system urn:oid:2.16.756.5.30.1.127.3.4 which is unknown, so it's not known whether it's valid in the value set 'http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode'
 
 # Swiss specific values on a extensible value set
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/ech-11#contactData)
@@ -33,3 +34,6 @@ INFORMATION: StructureDefinition/ch-core-patient-epr: StructureDefinition.snapsh
 The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The link 'www.sampledomain.ch' for "www.sampledomain.ch" cannot be resolved
+
+# https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher
+The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)

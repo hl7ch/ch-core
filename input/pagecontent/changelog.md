@@ -4,6 +4,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Added
 * [#233](https://github.com/hl7ch/ch-core/issues/233): CH Core Address: Include eCH-0007 cantonAbbreviation
+* [#244](https://github.com/hl7ch/ch-core/issues/244): Guidance how to use SNOMED CT codes from the Swiss Extension
+* [#254](https://github.com/hl7ch/ch-core/issues/254): Separate data type profile for identifiers (ZSR, UIDB, BER)
 
 #### Changed / Updated
 * [#242](https://github.com/hl7ch/ch-core/issues/242): Update the description for type of [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html)
@@ -14,7 +16,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Fixed
 * [#235](https://github.com/hl7ch/ch-core/issues/235): Fix GLN constraint
 * [#247](https://github.com/hl7ch/ch-core/issues/247): Fix constraint text and refactor expression (ch-core-doc-1)
-
+* [#256](https://github.com/hl7ch/ch-core/issues/256): Fix references in example with UUID as fullUrl based on rules around matching relative references
+* [#257](https://github.com/hl7ch/ch-core/issues/257): Warning instead of errors for GLN, EPR-SPID, AHVN13 and VEKA datatype profiles
 
 ### STU 4 Ballot (2023-06-27)
 
