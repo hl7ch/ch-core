@@ -17,9 +17,6 @@ None of the codings provided are in the value set 'IdentifierType' (http://hl7.o
 The Implementation Guide contains no examples for this profile
 The Implementation Guide contains no examples for this extension
 
-# Wrong example in the base specification for the consent resource
-if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
-
 # Pattern on those elements okay
 INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/ch-core-coverage: StructureDefinition.snapshot.element[18].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
