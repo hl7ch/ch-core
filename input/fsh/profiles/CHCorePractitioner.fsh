@@ -17,13 +17,9 @@ Description: "Core practitioner definition in the swiss context."
 * identifier[GLN] only GLNIdentifier
 * identifier[GLN] ^short = "GLN (Global Location Number)"
 * identifier[GLN] ^definition = "See [GLN](http://fhir.ch/ig/ch-core/NamingSystem/gln)"
+* identifier[ZSR] only ZSRIdentifier
 * identifier[ZSR] ^short = "ZSR (Zahlstellenregister), RCC (Registre des codes-créanciers), RCC (Registro dei codici creditori)"
 * identifier[ZSR] ^definition = "The [ZSR/RCC](http://fhir.ch/ig/ch-core/NamingSystem/zsr) number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance."
-* identifier[ZSR].system 1..
-* identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1" (exactly)
-* identifier[ZSR].system ^short = "OID of the ZSR/RCC"
-* identifier[ZSR].value 1..
-* identifier[ZSR].value ^short = "ZSR/RCC of the practitioner"
 * name only CHCoreHumanName
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
