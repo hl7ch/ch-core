@@ -1,7 +1,8 @@
 == Suppressed Messages ==
 
-# The following code systems/value sets cannot be validated
+# The following code systems/value sets/codes cannot be validated (external systems)
 Code System URI 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' is unknown so the code cannot be validated
+The code '1141000195107' comes from the system urn:oid:2.16.756.5.30.1.127.3.4 which is unknown, so it's not known whether it's valid in the value set 'http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode'
 
 # Swiss specific values on a extensible value set
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/ech-11#contactData)

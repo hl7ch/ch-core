@@ -20,13 +20,13 @@
         <language value="en-US"/>
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient">
           <valueReference>
-            <reference value="Organization/e118f753-caaa-4696-991a-b20a796ce782"/>
+            <reference value="urn:uuid:e118f753-caaa-4696-991a-b20a796ce782"/>
           </valueReference>
         </extension>
         <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
           <extension url="enterer">
             <valueReference>
-              <reference value="PractitionerRole/cac33923-b081-4060-bd57-46ee35dd5a33"/>
+              <reference value="urn:uuid:cac33923-b081-4060-bd57-46ee35dd5a33"/>
             </valueReference>
           </extension>
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
@@ -51,17 +51,17 @@
           </coding>
         </type>
         <subject>
-          <reference value="Patient/d80b05d6-2b3b-443e-9797-e4ac8615f7ce"/>
+          <reference value="urn:uuid:d80b05d6-2b3b-443e-9797-e4ac8615f7ce"/>
         </subject>
         <date value="2018-02-06T16:57:00+01:00"/>
         <author>
           <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
             <valueDateTime value="2017-10-03T16:09:00+01:00"/>
           </extension>
-          <reference value="Practitioner/5e5d0948-61b0-4555-9a8f-40bacdc0cb8c"/>
+          <reference value="urn:uuid:5e5d0948-61b0-4555-9a8f-40bacdc0cb8c"/>
         </author>
         <author>
-          <reference value="Organization/74f3642a-835f-407a-a427-5e403fe8b0b3"/>
+          <reference value="urn:uuid:74f3642a-835f-407a-a427-5e403fe8b0b3"/>
         </author>
         <title value="Transfer note for radiological diagnostics"/>
         <confidentiality value="N">
@@ -79,11 +79,11 @@
           <mode value="legal"/>
           <time value="2017-10-03"/>
           <party>
-            <reference value="Practitioner/7347db10-d4b3-4cc4-be86-dc2224fdf030"/>
+            <reference value="urn:uuid:7347db10-d4b3-4cc4-be86-dc2224fdf030"/>
           </party>
         </attester>
         <custodian>
-          <reference value="Organization/28c3d63b-47d4-4f5f-9bbe-afd3a19cefc2"/>
+          <reference value="urn:uuid:28c3d63b-47d4-4f5f-9bbe-afd3a19cefc2"/>
         </custodian>
         <section>
           <title value="Ordered diagnostics"/>
@@ -145,7 +145,7 @@
             <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
               <valueUrl value="pdf1"/>
             </extension>
-            <reference value="Binary/8f304c87-ed20-4e9a-b928-db4116eb6594"/>
+            <reference value="urn:uuid:8f304c87-ed20-4e9a-b928-db4116eb6594"/>
           </entry>
         </section>
       </Composition>
@@ -197,7 +197,7 @@
           <country value="CH"/>
         </address>
         <managingOrganization>
-          <reference value="Organization/c1a98d0c-802b-4cce-b922-93eee325cc14"/>
+          <reference value="urn:uuid:c1a98d0c-802b-4cce-b922-93eee325cc14"/>
         </managingOrganization>
       </Patient>
     </resource>
