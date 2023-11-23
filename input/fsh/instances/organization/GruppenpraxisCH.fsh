@@ -3,6 +3,7 @@ InstanceOf: CHCoreOrganizationEPR
 Usage: #example
 Title: "Gruppenpraxis CH"
 Description: "Organization EPR with GLN, different contact details (e.g. phone, email) and address"
+* id = "GruppenpraxisCH"
 * meta.profile[0] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"
 * meta.profile[+] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"
 * identifier.system = "urn:oid:2.51.1.3"

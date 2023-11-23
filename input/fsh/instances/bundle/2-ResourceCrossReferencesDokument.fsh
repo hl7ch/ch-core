@@ -8,19 +8,24 @@ Description: "Ein Beispieldokument mit einem Eintrag welcher die Extension zur k
 * identifier.value = "urn:uuid:66403c99-f41f-4225-bbea-3e34ac1c0d3c"
 * type = #document
 * timestamp = "2023-11-02T12:00:00+01:00"
-* entry[+].fullUrl = "urn:uuid:e652561f-5df2-418e-8cb4-b4b07fd2ee42"
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Composition/ResourceCrossReferencesDokumentComposition"
 * entry[=].resource = ResourceCrossReferencesDokumentComposition
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/AllzeitBereit"
 * entry[=].resource = AllzeitBereit
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Patient/MaxMuster"
 * entry[=].resource = MaxMuster
-* entry[+].fullUrl = "urn:uuid:9f326dee-1265-4b59-88b3-fd63bb2da934"
-* entry[=].resource = ReferencingDocumentElement
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Immunization/ImmunizationEntry"
+* entry[=].resource = ImmunizationEntry
+* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/GruppenpraxisCH"
+* entry[=].resource = GruppenpraxisCH
 
 
-Instance: ReferencingDocumentElement
+Instance: ImmunizationEntry
 InstanceOf: Immunization
-* id = "9f326dee-1265-4b59-88b3-fd63bb2da934"
+Title: "Immunization example for Immunization Administration"
+Description: "An Immunization example with extension for cross dokument referencing."
+Usage: #example
+* id = "ImmunizationEntry"
 * extension[+].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-ext-entry-resource-cross-references"
 * extension[=].extension[+].url = "entry"
 * extension[=].extension[=].extension[0].url = "identifier"
@@ -40,15 +45,15 @@ InstanceOf: Immunization
 * identifier.value = "urn:uuid:9f326dee-1265-4b59-88b3-fd63bb2da934"
 * status = #completed
 * vaccineCode = $sct#871751006 "Vaccine product containing only Hepatitis A virus antigen (medicinal product)"
-* patient = Reference(MaxMuster)
+* patient = Reference(http://test.fhir.ch/r4/Patient/MaxMuster)
 * occurrenceDateTime = "2021-06-01"
 * recorded = "2021-06-02T00:00:00.390+02:00"
 * lotNumber = "AHAVB946A"
 * route = http://standardterms.edqm.eu#20035000 "Intramuscular use"
-* performer.actor = Reference(AllzeitBereit)
+* performer.actor = Reference(http://test.fhir.ch/r4/Practitioner/AllzeitBereit)
 * protocolApplied.targetDisease[0] = $sct#40468003 "Viral hepatitis, type A (disorder)"
 * protocolApplied.doseNumberPositiveInt = 1
-* note.authorReference = Reference(AllzeitBereit)
+* note.authorReference = Reference(http://test.fhir.ch/r4/Practitioner/AllzeitBereit)
 * note.time = "2021-06-01"
 * note.text = "Der Patient hat diese Impfung ohne jegliche Nebenwirkungen gut vertragen."
 
@@ -58,15 +63,15 @@ InstanceOf: Composition
 Title: "Patient Document 1 Stammgemeinschaft Composition"
 Description: "Example for Composition Immunization Administration"
 Usage: #example
-* id = "e652561f-5df2-418e-8cb4-b4b07fd2ee42"
+* id = "ResourceCrossReferencesDokumentComposition"
 * language = #en-US
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:e652561f-5df2-418e-8cb4-b4b07fd2ee42"
 * status = #final
 * type = $sct#41000179103 "Immunization record"
-* subject = Reference(MaxMuster)
+* subject = Reference(http://test.fhir.ch/r4/Patient/MaxMuster)
 * date = "2021-06-01T00:00:00+02:00"
-* author = Reference(AllzeitBereit)
+* author = Reference(http://test.fhir.ch/r4/Practitioner/AllzeitBereit)
 * title = "Immunization Administration"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
 * confidentiality.extension.valueCodeableConcept = $sct#17621005 "Normal (qualifier value)"
@@ -75,5 +80,5 @@ Usage: #example
 * section[=].title = "Immunization Administration"
 * section[=].code = $loinc#11369-6 "Hx of Immunization"
 * section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Code: </b><span>Hx of Immunization (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Immunization-TCA01-IMMUN1-patient.html\">Immunization/TCA01-IMMUN1-patient</a></td></tr></table></div>"
-* section[=].entry = Reference(ReferencingDocumentElement)
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Code: </b><span>Hx of Immunization (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Immunization-ImmunizationEntry.html\">Immunization/ImmunizationEntry</a></td></tr></table></div>"
+* section[=].entry = Reference(http://test.fhir.ch/r4/Immunization/ImmunizationEntry)
