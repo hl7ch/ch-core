@@ -3,6 +3,7 @@ InstanceOf: CHCorePatientEPR
 Usage: #example
 Title: "Max Muster"
 Description: "Patient EPR with eCH-0011 family & and given name, eCH-0046 contact points and reference to the organization that is the custodian of the patient record"
+* id = "MaxMuster"
 * meta.profile[0] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient"
 * meta.profile[+] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"
 * language = #de-CH
