@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#233](https://github.com/hl7ch/ch-core/issues/233): CH Core Address: Include eCH-0007 cantonAbbreviation
 * [#244](https://github.com/hl7ch/ch-core/issues/244): Guidance how to use SNOMED CT codes from the Swiss Extension
 * [#254](https://github.com/hl7ch/ch-core/issues/254): Separate data type profile for identifiers (ZSR, UIDB, BER)
+* [#262](https://github.com/hl7ch/ch-core/issues/262): New extension to reference entries in i.e. other documents
 
 #### Changed / Updated
 * [#242](https://github.com/hl7ch/ch-core/issues/242): Update the description for type of [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html)
