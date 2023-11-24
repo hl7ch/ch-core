@@ -29,10 +29,9 @@ Description: "Test Patient from UPI for Swiss EPR Projectathon"
 * gender = #female
 * birthDate = "1982-03-20"
 
-* contact[nameOfMother].relationship = $v3-RoleCode#MTH "mother"
-* contact[nameOfMother].name.family = "Dalkiliç"
-* contact[nameOfMother].name.given = "Hui Xue"
-// http://build.fhir.org/valueset-parent-relationship-codes.html
-* contact[nameOfFather].relationship = $v3-RoleCode#FTH "father"
-* contact[nameOfFather].name.family = "Dalkiliç"
-* contact[nameOfFather].name.given = "Fabio Nicola"
+* contact[nameOfParent][0].relationship = $v3-RoleCode#PRN "parent"
+* contact[nameOfParent][=].name.family = "Dalkiliç"
+* contact[nameOfParent][=].name.given = "Hui Xue"
+* contact[nameOfParent][+].relationship = $v3-RoleCode#PRN "parent"
+* contact[nameOfParent][=].name.family = "Dalkiliç"
+* contact[nameOfParent][=].name.given = "Fabio Nicola"
