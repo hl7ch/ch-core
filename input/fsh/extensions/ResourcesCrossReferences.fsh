@@ -35,11 +35,11 @@ Description: "Extension to make a reference beween resources as entries in i.e. 
 * extension[container].valueReference ^short = "Reference to the container resource i.e. Bundle.composition containinig the referenced entry"
 * extension[container].valueReference.reference 0..0
 * extension[container].valueReference.type 1..1
-* extension[entry].valueReference.type ^short = "Container resource type"
-* extension[entry].valueReference.type ^definition = "The resource type of the container containing the referenced entry"
-* extension[entry].valueReference.identifier 1..1
-* extension[entry].valueReference.identifier ^short = "Identifier of container"
-* extension[entry].valueReference.identifier ^definition = "A identifier of the container containing the referenced entry"
+* extension[container].valueReference.type ^short = "Container resource type"
+* extension[container].valueReference.type ^definition = "The resource type of the container containing the referenced entry"
+* extension[container].valueReference.identifier 1..1
+* extension[container].valueReference.identifier ^short = "Identifier of container"
+* extension[container].valueReference.identifier ^definition = "A identifier of the container containing the referenced entry"
 
 * extension[relationcode] only Extension
 * extension[relationcode] ^short = "Reference to the related document"
