@@ -30,7 +30,7 @@ Id: eCH
 Title: "eCH Standards"
 Source: CHCoreAddressECH10
 Target: "https://www.ech.ch/"
-* -> "eCH-0010: 5.5 addressInformation"
-* city -> "eCH-0010: 5.23 town"
-* postalCode -> "eCH-0010: 5.18 swissZipCode, 5.19 swissZipCodeAddOn, 5.20 swissZipCodeId, 5.21 foreignZipCode"
-* country -> "eCH-0010: 5.24 country"
+* -> "eCH-0010: addressInformation"
+* city -> "eCH-0010: town"
+* postalCode -> "eCH-0010: swissZipCode, swissZipCodeAddOn, swissZipCodeId, foreignZipCode"
+* country -> "eCH-0010: country"

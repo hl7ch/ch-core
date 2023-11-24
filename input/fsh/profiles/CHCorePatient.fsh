@@ -78,22 +78,17 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * contact ^slicing.rules = #open
 * contact contains
     contact 0..1 and
-    nameOfFather 0..1 and
-    nameOfMother 0..1
+    nameOfParent 0..* 
 * contact[contact] ^short = "Contact data if it is not address of patient"
 * contact[contact].relationship ..1
 * contact[contact].relationship = $ech-11#contactData
 * contact[contact].telecom 0..0
 * contact[contact].address 1..
 * contact[contact].address only CHCoreAddressECH10
-* contact[nameOfFather] ^short = "Name of father"
-* contact[nameOfFather].relationship ..1
-* contact[nameOfFather].relationship = $v3-RoleCode#FTH
-* contact[nameOfFather].name 1..
-* contact[nameOfMother] ^short = "Name of mother"
-* contact[nameOfMother].relationship ..1
-* contact[nameOfMother].relationship = $v3-RoleCode#MTH
-* contact[nameOfMother].name 1..
+* contact[nameOfParent] ^short = "Name of parent"
+* contact[nameOfParent].relationship ..1
+* contact[nameOfParent].relationship = $v3-RoleCode#PRN
+* contact[nameOfParent].name 1..
 * communication ^slicing.discriminator.type = #value
 * communication ^slicing.discriminator.path = "preferred"
 * communication ^slicing.ordered = false
@@ -111,24 +106,23 @@ Id: eCH
 Title: "eCH-Standards"
 Source: CHCorePatient
 Target: "http://www.ech.ch/"
-* extension[placeOfBirth] -> "eCH-0011: 3.3.3.2 placeOfBirth BFS-322, BFS-323, BFS 324"
-* extension[placeOfOrigin] -> "eCH-0011: 3.3.10 placeOfOrigin, BFS-42"
-* extension[citizenship] -> "eCH-0011: 3.3.6 nationalityData"
-* extension[religion] -> "eCH-0011: 3.3.4.1 religion, BFS-711"
-* name -> "eCH-0011: 3.3.2 nameData"
+* extension[placeOfBirth] -> "eCH-0011: placeOfBirth BFS-322, BFS-323, BFS 324"
+* extension[placeOfOrigin] -> "eCH-0011: placeOfOrigin, BFS-42"
+* extension[citizenship] -> "eCH-0011: nationalityData"
+* extension[religion] -> "eCH-0011: religion, BFS-711"
+* name -> "eCH-0011: nameData"
 * telecom -> "eCH-0046: Contact"
-* telecom[email] -> "eCH-0046: 4.3 email"
-* telecom[phone] -> "eCH-0046: 4.4 phone"
-* telecom[internet] -> "eCH-0046: 4.5 internet"
-* gender -> "eCH-0011: 3.3.3 sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"
-* birthDate -> "eCH-0011: 3.3.3 birthData, BFS-31"
-* deceased[x] -> "eCH-0011: 3.3.7 deathData, deathPeriod, dateFrom, BFS-361"
-* maritalStatus -> "eCH-0011: 3.3.5 maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"
-* maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: 3.3.5.5 separation - Trennung BFS-343"
-* contact[contact] -> "eCH-0011: 3.3.8 contactData, BFS-61"
-* contact[nameOfFather] -> "eCH-0021: 4.1.4.1 nameOfFather"
-* contact[nameOfMother] -> "eCH-0021: 4.1.4.2 nameOfMother"
-* communication[languageOfCorrespondence] -> "eCH-0011: 3.3.9 languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
+* telecom[email] -> "eCH-0046: email"
+* telecom[phone] -> "eCH-0046: phone"
+* telecom[internet] -> "eCH-0046: internet"
+* gender -> "eCH-0011: sex. sexType, BFS-33, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"
+* birthDate -> "eCH-0011: birthData, BFS-31"
+* deceased[x] -> "eCH-0011: deathData, deathPeriod, dateFrom, BFS-361"
+* maritalStatus -> "eCH-0011: maritalData, BFS-341, see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/maritalstatus-ech11-to-fhir"
+* maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: separation - Trennung BFS-343"
+* contact[contact] -> "eCH-0011: contactData, BFS-61"
+* contact[nameOfParent] -> "eCH-0021: nameOfParent"
+* communication[languageOfCorrespondence] -> "eCH-0011: languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
 
 Mapping: v2-for-CHCorePatient
 Id: v2
