@@ -20,6 +20,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#247](https://github.com/hl7ch/ch-core/issues/247): Fix constraint text and refactor expression (ch-core-doc-1)
 * [#256](https://github.com/hl7ch/ch-core/issues/256): Fix references in example with UUID as fullUrl based on rules around matching relative references
 * [#257](https://github.com/hl7ch/ch-core/issues/257): Warning instead of errors for GLN, EPR-SPID, AHVN13 and VEKA datatype profiles
+* [#266](https://github.com/hl7ch/ch-core/issues/266): Fix error with ConceptMap
 
 ### STU 4 Ballot (2023-06-27)
 
