@@ -1,8 +1,8 @@
 {
   "package-id" : "ch.fhir.ig.ch-core",
-  "version" : "4.0.0",
-  "path" : "http://fhir.ch/ig/ch-core/4.0.0",
-  "mode" : "milestone",
+  "version" : "4.0.1",
+  "path" : "http://fhir.ch/ig/ch-core/4.0.1",
+  "mode" : "technical-correction",
   "status" : "trial-use",
   "sequence" : "STU 4",
   "desc" : "HL7 Switzerland STU 4",

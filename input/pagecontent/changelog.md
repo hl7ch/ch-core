@@ -1,6 +1,7 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
-
 ### STU 4 (2023-12)
+
+* [#270](https://github.com/hl7ch/ch-core/issues/270): 4.0.1 Technical correction for invalid package
 
 #### Added
 * [#233](https://github.com/hl7ch/ch-core/issues/233): CH Core Address: Include eCH-0007 cantonAbbreviation
