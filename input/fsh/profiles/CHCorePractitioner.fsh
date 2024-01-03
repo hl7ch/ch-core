@@ -5,7 +5,7 @@ Title: "CH Core Practitioner"
 Description: "Core practitioner definition in the swiss context."
 
 * ^purpose = "Core practitioner data which can be shared"
-* obeys ch-pract-1 and ch-pract-2
+* obeys ch-pract-1 and ch-pract-2 and ch-pract-3
 * . ^short = "CH Core Practitioner"
 * . ^definition = "The CH Core Practitioner is based upon the core FHIR Practitioner Resource and designed to meet the applicable practitioner demographic data elements in Switzerland. See also https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.html for further information"
 * identifier ^slicing.discriminator.type = #value
