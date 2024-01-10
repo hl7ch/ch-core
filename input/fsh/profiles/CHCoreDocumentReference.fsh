@@ -29,7 +29,7 @@ Description: "Base definition for a document reference with the CH Core profiles
 
 Mapping: EPR-XDS
 Id: EPR-XDS
-Title: "XDS"
+Title: "XDS metadata"
 Source: CHCoreDocumentReference
-Target: "https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf"
-* status -> "Table 4.5.1.1-1 (FHIR DocumentReference mapping to DocumentEntry): approved -> status=current,\r\n\t\t\t\t\t\t\tdeprecated -> status=superseded. Other status values are allowed but are not defined in this mapping to XDS."
+Target: "https://profiles.ihe.net/ITI/MHD/index.html"
+* status -> "approved -> status=current, deprecated -> status=superseded. Other status values are allowed but are not defined in this mapping to XDS, see https://profiles.ihe.net/ITI/MHD/ConceptMap-FhirStatusVsStatusCode.html"
