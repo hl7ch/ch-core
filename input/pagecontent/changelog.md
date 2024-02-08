@@ -2,7 +2,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### STU 5 
 
-* [#269](https://github.com/hl7ch/ch-core/issues/269): warning constraint for only one active gln for practitioner
+* [#269](https://github.com/hl7ch/ch-core/issues/269): max cardinality for only one gln for practitioner
 
 ### STU 4 (2023-12)
 
