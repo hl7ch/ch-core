@@ -45,11 +45,11 @@ Composition.type of a Medication Dispense document (see [full example](https://f
 ```
 
 #### Usage in Value Sets
-To illustrate how the SNOMED CT codes (international vs. Swiss extension) are used in value sets, examples of the CH EPR Term are shown below.  
+To illustrate how the SNOMED CT codes (international vs. Swiss extension) are used in value sets, examples of the CH Term are shown below.  
 
 **SNOMED CT international**: 17621005 "Normal (qualifier value)"    
 
-ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see [full ValueSet](https://fhir.ch/ig/ch-epr-term/ValueSet-DocumentEntry.confidentialityCode.html)):
+ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see [full ValueSet](https://fhir.ch/ig/ch-term/ValueSet-DocumentEntry.confidentialityCode.html)):
 ```json
 "compose" : {
   "include" : [
@@ -68,7 +68,7 @@ ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see 
 
 **SNOMED CT Swiss extension**: 1141000195107 "Secret (qualifier value)"      
 
-ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see [full ValueSet](https://fhir.ch/ig/ch-epr-term/ValueSet-DocumentEntry.confidentialityCode.html)):
+ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see [full ValueSet](https://fhir.ch/ig/ch-term/ValueSet-DocumentEntry.confidentialityCode.html)):
 ```json
 "compose" : {
   "include" : [
