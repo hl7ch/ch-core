@@ -1,11 +1,18 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 5 
+### STU 5 (2024)
 
+#### Added
+
+#### Changed / Updated
+* [#272](https://github.com/hl7ch/ch-core/issues/272): Update the CHCoreDocumentReference EPR-XDS mapping
 * [#269](https://github.com/hl7ch/ch-core/issues/269): max cardinality for only one gln for practitioner
+* [CH Term #23](https://github.com/hl7ch/ch-epr-term/issues/23): Changes according to the renaming of CH EPR Term to CH Term
+
+#### Fixed
+
 
 ### STU 4 (2023-12)
-
 * [#270](https://github.com/hl7ch/ch-core/issues/270): 4.0.1 Technical correction for invalid package
 
 #### Added

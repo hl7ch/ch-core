@@ -23,7 +23,7 @@ The Annexes to the Swiss [Electronic Patient Record](https://www.patientendossie
 
 #### Metadata (Annex 3 and Annex 9)
 
-Metadata relating to the Swiss EPR is defined in Annexes 3 and 9 by the [Ministry of Health](https://www.bag.admin.ch/bag/de/home/gesetze-und-bewilligungen/gesetzgebung/gesetzgebung-mensch-gesundheit/gesetzgebung-elektronisches-patientendossier.html). [eHealth Suisse](https://www.e-health-suisse.ch/en/home.html) maintains the value sets with additional provided translations in ART-DECOR in the [CH-EPR](https://art-decor.org/art-decor/decor-project--ch-epr-) project. All code systems and value sets from the CH-EPR project are exported to the FHIR implementation guide [CH EPR Term](http://fhir.ch/ig/ch-epr-term/index.html), which forms the basis for CH Core.
+Metadata relating to the Swiss EPR is defined in Annexes 3 and 9 by the [Ministry of Health](https://www.bag.admin.ch/bag/de/home/gesetze-und-bewilligungen/gesetzgebung/gesetzgebung-mensch-gesundheit/gesetzgebung-elektronisches-patientendossier.html). [eHealth Suisse](https://www.e-health-suisse.ch/en/home.html) maintains the value sets with additional provided translations in ART-DECOR in the [CH-EPR](https://art-decor.org/art-decor/decor-project--ch-epr-) project. All code systems and value sets from the CH-EPR project are exported to the FHIR implementation guide [CH Term](http://fhir.ch/ig/ch-term/index.html), which forms the basis for CH Core.
 
 #### Exchange formats (Annex 4)
 
