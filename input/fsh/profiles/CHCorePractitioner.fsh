@@ -12,7 +12,7 @@ Description: "Core practitioner definition in the swiss context."
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains
-    GLN 0..* and
+    GLN 0..1 and
     ZSR 0..*
 * identifier[GLN] only GLNIdentifier
 * identifier[GLN] ^short = "GLN (Global Location Number)"
