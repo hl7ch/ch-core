@@ -2,7 +2,7 @@ Profile: CHCoreLocation
 Parent: Location
 Id: ch-core-location
 Title: "CH Core Location"
-Description: "Base definition of the Location resource for use in CH Core resources."
+Description: "Base definition of the Location resource for use in Swiss specific use cases"
 
 * . ^short = "CH Core Location"
 * name 1..

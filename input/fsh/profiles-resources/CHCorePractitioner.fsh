@@ -2,7 +2,7 @@ Profile: CHCorePractitioner
 Parent: Practitioner
 Id: ch-core-practitioner
 Title: "CH Core Practitioner"
-Description: "Base definition of the Practitioner resource for use in CH Core resources."
+Description: "Base definition of the Practitioner resource for use in Swiss specific use cases"
 
 * ^purpose = "Core practitioner data which can be shared"
 * obeys ch-pract-1 and ch-pract-2
