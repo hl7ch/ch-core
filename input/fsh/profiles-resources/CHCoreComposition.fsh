@@ -2,7 +2,7 @@ Profile: CHCoreComposition
 Parent: Composition
 Id: ch-core-composition
 Title: "CH Core Composition"
-Description: "Base definition of the Composition resource for use in Swiss specific use cases"
+Description: "Base definition of the Composition resource for use in Swiss specific use cases."
 
 * . ^short = "CH Core Composition"
 * subject only Reference(CHCorePatient)
