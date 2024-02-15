@@ -2,7 +2,7 @@ Profile: CHCoreCoverage
 Parent: Coverage
 Id: ch-core-coverage
 Title: "CH Core Coverage"
-Description: "The Coverage referenced in the CH Core profiles."
+Description: "Base definition of the Coverage resource for use in CH Core resources."
 
 * ^purpose = "Coverage information which can be shared"
 * . ^short = "CH Core Coverage"

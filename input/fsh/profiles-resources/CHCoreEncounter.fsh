@@ -2,7 +2,7 @@ Profile: CHCoreEncounter
 Parent: Encounter
 Id: ch-core-encounter
 Title: "CH Core Encounter"
-Description: "The Encounter referenced in the CH Core profiles."
+Description: "Base definition of the Encounter resource for use in CH Core resources."
 
 * ^purpose = "Core patient demographics which can be shared"
 * . ^short = "CH Core Encounter"

@@ -2,7 +2,7 @@ Profile: CHCoreOrganization
 Parent: Organization
 Id: ch-core-organization
 Title: "CH Core Organization"
-Description: "Defines basic constraints and extensions on the Organization resource for use with other CH Core resources"
+Description: "Base definition of the Organization resource for use in CH Core resources."
 
 * . ^short = "CH Core Organization"
 * identifier ^slicing.discriminator.type = #pattern

@@ -2,7 +2,7 @@ Profile: CHCoreDocumentReference
 Parent: DocumentReference
 Id: ch-core-documentreference
 Title: "CH Core DocumentReference"
-Description: "Base definition for a document reference with the CH Core profiles."
+Description: "Base definition of the DocumentReference resource for use in CH Core resources."
 
 * . ^short = "CH Core DocumentReference"
 * type from $DocumentEntry.typeCode (preferred)
