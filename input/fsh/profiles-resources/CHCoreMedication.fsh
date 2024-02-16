@@ -77,3 +77,16 @@ Description: "Base definition of the MedicationDispense resource for use in Swis
 * substitution.wasSubstituted ^short = "Whether a substitution was (true) or was not (false) performed on the dispense"
 * substitution.type from http://fhir.ch/ig/ch-term/ValueSet/ActSubstanceAdminSubstitutionCode (preferred)
 * substitution.type ^short = "If 'wasSubstituted = true', the type can be defined in addition (optional). If 'wasSubstituted = false', no type is expected."
+
+
+Profile: CHCoreMedicationRequest
+Parent: MedicationRequest
+Id: ch-core-medicationrequest
+Title: "CH Core MedicationRequest"
+Description: "Base definition of the MedicationRequest resource for use in Swiss specific use cases."
+* . ^short = "CH Core MedicationRequest"
+* medication[x] only CodeableConcept or Reference(CHCoreMedication)
+* subject only Reference(CHCorePatient or Group)
+* requester only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or RelatedPerson or Device)
+* dosageInstruction only CHCoreDosage
+* substitution.allowedCodeableConcept from http://fhir.ch/ig/ch-term/ValueSet/ActSubstanceAdminSubstitutionCode (preferred)
