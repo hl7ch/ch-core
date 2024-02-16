@@ -42,3 +42,18 @@ Description: "Base definition of the MedicationStatement resource for use in Swi
 * subject only Reference(CHCorePatient or Group)
 * informationSource only Reference(CHCorePatient or CHCorePractitioner or CHCorePractitionerRole or RelatedPerson or CHCoreOrganization)
 * dosage only CHCoreDosage
+
+
+Profile: CHCoreMedicationAdministration
+Parent: MedicationAdministration
+Id: ch-core-medicationadministration
+Title: "CH Core MedicationAdministration"
+Description: "Base definition of the MedicationAdministration resource for use in Swiss specific use cases."
+* . ^short = "CH Core MedicationAdministration"
+* medication[x] only CodeableConcept or Reference(CHCoreMedication)
+* subject only Reference(CHCorePatient or Group)
+* performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or RelatedPerson or Device)
+// BackboneElement in this resource
+* dosage.route from http://fhir.ch/ig/ch-term/ValueSet/edqm-routeofadministration (preferred)
+* dosage.dose only CHCoreQuantityWithEmedUnits
+* dosage.rate[x] only CHCoreRatioWithEmedUnits or CHCoreQuantityWithEmedUnits
