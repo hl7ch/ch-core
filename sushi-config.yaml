@@ -49,6 +49,12 @@ menu:
   Extensions: extensions.html
   Terminology: terminology.html
   Artifacts: artifacts.html
+
+resources:
+  Bundle/CdaContainingOriginalRepresentationAsPdfA:
+    name: Transfer note for radiological diagnostics
+    description: Document EPR containing original representation as PDF-A (fullUrls of entries with ‘urn:uuid:’)
+    exampleBoolean: true
       
 # For parameters defined by core FHIR see: 
 # http://build.fhir.org/codesystem-guide-parameter-code.html.
@@ -57,7 +63,7 @@ menu:
 parameters:
   excludettl: true
   path-resource:
-    - input/examples/bundle
+#    - input/examples/bundle
     - input/resources/codesystem
     - input/resources/conceptmap
     - input/resources/namingsystem
