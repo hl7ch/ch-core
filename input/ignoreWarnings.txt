@@ -1,9 +1,7 @@
 == Suppressed Messages ==
 
 # The following code systems/value sets/codes cannot be validated (external systems)
-Code System URI 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' could not be found so the code cannot be validated
-The code '1141000195107' comes from the system urn:oid:2.16.756.5.30.1.127.3.4 which could not be found, so it's not known whether it's valid in the value set 'http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode'
-A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated (from http://tx.fhir.org/r4)
+A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 
 # Swiss specific values on a extensible value set
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/ech-11#contactData)
@@ -16,7 +14,9 @@ None of the codings provided are in the value set 'IdentifierType' (http://hl7.o
 
 # All important examples are included
 The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no explicitly linked examples for this profile
 The Implementation Guide contains no examples for this extension
+The Implementation Guide contains no examples for this data type profile
 
 # Pattern on those elements okay
 INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
@@ -35,3 +35,7 @@ The link 'www.sampledomain.ch' for "www.sampledomain.ch" cannot be resolved
 
 # https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher
 The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
+
+# Reference to draft CodeSystem
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.0
