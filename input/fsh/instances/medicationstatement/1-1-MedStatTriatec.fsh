@@ -1,7 +1,7 @@
 Instance: 1-1-MedStatTriatec
 InstanceOf: CHCoreMedicationStatement
 Title: "1-1 Medication Statement with Medication Triatec"
-Description: "Example for MedicationStatement (MTP)"
+Description: "Example for MedicationStatement (one dosage element)"
 Usage: #example
 * contained = Triatec
 * identifier.system = "urn:ietf:rfc:3986"

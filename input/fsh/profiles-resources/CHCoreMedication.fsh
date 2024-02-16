@@ -57,3 +57,23 @@ Description: "Base definition of the MedicationAdministration resource for use i
 * dosage.route from http://fhir.ch/ig/ch-term/ValueSet/edqm-routeofadministration (preferred)
 * dosage.dose only CHCoreQuantityWithEmedUnits
 * dosage.rate[x] only CHCoreRatioWithEmedUnits or CHCoreQuantityWithEmedUnits
+
+
+Profile: CHCoreMedicationDispense
+Parent: MedicationDispense
+Id: ch-core-medicationdispense
+Title: "CH Core MedicationDispense"
+Description: "Base definition of the MedicationDispense resource for use in Swiss specific use cases."
+* . ^short = "CH Core MedicationDispense"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains CHEMEDExtTreatmentReason named treatmentReason 0..1
+* medication[x] only CodeableConcept or Reference(CHCoreMedication)
+* subject only Reference(CHCorePatient or Group)
+* performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or Device or RelatedPerson)
+* dosageInstruction only CHCoreDosage
+* substitution obeys ch-meddis-1
+* substitution.wasSubstituted ^short = "Whether a substitution was (true) or was not (false) performed on the dispense"
+* substitution.type from http://fhir.ch/ig/ch-term/ValueSet/ActSubstanceAdminSubstitutionCode (preferred)
+* substitution.type ^short = "If 'wasSubstituted = true', the type can be defined in addition (optional). If 'wasSubstituted = false', no type is expected."

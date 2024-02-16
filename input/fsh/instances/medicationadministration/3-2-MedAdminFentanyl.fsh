@@ -1,7 +1,7 @@
 Instance: 3-2-MedAdminFentanyl
 InstanceOf: CHCoreMedicationAdministration
 Title: "Medication Administration Fentanyl"
-Description: "Example for MedicationAdministration (DIS)"
+Description: "Example for MedicationAdministration"
 Usage: #example
 * contained = Fentanyl
 * identifier.system = "urn:ietf:rfc:3986"
