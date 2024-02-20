@@ -2,7 +2,7 @@ Profile: CHCoreDocumentEPR
 Parent: CHCoreDocument
 Id: ch-core-document-epr
 Title: "CH Core Document EPR"
-Description: "Base definition for a document in the context of the electronic patient record (EPR)."
+Description: "Definition of the Bundle resource for use in the context of the electronic patient record (EPR)."
 * . ^short = "CH Core Document EPR"
 * identifier.system = "urn:ietf:rfc:3986" (exactly)
 * identifier.value obeys ch-core-doc-2

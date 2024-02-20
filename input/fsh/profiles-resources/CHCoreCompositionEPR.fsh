@@ -2,7 +2,7 @@ Profile: CHCoreCompositionEPR
 Parent: CHCoreComposition
 Id: ch-core-composition-epr
 Title: "CH Core Composition EPR"
-Description: "Base definition for a composition in the context of the electronic patient record (EPR)."
+Description: "Definition of the Composition resource for use in the context of the electronic patient record (EPR)."
 * . ^short = "CH Core Composition EPR"
 * language 1..
 * extension ^slicing.discriminator.type = #value

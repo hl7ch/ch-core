@@ -2,7 +2,7 @@ Profile: CHCoreEPRConsent
 Parent: Consent
 Id: ch-core-epr-consent
 Title: "CH Core EPR-Consent"
-Description: "Base profile for a consent profile to document that a patient has an Electronic Patient Record (EPR) in Switzerland. The actual consent conditions are held within the EPR, this consent is the documentation in an organization that the patient has stated he has an EPR and this needs to be verified at the time of document publishing or reading. In addition a patient can request that specific information will not be published from the organization to the EPR. This can be documented with one or more references to encounters to exclude the consent for these."
+Description: "Definition of the Consent resource to document that a patient has an electronic patient record (EPR) in Switzerland. The actual consent conditions are held within the EPR, this consent is the documentation in an organization that the patient has stated he/she has an EPR and this needs to be verified at the time of document publishing or reading. In addition a patient can request that specific information will not be published from the organization to the EPR. This can be documented with one or more references to encounters to exclude the consent for these."
 
 * . ^short = "CH Core EPR-Consent"
 * scope = $consentscope#patient-privacy

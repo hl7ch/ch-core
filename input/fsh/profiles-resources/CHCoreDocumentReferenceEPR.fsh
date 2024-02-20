@@ -2,7 +2,7 @@ Profile: CHCoreDocumentReferenceEPR
 Parent: CHCoreDocumentReference
 Id: ch-core-documentreference-epr
 Title: "CH Core DocumentReference EPR"
-Description: "Base definition for a document reference in the context of the electronic patient record (EPR)."
+Description: "Definition of the DocumentReference resource for use in the context of the electronic patient record (EPR)."
 * . ^short = "CH Core DocumentReference EPR"
 
 * type 1..

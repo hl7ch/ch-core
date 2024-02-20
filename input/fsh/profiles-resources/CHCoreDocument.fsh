@@ -2,7 +2,7 @@ Profile: CHCoreDocument
 Parent: Bundle
 Id: ch-core-document
 Title: "CH Core Document"
-Description: "Base definition for a document with the CH Core profiles."
+Description: "Base definition of the Bundle resource for use in Swiss specific use cases."
 
 * . ^short = "CH Core Document"
 * identifier 1..
