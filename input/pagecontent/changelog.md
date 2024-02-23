@@ -11,7 +11,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [CH Term #23](https://github.com/hl7ch/ch-epr-term/issues/23): Changes according to the renaming of CH EPR Term to CH Term
 
 #### Fixed
-
+* [#277](https://github.com/hl7ch/ch-core/issues/277): update the expression of constraints ch-docref-1/2
 
 ### STU 4 (2023-12)
 * [#270](https://github.com/hl7ch/ch-core/issues/270): 4.0.1 Technical correction for invalid package
