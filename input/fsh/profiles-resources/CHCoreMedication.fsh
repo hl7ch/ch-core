@@ -55,6 +55,7 @@ Description: "Base definition of the MedicationAdministration resource for use i
 * performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or RelatedPerson or Device)
 // BackboneElement in this resource
 * dosage.route from http://fhir.ch/ig/ch-term/ValueSet/edqm-routeofadministration (preferred)
+* dosage.method from http://fhir.ch/ig/ch-term/ValueSet/edqm-administrationmethod (preferred)
 * dosage.dose only CHCoreQuantityWithEmedUnits
 * dosage.rate[x] only CHCoreRatioWithEmedUnits or CHCoreQuantityWithEmedUnits
 
