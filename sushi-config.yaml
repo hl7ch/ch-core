@@ -37,8 +37,6 @@ pages:
     title: Profiles
   extensions.md:
     title: Extensions
-  terminology.md:
-    title: Terminology 
   changelog.md:
     title: Changelog          
 
@@ -47,7 +45,6 @@ menu:
   Guidance: guidance.html
   Profiles: profiles.html
   Extensions: extensions.html
-  Terminology: terminology.html
   Artifacts: artifacts.html
 
 resources:
