@@ -9,6 +9,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#272](https://github.com/hl7ch/ch-core/issues/272): Update the CHCoreDocumentReference EPR-XDS mapping
 * [#269](https://github.com/hl7ch/ch-core/issues/269): max cardinality for only one gln for practitioner
 * [CH Term #23](https://github.com/hl7ch/ch-epr-term/issues/23): Changes according to the renaming of CH EPR Term to CH Term
+* [#274](https://github.com/hl7ch/ch-core/issues/274): Move terminology to CH Term
 
 #### Fixed
 
@@ -81,7 +82,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#163](https://github.com/hl7ch/ch-core/issues/163): Typo
 * [#159](https://github.com/hl7ch/ch-core/issues/159): Add element 'experimental' (false) to CS/VS
 * [#161](https://github.com/hl7ch/ch-core/issues/161): Use 'patternCodeableConcept' instead of 'fixedCodeableConcept' for [Consent.policyRule](StructureDefinition-ch-core-epr-consent.html)
-* [#167](https://github.com/hl7ch/ch-core/issues/167): Fix URIs in ConceptMaps ([MaritalStatus eCH-011 to FHIR mapping](ConceptMap-maritalstatus-ech11-to-fhir.html), [Sex eCH-011 to FHIR mapping](ConceptMap-sex-ech11-to-fhir.html))
+* [#167](https://github.com/hl7ch/ch-core/issues/167): Fix URIs in ConceptMaps 'MaritalStatus eCH-011 to FHIR mapping', 'Sex eCH-011 to FHIR mapping'
 * [#152](https://github.com/hl7ch/ch-core/issues/152): Changes status form 'draft' to 'active'
 
 #### Issues resolved without amendment (in IG)
