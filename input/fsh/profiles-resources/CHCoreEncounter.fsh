@@ -17,7 +17,7 @@ Description: "Base definition of the Encounter resource for use in Swiss specifi
 * identifier[VisitNumber].system 1..
 * identifier[VisitNumber].value 1..
 * class ^short = "AMB | IMP : See mapping from BFS Medizinische Statistik BFS Encounter Class to FHIR"
-* class ^definition = "See mapping from BFS Medizinische Statistik [BFS Encounter Class to FHIR mapping](http://fhir.ch/ig/ch-core/ConceptMap/bfs-encounter-class-to-fhir)"
+* class ^definition = "See mapping from BFS Medizinische Statistik [BFS Encounter Class to FHIR mapping](http://fhir.ch/ig/ch-term/ConceptMap-bfs-encounter-class-to-fhir.html)"
 * priority from $bfs-medstats-18-admittype_1 (extensible)
 * priority ^short = "BFS Medizinische Statistik - Eintrittsart / Mode d’admission / Genere di ricovero"
 * subject 1..
