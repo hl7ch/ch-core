@@ -16,19 +16,19 @@ Description: "Base definition of the Organization resource for use in Swiss spec
     GLN 0..1
 * identifier[BER] only BERIdentifier
 * identifier[BER] ^short = "BER (Business and Enterprise Register), BUR (Betriebs- und Unternehmensregister), REE (Registre des entreprises et des établissements), RIS (Registro delle imprese e degli stabilimenti)"
-* identifier[BER] ^definition = "See [BER](http://fhir.ch/ig/ch-core/NamingSystem/ber)"
+* identifier[BER] ^definition = "See [BER](http://fhir.ch/ig/ch-term/NamingSystem/ber)"
 * identifier[BER] ^patternIdentifier.system = "urn:oid:2.16.756.5.45"
 * identifier[UIDB] only UIDBIdentifier
 * identifier[UIDB] ^short = "UIDB (Unique Identification Business), UID (Verwendung der Unternehmens-Identifikationsnummer), IDE (Utilisation du numéro d'identification des entreprises), IDI (Utilizzo del numero d'identificazione delle imprese)"
-* identifier[UIDB] ^definition = "See [UIDB](http://fhir.ch/ig/ch-core/NamingSystem/uidb)"
+* identifier[UIDB] ^definition = "See [UIDB](http://fhir.ch/ig/ch-term/NamingSystem/uidb)"
 * identifier[UIDB] ^patternIdentifier.system = "urn:oid:2.16.756.5.35"
 * identifier[ZSR] only ZSRIdentifier
 * identifier[ZSR] ^short = "ZSR (Zahlstellenregister), RCC (Registre des codes-créanciers), RCC (Registro dei codici creditori)"
-* identifier[ZSR] ^definition = "See [ZSR/RCC](http://fhir.ch/ig/ch-core/NamingSystem/zsr)"
+* identifier[ZSR] ^definition = "See [ZSR/RCC](http://fhir.ch/ig/ch-term/NamingSystem/zsr)"
 * identifier[ZSR] ^patternIdentifier.system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
 * identifier[GLN] only GLNIdentifier
 * identifier[GLN] ^short = "Global Location Number (GLN)"
-* identifier[GLN] ^definition = "See [GLN](http://fhir.ch/ig/ch-core/NamingSystem/gln)"
+* identifier[GLN] ^definition = "See [GLN](http://fhir.ch/ig/ch-term/NamingSystem/gln)"
 * identifier[GLN] ^patternIdentifier.system = "urn:oid:2.51.1.3"
 * type from $DocumentEntry.healthcareFacilityTypeCode (preferred)
 

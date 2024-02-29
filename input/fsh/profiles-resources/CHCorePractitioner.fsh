@@ -16,10 +16,10 @@ Description: "Base definition of the Practitioner resource for use in Swiss spec
     ZSR 0..*
 * identifier[GLN] only GLNIdentifier
 * identifier[GLN] ^short = "GLN (Global Location Number)"
-* identifier[GLN] ^definition = "See [GLN](http://fhir.ch/ig/ch-core/NamingSystem/gln)"
+* identifier[GLN] ^definition = "See [GLN](http://fhir.ch/ig/ch-term/NamingSystem/gln)"
 * identifier[ZSR] only ZSRIdentifier
 * identifier[ZSR] ^short = "ZSR (Zahlstellenregister), RCC (Registre des codes-créanciers), RCC (Registro dei codici creditori)"
-* identifier[ZSR] ^definition = "The [ZSR/RCC](http://fhir.ch/ig/ch-core/NamingSystem/zsr) number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance."
+* identifier[ZSR] ^definition = "The [ZSR/RCC](http://fhir.ch/ig/ch-term/NamingSystem/zsr) number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance."
 * name only CHCoreHumanName
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
