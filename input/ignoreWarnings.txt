@@ -9,9 +9,8 @@ None of the codings provided are in the value set 'Patient Contact Relationship 
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN)
 None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#41000179103)
 
-# No suitable code for Encounter.identifier / NamingSystem.type
+# No suitable code for Encounter.identifier
 None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#VN)
-None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#NI)
 
 # All important examples are included
 The Implementation Guide contains no examples for this profile
@@ -32,11 +31,7 @@ INFORMATION: StructureDefinition/ch-core-patient-epr: StructureDefinition.snapsh
 # Build error or cause by underlying profile (snapshot)
 The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
-The link 'www.sampledomain.ch' for "www.sampledomain.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-
-# https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/New.20ConceptMap.20Warning.20--.20induced.20by.20IG.20Publisher
-The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version {3} is not allowed to be used at this point (allowed = e:ConceptMap.element.target; this element is [[BackboneElement, ConceptMap.group.element.target]; this is a warning since contexts may be renamed between FHIR versions)
 
 # Reference to draft CodeSystem
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0

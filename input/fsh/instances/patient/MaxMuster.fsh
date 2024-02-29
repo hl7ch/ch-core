@@ -37,13 +37,13 @@ Description: "Patient EPR with eCH-0011 family & and given name, eCH-0046 contac
 * telecom[phone][=].use = #work
 
 * telecom[email][+].system = #email
-* telecom[email][=].value = "max.muster@sampledomain.ch"
+* telecom[email][=].value = "max.muster@example.com"
 * telecom[email][=].use.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-46-emailcategory"
 * telecom[email][=].use.extension.valueCodeableConcept = $ech-46-emailcategory#1 "private Email-Adresse"
 * telecom[email][=].use = #home
 
 * telecom[internet][+].system = #url
-* telecom[internet][=].value = "www.sampledomain.ch"
+* telecom[internet][=].value = "http://example.com"
 * telecom[internet][=].use.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-46-internetcategory"
 * telecom[internet][=].use.extension.valueCodeableConcept = $ech-46-internetcategory#2 "geschäftliche Internet-Adresse"
 * telecom[internet][=].use = #work
