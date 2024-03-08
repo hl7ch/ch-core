@@ -39,3 +39,5 @@ Description: "Definition of the immunization recommendation."
 * recommendation.forecastReason ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * recommendation.forecastReason ^binding.extension[=].valueBoolean = true
 * recommendation.forecastReason ^binding.description = "The reason the forecast is done."
+
+* supportingImmunization only Reference(CHCoreImmunization or ImmunizationEvaluation)
