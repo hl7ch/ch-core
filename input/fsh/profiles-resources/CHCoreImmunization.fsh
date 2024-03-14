@@ -38,4 +38,4 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * protocolApplied.targetDisease ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * protocolApplied.targetDisease ^binding.extension[=].valueBoolean = true
 * protocolApplied.targetDisease ^binding.description = "The code for disease."
-* protocolApplied.authority only Reference(CHCoreOrganization)
+
