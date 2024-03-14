@@ -2,10 +2,7 @@ Profile: CHCoreImmunization
 Parent: Immunization
 Id: ch-core-immunization
 Title: "CH Core Immunization"
-Description: "CH Core definition of the immunization."
-* ^version = "0.2.0"
-* ^status = #active
-* ^experimental = false
+Description: "Base definition of the Immunization resource for use in Swiss specific use cases."
 * . ^short = "CH Core Immunization"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
