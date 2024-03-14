@@ -2,10 +2,7 @@ Profile: CHCoreImmunizationRecommendation
 Parent: ImmunizationRecommendation
 Id: ch-core-immunization-recommendation
 Title: "CH Core Immunization Recommendation"
-Description: "Definition of the immunization recommendation."
-* ^version = "0.2.0"
-* ^status = #active
-* ^experimental = false
+Description: "Base definition of the ImmunizationRecommendation resource for use in Swiss specific use cases."
 * . ^short = "CH Core Immunization Recommendation"
 
 * extension ^slicing.discriminator.type = #value
@@ -13,8 +10,6 @@ Description: "Definition of the immunization recommendation."
 * extension ^slicing.rules = #open
 * extension contains EntryResourceCrossReferences named relatesTo 0..1
 * extension[relatesTo] ^definition = "The definition of a relation of this immunization entry in this document to an immunization entry in an other document."
-* identifier 1..
-* identifier ^short = "Immunization Recommendation item ID"
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
 * authority only Reference(CHCoreOrganization)
