@@ -32,7 +32,6 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * route ^short = "How vaccine entered body."
 * performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
 * performer.actor ^short = "The performer who applied the vaccine"
-* protocolApplied 1..
 * protocolApplied.targetDisease from $ChVacdTargetDiseasesAndIllnessesUndegoneVS (preferred)
 * protocolApplied.targetDisease ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * protocolApplied.targetDisease ^binding.extension[=].valueString = "Disease"
