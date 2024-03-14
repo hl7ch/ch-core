@@ -8,10 +8,8 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    Author named recorder 0..1 and
-    EntryResourceCrossReferences named relatesTo 0..1 
+    Author named recorder 0..1
 * extension[recorder] ^definition = "The recorder Reference of the immunization. May be a Practitioner or a Patient"
-* extension[relatesTo] ^definition = "The definition of a relation of this immunization entry in this document to an immunization entry in an other document."
 * identifier 1..
 * identifier ^short = "Immunization item ID"
 * vaccineCode from $SwissVaccinesVS (preferred)
