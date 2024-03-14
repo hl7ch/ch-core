@@ -68,3 +68,4 @@ Alias: $ChVacdTargetDiseasesAndIllnessesUndegoneVS =  http://fhir.ch/ig/ch-vacd/
 Alias: $RouteOfAdministrationImmunizationVS =         http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-route-of-administration-vs
 Alias: $SwissVaccinationPlanImmunizationsVS =         http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-ch-vaccination-plan-immunizations-vs
 Alias: $SwissImmunizationRecommendationCategoriesVS = http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs
+Alias: $SwissRecommendationForecastStatus =   http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-forecast-status-vs
