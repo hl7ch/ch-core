@@ -28,7 +28,6 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * patient ^short = "Patient"
 * encounter only Reference(CHCoreEncounter)
 * encounter ^short = "Encounter"
-* manufacturer only Reference(CHCoreOrganization)
 * route from $RouteOfAdministrationImmunizationVS (preferred)
 * route ^short = "How vaccine entered body."
 * performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
