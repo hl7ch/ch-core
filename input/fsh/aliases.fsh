@@ -9,6 +9,7 @@ Alias: $v3-RoleCode =                               http://terminology.hl7.org/C
 
 Alias: $loinc =                                     http://loinc.org
 Alias: $sct =                                       http://snomed.info/sct
+Alias: $standardterms =                             http://standardterms.edqm.eu
 
 Alias: $IHE.FormatCode.codesystem =                 http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem
 
@@ -59,3 +60,11 @@ Alias: $DocumentEntry.healthcareFacilityTypeCode =  http://fhir.ch/ig/ch-term/Va
 Alias: $DocumentEntry.practiceSettingCode =         http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.practiceSettingCode
 Alias: $HCProfessional.hcSpecialisation =           http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcSpecialisation
 Alias: $HCProfessional.hcProfession =               http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession
+
+Alias: $SwissMedicVacCS =                             http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs
+Alias: $SwissVaccinesVS =                             http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-vs
+Alias: $SnomedCTForVaccineCodeVS =                    http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-snomedct-vs                         
+Alias: $ChVacdTargetDiseasesAndIllnessesUndegoneVS =  http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs
+Alias: $RouteOfAdministrationImmunizationVS =         http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-route-of-administration-vs
+Alias: $SwissVaccinationPlanImmunizationsVS =         http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-ch-vaccination-plan-immunizations-vs
+Alias: $SwissImmunizationRecommendationCategoriesVS = http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs
