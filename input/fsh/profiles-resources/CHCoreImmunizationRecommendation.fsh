@@ -29,4 +29,11 @@ Description: "Base definition of the ImmunizationRecommendation resource for use
 * recommendation.forecastReason ^binding.extension[=].valueBoolean = true
 * recommendation.forecastReason ^binding.description = "The reason the forecast is done."
 
+* recommendation.forecastStatus from $SwissRecommendationForecastStatus (preferred)
+* recommendation.forecastStatus ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* recommendation.forecastStatus ^binding.extension[=].valueString = "Disease"
+* recommendation.forecastStatus ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
+* recommendation.forecastStatus ^binding.extension[=].valueBoolean = true
+* recommendation.forecastStatus ^binding.description = "The reason the forecast is done."
+
 * recommendation.supportingImmunization only Reference(CHCoreImmunization or ImmunizationEvaluation)
