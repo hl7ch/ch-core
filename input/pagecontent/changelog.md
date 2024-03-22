@@ -5,7 +5,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 * [#119](https://github.com/hl7ch/ch-core/issues/119): Introduce base profiles (from exchange formats) in CH Core
    * CH Core MedicationStatement, CH Core MedicationAdministration, CH Core MedicationDispense, CH Core MedicationRequest, CH Core Medication
-   * CH Core Condition, CH Core AllergyIntolerance
+   * CH Core Condition
+   * CH Core AllergyIntolerance
    * CH Core Immunization, CH Core ImmunizationRecommendation
 
 #### Changed / Updated
