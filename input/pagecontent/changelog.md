@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 5 Ballot (2024)
 
 #### Added
+* [#284](https://github.com/hl7ch/ch-core/issues/284): Check BER/UIDB identifiers
 * [#119](https://github.com/hl7ch/ch-core/issues/119): Introduce base profiles (from exchange formats) in CH Core
    * CH Core MedicationStatement, CH Core MedicationAdministration, CH Core MedicationDispense, CH Core MedicationRequest, CH Core Medication
    * CH Core Condition
