@@ -63,6 +63,7 @@ Parent: Identifier
 Id: ch-core-ber-identifier
 Title: "BER Identifier"
 Description: "Identifier holding a number for BER (Business and Enterprise Register), BUR (Betriebs- und Unternehmensregister), REE (Registre des entreprises et des établissements), RIS (Registro delle imprese e degli stabilimenti)"
+* value obeys ber-length and ber-modulus-11
 * system 1..
 * system = "urn:oid:2.16.756.5.45" (exactly)
 * system ^short = "OID of the BER/BUR/REE/RIS"
@@ -74,6 +75,7 @@ Parent: Identifier
 Id: ch-core-uidb-identifier
 Title: "UIDB Identifier"
 Description: "Identifier holding a number for UIDB (Unique Identification Business), UID (Verwendung der Unternehmens-Identifikationsnummer), IDE (Utilisation du numéro d'identification des entreprises), IDI (Utilizzo del numero d'identificazione delle imprese)"
+* value obeys uidb-length and uidb-modulus-11
 * system 1..
 * system = "urn:oid:2.16.756.5.35" (exactly)
 * system ^short = "OID of the UIDB/UID/IDE/IDI"
