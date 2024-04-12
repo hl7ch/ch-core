@@ -9,6 +9,7 @@ All significant changes to this FHIR implementation guide will be documented on 
    * CH Core Condition
    * CH Core AllergyIntolerance
    * CH Core Immunization, CH Core ImmunizationRecommendation
+   * CH Core ServiceRequest
 
 #### Changed / Updated
 * [#272](https://github.com/hl7ch/ch-core/issues/272): Update the CHCoreDocumentReference EPR-XDS mapping
@@ -19,7 +20,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Fixed
 * [#277](https://github.com/hl7ch/ch-core/issues/277): update the expression of constraints ch-docref-1/2
 
-### STU 4 (2023-12)
+### STU 4 (2023-12-28)
 * [#270](https://github.com/hl7ch/ch-core/issues/270): 4.0.1 Technical correction for invalid package
 
 #### Added
@@ -116,7 +117,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#145](https://github.com/hl7ch/ch-core/issues/145): Update title of the profiles
 
 
-
 ### STU 2 (2021-04-24)
 
 - [#57](https://github.com/hl7ch/ch-core/issues/57) cardinality 0..1 for ch-ext-epr-versionNumber in Composition
@@ -124,7 +124,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 - [#59](https://github.com/hl7ch/ch-core/issues/59) adapt extension EPR Information Recipient for ch-core
 - [#60](https://github.com/hl7ch/ch-core/issues/60) relax card. in CH Core Organization
 - [#61](https://github.com/hl7ch/ch-core/issues/61) slice setup incorrect on address lines
-- [#63](https://github.com/hl7ch/ch-core/issues/63) PractitionerRole example HPWengerRole has an invalid speciality coding
+- [#63](https://github.com/hl7ch/ch-core/issues/63) PractitionerRole example HPWengerRole has an invalid specialty coding
 - [#65](https://github.com/hl7ch/ch-core/issues/65) CH-Core dependsOn CH-EPR-TERM current
 - [#66](https://github.com/hl7ch/ch-core/issues/66) Encounter: specify a type for the visit number Fallnummer
 - [#67](https://github.com/hl7ch/ch-core/issues/67) Add CC license to ch-core implementation guide
@@ -141,9 +141,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 - [#98](https://github.com/hl7ch/ch-core/issues/98) renamed Composition Patient Profile EPR to Patient Profile EPR
 - [#100](https://github.com/hl7ch/ch-core/issues/100), [#101](https://github.com/hl7ch/ch-core/issues/101), [#102](https://github.com/hl7ch/ch-core/issues/102), [#103](https://github.com/hl7ch/ch-core/issues/103) Reference to CH Core profiles
 - [#104](https://github.com/hl7ch/ch-core/issues/104) CH Core Consent Profile naming
-
-
-
 
 
 ### STU 1 (2020-04-21)

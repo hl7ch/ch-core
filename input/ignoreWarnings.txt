@@ -37,3 +37,4 @@ The string value contains text that looks like embedded HTML tags. If this conte
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization-recommendation-status|1.0.0

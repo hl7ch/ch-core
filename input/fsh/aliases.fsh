@@ -27,6 +27,8 @@ Alias: $bfs-medstats-29-dischargeencounter =        http://fhir.ch/ig/ch-core/Co
 Alias: $bfs-medstats-29-dischargeencounter_1 =      http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-29-dischargeencounter
 Alias: $ech-11-maritaldata-separation =             http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritaldata-separation
 Alias: $ech-11-maritaldata-separation_1 =           http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritaldata-separation
+Alias: $cs-servicerequest-category =                http://fhir.ch/ig/ch-term/CodeSystem/servicerequest-category
+Alias: $vs-servicerequest-category =                http://fhir.ch/ig/ch-term/ValueSet/servicerequest-category
 
 Alias: $ch-core-maritalstatus =                     http://fhir.ch/ig/ch-core/ValueSet/ch-core-maritalstatus
 Alias: $ech-10-linetype =                           http://fhir.ch/ig/ch-core/ValueSet/ech-10-linetype
