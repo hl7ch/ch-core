@@ -1,7 +1,5 @@
-@host = http://test.ahdis.ch/r4
-### @host = http://localhost:8080/r4
-
-POST {{host}}/$validate HTTP/1.1
+@host = https://test.ahdis.ch/matchboxv3/fhir
+POST {{host}}/$validate?profile=http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient HTTP/1.1
 Content-Type: application/xml
 
-< input/examples/patient/FranzMuster.xml
+< ./fsh-generated/resources/Patient-FranzMuster.json
