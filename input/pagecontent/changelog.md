@@ -10,6 +10,9 @@ All significant changes to this FHIR implementation guide will be documented on 
    * CH Core AllergyIntolerance
    * CH Core Immunization, CH Core ImmunizationRecommendation
    * CH Core ServiceRequest
+* [#116](https://github.com/hl7ch/ch-core/issues/116): Add value set bindings to these elements: 
+   * Coverage.type -> http://fhir.ch/ig/ch-term/ValueSet/mainguarantor (preferred)
+   * Coverage.class.type -> http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-21-encountertype (extensible)
 
 #### Changed / Updated
 * [#272](https://github.com/hl7ch/ch-core/issues/272): Update the CHCoreDocumentReference EPR-XDS mapping
