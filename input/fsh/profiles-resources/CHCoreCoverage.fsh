@@ -25,3 +25,4 @@ Description: "Base definition of the Coverage resource for use in Swiss specific
 * payor ^type.aggregation[+] = #referenced
 * type from http://fhir.ch/ig/ch-term/ValueSet/mainguarantor (preferred)
 * class.type from http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-21-encountertype (extensible) // Cannot override extensible binding with preferred binding. 
+
