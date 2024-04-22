@@ -16,6 +16,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#269](https://github.com/hl7ch/ch-core/issues/269): max cardinality for only one gln for practitioner
 * [CH Term #23](https://github.com/hl7ch/ch-epr-term/issues/23): Changes according to the renaming of CH EPR Term to CH Term
 * [#274](https://github.com/hl7ch/ch-core/issues/274): Move terminology to CH Term
+* [#287](https://github.com/hl7ch/ch-core/issues/287): Unified identifier slicing (Coverage, Practitioner)
 
 #### Fixed
 * [#277](https://github.com/hl7ch/ch-core/issues/277): update the expression of constraints ch-docref-1/2

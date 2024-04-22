@@ -27,8 +27,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
-* identifier.system 1..
-* identifier.value 1..
 * identifier contains
     EPR-SPID 0..* and
     AHVN13 0..* and
@@ -44,10 +42,13 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * identifier[AHVN13] ^patternIdentifier.system = "urn:oid:2.16.756.5.32"
 * identifier[LocalPid] ^short = "Local patient identifier(s)"
 * identifier[LocalPid] ^patternIdentifier.type = $v2-0203#MR
+* identifier[LocalPid].system 1..
+* identifier[LocalPid].value 1..
 * identifier[insuranceCardNumber] only VEKAIdentifier
 * identifier[insuranceCardNumber] ^short = "Insurance card number of the patient (20 digits)"
 * identifier[insuranceCardNumber] ^definition = "Cardnumber Swiss insurance card v1"
 * identifier[insuranceCardNumber] ^patternIdentifier.system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
+
 * name only CHCoreHumanName
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
