@@ -6,8 +6,8 @@ Description: "Practitioner EPR with name with prefixes (salutation, academic tit
 * id = "AllzeitBereit"
 * meta.profile[0] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"
 * meta.profile[+] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"
-* identifier.system = "urn:oid:2.51.1.3"
-* identifier.value = "7601000201041"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "7601000201041"
 * name.use = #official
 * name.family = "Bereit"
 * name.given = "Allzeit"

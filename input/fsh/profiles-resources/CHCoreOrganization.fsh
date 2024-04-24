@@ -8,7 +8,6 @@ Description: "Base definition of the Organization resource for use in Swiss spec
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
-* identifier.value 1..
 * identifier contains
     BER 0..1 and
     UIDB 0..1 and

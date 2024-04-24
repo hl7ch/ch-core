@@ -8,8 +8,8 @@ Description: "Base definition of the Practitioner resource for use in Swiss spec
 * obeys ch-pract-1 and ch-pract-2
 * . ^short = "CH Core Practitioner"
 * . ^definition = "The CH Core Practitioner is based upon the core FHIR Practitioner Resource and designed to meet the applicable practitioner demographic data elements in Switzerland. See also https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.html for further information"
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains
     GLN 0..1 and
@@ -17,9 +17,11 @@ Description: "Base definition of the Practitioner resource for use in Swiss spec
 * identifier[GLN] only GLNIdentifier
 * identifier[GLN] ^short = "GLN (Global Location Number)"
 * identifier[GLN] ^definition = "See [GLN](http://fhir.ch/ig/ch-term/NamingSystem/gln)"
+* identifier[GLN] ^patternIdentifier.system = "urn:oid:2.51.1.3"
 * identifier[ZSR] only ZSRIdentifier
 * identifier[ZSR] ^short = "ZSR (Zahlstellenregister), RCC (Registre des codes-créanciers), RCC (Registro dei codici creditori)"
 * identifier[ZSR] ^definition = "The [ZSR/RCC](http://fhir.ch/ig/ch-term/NamingSystem/zsr) number is issued to self-employed, natural or legal persons (organisations) who can and want to work at the expense of health insurance."
+* identifier[ZSR] ^patternIdentifier.system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
 * name only CHCoreHumanName
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
