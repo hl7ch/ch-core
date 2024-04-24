@@ -23,3 +23,6 @@ Description: "Base definition of the Coverage resource for use in Swiss specific
 * payor ^short = "Issuer of the policy (if it is not the patient him/herself, represent the payor as a contained resource)"
 * payor ^type.aggregation[0] = #contained
 * payor ^type.aggregation[+] = #referenced
+* type from http://fhir.ch/ig/ch-term/ValueSet/mainguarantor (preferred)
+* class.type from http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-21-encountertype (extensible) // Cannot override extensible binding with preferred binding. 
+
