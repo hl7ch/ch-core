@@ -69,7 +69,7 @@ Description: "Base definition of the MedicationDispense resource for use in Swis
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension contains CHEMEDExtTreatmentReason named treatmentReason 0..1
+* extension contains CHEMEDExtTreatmentReason named treatmentReason 0..*
 * medication[x] only CodeableConcept or Reference(CHCoreMedication)
 * subject only Reference(CHCorePatient or Group)
 * performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or Device or RelatedPerson)
