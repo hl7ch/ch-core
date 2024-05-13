@@ -40,3 +40,6 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization-recommendation-status|1.0.0
+
+# https://github.com/HL7/fhir-ig-publisher/issues/898
+The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
