@@ -8,6 +8,10 @@ A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found,
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/ech-11#contactData)
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN)
 None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#41000179103)
+None of the codings provided are in the value set 'AllergyIntolerance Certainty ValueSet' (http://hl7.org/fhir/ValueSet/reaction-event-certainty|5.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/reaction-event-certainty#confirmed)
+
+# Display warning
+Der Displayname f\u00fcr http://loinc.org#28616-1 sollte einer von ''Physician Transfer note' (en-US)' anstelle von 'Physician Transfer note' sein.
 
 # No suitable code for Encounter.identifier
 None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#VN)
@@ -19,7 +23,6 @@ The Implementation Guide contains no examples for this extension
 The Implementation Guide contains no examples for this data type profile
 
 # Pattern on those elements okay (identifier)
-INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition​.snapshot​.element[10]​.pattern​.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/ch-core-coverage: StructureDefinition.snapshot.element[10].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/ch-core-patient: StructureDefinition.snapshot.element[14].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/ch-core-patient: StructureDefinition.snapshot.element[15].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
@@ -43,3 +46,8 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization
 
 # https://github.com/HL7/fhir-ig-publisher/issues/898
 The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
+
+# Validation issue with extensible value set: https://github.com/hl7ch/ch-core/issues/289
+Slice 'Bundle.entry:Composition': a matching slice is required, but not found (from http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document|5.0.0-ballot). Note that other slices are allowed in addition to this required slice
+Der angegebene Code 'http://loinc.org#28616-1 ('Physician Transfer note')' befindet sich nicht im ValueSet 'http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0'; Der Displayname f\u00fcr http://loinc.org#28616-1 sollte einer von ''Physician Transfer note' (en-US)' anstelle von 'Physician Transfer note' sein.
+Slice 'Bundle.entry:Composition': a matching slice is required, but not found (from http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr|5.0.0-ballot). Note that other slices are allowed in addition to this required slice

@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 5 Ballot (2024)
+### STU 5 Ballot (2024-05-16)
 
 #### Added
 * [#284](https://github.com/hl7ch/ch-core/issues/284): Check BER/UIDB identifiers
