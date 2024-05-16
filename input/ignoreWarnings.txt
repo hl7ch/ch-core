@@ -11,7 +11,7 @@ None of the codings provided are in the value set 'FHIR Document Type Codes' (ht
 None of the codings provided are in the value set 'AllergyIntolerance Certainty ValueSet' (http://hl7.org/fhir/ValueSet/reaction-event-certainty|5.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/reaction-event-certainty#confirmed)
 
 # Display warning
-Der Displayname f\u00fcr http://loinc.org#28616-1 sollte einer von ''Physician Transfer note' (en-US)' anstelle von 'Physician Transfer note' sein.
+Der Displayname%
 
 # No suitable code for Encounter.identifier
 None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v2-0203#VN)
