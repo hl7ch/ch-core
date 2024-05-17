@@ -16,7 +16,7 @@ Description: "Composition EPR with the information about the transfer in differe
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:31397b31-be60-47e1-bec6-f37816d42b0c"
 * status = #final
-* type.coding[0] = $loinc#28616-1 "Physician Transfer note"
+* type.coding[0] = $loinc#28616-1 // "Physician Transfer note"
 * type.coding[+] = $sct#371535009 "Transfer summary report"
 * subject = Reference(MaxMuster)
 * date = "2017-10-03T17:33:00+01:00"
