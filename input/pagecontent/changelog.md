@@ -1,5 +1,17 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### STU 5
+
+#### Added
+
+#### Changed / Updated
+
+#### Fixed
+
+#### Issues resolved without amendment (in IG)
+* [#289](https://github.com/hl7ch/ch-core/issues/289): Validation issue with display values; fixed with new version of IG publisher
+
+
 ### STU 5 Ballot (2024-05-16)
 
 #### Added
