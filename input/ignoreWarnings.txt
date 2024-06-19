@@ -46,8 +46,3 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization
 
 # https://github.com/HL7/fhir-ig-publisher/issues/898
 The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
-
-# Validation issue with display value: https://github.com/hl7ch/ch-core/issues/289
-Slice 'Bundle.entry:Composition': a matching slice is required, but not found (from http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document|5.0.0-ballot). Note that other slices are allowed in addition to this required slice
-Der angegebene Code 'http://loinc.org#28616-1 ('Physician Transfer note')' befindet sich nicht im ValueSet 'http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode|3.0.0'; Der Displayname f\u00fcr http://loinc.org#28616-1 sollte einer von ''Physician Transfer note' (en-US)' anstelle von 'Physician Transfer note' sein.
-Slice 'Bundle.entry:Composition': a matching slice is required, but not found (from http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr|5.0.0-ballot). Note that other slices are allowed in addition to this required slice
