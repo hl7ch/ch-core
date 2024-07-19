@@ -9,6 +9,8 @@ None of the codings provided are in the value set 'Patient Contact Relationship 
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN)
 None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#41000179103)
 None of the codings provided are in the value set 'AllergyIntolerance Certainty ValueSet' (http://hl7.org/fhir/ValueSet/reaction-event-certainty|5.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/reaction-event-certainty#confirmed)
+None of the codings provided are in the value set 'Claim Type Codes' (http://hl7.org/fhir/ValueSet/claim-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#3)
+None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#41000179103)
 
 # Display warning
 Der Displayname%
@@ -32,17 +34,20 @@ INFORMATION: StructureDefinition/ch-core-patient-epr: StructureDefinition.snapsh
 INFORMATION: StructureDefinition/ch-core-patient-epr: StructureDefinition.snapshot.element[25].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/ch-core-practitioner: StructureDefinition.snapshot.element[11].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/ch-core-practitioner-epr: StructureDefinition.snapshot.element[11].pattern.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition​.snapshot​.element[10]​.pattern​.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+
 
 # Build error or cause by underlying profile (snapshot)
 The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
-# Reference to draft CodeSystem
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization-recommendation-status|1.0.0
+# Reference to draft code systems
+Reference to draft CodeSystem%
 
 # https://github.com/HL7/fhir-ig-publisher/issues/898
 The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
+
+# Value from an external example
+WARNING: Coverage/ClaimCoverage: Coverage.contained[0]/*Organization/ClaimInsurance*/.identifier[0].value: Constraint failed: gln-modulus-10: 'GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually' (defined in http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-gln-identifier)
+WARNING: Organization/ClaimProvider: Organization.identifier[1].value: Constraint failed: gln-modulus-10: 'GLN must pass the modulus 10 check - https://www.gs1.org/services/how-calculate-check-digit-manually' (defined in http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-gln-identifier)
