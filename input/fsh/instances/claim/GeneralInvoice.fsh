@@ -3,6 +3,12 @@ InstanceOf: Claim
 Usage: #example
 Title: "General Invoice"
 Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)"
+// Sushi: error The element or path you referenced does not exist: extension[biller].valueReference
+// * extension[biller].valueReference = Reference(Organization/Biller) -> 
+* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-biller"
+* extension[=].valueReference = Reference(Organization/ClaimBiller)
+* identifier.system = "https://biller.ch/claim-identifier"
+* identifier.value = "1511421400#2017-11-23"
 * status = #active 
 * type = http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#3 "stationär"
 * use = #claim
@@ -44,6 +50,30 @@ Description: "Example of a organization used in the general invoice example (Cla
 * telecom[phone]
   * system = #phone
   * value = "061 956 99 00"
+
+
+Instance: ClaimBiller
+InstanceOf: CHCoreOrganization
+Usage: #example
+Title: "Klinik für Psychiatrie"
+Description: "Example of a organization used in the general invoice example (Claim)"
+* identifier[UIDB].system = "urn:oid:2.16.756.5.35"
+* identifier[UIDB].value = "CHE108791452"
+* identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
+* identifier[ZSR].value = "H121111"
+* identifier[GLN].system = "urn:oid:2.51.1.3"
+* identifier[GLN].value = "2011234567890"
+* name = "Biller AG"
+* address
+  * line = "Billerweg 128"
+  * city = "Frenkendorf"
+  * postalCode = "4414"
+* telecom[phone]
+  * system = #phone
+  * value = "061 956 99 00"
+* telecom[email]
+  * system = #email
+  * value = "info@biller.ch"  
 
 
 Instance: ClaimCoverage
