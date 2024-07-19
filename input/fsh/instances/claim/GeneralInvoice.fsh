@@ -33,6 +33,9 @@ Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch
   * focal = true
   * coverage = Reference(Coverage/ClaimCoverage)
 * item[0]
+  * extension[responsible].valueReference.identifier 
+    * system = "urn:oid:2.51.1.3"
+    * value = "7634567890333"
   * sequence = 1
   * category.coding[tariff] = http://forum-datenaustausch.ch/tariff#030 "TARPSY"
   * productOrService.coding[TARPSY] = http://forum-datenaustausch.ch/tariff/030#TP25B "Schizophrene oder akut psychotische Störungen, Alter > 17 Jahre mit komplizierender somatischer Nebendiagnose"

@@ -29,6 +29,8 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
 * diagnosis.diagnosis[x] only CodeableConcept
 * diagnosis.diagnosis[x] ^short = "Diagnosis (Diagnose / Diagnostic / Diagnosi)"
 * insurance.coverage only Reference(CHCoreCoverage)
+* item.extension contains Responsible named responsible 0..1
+* item.extension[responsible] ^short = "Responsible (Verantwortlicher / Responsable / Responsabile"
 // Tarif
 * item.category.coding ^slicing.discriminator.type = #value
 * item.category.coding ^slicing.discriminator.path = "system"
@@ -74,6 +76,7 @@ Title: "Forum Datenaustausch: Generelle Rechnung 4.5"
 * diagnosis.diagnosisCodeableConcept.coding.code    -> "invoice:body -> invoice:treatment -> invoice:diagnosis (code)"
 * diagnosis.diagnosisCodeableConcept.text           -> "invoice:body -> invoice:treatment -> invoice:diagnosis"
 * insurance.coverage                                -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:insurance"
+* item.extension[responsible]                       -> "invoice:body -> invoice:services -> invoice:service (responsible_id)"
 * item.sequence                                     -> "invoice:body -> invoice:services -> invoice:service (record_id)"
 * item.category.coding[tariff].code                 -> "invoice:body -> invoice:services -> invoice:service (tariff_type)"
 * item.productOrService.coding.code                 -> "invoice:body -> invoice:services -> invoice:service (code)"
@@ -88,6 +91,15 @@ Id: ch-ext-biller
 Title: "Biller"
 Description: "Extension to reference the biller (Leistungserbringer / Four. de prestations / Prestatario) in a claim. The element is mapped to [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
 Context: Claim
+* value[x] only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
+* value[x] 1..
+
+
+Extension: Responsible
+Id: ch-ext-responsible
+Title: "Responsible"
+Description: "Extension to reference the responsible (Verantwortlicher / Responsable / Responsabile) in a claim. The element is mapped to [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
+Context: Claim.item
 * value[x] only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
 * value[x] 1..
 
