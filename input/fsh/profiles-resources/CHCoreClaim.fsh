@@ -13,6 +13,10 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
 * created ^short = "Invoice date (Rechnungsdatum / Date facture / Data fattura)"
 * provider ^short = "Provider (Leistungserbringer / Four. de prestations / Prestatario)"
 * provider only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
+* diagnosis.diagnosis[x] only CodeableConcept
+* diagnosis.diagnosis[x] ^short = "Diagnosis (Diagnose / Diagnostic / Diagnosi)"
+
+
 * insurance.coverage only Reference(CHCoreCoverage)
 
 
@@ -22,13 +26,17 @@ Target: "https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-
 Id: forum-datenaustausch
 Title: "Forum Datenaustausch: Generelle Rechnung 4.5"
 * -> "invoice:request -> invoice:payload"
-* extension[biller]             -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:biller"
-* identifier                    -> "invoice:invoice (request_timestamp # request_date)"
-* type                          -> "invoice:body -> invoice:treatment (treatment)"
-* patient                       -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:patient"
-* created                       -> "invoice:invoice (request_date)"
-* provider                      -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:provider"
-* insurance.coverage            -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:insurance"
+* extension[biller]                                 -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:biller"
+* identifier                                        -> "invoice:invoice (request_timestamp # request_date)"
+* type                                              -> "invoice:body -> invoice:treatment (treatment)"
+* patient                                           -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:patient"
+* created                                           -> "invoice:invoice (request_date)"
+* provider                                          -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:provider"
+* diagnosis                                         -> "invoice:body -> invoice:treatment -> invoice:diagnosis"
+* diagnosis.diagnosisCodeableConcept.coding.system  -> "invoice:body -> invoice:treatment -> invoice:diagnosis (type)"
+* diagnosis.diagnosisCodeableConcept.coding.code    -> "invoice:body -> invoice:treatment -> invoice:diagnosis (code)"
+* diagnosis.diagnosisCodeableConcept.text           -> "invoice:body -> invoice:treatment -> invoice:diagnosis"
+* insurance.coverage                                -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:insurance"
 
 
 Extension: Biller

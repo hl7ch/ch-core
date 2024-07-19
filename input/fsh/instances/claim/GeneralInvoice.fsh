@@ -16,6 +16,13 @@ Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch
 * created = "2017-11-24"
 * provider = Reference(Organization/ClaimProvider)
 * priority = http://terminology.hl7.org/CodeSystem/processpriority#normal "Normal"
+* diagnosis
+  * sequence = 1
+  * diagnosisCodeableConcept
+    * coding
+      * system = "http://fhir.de/CodeSystem/dimdi/icd-10-gm" // https://hl7.org/fhir/R4/icd.html#variants
+      * code = #J18.9
+    * text = "Sonstige Schizophrenie"
 * insurance 
   * sequence = 1
   * focal = true

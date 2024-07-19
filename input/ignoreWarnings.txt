@@ -3,6 +3,7 @@
 # The following code systems/value sets/codes cannot be validated (external systems)
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
+A definition for CodeSystem 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' could not be found, so the code cannot be validated
 
 # Swiss specific values on a extensible value set
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/ech-11#contactData)
