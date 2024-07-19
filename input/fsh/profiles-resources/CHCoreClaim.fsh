@@ -13,10 +13,19 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
 * created ^short = "Invoice date (Rechnungsdatum / Date facture / Data fattura)"
 * provider ^short = "Provider (Leistungserbringer / Four. de prestations / Prestatario)"
 * provider only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
+* supportingInfo ^slicing.discriminator.type = #pattern
+* supportingInfo ^slicing.discriminator.path = "category"
+* supportingInfo ^slicing.rules = #open
+* supportingInfo contains 
+    treatmentReason 0..1 and 
+    remark 0..1
+* supportingInfo[treatmentReason].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit
+* supportingInfo[treatmentReason].valueString from ForumDatenaustauschTreatmentReason (preferred)
+* supportingInfo[treatmentReason].valueString ^short = "Treatment reason (Behandlungsgrund / Motif traitement / Motivo trattamento"
+* supportingInfo[remark].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info
+* supportingInfo[remark].valueString ^short = "Remark (Bemerkung / Commentaire / Osservazioni)"
 * diagnosis.diagnosis[x] only CodeableConcept
 * diagnosis.diagnosis[x] ^short = "Diagnosis (Diagnose / Diagnostic / Diagnosi)"
-
-
 * insurance.coverage only Reference(CHCoreCoverage)
 
 
@@ -32,6 +41,8 @@ Title: "Forum Datenaustausch: Generelle Rechnung 4.5"
 * patient                                           -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:patient"
 * created                                           -> "invoice:invoice (request_date)"
 * provider                                          -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:provider"
+* supportingInfo[treatmentReason].valueString       -> "invoice:body -> invoice:treatment (reason)"
+* supportingInfo[remark].valueString                -> "invoice:body -> invoice:remark"
 * diagnosis                                         -> "invoice:body -> invoice:treatment -> invoice:diagnosis"
 * diagnosis.diagnosisCodeableConcept.coding.system  -> "invoice:body -> invoice:treatment -> invoice:diagnosis (type)"
 * diagnosis.diagnosisCodeableConcept.coding.code    -> "invoice:body -> invoice:treatment -> invoice:diagnosis (code)"
@@ -51,7 +62,20 @@ Context: Claim
 ValueSet: ForumDatenaustauschTreatmentType
 Id: forumdatenaustausch-treatmenttype
 Title: "Forum Datenaustausch - Treamtent Type"
-Description: "Value set including the values for treatment type (de: Behandlungsart, fr: Type admission, it: Tipo di ammissione). The values are based on the usage in the claim based on [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
+Description: "Value set including the values for treatment type (Behandlungsart / Type admission / Tipo di ammissione). The values are based on the usage in the claim based on [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
 * ^experimental = false
 * http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#1 "ambulant"
 * http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#3 "sationär"
+
+
+ValueSet: ForumDatenaustauschTreatmentReason
+Id: forumdatenaustausch-treatmentreason
+Title: "Forum Datenaustausch - Treamtent Reason"
+Description: "Value set including the values for treatment reason (Behandlungsgrund / Motif traitement / Motivo trattamento). The values are based on the usage in the claim based on [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
+* ^experimental = false
+* $sct#64572001 "Disease"
+* $sct#55566008 "Accident"
+* $sct#77386006 "Pregnancy"
+* $sct#169443000 "Prevention"
+* $sct#276720006 "Birth defect"
+* $sct#261665006 "Unknown"

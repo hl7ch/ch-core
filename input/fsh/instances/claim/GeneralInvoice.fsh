@@ -16,6 +16,16 @@ Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch
 * created = "2017-11-24"
 * provider = Reference(Organization/ClaimProvider)
 * priority = http://terminology.hl7.org/CodeSystem/processpriority#normal "Normal"
+
+* supportingInfo[treatmentReason][0]
+  * sequence = 1
+  * category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit "Patient Reason for Visit"
+  * valueString = "Disease"
+* supportingInfo[remark][+]
+  * sequence = 1
+  * category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info "Information"
+  * valueString = "Lorem ipsum per nostra mi fune torectum mikonstra.diloru si limus mer fin per od per nostra mi fune torectum mi konstradiloru si limus mer fin itorectum mi konstradiloruko."
+
 * diagnosis
   * sequence = 1
   * diagnosisCodeableConcept
@@ -35,8 +45,21 @@ InstanceOf: CHCorePatient
 Usage: #example
 Title: "Peter Muster"
 Description: "Example of a patient used in the general invoice example (Claim)"
-* name.family = "Muster"
-* name.given = "Peter"
+* name
+  * family = "Muster"
+  * given = "Peter"
+  * prefix = "Herr"
+* gender = #male 
+* birthDate = "1964-05-14"
+* address
+  * line = "Musterstrasse 5"
+  * city = "Maienfeld"
+  * postalCode = "7304"
+* identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
+* identifier[AHVN13].value = "12345678901"
+* identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
+* identifier[insuranceCardNumber].value = "12345678901234567890"
+* identifier[insuranceCardNumber].period.end = "2018-03-03"
 
 
 Instance: ClaimProvider
