@@ -22,11 +22,37 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
 * supportingInfo[treatmentReason].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit
 * supportingInfo[treatmentReason].valueString from ForumDatenaustauschTreatmentReason (preferred)
 * supportingInfo[treatmentReason].valueString ^short = "Treatment reason (Behandlungsgrund / Motif traitement / Motivo trattamento"
+* supportingInfo[treatmentReason].valueString 1..
 * supportingInfo[remark].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info
 * supportingInfo[remark].valueString ^short = "Remark (Bemerkung / Commentaire / Osservazioni)"
+* supportingInfo[remark].valueString 1..
 * diagnosis.diagnosis[x] only CodeableConcept
 * diagnosis.diagnosis[x] ^short = "Diagnosis (Diagnose / Diagnostic / Diagnosi)"
 * insurance.coverage only Reference(CHCoreCoverage)
+// Tarif
+* item.category.coding ^slicing.discriminator.type = #value
+* item.category.coding ^slicing.discriminator.path = "system"
+* item.category.coding ^slicing.rules = #open
+* item.category.coding contains 
+    tariff 0..1
+* item.category.coding[tariff] ^short = "Tariff (Tarif / Tarif / Tarifa)"
+* item.category.coding[tariff].system = "http://forum-datenaustausch.ch/tariff"
+* item.productOrService ^short = "Tariff number (Tarifziffer / Code tarifaire / Cod. tariffa)"
+// Tarifziffer
+* item.productOrService.coding ^slicing.discriminator.type = #value
+* item.productOrService.coding ^slicing.discriminator.path = "system"
+* item.productOrService.coding ^slicing.rules = #open
+* item.productOrService.coding contains
+	GTIN 0..1 and
+	Pharmacode 0..1 and 
+	TARMED 0..1 and
+    TARPSY 0..1
+* item.productOrService.coding[GTIN].system = "urn:oid:2.51.1.1"
+* item.productOrService.coding[Pharmacode].system = "urn:oid:2.16.756.5.30.2.6.1"
+* item.productOrService.coding[TARMED].system = "urn:oid:2.16.756.5.30.1.129.1.4"
+* item.productOrService.coding[TARPSY].system = "http://forum-datenaustausch.ch/tariff/030"
+* item.servicedPeriod.end ^short = "Date (Datum / Date / Data)"
+* item.quantity.value ^short = "Quantity (Anzahl / Quantité / Quantità)"
 
 
 Mapping: ForumDatenaustausch-for-CHCoreClaim
@@ -48,6 +74,13 @@ Title: "Forum Datenaustausch: Generelle Rechnung 4.5"
 * diagnosis.diagnosisCodeableConcept.coding.code    -> "invoice:body -> invoice:treatment -> invoice:diagnosis (code)"
 * diagnosis.diagnosisCodeableConcept.text           -> "invoice:body -> invoice:treatment -> invoice:diagnosis"
 * insurance.coverage                                -> "invoice:body -> invoice:tiers_payant or invoice:tiers_garant -> invoice:insurance"
+* item.sequence                                     -> "invoice:body -> invoice:services -> invoice:service (record_id)"
+* item.category.coding[tariff].code                 -> "invoice:body -> invoice:services -> invoice:service (tariff_type)"
+* item.productOrService.coding.code                 -> "invoice:body -> invoice:services -> invoice:service (code)"
+* item.productOrService.coding.display              -> "invoice:body -> invoice:services -> invoice:service (name)"
+* item.servicedPeriod.start                         -> "invoice:body -> invoice:services -> invoice:service (date_begin)"
+* item.servicedPeriod.end                           -> "invoice:body -> invoice:services -> invoice:service (date_end)"
+* item.quantity.value                               -> "invoice:body -> invoice:services -> invoice:service (quantity)"
 
 
 Extension: Biller

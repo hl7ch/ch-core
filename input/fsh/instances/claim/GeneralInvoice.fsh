@@ -1,12 +1,9 @@
 Instance: GeneralInvoice
-InstanceOf: Claim
+InstanceOf: CHCoreClaim
 Usage: #example
 Title: "General Invoice"
 Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)"
-// Sushi: error The element or path you referenced does not exist: extension[biller].valueReference
-// * extension[biller].valueReference = Reference(Organization/Biller) -> 
-* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-biller"
-* extension[=].valueReference = Reference(Organization/ClaimBiller)
+* extension[biller].valueReference = Reference(Organization/ClaimBiller)
 * identifier.system = "https://biller.ch/claim-identifier"
 * identifier.value = "1511421400#2017-11-23"
 * status = #active 
@@ -16,7 +13,6 @@ Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch
 * created = "2017-11-24"
 * provider = Reference(Organization/ClaimProvider)
 * priority = http://terminology.hl7.org/CodeSystem/processpriority#normal "Normal"
-
 * supportingInfo[treatmentReason][0]
   * sequence = 1
   * category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit "Patient Reason for Visit"
@@ -25,7 +21,6 @@ Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch
   * sequence = 1
   * category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info "Information"
   * valueString = "Lorem ipsum per nostra mi fune torectum mikonstra.diloru si limus mer fin per od per nostra mi fune torectum mi konstradiloru si limus mer fin itorectum mi konstradiloruko."
-
 * diagnosis
   * sequence = 1
   * diagnosisCodeableConcept
@@ -37,7 +32,14 @@ Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch
   * sequence = 1
   * focal = true
   * coverage = Reference(Coverage/ClaimCoverage)
-
+* item[0]
+  * sequence = 1
+  * category.coding[tariff] = http://forum-datenaustausch.ch/tariff#030 "TARPSY"
+  * productOrService.coding[TARPSY] = http://forum-datenaustausch.ch/tariff/030#TP25B "Schizophrene oder akut psychotische Störungen, Alter > 17 Jahre mit komplizierender somatischer Nebendiagnose"
+  * servicedPeriod
+    * start = "2017-10-27"
+    * end = "2017-11-23"
+  * quantity.value = 1
 
 
 Instance: ClaimPatient
