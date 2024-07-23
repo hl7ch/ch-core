@@ -22,10 +22,10 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
 * supportingInfo[treatmentReason].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit
 * supportingInfo[treatmentReason].valueString from ForumDatenaustauschTreatmentReason (preferred)
 * supportingInfo[treatmentReason].valueString ^short = "Treatment reason (Behandlungsgrund / Motif traitement / Motivo trattamento"
-* supportingInfo[treatmentReason].valueString 1..
+* supportingInfo[treatmentReason].value[x] 1..
 * supportingInfo[remark].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info
 * supportingInfo[remark].valueString ^short = "Remark (Bemerkung / Commentaire / Osservazioni)"
-* supportingInfo[remark].valueString 1..
+* supportingInfo[remark].value[x] 1..
 * diagnosis.diagnosis[x] only CodeableConcept
 * diagnosis.diagnosis[x] ^short = "Diagnosis (Diagnose / Diagnostic / Diagnosi)"
 * insurance.coverage only Reference(CHCoreCoverage)
