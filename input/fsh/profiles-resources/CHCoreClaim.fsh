@@ -30,7 +30,7 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
 * diagnosis.diagnosis[x] ^short = "Diagnosis (Diagnose / Diagnostic / Diagnosi)"
 * insurance.coverage only Reference(CHCoreCoverage)
 * item.extension contains Responsible named responsible 0..1
-* item.extension[responsible] ^short = "Responsible (Verantwortlicher / Responsable / Responsabile"
+* item.extension[responsible] ^short = "Responsible (Verantwortlicher / Responsable / Responsabile)"
 // Tarif
 * item.category.coding ^slicing.discriminator.type = #value
 * item.category.coding ^slicing.discriminator.path = "system"
