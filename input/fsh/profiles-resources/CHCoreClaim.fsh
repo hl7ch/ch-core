@@ -39,7 +39,7 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
     tariff 0..1
 * item.category.coding[tariff] ^short = "Tariff (Tarif / Tarif / Tarifa)"
 * item.category.coding[tariff].system = "http://forum-datenaustausch.ch/tariff"
-* item.categroy.coding[tariff].code 1..
+// * item.categroy.coding[tariff].code 1.. -> Sushi: error No element found at path item.categroy.coding[tariff].code
 * item.productOrService ^short = "Tariff number (Tarifziffer / Code tarifaire / Cod. tariffa)"
 // Tarifziffer
 * item.productOrService.coding ^slicing.discriminator.type = #value
