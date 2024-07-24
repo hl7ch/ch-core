@@ -1,8 +1,8 @@
-Profile: CHCoreClaim
+Profile: CHCoreClaimForumDatenaustausch
 Parent: Claim
-Id: ch-core-claim
-Title: "CH Core Claim"
-Description: "Base definition of the Claim resource for use in Swiss specific use cases. The structure is based on a partial (not all elements are used at the moment) mapping to [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
+Id: ch-core-claim-forum-datenaustausch
+Title: "CH Core Claim Forum Datenaustausch"
+Description: "Definition of the Claim resource for use in Swiss specific use cases. The structure is based on a partial (not all elements are used at the moment) mapping to [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
 * extension contains Biller named biller 0..1
 * extension[biller] ^short = "Biller (Rechnungssteller / Auteur facture / Fatturante)"
 * identifier ^short = "Document Identification (Dokument Identifikation / Document Identification / Documento Identificazione)"
@@ -54,14 +54,13 @@ Description: "Base definition of the Claim resource for use in Swiss specific us
 * item.productOrService.coding[Pharmacode].system = "urn:oid:2.16.756.5.30.2.6.1"
 * item.productOrService.coding[TARMED].system = "urn:oid:2.16.756.5.30.1.129.1.4"
 * item.productOrService.coding[TARPSY].system = "http://forum-datenaustausch.ch/tariff/030"
-* item.servicedPeriod.end ^short = "Date (Datum / Date / Data)"
 * item.quantity.value ^short = "Quantity (Anzahl / Quantité / Quantità)"
 
 
-Mapping: ForumDatenaustausch-for-CHCoreClaim
-Source: CHCoreClaim
+Mapping: ForumDatenaustausch-for-CHCoreClaimForumDatenaustausch
+Source: CHCoreClaimForumDatenaustausch
 Target: "https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/"
-Id: forum-datenaustausch
+Id: ch-core-claim-forum-datenaustausch
 Title: "Forum Datenaustausch: Generelle Rechnung 4.5"
 * -> "invoice:request/invoice:payload"
 * extension[biller]                                 -> "invoice:body/{invoice:tiers_payant, invoice:tiers_garant}/invoice:biller"

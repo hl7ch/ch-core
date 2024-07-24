@@ -1,5 +1,5 @@
 Instance: GeneralInvoice
-InstanceOf: CHCoreClaim
+InstanceOf: CHCoreClaimForumDatenaustausch
 Usage: #example
 Title: "General Invoice"
 Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)"
