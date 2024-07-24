@@ -107,7 +107,7 @@ Context: Claim.item
 
 ValueSet: ForumDatenaustauschTreatmentType
 Id: forumdatenaustausch-treatmenttype
-Title: "Forum Datenaustausch - Treamtent Type"
+Title: "Forum Datenaustausch - Treatment Type"
 Description: "Value set including the values for treatment type (Behandlungsart / Type admission / Tipo di ammissione). The values are based on the usage in the claim based on [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
 * ^experimental = false
 * http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#1 "ambulant"
@@ -116,7 +116,7 @@ Description: "Value set including the values for treatment type (Behandlungsart 
 
 ValueSet: ForumDatenaustauschTreatmentReason
 Id: forumdatenaustausch-treatmentreason
-Title: "Forum Datenaustausch - Treamtent Reason"
+Title: "Forum Datenaustausch - Treatment Reason"
 Description: "Value set including the values for treatment reason (Behandlungsgrund / Motif traitement / Motivo trattamento). The values are based on the usage in the claim based on [Generelle Rechnung 4.5 (Forum Datenaustausch)](https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)."
 * ^experimental = false
 * $sct#64572001 "Disease"
