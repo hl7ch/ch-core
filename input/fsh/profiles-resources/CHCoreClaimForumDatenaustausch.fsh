@@ -64,7 +64,7 @@ Id: ch-core-claim-forum-datenaustausch
 Title: "Forum Datenaustausch: Generelle Rechnung 4.5"
 * -> "invoice:request/invoice:payload"
 * extension[biller]                                 -> "invoice:body/{invoice:tiers_payant, invoice:tiers_garant}/invoice:biller"
-* identifier                                        -> "invoice:invoice (request_timestamp#request_date)"
+* identifier                                        -> "invoice:invoice (request_timestamp)"
 * type                                              -> "invoice:body/invoice:treatment (treatment)"
 * patient                                           -> "invoice:body/{invoice:tiers_payant, invoice:tiers_garant}/invoice:patient"
 * created                                           -> "invoice:invoice (request_date)"

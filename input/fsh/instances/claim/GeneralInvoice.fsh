@@ -5,7 +5,7 @@ Title: "General Invoice"
 Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)"
 * extension[biller].valueReference = Reference(Organization/ClaimBiller)
 * identifier.system = "https://biller.ch/claim-identifier"
-* identifier.value = "1511421400#2017-11-23"
+* identifier.value = "1511421400"
 * status = #active 
 * type = http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#3 "stationär"
 * use = #claim
