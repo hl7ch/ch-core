@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
+* [#293](https://github.com/hl7ch/ch-core/issues/293): Clarification of the description for Patient.gender
 
 #### Fixed
 
