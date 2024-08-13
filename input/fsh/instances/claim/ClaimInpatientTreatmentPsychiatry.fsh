@@ -1,8 +1,8 @@
-Instance: GeneralInvoice
-InstanceOf: CHCoreClaimForumDatenaustausch
+Instance: ClaimInpatientTreatmentPsychiatry
+InstanceOf: CHCoreClaim
 Usage: #example
-Title: "General Invoice"
-Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch/de/xml-standards-formulare/release-45-451/generelle-rechnung-45/)"
+Title: "Claim Inpatient Treatment Psychiatry"
+Description: "Example for CH Core Claim"
 * extension[biller].valueReference = Reference(Organization/ClaimBiller)
 * identifier.system = "https://biller.ch/claim-identifier"
 * identifier.value = "1511421400"
@@ -13,11 +13,11 @@ Description: "Partial example of an invoice (https://www.forum-datenaustausch.ch
 * created = "2017-11-24"
 * provider = Reference(Organization/ClaimProvider)
 * priority = http://terminology.hl7.org/CodeSystem/processpriority#normal "Normal"
-* supportingInfo[treatmentReason][0]
+* supportingInfo[treatmentReason]
   * sequence = 1
   * category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit "Patient Reason for Visit"
-  * valueString = "Disease"
-* supportingInfo[remark][+]
+  * code = $sct#64572001 "Disease"
+* supportingInfo[remark]
   * sequence = 1
   * category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info "Information"
   * valueString = "Lorem ipsum per nostra mi fune torectum mikonstra.diloru si limus mer fin per od per nostra mi fune torectum mi konstradiloru si limus mer fin itorectum mi konstradiloruko."
@@ -49,7 +49,7 @@ Instance: ClaimPatient
 InstanceOf: CHCorePatient
 Usage: #example
 Title: "Peter Muster"
-Description: "Example of a patient used in the general invoice example (Claim)"
+Description: "Example of a patient used in the claim example"
 * name
   * family = "Muster"
   * given = "Peter"
@@ -71,7 +71,7 @@ Instance: ClaimProvider
 InstanceOf: CHCoreOrganization
 Usage: #example
 Title: "Klinik für Psychiatrie"
-Description: "Example of a organization used in the general invoice example (Claim)"
+Description: "Example of a organization used in the claim example"
 * identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
 * identifier[ZSR].value = "P123456"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
@@ -91,7 +91,7 @@ Instance: ClaimBiller
 InstanceOf: CHCoreOrganization
 Usage: #example
 Title: "Klinik für Psychiatrie"
-Description: "Example of a organization used in the general invoice example (Claim)"
+Description: "Example of a organization used in the claim example"
 * identifier[UIDB].system = "urn:oid:2.16.756.5.35"
 * identifier[UIDB].value = "CHE108791452"
 * identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
@@ -115,7 +115,7 @@ Instance: ClaimCoverage
 InstanceOf: CHCoreCoverage
 Usage: #example
 Title: "Krankenkasse AG"
-Description: "Example of a coverage used in the general invoice example (Claim)"
+Description: "Example of a coverage used in the claim example"
 * contained = ClaimInsurance
 * status = #active 
 * beneficiary = Reference(Patient/ClaimPatient)
