@@ -62,7 +62,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * telecom[email] only CHCoreContactPointECH46Email
 * telecom[phone] only CHCoreContactPointECH46Phone
 * telecom[internet] only CHCoreContactPointECH46Internet
-* gender ^short = "male | female | other"
+* gender ^short = "male | female | other | unknown* (* see warning 'ch-pat-2')"
 * deceased[x] only boolean or dateTime
 * address only CHCoreAddress
 * maritalStatus from $ch-core-maritalstatus (extensible)
