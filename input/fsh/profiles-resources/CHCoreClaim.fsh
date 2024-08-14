@@ -2,7 +2,7 @@ Profile: CHCoreClaim
 Parent: Claim
 Id: ch-core-claim
 Title: "CH Core Claim"
-Description: "Base definition of the claim resource for the representation of a list of professional services (e.g. doctor's visit) and products (e.g. medication) that have been or are to be provided for a patient. The profile defines general basic elements that can occur in Swiss use cases. In Switzerland, there are external standards for administrative processes between service providers and payers (e.g. Forum Datenaustausch), therefore see the corresponding mapping."
+Description: "Base definition of the claim resource for the representation of a list of professional services (e.g. doctor's visit) and products (e.g. medication) that have been or are to be provided for a patient. The profile defines general basic elements that can occur in Swiss use cases. In Switzerland, there are external standards for administrative processes between service providers and payers (e.g. Forum Datenaustausch, SHIP, eCH), therefore see the corresponding mapping."
 * extension contains Biller named biller 0..1
 * extension[biller] ^short = "Biller in the case of a professional service or poduct provided."
 * type from BfsMedstats20Encounterclass (extensible) // original binding is already extensible
@@ -23,7 +23,7 @@ Description: "Base definition of the claim resource for the representation of a 
 * supportingInfo[remark].valueString 1..
 * insurance.coverage only Reference(CHCoreCoverage)
 * item.extension contains Responsible named responsible 0..1
-* item.extension[responsible] ^short = "Responsible for the service or product provided."
+* item.extension[responsible] ^short = "Responsible for the service or product provided"
 // Tarif
 * item.category.coding ^slicing.discriminator.type = #value
 * item.category.coding ^slicing.discriminator.path = "system"
@@ -33,20 +33,17 @@ Description: "Base definition of the claim resource for the representation of a 
 * item.category.coding[tariff] ^short = "Tariff"
 * item.category.coding[tariff].system = "http://forum-datenaustausch.ch/tariff"
 // * item.categroy.coding[tariff].code 1.. -> Sushi: error No element found at path item.categroy.coding[tariff].code
-* item.productOrService ^short = "Tariff number (Tarifziffer / Code tarifaire / Cod. tariffa)"
+* item.productOrService ^short = "Tariff number"
 // Tarifziffer
 * item.productOrService.coding ^slicing.discriminator.type = #value
 * item.productOrService.coding ^slicing.discriminator.path = "system"
 * item.productOrService.coding ^slicing.rules = #open
 * item.productOrService.coding contains
 	GTIN 0..1 and
-	Pharmacode 0..1 and 
-	TARMED 0..1 and
-    TARPSY 0..1
+	TARMED 0..1
 * item.productOrService.coding[GTIN].system = "urn:oid:2.51.1.1"
-* item.productOrService.coding[Pharmacode].system = "urn:oid:2.16.756.5.30.2.6.1"
 * item.productOrService.coding[TARMED].system = "urn:oid:2.16.756.5.30.1.129.1.4"
-* item.productOrService.coding[TARPSY].system = "http://forum-datenaustausch.ch/tariff/030"
+
 
 
 Mapping: CHCoreClaim-to-ForumDatenaustausch
@@ -79,6 +76,7 @@ Title: "Forum Datenaustausch: Generelle Rechnung 4.5"
 * item.sequence                                     -> "invoice:body/invoice:services/invoice:service (record_id)"
 * item.category.coding[tariff]                      -> "Tariff / Tarif / Tarif / Tarifa"
 * item.category.coding[tariff].code                 -> "invoice:body/invoice:services/invoice:service (tariff_type)"
+* item.productOrService                             -> "Tariff number / Tarifziffer / Code tarifaire / Cod. tariffa"
 * item.productOrService.coding.code                 -> "invoice:body/invoice:services/invoice:service (code)"
 * item.productOrService.coding.display              -> "invoice:body/invoice:services/invoice:service (name)"
 * item.serviced[x]                                  -> "invoice:body/invoice:services/invoice:service (date_begin, date_end)"

@@ -38,7 +38,7 @@ Description: "Example for CH Core Claim"
     * value = "7634567890333"
   * sequence = 1
   * category.coding[tariff] = http://forum-datenaustausch.ch/tariff#030 "TARPSY"
-  * productOrService.coding[TARPSY] = http://forum-datenaustausch.ch/tariff/030#TP25B "Schizophrene oder akut psychotische Störungen, Alter > 17 Jahre mit komplizierender somatischer Nebendiagnose"
+  * productOrService.coding = http://forum-datenaustausch.ch/tariff/030#TP25B "Schizophrene oder akut psychotische Störungen, Alter > 17 Jahre mit komplizierender somatischer Nebendiagnose"
   * servicedPeriod
     * start = "2017-10-27"
     * end = "2017-11-23"
