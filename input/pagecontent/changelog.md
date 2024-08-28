@@ -1,6 +1,18 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 5
+### STU 6 Ballot (2025)
+
+#### Added
+* [#292](https://github.com/hl7ch/ch-core/issues/292): CH Core Claim profile, example, mapping to 'Forum Datenaustausch'
+
+#### Changed / Updated
+
+#### Fixed
+
+#### Issues resolved without amendment (in IG)
+
+
+### STU 5 (2024)
 
 #### Added
 
