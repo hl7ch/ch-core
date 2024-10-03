@@ -104,7 +104,7 @@ To represent the PDF (original representation) in the FHIR document, it is added
 #### Referencing from Narrative to Data
 The link from the narrative text should point to the corresponding `Bundle.entry.id`, where the Binary resource is. The below example snippets show the relevant parts of the EPR document example [Transfer note for radiological diagnostics](Bundle-DocumentContainingOriginalRepresentationAsPdfA.json.html):
 
-Section `originalRepresentation` of the Composition entry -> `Composition.section.text`:
+Section `originalRepresentation` of the Composition entry -> `Composition.section.text`: 
 {% fragment Bundle/DocumentContainingOriginalRepresentationAsPdfA JSON BASE:Bundle.entry[0].resource.section.where(code.coding.code = '55108-5') %}
 
 <p>&nbsp;</p>
