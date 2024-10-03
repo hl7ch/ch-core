@@ -25,7 +25,7 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-term: 3.0.x
+  ch.fhir.ig.ch-term: current #3.0.x
   hl7.terminology: 5.5.0
 
 pages:
@@ -42,15 +42,17 @@ pages:
 
 menu:
   Home: index.html
-  Guidance: guidance.html
+  Guidance: 
+    SNOMED CT Swiss Extension: guidance.html#snomed-ct-swiss-extension
+    Original Representation (EPR): guidance.html#original-representation-epr
   Profiles: profiles.html
   Extensions: extensions.html
   Artifacts: artifacts.html
 
 resources:
-  Bundle/CdaContainingOriginalRepresentationAsPdfA:
+  Bundle/DocumentContainingOriginalRepresentationAsPdfA:
     name: Transfer note for radiological diagnostics
-    description: Document EPR containing original representation as PDF-A (fullUrls of entries with ‘urn:uuid:’)
+    description: EPR Document containing original representation as PDF-A (fullUrls of entries with ‘urn:uuid:’)
     exampleBoolean: true
       
 # For parameters defined by core FHIR see: 
