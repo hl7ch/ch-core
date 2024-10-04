@@ -63,10 +63,4 @@ Description: "Definition of the Composition resource for use in the context of t
 * section[originalRepresentation].entry 1..1
 * section[originalRepresentation].entry only Reference(Binary)
 * section[originalRepresentation].entry ^short = "According to the EPR ordonnance the PDF has to be in PDF/A-1 or PDF/A-2 format."
-* section[originalRepresentation].entry.extension ^slicing.discriminator.type = #value
-* section[originalRepresentation].entry.extension ^slicing.discriminator.path = "url"
-* section[originalRepresentation].entry.extension ^slicing.rules = #open
-* section[originalRepresentation].entry.extension contains 
-    $narrativeLink named narrativeLink 0..1
-* section[originalRepresentation].entry.extension[narrativeLink] ^short = "narrativeLink to img src attribute"
 * section[originalRepresentation].section 0..0

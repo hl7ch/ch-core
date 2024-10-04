@@ -91,18 +91,18 @@ ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see 
 <p>&nbsp;</p>
 
 
-### Original Representation (EPR)
-
+### Narrative Text in EPR Documents
 Representation (display) of FHIR Documents (Bundle) in the the context of the Swiss EPR:
 
 1. Exchange formats for the Swiss EPR require a readable representation.
-2. For some exchange formats (e.g. Medication Card document, Medication Prescription document from CH EMED), it has been defined that the document must be embedded as a PDF/A. For this purpose, the 'originalRepresentation' section has been defined in the [CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html).
+2. For this purpose, the `originalRepresentation` section has been defined in the [CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html), from where a embedded PDF as a Binary resource is linked. According to the EPR ordonnance the PDF has to be in PDF/A-1 or PDF/A-2 format.
+3. This is one possible way of displaying narrative text. It is used, for example, in the CH EMED exchange format (Medication Card document, Medication Prescription document). 
 
-#### Adding the PDF to the FHIR Bundle
-To represent the PDF (original representation) in the FHIR document, it is added to the Bundle ([CH Core Document EPR profile](StructureDefinition-ch-core-document-epr.html)) as a [Binary resource](https://hl7.org/fhir/R4/binary.html), which is then referenced by the narrative part of the corresponding section.
+#### Including the PDF in the FHIR Document
+To include the PDF in the FHIR document, it is added to the Bundle ([CH Core Document EPR profile](StructureDefinition-ch-core-document-epr.html)) as an entry containing a [Binary resource](https://hl7.org/fhir/R4/binary.html). From the section `originalRepresentation` in the Composition ([CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html)) points a link from the narrative text to the entry of the Bundle (`Bundle.entry.id`) including the PDF.
 
-#### Referencing from Narrative to Data
-The link from the narrative text should point to the corresponding `Bundle.entry.id`, where the Binary resource is. The below example snippets show the relevant parts of the EPR document example [Transfer note for radiological diagnostics](Bundle-DocumentContainingOriginalRepresentationAsPdfA.json.html):
+#### Example
+The below example snippets show the relevant parts of the EPR document example [Transfer note for radiological diagnostics](Bundle-DocumentContainingOriginalRepresentationAsPdfA.json.html):
 
 Section `originalRepresentation` of the Composition entry -> `Composition.section.text`: 
 {% fragment Bundle/DocumentContainingOriginalRepresentationAsPdfA JSON BASE:Bundle.entry[0].resource.section.where(code.coding.code = '55108-5') %}

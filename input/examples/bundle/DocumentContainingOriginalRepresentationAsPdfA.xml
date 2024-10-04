@@ -141,10 +141,8 @@
             <div xmlns="http://www.w3.org/1999/xhtml">Representation of the original view: <span idref="8f304c87-ed20-4e9a-b928-db4116eb6594">PDF</span></div>
           </text>
           <entry>
-            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-              <valueUrl value="8f304c87-ed20-4e9a-b928-db4116eb6594"/>
-            </extension>
             <reference value="urn:uuid:8f304c87-ed20-4e9a-b928-db4116eb6594"/>
+            <type value="Binary"/>
           </entry>
         </section>
       </Composition>
