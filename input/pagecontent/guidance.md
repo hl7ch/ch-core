@@ -91,12 +91,12 @@ ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see 
 <p>&nbsp;</p>
 
 
-### Narrative Text in EPR Documents
+### Readable Representation of EPR Documents
 Representation (display) of FHIR Documents (Bundle) in the the context of the Swiss EPR:
 
 1. Exchange formats for the Swiss EPR require a readable representation.
 2. For this purpose, the `originalRepresentation` section has been defined in the [CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html), from where a embedded PDF as a Binary resource is linked. According to the EPR ordonnance the PDF has to be in PDF/A-1 or PDF/A-2 format.
-3. This is one possible way of displaying narrative text. It is used, for example, in the CH EMED exchange format (Medication Card document, Medication Prescription document). 
+3. This is one possible way for the readable representation of EPR documents. It is used, for example, in the CH EMED exchange format (Medication Card document, Medication Prescription document). 
 
 #### Including the PDF in the FHIR Document
 To include the PDF in the FHIR document, it is added to the Bundle ([CH Core Document EPR profile](StructureDefinition-ch-core-document-epr.html)) as an entry containing a [Binary resource](https://hl7.org/fhir/R4/binary.html). From the section `originalRepresentation` in the Composition ([CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html)) points a link from the narrative text to the entry of the Bundle (`Bundle.entry.id`) including the PDF.

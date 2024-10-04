@@ -44,7 +44,7 @@ menu:
   Home: index.html
   Guidance: 
     SNOMED CT Swiss Extension: guidance.html#snomed-ct-swiss-extension
-    Narrative Text in EPR Documents: guidance.html#narrative-text-in-epr-documents
+    Readable Representation of EPR Documents: guidance.html#readable-representation-of-epr-documents
   Profiles: profiles.html
   Extensions: extensions.html
   Artifacts: artifacts.html
