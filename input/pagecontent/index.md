@@ -45,6 +45,10 @@ This document presents Swiss use concepts defined via FHIR processable artifacts
 * [Extensions](extensions.html) -  FHIR extensions that are added for local use, covering necessary Swiss concepts. 
 * [Terminology](https://fhir.ch/ig/ch-term/index.html) - defined or referenced code systems and value sets for Switzerland. 
 
+See also the guidance section with detailed descriptions about some special topics:
+* [SNOMED CT Swiss Extension](guidance.html#snomed-ct-swiss-extension)
+* [Readable Representation of EPR Documents](guidance.html#readable-representation-of-epr-documents)
+
 ### Governance
 The CH Core implementation guide is managed by HL7 Switzerland in the [HL7 Switzerland FHIR technical committee](https://www.hl7.ch/technisches-komitee/), see also [source](https://github.com/hl7ch/ch-core).
 

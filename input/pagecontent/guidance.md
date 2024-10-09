@@ -27,6 +27,7 @@ Composition.type of a Medication Prescription document (see [full example](https
   ]
 }
 ```
+<p>&nbsp;</p>
 
 **SNOMED CT Swiss extension**: 82291000195104 "Medication dispense document (record artifact)"   
 
@@ -43,6 +44,7 @@ Composition.type of a Medication Dispense document (see [full example](https://f
   ]
 }
 ```
+<p>&nbsp;</p>
 
 #### Usage in Value Sets
 To illustrate how the SNOMED CT codes (international vs. Swiss extension) are used in value sets, examples of the CH Term are shown below.  
@@ -65,6 +67,7 @@ ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see 
   ]
 }
 ```
+<p>&nbsp;</p>
 
 **SNOMED CT Swiss extension**: 1141000195107 "Secret (qualifier value)"      
 
@@ -85,3 +88,28 @@ ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see 
   ]
 }
 ```
+<p>&nbsp;</p>
+
+
+### Readable Representation of EPR Documents
+Representation (display) of FHIR Documents (Bundle) in the the context of the Swiss EPR:
+
+1. Exchange formats for the Swiss EPR require a readable representation.
+2. For this purpose, the `originalRepresentation` section has been defined in the [CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html), from where a embedded PDF as a Binary resource is linked. According to the EPR ordonnance the PDF has to be in PDF/A-1 or PDF/A-2 format.
+3. This is one possible way for the readable representation of EPR documents. It is used, for example, in the CH EMED exchange format (Medication Card document, Medication Prescription document). 
+
+#### Including the PDF in the FHIR Document
+To include the PDF in the FHIR document, it is added to the Bundle ([CH Core Document EPR profile](StructureDefinition-ch-core-document-epr.html)) as an entry containing a [Binary resource](https://hl7.org/fhir/R4/binary.html). From the section `originalRepresentation` in the Composition ([CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html)) points a link from the narrative text to the entry of the Bundle (`Bundle.entry.id`) including the PDF.
+
+#### Example
+The below example snippets show the relevant parts of the EPR document example [Transfer note for radiological diagnostics](Bundle-DocumentContainingOriginalRepresentationAsPdfA.json.html):
+
+Section `originalRepresentation` of the Composition entry -> `Composition.section.text`: 
+{% fragment Bundle/DocumentContainingOriginalRepresentationAsPdfA JSON BASE:Bundle.entry[0].resource.section.where(code.coding.code = '55108-5') %}
+
+<p>&nbsp;</p>
+
+Binary entry -> `Bundle.entry.id`: 
+{% fragment Bundle/DocumentContainingOriginalRepresentationAsPdfA JSON EXCEPT:Bundle.entry.where(id = '8f304c87-ed20-4e9a-b928-db4116eb6594') %}
+
+<p>&nbsp;</p>
