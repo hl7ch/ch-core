@@ -2,6 +2,18 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### STU 5
 
+#### Open Issues
+During the ballot, the following comments came in, which will be taken into account in the further development of CH Core:
+
+* [#299](https://github.com/hl7ch/ch-core/issues/299):
+   * Add guidance for the [RESTful use](https://hl7.org/fhir/r4/http.html), including the [SMART on FHIR mechanism](https://hl7.org/fhir/smart-app-launch/).
+   * Compatibility with the [International Patient Access (IPA) specification](https://hl7.org/fhir/uv/ipa/).
+   * Define formal descriptions of capabilities per actor (server/client), e.g. [IPA-Patient](https://hl7.org/fhir/uv/ipa/StructureDefinition-ipa-patient.html). See also [implementation obligations](https://build.fhir.org/obligations.html).
+   * Clarification of the relationship to the EPR and the supported exchange mechanisms. 
+* [CH Term #41](https://github.com/hl7ch/ch-term/issues/41): Revision (harmonization, usage SCT) of code system and value set ServiceRequest Category
+
+See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
+
 #### Added
 
 #### Changed / Updated
