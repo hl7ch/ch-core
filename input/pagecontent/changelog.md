@@ -17,6 +17,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 #### Added
 
 #### Changed / Updated
+* [#303](https://github.com/hl7ch/ch-core/issues/303): Entry Resource Cross References, Usage/Description (Roeland Luykx,RALY GmbH)
 * [#294](https://github.com/hl7ch/ch-core/issues/294): Differentiation of severity of constraint ch-pat-1 for CH Core Patient (warning) and CH Core Patient EPR (error)
 * [#293](https://github.com/hl7ch/ch-core/issues/293): Clarification of the description for Patient.gender
 * [#300](https://github.com/hl7ch/ch-core/issues/293): Add guidance for readable representation of EPR documents and update example
