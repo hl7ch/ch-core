@@ -37,12 +37,10 @@ INFORMATION: StructureDefinition/ch-core-practitioner-epr: StructureDefinition.s
 The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 
 # Reference to draft CodeSystem
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization-recommendation-status|1.0.0
-
-# https://github.com/HL7/fhir-ig-publisher/issues/898
-The link 'StructureDefinition-originalText.html' for "originalText extension" cannot be resolved
