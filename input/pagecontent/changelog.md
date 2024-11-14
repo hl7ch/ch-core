@@ -23,6 +23,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#300](https://github.com/hl7ch/ch-core/issues/293): Add guidance for readable representation of EPR documents and update example
 
 #### Fixed
+* [#306](https://github.com/hl7ch/ch-core/issues/306): Replace deprecated discriminator (`pattern` -> `value`)
 
 #### Issues resolved without amendment (in IG)
 * [#289](https://github.com/hl7ch/ch-core/issues/289): Validation issue with display values; fixed with new version of IG publisher
