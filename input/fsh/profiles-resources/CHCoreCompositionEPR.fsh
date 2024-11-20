@@ -45,7 +45,7 @@ Description: "Definition of the Composition resource for use in the context of t
 * custodian only Reference(CHCoreOrganizationEPR)
 * relatesTo.target[x] only Identifier or Reference(CHCoreCompositionEPR)
 
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open

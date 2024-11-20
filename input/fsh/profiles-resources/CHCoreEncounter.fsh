@@ -7,7 +7,7 @@ Description: "Base definition of the Encounter resource for use in Swiss specifi
 * ^purpose = "Core patient demographics which can be shared"
 * . ^short = "CH Core Encounter"
 * . ^definition = "This is basic constraint on Encounter for use in CH Core resources."
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains 

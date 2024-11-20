@@ -7,7 +7,7 @@ Description: "Base definition of the Coverage resource for use in Swiss specific
 * ^purpose = "Coverage information which can be shared"
 * . ^short = "CH Core Coverage"
 * . ^definition = "This is basic constraint on Coverage for use in CH Core resources."
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains insuranceCardNumber 0..*

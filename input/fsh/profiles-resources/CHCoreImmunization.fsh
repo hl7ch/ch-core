@@ -11,7 +11,7 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
     Author named recorder 0..1
 * extension[recorder] ^definition = "The recorder Reference of the immunization. May be a Practitioner or a Patient"
 * vaccineCode from $SwissVaccinesVS (preferred)
-* vaccineCode.coding ^slicing.discriminator.type = #pattern
+* vaccineCode.coding ^slicing.discriminator.type = #value
 * vaccineCode.coding ^slicing.discriminator.path = "$this"
 * vaccineCode.coding ^slicing.description = "Slice based on code value"
 * vaccineCode.coding ^slicing.rules = #open
