@@ -6,11 +6,11 @@ title: CH Core (R4)
 description: FHIR implementation guide CH Core
 status: active
 experimental: false
-date: 2024-05-16
-version: 5.0.0-ci-build
+date: 2024-12-17
+version: 5.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2020+
-releaselabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaselabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: HL7 Switzerland
   url: https://www.hl7.ch/
@@ -26,7 +26,7 @@ jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
   ch.fhir.ig.ch-term: current #3.0.x
-  hl7.terminology: 5.5.0
+  hl7.terminology: 6.1.0
 
 pages:
   index.md:
