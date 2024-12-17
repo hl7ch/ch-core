@@ -2,13 +2,11 @@
 
 # The following code systems/value sets/codes cannot be validated (external systems)
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
-A definition for CodeSystem 'urn:oid:0.4.0.127.0.16.1.1.2.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' could not be found, so the code cannot be validated 
 
 # Swiss specific values on a extensible value set
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.ch/ig/ch-core/CodeSystem/ech-11#contactData)
 None of the codings provided are in the value set 'Patient Contact Relationship ' (http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN)
-None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|4.0.1), and a coding is recommended to come from this value set) (codes = http://snomed.info/sct#41000179103)
 None of the codings provided are in the value set 'AllergyIntolerance Certainty ValueSet' (http://hl7.org/fhir/ValueSet/reaction-event-certainty|5.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://terminology.hl7.org/CodeSystem/reaction-event-certainty#confirmed)
 
 # Display warning
@@ -37,14 +35,10 @@ INFORMATION: StructureDefinition/ch-core-practitioner-epr: StructureDefinition.s
 INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition​.snapshot​.element[10]​.pattern​.ofType(Identifier): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 
 # Build error or cause by underlying profile (snapshot)
-The image source 'pdf1' cannot be resolved
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
 
 # Reference to draft/experimental CodeSystem
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentscope|2.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/reaction-event-certainty|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/immunization-recommendation-status|1.0.0
+Reference to draft CodeSystem%
 The definition for the element 'Consent.provision.code' binds to the value set 'http://hl7.org/fhir/ValueSet/consent-content-code' which is experimental, but this structure is not labeled as experimental
