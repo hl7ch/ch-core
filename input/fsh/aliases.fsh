@@ -47,7 +47,6 @@ Alias: $iso21090-ADXP-streetName =                  http://hl7.org/fhir/Structur
 Alias: $iso21090-ADXP-houseNumber =                 http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
 Alias: $iso21090-ADXP-unitID =                      http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID
 Alias: $iso21090-ADXP-postBox =                     http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox
-Alias: $narrativeLink =                             http://hl7.org/fhir/StructureDefinition/narrativeLink
 Alias: $iso21090-EN-qualifier =                     http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier
 Alias: $patient-citizenship =                       http://hl7.org/fhir/StructureDefinition/patient-citizenship
 Alias: $patient-religion =                          http://hl7.org/fhir/StructureDefinition/patient-religion

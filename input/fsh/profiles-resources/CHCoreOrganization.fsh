@@ -5,7 +5,7 @@ Title: "CH Core Organization"
 Description: "Base definition of the Organization resource for use in Swiss specific use cases."
 
 * . ^short = "CH Core Organization"
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains

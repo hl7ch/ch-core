@@ -8,7 +8,7 @@ Description: "Base definition of the Practitioner resource for use in Swiss spec
 * obeys ch-pract-1 and ch-pract-2
 * . ^short = "CH Core Practitioner"
 * . ^definition = "The CH Core Practitioner is based upon the core FHIR Practitioner Resource and designed to meet the applicable practitioner demographic data elements in Switzerland. See also https://www.bfs.admin.ch/bfs/de/home/register/personenregister/registerharmonisierung/nomenklaturen.html for further information"
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains

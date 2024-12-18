@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="CdaContainingOriginalRepresentationAsPdfA"/>
+  <id value="DocumentContainingOriginalRepresentationAsPdfA"/>
   <meta>
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document"/>
     <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-document-epr"/>
@@ -137,15 +137,12 @@
             </coding>
           </code>
           <text>
-            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
-						Representation of the original view:
-						<img src="pdf1"/></div>
+            <status value="generated"/>
+            <div xmlns="http://www.w3.org/1999/xhtml">Representation of the original view: <span idref="8f304c87-ed20-4e9a-b928-db4116eb6594">PDF</span></div>
           </text>
           <entry>
-            <extension url="http://hl7.org/fhir/StructureDefinition/narrativeLink">
-              <valueUrl value="pdf1"/>
-            </extension>
             <reference value="urn:uuid:8f304c87-ed20-4e9a-b928-db4116eb6594"/>
+            <type value="Binary"/>
           </entry>
         </section>
       </Composition>
@@ -365,7 +362,7 @@
       </Practitioner>
     </resource>
   </entry>
-  <entry>
+  <entry id="8f304c87-ed20-4e9a-b928-db4116eb6594">
     <fullUrl value="urn:uuid:8f304c87-ed20-4e9a-b928-db4116eb6594"/>
     <resource>
       <Binary>
