@@ -8,14 +8,14 @@ Description: "Base definition of the claim resource for the representation of a 
 * type from BfsMedstats20Encounterclass (extensible) // original binding is already extensible
 * patient only Reference(CHCorePatient)
 * provider only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
-* supportingInfo ^slicing.discriminator.type = #pattern
+* supportingInfo ^slicing.discriminator.type = #value
 * supportingInfo ^slicing.discriminator.path = "category"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo contains 
     treatmentReason 0..1 and 
     remark 0..1
 * supportingInfo[treatmentReason].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#patientreasonforvisit
-* supportingInfo[treatmentReason].code from TreatmentReason (preferred)
+* supportingInfo[treatmentReason].code from http://fhir.ch/ig/ch-term/ValueSet/treatmentreason (preferred)
 * supportingInfo[treatmentReason].code ^short = "Treatment reason"
 * supportingInfo[treatmentReason].code 1..
 * supportingInfo[remark].category = http://terminology.hl7.org/CodeSystem/claiminformationcategory#info
@@ -105,18 +105,3 @@ Context: Claim.item
 * value[x] only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
 * value[x] 1..
 
-
-
-
-
-ValueSet: TreatmentReason
-Id: treatmentreason
-Title: "Treatment Reason"
-Description: "Value set including the values for the treatment reason."
-* ^experimental = false
-* $sct#64572001 "Disease"
-* $sct#55566008 "Accident"
-* $sct#77386006 "Pregnancy"
-* $sct#169443000 "Prevention"
-* $sct#276720006 "Birth defect"
-* $sct#261665006 "Unknown"

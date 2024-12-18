@@ -61,9 +61,9 @@ Description: "Example of a patient used in the claim example"
   * city = "Maienfeld"
   * postalCode = "7304"
 * identifier[AHVN13].system = "urn:oid:2.16.756.5.32"
-* identifier[AHVN13].value = "12345678901"
+* identifier[AHVN13].value = "7562295883070"
 * identifier[insuranceCardNumber].system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
-* identifier[insuranceCardNumber].value = "12345678901234567890"
+* identifier[insuranceCardNumber].value = "80756078901234567890"
 * identifier[insuranceCardNumber].period.end = "2018-03-03"
 
 
@@ -73,9 +73,9 @@ Usage: #example
 Title: "Klinik für Psychiatrie"
 Description: "Example of a organization used in the claim example"
 * identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
-* identifier[ZSR].value = "P123456"
+* identifier[ZSR].value = "Y604801"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7634567890111"
+* identifier[GLN].value = "7601000234438"
 * name = "Klinik für Psychiatrie"
 * address
   * line = "Spitalgasse 17b5"
@@ -95,9 +95,9 @@ Description: "Example of a organization used in the claim example"
 * identifier[UIDB].system = "urn:oid:2.16.756.5.35"
 * identifier[UIDB].value = "CHE108791452"
 * identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
-* identifier[ZSR].value = "H121111"
+* identifier[ZSR].value = "Y604801"
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "2011234567890"
+* identifier[GLN].value = "7601022050702"
 * name = "Biller AG"
 * address
   * line = "Billerweg 128"
@@ -125,7 +125,7 @@ Instance: ClaimInsurance
 InstanceOf: CHCoreOrganization
 Usage: #inline
 * identifier[GLN].system = "urn:oid:2.51.1.3"
-* identifier[GLN].value = "7634567890000"
+* identifier[GLN].value = "7601002331470"
 * name = "Krankenkasse AG"
 * address
   * line = "Kassengraben 222"
