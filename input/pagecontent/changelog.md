@@ -1,5 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
+### STU 6
+
+* [#309](https://github.com/hl7ch/ch-core/issues/309): Add warning to ZSR
+
 ### STU 5 (2024-12-17)
 
 #### Open Issues

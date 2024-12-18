@@ -54,6 +54,7 @@ Description: "Identifier holding a number for ZSR (Zahlstellenregister), RCC (Re
 * system ^short = "OID of the ZSR/RCC"
 * value 1..
 * value ^short = "ZSR/RCC number"
+* value obeys zsr-length and zsr-check-digit
 
 
 // ------------------------------- Organization.identifier ------------------------------- //
