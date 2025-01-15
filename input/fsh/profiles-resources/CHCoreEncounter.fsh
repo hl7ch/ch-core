@@ -21,9 +21,9 @@ Description: "Base definition of the Encounter resource for use in Swiss specifi
 * priority from $bfs-medstats-18-admittype_1 (extensible)
 * priority ^short = "BFS Medizinische Statistik - Eintrittsart / Mode d’admission / Genere di ricovero"
 * subject 1..
-* subject only Reference(CHCorePatient)
+* subject only Reference(CHCorePatient or Group)
 * participant.type from http://fhir.ch/ig/ch-core/ValueSet/ch-core-encounter-participation-type (extensible)
-* participant.individual only Reference(CHCorePractitioner)
+* participant.individual only Reference(CHCorePractitioner or CHCorePractitionerRole or RelatedPerson)
 
 * hospitalization.extension ^slicing.discriminator.type = #value
 * hospitalization.extension ^slicing.discriminator.path = "url"
