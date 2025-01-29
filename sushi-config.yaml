@@ -68,6 +68,7 @@ parameters:
     - http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentreason
   allow-extensible-warnings: true
   display-warnings: true  
+  path-expansion-params: '../../expansion-params.json'  # for using SNOMED CT Swiss Extension
 
 FSHOnly: false
 applyExtensionMetadataToRoot: false
