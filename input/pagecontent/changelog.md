@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#309](https://github.com/hl7ch/ch-core/issues/309): Add warning to ZSR
 
 #### Changed / Updated
+* [#318](https://github.com/hl7ch/ch-core/issues/318): Relax minimum cardinality of Location.name from 1 to 0
 
 #### Fixed
 * [#302](https://github.com/hl7ch/ch-core/issues/302): Allow all possible references for Encounter.subject and Encounter.participant.individual
