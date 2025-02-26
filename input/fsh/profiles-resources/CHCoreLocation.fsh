@@ -3,9 +3,7 @@ Parent: Location
 Id: ch-core-location
 Title: "CH Core Location"
 Description: "Base definition of the Location resource for use in Swiss specific use cases."
-
 * . ^short = "CH Core Location"
-* name 1..
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
 * telecom ^slicing.rules = #open
