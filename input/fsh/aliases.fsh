@@ -6,6 +6,7 @@ Alias: $v2-0203 =                                   http://terminology.hl7.org/C
 Alias: $v3-MaritalStatus =                          http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias: $v3-ReligiousAffiliation =                   http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
 Alias: $v3-RoleCode =                               http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $observation-category =                      http://terminology.hl7.org/CodeSystem/observation-category
 
 Alias: $loinc =                                     http://loinc.org
 Alias: $sct =                                       http://snomed.info/sct
@@ -69,4 +70,10 @@ Alias: $ChVacdTargetDiseasesAndIllnessesUndegoneVS =  http://fhir.ch/ig/ch-vacd/
 Alias: $RouteOfAdministrationImmunizationVS =         http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-route-of-administration-vs
 Alias: $SwissVaccinationPlanImmunizationsVS =         http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-ch-vaccination-plan-immunizations-vs
 Alias: $SwissImmunizationRecommendationCategoriesVS = http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs
-Alias: $SwissRecommendationForecastStatus =   http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-forecast-status-vs
+Alias: $SwissRecommendationForecastStatus =           http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-forecast-status-vs
+
+Alias: $lab-studyType-eu-lab =                      http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab
+Alias: $lab-specialty-eu-lab =                      http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab
+Alias: $lab-obsCode-eu-lab =                        http://hl7.eu/fhir/laboratory/ValueSet/lab-obsCode-eu-lab
+Alias: $results-coded-values-laboratory-uv-ips =    http://hl7.org/fhir/uv/ips/ValueSet/results-coded-values-laboratory-uv-ips
+Alias: $lab-technique-eu-lab =                      http://hl7.eu/fhir/laboratory/ValueSet/lab-technique-eu-lab
