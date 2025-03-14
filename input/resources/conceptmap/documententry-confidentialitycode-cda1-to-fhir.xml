@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="documententry-confidentialitycode-cda1-to-fhir"/>
+    <url value="http://fhir.ch/ig/ch-core/ConceptMap/documententry-confidentialitycode-cda1-to-fhir" />
+    <version value="1.1.0"/>
+    <name value="DocumentEntryConfidentialityCodeToFHIRMapping" />
+    <title value="DocumentEntry.confidentialityCode to FHIR mapping"/>
+    <status value="draft"/>
+    <experimental value="true"/>
+    <date value="2019-12-27"/>
+    <publisher value="HL7 Switzerland"/>
+    <contact>
+        <name value="HL7 Switzerland"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.hl7.ch/"/>
+        </telecom>
+    </contact>
+    <description value="DocumentEntry.confidentialityCode to FHIR mapping"/>
+    <jurisdiction>
+        <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CH"/>
+        </coding>
+    </jurisdiction>
+    <copyright value="CC-BY-SA-4.0"/>
+    <sourceUri value="http://fhir.ch/ig/ch-epr-term/ValueSet/DocumentEntry.confidentialityCode"/>
+    <targetUri value="http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification"/>
+    <group>
+        <source value="http://snomed.info/sct"/>
+        <target value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+        <element>
+            <code value="17621005"/>
+            <display value="Normal (qualifier value)"/>
+            <target>
+                <code value="N"/>
+                <display value="normal"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="263856008"/>
+            <display value="Restricted (qualifier value)"/>
+            <target>
+                <code value="R"/>
+                <display value="restricted"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="urn:oid:2.16.756.5.30.1.127.3.4"/>
+        <target value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+        <element>
+            <code value="1141000195107"/>
+            <display value="Secret (qualifier value)"/>
+            <target>
+                <code value="V"/>
+                <display value="very restricted"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

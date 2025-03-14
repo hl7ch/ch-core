@@ -17,13 +17,17 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * vaccineCode.coding ^slicing.rules = #open
 * vaccineCode.coding contains 
     swissVaccines 0..1 and
-    snomedctVaccines 0..1 
+    snomedctVaccines 0..1 and
+    swissImunglobuline 0..1
 * vaccineCode.coding[swissVaccines] from $SwissVaccinesVS (required)
 * vaccineCode.coding[swissVaccines] ^short = "Swiss Vaccine Code"
-* vaccineCode.coding[swissVaccines] ^definition = "Swiss Vaccine Code"
+* vaccineCode.coding[swissVaccines] ^definition = "Swiss Vaccine Code  (ATC J07)"
 * vaccineCode.coding[snomedctVaccines] from $SnomedCTForVaccineCodeVS (required)
 * vaccineCode.coding[snomedctVaccines] ^short = "Vaccine Code by SNOMED CT"
 * vaccineCode.coding[snomedctVaccines] ^definition = "Vaccine Code by SNOMED CT"
+* vaccineCode.coding[swissImunglobuline] from $SwissImunglobulineVS (required)
+* vaccineCode.coding[swissImunglobuline] ^short = "Swiss Immunserum and -globuline code"
+* vaccineCode.coding[swissImunglobuline] ^definition = "Swiss Immunserum and -globuline code (ATC J06)"
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
 * encounter only Reference(CHCoreEncounter)
