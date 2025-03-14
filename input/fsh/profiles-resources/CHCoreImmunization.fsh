@@ -26,8 +26,8 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * vaccineCode.coding[snomedctVaccines] ^short = "Vaccine Code by SNOMED CT"
 * vaccineCode.coding[snomedctVaccines] ^definition = "Vaccine Code by SNOMED CT"
 * vaccineCode.coding[swissImunglobuline] from $SwissImunglobulineVS (required)
-* vaccineCode.coding[swissImunglobuline] ^short = "Swiss Immunserum and -globuline code"
-* vaccineCode.coding[swissImunglobuline] ^definition = "Swiss Immunserum and -globuline code (ATC J06)"
+* vaccineCode.coding[swissImunglobuline] ^short = "Swiss Immunglobuline code"
+* vaccineCode.coding[swissImunglobuline] ^definition = "Swiss Immunglobuline code (ATC J06B)"
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
 * encounter only Reference(CHCoreEncounter)
