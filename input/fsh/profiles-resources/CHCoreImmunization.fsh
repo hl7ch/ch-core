@@ -32,23 +32,6 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * vaccineCode ^binding.extension[=].extension[+].url = "shortDoco"
 * vaccineCode ^binding.extension[=].extension[=].valueString = "For when Swissmedic Immunglobuline code system is preferred"
 
-//* vaccineCode.coding ^slicing.discriminator.type = #value
-//* vaccineCode.coding ^slicing.discriminator.path = "$this"
-//* vaccineCode.coding ^slicing.description = "Slice based on code value"
-//* vaccineCode.coding ^slicing.rules = #open
-//* vaccineCode.coding contains 
-//    swissVaccines 0..1 and
-//    snomedctVaccines 0..1 and
-//    swissImunglobuline 0..1
-//* vaccineCode.coding[swissVaccines] from $SwissVaccinesVS (required)
-//* vaccineCode.coding[swissVaccines] ^short = "Swiss Vaccine Code"
-//* vaccineCode.coding[swissVaccines] ^definition = "Swiss Vaccine Code  (ATC J07)"
-//* vaccineCode.coding[snomedctVaccines] from $SnomedCTForVaccineCodeVS (required)
-//* vaccineCode.coding[snomedctVaccines] ^short = "Vaccine Code by SNOMED CT"
-//* vaccineCode.coding[snomedctVaccines] ^definition = "Vaccine Code by SNOMED CT"
-//* vaccineCode.coding[swissImunglobuline] from $SwissImunglobulineVS (required)
-//* vaccineCode.coding[swissImunglobuline] ^short = "Swiss Immunglobuline code"
-//* vaccineCode.coding[swissImunglobuline] ^definition = "Swiss Immunglobuline code (ATC J06B)"
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
 * encounter only Reference(CHCoreEncounter)
