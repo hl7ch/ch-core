@@ -8,6 +8,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed / Updated
 * [#318](https://github.com/hl7ch/ch-core/issues/318): Relax minimum cardinality of Location.name from 1 to 0
+* [#328](https://github.com/hl7ch/ch-core/issues/328): Deprecate CH Core DocumentReference EPR
 
 #### Fixed
 * [#302](https://github.com/hl7ch/ch-core/issues/302): Allow all possible references for Encounter.subject and Encounter.participant.individual
