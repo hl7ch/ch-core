@@ -29,9 +29,6 @@ Exchange formats for the Swiss EPR are defined in Annex 4. Exchange formats can 
 - [CH Core Document Profile EPR](StructureDefinition-ch-core-document.html): the base definition for a structured document in the Swiss EPR.
 - [CH Core Composition Profile EPR](StructureDefinition-ch-core-composition-epr.html): the base definition for a composition, providing the basic structure of the FHIR document. 
 
-#### XDS (Annex 5, Amendment 1)
-Requirements for IHE XDS are given in Annex 5. The [CH Core DocumentReference Profile EPR](StructureDefinition-ch-core-documentreference-epr.html) defines how metadata used in the EPR is to be mapped to XDS Metadata. Please note that the IHE MHD profile, which includes the document reference resource, is not yet specified in the Annexes, a draft implementation guide is [CH EPR mHealth](http://fhir.ch/ig/ch-epr-mhealth/index.html).
-
 #### CH:ATC Profile (Annex 5, Amendment 2.2)
 The CH ATC profile defines the requirements for a patient’s audit trail. [CH ATC](http://fhir.ch/ig/ch-atc/index.html) is a FHIR implementation guide based on FHIR STU3 and R4. There is currently no relationship between CH ATC and CH Core.
 
