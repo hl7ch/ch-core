@@ -62,6 +62,7 @@ Alias: $DocumentEntry.healthcareFacilityTypeCode =  http://fhir.ch/ig/ch-term/Va
 Alias: $DocumentEntry.practiceSettingCode =         http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.practiceSettingCode
 Alias: $HCProfessional.hcSpecialisation =           http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcSpecialisation
 Alias: $HCProfessional.hcProfession =               http://fhir.ch/ig/ch-term/ValueSet/HCProfessional.hcProfession
+Alias: $SwissImunglobulineVS =                      http://fhir.ch/ig/ch-term/ValueSet/ch-vacd-swissmedic-imunglobuline-vs
 
 Alias: $SwissMedicVacCS =                             http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs
 Alias: $SwissVaccinesVS =                             http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-vs

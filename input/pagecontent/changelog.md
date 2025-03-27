@@ -3,16 +3,20 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 6 Ballot (2025)
 
 #### Added
+* [#330](https://github.com/hl7ch/ch-core/issues/330): Add new VS imunglobulines for vaccinecode to Immunization
+* [#333](https://github.com/hl7ch/ch-core/issues/333): Refactor binding of vaccineCode VS (Adapt Immunization to IPS (2.0.0))
 * [#292](https://github.com/hl7ch/ch-core/issues/292): CH Core Claim profile, example, mapping to 'Forum Datenaustausch'
 * [#309](https://github.com/hl7ch/ch-core/issues/309): Add warning to ZSR
 * [#325](https://github.com/hl7ch/ch-core/issues/325): CH Core Observation Results: Laboratory
 
 #### Changed / Updated
 * [#318](https://github.com/hl7ch/ch-core/issues/318): Relax minimum cardinality of Location.name from 1 to 0
+* [#328](https://github.com/hl7ch/ch-core/issues/328): Deprecate CH Core DocumentReference EPR
 
 #### Fixed
 * [#302](https://github.com/hl7ch/ch-core/issues/302): Allow all possible references for Encounter.subject and Encounter.participant.individual
 * [#313](https://github.com/hl7ch/ch-core/issues/313): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension 
+* [#329](https://github.com/hl7ch/ch-core/issues/329): Fix (and update) terminology dependency to avoid version mismatch: hl7.terminology#6.1.0 -> hl7.terminology.r4#6.2.0
 
 #### Issues resolved without amendment (in IG)
 

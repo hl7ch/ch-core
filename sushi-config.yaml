@@ -26,7 +26,7 @@ jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
   ch.fhir.ig.ch-term: current # 3.1.x
-  hl7.terminology: 6.1.0
+  hl7.terminology.r4: 6.2.0
   hl7.fhir.eu.laboratory: 0.1.0
 
 pages:
