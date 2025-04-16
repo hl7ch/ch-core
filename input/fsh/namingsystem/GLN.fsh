@@ -3,10 +3,6 @@
 Instance: gln
 InstanceOf: NamingSystem
 Usage: #definition
-* extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url"
-* extension[=].valueUri = "http://fhir.ch/ig/ch-term/NamingSystem/gln"
-* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version"
-* extension[=].valueString = "3.1.0"
 * name = "GLN"
 * status = #active
 * kind = #identifier
