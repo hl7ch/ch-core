@@ -4,7 +4,7 @@ Usage: #example
 Title: "Claim Inpatient Treatment Psychiatry"
 Description: "Example for CH Core Claim"
 * extension[biller].valueReference = Reference(Organization/ClaimBiller)
-* identifier.system = "https://biller.ch/claim-identifier"
+* identifier.system = "http://example.com/claim-identifier"
 * identifier.value = "1511421400"
 * status = #active 
 * type = http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#3 "stationär"
