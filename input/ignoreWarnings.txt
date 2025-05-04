@@ -2,7 +2,6 @@
 
 # The following code systems/value sets/codes cannot be validated (external systems)
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
-A definition for CodeSystem 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem' could not be found, so the code cannot be validated 
 A definition for CodeSystem 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://forum-datenaustausch.ch/tariff%
 
