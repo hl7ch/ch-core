@@ -5,8 +5,6 @@ Description: "Example of Immunization resource for use in Swiss specific use cas
 Usage: #example
 * extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"
 * extension[=].valueReference = Reference(ImmunizationPractitionerRoleExample)
-* identifier.system = "urn:oid:2.16.756.5.30.1.147.1.3.1"
-* identifier.value = "1829774"
 * status = #completed
 * vaccineCode = $SwissMedicVacCS#637 "Boostrix"
 * patient = Reference(ImmunizationPatientExample)
