@@ -13,16 +13,20 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * vaccineCode from $SwissVaccinesVS (preferred)
 
 * vaccineCode ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* vaccineCode ^binding.extension[=].extension[0].url = "key"
+* vaccineCode ^binding.extension[=].extension[=].valueId = snomedct
 * vaccineCode ^binding.extension[=].extension[+].url = "purpose"
 * vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
 * vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
 * vaccineCode ^binding.extension[=].extension[=].valueCanonical = $SnomedCTForVaccineCodeVS
 * vaccineCode ^binding.extension[=].extension[+].url = "documentation"
-* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a vaccines value set out of the SNOMED-CT code system."
+* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a vaccines value set out of the SNOMED CT code system."
 * vaccineCode ^binding.extension[=].extension[+].url = "shortDoco"
-* vaccineCode ^binding.extension[=].extension[=].valueString = "For when SNOMED-CT code system is preferred"
+* vaccineCode ^binding.extension[=].extension[=].valueString = "For when SNOMED CT code system is preferred"
 
 * vaccineCode ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* vaccineCode ^binding.extension[=].extension[0].url = "key"
+* vaccineCode ^binding.extension[=].extension[=].valueId = swissmedic
 * vaccineCode ^binding.extension[=].extension[+].url = "purpose"
 * vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
 * vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
