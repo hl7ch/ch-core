@@ -1,8 +1,9 @@
 == Suppressed Messages ==
 
-# The following code systems/value sets/codes cannot be validated (external systems)
+# The following code systems/value sets/codes cannot be validated/resolved (external systems)
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' could not be found, so the code cannot be validated
+URL value 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' does not resolve
 A definition for CodeSystem 'http://forum-datenaustausch.ch/tariff%
 
 # No suitable codes / Swiss specific codes
@@ -38,3 +39,17 @@ The string value contains text that looks like embedded HTML tags. If this conte
 
 # Reference to draft/experimental terminology
 Reference to draft CodeSystem%
+
+# fixed with next ig publisher: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/.E2.9C.94.20CapabilityStatement.20some.20Canonical.20URLs.20do.20not.20resolve/near/515969000
+URL value 'urn:oid:2.999.1.2.3.4' does not resolve
+
+# fixed with next ig publisher: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Warning.20on.20resolvable.20URLs.20in.20structure.20definition.20mappings/near/516018382
+URL value 'urn:oid:2.16.756.5.30.1.123.100.1.1.1' does not resolve
+URL value 'urn:oid:2.16.756.5.30.1.123.100.2.1.1' does not resolve
+URL value 'urn:oid:2.16.756.5.30.1.127.3.10.3' does not resolve
+URL value 'urn:oid:2.16.756.5.32' does not resolve
+URL value 'urn:oid:2.16.756.5.35' does not resolve
+URL value 'urn:oid:2.16.756.5.45' does not resolve
+URL value 'urn:oid:2.51.1.1' does not resolve
+URL value 'urn:oid:2.51.1.3' does not resolve
+URL value 'http://forum-datenaustausch.ch/tariff/030' does not resolve

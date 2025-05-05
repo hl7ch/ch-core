@@ -3,7 +3,7 @@ InstanceOf: CHCoreEncounter
 Usage: #example
 Title: "Encounter Ambulant Broennimann"
 Description: "Ambulant Encounter of Mrs. Broennimann, representing the visit number (Fallnummer) and the BFS variables"
-* meta.source = "https://www.ti.bfh.ch/de/bachelor/medizininformatik.html"
+* meta.source = "https://www.bfh.ch/de/studium/bachelor/medizininformatik/"
 * identifier.type = $v2-0203#VN "Visit number"
 * identifier.system = "http://example.com/fallnummerdomain"
 * identifier.value = "1234"
