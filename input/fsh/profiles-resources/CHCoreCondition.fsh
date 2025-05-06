@@ -4,8 +4,8 @@ Id: ch-core-condition
 Title: "CH Core Condition"
 Description: "Base definition of the Condition resource for use in Swiss specific use cases."
 * subject only Reference(CHCorePatient or Group)
-* recorder only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or RelatedPerson)
-* asserter only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or RelatedPerson)
+* recorder only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or CHCoreRelatedPerson)
+* asserter only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or CHCoreRelatedPerson)
 
 * category from http://hl7.org/fhir/ValueSet/condition-category (extensible)
 * category ^binding.extension[0].extension[0].url = "purpose"
