@@ -52,7 +52,7 @@ Description: "Place of Origin for eCH-0011"
 * country.extension[countrycode] 0..1
 * country.extension[countrycode] only $iso21090-SC-coding
 * country.extension[countrycode] ^short = "ISO Country Alpha-2 or ISO Country Alpha-3 code"
-* country.extension[countrycode] ^definition = "The content of the country code element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, if the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2."
+* country.extension[countrycode] ^definition = "The content of the country code element (if present) SHOULD be selected from ValueSet http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes"
 * period 0..0
 * period only Period
 * period ^short = "Time period when address was/is in use"

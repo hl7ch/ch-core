@@ -22,7 +22,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * extension[placeOfOrigin] ^short = "Place of origin(s) of patient"
 * extension[citizenship] obeys ch-pat-3
 * extension[citizenship] ^short = "Citizenship(s) of patient"
-* extension[citizenship] ^definition = "The content of the country code element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, if the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2."
+* extension[citizenship] ^definition = "The content of the country code element (if present) SHOULD be selected from ValueSet http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes."
 * extension[religion] ^short = "Religion of patient"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"

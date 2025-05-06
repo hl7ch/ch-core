@@ -1,0 +1,7056 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "bfs-country-codes",
+  "url" : "http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes",
+  "version" : "20240522",
+  "name" : "BfsCountryCodes",
+  "title" : "BFS Verzeichnis der Staaten und Gebiete",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-05-22T00:00:00+00:00",
+  "publisher" : "BFS",
+  "contact" : [
+    {
+      "name" : "BFS",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.bfs.admin.ch/bfs/de/home/grundlagen/stgb.assetdetail.32028071.html"
+        }
+      ]
+    },
+    {
+      "name" : "HL7 Switzerland",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.hl7.ch/",
+          "use" : "work"
+        }
+      ]
+    }
+  ],
+  "description" : "BFS defines the valid country codes in Switzerland",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "CH"
+        }
+      ]
+    }
+  ],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "urn:iso:std:iso:3166",
+        "concept" : [
+          {
+            "code" : "AL",
+            "display" : "Albania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Albanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Albanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Albania"
+              }
+            ]
+          },
+          {
+            "code" : "ALB",
+            "display" : "Albania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Albanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Albanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Albania"
+              }
+            ]
+          },
+          {
+            "code" : "AD",
+            "display" : "Andorra",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Andorra"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Andorre"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Andorra"
+              }
+            ]
+          },
+          {
+            "code" : "AND",
+            "display" : "Andorra",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Andorra"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Andorre"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Andorra"
+              }
+            ]
+          },
+          {
+            "code" : "BE",
+            "display" : "Belgium",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Belgien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Belgique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Belgio"
+              }
+            ]
+          },
+          {
+            "code" : "BEL",
+            "display" : "Belgium",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Belgien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Belgique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Belgio"
+              }
+            ]
+          },
+          {
+            "code" : "BG",
+            "display" : "Bulgaria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bulgarien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bulgarie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bulgaria"
+              }
+            ]
+          },
+          {
+            "code" : "BGR",
+            "display" : "Bulgaria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bulgarien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bulgarie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bulgaria"
+              }
+            ]
+          },
+          {
+            "code" : "DK",
+            "display" : "Denmark",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dänemark"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Danemark"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Danimarca"
+              }
+            ]
+          },
+          {
+            "code" : "DNK",
+            "display" : "Denmark",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dänemark"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Danemark"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Danimarca"
+              }
+            ]
+          },
+          {
+            "code" : "DE",
+            "display" : "Germany",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Deutschland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Allemagne"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Germania"
+              }
+            ]
+          },
+          {
+            "code" : "DEU",
+            "display" : "Germany",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Deutschland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Allemagne"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Germania"
+              }
+            ]
+          },
+          {
+            "code" : "FI",
+            "display" : "Finland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Finnland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Finlande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Finlandia"
+              }
+            ]
+          },
+          {
+            "code" : "FIN",
+            "display" : "Finland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Finnland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Finlande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Finlandia"
+              }
+            ]
+          },
+          {
+            "code" : "FR",
+            "display" : "France",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Frankreich"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "France"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Francia"
+              }
+            ]
+          },
+          {
+            "code" : "FRA",
+            "display" : "France",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Frankreich"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "France"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Francia"
+              }
+            ]
+          },
+          {
+            "code" : "GR",
+            "display" : "Greece",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Griechenland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Grèce"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Grecia"
+              }
+            ]
+          },
+          {
+            "code" : "GRC",
+            "display" : "Greece",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Griechenland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Grèce"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Grecia"
+              }
+            ]
+          },
+          {
+            "code" : "GB",
+            "display" : "United Kingdom",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vereinigtes Königreich"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Royaume-Uni"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Regno Unito"
+              }
+            ]
+          },
+          {
+            "code" : "GBR",
+            "display" : "United Kingdom",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vereinigtes Königreich"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Royaume-Uni"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Regno Unito"
+              }
+            ]
+          },
+          {
+            "code" : "IE",
+            "display" : "Ireland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Irland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Irlande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Irlanda"
+              }
+            ]
+          },
+          {
+            "code" : "IRL",
+            "display" : "Ireland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Irland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Irlande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Irlanda"
+              }
+            ]
+          },
+          {
+            "code" : "IS",
+            "display" : "Iceland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Island"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Islande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Islanda"
+              }
+            ]
+          },
+          {
+            "code" : "ISL",
+            "display" : "Iceland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Island"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Islande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Islanda"
+              }
+            ]
+          },
+          {
+            "code" : "IT",
+            "display" : "Italy",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Italien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Italie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Italia"
+              }
+            ]
+          },
+          {
+            "code" : "ITA",
+            "display" : "Italy",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Italien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Italie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Italia"
+              }
+            ]
+          },
+          {
+            "code" : "LI",
+            "display" : "Liechtenstein",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Liechtenstein"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Liechtenstein"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Liechtenstein"
+              }
+            ]
+          },
+          {
+            "code" : "LIE",
+            "display" : "Liechtenstein",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Liechtenstein"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Liechtenstein"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Liechtenstein"
+              }
+            ]
+          },
+          {
+            "code" : "LU",
+            "display" : "Luxembourg",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Luxemburg"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Luxembourg"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lussemburgo"
+              }
+            ]
+          },
+          {
+            "code" : "LUX",
+            "display" : "Luxembourg",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Luxemburg"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Luxembourg"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lussemburgo"
+              }
+            ]
+          },
+          {
+            "code" : "MT",
+            "display" : "Malta",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malta"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Malte"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Malta"
+              }
+            ]
+          },
+          {
+            "code" : "MLT",
+            "display" : "Malta",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malta"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Malte"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Malta"
+              }
+            ]
+          },
+          {
+            "code" : "MC",
+            "display" : "Monaco",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Monaco"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Monaco"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Monaco"
+              }
+            ]
+          },
+          {
+            "code" : "MCO",
+            "display" : "Monaco",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Monaco"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Monaco"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Monaco"
+              }
+            ]
+          },
+          {
+            "code" : "NL",
+            "display" : "Netherlands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Niederlande"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pays-Bas"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Paesi Bassi"
+              }
+            ]
+          },
+          {
+            "code" : "NLD",
+            "display" : "Netherlands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Niederlande"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pays-Bas"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Paesi Bassi"
+              }
+            ]
+          },
+          {
+            "code" : "NO",
+            "display" : "Norway",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Norwegen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Norvège"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Norvegia"
+              }
+            ]
+          },
+          {
+            "code" : "NOR",
+            "display" : "Norway",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Norwegen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Norvège"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Norvegia"
+              }
+            ]
+          },
+          {
+            "code" : "AT",
+            "display" : "Austria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Österreich"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Autriche"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Austria"
+              }
+            ]
+          },
+          {
+            "code" : "AUT",
+            "display" : "Austria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Österreich"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Autriche"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Austria"
+              }
+            ]
+          },
+          {
+            "code" : "PL",
+            "display" : "Poland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Polen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pologne"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Polonia"
+              }
+            ]
+          },
+          {
+            "code" : "POL",
+            "display" : "Poland",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Polen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pologne"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Polonia"
+              }
+            ]
+          },
+          {
+            "code" : "PT",
+            "display" : "Portugal",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Portugal"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Portugal"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Portogallo"
+              }
+            ]
+          },
+          {
+            "code" : "PRT",
+            "display" : "Portugal",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Portugal"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Portugal"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Portogallo"
+              }
+            ]
+          },
+          {
+            "code" : "RO",
+            "display" : "Romania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Rumänien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Roumanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Romania"
+              }
+            ]
+          },
+          {
+            "code" : "ROU",
+            "display" : "Romania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Rumänien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Roumanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Romania"
+              }
+            ]
+          },
+          {
+            "code" : "SM",
+            "display" : "San Marino",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "San Marino"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Saint-Marin"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "San Marino"
+              }
+            ]
+          },
+          {
+            "code" : "SMR",
+            "display" : "San Marino",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "San Marino"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Saint-Marin"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "San Marino"
+              }
+            ]
+          },
+          {
+            "code" : "SE",
+            "display" : "Sweden",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Schweden"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Suède"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Svezia"
+              }
+            ]
+          },
+          {
+            "code" : "SWE",
+            "display" : "Sweden",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Schweden"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Suède"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Svezia"
+              }
+            ]
+          },
+          {
+            "code" : "ES",
+            "display" : "Spain",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Spanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Espagne"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Spagna"
+              }
+            ]
+          },
+          {
+            "code" : "ESP",
+            "display" : "Spain",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Spanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Espagne"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Spagna"
+              }
+            ]
+          },
+          {
+            "code" : "TR",
+            "display" : "Türkiye",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Türkiye"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Türkiye"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Türkiye"
+              }
+            ]
+          },
+          {
+            "code" : "TUR",
+            "display" : "Türkiye",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Türkiye"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Türkiye"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Türkiye"
+              }
+            ]
+          },
+          {
+            "code" : "HU",
+            "display" : "Hungary",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ungarn"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Hongrie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ungheria"
+              }
+            ]
+          },
+          {
+            "code" : "HUN",
+            "display" : "Hungary",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ungarn"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Hongrie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ungheria"
+              }
+            ]
+          },
+          {
+            "code" : "VA",
+            "display" : "Vatican City",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vatikanstadt"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cité du Vatican"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Città del Vaticano"
+              }
+            ]
+          },
+          {
+            "code" : "VAT",
+            "display" : "Vatican City",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vatikanstadt"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cité du Vatican"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Città del Vaticano"
+              }
+            ]
+          },
+          {
+            "code" : "CY",
+            "display" : "Cyprus",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Zypern"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Chypre"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cipro"
+              }
+            ]
+          },
+          {
+            "code" : "CYP",
+            "display" : "Cyprus",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Zypern"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Chypre"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cipro"
+              }
+            ]
+          },
+          {
+            "code" : "SK",
+            "display" : "Slovakia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Slowakei"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Slovaquie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Slovacchia"
+              }
+            ]
+          },
+          {
+            "code" : "SVK",
+            "display" : "Slovakia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Slowakei"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Slovaquie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Slovacchia"
+              }
+            ]
+          },
+          {
+            "code" : "CZ",
+            "display" : "Czechia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tschechien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tchéquie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cechia"
+              }
+            ]
+          },
+          {
+            "code" : "CZE",
+            "display" : "Czechia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tschechien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tchéquie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cechia"
+              }
+            ]
+          },
+          {
+            "code" : "RS",
+            "display" : "Serbia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Serbien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Serbie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Serbia"
+              }
+            ]
+          },
+          {
+            "code" : "SRB",
+            "display" : "Serbia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Serbien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Serbie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Serbia"
+              }
+            ]
+          },
+          {
+            "code" : "HR",
+            "display" : "Croatia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kroatien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Croatie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Croazia"
+              }
+            ]
+          },
+          {
+            "code" : "HRV",
+            "display" : "Croatia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kroatien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Croatie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Croazia"
+              }
+            ]
+          },
+          {
+            "code" : "SI",
+            "display" : "Slovenia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Slowenien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Slovénie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Slovenia"
+              }
+            ]
+          },
+          {
+            "code" : "SVN",
+            "display" : "Slovenia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Slowenien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Slovénie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Slovenia"
+              }
+            ]
+          },
+          {
+            "code" : "BA",
+            "display" : "Bosnia and Herzegovina",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bosnien und Herzegowina"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bosnie et Herzégovine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bosnia e Erzegovina"
+              }
+            ]
+          },
+          {
+            "code" : "BIH",
+            "display" : "Bosnia and Herzegovina",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bosnien und Herzegowina"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bosnie et Herzégovine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bosnia e Erzegovina"
+              }
+            ]
+          },
+          {
+            "code" : "ME",
+            "display" : "Montenegro",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Montenegro"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Monténégro"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Montenegro"
+              }
+            ]
+          },
+          {
+            "code" : "MNE",
+            "display" : "Montenegro",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Montenegro"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Monténégro"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Montenegro"
+              }
+            ]
+          },
+          {
+            "code" : "MK",
+            "display" : "North Macedonia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nordmazedonien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Macédoine du Nord"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Macedonia del Nord"
+              }
+            ]
+          },
+          {
+            "code" : "MKD",
+            "display" : "North Macedonia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nordmazedonien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Macédoine du Nord"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Macedonia del Nord"
+              }
+            ]
+          },
+          {
+            "code" : "XK",
+            "display" : "Kosovo",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kosovo"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kosovo"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kosovo"
+              }
+            ]
+          },
+          {
+            "code" : "EE",
+            "display" : "Estonia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Estland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Estonie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Estonia"
+              }
+            ]
+          },
+          {
+            "code" : "EST",
+            "display" : "Estonia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Estland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Estonie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Estonia"
+              }
+            ]
+          },
+          {
+            "code" : "LV",
+            "display" : "Latvia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Lettland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Lettonie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lettonia"
+              }
+            ]
+          },
+          {
+            "code" : "LVA",
+            "display" : "Latvia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Lettland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Lettonie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lettonia"
+              }
+            ]
+          },
+          {
+            "code" : "LT",
+            "display" : "Lithuania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Litauen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Lituanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lituania"
+              }
+            ]
+          },
+          {
+            "code" : "LTU",
+            "display" : "Lithuania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Litauen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Lituanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lituania"
+              }
+            ]
+          },
+          {
+            "code" : "MD",
+            "display" : "Moldova",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Moldau"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Moldova"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Moldova"
+              }
+            ]
+          },
+          {
+            "code" : "MDA",
+            "display" : "Moldova",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Moldau"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Moldova"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Moldova"
+              }
+            ]
+          },
+          {
+            "code" : "RU",
+            "display" : "Russia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Russland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Russie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Russia"
+              }
+            ]
+          },
+          {
+            "code" : "RUS",
+            "display" : "Russia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Russland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Russie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Russia"
+              }
+            ]
+          },
+          {
+            "code" : "UA",
+            "display" : "Ukraine",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ukraine"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ukraine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ucraina"
+              }
+            ]
+          },
+          {
+            "code" : "UKR",
+            "display" : "Ukraine",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ukraine"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ukraine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ucraina"
+              }
+            ]
+          },
+          {
+            "code" : "BY",
+            "display" : "Belarus",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Belarus"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bélarus"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Belarus"
+              }
+            ]
+          },
+          {
+            "code" : "BLR",
+            "display" : "Belarus",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Belarus"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bélarus"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Belarus"
+              }
+            ]
+          },
+          {
+            "code" : "GQ",
+            "display" : "Equatorial Guinea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Äquatorialguinea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guinée équatoriale"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guinea equatoriale"
+              }
+            ]
+          },
+          {
+            "code" : "GNQ",
+            "display" : "Equatorial Guinea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Äquatorialguinea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guinée équatoriale"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guinea equatoriale"
+              }
+            ]
+          },
+          {
+            "code" : "ET",
+            "display" : "Ethiopia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Äthiopien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Éthiopie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Etiopia"
+              }
+            ]
+          },
+          {
+            "code" : "ETH",
+            "display" : "Ethiopia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Äthiopien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Éthiopie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Etiopia"
+              }
+            ]
+          },
+          {
+            "code" : "DJ",
+            "display" : "Djibouti",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dschibuti"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Djibouti"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Gibuti"
+              }
+            ]
+          },
+          {
+            "code" : "DJI",
+            "display" : "Djibouti",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dschibuti"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Djibouti"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Gibuti"
+              }
+            ]
+          },
+          {
+            "code" : "DZ",
+            "display" : "Algeria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Algerien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Algérie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Algeria"
+              }
+            ]
+          },
+          {
+            "code" : "DZA",
+            "display" : "Algeria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Algerien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Algérie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Algeria"
+              }
+            ]
+          },
+          {
+            "code" : "AO",
+            "display" : "Angola",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Angola"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Angola"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Angola"
+              }
+            ]
+          },
+          {
+            "code" : "AGO",
+            "display" : "Angola",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Angola"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Angola"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Angola"
+              }
+            ]
+          },
+          {
+            "code" : "BW",
+            "display" : "Botswana",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Botsuana"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Botswana"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Botswana"
+              }
+            ]
+          },
+          {
+            "code" : "BWA",
+            "display" : "Botswana",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Botsuana"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Botswana"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Botswana"
+              }
+            ]
+          },
+          {
+            "code" : "BI",
+            "display" : "Burundi",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Burundi"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Burundi"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Burundi"
+              }
+            ]
+          },
+          {
+            "code" : "BDI",
+            "display" : "Burundi",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Burundi"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Burundi"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Burundi"
+              }
+            ]
+          },
+          {
+            "code" : "BJ",
+            "display" : "Benin",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Benin"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bénin"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Benin"
+              }
+            ]
+          },
+          {
+            "code" : "BEN",
+            "display" : "Benin",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Benin"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bénin"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Benin"
+              }
+            ]
+          },
+          {
+            "code" : "CI",
+            "display" : "Côte d'Ivoire",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Côte d'Ivoire"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Côte d'Ivoire"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Côte d'Ivoire"
+              }
+            ]
+          },
+          {
+            "code" : "CIV",
+            "display" : "Côte d'Ivoire",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Côte d'Ivoire"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Côte d'Ivoire"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Côte d'Ivoire"
+              }
+            ]
+          },
+          {
+            "code" : "GA",
+            "display" : "Gabon",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Gabun"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Gabon"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Gabon"
+              }
+            ]
+          },
+          {
+            "code" : "GAB",
+            "display" : "Gabon",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Gabun"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Gabon"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Gabon"
+              }
+            ]
+          },
+          {
+            "code" : "GM",
+            "display" : "Gambia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Gambia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Gambie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Gambia"
+              }
+            ]
+          },
+          {
+            "code" : "GMB",
+            "display" : "Gambia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Gambia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Gambie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Gambia"
+              }
+            ]
+          },
+          {
+            "code" : "GH",
+            "display" : "Ghana",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ghana"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ghana"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ghana"
+              }
+            ]
+          },
+          {
+            "code" : "GHA",
+            "display" : "Ghana",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ghana"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ghana"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ghana"
+              }
+            ]
+          },
+          {
+            "code" : "GW",
+            "display" : "Guinea-Bissau",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guinea-Bissau"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guinée-Bissau"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guinea-Bissau"
+              }
+            ]
+          },
+          {
+            "code" : "GNB",
+            "display" : "Guinea-Bissau",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guinea-Bissau"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guinée-Bissau"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guinea-Bissau"
+              }
+            ]
+          },
+          {
+            "code" : "GN",
+            "display" : "Guinea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guinea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guinée"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guinea"
+              }
+            ]
+          },
+          {
+            "code" : "GIN",
+            "display" : "Guinea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guinea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guinée"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guinea"
+              }
+            ]
+          },
+          {
+            "code" : "CM",
+            "display" : "Cameroon",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kamerun"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cameroun"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Camerun"
+              }
+            ]
+          },
+          {
+            "code" : "CMR",
+            "display" : "Cameroon",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kamerun"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cameroun"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Camerun"
+              }
+            ]
+          },
+          {
+            "code" : "CV",
+            "display" : "Cabo Verde",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Cabo Verde"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cabo Verde"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cabo Verde"
+              }
+            ]
+          },
+          {
+            "code" : "CPV",
+            "display" : "Cabo Verde",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Cabo Verde"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cabo Verde"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cabo Verde"
+              }
+            ]
+          },
+          {
+            "code" : "KE",
+            "display" : "Kenya",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kenia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kenya"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kenia"
+              }
+            ]
+          },
+          {
+            "code" : "KEN",
+            "display" : "Kenya",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kenia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kenya"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kenia"
+              }
+            ]
+          },
+          {
+            "code" : "KM",
+            "display" : "Comoros",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Komoren"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Comores"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Comore"
+              }
+            ]
+          },
+          {
+            "code" : "COM",
+            "display" : "Comoros",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Komoren"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Comores"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Comore"
+              }
+            ]
+          },
+          {
+            "code" : "CG",
+            "display" : "Congo (Brazzaville)",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kongo (Brazzaville)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Congo (Brazzaville)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Congo (Brazzaville)"
+              }
+            ]
+          },
+          {
+            "code" : "COG",
+            "display" : "Congo (Brazzaville)",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kongo (Brazzaville)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Congo (Brazzaville)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Congo (Brazzaville)"
+              }
+            ]
+          },
+          {
+            "code" : "CD",
+            "display" : "Congo (Kinshasa)",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kongo (Kinshasa)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Congo (Kinshasa)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Congo (Kinshasa)"
+              }
+            ]
+          },
+          {
+            "code" : "COD",
+            "display" : "Congo (Kinshasa)",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kongo (Kinshasa)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Congo (Kinshasa)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Congo (Kinshasa)"
+              }
+            ]
+          },
+          {
+            "code" : "LS",
+            "display" : "Lesotho",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Lesotho"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Lesotho"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lesotho"
+              }
+            ]
+          },
+          {
+            "code" : "LSO",
+            "display" : "Lesotho",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Lesotho"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Lesotho"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Lesotho"
+              }
+            ]
+          },
+          {
+            "code" : "LR",
+            "display" : "Liberia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Liberia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Libéria"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Liberia"
+              }
+            ]
+          },
+          {
+            "code" : "LBR",
+            "display" : "Liberia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Liberia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Libéria"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Liberia"
+              }
+            ]
+          },
+          {
+            "code" : "LY",
+            "display" : "Libya",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Libyen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Libye"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Libia"
+              }
+            ]
+          },
+          {
+            "code" : "LBY",
+            "display" : "Libya",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Libyen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Libye"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Libia"
+              }
+            ]
+          },
+          {
+            "code" : "MG",
+            "display" : "Madagascar",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Madagaskar"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Madagascar"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Madagascar"
+              }
+            ]
+          },
+          {
+            "code" : "MDG",
+            "display" : "Madagascar",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Madagaskar"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Madagascar"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Madagascar"
+              }
+            ]
+          },
+          {
+            "code" : "MW",
+            "display" : "Malawi",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malawi"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Malawi"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Malawi"
+              }
+            ]
+          },
+          {
+            "code" : "MWI",
+            "display" : "Malawi",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malawi"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Malawi"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Malawi"
+              }
+            ]
+          },
+          {
+            "code" : "ML",
+            "display" : "Mali",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mali"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mali"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mali"
+              }
+            ]
+          },
+          {
+            "code" : "MLI",
+            "display" : "Mali",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mali"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mali"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mali"
+              }
+            ]
+          },
+          {
+            "code" : "MA",
+            "display" : "Morocco",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Marokko"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Maroc"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Marocco"
+              }
+            ]
+          },
+          {
+            "code" : "MAR",
+            "display" : "Morocco",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Marokko"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Maroc"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Marocco"
+              }
+            ]
+          },
+          {
+            "code" : "MR",
+            "display" : "Mauritania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mauretanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mauritanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mauritania"
+              }
+            ]
+          },
+          {
+            "code" : "MRT",
+            "display" : "Mauritania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mauretanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mauritanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mauritania"
+              }
+            ]
+          },
+          {
+            "code" : "MU",
+            "display" : "Mauritius",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mauritius"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Maurice"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Maurizio"
+              }
+            ]
+          },
+          {
+            "code" : "MUS",
+            "display" : "Mauritius",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mauritius"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Maurice"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Maurizio"
+              }
+            ]
+          },
+          {
+            "code" : "MZ",
+            "display" : "Mozambique",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mosambik"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mozambique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mozambico"
+              }
+            ]
+          },
+          {
+            "code" : "MOZ",
+            "display" : "Mozambique",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mosambik"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mozambique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mozambico"
+              }
+            ]
+          },
+          {
+            "code" : "NE",
+            "display" : "Niger",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Niger"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Niger"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Niger"
+              }
+            ]
+          },
+          {
+            "code" : "NER",
+            "display" : "Niger",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Niger"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Niger"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Niger"
+              }
+            ]
+          },
+          {
+            "code" : "NG",
+            "display" : "Nigeria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nigeria"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nigéria"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nigeria"
+              }
+            ]
+          },
+          {
+            "code" : "NGA",
+            "display" : "Nigeria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nigeria"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nigéria"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nigeria"
+              }
+            ]
+          },
+          {
+            "code" : "BF",
+            "display" : "Burkina Faso",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Burkina Faso"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Burkina Faso"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Burkina Faso"
+              }
+            ]
+          },
+          {
+            "code" : "BFA",
+            "display" : "Burkina Faso",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Burkina Faso"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Burkina Faso"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Burkina Faso"
+              }
+            ]
+          },
+          {
+            "code" : "ZW",
+            "display" : "Zimbabwe",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Simbabwe"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Zimbabwe"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Zimbabwe"
+              }
+            ]
+          },
+          {
+            "code" : "ZWE",
+            "display" : "Zimbabwe",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Simbabwe"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Zimbabwe"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Zimbabwe"
+              }
+            ]
+          },
+          {
+            "code" : "RW",
+            "display" : "Rwanda",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ruanda"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Rwanda"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ruanda"
+              }
+            ]
+          },
+          {
+            "code" : "RWA",
+            "display" : "Rwanda",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ruanda"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Rwanda"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ruanda"
+              }
+            ]
+          },
+          {
+            "code" : "ZM",
+            "display" : "Zambia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sambia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Zambie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Zambia"
+              }
+            ]
+          },
+          {
+            "code" : "ZMB",
+            "display" : "Zambia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sambia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Zambie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Zambia"
+              }
+            ]
+          },
+          {
+            "code" : "ST",
+            "display" : "São Tomé and Príncipe",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "São Tomé und Príncipe"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sao Tomé-et-Principe"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "São Tomé e Príncipe"
+              }
+            ]
+          },
+          {
+            "code" : "STP",
+            "display" : "São Tomé and Príncipe",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "São Tomé und Príncipe"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sao Tomé-et-Principe"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "São Tomé e Príncipe"
+              }
+            ]
+          },
+          {
+            "code" : "SN",
+            "display" : "Senegal",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Senegal"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sénégal"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Senegal"
+              }
+            ]
+          },
+          {
+            "code" : "SEN",
+            "display" : "Senegal",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Senegal"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sénégal"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Senegal"
+              }
+            ]
+          },
+          {
+            "code" : "SC",
+            "display" : "Seychelles",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Seychellen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Seychelles"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Seicelle"
+              }
+            ]
+          },
+          {
+            "code" : "SYC",
+            "display" : "Seychelles",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Seychellen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Seychelles"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Seicelle"
+              }
+            ]
+          },
+          {
+            "code" : "SL",
+            "display" : "Sierra Leone",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sierra Leone"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sierra Leone"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sierra Leone"
+              }
+            ]
+          },
+          {
+            "code" : "SLE",
+            "display" : "Sierra Leone",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sierra Leone"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sierra Leone"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sierra Leone"
+              }
+            ]
+          },
+          {
+            "code" : "SO",
+            "display" : "Somalia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Somalia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Somalie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Somalia"
+              }
+            ]
+          },
+          {
+            "code" : "SOM",
+            "display" : "Somalia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Somalia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Somalie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Somalia"
+              }
+            ]
+          },
+          {
+            "code" : "ZA",
+            "display" : "South Africa",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Südafrika"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Afrique du Sud"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sudafrica"
+              }
+            ]
+          },
+          {
+            "code" : "ZAF",
+            "display" : "South Africa",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Südafrika"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Afrique du Sud"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sudafrica"
+              }
+            ]
+          },
+          {
+            "code" : "SD",
+            "display" : "Sudan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sudan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Soudan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sudan"
+              }
+            ]
+          },
+          {
+            "code" : "SDN",
+            "display" : "Sudan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sudan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Soudan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sudan"
+              }
+            ]
+          },
+          {
+            "code" : "NA",
+            "display" : "Namibia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Namibia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Namibie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Namibia"
+              }
+            ]
+          },
+          {
+            "code" : "NAM",
+            "display" : "Namibia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Namibia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Namibie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Namibia"
+              }
+            ]
+          },
+          {
+            "code" : "SZ",
+            "display" : "Eswatini",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Eswatini"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Eswatini"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Eswatini"
+              }
+            ]
+          },
+          {
+            "code" : "SWZ",
+            "display" : "Eswatini",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Eswatini"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Eswatini"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Eswatini"
+              }
+            ]
+          },
+          {
+            "code" : "TZ",
+            "display" : "Tanzania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tansania"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tanzanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tanzania"
+              }
+            ]
+          },
+          {
+            "code" : "TZA",
+            "display" : "Tanzania",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tansania"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tanzanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tanzania"
+              }
+            ]
+          },
+          {
+            "code" : "TG",
+            "display" : "Togo",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Togo"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Togo"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Togo"
+              }
+            ]
+          },
+          {
+            "code" : "TGO",
+            "display" : "Togo",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Togo"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Togo"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Togo"
+              }
+            ]
+          },
+          {
+            "code" : "TD",
+            "display" : "Chad",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tschad"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tchad"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ciad"
+              }
+            ]
+          },
+          {
+            "code" : "TCD",
+            "display" : "Chad",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tschad"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tchad"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ciad"
+              }
+            ]
+          },
+          {
+            "code" : "TN",
+            "display" : "Tunisia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tunesien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tunisie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tunisia"
+              }
+            ]
+          },
+          {
+            "code" : "TUN",
+            "display" : "Tunisia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tunesien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tunisie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tunisia"
+              }
+            ]
+          },
+          {
+            "code" : "UG",
+            "display" : "Uganda",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Uganda"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ouganda"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Uganda"
+              }
+            ]
+          },
+          {
+            "code" : "UGA",
+            "display" : "Uganda",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Uganda"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ouganda"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Uganda"
+              }
+            ]
+          },
+          {
+            "code" : "EG",
+            "display" : "Egypt",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ägypten"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Égypte"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Egitto"
+              }
+            ]
+          },
+          {
+            "code" : "EGY",
+            "display" : "Egypt",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ägypten"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Égypte"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Egitto"
+              }
+            ]
+          },
+          {
+            "code" : "CF",
+            "display" : "Central African Republic",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Zentralafrikanische Republik"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "République centrafricaine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Repubblica centrafricana"
+              }
+            ]
+          },
+          {
+            "code" : "CAF",
+            "display" : "Central African Republic",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Zentralafrikanische Republik"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "République centrafricaine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Repubblica centrafricana"
+              }
+            ]
+          },
+          {
+            "code" : "ER",
+            "display" : "Eritrea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Eritrea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Érythrée"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Eritrea"
+              }
+            ]
+          },
+          {
+            "code" : "ERI",
+            "display" : "Eritrea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Eritrea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Érythrée"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Eritrea"
+              }
+            ]
+          },
+          {
+            "code" : "SS",
+            "display" : "South Sudan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Südsudan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Soudan du Sud"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sudan del Sud"
+              }
+            ]
+          },
+          {
+            "code" : "SSD",
+            "display" : "South Sudan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Südsudan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Soudan du Sud"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sudan del Sud"
+              }
+            ]
+          },
+          {
+            "code" : "AR",
+            "display" : "Argentina",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Argentinien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Argentine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Argentina"
+              }
+            ]
+          },
+          {
+            "code" : "ARG",
+            "display" : "Argentina",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Argentinien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Argentine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Argentina"
+              }
+            ]
+          },
+          {
+            "code" : "BS",
+            "display" : "Bahamas",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bahamas"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bahamas"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bahamas"
+              }
+            ]
+          },
+          {
+            "code" : "BHS",
+            "display" : "Bahamas",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bahamas"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bahamas"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bahamas"
+              }
+            ]
+          },
+          {
+            "code" : "BB",
+            "display" : "Barbados",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Barbados"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Barbade"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Barbados"
+              }
+            ]
+          },
+          {
+            "code" : "BRB",
+            "display" : "Barbados",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Barbados"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Barbade"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Barbados"
+              }
+            ]
+          },
+          {
+            "code" : "BO",
+            "display" : "Bolivia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bolivien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bolivie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bolivia"
+              }
+            ]
+          },
+          {
+            "code" : "BOL",
+            "display" : "Bolivia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bolivien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bolivie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bolivia"
+              }
+            ]
+          },
+          {
+            "code" : "BR",
+            "display" : "Brazil",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Brasilien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Brésil"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Brasile"
+              }
+            ]
+          },
+          {
+            "code" : "BRA",
+            "display" : "Brazil",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Brasilien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Brésil"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Brasile"
+              }
+            ]
+          },
+          {
+            "code" : "CL",
+            "display" : "Chile",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Chile"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Chili"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cile"
+              }
+            ]
+          },
+          {
+            "code" : "CHL",
+            "display" : "Chile",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Chile"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Chili"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cile"
+              }
+            ]
+          },
+          {
+            "code" : "CR",
+            "display" : "Costa Rica",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Costa Rica"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Costa Rica"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Costa Rica"
+              }
+            ]
+          },
+          {
+            "code" : "CRI",
+            "display" : "Costa Rica",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Costa Rica"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Costa Rica"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Costa Rica"
+              }
+            ]
+          },
+          {
+            "code" : "DO",
+            "display" : "Dominican Republic",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dominikanische Republik"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "République dominicaine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Repubblica dominicana"
+              }
+            ]
+          },
+          {
+            "code" : "DOM",
+            "display" : "Dominican Republic",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dominikanische Republik"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "République dominicaine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Repubblica dominicana"
+              }
+            ]
+          },
+          {
+            "code" : "EC",
+            "display" : "Ecuador",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ecuador"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Équateur"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ecuador"
+              }
+            ]
+          },
+          {
+            "code" : "ECU",
+            "display" : "Ecuador",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Ecuador"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Équateur"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Ecuador"
+              }
+            ]
+          },
+          {
+            "code" : "SV",
+            "display" : "El Salvador",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "El Salvador"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "El Salvador"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "El Salvador"
+              }
+            ]
+          },
+          {
+            "code" : "SLV",
+            "display" : "El Salvador",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "El Salvador"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "El Salvador"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "El Salvador"
+              }
+            ]
+          },
+          {
+            "code" : "GT",
+            "display" : "Guatemala",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guatemala"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guatemala"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guatemala"
+              }
+            ]
+          },
+          {
+            "code" : "GTM",
+            "display" : "Guatemala",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guatemala"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guatemala"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guatemala"
+              }
+            ]
+          },
+          {
+            "code" : "GY",
+            "display" : "Guyana",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guyana"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guyana"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guyana"
+              }
+            ]
+          },
+          {
+            "code" : "GUY",
+            "display" : "Guyana",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Guyana"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Guyana"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Guyana"
+              }
+            ]
+          },
+          {
+            "code" : "HT",
+            "display" : "Haiti",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Haiti"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Haïti"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Haiti"
+              }
+            ]
+          },
+          {
+            "code" : "HTI",
+            "display" : "Haiti",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Haiti"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Haïti"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Haiti"
+              }
+            ]
+          },
+          {
+            "code" : "BZ",
+            "display" : "Belize",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Belize"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Belize"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Belize"
+              }
+            ]
+          },
+          {
+            "code" : "BLZ",
+            "display" : "Belize",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Belize"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Belize"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Belize"
+              }
+            ]
+          },
+          {
+            "code" : "HN",
+            "display" : "Honduras",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Honduras"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Honduras"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Honduras"
+              }
+            ]
+          },
+          {
+            "code" : "HND",
+            "display" : "Honduras",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Honduras"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Honduras"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Honduras"
+              }
+            ]
+          },
+          {
+            "code" : "JM",
+            "display" : "Jamaica",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Jamaika"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Jamaïque"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Giamaica"
+              }
+            ]
+          },
+          {
+            "code" : "JAM",
+            "display" : "Jamaica",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Jamaika"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Jamaïque"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Giamaica"
+              }
+            ]
+          },
+          {
+            "code" : "CA",
+            "display" : "Canada",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kanada"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Canada"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Canada"
+              }
+            ]
+          },
+          {
+            "code" : "CAN",
+            "display" : "Canada",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kanada"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Canada"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Canada"
+              }
+            ]
+          },
+          {
+            "code" : "CO",
+            "display" : "Colombia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kolumbien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Colombie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Colombia"
+              }
+            ]
+          },
+          {
+            "code" : "COL",
+            "display" : "Colombia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kolumbien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Colombie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Colombia"
+              }
+            ]
+          },
+          {
+            "code" : "CU",
+            "display" : "Cuba",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kuba"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cuba"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cuba"
+              }
+            ]
+          },
+          {
+            "code" : "CUB",
+            "display" : "Cuba",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kuba"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cuba"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cuba"
+              }
+            ]
+          },
+          {
+            "code" : "MX",
+            "display" : "Mexico",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mexiko"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mexique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Messico"
+              }
+            ]
+          },
+          {
+            "code" : "MEX",
+            "display" : "Mexico",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mexiko"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mexique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Messico"
+              }
+            ]
+          },
+          {
+            "code" : "NI",
+            "display" : "Nicaragua",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nicaragua"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nicaragua"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nicaragua"
+              }
+            ]
+          },
+          {
+            "code" : "NIC",
+            "display" : "Nicaragua",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nicaragua"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nicaragua"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nicaragua"
+              }
+            ]
+          },
+          {
+            "code" : "PA",
+            "display" : "Panama",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Panama"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Panama"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Panama"
+              }
+            ]
+          },
+          {
+            "code" : "PAN",
+            "display" : "Panama",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Panama"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Panama"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Panama"
+              }
+            ]
+          },
+          {
+            "code" : "PY",
+            "display" : "Paraguay",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Paraguay"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Paraguay"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Paraguay"
+              }
+            ]
+          },
+          {
+            "code" : "PRY",
+            "display" : "Paraguay",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Paraguay"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Paraguay"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Paraguay"
+              }
+            ]
+          },
+          {
+            "code" : "PE",
+            "display" : "Peru",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Peru"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pérou"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Perù"
+              }
+            ]
+          },
+          {
+            "code" : "PER",
+            "display" : "Peru",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Peru"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pérou"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Perù"
+              }
+            ]
+          },
+          {
+            "code" : "SR",
+            "display" : "Suriname",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Suriname"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Suriname"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Suriname"
+              }
+            ]
+          },
+          {
+            "code" : "SUR",
+            "display" : "Suriname",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Suriname"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Suriname"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Suriname"
+              }
+            ]
+          },
+          {
+            "code" : "TT",
+            "display" : "Trinidad and Tobago",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Trinidad und Tobago"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Trinité-et-Tobago"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Trinidad e Tobago"
+              }
+            ]
+          },
+          {
+            "code" : "TTO",
+            "display" : "Trinidad and Tobago",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Trinidad und Tobago"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Trinité-et-Tobago"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Trinidad e Tobago"
+              }
+            ]
+          },
+          {
+            "code" : "UY",
+            "display" : "Uruguay",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Uruguay"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Uruguay"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Uruguay"
+              }
+            ]
+          },
+          {
+            "code" : "URY",
+            "display" : "Uruguay",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Uruguay"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Uruguay"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Uruguay"
+              }
+            ]
+          },
+          {
+            "code" : "VE",
+            "display" : "Venezuela",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Venezuela"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Venezuela"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Venezuela"
+              }
+            ]
+          },
+          {
+            "code" : "VEN",
+            "display" : "Venezuela",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Venezuela"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Venezuela"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Venezuela"
+              }
+            ]
+          },
+          {
+            "code" : "US",
+            "display" : "United States",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vereinigte Staaten"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "États-Unis"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Stati Uniti"
+              }
+            ]
+          },
+          {
+            "code" : "USA",
+            "display" : "United States",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vereinigte Staaten"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "États-Unis"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Stati Uniti"
+              }
+            ]
+          },
+          {
+            "code" : "DM",
+            "display" : "Dominica",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dominica"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Dominique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Dominica"
+              }
+            ]
+          },
+          {
+            "code" : "DMA",
+            "display" : "Dominica",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Dominica"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Dominique"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Dominica"
+              }
+            ]
+          },
+          {
+            "code" : "GD",
+            "display" : "Grenada",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Grenada"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Grenade"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Grenada"
+              }
+            ]
+          },
+          {
+            "code" : "GRD",
+            "display" : "Grenada",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Grenada"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Grenade"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Grenada"
+              }
+            ]
+          },
+          {
+            "code" : "AG",
+            "display" : "Antigua and Barbuda",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Antigua und Barbuda"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Antigua-et-Barbuda"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Antigua e Barbuda"
+              }
+            ]
+          },
+          {
+            "code" : "ATG",
+            "display" : "Antigua and Barbuda",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Antigua und Barbuda"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Antigua-et-Barbuda"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Antigua e Barbuda"
+              }
+            ]
+          },
+          {
+            "code" : "LC",
+            "display" : "Saint Lucia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "St. Lucia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sainte-Lucie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Saint Lucia"
+              }
+            ]
+          },
+          {
+            "code" : "LCA",
+            "display" : "Saint Lucia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "St. Lucia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sainte-Lucie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Saint Lucia"
+              }
+            ]
+          },
+          {
+            "code" : "VC",
+            "display" : "Saint Vincent and the Grenadines",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "St. Vincent und die Grenadinen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Saint-Vincent-et-les Grenadines"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Saint Vincent e Grenadine"
+              }
+            ]
+          },
+          {
+            "code" : "VCT",
+            "display" : "Saint Vincent and the Grenadines",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "St. Vincent und die Grenadinen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Saint-Vincent-et-les Grenadines"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Saint Vincent e Grenadine"
+              }
+            ]
+          },
+          {
+            "code" : "KN",
+            "display" : "Saint Kitts and Nevis",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "St. Kitts und Nevis"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Saint-Kitts-et-Nevis"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Saint Kitts e Nevis"
+              }
+            ]
+          },
+          {
+            "code" : "KNA",
+            "display" : "Saint Kitts and Nevis",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "St. Kitts und Nevis"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Saint-Kitts-et-Nevis"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Saint Kitts e Nevis"
+              }
+            ]
+          },
+          {
+            "code" : "AF",
+            "display" : "Afghanistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Afghanistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Afghanistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Afghanistan"
+              }
+            ]
+          },
+          {
+            "code" : "AFG",
+            "display" : "Afghanistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Afghanistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Afghanistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Afghanistan"
+              }
+            ]
+          },
+          {
+            "code" : "BH",
+            "display" : "Bahrain",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bahrain"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bahreïn"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bahrein"
+              }
+            ]
+          },
+          {
+            "code" : "BHR",
+            "display" : "Bahrain",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bahrain"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bahreïn"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bahrein"
+              }
+            ]
+          },
+          {
+            "code" : "BT",
+            "display" : "Bhutan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bhutan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bhoutan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bhutan"
+              }
+            ]
+          },
+          {
+            "code" : "BTN",
+            "display" : "Bhutan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bhutan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bhoutan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bhutan"
+              }
+            ]
+          },
+          {
+            "code" : "BN",
+            "display" : "Brunei",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Brunei Darussalam"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Brunéi Darussalam"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Brunei Darussalam"
+              }
+            ]
+          },
+          {
+            "code" : "BRN",
+            "display" : "Brunei",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Brunei Darussalam"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Brunéi Darussalam"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Brunei Darussalam"
+              }
+            ]
+          },
+          {
+            "code" : "MM",
+            "display" : "Myanmar",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Myanmar"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Myanmar"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Myanmar"
+              }
+            ]
+          },
+          {
+            "code" : "MMR",
+            "display" : "Myanmar",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Myanmar"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Myanmar"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Myanmar"
+              }
+            ]
+          },
+          {
+            "code" : "LK",
+            "display" : "Sri Lanka",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sri Lanka"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sri Lanka"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sri Lanka"
+              }
+            ]
+          },
+          {
+            "code" : "LKA",
+            "display" : "Sri Lanka",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Sri Lanka"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Sri Lanka"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Sri Lanka"
+              }
+            ]
+          },
+          {
+            "code" : "CN",
+            "display" : "China",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "China"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Chine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cina"
+              }
+            ]
+          },
+          {
+            "code" : "CHN",
+            "display" : "China",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "China"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Chine"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cina"
+              }
+            ]
+          },
+          {
+            "code" : "IN",
+            "display" : "India",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Indien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Inde"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "India"
+              }
+            ]
+          },
+          {
+            "code" : "IND",
+            "display" : "India",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Indien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Inde"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "India"
+              }
+            ]
+          },
+          {
+            "code" : "ID",
+            "display" : "Indonesia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Indonesien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Indonésie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Indonesia"
+              }
+            ]
+          },
+          {
+            "code" : "IDN",
+            "display" : "Indonesia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Indonesien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Indonésie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Indonesia"
+              }
+            ]
+          },
+          {
+            "code" : "IQ",
+            "display" : "Iraq",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Irak"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Irak"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Iraq"
+              }
+            ]
+          },
+          {
+            "code" : "IRQ",
+            "display" : "Iraq",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Irak"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Irak"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Iraq"
+              }
+            ]
+          },
+          {
+            "code" : "IR",
+            "display" : "Iran",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Iran"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Iran"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Iran"
+              }
+            ]
+          },
+          {
+            "code" : "IRN",
+            "display" : "Iran",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Iran"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Iran"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Iran"
+              }
+            ]
+          },
+          {
+            "code" : "IL",
+            "display" : "Israel",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Israel"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Israël"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Israele"
+              }
+            ]
+          },
+          {
+            "code" : "ISR",
+            "display" : "Israel",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Israel"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Israël"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Israele"
+              }
+            ]
+          },
+          {
+            "code" : "JP",
+            "display" : "Japan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Japan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Japon"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Giappone"
+              }
+            ]
+          },
+          {
+            "code" : "JPN",
+            "display" : "Japan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Japan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Japon"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Giappone"
+              }
+            ]
+          },
+          {
+            "code" : "YE",
+            "display" : "Yemen",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Jemen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Yémen"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Yemen"
+              }
+            ]
+          },
+          {
+            "code" : "YEM",
+            "display" : "Yemen",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Jemen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Yémen"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Yemen"
+              }
+            ]
+          },
+          {
+            "code" : "JO",
+            "display" : "Jordan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Jordanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Jordanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Giordania"
+              }
+            ]
+          },
+          {
+            "code" : "JOR",
+            "display" : "Jordan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Jordanien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Jordanie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Giordania"
+              }
+            ]
+          },
+          {
+            "code" : "KH",
+            "display" : "Cambodia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kambodscha"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cambodge"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cambogia"
+              }
+            ]
+          },
+          {
+            "code" : "KHM",
+            "display" : "Cambodia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kambodscha"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Cambodge"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Cambogia"
+              }
+            ]
+          },
+          {
+            "code" : "QA",
+            "display" : "Qatar",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Katar"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Qatar"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Qatar"
+              }
+            ]
+          },
+          {
+            "code" : "QAT",
+            "display" : "Qatar",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Katar"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Qatar"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Qatar"
+              }
+            ]
+          },
+          {
+            "code" : "KW",
+            "display" : "Kuwait",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kuwait"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Koweït"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kuwait"
+              }
+            ]
+          },
+          {
+            "code" : "KWT",
+            "display" : "Kuwait",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kuwait"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Koweït"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kuwait"
+              }
+            ]
+          },
+          {
+            "code" : "LA",
+            "display" : "Laos",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Laos"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Laos"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Laos"
+              }
+            ]
+          },
+          {
+            "code" : "LAO",
+            "display" : "Laos",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Laos"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Laos"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Laos"
+              }
+            ]
+          },
+          {
+            "code" : "LB",
+            "display" : "Lebanon",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Libanon"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Liban"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Libano"
+              }
+            ]
+          },
+          {
+            "code" : "LBN",
+            "display" : "Lebanon",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Libanon"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Liban"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Libano"
+              }
+            ]
+          },
+          {
+            "code" : "MY",
+            "display" : "Malaysia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malaysia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Malaisie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Malaysia"
+              }
+            ]
+          },
+          {
+            "code" : "MYS",
+            "display" : "Malaysia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malaysia"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Malaisie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Malaysia"
+              }
+            ]
+          },
+          {
+            "code" : "MV",
+            "display" : "Maldives",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malediven"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Maldives"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Maldive"
+              }
+            ]
+          },
+          {
+            "code" : "MDV",
+            "display" : "Maldives",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Malediven"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Maldives"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Maldive"
+              }
+            ]
+          },
+          {
+            "code" : "OM",
+            "display" : "Oman",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Oman"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Oman"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Oman"
+              }
+            ]
+          },
+          {
+            "code" : "OMN",
+            "display" : "Oman",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Oman"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Oman"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Oman"
+              }
+            ]
+          },
+          {
+            "code" : "MN",
+            "display" : "Mongolia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mongolei"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mongolie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mongolia"
+              }
+            ]
+          },
+          {
+            "code" : "MNG",
+            "display" : "Mongolia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mongolei"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Mongolie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Mongolia"
+              }
+            ]
+          },
+          {
+            "code" : "NP",
+            "display" : "Nepal",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nepal"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Népal"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nepal"
+              }
+            ]
+          },
+          {
+            "code" : "NPL",
+            "display" : "Nepal",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nepal"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Népal"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nepal"
+              }
+            ]
+          },
+          {
+            "code" : "KP",
+            "display" : "North Korea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Korea (Nord-)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Corée (Nord)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Corea (Nord)"
+              }
+            ]
+          },
+          {
+            "code" : "PRK",
+            "display" : "North Korea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Korea (Nord-)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Corée (Nord)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Corea (Nord)"
+              }
+            ]
+          },
+          {
+            "code" : "AE",
+            "display" : "United Arab Emirates",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vereinigte Arabische Emirate"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Émirats arabes unis"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Emirati arabi uniti"
+              }
+            ]
+          },
+          {
+            "code" : "ARE",
+            "display" : "United Arab Emirates",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vereinigte Arabische Emirate"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Émirats arabes unis"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Emirati arabi uniti"
+              }
+            ]
+          },
+          {
+            "code" : "PK",
+            "display" : "Pakistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Pakistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pakistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Pakistan"
+              }
+            ]
+          },
+          {
+            "code" : "PAK",
+            "display" : "Pakistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Pakistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Pakistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Pakistan"
+              }
+            ]
+          },
+          {
+            "code" : "PH",
+            "display" : "Philippines",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Philippinen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Philippines"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Filippine"
+              }
+            ]
+          },
+          {
+            "code" : "PHL",
+            "display" : "Philippines",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Philippinen"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Philippines"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Filippine"
+              }
+            ]
+          },
+          {
+            "code" : "SA",
+            "display" : "Saudi Arabia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Saudi-Arabien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Arabie saoudite"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Arabia Saudita"
+              }
+            ]
+          },
+          {
+            "code" : "SAU",
+            "display" : "Saudi Arabia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Saudi-Arabien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Arabie saoudite"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Arabia Saudita"
+              }
+            ]
+          },
+          {
+            "code" : "SG",
+            "display" : "Singapore",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Singapur"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Singapour"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Singapore"
+              }
+            ]
+          },
+          {
+            "code" : "SGP",
+            "display" : "Singapore",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Singapur"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Singapour"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Singapore"
+              }
+            ]
+          },
+          {
+            "code" : "KR",
+            "display" : "South Korea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Korea (Süd-)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Corée (Sud)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Corea (Sud)"
+              }
+            ]
+          },
+          {
+            "code" : "KOR",
+            "display" : "South Korea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Korea (Süd-)"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Corée (Sud)"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Corea (Sud)"
+              }
+            ]
+          },
+          {
+            "code" : "SY",
+            "display" : "Syria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Syrien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Syrie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Siria"
+              }
+            ]
+          },
+          {
+            "code" : "SYR",
+            "display" : "Syria",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Syrien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Syrie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Siria"
+              }
+            ]
+          },
+          {
+            "code" : "TH",
+            "display" : "Thailand",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Thailand"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Thaïlande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Thailandia"
+              }
+            ]
+          },
+          {
+            "code" : "THA",
+            "display" : "Thailand",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Thailand"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Thaïlande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Thailandia"
+              }
+            ]
+          },
+          {
+            "code" : "VN",
+            "display" : "Vietnam",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vietnam"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Vietnam"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Vietnam"
+              }
+            ]
+          },
+          {
+            "code" : "VNM",
+            "display" : "Vietnam",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vietnam"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Vietnam"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Vietnam"
+              }
+            ]
+          },
+          {
+            "code" : "BD",
+            "display" : "Bangladesh",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bangladesch"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bangladesh"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bangladesh"
+              }
+            ]
+          },
+          {
+            "code" : "BGD",
+            "display" : "Bangladesh",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Bangladesch"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Bangladesh"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Bangladesh"
+              }
+            ]
+          },
+          {
+            "code" : "TL",
+            "display" : "Timor-Leste",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Timor-Leste"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Timor-Leste"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Timor-Leste"
+              }
+            ]
+          },
+          {
+            "code" : "TLS",
+            "display" : "Timor-Leste",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Timor-Leste"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Timor-Leste"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Timor-Leste"
+              }
+            ]
+          },
+          {
+            "code" : "AM",
+            "display" : "Armenia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Armenien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Arménie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Armenia"
+              }
+            ]
+          },
+          {
+            "code" : "ARM",
+            "display" : "Armenia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Armenien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Arménie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Armenia"
+              }
+            ]
+          },
+          {
+            "code" : "AZ",
+            "display" : "Azerbaijan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Aserbaidschan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Azerbaïdjan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Azerbaigian"
+              }
+            ]
+          },
+          {
+            "code" : "AZE",
+            "display" : "Azerbaijan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Aserbaidschan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Azerbaïdjan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Azerbaigian"
+              }
+            ]
+          },
+          {
+            "code" : "GE",
+            "display" : "Georgia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Georgien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Géorgie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Georgia"
+              }
+            ]
+          },
+          {
+            "code" : "GEO",
+            "display" : "Georgia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Georgien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Géorgie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Georgia"
+              }
+            ]
+          },
+          {
+            "code" : "KZ",
+            "display" : "Kazakhstan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kasachstan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kazakhstan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kazakstan"
+              }
+            ]
+          },
+          {
+            "code" : "KAZ",
+            "display" : "Kazakhstan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kasachstan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kazakhstan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kazakstan"
+              }
+            ]
+          },
+          {
+            "code" : "KG",
+            "display" : "Kyrgyzstan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kirgisistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kirghizistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kirghizistan"
+              }
+            ]
+          },
+          {
+            "code" : "KGZ",
+            "display" : "Kyrgyzstan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kirgisistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kirghizistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kirghizistan"
+              }
+            ]
+          },
+          {
+            "code" : "TJ",
+            "display" : "Tajikistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tadschikistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tadjikistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tagikistan"
+              }
+            ]
+          },
+          {
+            "code" : "TJK",
+            "display" : "Tajikistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tadschikistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tadjikistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tagikistan"
+              }
+            ]
+          },
+          {
+            "code" : "TM",
+            "display" : "Turkmenistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Turkmenistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Turkménistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Turkmenistan"
+              }
+            ]
+          },
+          {
+            "code" : "TKM",
+            "display" : "Turkmenistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Turkmenistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Turkménistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Turkmenistan"
+              }
+            ]
+          },
+          {
+            "code" : "UZ",
+            "display" : "Uzbekistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Usbekistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ouzbékistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Uzbekistan"
+              }
+            ]
+          },
+          {
+            "code" : "UZB",
+            "display" : "Uzbekistan",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Usbekistan"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Ouzbékistan"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Uzbekistan"
+              }
+            ]
+          },
+          {
+            "code" : "AU",
+            "display" : "Australia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Australien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Australie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Australia"
+              }
+            ]
+          },
+          {
+            "code" : "AUS",
+            "display" : "Australia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Australien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Australie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Australia"
+              }
+            ]
+          },
+          {
+            "code" : "FJ",
+            "display" : "Fiji",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Fidschi"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Fidji"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Figi"
+              }
+            ]
+          },
+          {
+            "code" : "FJI",
+            "display" : "Fiji",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Fidschi"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Fidji"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Figi"
+              }
+            ]
+          },
+          {
+            "code" : "NR",
+            "display" : "Nauru",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nauru"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nauru"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nauru"
+              }
+            ]
+          },
+          {
+            "code" : "NRU",
+            "display" : "Nauru",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Nauru"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nauru"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nauru"
+              }
+            ]
+          },
+          {
+            "code" : "VU",
+            "display" : "Vanuatu",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vanuatu"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Vanuatu"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Vanuatu"
+              }
+            ]
+          },
+          {
+            "code" : "VUT",
+            "display" : "Vanuatu",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Vanuatu"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Vanuatu"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Vanuatu"
+              }
+            ]
+          },
+          {
+            "code" : "NZ",
+            "display" : "New Zealand",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Neuseeland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nouvelle-Zélande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nuova Zelanda"
+              }
+            ]
+          },
+          {
+            "code" : "NZL",
+            "display" : "New Zealand",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Neuseeland"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Nouvelle-Zélande"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Nuova Zelanda"
+              }
+            ]
+          },
+          {
+            "code" : "PG",
+            "display" : "Papua New Guinea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Papua-Neuguinea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Papouasie-Nouvelle-Guinée"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Papua Nuova Guinea"
+              }
+            ]
+          },
+          {
+            "code" : "PNG",
+            "display" : "Papua New Guinea",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Papua-Neuguinea"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Papouasie-Nouvelle-Guinée"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Papua Nuova Guinea"
+              }
+            ]
+          },
+          {
+            "code" : "TO",
+            "display" : "Tonga",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tonga"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tonga"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tonga"
+              }
+            ]
+          },
+          {
+            "code" : "TON",
+            "display" : "Tonga",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tonga"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tonga"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tonga"
+              }
+            ]
+          },
+          {
+            "code" : "WS",
+            "display" : "Samoa",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Samoa"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Samoa"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Samoa"
+              }
+            ]
+          },
+          {
+            "code" : "WSM",
+            "display" : "Samoa",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Samoa"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Samoa"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Samoa"
+              }
+            ]
+          },
+          {
+            "code" : "SB",
+            "display" : "Solomon Islands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Salomoninseln"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Îles Salomon"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Isole Salomone"
+              }
+            ]
+          },
+          {
+            "code" : "SLB",
+            "display" : "Solomon Islands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Salomoninseln"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Îles Salomon"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Isole Salomone"
+              }
+            ]
+          },
+          {
+            "code" : "TV",
+            "display" : "Tuvalu",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tuvalu"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tuvalu"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tuvalu"
+              }
+            ]
+          },
+          {
+            "code" : "TUV",
+            "display" : "Tuvalu",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Tuvalu"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Tuvalu"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Tuvalu"
+              }
+            ]
+          },
+          {
+            "code" : "KI",
+            "display" : "Kiribati",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kiribati"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kiribati"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kiribati"
+              }
+            ]
+          },
+          {
+            "code" : "KIR",
+            "display" : "Kiribati",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Kiribati"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Kiribati"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Kiribati"
+              }
+            ]
+          },
+          {
+            "code" : "MH",
+            "display" : "Marshall Islands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Marshallinseln"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Îles Marshall"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Isole Marshall"
+              }
+            ]
+          },
+          {
+            "code" : "MHL",
+            "display" : "Marshall Islands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Marshallinseln"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Îles Marshall"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Isole Marshall"
+              }
+            ]
+          },
+          {
+            "code" : "FM",
+            "display" : "Micronesia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mikronesien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Micronésie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Micronesia"
+              }
+            ]
+          },
+          {
+            "code" : "FSM",
+            "display" : "Micronesia",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Mikronesien"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Micronésie"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Micronesia"
+              }
+            ]
+          },
+          {
+            "code" : "PW",
+            "display" : "Palau",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Palau"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Palaos"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Palau"
+              }
+            ]
+          },
+          {
+            "code" : "PLW",
+            "display" : "Palau",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Palau"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Palaos"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Palau"
+              }
+            ]
+          },
+          {
+            "code" : "CK",
+            "display" : "Cook Islands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Cookinseln"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Îles Cook"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Isole Cook"
+              }
+            ]
+          },
+          {
+            "code" : "COK",
+            "display" : "Cook Islands",
+            "designation" : [
+              {
+                "language" : "de-CH",
+                "value" : "Cookinseln"
+              },
+              {
+                "language" : "fr-CH",
+                "value" : "Îles Cook"
+              },
+              {
+                "language" : "it-CH",
+                "value" : "Isole Cook"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

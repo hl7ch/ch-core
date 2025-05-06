@@ -23,7 +23,7 @@ Description: "Patient with insurance card number as identifier, contact details,
 * address[=].state = "BE"
 * address[=].country = "Schweiz"
 * address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
-* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CH
+* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#XK
 /* test cases for invariant ch-addr-2 
 // [1] ch-addr-2 correct
 * address[+].use = #home

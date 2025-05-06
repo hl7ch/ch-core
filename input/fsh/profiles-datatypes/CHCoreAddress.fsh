@@ -52,7 +52,7 @@ Description: "address incorporating eCH-0010 postal address extensions"
     $iso21090-SC-coding named countrycode 0..1
 * country.extension[countrycode] obeys ch-addr-1
 * country.extension[countrycode] ^short = "ISO Country Alpha-2 or ISO Country Alpha-3 code"
-* country.extension[countrycode] ^definition = "The content of the country code element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, if the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2."
+* country.extension[countrycode] ^definition = "The content of the country code element (if present) SHOULD be selected from ValueSet http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes"
 
 
 
