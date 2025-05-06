@@ -16,6 +16,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#302](https://github.com/hl7ch/ch-core/issues/302): Allow all possible references for Encounter.subject and Encounter.participant.individual
 * [#313](https://github.com/hl7ch/ch-core/issues/313): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension 
 * [#329](https://github.com/hl7ch/ch-core/issues/329): Fix (and update) terminology dependency to avoid version mismatch: hl7.terminology#6.1.0 -> hl7.terminology.r4#6.2.0
+* [#339](https://github.com/hl7ch/ch-core/issues/339): Fix URL values which should resolve, add the other to the suppressed messages
 
 #### Issues resolved without amendment (in IG)
 

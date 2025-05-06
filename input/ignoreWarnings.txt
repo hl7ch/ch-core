@@ -1,9 +1,8 @@
 == Suppressed Messages ==
 
-# The following code systems/value sets/codes cannot be validated/resolved (external systems)
+# The following code systems/value sets/codes cannot be validated (external systems)
 A definition for CodeSystem 'urn:oid:2.51.1.1' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' could not be found, so the code cannot be validated
-URL value 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' does not resolve
 A definition for CodeSystem 'http://forum-datenaustausch.ch/tariff%
 
 # No suitable codes / Swiss specific codes
@@ -39,6 +38,11 @@ The string value contains text that looks like embedded HTML tags. If this conte
 
 # Reference to draft/experimental terminology
 Reference to draft CodeSystem%
+
+# URL values which do not resolve (https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/.E2.9C.94.20CapabilityStatement.20some.20Canonical.20URLs.20do.20not.20resolve/near/516300365)
+URL value 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' does not resolve
+URL value 'https://www.admin.ch/opc/de/classified-compilation/20111795/index.html' does not resolve
+URL value 'https://www.bfh.ch/de/studium/bachelor/medizininformatik/' does not resolve
 
 # fixed with next ig publisher: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/.E2.9C.94.20CapabilityStatement.20some.20Canonical.20URLs.20do.20not.20resolve/near/515969000
 URL value 'urn:oid:2.999.1.2.3.4' does not resolve
