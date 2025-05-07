@@ -10,4 +10,4 @@ Description: "Extension for a recipient of this document (corresponds to the add
 * . ^definition = "Extension to define the information about the recipient"
 * url only uri
 * valueReference 1..
-* valueReference only Reference(CHCorePractitioner or CHCorePatient or RelatedPerson or CHCoreOrganization)
+* valueReference only Reference(CHCorePractitioner or CHCorePatient or CHCoreRelatedPerson or CHCoreOrganization)

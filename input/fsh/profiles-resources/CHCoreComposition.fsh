@@ -8,11 +8,11 @@ Description: "Base definition of the Composition resource for use in Swiss speci
 * subject only Reference(CHCorePatient)
 * subject.reference 1..
 * encounter only Reference(CHCoreEncounter)
-* author only Reference(CHCorePractitioner or CHCorePractitionerRole or Device or CHCorePatient or RelatedPerson or CHCoreOrganization)
+* author only Reference(CHCorePractitioner or CHCorePractitionerRole or Device or CHCorePatient or CHCoreRelatedPerson or CHCoreOrganization)
 * author.reference 1..
-* attester.party only Reference(CHCorePatient or RelatedPerson or CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
+* attester.party only Reference(CHCorePatient or CHCoreRelatedPerson or CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
 * attester.party.reference 1..
 * custodian only Reference(CHCoreOrganization)
 * custodian.reference 1..
 * relatesTo.target[x] only Identifier or Reference(CHCoreComposition)
-* section.author only Reference(CHCorePractitioner or CHCorePractitionerRole or Device or CHCorePatient or RelatedPerson or CHCoreOrganization)
+* section.author only Reference(CHCorePractitioner or CHCorePractitionerRole or Device or CHCorePatient or CHCoreRelatedPerson or CHCoreOrganization)

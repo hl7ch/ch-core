@@ -23,7 +23,7 @@ Description: "Base definition of the Encounter resource for use in Swiss specifi
 * subject 1..
 * subject only Reference(CHCorePatient or Group)
 * participant.type from http://fhir.ch/ig/ch-core/ValueSet/ch-core-encounter-participation-type (extensible)
-* participant.individual only Reference(CHCorePractitioner or CHCorePractitionerRole or RelatedPerson)
+* participant.individual only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreRelatedPerson)
 
 * hospitalization.extension ^slicing.discriminator.type = #value
 * hospitalization.extension ^slicing.discriminator.path = "url"

@@ -40,7 +40,7 @@ Description: "Base definition of the MedicationStatement resource for use in Swi
 * extension[substitution] ^short = "Whether substitution is allowed or not"
 * medication[x] only CodeableConcept or Reference(CHCoreMedication) 
 * subject only Reference(CHCorePatient or Group)
-* informationSource only Reference(CHCorePatient or CHCorePractitioner or CHCorePractitionerRole or RelatedPerson or CHCoreOrganization)
+* informationSource only Reference(CHCorePatient or CHCorePractitioner or CHCorePractitionerRole or CHCoreRelatedPerson or CHCoreOrganization)
 * dosage only CHCoreDosage
 
 
@@ -52,7 +52,7 @@ Description: "Base definition of the MedicationAdministration resource for use i
 * . ^short = "CH Core MedicationAdministration"
 * medication[x] only CodeableConcept or Reference(CHCoreMedication)
 * subject only Reference(CHCorePatient or Group)
-* performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or RelatedPerson or Device)
+* performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or CHCoreRelatedPerson or Device)
 // BackboneElement in this resource
 * dosage.route from http://fhir.ch/ig/ch-term/ValueSet/edqm-routeofadministration (preferred)
 * dosage.method from http://fhir.ch/ig/ch-term/ValueSet/edqm-administrationmethod (preferred)
@@ -72,7 +72,7 @@ Description: "Base definition of the MedicationDispense resource for use in Swis
 * extension contains CHEMEDExtTreatmentReason named treatmentReason 0..*
 * medication[x] only CodeableConcept or Reference(CHCoreMedication)
 * subject only Reference(CHCorePatient or Group)
-* performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or Device or RelatedPerson)
+* performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or Device or CHCoreRelatedPerson)
 * dosageInstruction only CHCoreDosage
 * substitution obeys ch-meddis-1
 * substitution.wasSubstituted ^short = "Whether a substitution was (true) or was not (false) performed on the dispense"
@@ -88,6 +88,6 @@ Description: "Base definition of the MedicationRequest resource for use in Swiss
 * . ^short = "CH Core MedicationRequest"
 * medication[x] only CodeableConcept or Reference(CHCoreMedication)
 * subject only Reference(CHCorePatient or Group)
-* requester only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or RelatedPerson or Device)
+* requester only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or CHCoreRelatedPerson or Device)
 * dosageInstruction only CHCoreDosage
 * substitution.allowedCodeableConcept from http://fhir.ch/ig/ch-term/ValueSet/ActSubstanceAdminSubstitutionCode (preferred)

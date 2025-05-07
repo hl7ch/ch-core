@@ -18,7 +18,7 @@ Description: "Extension to reference the person (and her/his organization) who i
 * ^context[=].expression = "Immunization"
 * url only uri
 * valueReference 1..
-* valueReference only Reference(CHCorePatient or CHCorePractitionerRole or RelatedPerson)
+* valueReference only Reference(CHCorePatient or CHCorePractitionerRole or CHCoreRelatedPerson)
 * valueReference ^short = "Author of the content"
 * valueReference.extension ^slicing.discriminator.type = #value
 * valueReference.extension ^slicing.discriminator.path = "url"

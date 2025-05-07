@@ -21,7 +21,7 @@ Description: "Definition of the Composition resource for use in the context of t
 
 * subject 1..
 * subject only Reference(CHCorePatientEPR)
-* author only Reference(CHCorePractitionerEPR or CHCorePractitionerRoleEpr or Device or CHCorePatientEPR or RelatedPerson or CHCoreOrganizationEPR)
+* author only Reference(CHCorePractitionerEPR or CHCorePractitionerRoleEpr or Device or CHCorePatientEPR or CHCoreRelatedPerson or CHCoreOrganizationEPR)
 * author.extension ^slicing.discriminator.type = #value
 * author.extension ^slicing.discriminator.path = "url"
 * author.extension ^slicing.rules = #open
@@ -41,7 +41,7 @@ Description: "Definition of the Composition resource for use in the context of t
 * attester[legalAuthenticator] ^short = "legal authenticator"
 * attester[legalAuthenticator].mode = #legal (exactly)
 * attester[legalAuthenticator].party 1..
-* attester[legalAuthenticator].party only Reference(CHCorePatientEPR or RelatedPerson or CHCorePractitionerEPR or CHCorePractitionerRoleEpr)
+* attester[legalAuthenticator].party only Reference(CHCorePatientEPR or CHCoreRelatedPerson or CHCorePractitionerEPR or CHCorePractitionerRoleEpr)
 * custodian only Reference(CHCoreOrganizationEPR)
 * relatesTo.target[x] only Identifier or Reference(CHCoreCompositionEPR)
 
@@ -49,7 +49,7 @@ Description: "Definition of the Composition resource for use in the context of t
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.ordered = false
 * section ^slicing.rules = #open
-* section.author only Reference(CHCorePractitionerEPR or CHCorePractitionerRoleEpr or Device or CHCorePatientEPR or RelatedPerson or CHCoreOrganizationEPR)
+* section.author only Reference(CHCorePractitionerEPR or CHCorePractitionerRoleEpr or Device or CHCorePatientEPR or CHCoreRelatedPerson or CHCoreOrganizationEPR)
 
 * section contains 
     originalRepresentation 0..1
