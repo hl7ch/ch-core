@@ -13,7 +13,7 @@ Context: RelatedPerson
 * extension[code].url only uri
 * extension[code].value[x] 1..
 * extension[code].value[x] only CodeableConcept
-* extension[code].value[x] from CountryValueSet (preferred)
+* extension[code].value[x] from http://hl7.org/fhir/ValueSet/country (preferred)
 
 * extension[period] only Extension
 * extension[period] ^short = "Time period of citizenship"
