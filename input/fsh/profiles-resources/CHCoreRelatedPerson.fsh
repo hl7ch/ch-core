@@ -7,6 +7,7 @@ Description: "Base definition of the RelatedPerson resource for use in Swiss spe
 * extension contains
     $patient-citizenship named citizenship 0..*
 * extension[citizenship] ^short = "Citizenship(s) of related person"    
+* patient only Reference(CHCorePatient)
 * name only CHCoreHumanName
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "system"
