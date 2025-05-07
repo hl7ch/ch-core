@@ -9,7 +9,6 @@ Context: RelatedPerson
 
 * extension[code] only Extension
 * extension[code] ^short = "Nation code of citizenship"
-* extension[code] ^definition = "Nation code representing the citizenship."
 * extension[code].url only uri
 * extension[code].value[x] 1..
 * extension[code].value[x] only CodeableConcept
@@ -17,7 +16,6 @@ Context: RelatedPerson
 
 * extension[period] only Extension
 * extension[period] ^short = "Time period of citizenship"
-* extension[period] ^definition = "Period when citizenship was effective."
 * extension[period].url only uri
 * extension[period].value[x] 1..
 * extension[period].value[x] only Period
