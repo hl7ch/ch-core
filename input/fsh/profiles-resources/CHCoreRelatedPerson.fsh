@@ -4,8 +4,7 @@ Id: ch-core-relatedperson
 Title: "CH Core RelatedPerson"
 Description: "Base definition of the RelatedPerson resource for use in Swiss specific use cases."
 * . ^short = "CH Core RelatedPerson"
-* extension contains
-    $patient-citizenship named citizenship 0..*
+* extension contains Citizenship named citizenship 0..*
 * extension[citizenship] ^short = "Citizenship(s) of related person"    
 * patient only Reference(CHCorePatient)
 * name only CHCoreHumanName
