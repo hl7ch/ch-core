@@ -8,7 +8,7 @@ Description: "Patient EPR with eCH-0011 family & and given name, eCH-0046 contac
 * meta.profile[+] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"
 * language = #de-CH
 * identifier.type = $v2-0203#MR
-* identifier.system = "urn:oid:2.16.756.888888.3.1"
+* identifier.system = "urn:oid:2.999.1.2.3.4"
 * identifier.value = "8733"
 * name.use = #official
 * name.family.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"

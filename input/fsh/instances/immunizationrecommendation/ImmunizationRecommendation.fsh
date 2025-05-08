@@ -18,7 +18,7 @@ Usage: #example
 // Title: "Patient example for immunization"
 // Description: "Example of Patient resource for use in Swiss specific immunization use cases."
 // Usage: #example
-// * identifier[+].system = "urn:oid:1.2.3.4"
+// * identifier[+].system = "urn:oid:2.999.1.2.3.4"
 // * identifier[=].value = "12345678"
 // * identifier[=].type = http://terminology.hl7.org/CodeSystem/v2-0203#MR
 // * name.family = "Wegmueller"

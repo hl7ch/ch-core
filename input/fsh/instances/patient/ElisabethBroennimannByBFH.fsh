@@ -3,7 +3,7 @@ InstanceOf: CHCorePatient
 Usage: #example
 Title: "Elisabeth Broennimann by BFH"
 Description: "Patient with insurance card number as identifier, contact details, marital status (eCH & FHIR) and reference to the general practitioner (GP)"
-* meta.source = "https://www.ti.bfh.ch/de/bachelor/medizininformatik.html"
+* meta.source = "https://www.bfh.ch/de/studium/bachelor/medizininformatik/"
 * identifier.system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
 * identifier.value = "80756015090002647590"
 * name.family = "Brönnimann-Bertholet"

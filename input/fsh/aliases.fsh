@@ -11,7 +11,7 @@ Alias: $loinc =                                     http://loinc.org
 Alias: $sct =                                       http://snomed.info/sct
 Alias: $standardterms =                             http://standardterms.edqm.eu
 
-Alias: $IHE.FormatCode.codesystem =                 http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem
+Alias: $IHE.FormatCode.codesystem =                 http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode
 
 Alias: $bfs-medstats-18-admittype =                 http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-18-admittype
 Alias: $bfs-medstats-18-admittype_1 =               http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-18-admittype

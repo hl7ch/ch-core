@@ -3,9 +3,9 @@ InstanceOf: CHCoreEncounter
 Usage: #example
 Title: "Encounter Accident Broennimann"
 Description: "Inpatient Encounter of Mrs. Broennimann which is flagged as an accident"
-* meta.source = "https://www.ti.bfh.ch/de/bachelor/medizininformatik.html"
+* meta.source = "https://www.bfh.ch/de/studium/bachelor/medizininformatik/"
 * identifier[VisitNumber].type = $v2-0203#VN "Visit number"
-* identifier[VisitNumber].system = "http://www.ti.bfh.ch/example/fallnummerdomain"
+* identifier[VisitNumber].system = "http://example.com/fallnummerdomain"
 * identifier[VisitNumber].value = "12345"
 * status = #finished
 * class = $v3-ActCode#IMP "inpatient encounter"
