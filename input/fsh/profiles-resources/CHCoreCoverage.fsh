@@ -15,10 +15,10 @@ Description: "Base definition of the Coverage resource for use in Swiss specific
 * identifier[insuranceCardNumber] ^short = "Insurance card number of the patient (20 digits)"
 * identifier[insuranceCardNumber] ^definition = "Cardnumber Swiss insurance card v1"
 * identifier[insuranceCardNumber] ^patternIdentifier.system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1"
-* policyHolder only Reference(CHCorePatient or RelatedPerson or CHCoreOrganization)
-* subscriber only Reference(CHCorePatient or RelatedPerson)
+* policyHolder only Reference(CHCorePatient or CHCoreRelatedPerson or CHCoreOrganization)
+* subscriber only Reference(CHCorePatient or CHCoreRelatedPerson)
 * beneficiary only Reference(CHCorePatient)
-* payor only Reference(CHCoreOrganization or CHCorePatient or RelatedPerson)
+* payor only Reference(CHCoreOrganization or CHCorePatient or CHCoreRelatedPerson)
 * payor ^short = "Issuer of the policy (if it is not the patient him/herself, represent the payor as a contained resource)"
 * payor ^type.aggregation[0] = #contained
 * payor ^type.aggregation[+] = #referenced

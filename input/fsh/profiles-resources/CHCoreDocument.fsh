@@ -38,7 +38,7 @@ Description: "Base definition of the Bundle resource for use in Swiss specific u
 * entry[Organization].resource 1..
 * entry[Organization].resource ^type.profile = Canonical(CHCoreOrganization)
 * entry[RelatedPerson].resource 1..
-* entry[RelatedPerson].resource ^type.profile = Canonical(RelatedPerson)
+* entry[RelatedPerson].resource ^type.profile = Canonical(CHCoreRelatedPerson)
 * entry[Device].resource 1..
 * entry[Device].resource ^type.profile = Canonical(Device)
 * entry[Encounter].resource 1..

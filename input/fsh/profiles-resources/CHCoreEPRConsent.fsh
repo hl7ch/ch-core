@@ -22,7 +22,7 @@ Description: "Definition of the Consent resource to document that a patient has 
 * patient 1..
 * patient only Reference(CHCorePatient)
 * patient ^short = "The patient to whom this EPR consent applies"
-* performer only Reference(CHCoreOrganization or CHCorePatient or CHCorePractitioner or RelatedPerson or CHCorePractitionerRole)
+* performer only Reference(CHCoreOrganization or CHCorePatient or CHCorePractitioner or CHCoreRelatedPerson or CHCorePractitionerRole)
 * organization only Reference(CHCoreOrganization)
 * policyRule = $consentpolicycodes#ch-epr
 * provision ^short = "Exceptions to the EPR consent"

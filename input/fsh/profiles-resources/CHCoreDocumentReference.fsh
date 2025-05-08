@@ -10,7 +10,7 @@ Description: "Base definition of the DocumentReference resource for use in Swiss
 * category from $DocumentEntry.classCode (preferred)
 
 * subject only Reference(CHCorePatient or CHCorePractitioner or Group or Device)
-* author only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or Device or CHCorePatient or RelatedPerson)
+* author only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or Device or CHCorePatient or CHCoreRelatedPerson)
 * authenticator only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization)
 * custodian only Reference(CHCoreOrganization)
 * relatesTo.target only Reference(CHCoreDocumentReference)

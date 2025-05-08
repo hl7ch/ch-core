@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#333](https://github.com/hl7ch/ch-core/issues/333): Refactor binding of vaccineCode VS (Adapt Immunization to IPS (2.0.0))
 * [#292](https://github.com/hl7ch/ch-core/issues/292): CH Core Claim profile, example, mapping to 'Forum Datenaustausch'
 * [#309](https://github.com/hl7ch/ch-core/issues/309): Add warning to ZSR
+* [#344](https://github.com/hl7ch/ch-core/issues/344): New base profile CH Core RelatedPerson
 
 #### Changed / Updated
 * [#318](https://github.com/hl7ch/ch-core/issues/318): Relax minimum cardinality of Location.name from 1 to 0
@@ -17,6 +18,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#313](https://github.com/hl7ch/ch-core/issues/313): Add [expansion-parameter](https://build.fhir.org/codesystem-guide-parameter-code.html#:~:text=expansion%2Dparameter,as%20SNOMED%20CT) for the usage of SNOMED CT Swiss Extension 
 * [#329](https://github.com/hl7ch/ch-core/issues/329): Fix (and update) terminology dependency to avoid version mismatch: hl7.terminology#6.1.0 -> hl7.terminology.r4#6.2.0
 * [#339](https://github.com/hl7ch/ch-core/issues/339): Fix URL values which should resolve, add the other to the suppressed messages
+* [#338](https://github.com/hl7ch/ch-core/issues/338): Add [pin-canonicals](http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html#:~:text=for%20further%20information-,pin%2Dcanonicals,-Pin%20Canonical%20Versions) parameter to define the handling of unversioned canonical references
+* [#346](https://github.com/hl7ch/ch-core/issues/346): Add new sub-extension 'key' to extension 'additional-binding'
+* [#329](https://github.com/hl7ch/ch-core/issues/329): Fix (and update) terminology dependency to avoid version mismatch: hl7.terminology#6.1.0 -> hl7.terminology.r4#6.3.0
+* [#315](https://github.com/hl7ch/ch-core/issues/315): CH Core Patient - citizenship binding extensible as required, reduce to warning
 
 #### Issues resolved without amendment (in IG)
 
