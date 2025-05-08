@@ -18,12 +18,12 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
     ChCorePatientEch11PlaceOfOrigin named placeOfOrigin 0..* and
     $patient-citizenship named citizenship 0..* and
     $patient-religion named religion 0..1
-* extension[placeOfBirth] ^short = "Place of birth of patient"
-* extension[placeOfOrigin] ^short = "Place of origin(s) of patient"
+* extension[placeOfBirth] ^short = "Place of birth of the patient"
+* extension[placeOfOrigin] ^short = "Place of origin(s) of the patient"
 * extension[citizenship] obeys ch-pat-3
-* extension[citizenship] ^short = "Citizenship(s) of patient"
+* extension[citizenship] ^short = "Information on nationality data (eCH: Staatsangehörigkeit/Nationalité) of the patient"
 * extension[citizenship] ^definition = "The content of the country code element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, if the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2."
-* extension[religion] ^short = "Religion of patient"
+* extension[religion] ^short = "Religion of the patient"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
@@ -80,7 +80,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * contact contains
     contact 0..1 and
     nameOfParent 0..* 
-* contact[contact] ^short = "Contact data if it is not address of patient"
+* contact[contact] ^short = "Contact data if it is not the address of the patient"
 * contact[contact].relationship ..1
 * contact[contact].relationship = $ech-11#contactData
 * contact[contact].telecom 0..0
@@ -109,7 +109,7 @@ Source: CHCorePatient
 Target: "http://www.ech.ch/"
 * extension[placeOfBirth] -> "eCH-0011: placeOfBirth BFS-322, BFS-323, BFS 324"
 * extension[placeOfOrigin] -> "eCH-0011: placeOfOrigin, BFS-42"
-* extension[citizenship] -> "eCH-0011: nationalityData"
+* extension[citizenship] -> "eCH-0011: nationalityData - Staatsangehörigkeit/Nationalité"
 * extension[religion] -> "eCH-0011: religion, BFS-711"
 * name -> "eCH-0011: nameData"
 * telecom -> "eCH-0046: Contact"
@@ -123,7 +123,7 @@ Target: "http://www.ech.ch/"
 * maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: separation - Trennung BFS-343"
 * contact[contact] -> "eCH-0011: contactData, BFS-61"
 * contact[nameOfParent] -> "eCH-0021: nameOfParent"
-* communication[languageOfCorrespondence] -> "eCH-0011: languageOfCorrespondance: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
+* communication[languageOfCorrespondence] -> "eCH-0011: languageOfCorrespondence: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
 
 Mapping: v2-for-CHCorePatient
 Id: v2
