@@ -24,9 +24,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#329](https://github.com/hl7ch/ch-core/issues/329): Fix (and update) terminology dependency to avoid version mismatch: hl7.terminology#6.1.0 -> hl7.terminology.r4#6.3.0
 * [#315](https://github.com/hl7ch/ch-core/issues/315): CH Core Patient - citizenship binding extensible as required, reduce to warning
 
-#### Issues resolved without amendment (in IG)
-
-
 
 ### STU 5 (2024-12-17)
 

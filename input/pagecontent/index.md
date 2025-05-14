@@ -11,6 +11,9 @@ This guide is a working specification. We anticipate that it will be implemented
 
 <div markdown="1" class="stu-note">
 
+This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) until September 30th, 2025 midnight.   
+Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
+
 [Significant changes, open and closed issues.](changelog.html)
 
 </div>
