@@ -44,3 +44,9 @@ URL value 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' does not resolve
 URL value 'https://www.admin.ch/opc/de/classified-compilation/20111795/index.html' does not resolve
 URL value 'https://www.bfh.ch/de/studium/bachelor/medizininformatik/' does not resolve
 URL value 'http://forum-datenaustausch.ch/tariff/030' does not resolve
+
+# Extension citizenship will be allowed on RelatedPerson: https://jira.hl7.org/browse/FHIR-49948
+The extension http://hl7.org/fhir/StructureDefinition/patient-citizenship is not allowed to be used at this point (allowed = e:Patient; this element is [RelatedPerson])
+
+# https://github.com/hl7ch/ch-core/issues/341
+ValueSet 'http://hl7.org/fhir/ValueSet/country' not found
