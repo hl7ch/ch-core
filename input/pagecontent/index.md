@@ -33,7 +33,7 @@ Exchange formats for the Swiss EPR are defined in Annex 4. Exchange formats can 
 - [CH Core Composition Profile EPR](StructureDefinition-ch-core-composition-epr.html): the base definition for a composition, providing the basic structure of the FHIR document. 
 
 #### CH:ATC Profile (Annex 5, Amendment 2.2)
-The CH ATC profile defines the requirements for a patient’s audit trail. [CH ATC](http://fhir.ch/ig/ch-atc/index.html) is a FHIR implementation guide based on FHIR STU3 and R4. There is currently no relationship between CH ATC and CH Core.
+The CH ATC profile defines the requirements for a patient’s audit trail. It is defined in the [CH EPR FHIR](https://fhir.ch/ig/ch-epr-fhir/ch-atc.html) implementation guide.
 
 ### Scope
 This document presents Swiss use concepts defined via FHIR processable artifacts:
