@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.   
 
-### STU 6 Ballot (2025)
+### STU 6 Ballot (2025-05-22)
 
 #### Added
 * [#330](https://github.com/hl7ch/ch-core/issues/330): Add new VS imunglobulines for vaccinecode to Immunization
