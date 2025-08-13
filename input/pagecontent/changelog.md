@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 
 #### Fixed
+* [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
 
 
 
