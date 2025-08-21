@@ -18,6 +18,7 @@ Description: "Definition of the Composition resource for use in the context of t
 * type 1..
 * type from $DocumentEntry.typeCode (extensible)
 * type ^short = "Kind of composition"
+* category from $DocumentEntry.classCode (extensible)
 
 * subject 1..
 * subject only Reference(CHCorePatientEPR)
