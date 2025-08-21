@@ -5,7 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
-* [#360](https://github.com/hl7ch/ch-core/issues/360): Extensible binding for Composition.category to DocumentEntry.classCode value set
+* [#360](https://github.com/hl7ch/ch-core/issues/360): Extensible binding for Composition.category to DocumentEntry.classCode value set 
 
 #### Fixed
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
