@@ -9,7 +9,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Fixed
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
 
-
+#### Issues resolved without amendment (in IG)
+* [#360](https://github.com/hl7ch/ch-core/issues/360): CH Core Composition EPR: VS binding (Composition.category)
 
 ### STU 6 Ballot (2025-05-22)
 
