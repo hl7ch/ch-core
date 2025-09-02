@@ -74,7 +74,7 @@ Usage: #example
 * confidentiality = #N
 * section[0].id = "administration"
 * section[=].title = "Immunization Administration"
-* section[=].code = $loinc#11369-6 "Hx of Immunization"
+* section[=].code = $loinc#11369-6 "History of Immunization note"
 * section[=].text.status = #generated
-* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Code: </b><span>Hx of Immunization (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Immunization-ImmunizationEntry.html\">Immunization/ImmunizationEntry</a></td></tr></table></div>"
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Code: </b><span>History of Immunization note (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Immunization-ImmunizationEntry.html\">Immunization/ImmunizationEntry</a></td></tr></table></div>"
 * section[=].entry = Reference(http://test.fhir.ch/r4/Immunization/ImmunizationEntry)

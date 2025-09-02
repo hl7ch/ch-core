@@ -13,6 +13,8 @@ None of the codings provided are in the value set 'FHIR Document Type Codes' (ht
 
 # No valid display values for 'de-CH' (information)
 There are no valid display names found for the code http://loinc.org#28616-1 for language(s) 'de-CH'. The display is 'Physician Transfer note' the default language display
+'Transfer summary report' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
+'Natural father (person)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
 
 # All important examples are included
 The Implementation Guide contains no examples for this profile
@@ -35,15 +37,17 @@ INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition​.snaps
 # Build error or cause by underlying profile (snapshot)
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
 # Reference to draft/experimental terminology
 Reference to draft CodeSystem%
 
 # URL values which do not resolve (https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/.E2.9C.94.20CapabilityStatement.20some.20Canonical.20URLs.20do.20not.20resolve/near/516300365)
-URL value 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' does not resolve
-URL value 'https://www.admin.ch/opc/de/classified-compilation/20111795/index.html' does not resolve
-URL value 'https://www.bfh.ch/de/studium/bachelor/medizininformatik/' does not resolve
-URL value 'http://forum-datenaustausch.ch/tariff/030' does not resolve
+No definition could be found for URL value 'https://www.admin.ch/opc/de/classified-compilation/20111795/index.html'
+No definition could be found for URL value 'https://www.bfh.ch/de/studium/bachelor/medizininformatik/'
 
 # Extension citizenship will be allowed on RelatedPerson: https://jira.hl7.org/browse/FHIR-49948
-The extension http://hl7.org/fhir/StructureDefinition/patient-citizenship is not allowed to be used at this point (allowed = e:Patient; this element is [RelatedPerson])
+The extension http://hl7.org/fhir/StructureDefinition/patient-citizenship is not allowed to be used at this point (this element is [RelatedPerson]; allowed for this version = e:Patient)
+
+# Information about pinned version
+Pinned the version of%
