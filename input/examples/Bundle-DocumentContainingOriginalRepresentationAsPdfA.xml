@@ -137,8 +137,16 @@
             </coding>
           </code>
           <text>
+            <extension url="http://hl7.org/fhir/StructureDefinition/textLink">
+              <extension url="htmlid">
+                <valueString value="8f304c87-ed20-4e9a-b928-db4116eb6594"/>
+              </extension>
+              <extension url="data">
+                <valueUri value="urn:uuid:8f304c87-ed20-4e9a-b928-db4116eb6594"/>
+              </extension>
+            </extension>
             <status value="generated"/>
-            <div xmlns="http://www.w3.org/1999/xhtml">Representation of the original view: <span idref="8f304c87-ed20-4e9a-b928-db4116eb6594">PDF</span></div>
+            <div xmlns="http://www.w3.org/1999/xhtml">Representation of the original view: <span id="8f304c87-ed20-4e9a-b928-db4116eb6594">PDF</span></div>
           </text>
           <entry>
             <reference value="urn:uuid:8f304c87-ed20-4e9a-b928-db4116eb6594"/>
