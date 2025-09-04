@@ -31,7 +31,6 @@ Description: "Additional timestamp for the author or other elements."
 * ^context[=].expression = "Extension.extension"
 
 * . ^definition = "Extension to define the timestamp of the authorship/data input"
-* url only uri
-* valueDateTime 1..1
-* valueDateTime only dateTime
-* valueDateTime ^short = "Value of extension"
+* value[x] 1..1
+* value[x] only dateTime
+* value[x] ^short = "Value of extension"

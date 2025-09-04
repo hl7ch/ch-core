@@ -16,14 +16,14 @@ Description: "Extension to reference the person (and her/his organization) who i
 * ^context[=].expression = "Observation"
 * ^context[+].type = #element
 * ^context[=].expression = "Immunization"
-* url only uri
-* valueReference 1..
-* valueReference only Reference(CHCorePatient or CHCorePractitionerRole or CHCoreRelatedPerson)
-* valueReference ^short = "Author of the content"
-* valueReference.extension ^slicing.discriminator.type = #value
-* valueReference.extension ^slicing.discriminator.path = "url"
-* valueReference.extension ^slicing.rules = #open
-* valueReference.extension contains 
+
+* value[x] 1..
+* value[x] only Reference(CHCorePatient or CHCorePractitionerRole or CHCoreRelatedPerson)
+* value[x] ^short = "Author of the content"
+* value[x].extension ^slicing.discriminator.type = #value
+* value[x].extension ^slicing.discriminator.path = "url"
+* value[x].extension ^slicing.rules = #open
+* value[x].extension contains 
     EPRTime named time 0..1
-* valueReference.extension[time] ^short = "Timestamp of the authorship/data input"
-* valueReference.reference 1..
+* value[x].extension[time] ^short = "Timestamp of the authorship/data input"
+* value[x].reference 1..
