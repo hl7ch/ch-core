@@ -11,6 +11,8 @@ Description: "Extension to reference the person (and her/his organization) who i
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationDispense"
 * ^context[+].type = #element
+* ^context[=].expression = "MedicationAdministration"
+* ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"
 * ^context[+].type = #element
 * ^context[=].expression = "Observation"
