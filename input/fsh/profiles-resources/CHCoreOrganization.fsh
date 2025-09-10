@@ -6,7 +6,7 @@ Description: "Base definition of the Organization resource for use in Swiss spec
 
 * . ^short = "CH Core Organization"
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains
     BER 0..1 and

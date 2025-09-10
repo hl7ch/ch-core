@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
+* [#308](https://github.com/hl7ch/ch-core/issues/308): Update slicing (system instead $this)
 
 #### Fixed
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
