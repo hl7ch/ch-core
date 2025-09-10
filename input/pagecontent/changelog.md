@@ -5,6 +5,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Added
 
 #### Changed / Updated
+* [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid
 * [#308](https://github.com/hl7ch/ch-core/issues/308): Update slicing (system instead $this)
 
 #### Fixed
