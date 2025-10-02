@@ -7,6 +7,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed / Updated
 * [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid
 * [#308](https://github.com/hl7ch/ch-core/issues/308): Update slicing (system instead $this)
+* [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
 
 #### Fixed
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic

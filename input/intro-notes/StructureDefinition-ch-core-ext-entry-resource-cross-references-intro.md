@@ -10,4 +10,9 @@ you create a new document - or a copy of - with the same content.
   * The *container* slice will be filled with the Identifier and resource type of the Composition in the original document.
   * The *relationcode* slice will be set with the corresponding code (i.e. replaces).
 
+The following graphic describes the two documents with their entries and the extension with the references:
+<div>{% include img.html img="ch-core-ext-entry-resource-cross-references.png" caption="Fig.: Entry Cross Refenrenc Extension" width="40%" %}</div>
+
 You can use this extension for all kind of resources and containers.
+
+
