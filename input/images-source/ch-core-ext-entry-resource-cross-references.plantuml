@@ -1,0 +1,41 @@
+@startuml
+
+component "Originaldocument A" as doca #Pink {
+  component "Composition A" as compa #LightBlue {
+    component "section A1" as seca1 {
+    }
+    component "section A2" as seca2 {
+    }
+    component "section A3" as seca3 {
+    }
+  }
+  component "Entry A1" as enta1 #LightYellow {
+  }
+  component "Entry A2" as enta2 #LightYellow {
+  }
+  component "Entry A3" as enta3 #LightYellow {
+  }
+}
+seca1 -d[#Grey]-> enta1
+seca2 -d[#Grey]-> enta2
+seca3 -d[#Grey]-> enta3
+
+component "Document Replacing A as B" as docb #Pink {
+  component "Composition B" as compb #LightBlue {
+    component "section B1" as secb1 {
+    }
+  }
+  component "Entry B1" as entb1 #LightYellow {
+    component "Extension Entry Resource Cross Reference" as extb1 #LightGreen {
+      card "relationcode: #replaces"
+      card container as container 
+      card entry as entry
+    }
+  }
+}
+
+container -l[#Red,thickness=3]-> compa #Red
+entry -l[#Red,thickness=3]-> enta1
+secb1 -d[#Grey]-> entb1
+
+@enduml
