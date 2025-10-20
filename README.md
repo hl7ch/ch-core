@@ -44,3 +44,4 @@ java -jar validator_cli.jar [file path] -version 4.0.1 -ig ch.fhir.ig.ch-core#cu
 ```
 
 In case the current published IG (#current) is not found, replace #current with the current version (e.g. #1.0.0) of the published IG (http://fhir.ch/ig/ch-core/history.html)
+
