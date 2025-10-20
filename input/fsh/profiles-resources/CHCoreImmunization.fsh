@@ -30,11 +30,12 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * vaccineCode ^binding.extension[=].extension[+].url = "purpose"
 * vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
 * vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
-* vaccineCode ^binding.extension[=].extension[=].valueCanonical = $SwissImunglobulineVS
+* vaccineCode ^binding.extension[=].extension[=].valueCanonical = $SwissImmunoglobulinVS
 * vaccineCode ^binding.extension[=].extension[+].url = "documentation"
-* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a vaccines value set out of the Swissmedic Immunglobuline code system."
+* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a vaccines value set out of the Swissmedic Immunoglobulin code system."
 * vaccineCode ^binding.extension[=].extension[+].url = "shortDoco"
-* vaccineCode ^binding.extension[=].extension[=].valueString = "For when Swissmedic Immunglobuline code system is preferred"
+* vaccineCode ^binding.extension[=].extension[=].valueString = "For when Swissmedic Immunoglobulin code system is preferred"
+
 
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
