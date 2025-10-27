@@ -41,8 +41,8 @@ This document presents Swiss use concepts defined via FHIR processable artifacts
 
 See also the **guidance** section with detailed descriptions about some special topics:
 * [Usage of CH Core Profiles](usage-core-profiles.html)
-* [SNOMED CT Swiss Extension](guidance.html#sct-swiss-ext.html)
-* [Readable Representation of EPR Documents](readable-representation-epr-docs)
+* [SNOMED CT Swiss Extension](sct-swiss-ext.html)
+* [Readable Representation of EPR Documents](readable-representation-epr-docs.html)
 
 ### Governance
 The CH Core implementation guide is managed by HL7 Switzerland in the [HL7 Switzerland FHIR technical committee](https://www.hl7.ch/technisches-komitee/), see also [source](https://github.com/hl7ch/ch-core).
