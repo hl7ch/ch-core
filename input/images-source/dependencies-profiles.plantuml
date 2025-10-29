@@ -1,0 +1,17 @@
+@startuml
+
+skinparam componentStyle rectangle
+skinparam defaultTextAlignment left
+
+
+component "**CH Term Value Set:**\n<color:purple>EDQM - Pharmaceutical Dose Form</color>" as term #white;line:darkred;line.bold
+component "**CH Core Medication Profile**\n- code:GTIN <color:grey>(Slice defined in CH Core)</color>\n- form -> <color:purple>EDQM - Pharmaceutical Dose Form (preferred)</color> <color:grey>(VS defined in CH Term)</color>\n- amount -> <color:green>CH EMED Ratio with EMED Units</color> <color:grey>(Data Type defined in CH Core)</color>\n- etc." as core #white;line:darkred;line.bold
+component "**CH EMED Medication Profile**\n- code:GTIN <back:yellow>MS</back> <color:grey>(Slice defined in CH Core)</color>\n- form <back:yellow>MS</back> -> <color:purple>EDQM - Pharmaceutical Dose Form (<back:yellow>required</back>)</color> <color:grey>(VS defined in CH Term)</color>\n- amount -> <color:green>CH EMED Ratio with EMED Units</color> <color:grey>(Data Type defined in CH Core)</color>\n- etc." as emed #white;line:navy;line.bold
+component "**CH IPS Medication Profile**\n- <back:yellow>imposeProfile Extension -> Medication IPS</back> <color:grey>(to check conformity to UV IPS)</color>\n- code:GTIN <color:grey>(Slice defined in CH Core)</color>\n- form -> <color:purple>EDQM - Pharmaceutical Dose Form (preferred)</color> <color:grey>(VS defined in CH Term)</color>\n- amount -> <color:green>CH EMED Ratio with EMED Units</color> <color:grey>(Data Type defined in CH Core)</color>\n- etc." as ips #white;line:navy;line.bold
+
+
+term <-- core #grey : <color:grey>derived</color>
+core <-- emed #grey : <color:grey>derived</color>
+core <-- ips #grey : <color:grey>derived</color>
+
+@enduml

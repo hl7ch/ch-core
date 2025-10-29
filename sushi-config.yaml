@@ -36,8 +36,8 @@ dependencies:
 pages:
   index.md:
     title: Home
-  usage-core-profiles.md:
-    title: Usage of CH Core Profiles
+  usage-swiss-core-artifacts.md:
+    title: Usage of Swiss Core Artifacts
   sct-swiss-ext.md:
     title: SNOMED CT Swiss Extension  
   readable-representation-epr-docs.md:
@@ -52,7 +52,7 @@ pages:
 menu:
   Home: index.html
   Guidance: 
-    Usage of CH Core Profiles: usage-core-profiles.html
+    Usage of Swiss Core Artifacts: usage-swiss-core-artifacts.html
     SNOMED CT Swiss Extension: sct-swiss-ext.html
     Readable Representation of EPR Documents: readable-representation-epr-docs.html
   Profiles: profiles.html

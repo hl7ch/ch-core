@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 6 (2025-12)
 
 #### Added
+* [#394](https://github.com/hl7ch/ch-core/issues/394): Guidance - Usage of Swiss Core Artifacts
 
 #### Changed / Updated
 * [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid

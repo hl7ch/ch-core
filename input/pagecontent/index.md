@@ -40,7 +40,7 @@ This document presents Swiss use concepts defined via FHIR processable artifacts
 * [Terminology](https://fhir.ch/ig/ch-term/index.html) - defined or referenced code systems and value sets for Switzerland. 
 
 See also the **guidance** section with detailed descriptions about some special topics:
-* [Usage of CH Core Profiles](usage-core-profiles.html)
+* [Usage of Swiss Core Artifacts](usage-swiss-core-artifacts.html)
 * [SNOMED CT Swiss Extension](sct-swiss-ext.html)
 * [Readable Representation of EPR Documents](readable-representation-epr-docs.html)
 

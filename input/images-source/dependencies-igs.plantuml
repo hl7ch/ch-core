@@ -1,0 +1,18 @@
+@startuml
+
+skinparam componentStyle rectangle
+skinparam defaultTextAlignment center
+
+
+component "**CH Term**\nSwiss Terminology" as term #white;line:darkred;line.bold
+component "**CH Core**\nSwiss Core Profiles,\nEPR Concepts" as core #white;line:darkred;line.bold
+component "**CH EMED**\nMedication" as emed #white;line:navy;line.bold
+component "**CH IPS**\nPatient Summary" as ips #white;line:navy;line.bold
+component "**CH ...**\nOther Exchange Formats" as others #white;line:navy;line.bold
+
+term <-- core #grey : <color:grey>derived</color>
+core <-- emed #grey : <color:grey>derived</color>
+core <-- ips #grey : <color:grey>derived</color>
+core <-- others #grey : <color:grey>derived</color>
+
+@enduml
