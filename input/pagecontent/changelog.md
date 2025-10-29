@@ -1,4 +1,4 @@
-All significant changes to this FHIR implementation guide will be documented on this page.   
+All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 6 (2025-12)
 
