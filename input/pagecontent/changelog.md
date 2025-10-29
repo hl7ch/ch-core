@@ -10,6 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
 
 #### Fixed
+* [#354](https://github.com/hl7ch/ch-core/issues/354)/[#368](https://github.com/hl7ch/ch-core/issues/368)/[#388](https://github.com/hl7ch/ch-core/issues/388): Replace deprecated extension iso21090-SC-coding with iso21090-codedString
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
 * [#364](https://github.com/hl7ch/ch-core/issues/364): Add missing extension context for ch-ext-author
 * [#363](https://github.com/hl7ch/ch-core/issues/363): Invalid extension context

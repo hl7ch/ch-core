@@ -14,7 +14,7 @@ Description: "Test Patient from UPI for Swiss EPR Projectathon"
 * extension[placeOfBirth].valueAddress.city.extension[bfs].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-7-municipalityid"
 * extension[placeOfBirth].valueAddress.city.extension[bfs].valueString = "261"
 * extension[placeOfBirth].valueAddress.city = "Zürich"
-* extension[placeOfBirth].valueAddress.country.extension[countrycode].url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* extension[placeOfBirth].valueAddress.country.extension[countrycode].url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * extension[placeOfBirth].valueAddress.country.extension[countrycode].valueCoding = urn:iso:std:iso:3166#CH
 * extension[placeOfBirth].valueAddress.country = "Switzerland"
 
