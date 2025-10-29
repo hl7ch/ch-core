@@ -22,7 +22,7 @@ Description: "Patient with insurance card number as identifier, contact details,
 * address[=].postalCode = "2500"
 * address[=].state = "BE"
 * address[=].country = "Schweiz"
-* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 /* test cases for invariant ch-addr-2 
 // [1] ch-addr-2 correct
@@ -32,7 +32,7 @@ Description: "Patient with insurance card number as identifier, contact details,
 * address[=].postalCode = "2500"
 * address[=].state = "BE"
 * address[=].country = "Schweiz"
-* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CHE
 // [2] ch-addr-2 correct
 * address[+].use = #home
@@ -48,7 +48,7 @@ Description: "Patient with insurance card number as identifier, contact details,
 * address[=].postalCode = "2500"
 * address[=].state = "BE"
 * address[=].country = "Schweiz"
-* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * address[=].country.extension.valueCoding = urn:iso:std:iso:3166#DE
 // [4] ch-addr-2 incorrect
 * address[+].use = #home
@@ -57,7 +57,7 @@ Description: "Patient with insurance card number as identifier, contact details,
 * address[=].postalCode = "2500"
 * address[=].state = "Bern"
 * address[=].country = "Schweiz"
-* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CH
 // [5] ch-addr-2correct
 * address[+].use = #home
@@ -66,7 +66,7 @@ Description: "Patient with insurance card number as identifier, contact details,
 * address[=].postalCode = "2500"
 * address[=].state = "Bern"
 * address[=].country = "Schweiz"
-* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * address[=].country.extension.valueCoding = urn:iso:std:iso:3166#DE
 */
 * maritalStatus.coding[0] = $ech-11-maritalstatus#2 "verheiratet"

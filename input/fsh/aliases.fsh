@@ -42,7 +42,7 @@ Alias: $ech-11-maritalstatus =                      http://fhir.ch/ig/ch-core/Co
 Alias: $ech-11 =                                    http://fhir.ch/ig/ch-core/CodeSystem/ech-11
 
 Alias: $patient-birthPlace =                        http://hl7.org/fhir/StructureDefinition/patient-birthPlace
-Alias: $iso21090-SC-coding =                        http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding
+Alias: $iso21090-SC-coding =                        http://hl7.org/fhir/StructureDefinition/iso21090-codedString
 Alias: $iso21090-ADXP-streetName =                  http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName
 Alias: $iso21090-ADXP-houseNumber =                 http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber
 Alias: $iso21090-ADXP-unitID =                      http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID

@@ -63,7 +63,7 @@ Description: "Patient eCH-011 with names, marital status and separation type, de
 * contact.address.line[=].extension[=].valueString = "12345678"
 * contact.address.city = "Ort"
 * contact.address.postalCode = "PLZ"
-* contact.address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+* contact.address.country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * contact.address.country.extension.valueCoding = urn:iso:std:iso:3166#CH
 * contact.address.country = "Schweiz"
 // Zustelladresse falls es nicht die Adresse des Patienten direkt ist

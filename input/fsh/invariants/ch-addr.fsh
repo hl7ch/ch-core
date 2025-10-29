@@ -7,7 +7,7 @@ Expression: "((value.code.length()=2) and value.code.memberOf('http://hl7.org/fh
 Invariant: ch-addr-2
 Description: "For a Swiss address, a canton abbreviation from the value set 'eCH-0007 Canton Abbreviation' must be used."
 Severity: #error
-Expression: "country.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').empty() or 
-            (country.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').value.code.startsWith('CH') = false) or 
-            (country.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding').value.code.startsWith('CH').exists() and 
+Expression: "country.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString').empty() or 
+            (country.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString').value.code.startsWith('CH') = false) or 
+            (country.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-codedString').value.code.startsWith('CH').exists() and 
              (state.empty() or state.memberOf('http://fhir.ch/ig/ch-core/ValueSet/ech-7-cantonabbreviation')))"
