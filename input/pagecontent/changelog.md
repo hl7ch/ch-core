@@ -1,10 +1,11 @@
-All significant changes to this FHIR implementation guide will be documented on this page.   
+All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 6 (2025-12)
 
 #### Added
 
 #### Changed / Updated
+* [#339](https://github.com/hl7ch/ch-core/issues/339): Fix Immunization immunoglobulin valueset url
 * [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid
 * [#308](https://github.com/hl7ch/ch-core/issues/308): Update slicing (system instead $this)
 * [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
@@ -21,8 +22,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 ### STU 6 Ballot (2025-05-22)
 
 #### Added
-* [#330](https://github.com/hl7ch/ch-core/issues/330): Add new VS imunglobulines for vaccinecode to Immunization
 * [#333](https://github.com/hl7ch/ch-core/issues/333): Refactor binding of vaccineCode VS (Adapt Immunization to IPS (2.0.0))
+* [#330](https://github.com/hl7ch/ch-core/issues/330): Add new VS immunoglobulins for vaccinecode to Immunization
 * [#292](https://github.com/hl7ch/ch-core/issues/292): CH Core Claim profile, example, mapping to 'Forum Datenaustausch'
 * [#309](https://github.com/hl7ch/ch-core/issues/309): Add warning to ZSR
 * [#344](https://github.com/hl7ch/ch-core/issues/344): New base profile CH Core RelatedPerson
