@@ -10,7 +10,7 @@ Description: "eCH-0011: Extension to define name type"
 * url only uri
 * valueCode 0..1
 * valueCode only code
-* valueCode from $ech-11-namedatatype (extensible)
+* valueCode from $ech-11-namedatatype (required)
 * valueCode ^short = "Value of extension"
 * valueCode ^definition = "Value of extension - may be a resource or one of a constrained set of the data types (see\r\n       Extensibility in the spec for list)."
 * valueCode ^binding.description = "A set of codes advising a system or user which name in a set of names to select for a\r\n         given purpose."
