@@ -11,9 +11,6 @@ This guide is a working specification. We anticipate that it will be implemented
 
 <div markdown="1" class="stu-note">
 
-This implementation guide is under STU ballot by [HL7 Switzerland](https://www.hl7.ch/de/) until September 30th, 2025 midnight.   
-Please add your feedback via the ‘Propose a change’-link in the footer on the page where you have comments.
-
 [Changelog](changelog.html) with significant changes, open and closed issues.
 
 </div>
@@ -42,9 +39,10 @@ This document presents Swiss use concepts defined via FHIR processable artifacts
 * [Extensions](extensions.html) -  FHIR extensions that are added for local use, covering necessary Swiss concepts. 
 * [Terminology](https://fhir.ch/ig/ch-term/index.html) - defined or referenced code systems and value sets for Switzerland. 
 
-See also the guidance section with detailed descriptions about some special topics:
-* [SNOMED CT Swiss Extension](guidance.html#snomed-ct-swiss-extension)
-* [Readable Representation of EPR Documents](guidance.html#readable-representation-of-epr-documents)
+See also the **guidance** section with detailed descriptions about some special topics:
+* [Usage of Swiss Core Artifacts](usage-swiss-core-artifacts.html)
+* [SNOMED CT Swiss Extension](sct-swiss-ext.html)
+* [Readable Representation of EPR Documents](readable-representation-epr-docs.html)
 
 ### Governance
 The CH Core implementation guide is managed by HL7 Switzerland in the [HL7 Switzerland FHIR technical committee](https://www.hl7.ch/technisches-komitee/), see also [source](https://github.com/hl7ch/ch-core).
