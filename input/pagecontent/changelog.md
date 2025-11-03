@@ -15,6 +15,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Issues resolved without amendment (in IG)
 * [#360](https://github.com/hl7ch/ch-core/issues/360): CH Core Composition EPR: VS binding (Composition.category)
+* [#308](https://github.com/hl7ch/ch-core/issues/308), [#389](https://github.com/hl7ch/ch-core/issues/389): Keep the slicing discriminator $this for Organization.identifier to differentiate GLN's by type for insurance organizations
 
 ### STU 6 Ballot (2025-05-22)
 
