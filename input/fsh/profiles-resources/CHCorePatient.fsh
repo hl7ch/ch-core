@@ -113,7 +113,7 @@ Target: "http://www.ech.ch/"
 * maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: separation - Trennung BFS-343"
 * contact[contact] -> "eCH-0011: contactData, BFS-61"
 * contact[nameOfParent] -> "eCH-0021: nameOfParent"
-* communication[languageOfCorrespondence] -> "eCH-0011: languageOfCorrespondence: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
+* communication -> "eCH-0011: languageOfCorrespondence: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
 
 Mapping: v2-for-CHCorePatient
 Id: v2
