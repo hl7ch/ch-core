@@ -39,6 +39,9 @@ The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
+# known issue in IG Publisher
+No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+
 # Reference to draft/experimental terminology
 Reference to draft CodeSystem%
 
