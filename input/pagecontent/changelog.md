@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#394](https://github.com/hl7ch/ch-core/issues/394): Guidance - Usage of Swiss Core Artifacts
 
 #### Changed / Updated
+* [#379](https://github.com/hl7ch/ch-core/issues/379): Allow multiple legal authenticators by removing attester:legalAuthenticator slice constraint
 * [#339](https://github.com/hl7ch/ch-core/issues/339): Fix Immunization immunoglobulin valueset url
 * [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid
 * [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
