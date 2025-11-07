@@ -90,16 +90,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * contact[nameOfParent].relationship ..1
 * contact[nameOfParent].relationship = $v3-RoleCode#PRN
 * contact[nameOfParent].name 1..
-* communication ^slicing.discriminator.type = #value
-* communication ^slicing.discriminator.path = "preferred"
-* communication ^slicing.ordered = false
-* communication ^slicing.rules = #open
-* communication contains 
-    languageOfCorrespondence 0..1
-* communication[languageOfCorrespondence] ^short = "Language of correspondence"
-* communication[languageOfCorrespondence].preferred 1..
-* communication[languageOfCorrespondence].preferred = true (exactly)
-
 
 
 Mapping: eCH-for-CHCorePatient
