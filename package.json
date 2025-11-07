@@ -1,0 +1,31 @@
+{
+  "name": "ch.fhir.ig.ch-core",
+  "version": "6.0.0",
+  "description": "CH Core (R4) FHIR Implementation Guide - Core FHIR profiles for Switzerland",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hl7ch/ch-core.git"
+  },
+  "author": "HL7 Switzerland",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build:ig": "./scripts/_genonce.sh",
+    "build:ig:continuous": "./scripts/_gencontinuous.sh",
+    "update:publisher": "cd scripts && ._updatePublisher.sh",
+    "serve:ig": "cd output && http-server -p 8080",
+    "open:ig": "open output/index.html"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": [
+    "fhir",
+    "hl7",
+    "switzerland",
+    "ch-core",
+    "implementation-guide",
+    "healthcare",
+    "ech-standards",
+    "epr"
+  ]
+} 
