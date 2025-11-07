@@ -6,7 +6,8 @@ Representation (display) of FHIR Documents (Bundle) in the the context of the Sw
 
 <p class="dragon">
 In a future version, the approach for including the original representation may change to align with european or universal approaches, such as using the R5 Composition.relatesTo backport extension or other mechanisms as described in <a href="https://github.com/hl7ch/ch-core/issues/380">#380</a>. The current implementation is maintained for backward compatibility with existing systems.
-<p>
+
+</p>
 
 ### Including the PDF in the FHIR Document
 To include the PDF in the FHIR document, it is added to the Bundle ([CH Core Document EPR profile](StructureDefinition-ch-core-document-epr.html)) as an entry containing a [Binary resource](https://hl7.org/fhir/R4/binary.html). The section `originalRepresentation` in the Composition ([CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html)) contains narrative text with an HTML element that is linked to the Binary resource through the [textLink extension](https://hl7.org/fhir/extensions/5.3.0-ballot-tc1/StructureDefinition-textLink.html) (5.3.0-ballot-tc1 version), which formally establishes the connection between the HTML element's ID and the referenced Binary resource, following [IPS best practices for linking narrative content to structured data](https://build.fhir.org/ig/HL7/fhir-ips/Design-Conventions.html#linking-narrative-to-discrete-fhir-resources) (current version).
