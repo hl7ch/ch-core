@@ -18,6 +18,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#363](https://github.com/hl7ch/ch-core/issues/363): Invalid extension context
 
 #### Issues resolved without amendment (in IG)
+* [#371](https://github.com/hl7ch/ch-core/issues/371): QA deprecation warnings from base FHIR spec (regex, maxValueSet extensions inherited from dependencies; added to ignoreWarnings.txt)
 * [#360](https://github.com/hl7ch/ch-core/issues/360): CH Core Composition EPR: VS binding (Composition.category)
 * [#308](https://github.com/hl7ch/ch-core/issues/308), [#389](https://github.com/hl7ch/ch-core/issues/389): Keep the slicing discriminator $this for Organization.identifier to differentiate GLN's by type for insurance organizations
 
@@ -71,6 +72,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#306](https://github.com/hl7ch/ch-core/issues/306): Replace deprecated discriminator (`pattern` -> `value`)
 
 #### Issues resolved without amendment (in IG)
+* [#371](https://github.com/hl7ch/ch-core/issues/371): QA deprecation warnings from base FHIR spec (regex, maxValueSet extensions inherited from dependencies; added to ignoreWarnings.txt)
 * [#289](https://github.com/hl7ch/ch-core/issues/289): Validation issue with display values; fixed with new version of IG publisher
 
 
@@ -170,6 +172,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#152](https://github.com/hl7ch/ch-core/issues/152): Changes status form 'draft' to 'active'
 
 #### Issues resolved without amendment (in IG)
+* [#371](https://github.com/hl7ch/ch-core/issues/371): QA deprecation warnings from base FHIR spec (regex, maxValueSet extensions inherited from dependencies; added to ignoreWarnings.txt)
 * [#39](https://github.com/hl7ch/ch-core/issues/39): Consent code for ch-epr has been added in [hl7.terminology](https://terminology.hl7.org/4.0.0/CodeSystem-consentpolicycodes.html) published 2022-09-14	(version 4.0.0)
 * [#174](https://github.com/hl7ch/ch-core/issues/174): Verification/confirmation that the eCH-011 values for gender are still up-to-date
 * [#157](https://github.com/hl7ch/ch-core/issues/157): Fixed dead link on the [HL7.ch FHIR IG Balloting](https://github.com/hl7ch/ch-core/wiki/HL7.ch-FHIR-IG-Balloting) page
