@@ -25,7 +25,7 @@ Description: "Example for CH Core Claim"
   * sequence = 1
   * diagnosisCodeableConcept
     * coding
-      * system = "http://fhir.de/CodeSystem/dimdi/icd-10-gm" // https://hl7.org/fhir/R4/icd.html#variants
+      * system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm" // https://ig.fhir.de/basisprofile-de/stable/ig-markdown-Condition-CodeSystem.html
       * code = #J18.9
     * text = "Sonstige Schizophrenie"
 * insurance 
