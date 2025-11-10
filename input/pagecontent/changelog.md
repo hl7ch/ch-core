@@ -32,7 +32,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#344](https://github.com/hl7ch/ch-core/issues/344): New base profile CH Core RelatedPerson
 
 #### Changed / Updated
-* [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#318](https://github.com/hl7ch/ch-core/issues/318): Relax minimum cardinality of Location.name from 1 to 0
 * [#328](https://github.com/hl7ch/ch-core/issues/328): Deprecate CH Core DocumentReference EPR
 * [#323](https://github.com/hl7ch/ch-core/issues/323): Clarification of the correct use of the Patient Citizenship Extension for Staatsangehörigkeit/Nationalité (eCH)
@@ -64,7 +63,6 @@ During the ballot, the following comments came in, which will be taken into acco
 See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 
 #### Changed / Updated
-* [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#303](https://github.com/hl7ch/ch-core/issues/303): Entry Resource Cross References, Usage/Description
 * [#294](https://github.com/hl7ch/ch-core/issues/294): Differentiation of severity of constraint ch-pat-1 for CH Core Patient (warning) and CH Core Patient EPR (error)
 * [#293](https://github.com/hl7ch/ch-core/issues/293): Clarification of the description for Patient.gender
@@ -92,7 +90,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
    * Coverage.class.type -> http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-21-encountertype (extensible)
 
 #### Changed / Updated
-* [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#272](https://github.com/hl7ch/ch-core/issues/272): Update the CHCoreDocumentReference EPR-XDS mapping
 * [#269](https://github.com/hl7ch/ch-core/issues/269): max cardinality for only one gln for practitioner
 * [CH Term #23](https://github.com/hl7ch/ch-epr-term/issues/23): Changes according to the renaming of CH EPR Term to CH Term
@@ -112,7 +109,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#262](https://github.com/hl7ch/ch-core/issues/262): New extension to reference entries in i.e. other documents
 
 #### Changed / Updated
-* [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#242](https://github.com/hl7ch/ch-core/issues/242): Update the description for type of [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html)
 * [#238](https://github.com/hl7ch/ch-core/issues/238): Update context of [Extension EPR Time](StructureDefinition-ch-ext-epr-time.html) with MedicationRequest.requester
 * [#246](https://github.com/hl7ch/ch-core/issues/246): Only allow an UUID as Bundle.identifier in the EPR context
@@ -134,7 +130,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#224](https://github.com/hl7ch/ch-core/issues/224): Forum Datenaustausch tariff Naming System
 
 #### Changed / Updated
-* [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#206](https://github.com/hl7ch/ch-core/issues/206): Improve acronyms definition
 * [#191](https://github.com/hl7ch/ch-core/issues/191): [CH Core Patient](StructureDefinition-ch-core-patient.html) - Relax max cardinality to * for EPR-SPID and AHVN13
 * [#195](https://github.com/hl7ch/ch-core/issues/195): [CH Core Address](StructureDefinition-ch-core-address.html) - Add extension iso21090-ADXP-streetName to CH Core Address line
@@ -158,7 +153,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#158](https://github.com/hl7ch/ch-core/issues/158), [#189](https://github.com/hl7ch/ch-core/issues/189): Include new IG fragments (IP Statements, Cross Version Analysis, Dependency Table, Globals Table); CH Core can be used for both R4 and R4B, packages are available for both versions
 
 #### Changed / Updated
-* [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#150](https://github.com/hl7ch/ch-core/issues/150): Expansion of the context of the extension [EPR Time](StructureDefinition-ch-ext-epr-time.html)
 * [#160](https://github.com/hl7ch/ch-core/issues/160): Slicing on repeating element
 * [#154](https://github.com/hl7ch/ch-core/issues/154): Improve description of example instances, see [Artifacts](artifacts.html#example-example-instances)
@@ -191,7 +185,6 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#131](https://github.com/hl7ch/ch-core/issues/131): Update change log/STU note box according to the latest requirements
   
 #### Changed / Updated
-* [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#133](https://github.com/hl7ch/ch-core/issues/133): Fix example OIDs
 * [#129](https://github.com/hl7ch/ch-core/issues/129): Wrong slicing for Composition.author.extension:ch-ext-epr-time profiles/structures
 * [#144](https://github.com/hl7ch/ch-core/issues/144): Improve slicing that info entry[x] warnings are not shown (CH Core Document, CH Core Document EPR)
