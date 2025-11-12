@@ -1,4 +1,4 @@
 Invariant: epr-spid-length
-Description: "EPR-SPID must be exactly 18 characters long"
+Description: "EPR-SPID must start with 76133761 followed by 10 digits"
 Severity: #warning
-Expression: "matches('^[0-9]{18}$')"
+Expression: "matches('^76133761[0-9]{10}$')"
