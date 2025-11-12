@@ -6,8 +6,10 @@ This guide is a working specification. We anticipate that it will be implemented
 - The guide defines extensions that are necessary for local use in Switzerland.
 - The guide covers the requirements for [eCH-0010 postal address (V7.0)](https://www.ech.ch/de/ech/ech-0010/7.0), [eCH-0046 contact (V5.0)](https://www.ech.ch/de/ech/ech-0046/5.0) and [eCH-0011 personal data (V8.1)](https://www.ech.ch/de/ech/ech-0011/8.1) (including [eCH-0007 municipality (V6.0)](https://www.ech.ch/de/ech/ech-0007/6.0) and [eCH-0021 additional personal data (V7.0)](https://www.ech.ch/de/ech/ech-0021/7.0)).
 - The guide incorporates Federal Statistics Office (BFS) variables for medical statistics. See [BFS](https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken/publikationen.assetdetail.7066232.html) (available in German, French and Italian).
-
-**Note**: This implementation guide is not (yet) a FHIR API specification, this will be a goal for the next iteration.
+- The guide does not define additions to the FHIR API, for further FHIR API definitions please refer to:
+  - [CH EPR FHIR](http://fhir.ch/ig/ch-epr-fhir/) - Swiss EPR FHIR Implementation Guide
+  - [IPA (International Patient Access)](https://hl7.org/fhir/uv/ipa/) - International FHIR API specification for patient access
+  - or other FHIR Implementation Guides
 
 <div markdown="1" class="stu-note">
 

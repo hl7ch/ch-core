@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#394](https://github.com/hl7ch/ch-core/issues/394): Guidance - Usage of Swiss Core Artifacts
 
 #### Changed / Updated
+* [#369](https://github.com/hl7ch/ch-core/issues/369): Updated scope note on index page (replaced outdated API specification note with links to CH EPR FHIR and IPA)
 * [#370](https://github.com/hl7ch/ch-core/issues/370): Clarified CHCoreEPRConsent description (used in external systems to track EPR status, not for managing consent within EPR)
 * [#377](https://github.com/hl7ch/ch-core/issues/377): Deprecate ch-ext-epr-dataenterer and ch-ext-epr-time extensions (CDA origin; will be removed in future version)
 * [#339](https://github.com/hl7ch/ch-core/issues/339): Fix Immunization immunoglobulin valueset url
