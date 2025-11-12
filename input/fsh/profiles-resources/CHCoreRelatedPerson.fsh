@@ -21,12 +21,3 @@ Description: "Base definition of the RelatedPerson resource for use in Swiss spe
 * telecom[phone] only CHCoreContactPointECH46Phone
 * telecom[internet] only CHCoreContactPointECH46Internet
 * address only CHCoreAddress
-* communication ^slicing.discriminator.type = #value
-* communication ^slicing.discriminator.path = "preferred"
-* communication ^slicing.ordered = false
-* communication ^slicing.rules = #open
-* communication contains 
-    languageOfCorrespondence 0..1
-* communication[languageOfCorrespondence] ^short = "Language of correspondence"
-* communication[languageOfCorrespondence].preferred 1..
-* communication[languageOfCorrespondence].preferred = true (exactly)

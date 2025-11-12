@@ -37,7 +37,10 @@ INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition​.snaps
 # Build error or cause by underlying profile (snapshot)
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+
+# information warnings from core spec using extensions which are deprecated see #371
+The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|%
+The extension http://hl7.org/fhir/StructureDefinition/regex|%
 
 # known issue in IG Publisher
 No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
