@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#394](https://github.com/hl7ch/ch-core/issues/394): Guidance - Usage of Swiss Core Artifacts
 
 #### Changed / Updated
+* [#382](https://github.com/hl7ch/ch-core/issues/382): Allow multiple preferred languages by removing communication slicing constraint
 * [#380](https://github.com/hl7ch/ch-core/issues/380): Add note to originalRepresentation section that approach may change in future version to align with European or universal approaches
 * [#369](https://github.com/hl7ch/ch-core/issues/369): Updated scope note on index page (replaced outdated API specification note with links to CH EPR FHIR and IPA)
 * [#370](https://github.com/hl7ch/ch-core/issues/370): Clarified CHCoreEPRConsent description (used in external systems to track EPR status, not for managing consent within EPR)
