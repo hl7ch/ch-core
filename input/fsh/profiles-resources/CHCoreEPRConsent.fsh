@@ -2,8 +2,11 @@ Profile: CHCoreEPRConsent
 Parent: Consent
 Id: ch-core-epr-consent
 Title: "CH Core EPR-Consent"
-Description: "Definition of the Consent resource to document that a patient has an electronic patient record (EPR) in Switzerland. The actual consent conditions are held within the EPR, this consent is the documentation in an organization that the patient has stated he/she has an EPR and this needs to be verified at the time of document publishing or reading. In addition a patient can request that specific information will not be published from the organization to the EPR. This can be documented with one or more references to encounters to exclude the consent for these."
+Description: "Definition of the Consent resource to document in an external system (outside the EPR) that a patient has an electronic patient record (EPR) in Switzerland. 
+This profile is used by healthcare organizations to track which patients have an EPR. Optionally, specific encounters can be excluded from EPR publication by referencing them in the provision element, documenting the patient's request that certain information should not be published to their EPR. 
 
+Note: This profile is NOT used to manage actual consent conditions within the EPR itself - those are managed through proper PPQ Consents (see CH EPR FHIR IG).
+"
 * . ^short = "CH Core EPR-Consent"
 * scope = $consentscope#patient-privacy
 * category ^slicing.discriminator[0].type = #value
@@ -29,8 +32,8 @@ Description: "Definition of the Consent resource to document that a patient has 
 * provision.type 1..
 * provision.type = #deny (exactly)
 * provision.type ^short = "deny"
-* provision.type ^definition = "Encounters can be added here where the consent for the EPR does not apply."
+* provision.type ^definition = "Encounters can be added here where the consent for publication to the EPR do not apply."
 * provision.data.meaning = #instance (exactly)
 * provision.data.reference only Reference(CHCoreEncounter)
 * provision.data.reference ^short = "Excluded encounter for EPR"
-* provision.data.reference ^definition = "A reference to the encounter where the consent for the EPR does not apply."
+* provision.data.reference ^definition = "A reference to the encounter where the consent for publication to the EPR do not apply."

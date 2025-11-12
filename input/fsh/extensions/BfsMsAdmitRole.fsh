@@ -7,7 +7,7 @@ Description: "BFS Extension Admit Role for Encounter"
 * ^context.expression = "Encounter.hospitalization"
 
 * url only uri
-* valueCoding 0..1
+* valueCoding 1..1
 * valueCoding only Coding
 * valueCoding from $bfs-medstats-19-admitrole_1 (extensible)
 * valueCoding ^short = "Value of extension"

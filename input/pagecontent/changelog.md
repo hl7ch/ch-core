@@ -7,11 +7,16 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed / Updated
 * [#380](https://github.com/hl7ch/ch-core/issues/380): Add note to originalRepresentation section that approach may change in future version to align with European or universal approaches
+* [#369](https://github.com/hl7ch/ch-core/issues/369): Updated scope note on index page (replaced outdated API specification note with links to CH EPR FHIR and IPA)
+* [#370](https://github.com/hl7ch/ch-core/issues/370): Clarified CHCoreEPRConsent description (used in external systems to track EPR status, not for managing consent within EPR)
+* [#377](https://github.com/hl7ch/ch-core/issues/377): Deprecate ch-ext-epr-dataenterer and ch-ext-epr-time extensions (CDA origin; will be removed in future version)
 * [#339](https://github.com/hl7ch/ch-core/issues/339): Fix Immunization immunoglobulin valueset url
 * [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid
 * [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
 
 #### Fixed
+* [#373](https://github.com/hl7ch/ch-core/issues/373): Require value[x] for simple extensions
+* [#372](https://github.com/hl7ch/ch-core/issues/372): Update identifier validation constraints to align with eCH-0108 standard (BER, UIDB regex patterns made more restrictive; AHVN13, VEKA, EPR-SPID constraints consolidated into single regex patterns)
 * [#381](https://github.com/hl7ch/ch-core/issues/381): Name extension binding strength changed from extensible to required (code data type cannot have extensible bindings)
 * [#354](https://github.com/hl7ch/ch-core/issues/354)/[#368](https://github.com/hl7ch/ch-core/issues/368)/[#388](https://github.com/hl7ch/ch-core/issues/388): Replace deprecated extension iso21090-SC-coding with iso21090-codedString
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
@@ -19,6 +24,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#363](https://github.com/hl7ch/ch-core/issues/363): Invalid extension context
 
 #### Issues resolved without amendment (in IG)
+* [#371](https://github.com/hl7ch/ch-core/issues/371): QA deprecation warnings from base FHIR spec (regex, maxValueSet extensions inherited from dependencies; added to ignoreWarnings.txt)
 * [#360](https://github.com/hl7ch/ch-core/issues/360): CH Core Composition EPR: VS binding (Composition.category)
 * [#308](https://github.com/hl7ch/ch-core/issues/308), [#389](https://github.com/hl7ch/ch-core/issues/389): Keep the slicing discriminator $this for Organization.identifier to differentiate GLN's by type for insurance organizations
 
