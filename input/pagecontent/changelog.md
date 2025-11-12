@@ -24,6 +24,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#363](https://github.com/hl7ch/ch-core/issues/363): Invalid extension context
 
 #### Issues resolved without amendment (in IG)
+* [#384](https://github.com/hl7ch/ch-core/issues/384): Keep ch-ext-author extension (needed for summary documents in vaccination and exchange formats; Provenance cannot directly solve it; the extension will likely not be needed anymore in R6)
 * [#378](https://github.com/hl7ch/ch-core/issues/378): Keep confidentialityCode extension (required by Swiss EPR regulations Annex 4 EPDV-EDI; in R6 confidentialityCode may be moved to Bundle.meta.security)
 * [#371](https://github.com/hl7ch/ch-core/issues/371): QA deprecation warnings from base FHIR spec (regex, maxValueSet extensions inherited from dependencies; added to ignoreWarnings.txt)
 * [#360](https://github.com/hl7ch/ch-core/issues/360): CH Core Composition EPR: VS binding (Composition.category)
