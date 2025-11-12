@@ -33,7 +33,7 @@ Description: "Definition of the Composition resource for use in the context of t
 * confidentiality.extension ^slicing.discriminator.path = "url"
 * confidentiality.extension ^slicing.rules = #open
 * confidentiality.extension contains EPRConfidentialityCode named confidentialityCode 1..1
-* attester.party only Reference(CHCorePatientEPR or CHCoreRelatedPerson or CHCorePractitionerEPR or CHCorePractitionerRoleEpr)
+* attester.party only Reference(CHCorePatientEPR or CHCoreRelatedPerson or CHCorePractitionerEPR or CHCorePractitionerRoleEpr or CHCoreOrganizationEPR)
 * custodian only Reference(CHCoreOrganizationEPR)
 * relatesTo.target[x] only Identifier or Reference(CHCoreCompositionEPR)
 
