@@ -1,8 +1,9 @@
 Extension: EPRTime
 Id: ch-ext-epr-time
 Title: "EPR Time"
-Description: "Additional timestamp for the author or other elements."
+Description: "Additional timestamp for the author or other elements. **Note:** This extension has its origin from CDA and is deprecated. It will be removed in a future version."
 
+* ^status = #retired
 * ^context[0].type = #element
 * ^context[=].expression = "Composition.author"
 * ^context[+].type = #element
@@ -12,7 +13,7 @@ Description: "Additional timestamp for the author or other elements."
 * ^context[+].type = #extension
 * ^context[=].expression = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"
 
-* . ^definition = "Extension to define the timestamp of the authorship/data input"
+* . ^definition = "Extension to define the timestamp of the authorship/data input. This extension has its origin from CDA and is deprecated."
 * value[x] 1..1
 * value[x] only dateTime
 * value[x] ^short = "Value of extension"

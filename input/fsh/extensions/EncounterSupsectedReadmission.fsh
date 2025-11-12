@@ -7,7 +7,7 @@ Description: "Encounter Extension for suspected readmission"
 * ^context.expression = "Encounter.hospitalization"
 
 * url only uri
-* valueBoolean 0..1
+* valueBoolean 1..1
 * valueBoolean only boolean
 * valueBoolean ^short = "Value of extension"
 * valueBoolean ^definition = "True if it is a suspected readmission, false otherwise"
