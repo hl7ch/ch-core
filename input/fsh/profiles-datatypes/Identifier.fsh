@@ -8,7 +8,7 @@ Description: "Identifier holding a 13 digit social security number. The number s
 * system 1..
 * system = "urn:oid:2.16.756.5.32" (exactly)
 * value 1..
-* value obeys ahvn13-length and ahvn13-startswith756 and ahvn13-digit-check
+* value obeys ahvn13-length and ahvn13-digit-check
 
 Profile: EPRSPIDIdentifier
 Parent: Identifier
@@ -18,17 +18,17 @@ Description: "EPR-SPID Identifier (https://www.fedlex.admin.ch/eli/cc/2017/205/d
 * system 1..
 * system = "urn:oid:2.16.756.5.30.1.127.3.10.3" (exactly)
 * value 1..
-* value obeys epr-spid-length and epr-spid-startswith76133761 and epr-spid-modulus-10
+* value obeys epr-spid-length and epr-spid-modulus-10
 
 Profile: VEKAIdentifier
 Parent: Identifier
 Id: ch-core-veka-identifier
 Title: "Insurance Card Number (Identifier)"
-Description: "Identifier in 20-digit format. The number shall have exactly 20 digits and start with 756."
+Description: "Identifier in 20-digit format. The number shall have exactly 20 digits and start with 807560."
 * system 1..
 * system = "urn:oid:2.16.756.5.30.1.123.100.1.1.1" (exactly)
 * value 1..
-* value obeys veka-length and veka-startswith807560
+* value obeys veka-length
 * period.end ^short = "Expiration date of the insurance card"
 
 
