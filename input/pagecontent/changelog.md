@@ -30,6 +30,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#371](https://github.com/hl7ch/ch-core/issues/371): QA deprecation warnings from base FHIR spec (regex, maxValueSet extensions inherited from dependencies; added to ignoreWarnings.txt)
 * [#360](https://github.com/hl7ch/ch-core/issues/360): CH Core Composition EPR: VS binding (Composition.category)
 * [#308](https://github.com/hl7ch/ch-core/issues/308), [#389](https://github.com/hl7ch/ch-core/issues/389): Keep the slicing discriminator $this for Organization.identifier to differentiate GLN's by type for insurance organizations
+* [#385](https://github.com/hl7ch/ch-core/issues/385), [#386](https://github.com/hl7ch/ch-core/issues/386): Decided to maintain existing OID-based system identifiers for GTIN and GLN codes instead of switching to HTTP URIs
 
 ### STU 6 Ballot (2025-05-22)
 
