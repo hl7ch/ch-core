@@ -9,4 +9,5 @@ Description: "The place of origin of the patient."
 * . ^short = "Place of origin for patient according to eCH-0011"
 * . ^definition = "The registered place of origin of the patient."
 * url only uri
+* valueAddress 1..1
 * valueAddress only CHCoreAddressECH11PlaceOfOrigin
