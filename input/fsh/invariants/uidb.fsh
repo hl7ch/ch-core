@@ -1,7 +1,7 @@
 Invariant: uidb-length
-Description: "UIDB must start with 'CHE' followed by 9 digits"
+Description: "UIDB must start with 'CHE' followed by a non-zero digit, then 8 more digits"
 Severity: #warning
-Expression: "matches('^CHE[0-9]{9}$')"
+Expression: "matches('^CHE[1-9][0-9]{8}$')"
 
 Invariant: uidb-modulus-11
 Description: "UIDB must pass the modulus 11 check"

@@ -8,7 +8,7 @@ Description: "eCH-0007: Extension to define a BFS Number for a municipality"
 
 * . ^definition = "Extension for eCH-0011 - bfs number (ministry of statistics number)"
 * url only uri
-* valueString 0..1
+* valueString 1..1
 * valueString only string
 * valueString ^short = "Value of extension"
 * valueString ^definition = "BFS number"

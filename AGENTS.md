@@ -54,6 +54,7 @@
 
 ## Commit & Pull Request Guidelines
 - When creating a new PR or commit first run npm build:ig, this can take a few minutes, only commit when the error count is not bigger than 1, analyze output/qa.html for detailed error message
+- Branch names: Use underscores instead of slashes (e.g., `issue123_fix_extension` not `issue/123/fix-extension`). Slashes in branch names can cause issues with ci-build.
 - Commits: Concise, imperative summaries (e.g., "Fix name extension binding strength").
 - Reference issues in commits (e.g., "#381").
 - Update changelog in input/pagecontent/changelog.md
