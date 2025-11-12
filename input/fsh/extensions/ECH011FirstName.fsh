@@ -9,7 +9,7 @@ Description: "eCH-0011: Extension to define first name type"
 * . ^short = "Extension"
 * . ^definition = "eCH-0011: Extension to define first name type"
 * url only uri
-* valueCode 0..1
+* valueCode 1..1
 * valueCode only code
 * valueCode from $ech-11-firstnamedatatype (required)
 * valueCode ^short = "Value of extension"

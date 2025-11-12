@@ -90,16 +90,6 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * contact[nameOfParent].relationship ..1
 * contact[nameOfParent].relationship = $v3-RoleCode#PRN
 * contact[nameOfParent].name 1..
-* communication ^slicing.discriminator.type = #value
-* communication ^slicing.discriminator.path = "preferred"
-* communication ^slicing.ordered = false
-* communication ^slicing.rules = #open
-* communication contains 
-    languageOfCorrespondence 0..1
-* communication[languageOfCorrespondence] ^short = "Language of correspondence"
-* communication[languageOfCorrespondence].preferred 1..
-* communication[languageOfCorrespondence].preferred = true (exactly)
-
 
 
 Mapping: eCH-for-CHCorePatient
@@ -123,7 +113,7 @@ Target: "http://www.ech.ch/"
 * maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: separation - Trennung BFS-343"
 * contact[contact] -> "eCH-0011: contactData, BFS-61"
 * contact[nameOfParent] -> "eCH-0021: nameOfParent"
-* communication[languageOfCorrespondence] -> "eCH-0011: languageOfCorrespondence: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
+* communication -> "eCH-0011: languageOfCorrespondence: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
 
 Mapping: v2-for-CHCorePatient
 Id: v2

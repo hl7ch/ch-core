@@ -8,7 +8,7 @@ Description: "eCH-0010: Extension to define line types for addresses"
 
 * . ^definition = "eCH-0010: Extension to define line types for an address"
 * url only uri
-* valueCode 0..1
+* valueCode 1..1
 * valueCode only code
 * valueCode from $ech-10-linetype (extensible)
 * valueCode ^short = "Value of extension"
