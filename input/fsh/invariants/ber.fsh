@@ -1,7 +1,7 @@
 Invariant: ber-length
-Description: "BER must start with a letter followed by 8 digits"
+Description: "BER must start with A or B, followed by a non-zero digit, then 7 more digits"
 Severity: #warning
-Expression: "matches('^[A-Z][0-9]{8}$')"
+Expression: "matches('^[A-B][1-9][0-9]{7}$')"
 
 Invariant: ber-modulus-11
 Description: "BER must pass the modulus 11 check"
