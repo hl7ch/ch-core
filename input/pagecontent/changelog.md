@@ -12,6 +12,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
 
 #### Fixed
+* [#372](https://github.com/hl7ch/ch-core/issues/372): Update identifier validation constraints to align with eCH-0108 standard (BER, UIDB regex patterns made more restrictive; AHVN13, VEKA, EPR-SPID constraints consolidated into single regex patterns)
 * [#381](https://github.com/hl7ch/ch-core/issues/381): Name extension binding strength changed from extensible to required (code data type cannot have extensible bindings)
 * [#354](https://github.com/hl7ch/ch-core/issues/354)/[#368](https://github.com/hl7ch/ch-core/issues/368)/[#388](https://github.com/hl7ch/ch-core/issues/388): Replace deprecated extension iso21090-SC-coding with iso21090-codedString
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
