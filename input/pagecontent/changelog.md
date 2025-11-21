@@ -18,6 +18,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
 
 #### Fixed
+* [#398](https://github.com/hl7ch/ch-core/issues/398): Remove Coverage.class.type binding override (invalid to rebind extensible ValueSet to different extensible ValueSet)
 * [#373](https://github.com/hl7ch/ch-core/issues/373): Require value[x] for simple extensions
 * [#372](https://github.com/hl7ch/ch-core/issues/372): Update identifier validation constraints to align with eCH-0108 standard (BER, UIDB regex patterns made more restrictive; AHVN13, VEKA, EPR-SPID constraints consolidated into single regex patterns)
 * [#381](https://github.com/hl7ch/ch-core/issues/381): Name extension binding strength changed from extensible to required (code data type cannot have extensible bindings)
