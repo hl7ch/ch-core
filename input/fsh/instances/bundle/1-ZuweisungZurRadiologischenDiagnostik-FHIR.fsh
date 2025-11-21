@@ -17,8 +17,6 @@ Description: "Document EPR (fullUrls of entries with ‘http’)"
 * entry[=].resource = MaxMuster
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/GruppenpraxisCH"
 * entry[=].resource = GruppenpraxisCH
-* entry[+].fullUrl = "http://test.fhir.ch/r4/Organization/Radiologieinstitut"
-* entry[=].resource = Radiologieinstitut
 * entry[+].fullUrl = "http://test.fhir.ch/r4/PractitionerRole/SchreibKraftAtGruppenpraxisCH"
 * entry[=].resource = SchreibKraftAtGruppenpraxisCH
 * entry[+].fullUrl = "http://test.fhir.ch/r4/Practitioner/SchreibKraft"
