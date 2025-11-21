@@ -55,10 +55,10 @@
 ## Commit & Pull Request Guidelines
 - When creating a new PR or commit first run npm build:ig, this can take a few minutes, only commit when the error count is not bigger than 1, analyze output/qa.html for detailed error message
 - Branch names: Use underscores instead of slashes (e.g., `issue123_fix_extension` not `issue/123/fix-extension`). Slashes in branch names can cause issues with ci-build.
-- Commits: Concise, imperative summaries (e.g., "Fix name extension binding strength").
+- Commits: Concise, imperative summaries (e.g., "Fix name extension binding strength"). Claude needs not to be mentioned.
 - Reference issues in commits (e.g., "#381").
 - Update changelog in input/pagecontent/changelog.md
-- PRs: Include purpose, scope, linked issues, and impact.
+- PRs: Include purpose, scope, linked issues, keep it short, Claude needs not to be mentioned as co-author.
 
 ## Security & Configuration Tips
 - IG build contacts `tx.fhir.org` for terminology; offline builds pass `-tx n/a`.

@@ -6,6 +6,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#394](https://github.com/hl7ch/ch-core/issues/394): Guidance - Usage of Swiss Core Artifacts
 
 #### Changed / Updated
+* [#416](https://github.com/hl7ch/ch-core/issues/416): Relax HumanName rule for EPR Patient and Practitioner (require only family name, not given name)
 * [#359](https://github.com/hl7ch/ch-core/issues/359): Updated ICD-10-GM CodeSystem URL from dimdi to bfarm (http://fhir.de/CodeSystem/bfarm/icd-10-gm)
 * [#379](https://github.com/hl7ch/ch-core/issues/379): Allow multiple legal authenticators
 * [#382](https://github.com/hl7ch/ch-core/issues/382): Allow multiple preferred languages by removing communication slicing constraint
