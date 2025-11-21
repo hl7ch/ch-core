@@ -9,7 +9,6 @@ Description: "Definition of the Composition resource for use in the context of t
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
-    EPRInformationRecipient named informationRecipient 0..* and
     EPRDataEnterer named dataEnterer 0..1
 * identifier 1..
 * identifier.system 1..
