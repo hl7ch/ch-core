@@ -6,9 +6,7 @@ Description: "Composition EPR with the information about the transfer in differe
 * meta.profile[0] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"
 * meta.profile[+] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"
 * language = #de-CH
-* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
-* extension[=].valueReference = Reference(Radiologieinstitut)
-* extension[+].extension[0].url = "enterer"
+* extension[0].extension[0].url = "enterer"
 * extension[=].extension[=].valueReference = Reference(PractitionerRole/SchreibKraftAtGruppenpraxisCH)
 * extension[=].extension[+].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"
 * extension[=].extension[=].valueDateTime = "2017-10-03T13:15:00+01:00"

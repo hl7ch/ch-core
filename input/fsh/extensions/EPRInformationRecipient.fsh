@@ -1,7 +1,8 @@
 Extension: EPRInformationRecipient
 Id: ch-ext-epr-informationrecipient
 Title: "EPR Information Recipient"
-Description: "Extension for a recipient of this document (corresponds to the addressee of a letter - person or organization)"
+Description: "Extension for a recipient of this document (corresponds to the addressee of a letter - person or organization). **DEPRECATED**: This extension has CDA origins and will be removed in a future version."
+* ^status = #retired
 
 * ^context.type = #element
 * ^context.expression = "Composition"
