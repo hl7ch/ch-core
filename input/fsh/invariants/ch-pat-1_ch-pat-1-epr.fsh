@@ -4,6 +4,6 @@ Severity: #warning
 Expression: "name.where(family.exists() and given.exists()).count()>0 or name.empty()"
 
 Invariant: ch-pat-1-epr
-Description: "At least one human name shall have a family and a given name."
+Description: "At least one human name shall have a family name."
 Severity: #error
-Expression: "name.where(family.exists() and given.exists()).count()>0"
+Expression: "name.where(family.exists()).count()>0"
