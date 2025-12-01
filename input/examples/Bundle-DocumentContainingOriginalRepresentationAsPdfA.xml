@@ -23,16 +23,6 @@
             <reference value="urn:uuid:e118f753-caaa-4696-991a-b20a796ce782"/>
           </valueReference>
         </extension>
-        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer">
-          <extension url="enterer">
-            <valueReference>
-              <reference value="urn:uuid:cac33923-b081-4060-bd57-46ee35dd5a33"/>
-            </valueReference>
-          </extension>
-          <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-            <valueDateTime value="2017-10-03T13:15:00+01:00"/>
-          </extension>
-        </extension>
         <identifier>
           <system value="urn:ietf:rfc:3986"/>
           <value value="urn:uuid:11778932-3d19-486b-afe6-e32a1165c978"/>
@@ -55,9 +45,6 @@
         </subject>
         <date value="2018-02-06T16:57:00+01:00"/>
         <author>
-          <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time">
-            <valueDateTime value="2017-10-03T16:09:00+01:00"/>
-          </extension>
           <reference value="urn:uuid:5e5d0948-61b0-4555-9a8f-40bacdc0cb8c"/>
         </author>
         <author>
@@ -342,35 +329,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="urn:uuid:cac33923-b081-4060-bd57-46ee35dd5a33"/>
-    <resource>
-      <PractitionerRole>
-        <id value="cac33923-b081-4060-bd57-46ee35dd5a33"/>
-        <practitioner>
-          <reference value="urn:uuid:be3ba855-6bef-4c36-92a1-8b76fefd3629"/>
-          <type value="Practitioner"/>
-        </practitioner>
-      </PractitionerRole>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="urn:uuid:be3ba855-6bef-4c36-92a1-8b76fefd3629"/>
-    <resource>
-      <Practitioner>
-        <id value="be3ba855-6bef-4c36-92a1-8b76fefd3629"/>
-        <identifier>
-          <system value="urn:oid:2.999.1.2.3.4"/>
-          <value value="0812763"/>
-        </identifier>
-        <name>
-          <use value="official"/>
-          <family value="Kristin"/>
-          <given value="Stabilo"/>
-        </name>
-      </Practitioner>
-    </resource>
-  </entry>
-  <entry id="8f304c87-ed20-4e9a-b928-db4116eb6594">
     <fullUrl value="urn:uuid:8f304c87-ed20-4e9a-b928-db4116eb6594"/>
     <resource>
       <Binary>

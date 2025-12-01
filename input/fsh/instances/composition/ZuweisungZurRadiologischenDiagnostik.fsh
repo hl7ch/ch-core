@@ -8,11 +8,6 @@ Description: "Composition EPR with the information about the transfer in differe
 * language = #de-CH
 * extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient"
 * extension[=].valueReference = Reference(Radiologieinstitut)
-* extension[+].extension[0].url = "enterer"
-* extension[=].extension[=].valueReference = Reference(PractitionerRole/SchreibKraftAtGruppenpraxisCH)
-* extension[=].extension[+].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"
-* extension[=].extension[=].valueDateTime = "2017-10-03T13:15:00+01:00"
-* extension[=].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:31397b31-be60-47e1-bec6-f37816d42b0c"
 * status = #final
@@ -20,8 +15,6 @@ Description: "Composition EPR with the information about the transfer in differe
 * type.coding[+] = $sct#371535009 "Transfer summary report"
 * subject = Reference(MaxMuster)
 * date = "2017-10-03T17:33:00+01:00"
-* author.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time"
-* author.extension.valueDateTime = "2017-10-03T16:09:00+01:00"
 * author = Reference(AllzeitBereit)
 * title = "Zuweisung zur Radiologischen Diagnostik"
 * confidentiality.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"
