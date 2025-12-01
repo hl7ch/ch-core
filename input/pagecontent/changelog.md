@@ -13,7 +13,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#380](https://github.com/hl7ch/ch-core/issues/380): Add note to originalRepresentation section that approach may change in future version to align with European or universal approaches
 * [#369](https://github.com/hl7ch/ch-core/issues/369): Updated scope note on index page (replaced outdated API specification note with links to CH EPR FHIR and IPA)
 * [#370](https://github.com/hl7ch/ch-core/issues/370): Clarified CHCoreEPRConsent description (used in external systems to track EPR status, not for managing consent within EPR)
-* [#377](https://github.com/hl7ch/ch-core/issues/377): Deprecate ch-ext-epr-dataenterer and ch-ext-epr-time extensions (CDA origin; will be removed in future version)
+* [#377](https://github.com/hl7ch/ch-core/issues/377): Deprecate ch-ext-epr-dataenterer and ch-ext-epr-time extensions (CDA origin; will be removed in future version); remove usage from examples
 * [#400](https://github.com/hl7ch/ch-core/issues/400): Deprecate ch-ext-epr-informationrecipient extension (CDA origin; will be removed in future version)
 * [#339](https://github.com/hl7ch/ch-core/issues/339): Fix Immunization immunoglobulin valueset url
 * [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid
@@ -148,7 +148,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#206](https://github.com/hl7ch/ch-core/issues/206): Improve acronyms definition
 * [#191](https://github.com/hl7ch/ch-core/issues/191): [CH Core Patient](StructureDefinition-ch-core-patient.html) - Relax max cardinality to * for EPR-SPID and AHVN13
 * [#195](https://github.com/hl7ch/ch-core/issues/195): [CH Core Address](StructureDefinition-ch-core-address.html) - Add extension iso21090-ADXP-streetName to CH Core Address line
-* [#198](https://github.com/hl7ch/ch-core/issues/198): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr-definitions.html#diff_Composition.extension:informationRecipient) - Relax information recipient cardinality to zero
+* [#198](https://github.com/hl7ch/ch-core/issues/198): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr-definitions.html) - Relax information recipient cardinality to zero
 * [#194](https://github.com/hl7ch/ch-core/issues/194): [CH Core Composition EPR](StructureDefinition-ch-core-composition-epr.html) - Relax attester:legalAuthenticator.time cardinality to zero
 * [#200](https://github.com/hl7ch/ch-core/issues/200): Remove display values from patternCodeableConcepts or fixedValues, remove minimum cardinality = 1 for display values, using official display values in examples (valid with http://tx.fhir.org/r4).
 * [#193](https://github.com/hl7ch/ch-core/issues/193): Remove CDA elements (mapping, ch-ext-epr-sectionid, ch-ext-epr-versionnumber, adapt descriptions) 
