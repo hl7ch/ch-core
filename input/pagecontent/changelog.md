@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 6 (2025-12)
+### STU 6 (2025-12-15)
 
 #### Added
 * [#394](https://github.com/hl7ch/ch-core/issues/394): Guidance - Usage of Swiss Core Artifacts
