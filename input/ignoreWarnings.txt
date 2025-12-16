@@ -14,7 +14,7 @@ None of the codings provided are in the value set 'FHIR Document Type Codes' (ht
 # No valid display values for 'de-CH' (information)
 There are no valid display names found for the code http://loinc.org#28616-1 for language(s) 'de-CH'. The display is 'Physician Transfer note' the default language display
 'Transfer summary report' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
-'Natural father (person)' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-CH
+Wrong Display Name%
 
 # All important examples are included
 The Implementation Guide contains no examples for this profile
@@ -38,11 +38,12 @@ INFORMATION: StructureDefinition/ch-core-encounter: StructureDefinition​.snaps
 The link 'www.grouppractice.ch' for "www.grouppractice.ch" cannot be resolved
 The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
-# information warnings from core spec using extensions which are deprecated see #371
+# Information warnings from core spec using extensions which are deprecated see #371
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|%
 The extension http://hl7.org/fhir/StructureDefinition/regex|%
 
-# known issue in IG Publisher
+# Known issue in IG Publisher
+The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
 No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
 
 # Reference to draft/experimental terminology
@@ -52,8 +53,8 @@ Reference to draft CodeSystem%
 No definition could be found for URL value 'https://www.admin.ch/opc/de/classified-compilation/20111795/index.html'
 No definition could be found for URL value 'https://www.bfh.ch/de/studium/bachelor/medizininformatik/'
 
-# Extension citizenship will be allowed on RelatedPerson: https://jira.hl7.org/browse/FHIR-49948
-The extension http://hl7.org/fhir/StructureDefinition/patient-citizenship is not allowed to be used at this point (this element is [RelatedPerson]; allowed for this version = e:Patient)
-
 # Information about pinned version
 Pinned the version of%
+
+# Used for the textLink extension
+The ImplementationGuide uses package hl7.fhir.uv.extensions.r4#5.3.0-ballot-tc1 released on 2025-08-03, but the most recent appropriate version is 5.2.0. This reference is getting old and the more recent version should be considered
