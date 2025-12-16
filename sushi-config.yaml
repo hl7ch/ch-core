@@ -7,7 +7,7 @@ description: FHIR implementation guide CH Core
 status: active
 experimental: false
 date: 2025-12-16
-version: 7.0.0-ci-build
+version: 7.0.0-ballot-ci-build
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaselabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
