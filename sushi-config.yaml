@@ -7,10 +7,10 @@ description: FHIR implementation guide CH Core
 status: active
 experimental: false
 date: 2025-12-16
-version: 6.0.0
+version: 7.0.0-ci-build
 fhirVersion: 4.0.1
 copyrightYear: 2020+
-releaselabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaselabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: HL7 Switzerland
   url: https://www.hl7.ch/
