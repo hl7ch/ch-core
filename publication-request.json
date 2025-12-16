@@ -6,7 +6,6 @@
   "status" : "trial-use",
   "sequence" : "STU 6",
   "desc" : "HL7 Switzerland STU 6",
-  "descmd": "HL7 Switzerland STU 6",
   "changes" : "changelog.html",
   "first": false
 }

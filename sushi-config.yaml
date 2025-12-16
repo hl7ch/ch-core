@@ -6,7 +6,7 @@ title: CH Core (R4)
 description: FHIR implementation guide CH Core
 status: active
 experimental: false
-date: 2025-12-15
+date: 2025-12-16
 version: 6.0.0
 fhirVersion: 4.0.1
 copyrightYear: 2020+
@@ -25,10 +25,10 @@ copyright: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
-  ch.fhir.ig.ch-term: current # 3.3.x
+  ch.fhir.ig.ch-term: 3.3.x
   hl7.terminology.r4: 
     uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
-    version: 7.0.0  
+    version: 7.0.1  
   hl7.fhir.uv.extensions.r4:  
     uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
     version: 5.3.0-ballot-tc1 
