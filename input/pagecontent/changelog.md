@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Added
 * [#394](https://github.com/hl7ch/ch-core/issues/394): Guidance - Usage of Swiss Core Artifacts
+* [#422](https://github.com/hl7ch/ch-core/issues/422): Add extensible binding to BFS country codes ValueSet for Address.country
 
 #### Changed / Updated
 * [#416](https://github.com/hl7ch/ch-core/issues/416): Relax HumanName rule for EPR Patient and Practitioner (require only family name, not given name)

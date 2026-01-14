@@ -45,6 +45,8 @@ Description: "address incorporating eCH-0010 postal address extensions"
     ECH007MunicipalityId named bfs 0..1
 * state from http://fhir.ch/ig/ch-core/ValueSet/ech-7-cantonabbreviation (example)
 * state ^binding.description = "Use these values for a Swiss or Liechtenstein address"
+* country from http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes (extensible)
+* country ^binding.description = "BFS defines the valid set of countries. Values are from the 'ISO 3166-1 country codes' code system."
 * country.extension ^slicing.discriminator[0].type = #value
 * country.extension ^slicing.discriminator[=].path = "url"
 * country.extension ^slicing.rules = #open
