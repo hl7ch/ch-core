@@ -18,6 +18,26 @@ Usage: #example
 * protocolApplied.targetDisease[+] = $sct#27836007 "Pertussis (disorder)"
 * protocolApplied.doseNumberPositiveInt = 1
 
+Instance: CHCoreImmunizationExampleNUVA
+InstanceOf: CHCoreImmunization
+Title: "CH Core Immunization Example NUVA"
+Description: "Example of Immunization resource with NUVA vaccineCode."
+Usage: #example
+* extension[0].url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"
+* extension[=].valueReference = Reference(ImmunizationPractitionerRoleExample)
+* status = #completed
+* vaccineCode = $NuvaCS#VAC0541 "BOOSTRIX"
+* patient = Reference(ImmunizationPatientExample)
+* occurrenceDateTime = "2017-09-15T09:12:56+02:00"
+* recorded = "2017-09-15T09:12:56+02:00"
+* lotNumber = "12-34244"
+* route = $standardterms#20035000 "Intramuscular use"
+* performer.actor = Reference (ImmunizationPractitionerRoleExample)
+* protocolApplied.targetDisease[0] = $sct#397430003 "Diphtheria caused by Corynebacterium diphtheriae (disorder)"
+* protocolApplied.targetDisease[+] = $sct#76902006 "Tetanus (disorder)"
+* protocolApplied.targetDisease[+] = $sct#27836007 "Pertussis (disorder)"
+* protocolApplied.doseNumberPositiveInt = 1
+
 Instance: ImmunizationPatientExample
 InstanceOf: CHCorePatient
 Title: "Patient example for immunization"

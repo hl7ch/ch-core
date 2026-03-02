@@ -36,6 +36,17 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * vaccineCode ^binding.extension[=].extension[+].url = "shortDoco"
 * vaccineCode ^binding.extension[=].extension[=].valueString = "For when Swissmedic Immunoglobulin code system is preferred"
 
+* vaccineCode ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* vaccineCode ^binding.extension[=].extension[0].url = "key"
+* vaccineCode ^binding.extension[=].extension[=].valueId = nuva
+* vaccineCode ^binding.extension[=].extension[+].url = "purpose"
+* vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
+* vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
+* vaccineCode ^binding.extension[=].extension[=].valueCanonical = $NuvaVS
+* vaccineCode ^binding.extension[=].extension[+].url = "documentation"
+* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to the [NUVA](https://ivci.org) vaccines value set."
+* vaccineCode ^binding.extension[=].extension[+].url = "shortDoco"
+* vaccineCode ^binding.extension[=].extension[=].valueString = "For usage of [NUVA](https://ivci.org) codes."
 
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
