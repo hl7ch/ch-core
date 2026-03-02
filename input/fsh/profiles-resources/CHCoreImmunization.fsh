@@ -44,9 +44,9 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
 * vaccineCode ^binding.extension[=].extension[=].valueCanonical = $NuvaVS
 * vaccineCode ^binding.extension[=].extension[+].url = "documentation"
-* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to the [NUVA](https://ivci.org) vaccines value set."
+* vaccineCode ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to the NUVA vaccines value set."
 * vaccineCode ^binding.extension[=].extension[+].url = "shortDoco"
-* vaccineCode ^binding.extension[=].extension[=].valueString = "For usage of [NUVA](https://ivci.org) codes."
+* vaccineCode ^binding.extension[=].extension[=].valueString = "For usage of NUVA codes."
 
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
