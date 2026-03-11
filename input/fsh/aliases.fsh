@@ -13,7 +13,7 @@ Alias: $standardterms =                             http://standardterms.edqm.eu
 
 Alias: $IHE.FormatCode.codesystem =                 http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode
 
-Alias: $bfs-country-codes =                          http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes
+Alias: $bfs-country-codes =                         http://fhir.ch/ig/ch-term/ValueSet/bfs-country-codes
 Alias: $bfs-medstats-18-admittype =                 http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-18-admittype
 Alias: $bfs-medstats-18-admittype_1 =               http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-18-admittype
 Alias: $bfs-medstats-19-admitrole =                 http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-19-admitrole
