@@ -71,3 +71,7 @@ Alias: $SwissVaccinationPlanImmunizationsVS =         http://fhir.ch/ig/ch-vacd/
 Alias: $SwissImmunizationRecommendationCategoriesVS = http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs
 Alias: $SwissRecommendationForecastStatus =           http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-forecast-status-vs
 Alias: $SwissImmunoglobulinVS =                       http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-swissmedic-immunoglobulin-vs
+
+Alias: $NuvaCS =                                      https://smt.esante.gouv.fr/terminologie-nuva
+Alias: $NuvaVS =                                      https://smt.esante.gouv.fr/terminologie-nuva?vs
+

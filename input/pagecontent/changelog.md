@@ -1,7 +1,10 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 7 Ballot (unreleased)
+#### Added
 
+#### Changed
+* [#425](https://github.com/hl7ch/ch-core/issues/425): CH Core Immunization - add binding to NUVA CodeSystem for vaccineCode
 
 ### STU 6 (2025-12-16)
 
