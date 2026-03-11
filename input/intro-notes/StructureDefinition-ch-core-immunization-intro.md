@@ -12,7 +12,7 @@ As additional binding there are further ValueSets defined:
 The ValueSet [CH VACD Snomed CT for VaccineCode](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-snomedct-vs) which contains the codes in context of vaccines from the CodeSystem [SNOMED-CT](http://www.snomed.org/).
 
 * **Immunoglobulin**:<br/>
-Immunoglobulins are no vaccinations but could protect patients for a short term time.
+Immunoglobulins are no vaccinations but could protect patients for a short term of time.
 The ValueSet [CH VACD Swissmedic Authorized Immunoglobulin Codes](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-swissmedic-immunoglobulin-vs) which contains immunoglobulin codes from the CodeSystem [CH VACD Swissmedic Authorized Immunoglobulin Codes](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-immunoglobulin-cs).
 
 * **NUVA**:<br/>
