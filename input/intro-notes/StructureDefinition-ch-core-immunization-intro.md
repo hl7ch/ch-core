@@ -15,5 +15,10 @@ The ValueSet [CH VACD Snomed CT for VaccineCode](http://fhir.ch/ig/ch-vacd/Value
 Immunoglobulins are no vaccinations but could protect patients for a short term of time.
 The ValueSet [CH VACD Swissmedic Authorized Immunoglobulin Codes](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-swissmedic-immunoglobulin-vs) which contains immunoglobulin codes from the CodeSystem [CH VACD Swissmedic Authorized Immunoglobulin Codes](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-immunoglobulin-cs).
 
+* **Immunsera**:<br/>
+Immune sera are purified antibodies derived from the blood serum of immunized humans or animals, which are used for passive immunization (immediate protection).
+The ValueSet [CH VACD Swissmedic Authorized Immunsera Codes](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-swissmedic-immunesera-vs) which contains immunoglobulin codes from the CodeSystem [CH VACD Swissmedic Authorized Immunsera Codes](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-immunesera-cs).
+
 * **NUVA**:<br/>
 The ValueSet [NUVA](https://smt.esante.gouv.fr/fhir/ValueSet/vs-nuva-all) which contains the codes from the CodeSystem [Terminologie - NUVA](https://smt.esante.gouv.fr/terminologie-nuva) defined by the [International Vaccine Codes Initiative (IVC)](https://ivci.org).
+
