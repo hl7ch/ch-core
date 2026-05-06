@@ -38,7 +38,7 @@ Description: "Base definition of the MedicationStatement resource for use in Swi
 * extension ^slicing.rules = #open
 * extension contains CHEMEDExtSubstitution named substitution 0..1
 * extension[substitution] ^short = "Whether substitution is allowed or not"
-* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode
+* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * medication[x] only CodeableConcept or Reference(CHCoreMedication) 
 * subject only Reference(CHCorePatient or Group)
 * informationSource only Reference(CHCorePatient or CHCorePractitioner or CHCorePractitionerRole or CHCoreRelatedPerson or CHCoreOrganization)
