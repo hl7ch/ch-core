@@ -4,6 +4,10 @@ Id: ch-core-immunization-recommendation
 Title: "CH Core Immunization Recommendation"
 Description: "Base definition of the ImmunizationRecommendation resource for use in Swiss specific use cases."
 * . ^short = "CH Core Immunization Recommendation"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * patient only Reference(CHCorePatient)
 * patient ^short = "Patient"
 * authority only Reference(CHCoreOrganization)

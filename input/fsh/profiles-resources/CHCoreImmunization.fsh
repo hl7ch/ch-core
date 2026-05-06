@@ -10,6 +10,7 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * extension contains
     Author named recorder 0..1
 * extension[recorder] ^definition = "The recorder Reference of the immunization. May be a Practitioner or a Patient"
+* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * vaccineCode from $SwissVaccinesVS (preferred)
 
 * vaccineCode ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
