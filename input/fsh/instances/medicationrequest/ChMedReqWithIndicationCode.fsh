@@ -24,4 +24,4 @@ Description: "Instance of a medication request with Abirateron, which is a drug 
 * dosageInstruction[=].method = $swissStandardTerms#0019 "Swallowing"
 * dosageInstruction[=].doseAndRate.doseQuantity = 1 $sct#732936001 "Tablet (unit of presentation)"
 * dispenseRequest.quantity = 1 $sct#1681000175101 "Package - unit of product usage (qualifier value)"
-* substitution.allowedCodeableConcept = https://terminology.hl7.org/7.0.1/CodeSystem-v3-substanceAdminSubstitution.html#E "equivalent"
+* substitution.allowedCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution#E "equivalent"

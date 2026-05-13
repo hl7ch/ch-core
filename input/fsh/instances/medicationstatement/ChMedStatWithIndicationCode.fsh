@@ -4,7 +4,7 @@ Title: "MedicationStatement with Abirateron"
 Description: "Instance of a medication statement with Abirateron, which is a drug subject to the FOPH price model and exemplifies the usage of the indication code extension."
 * contained = AbirateronAccordTab500mg
 * extension[+].url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-substitution"
-* extension[=].valueCodeableConcept = https://terminology.hl7.org/7.0.1/CodeSystem-v3-substanceAdminSubstitution.html#E "equivalent"
+* extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution#E "equivalent"
 * extension[+].url = Canonical(ChEplRegulatedAuthorizationLimitationIndicationCode)
 * extension[=].valueString = "21423.01" 
 * identifier.system = "urn:ietf:rfc:3986"
