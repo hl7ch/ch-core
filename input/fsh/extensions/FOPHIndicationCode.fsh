@@ -4,6 +4,8 @@ Title: "Indication Code"
 Description: "Indication Code, as defined by the [FOPH list of healthcare benefits](https://fhir.ch/ig/ch-epl/index.html) to be conveyed when referring to prescription/dispense/billing of medicinal products subject to a price model as defined by the FOPH."
 
 * ^context[+].type = #element
+* ^context[=].expression = "ChargeItem"
+* ^context[+].type = #element
 * ^context[=].expression = "Immunization"
 * ^context[+].type = #element
 * ^context[=].expression = "ImmunizationRecommendation.recommendation"
@@ -15,7 +17,6 @@ Description: "Indication Code, as defined by the [FOPH list of healthcare benefi
 * ^context[=].expression = "MedicationRequest"
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationStatement"
-
 
 * value[x] 1..1
 * value[x] only string
