@@ -1,7 +1,7 @@
 Instance: MedicationStatementAbirateron
 InstanceOf: CHCoreMedicationStatement
 Title: "MedicationStatement with Abirateron"
-Description: "Instance of a medication statement with Abirateron drug, which is a drug subject to the FOPH price model and exemplifies the usage of the indication code extension."
+Description: "Instance of a medication statement with Abirateron, which is a drug subject to the FOPH price model and exemplifies the usage of the indication code extension."
 * contained = AbirateronAccordTab500mg
 * extension[+].url = "http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-substitution"
 * extension[=].valueCodeableConcept = https://terminology.hl7.org/7.0.1/CodeSystem-v3-substanceAdminSubstitution.html#E "equivalent"
@@ -12,10 +12,13 @@ Description: "Instance of a medication statement with Abirateron drug, which is 
 * status = #active
 * medicationReference = Reference(AbirateronAccordTab500mg)
 * subject = Reference(FranzMuster)
-* dateAsserted = "2026-06-13"
+* dateAsserted = "2026-06-13T13:30:00Z"
 * informationSource = Reference(HPWengerRole)
 * dosage[+].text = "1 tablet in the morning, 1 tablet in the evening. To be taken at least 1h before or 2h after meals."
 * dosage[=].patientInstruction = "To be taken at least 1h before or 2h after meals."
+* dosage[=].timing.repeat.frequency = 2
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.when[+] = #MORN
 * dosage[=].timing.repeat.when[+] = #EVE
 * dosage[=].route = $swissStandardTerms#20053000 "Oral use"
