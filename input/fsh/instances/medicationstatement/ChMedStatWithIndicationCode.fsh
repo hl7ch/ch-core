@@ -8,7 +8,7 @@ Description: "Instance of a medication statement with Abirateron, which is a dru
 * extension[+].url = Canonical(ChEplRegulatedAuthorizationLimitationIndicationCode)
 * extension[=].valueString = "21423.01" 
 * identifier.system = "urn:ietf:rfc:3986"
-* identifier.value = "8ff72c70-15c0-44b5-a758-e99daacd3da0"
+* identifier.value = "urn:uuid:8ff72c70-15c0-44b5-a758-e99daacd3da0"
 * status = #active
 * medicationReference = Reference(AbirateronAccordTab500mg)
 * subject = Reference(FranzMuster)
