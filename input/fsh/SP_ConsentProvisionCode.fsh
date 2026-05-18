@@ -16,4 +16,3 @@ Usage: #definition
 * type = #token
 * expression = "Consent.provision.code"
 * target = #Consent
-* processingMode = #normal

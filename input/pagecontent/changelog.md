@@ -1,10 +1,12 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 7 Ballot (unreleased)
+
 #### Added
 * [#432](https://github.com/hl7ch/ch-core/issues/432):
   * Added the new extension `ChEplRegulatedAuthorizationLimitationIndicationCode` to convey the FOPH indication code for medicinal products subject to a price model. This new extension can be used at the `ChargeItem`, `Immunization`, `ImmunizationRecommendation.recommendation`, `MedicationAdministration`, `MedicationRequest`, `MedicationDispense` and `MedicationStatement` levels.
   * New examples for a medication request, a medication dispense and a medication statement using this extension have been added as well.
+* [#291](https://github.com/hl7ch/ch-core/issues/291) Consent Profile based on R5
 
 #### Changed
 * [#430](https://github.com/hl7ch/ch-core/issues/430): CH Core Immunization - ValueSet: CH VACD Swissmedic Authorized Immunsera Codes
