@@ -77,3 +77,7 @@ Alias: $SwissImmuneseraVS =                           http://fhir.ch/ig/ch-vacd/
 Alias: $NuvaCS =                                      https://smt.esante.gouv.fr/terminologie-nuva
 Alias: $NuvaVS =                                      https://smt.esante.gouv.fr/terminologie-nuva?vs
 
+
+// XML CH IG Code System
+Alias: $CSConsentProvisionCodes =       http://fhir.ch/ig/ch-core/CodeSystem/ConsentProvisionCodesCS
+Alias: $v3-ActReason =                  http://terminology.hl7.org/CodeSystem/v3-ActReason
