@@ -1,7 +1,9 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
 ### STU 7 Ballot (unreleased)
+
 #### Added
+* Consent Profile based on R5
 
 #### Changed
 * [#430](https://github.com/hl7ch/ch-core/issues/430): CH Core Immunization - ValueSet: CH VACD Swissmedic Authorized Immunsera Codes
