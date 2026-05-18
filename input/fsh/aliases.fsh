@@ -80,3 +80,7 @@ Alias: $NuvaVS =                                      https://smt.esante.gouv.fr
 Alias: $atc =                                         http://www.whocc.no/atc
 Alias: $ucum =                                        http://unitsofmeasure.org
 Alias: $swissStandardTerms =                          urn:oid:0.4.0.127.0.16.1.1.2.1
+
+// XML CH IG Code System
+Alias: $CSConsentProvisionCodes =       http://fhir.ch/ig/ch-core/CodeSystem/ConsentProvisionCodesCS
+Alias: $v3-ActReason =                  http://terminology.hl7.org/CodeSystem/v3-ActReason
