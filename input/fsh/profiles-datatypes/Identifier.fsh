@@ -9,6 +9,10 @@ Description: "Identifier holding a 13 digit social security number. The number s
 * system = "urn:oid:2.16.756.5.32" (exactly)
 * value 1..
 * value obeys ahvn13-length and ahvn13-digit-check
+* value ^example[0].extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress"
+* value ^example[0].extension[=].valueBoolean = true
+* value ^example[+].label = "of valid AHVN13"
+* value ^example[=].valueString = "7561234567897"
 
 Profile: EPRSPIDIdentifier
 Parent: Identifier
