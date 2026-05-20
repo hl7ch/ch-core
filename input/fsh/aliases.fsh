@@ -77,3 +77,6 @@ Alias: $SwissImmuneseraVS =                           http://fhir.ch/ig/ch-vacd/
 Alias: $NuvaCS =                                      https://smt.esante.gouv.fr/terminologie-nuva
 Alias: $NuvaVS =                                      https://smt.esante.gouv.fr/terminologie-nuva?vs
 
+Alias: $atc =                                         http://www.whocc.no/atc
+Alias: $ucum =                                        http://unitsofmeasure.org
+Alias: $swissStandardTerms =                          urn:oid:0.4.0.127.0.16.1.1.2.1

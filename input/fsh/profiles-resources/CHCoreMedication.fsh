@@ -38,6 +38,7 @@ Description: "Base definition of the MedicationStatement resource for use in Swi
 * extension ^slicing.rules = #open
 * extension contains CHEMEDExtSubstitution named substitution 0..1
 * extension[substitution] ^short = "Whether substitution is allowed or not"
+* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * medication[x] only CodeableConcept or Reference(CHCoreMedication) 
 * subject only Reference(CHCorePatient or Group)
 * informationSource only Reference(CHCorePatient or CHCorePractitioner or CHCorePractitionerRole or CHCoreRelatedPerson or CHCoreOrganization)
@@ -50,6 +51,10 @@ Id: ch-core-medicationadministration
 Title: "CH Core MedicationAdministration"
 Description: "Base definition of the MedicationAdministration resource for use in Swiss specific use cases."
 * . ^short = "CH Core MedicationAdministration"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * medication[x] only CodeableConcept or Reference(CHCoreMedication)
 * subject only Reference(CHCorePatient or Group)
 * performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCorePatient or CHCoreRelatedPerson or Device)
@@ -70,6 +75,7 @@ Description: "Base definition of the MedicationDispense resource for use in Swis
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains CHEMEDExtTreatmentReason named treatmentReason 0..*
+* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * medication[x] only CodeableConcept or Reference(CHCoreMedication)
 * subject only Reference(CHCorePatient or Group)
 * performer.actor only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or Device or CHCoreRelatedPerson)
@@ -86,6 +92,10 @@ Id: ch-core-medicationrequest
 Title: "CH Core MedicationRequest"
 Description: "Base definition of the MedicationRequest resource for use in Swiss specific use cases."
 * . ^short = "CH Core MedicationRequest"
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * medication[x] only CodeableConcept or Reference(CHCoreMedication)
 * subject only Reference(CHCorePatient or Group)
 * requester only Reference(CHCorePractitioner or CHCorePractitionerRole or CHCoreOrganization or CHCorePatient or CHCoreRelatedPerson or Device)
