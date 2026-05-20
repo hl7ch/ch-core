@@ -9,6 +9,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Changed
 * [#430](https://github.com/hl7ch/ch-core/issues/430): CH Core Immunization - ValueSet: CH VACD Swissmedic Authorized Immunsera Codes
 * [#425](https://github.com/hl7ch/ch-core/issues/425): CH Core Immunization - add binding to NUVA CodeSystem for vaccineCode
+* Update dependency hl7.terminology.r4 from 7.0.1 to 7.1.0
+* Update dependency hl7.fhir.uv.extensions.r4 from 5.3.0-ballot-tc1 to 5.3.0
 
 ### STU 6 (2025-12-16)
 
