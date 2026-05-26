@@ -30,7 +30,7 @@ may be linked to such a case.
 * class ^short = "AMB | IMP : See mapping from BFS Medizinische Statistik BFS Encounter Class to FHIR"
 * class ^definition = "See mapping from BFS Medizinische Statistik [BFS Encounter Class to FHIR mapping](http://fhir.ch/ig/ch-term/ConceptMap-bfs-encounter-class-to-fhir.html)"
 * priority from $bfs-medstats-18-admittype_1 (extensible)
-* priority ^short = "BFS Medizinische Statistik - Eintrittsart / Mode d’admission / Genere di ricovero"
+* priority ^short = "Admission mode (Eintrittsart / Mode d’admission / Genere di ricovero)"
 * subject 1..
 * subject only Reference(CHCorePatient or Group)
 * participant.type from http://fhir.ch/ig/ch-core/ValueSet/ch-core-encounter-participation-type (extensible)
@@ -45,19 +45,18 @@ may be linked to such a case.
     EncounterSupsectedReadmission named readmission 0..1 and
     BfsDischargeDecision named BfsDischargeDecision 0..1 and
     BfsDischargeDestination named BfsDischargeDestination 0..1
-* hospitalization.extension[BfsAdmitRole] ^short = "BFS Medizinische Statistik - Einweisende Instanz"
+* hospitalization.extension[BfsAdmitRole] ^short = "Referrer type - (Einweisende Instanz / Décision d’envoi / Istanza ricoverante)"
 * hospitalization.extension[accident] ^short = "Flag if hospitalization was due to an accident"
 * hospitalization.extension[readmission] ^short = "Flag to indicate if it is a suspected readmission"
-* hospitalization.extension[BfsDischargeDecision] ^short = "BFS Medizinische Statistik - Entscheid für Austritt"
-* hospitalization.extension[BfsDischargeDestination] ^short = "BFS Medizinische Statistik - Aufenthalt nach Austritt"
+* hospitalization.extension[BfsDischargeDecision] ^short = "Reason for the discharge decision (Entscheid für Austritt / Décision de sortie / Décisione dell’uscita)"
+* hospitalization.extension[BfsDischargeDestination] ^short = "Location to which the patient was discharged (Aufenthalt nach Austritt / Séjour après la sortie / Destinazione dopo l’uscita)"
 
 * hospitalization.origin only Reference(CHCoreLocation or CHCoreOrganization)
 * hospitalization.admitSource from $bfs-medstats-17-admitsource_1 (extensible)
-* hospitalization.admitSource ^short = "BFS Medizinische Statistik - Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione"
+* hospitalization.admitSource ^short = "Location of the patient prior to admission (Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione)"
 * hospitalization.destination only Reference(CHCoreLocation or CHCoreOrganization)
 * hospitalization.dischargeDisposition from $bfs-medstats-29-dischargeencounter_1 (preferred)
-* hospitalization.dischargeDisposition ^short = "BFS Medizinische Statistik - Behandlung nach Austritt"
-* hospitalization.dischargeDisposition ^binding.description = "BFS Medizinische Statistik - Behandlung nach Austritt"
+* hospitalization.dischargeDisposition ^short = "Type of therapy after discharge (Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita)"
 
 * location.location only Reference(CHCoreLocation)
 * serviceProvider only Reference(CHCoreOrganization)
