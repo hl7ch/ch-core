@@ -1,7 +1,7 @@
 Logical: CHAdministrativeCase
 Id: ch-administrative-case
 Title: "CH Administrative Case"
-Description: "Defines the conceptual of a Swiss administrative case (Fall / Cas / Caso), a logical artifact defined for national health administration and billing guidelines."
+Description: "Defines the conceptual model of a Swiss administrative case (Fall / Cas / Caso), a logical artifact defined for national health administration and billing guidelines."
 
 * identifier 1..1 string "Case identifier/number" "The identifying number of the administrative case (visit number, hospitalization number, billing number, etc.). A local identifier meaningful within its assigning system, and not intended to be globally unique."
 * sourceSystem 0..1 uri "Source system" "The source system that assigns the case number, e.g. a hospital information system, a billing system, etc." 
