@@ -4,9 +4,9 @@ Usage: #example
 Title: "Encounter Accident Broennimann"
 Description: "Inpatient Encounter of Mrs. Broennimann which is flagged as an accident"
 * meta.source = "https://www.bfh.ch/de/studium/bachelor/medizininformatik/"
-* identifier[VisitNumber].type = $v2-0203#VN "Visit number"
-* identifier[VisitNumber].system = "http://example.com/fallnummerdomain"
-* identifier[VisitNumber].value = "12345"
+* identifier[CaseNumber].type = $v2-0203#VN "Visit number"
+* identifier[CaseNumber].system = "http://example.com/fallnummerdomain"
+* identifier[CaseNumber].value = "12345"
 * status = #finished
 * class = $v3-ActCode#IMP "inpatient encounter"
 * priority = $bfs-medstats-18-admittype#1 "Notfall (Behandlung innerhalb von 12 Std. unabdingbar)"
