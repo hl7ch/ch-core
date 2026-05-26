@@ -2,7 +2,7 @@ Profile: CHCoreEncounter
 Parent: Encounter
 Id: ch-core-encounter
 Title: "CH Core Encounter"
-Description: "Base definition of the Encounter resource for use in Swiss specific use cases."
+Description: """Base definition of the Encounter resource for use in Swiss specific use cases."""
 
 * ^purpose = "Core patient demographics which can be shared"
 * . ^short = "CH Core Encounter"
@@ -12,7 +12,8 @@ Description: "Base definition of the Encounter resource for use in Swiss specifi
 * identifier ^slicing.rules = #open
 * identifier contains 
     VisitNumber 0..*
-* identifier[VisitNumber] ^short = "Visit number (Fallnummer)"
+* identifier[VisitNumber] ^short = "Visit number (Administrative case number | Fallnummer | Numero del caso | Cas numéro)"
+* identifier[VisitNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the Encounter (if relevant) for administrative and/or billing purposes."
 * identifier[VisitNumber] ^patternIdentifier.type = $v2-0203#VN
 * identifier[VisitNumber].system 1..
 * identifier[VisitNumber].value 1..
