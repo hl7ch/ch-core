@@ -14,7 +14,7 @@ it. However, this profile `CHCoreEncounter` does not represent an administrative
 may be linked to such a case.   
 """
 
-* ^purpose = "Core patient demographics which can be shared"
+* ^purpose = "Core patient visit and hospitalization data which can be shared"
 * . ^short = "CH Core Encounter"
 * . ^definition = "This is basic constraint on Encounter for use in CH Core resources."
 * identifier ^slicing.discriminator.type = #value
@@ -56,7 +56,7 @@ may be linked to such a case.
 * hospitalization.admitSource ^short = "Location of the patient prior to admission (Aufenthaltsort vor dem Eintritt / Séjour avant l’admission / Luogo di soggiorno prima dell’ammissione)"
 * hospitalization.destination only Reference(CHCoreLocation or CHCoreOrganization)
 * hospitalization.dischargeDisposition from $bfs-medstats-29-dischargeencounter_1 (preferred)
-* hospitalization.dischargeDisposition ^short = "Type of therapy after discharge (Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita)"
+* hospitalization.dischargeDisposition ^short = "Type of therapy/disposition after discharge (Behandlung nach Austritt / Prise en charge après la sortie / Trattamento dopo l’uscita)"
 
 * location.location only Reference(CHCoreLocation)
 * serviceProvider only Reference(CHCoreOrganization)
