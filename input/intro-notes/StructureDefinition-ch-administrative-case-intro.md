@@ -1,12 +1,12 @@
 
-This logical model is based on the [`AdministrativeCase`](https://www.biomedit.ch/rdf/sphn-schema/sphn#AdministrativeCase) schema defined by the Swiss Personalized Healthcare Network (SPHN). 
+This logical model is based on the [`AdministrativeCase`](https://www.biomedit.ch/rdf/sphn-schema/sphn#AdministrativeCase) schema defined by the Swiss Personalized Healthcare Network (SPHN) and is provided as conceptual implementation guidance. 
 
 ### Scope and Usage
 
 This is **NOT** a resource and cannot appear directly in FHIR instances. It defined a logical pattern adhered to by other resources. It serves two purposes:
 
 * It provides implementation guidance to help map internal business logic conceptually to the HL7 CH Core FHIR resources used for data exchange.
-* It includes explicit mappings that document where specific model details can be extracted from the corresponding FHIR resources.
+* It includes explicit mappings that document where corresponding administrative case information can be found, when present.
 
 ### Mapping to FHIR 
 
