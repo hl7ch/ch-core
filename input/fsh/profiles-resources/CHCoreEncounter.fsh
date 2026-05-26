@@ -11,12 +11,12 @@ Description: """Base definition of the Encounter resource for use in Swiss speci
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains 
-    VisitNumber 0..*
-* identifier[VisitNumber] ^short = "Visit number (Administrative case number | Fallnummer | Numero del caso | Cas numéro)"
-* identifier[VisitNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the Encounter (if relevant) for administrative and/or billing purposes."
-* identifier[VisitNumber] ^patternIdentifier.type = $v2-0203#VN
-* identifier[VisitNumber].system 1..
-* identifier[VisitNumber].value 1..
+    CaseNumber 0..*
+* identifier[CaseNumber] ^short = "Administrative case number (Fallnummer / Numero del caso | Cas numéro)"
+* identifier[CaseNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the Encounter (if relevant) for administrative and/or billing purposes."
+* identifier[CaseNumber] ^patternIdentifier.type = $v2-0203#VN
+* identifier[CaseNumber].system 1..
+* identifier[CaseNumber].value 1..
 * class ^short = "AMB | IMP : See mapping from BFS Medizinische Statistik BFS Encounter Class to FHIR"
 * class ^definition = "See mapping from BFS Medizinische Statistik [BFS Encounter Class to FHIR mapping](http://fhir.ch/ig/ch-term/ConceptMap-bfs-encounter-class-to-fhir.html)"
 * priority from $bfs-medstats-18-admittype_1 (extensible)
