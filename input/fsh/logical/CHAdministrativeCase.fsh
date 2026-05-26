@@ -25,3 +25,18 @@ CH Core Encounter resources can be associated with an administrative case, if an
 * period.end -> "CHAdministrativeCase.dischargeDate"
 
 
+Mapping: CHCoreEpisodeOfCareToCHAdministrativeCase
+Id: ch-core-episode-of-care-to-ch-administrative-case
+Title: "CH Core Episode of Care to Administrative Case"
+Source: CHCoreEpisodeOfCare
+Target: "CHAdministrativeCase"
+Description: """
+CH Core EpisodeofCare resources can be associated with an administrative case, if and only if, the `EpisodeOfCare.identifier:CaseNumber` identifier is provided.
+"""
+
+* -> "CHAdministrativeCase"
+* identifier[CaseNumber].value -> "CHAdministrativeCase.number"
+* period.start -> "CHAdministrativeCase.admissionDate"
+* period.end -> "CHAdministrativeCase.dischargeDate"
+
+

@@ -14,4 +14,6 @@ The table below lists the FHIR resources that can instanciate the logical model 
 
 | FHIR Profile | Mapping Details | Scope 
 |-------|-------|-------|
-| [`CH Core Encounter`](StructureDefinition-ch-core-encounter.html) | [`CH Core Encounter to Administrative Case`](StructureDefinition-ch-core-encounter-mappings.html) | |
+| [`CH Core Encounter`](StructureDefinition-ch-core-encounter.html) | [`CH Core Encounter to Administrative Case`](StructureDefinition-ch-core-encounter-mappings.html) | Typically used for inpatient care |
+|-------|-------|-------|
+| [`CH Core EpisodeOfCare`](StructureDefinition-ch-core-episodeofcare.html) | [`CH Core EpisodeOfCare to Administrative Case`](StructureDefinition-ch-core-episodeofcare-mappings.html) | Typically used for outpatient care |
