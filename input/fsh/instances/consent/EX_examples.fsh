@@ -1,10 +1,10 @@
 Instance: GC-accepted
-InstanceOf: CHCoreConsent
+InstanceOf: CHCoreGeneralConsent
 Usage: #example
 Title: "General Consent accepted"
 Description: "Example of a General Consent accepted by the patient"
 * status = #active
-* scope = $consentscope#patient-privacy
+* scope = $consentscope#research
 * category.coding.system = $loinc
 * category.coding.code = #59284-0 //Patient Consent
 * patient.reference = "Patient/MaxMuster" //R5 'subject' -> R4 'patient'
@@ -44,12 +44,12 @@ Description: "Example of a General Consent accepted by the patient"
 
 
 Instance: GC-denied
-InstanceOf: CHCoreConsent
+InstanceOf: CHCoreGeneralConsent
 Usage: #example
 Title: "General Consent denied"
 Description: "Example of a General Consent denied by a legal representative"
 * status = #active
-* scope = $consentscope#patient-privacy
+* scope = $consentscope#research
 * category.coding.system = $loinc
 * category.coding.code = #59284-0 //Patient Consent
 * patient.reference = "Patient/MaxMuster"
