@@ -15,7 +15,7 @@ Description: "Base definition of the Consent resource for use in Swiss specific 
 * patient ^short = "The patient to whom this consent applies to"
 
 // R5 'grantor' via xver extension
-* extension[grantor].valueReference only Reference(Patient or RelatedPerson)
+* extension[grantor].valueReference only Reference(Patient or RelatedPerson or Organization)
 
 // R5 'grantee' maps to R4 'performer'. R4 performer cannot reference HealthcareService directly;
 // use the standard alternate-reference extension on performer for HealthcareService grantees.
