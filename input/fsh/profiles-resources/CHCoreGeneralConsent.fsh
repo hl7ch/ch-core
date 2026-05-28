@@ -1,7 +1,7 @@
 Profile:        CHCoreGeneralConsent
 Parent:         CHCoreConsent
 Id:             CHCoreGeneralConsent
-Title:          "CH Core General Consent (Unimedsuisse Generalkonsent)"
+Title:          "CH Core General Consent" 
 Description:    "Specialization of CHCoreConsent for the Unimedsuisse Generalkonsent (GC)."
 
 // --- status: only active | inactive in the GC context ---
@@ -23,7 +23,7 @@ Description:    "Specialization of CHCoreConsent for the Unimedsuisse Generalkon
 // --- policyBasis: fixed URL to Unimedsuisse Generalkonsent ---
 // Mapped onto R4 via Consent.policy.uri (functional equivalent of R5 policyBasis.url)
 * policy 1..1
-* policy ^short = "Computable backing policy (Unimedsuisse Generalkonsent)"
+* policy ^short = "Backing policy (Unimedsuisse Generalkonsent)"
 * policy.uri 1..1
 * policy.uri = "https://www.unimedsuisse.ch/de/projekte/generalkonsent"
 
@@ -41,11 +41,3 @@ Description:    "Specialization of CHCoreConsent for the Unimedsuisse Generalkon
 * provision.purpose.system = "http://terminology.hl7.org/CodeSystem/v3-ActReason"
 * provision.purpose.code 1..1
 * provision.purpose.code = #HRESCH
-
-// --- decision: semantic annotation ---
-// In R4 the base decision is expressed via provision.type (deny|permit).
-// GC-specific reading according to CH Core General Consent:
-//   deny   = GC granted (provisions describe exceptions to the base 'deny')
-//   permit = GC rejected
-* provision.type ^short = "deny = GC granted | permit = GC rejected"
-* provision.type ^definition = "Base decision for the General Consent. GC-specific semantics: deny = GC granted (provisions describe exceptions), permit = GC rejected. See Unimedsuisse Generalkonsent specification."
