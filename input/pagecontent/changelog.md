@@ -41,6 +41,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
 * [#364](https://github.com/hl7ch/ch-core/issues/364): Add missing extension context for ch-ext-author
 * [#363](https://github.com/hl7ch/ch-core/issues/363): Invalid extension context
+* [#398](https://github.com/hl7ch/ch-core/issues/398): Fixed BFS Variable Encounter Type (Liegeklasse) which before was part of Coverage but has nothing to do with coverage, but where (in which class, german Leigeklasse) the patient was treated
 
 #### Issues resolved without amendment (in IG)
 * [#384](https://github.com/hl7ch/ch-core/issues/384): Keep ch-ext-author extension (needed for summary documents in vaccination and exchange formats; Provenance cannot directly solve it; the extension will likely not be needed anymore in R6)
