@@ -1,7 +1,7 @@
 Alias: $v3-ParticipationFunction =                  http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction
 Alias: $consentscope =                              http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $v3-ActCode =                                http://terminology.hl7.org/CodeSystem/v3-ActCode
-Alias: $consentpolicycodes =                        http://terminology.hl7.org/CodeSystem/consentpolicycodes
+Alias: $consentpolicycodes =                        http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.1
 Alias: $v2-0203 =                                   http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v3-MaritalStatus =                          http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias: $v3-ReligiousAffiliation =                   http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
@@ -80,3 +80,7 @@ Alias: $NuvaVS =                                      https://smt.esante.gouv.fr
 Alias: $atc =                                         http://www.whocc.no/atc
 Alias: $ucum =                                        http://unitsofmeasure.org
 Alias: $swissStandardTerms =                          urn:oid:0.4.0.127.0.16.1.1.2.1
+
+// XML CH IG Code System
+Alias: $CSConsentProvisionCodes =       http://fhir.ch/ig/ch-core/CodeSystem/ConsentProvisionCodesCS
+Alias: $v3-ActReason =                  http://terminology.hl7.org/CodeSystem/v3-ActReason
