@@ -6,7 +6,7 @@ title: CH Core (R4)
 description: FHIR implementation guide CH Core
 status: active
 experimental: false
-date: 2026-06-22
+date: 2026-06-10
 version: 7.0.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2020+
