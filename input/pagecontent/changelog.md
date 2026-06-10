@@ -1,6 +1,6 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 7 Ballot (unreleased)
+### STU 7 Ballot (2026-06-10)
 
 #### Added
 * [#432](https://github.com/hl7ch/ch-core/issues/432):
