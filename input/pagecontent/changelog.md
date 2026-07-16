@@ -1,5 +1,10 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
+### STU 7 (unreleased)
+
+#### Changed
+* [#443](https://github.com/hl7ch/ch-core/issues/443): Adopt eCH-0021 V8.1.0. Building on [#181](https://github.com/hl7ch/ch-core/issues/181), the sex of a parent (`Patient.contact:nameOfParent`) is now conveyed via `contact.gender` (eCH-0021 nameOfParent/sex, eCH-0044:sexType) while the relationship stays the gender-neutral `v3-RoleCode#PRN` — the sex is not encoded through the relationship code. Updated the eCH-0021 reference (index page) from V7.0 to V8.1.0 and the UPI EPR Test Krcmarevic example.
+
 ### STU 7 Ballot (2026-06-10)
 
 #### Added
