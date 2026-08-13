@@ -32,6 +32,8 @@ Description: "Test Patient from UPI for Swiss EPR Projectathon"
 * contact[nameOfParent][0].relationship = $v3-RoleCode#PRN "parent"
 * contact[nameOfParent][=].name.family = "Dalkiliç"
 * contact[nameOfParent][=].name.given = "Hui Xue"
+* contact[nameOfParent][=].gender = #female
 * contact[nameOfParent][+].relationship = $v3-RoleCode#PRN "parent"
 * contact[nameOfParent][=].name.family = "Dalkiliç"
 * contact[nameOfParent][=].name.given = "Fabio Nicola"
+* contact[nameOfParent][=].gender = #male

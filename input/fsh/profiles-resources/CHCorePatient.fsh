@@ -90,6 +90,8 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
 * contact[nameOfParent].relationship ..1
 * contact[nameOfParent].relationship = $v3-RoleCode#PRN
 * contact[nameOfParent].name 1..
+* contact[nameOfParent].gender ^short = "Sex of the parent (eCH-0021: nameOfParent/sex)"
+* contact[nameOfParent].gender ^definition = "Sex of the parent as defined by eCH-0021 nameOfParent/sex (eCH-0044:sexType). The parent relationship stays gender-neutral (v3-RoleCode#PRN); the sex is conveyed here, not through the relationship code."
 
 
 Mapping: eCH-for-CHCorePatient
@@ -113,6 +115,7 @@ Target: "http://www.ech.ch/"
 * maritalStatus.extension[maritalDataSeparation] -> "eCH-0011: separation - Trennung BFS-343"
 * contact[contact] -> "eCH-0011: contactData, BFS-61"
 * contact[nameOfParent] -> "eCH-0021: nameOfParent"
+* contact[nameOfParent].gender -> "eCH-0021: nameOfParent/sex (sexType), see ConceptMap http://fhir.ch/ig/ch-core/ConceptMap/sex-ech11-to-fhir"
 * communication -> "eCH-0011: languageOfCorrespondence: de, fr, it, rm = Rhaeto-Romance, en, other languages ISO 639-1"
 
 Mapping: v2-for-CHCorePatient
