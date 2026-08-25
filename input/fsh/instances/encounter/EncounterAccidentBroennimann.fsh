@@ -4,7 +4,6 @@ Usage: #example
 Title: "Encounter Accident Broennimann"
 Description: "Inpatient Encounter of Mrs. Broennimann which is flagged as an accident"
 * meta.source = "https://www.bfh.ch/de/studium/bachelor/medizininformatik/"
-* identifier[CaseNumber].type = $v2-0203#VN "Visit number"
 * identifier[CaseNumber].system = "http://example.com/fallnummerdomain"
 * identifier[CaseNumber].value = "12345"
 * status = #finished
