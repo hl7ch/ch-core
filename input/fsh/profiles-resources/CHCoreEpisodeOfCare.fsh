@@ -11,7 +11,7 @@ Description: "Base definition of the `EpisodeOfCare` resource for use in Swiss-s
     CaseNumber 0..*
 * identifier[CaseNumber] ^short = "Administrative case number (Fallnummer / Numero del caso | Cas numéro)"
 * identifier[CaseNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the EpisodeOfCare (if relevant) for administrative and/or billing purposes."
-* identifier[CaseNumber] ^patternIdentifier.type = $v2-0203#VN
+* identifier[CaseNumber] ^patternIdentifier.type = $v3-ActCode#PBILLACCT
 * identifier[CaseNumber].system 1..
 * identifier[CaseNumber].value 1..
 
