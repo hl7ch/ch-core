@@ -1,16 +1,25 @@
 All significant changes to this FHIR implementation guide will be documented on this page.
 
-### STU 7 Ballot (unreleased)
+### STU 7 (unreleased)
+
+#### Changed
+* [#443](https://github.com/hl7ch/ch-core/issues/443): Adopt eCH-0021 V8.1.0. Building on [#181](https://github.com/hl7ch/ch-core/issues/181), the sex of a parent (`Patient.contact:nameOfParent`) is now conveyed via `contact.gender` (eCH-0021 nameOfParent/sex, eCH-0044:sexType) while the relationship stays the gender-neutral `v3-RoleCode#PRN` — the sex is not encoded through the relationship code. Updated the eCH-0021 reference (index page) from V7.0 to V8.1.0 and the UPI EPR Test Krcmarevic example.
+
+### STU 7 Ballot (2026-06-10)
+
 #### Added
 * [#432](https://github.com/hl7ch/ch-core/issues/432):
   * Added the new extension `ChEplRegulatedAuthorizationLimitationIndicationCode` to convey the FOPH indication code for medicinal products subject to a price model. This new extension can be used at the `ChargeItem`, `Immunization`, `ImmunizationRecommendation.recommendation`, `MedicationAdministration`, `MedicationRequest`, `MedicationDispense` and `MedicationStatement` levels.
   * New examples for a medication request, a medication dispense and a medication statement using this extension have been added as well.
+* [#291](https://github.com/hl7ch/ch-core/issues/291) Consent Profile for GeneralKonsent derived from new Consent Profile based on R5
 
 #### Changed
 * [#430](https://github.com/hl7ch/ch-core/issues/430): CH Core Immunization - ValueSet: CH VACD Swissmedic Authorized Immunsera Codes
 * [#425](https://github.com/hl7ch/ch-core/issues/425): CH Core Immunization - add binding to NUVA CodeSystem for vaccineCode
 * Update dependency hl7.terminology.r4 from 7.0.1 to 7.1.0
 * Update dependency hl7.fhir.uv.extensions.r4 from 5.3.0-ballot-tc1 to 5.3.0
+* Add dependency hl7.fhir.uv.xver 0.1.0
+* Add dependency hl7.fhir.uv.xver-r5.r4 0.1.0
 
 ### STU 6 (2025-12-16)
 
@@ -41,6 +50,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#356](https://github.com/hl7ch/ch-core/issues/356): Invalid xhtml for UPI EPR Test Krcmarevic
 * [#364](https://github.com/hl7ch/ch-core/issues/364): Add missing extension context for ch-ext-author
 * [#363](https://github.com/hl7ch/ch-core/issues/363): Invalid extension context
+* [#398](https://github.com/hl7ch/ch-core/issues/398): Fixed BFS Variable Encounter Type (Liegeklasse) which before was part of Coverage but has nothing to do with coverage, but where (in which class, german Leigeklasse) the patient was treated
 
 #### Issues resolved without amendment (in IG)
 * [#384](https://github.com/hl7ch/ch-core/issues/384): Keep ch-ext-author extension (needed for summary documents in vaccination and exchange formats; Provenance cannot directly solve it; the extension will likely not be needed anymore in R6)

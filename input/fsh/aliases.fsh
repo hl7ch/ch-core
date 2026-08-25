@@ -1,7 +1,7 @@
 Alias: $v3-ParticipationFunction =                  http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction
 Alias: $consentscope =                              http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $v3-ActCode =                                http://terminology.hl7.org/CodeSystem/v3-ActCode
-Alias: $consentpolicycodes =                        http://terminology.hl7.org/CodeSystem/consentpolicycodes
+Alias: $consentpolicycodes =                        http://terminology.hl7.org/CodeSystem/consentpolicycodes|3.0.1
 Alias: $v2-0203 =                                   http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $v3-MaritalStatus =                          http://terminology.hl7.org/CodeSystem/v3-MaritalStatus
 Alias: $v3-ReligiousAffiliation =                   http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
@@ -26,6 +26,8 @@ Alias: $bfs-medstats-17-admitsource =               http://fhir.ch/ig/ch-core/Co
 Alias: $bfs-medstats-17-admitsource_1 =             http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-17-admitsource
 Alias: $bfs-medstats-29-dischargeencounter =        http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-29-dischargeencounter
 Alias: $bfs-medstats-29-dischargeencounter_1 =      http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-29-dischargeencounter
+Alias: $bfs-medstats-21-encountertype =             http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-21-encountertype
+Alias: $bfs-medstats-21-encountertype_1 =           http://fhir.ch/ig/ch-core/ValueSet/bfs-medstats-21-encountertype
 Alias: $ech-11-maritaldata-separation =             http://fhir.ch/ig/ch-core/CodeSystem/ech-11-maritaldata-separation
 Alias: $ech-11-maritaldata-separation_1 =           http://fhir.ch/ig/ch-core/ValueSet/ech-11-maritaldata-separation
 Alias: $cs-servicerequest-category =                http://fhir.ch/ig/ch-term/CodeSystem/servicerequest-category
@@ -80,3 +82,7 @@ Alias: $NuvaVS =                                      https://smt.esante.gouv.fr
 Alias: $atc =                                         http://www.whocc.no/atc
 Alias: $ucum =                                        http://unitsofmeasure.org
 Alias: $swissStandardTerms =                          urn:oid:0.4.0.127.0.16.1.1.2.1
+
+// XML CH IG Code System
+Alias: $CSConsentProvisionCodes =       http://fhir.ch/ig/ch-core/CodeSystem/ConsentProvisionCodesCS
+Alias: $v3-ActReason =                  http://terminology.hl7.org/CodeSystem/v3-ActReason

@@ -36,13 +36,15 @@ Description: "Base definition of the `Encounter` resource for use in Swiss-speci
     BfsMsAdmitRole named BfsAdmitRole 0..1 and
     Accident named accident 0..1 and
     EncounterSupsectedReadmission named readmission 0..1 and
+    BfsMsEncounterType named BfsMsEncounterType 0..1 and
     BfsDischargeDecision named BfsDischargeDecision 0..1 and
     BfsDischargeDestination named BfsDischargeDestination 0..1
 * hospitalization.extension[BfsAdmitRole] ^short = "Referrer type - (Einweisende Instanz / Décision d’envoi / Istanza ricoverante)"
 * hospitalization.extension[accident] ^short = "Flag if hospitalization was due to an accident"
 * hospitalization.extension[readmission] ^short = "Flag to indicate if it is a suspected readmission"
-* hospitalization.extension[BfsDischargeDecision] ^short = "Reason for the discharge decision (Entscheid für Austritt / Décision de sortie / Décisione dell’uscita)"
-* hospitalization.extension[BfsDischargeDestination] ^short = "Location to which the patient was discharged (Aufenthalt nach Austritt / Séjour après la sortie / Destinazione dopo l’uscita)"
+* hospitalization.extension[BfsMsEncounterType] ^short = "BFS Medizinische Statistik - Liegeklasse (Encounter Type)"
+* hospitalization.extension[BfsDischargeDecision] ^short = "BFS Medizinische Statistik - Entscheid für Austritt"
+* hospitalization.extension[BfsDischargeDestination] ^short = "BFS Medizinische Statistik - Aufenthalt nach Austritt"
 
 * hospitalization.origin only Reference(CHCoreLocation or CHCoreOrganization)
 * hospitalization.admitSource from $bfs-medstats-17-admitsource_1 (extensible)
