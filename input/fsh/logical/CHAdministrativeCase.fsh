@@ -17,11 +17,11 @@ Title: "CH Core Encounter to Administrative Case"
 Source: CHCoreEncounter
 Target: "CHAdministrativeCase"
 Description: """
-CH Core Encounter resources can be associated with an administrative case, if and only if, the `Encounter.identifier:CaseNumber` identifier is provided.
+CH Core Encounter resources can be associated with an administrative case, if and only if, the `Encounter.identifier:caseNumber` identifier is provided.
 """
 
-* identifier[CaseNumber].value -> "CHAdministrativeCase.identifier"
-* identifier[CaseNumber].system -> "CHAdministrativeCase.sourceSystem"
+* identifier[caseNumber].value -> "CHAdministrativeCase.identifier"
+* identifier[caseNumber].system -> "CHAdministrativeCase.sourceSystem"
 * period.start -> "CHAdministrativeCase.admissionDate"
 * period.end -> "CHAdministrativeCase.dischargeDate"
 
@@ -32,11 +32,11 @@ Title: "CH Core Episode of Care to Administrative Case"
 Source: CHCoreEpisodeOfCare
 Target: "CHAdministrativeCase"
 Description: """
-CH Core EpisodeofCare resources can be associated with an administrative case, if and only if, the `EpisodeOfCare.identifier:CaseNumber` identifier is provided.
+CH Core EpisodeofCare resources can be associated with an administrative case, if and only if, the `EpisodeOfCare.identifier:caseNumber` identifier is provided.
 """
 
-* identifier[CaseNumber].value -> "CHAdministrativeCase.identifier"
-* identifier[CaseNumber].system -> "CHAdministrativeCase.sourceSystem"
+* identifier[caseNumber].value -> "CHAdministrativeCase.identifier"
+* identifier[caseNumber].system -> "CHAdministrativeCase.sourceSystem"
 * period.start -> "CHAdministrativeCase.admissionDate"
 * period.end -> "CHAdministrativeCase.dischargeDate"
 

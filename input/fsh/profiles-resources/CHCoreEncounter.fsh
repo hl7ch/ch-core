@@ -8,19 +8,19 @@ Description: "Base definition of the `Encounter` resource for use in Swiss-speci
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains 
-    VisitNumber 0..*
-* identifier[VisitNumber] ^short = "Administrative visit number (Besuchsnummer / Numero della visita | Numéro de visite)"
-* identifier[VisitNumber] ^definition = "The identifying number for the visit (Besuch | Visita | Visite) associated with the Encounter (if relevant) for administrative and/or billing purposes."
-* identifier[VisitNumber] ^patternIdentifier.type = $v2-0203#VN
-* identifier[VisitNumber].system 1..
-* identifier[VisitNumber].value 1..
+    visitNumber 0..*
+* identifier[visitNumber] ^short = "Administrative visit number (Besuchsnummer / Numero della visita | Numéro de visite)"
+* identifier[visitNumber] ^definition = "The identifying number for the visit (Besuch | Visita | Visite) associated with the Encounter (if relevant) for administrative and/or billing purposes."
+* identifier[visitNumber] ^patternIdentifier.type = $v2-0203#VN
+* identifier[visitNumber].system 1..
+* identifier[visitNumber].value 1..
 * identifier contains 
-    CaseNumber 0..*
-* identifier[CaseNumber] ^short = "Administrative case number (Fallnummer / Numero del caso | Cas numéro)"
-* identifier[CaseNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the Encounter (if relevant) for administrative and/or billing purposes."
-* identifier[CaseNumber] ^patternIdentifier.type = $v3-ActCode#PBILLACCT
-* identifier[CaseNumber].system 1..
-* identifier[CaseNumber].value 1..
+    caseNumber 0..*
+* identifier[caseNumber] ^short = "Administrative case number (Fallnummer / Numero del caso | Cas numéro)"
+* identifier[caseNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the Encounter (if relevant) for administrative and/or billing purposes."
+* identifier[caseNumber] ^patternIdentifier.type = $v3-ActCode#PBILLACCT
+* identifier[caseNumber].system 1..
+* identifier[caseNumber].value 1..
 * class ^definition = "See mapping from BFS Medizinische Statistik [BFS Encounter Class to FHIR mapping](http://fhir.ch/ig/ch-term/ConceptMap-bfs-encounter-class-to-fhir.html)"
 * priority from $bfs-medstats-18-admittype_1 (extensible)
 * priority ^short = "Admission mode (Eintrittsart / Mode d’admission / Genere di ricovero)"
