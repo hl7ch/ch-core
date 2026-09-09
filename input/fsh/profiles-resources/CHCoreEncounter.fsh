@@ -9,15 +9,15 @@ Description: "Base definition of the `Encounter` resource for use in Swiss-speci
 * identifier ^slicing.rules = #open
 * identifier contains 
     visitNumber 0..*
-* identifier[visitNumber] ^short = "Administrative visit number (Besuchsnummer / Numero della visita | Numéro de visite)"
-* identifier[visitNumber] ^definition = "The identifying number for the visit (Besuch | Visita | Visite) associated with the Encounter (if relevant) for administrative and/or billing purposes."
+* identifier[visitNumber] ^short = "Administrative visit number (Aufenthaltsnummer / Numéro de visite / Numero della visita)"
+* identifier[visitNumber] ^definition = "The identifying number for the visit (Aufenthalt / Visite / Visita ) associated with the Encounter (if relevant) for administrative and/or billing purposes."
 * identifier[visitNumber] ^patternIdentifier.type = $v2-0203#VN
 * identifier[visitNumber].system 1..
 * identifier[visitNumber].value 1..
 * identifier contains 
     caseNumber 0..*
-* identifier[caseNumber] ^short = "Administrative case number (Fallnummer / Numero del caso | Cas numéro)"
-* identifier[caseNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the Encounter (if relevant) for administrative and/or billing purposes."
+* identifier[caseNumber] ^short = "Administrative case number (Fallnummer /  Cas numéro / Numero del caso)"
+* identifier[caseNumber] ^definition = "The identifying number for the case (Fall / Caso / Cas) associated with the Encounter (if relevant) for administrative and/or billing purposes."
 * identifier[caseNumber] ^patternIdentifier.type = $v3-ActCode#PBILLACCT
 * identifier[caseNumber].system 1..
 * identifier[caseNumber].value 1..

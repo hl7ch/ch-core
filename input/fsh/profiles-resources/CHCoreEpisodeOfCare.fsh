@@ -9,8 +9,8 @@ Description: "Base definition of the `EpisodeOfCare` resource for use in Swiss-s
 * identifier ^slicing.rules = #open
 * identifier contains 
     caseNumber 0..*
-* identifier[caseNumber] ^short = "Administrative case number (Fallnummer / Numero del caso | Cas numéro)"
-* identifier[caseNumber] ^definition = "The identifying number for the case (Fall | Caso | Cas) associated with the EpisodeOfCare (if relevant) for administrative and/or billing purposes."
+* identifier[caseNumber] ^short = "Administrative case number (Fallnummer / Cas numéro / Numero del caso)"
+* identifier[caseNumber] ^definition = "The identifying number for the case (Fall / Cas / Caso) associated with the EpisodeOfCare (if relevant) for administrative and/or billing purposes."
 * identifier[caseNumber] ^patternIdentifier.type = $v3-ActCode#PBILLACCT
 * identifier[caseNumber].system 1..
 * identifier[caseNumber].value 1..
