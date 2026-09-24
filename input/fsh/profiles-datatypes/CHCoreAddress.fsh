@@ -30,10 +30,10 @@ Description: "address incorporating eCH-0010 postal address extensions"
 * line.extension[street].valueCode 1..
 * line.extension[street].valueCode only code
 * line.extension[street].valueCode = #street (exactly)
-* line.extension[streetName] ^short = "street part of the street line, e.g. withouth housenumber"
+* line.extension[streetName] ^short = "street part of the street line, e.g. without house number"
 * line.extension[houseNumber] ^short = "houseNumber part of the street line"
 * line.extension[unitID] ^short = "unitID, dwellingNumber part of the street line"
-* line.extension[postOfficeBoxText] ^short = "Postbox addresses need an postbox text and optional postbox number"
+* line.extension[postOfficeBoxText] ^short = "Postbox addresses need a postbox text and optional postbox number"
 * line.extension[postOfficeBoxText].valueCode 1..
 * line.extension[postOfficeBoxText].valueCode only code
 * line.extension[postOfficeBoxText].valueCode = #postOfficeBoxText (exactly)

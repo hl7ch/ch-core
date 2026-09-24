@@ -9,7 +9,7 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 * extension ^slicing.rules = #open
 * extension contains
     Author named recorder 0..1
-* extension[recorder] ^definition = "The recorder Reference of the immunization. May be a Practitioner or a Patient"
+* extension[recorder] ^definition = "The recorder Reference of the immunization. May be a PractitionerRole or a Patient"
 * extension contains ChEplRegulatedAuthorizationLimitationIndicationCode named indicationCode 0..1
 * vaccineCode from $SwissVaccinesVS (preferred)
 

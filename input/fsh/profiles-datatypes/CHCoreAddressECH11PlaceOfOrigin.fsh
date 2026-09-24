@@ -28,7 +28,7 @@ Description: "Place of Origin for eCH-0011"
 * city only string
 * city ^short = "Name of place of origin (municipality)"
 * city ^definition = "optional if country is not Switzerland"
-* city ^alias[0] = "Municpality"
+* city ^alias[0] = "Municipality"
 * district 0..0 SU
 * district only string
 * district ^short = "District name (aka county)"
@@ -47,8 +47,8 @@ Description: "Place of Origin for eCH-0011"
 * postalCode ^alias[0] = "Zip"
 * country 0..0 SU
 * country only string
-* country ^short = "Country if place of orgin is not Switzerland"
-* country ^definition = "Country if place of orgin is not Switzerland"
+* country ^short = "Country if place of origin is not Switzerland"
+* country ^definition = "Country if place of origin is not Switzerland"
 * country.extension[countrycode] 0..1
 * country.extension[countrycode] only $iso21090-SC-coding
 * country.extension[countrycode] ^short = "ISO Country Alpha-2 or ISO Country Alpha-3 code"

@@ -29,7 +29,7 @@ Description: "Base definition of the Consent resource for use in Swiss specific 
 * extension[controller].valueReference only Reference(Organization)
 
 * provision 1..
-* provision ^short = "Exeptions/Constraints to the base decision"
+* provision ^short = "Exceptions/Constraints to the base decision"
 
 * provision.code 1..
 * provision.code from ConsentProvisionCodesVS (required)

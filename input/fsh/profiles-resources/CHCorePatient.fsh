@@ -34,7 +34,7 @@ See also [BFS](https://www.bfs.admin.ch/bfs/de/home/register/personenregister/re
     insuranceCardNumber 0..*
 * identifier[EPR-SPID] only EPRSPIDIdentifier
 * identifier[EPR-SPID] ^short = "EPR-SPID"
-* identifier[EPR-SPID] ^definition = "EPR-SPID: The Central Compensation Office (ZAS; CCO) assigns and manages the new patient identification number according to the EPRA (EPR-SPID), which is only linked internally in the CCO with the AHV number. It maintains the UPI identification database (Unique Personal Identifier Database), which the EPR communities may access. The law regulates how the the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be not stored in document repositories or document registries."
+* identifier[EPR-SPID] ^definition = "EPR-SPID: The Central Compensation Office (ZAS; CCO) assigns and manages the new patient identification number according to the EPRA (EPR-SPID), which is only linked internally in the CCO with the AHV number. It maintains the UPI identification database (Unique Personal Identifier Database), which the EPR communities may access. The law regulates how the EPR-SPID can be used. SR 816.111 states (Art. 10 para. 3 EPDV) that communities must ensure that the EPR-SPID number cannot be stored in document repositories or document registries."
 * identifier[EPR-SPID] ^patternIdentifier.system = "urn:oid:2.16.756.5.30.1.127.3.10.3"
 * identifier[AHVN13] only AHVN13Identifier
 * identifier[AHVN13] ^short = "AHVN13 / NAVS13 of the patient (13 digits starting with 756, no separation points)"

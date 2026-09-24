@@ -13,7 +13,7 @@
         </family>
         <given value="Amtliche Vornamen (zwingend)"/>
     </name>
-    <!-- Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Extension is optional, but when used the use value is needed as offical -->
+    <!-- Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Extension is optional, but when used the use value is needed as official -->
     <name>
         <use value="nickname" />
         <family value="Amtlicher Name (zwingend)">

@@ -1,7 +1,7 @@
-Representation (display) of FHIR Documents (Bundle) in the the context of the Swiss EPR:
+Representation (display) of FHIR Documents (Bundle) in the context of the Swiss EPR:
 
 1. Exchange formats for the Swiss EPR require a readable representation.
-2. For this purpose, the `originalRepresentation` section has been defined in the [CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html), from where a embedded PDF as a Binary resource is linked. According to the EPR ordinance the PDF has to be in PDF/A-1 or PDF/A-2 format.
+2. For this purpose, the `originalRepresentation` section has been defined in the [CH Core Composition EPR profile](StructureDefinition-ch-core-composition-epr.html), from where an embedded PDF as a Binary resource is linked. According to the EPR ordinance the PDF has to be in PDF/A-1 or PDF/A-2 format.
 3. This is one possible way for the readable representation of EPR documents. It is used, for example, in the CH EMED exchange format (Medication Card document, Medication Prescription document).
 
 <p class="dragon">

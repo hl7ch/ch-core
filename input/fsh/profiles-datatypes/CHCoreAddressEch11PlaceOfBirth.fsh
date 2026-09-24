@@ -28,7 +28,7 @@ Description: "PlaceOfBirth for ech-11"
 * city only string
 * city ^short = "Place of Birth (municipality)"
 * city ^definition = "optional if country is not Switzerland"
-* city ^alias[0] = "Municpality"
+* city ^alias[0] = "Municipality"
 * district 0..0 SU
 * district only string
 * district ^short = "District name (aka county)"

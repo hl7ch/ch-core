@@ -37,7 +37,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#370](https://github.com/hl7ch/ch-core/issues/370): Clarified CHCoreEPRConsent description (used in external systems to track EPR status, not for managing consent within EPR)
 * [#377](https://github.com/hl7ch/ch-core/issues/377): Deprecate ch-ext-epr-dataenterer and ch-ext-epr-time extensions (CDA origin; will be removed in future version); remove usage from examples
 * [#400](https://github.com/hl7ch/ch-core/issues/400): Deprecate ch-ext-epr-informationrecipient extension (CDA origin; will be removed in future version)
-* [#339](https://github.com/hl7ch/ch-core/issues/339): Fix Immunization immunoglobulin valueset url
+* [#390](https://github.com/hl7ch/ch-core/issues/390): Fix Immunization immunoglobulin valueset url
 * [#316](https://github.com/hl7ch/ch-core/issues/316): Guidance - Narrative data idref invalid
 * [#358](https://github.com/hl7ch/ch-core/issues/358): Entry Resource Cross References: Graphic added
 
@@ -104,7 +104,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#303](https://github.com/hl7ch/ch-core/issues/303): Entry Resource Cross References, Usage/Description
 * [#294](https://github.com/hl7ch/ch-core/issues/294): Differentiation of severity of constraint ch-pat-1 for CH Core Patient (warning) and CH Core Patient EPR (error)
 * [#293](https://github.com/hl7ch/ch-core/issues/293): Clarification of the description for Patient.gender
-* [#300](https://github.com/hl7ch/ch-core/issues/293): Add guidance for readable representation of EPR documents and update example
+* [#300](https://github.com/hl7ch/ch-core/issues/300): Add guidance for readable representation of EPR documents and update example
 
 #### Fixed
 * [#306](https://github.com/hl7ch/ch-core/issues/306): Replace deprecated discriminator (`pattern` -> `value`)
@@ -195,7 +195,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 * [#160](https://github.com/hl7ch/ch-core/issues/160): Slicing on repeating element
 * [#154](https://github.com/hl7ch/ch-core/issues/154): Improve description of example instances, see [Artifacts](artifacts.html#example-example-instances)
 * [#162](https://github.com/hl7ch/ch-core/issues/162): Update narrative text in examples
-* [#176](https://github.com/hl7ch/ch-core/issues/162): Clean up differentials
+* [#176](https://github.com/hl7ch/ch-core/issues/176): Clean up differentials
 * [#175](https://github.com/hl7ch/ch-core/issues/175): Rename the profile [CH Core EPR-Consent](StructureDefinition-ch-core-epr-consent.html)
 * [#173](https://github.com/hl7ch/ch-core/issues/173): Define aggregation mode (contained, referenced) for [Coverage.payor](StructureDefinition-ch-core-coverage.html)
 * [#170](https://github.com/hl7ch/ch-core/issues/170): Check the slicing and update suppressed messages

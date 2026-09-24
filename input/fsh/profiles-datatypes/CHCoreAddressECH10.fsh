@@ -11,7 +11,7 @@ Description: "Postal address according to eCH-0010"
 * type ^short = "postal"
 * city 1..1 SU
 * city only string
-* city ^alias = "Municpality"
+* city ^alias = "Municipality"
 * postalCode 1..1
 * postalCode only string
 * postalCode ^short = "Postal code for area"
