@@ -1,7 +1,7 @@
 CodeSystem: ConsentProvisionCodesCS
 Id: ConsentProvisionCodesCS
 Title: "ConsentProvisionCodesCS"
-Description: "Code System for Consents that are specificaly used in Switzerland"
+Description: "Code System for Consents that are specifically used in Switzerland"
 * ^caseSensitive = true
 * #GC "General Consent"
     "The General Consent is a consent form in which the patient agrees to the further use of health data and biological samples collected by the institution 

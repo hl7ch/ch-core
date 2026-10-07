@@ -12,7 +12,7 @@ In the following sections, the usage in [instances](#usage-in-instances) and [va
 ### Usage in Instances
 To illustrate how the SNOMED CT codes (international vs. Swiss extension) are used in instances, examples of the CH EMED exchange format are shown below.  
 
-**SNOMED CT international**: 721912009 "Medication summary document (record artifact)"   
+**SNOMED CT international**: 761938008 "Medicinal prescription record (record artifact)"   
 
 Composition.type of a Medication Prescription document (see [full example](https://fhir.ch/ig/ch-emed/Bundle-2-6-MedicationPrescription.json.html)):
 ```json
@@ -80,7 +80,7 @@ ValueSet.compose.include of the DocumentEntry.confidentialityCode ValueSet (see 
       "concept" : [
         {
           "code" : "1141000195107",
-          "display" : "Secret (qualifier value)",
+          "display" : "Secret (qualifier value)"
         }
       ]
     }

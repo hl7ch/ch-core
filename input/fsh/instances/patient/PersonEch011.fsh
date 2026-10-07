@@ -8,7 +8,7 @@ Description: "Patient eCH-011 with names, marital status and separation type, de
 * language = #de-CH
 
 * name[0].use = #official
-// Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Extension is optional, but when used the use attribute value must be offical
+// Amtlicher Name (zwingend) – officialName, siehe Kapitel 3.3.2.1, Extension is optional, but when used the use attribute value must be official
 * name[=].family.extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-11-name"
 * name[=].family.extension.valueCode = #officialName
 * name[=].family = "Amtlicher Name"

@@ -31,7 +31,7 @@ Metadata relating to the Swiss EPR is defined in Annexes 3 and 9 by the [Ministr
 #### Exchange formats (Annex 4)
 Exchange formats for the Swiss EPR are defined in Annex 4. Exchange formats can be represented as FHIR documents.
 
-- [CH Core Document Profile EPR](StructureDefinition-ch-core-document.html): the base definition for a structured document in the Swiss EPR.
+- [CH Core Document Profile EPR](StructureDefinition-ch-core-document-epr.html): the base definition for a structured document in the Swiss EPR.
 - [CH Core Composition Profile EPR](StructureDefinition-ch-core-composition-epr.html): the base definition for a composition, providing the basic structure of the FHIR document. 
 
 #### CH:ATC Profile (Annex 5, Amendment 2.2)
@@ -62,7 +62,7 @@ This guide is the product of collaborative work undertaken with participants fro
 ### Safety Considerations
 This implementation guide defines data elements, resources, formats, and methods for exchanging healthcare data between different participants in the healthcare process. As such, clinical safety is a key concern. Additional guidance regarding safety for the specification’s many and various implementations is available at: [https://www.hl7.org/FHIR/safety.html](https://www.hl7.org/FHIR/safety.html).
 
-Although the present specification does gives users the opportunity to observe data protection and data security regulations, its use does not guarantee compliance with these regulations. Effective compliance must be ensured by appropriate measures during implementation projects and in daily operations. The corresponding implementation measures are explained in the standard. 
+Although the present specification does give users the opportunity to observe data protection and data security regulations, its use does not guarantee compliance with these regulations. Effective compliance must be ensured by appropriate measures during implementation projects and in daily operations. The corresponding implementation measures are explained in the standard. 
 In addition, the present specification can only influence compliance with the security regulations in the technical area of standardization. It cannot influence organizational and contractual matters.
 
 ### IP Statements
