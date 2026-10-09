@@ -7,3 +7,5 @@ Invariant: ber-modulus-11
 Description: "BER must pass the modulus 11 check"
 Severity: #warning
 Expression: "11-((substring(1,1).toInteger()*5)+(substring(2,1).toInteger()*4)+(substring(3,1).toInteger()*3)+(substring(4,1).toInteger()*2)+(substring(5,1).toInteger()*7)+(substring(6,1).toInteger()*6)+(substring(7,1).toInteger()*5))mod(11)=substring(8,1).toInteger()"
+// https://github.com/hl7ch/ch-core/issues/452: we aren't sure the BER actually follows the modulo 11 check digit.
+// eCH-0108 only details the pattern, there's no mention of a check digit.
