@@ -2,11 +2,12 @@ Instance: EncounterAmbulantBroennimann
 InstanceOf: CHCoreEncounter
 Usage: #example
 Title: "Encounter Ambulant Broennimann"
-Description: "Ambulant Encounter of Mrs. Broennimann, representing the visit number (Fallnummer) and the BFS variables"
+Description: "Ambulant Encounter of Mrs. Broennimann"
 * meta.source = "https://www.bfh.ch/de/studium/bachelor/medizininformatik/"
-* identifier.type = $v2-0203#VN "Visit number"
-* identifier.system = "http://example.com/fallnummerdomain"
-* identifier.value = "1234"
+* identifier[visitNumber].system = "http://example.com/besuchsnummerdomain"
+* identifier[visitNumber].value = "1112838"
+* identifier[caseNumber].system = "http://example.com/fallnummerdomain"
+* identifier[caseNumber].value = "9283712"
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * priority = $bfs-medstats-18-admittype#2 "angemeldet, geplant"
