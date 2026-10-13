@@ -4,6 +4,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed
 * [#443](https://github.com/hl7ch/ch-core/issues/443): Adopt eCH-0021 V8.1.0. Building on [#181](https://github.com/hl7ch/ch-core/issues/181), the sex of a parent (`Patient.contact:nameOfParent`) is now conveyed via `contact.gender` (eCH-0021 nameOfParent/sex, eCH-0044:sexType) while the relationship stays the gender-neutral `v3-RoleCode#PRN` — the sex is not encoded through the relationship code. Updated the eCH-0021 reference (index page) from V7.0 to V8.1.0 and the UPI EPR Test Krcmarevic example.
+* [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 
 ### STU 7 Ballot (2026-06-10)
 
