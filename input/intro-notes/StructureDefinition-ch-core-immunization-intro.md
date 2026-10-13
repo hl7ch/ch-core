@@ -1,7 +1,7 @@
 ### Vaccine Code Bindings
 
 #### Default
-The [CH VACD All Swiss Vaccine Codes ValueSet](https://fhir.ch/ig/ch-term/ValueSet/ch-vacd-vaccines-vs) is the default binding for Immunization.vaccineCode. It includes the code [Vaccine product (medicinal product)](http://snomed.info/id/787859002) and two other ValueSets.
+The [CH VACD All Swiss Vaccine Codes ValueSet](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-vs) is the default binding for Immunization.vaccineCode. It includes the code [Vaccine product (medicinal product)](http://snomed.info/id/787859002) and two other ValueSets.
 
 The first ValueSet, [CH VACD Swissmedic Authorized Vaccine Codes](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-swissmedic-vaccines-vs), contains the codes from the CodeSystem [CH VACD Swissmedic Authorized Vaccines](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs).
 
