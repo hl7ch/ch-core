@@ -10,7 +10,7 @@ date: 2026-06-10
 version: 7.0.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2020+
-releaselabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 publisher:
   name: HL7 Switzerland
   url: https://www.hl7.ch/
@@ -26,7 +26,7 @@ jurisdiction: urn:iso:std:iso:3166#CH
 
 dependencies:
   ch.fhir.ig.ch-term: 3.4.x
-  hl7.terminology.r4: 
+  hl7.terminology.r4:
     uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
     version: 7.1.0
   hl7.fhir.uv.extensions.r4:
@@ -40,19 +40,19 @@ pages:
   usage-swiss-core-artifacts.md:
     title: Usage of Swiss Core Artifacts
   sct-swiss-ext.md:
-    title: SNOMED CT Swiss Extension  
+    title: SNOMED CT Swiss Extension
   readable-representation-epr-docs.md:
-    title: Readable Representation of EPR Documents   
+    title: Readable Representation of EPR Documents
   profiles.md:
     title: Profiles
   extensions.md:
     title: Extensions
   changelog.md:
-    title: Changelog          
+    title: Changelog
 
 menu:
   Home: index.html
-  Guidance: 
+  Guidance:
     Usage of Swiss Core Artifacts: usage-swiss-core-artifacts.html
     SNOMED CT Swiss Extension: sct-swiss-ext.html
     Readable Representation of EPR Documents: readable-representation-epr-docs.html
@@ -65,8 +65,8 @@ resources:
     name: Transfer note for radiological diagnostics
     description: EPR Document containing original representation as PDF-A (fullUrls of entries with ‘urn:uuid:’)
     exampleBoolean: true
-      
-# For parameters defined by core FHIR see: 
+
+# For parameters defined by core FHIR see:
 # http://build.fhir.org/codesystem-guide-parameter-code.html.
 # For parameters defined by the FHIR Tools IG  see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
@@ -79,7 +79,7 @@ parameters:
     - http://fhir.ch/ig/ch-emed/StructureDefinition/ch-emed-ext-treatmentreason
     - http://hl7.org/fhir/StructureDefinition/elementdefinition-suppress
   allow-extensible-warnings: true
-  display-warnings: true  
+  display-warnings: true
   path-expansion-params: '../../expansion-params.json'  # for using SNOMED CT Swiss Extension
   pin-canonicals: pin-multiples
 
