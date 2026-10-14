@@ -7,6 +7,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#475](https://github.com/hl7ch/ch-core/pull/475): Cleanup of `sushi-config.yaml` (`releaseLabel`, trailing whitespace) and fix of IG Publisher 3.0.0 errors (unique titles for example instances, broken links)
 * Update dependency hl7.terminology.r4 from 7.1.0 to 7.4.0
 
+#### Fixed
+* Fix `releaselabel` → `releaseLabel` (SUSHI is case-sensitive; lowercase key was silently ignored). Plus removed trailing whitespace and updated stale `branches/master` → `branches/main` doc links (GitHub renamed default branch → 404).
+
 ### STU 7 Ballot (2026-06-10)
 
 #### Added
