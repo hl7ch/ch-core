@@ -4,7 +4,6 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed
 * [#443](https://github.com/hl7ch/ch-core/issues/443): Adopt eCH-0021 V8.1.0. Building on [#181](https://github.com/hl7ch/ch-core/issues/181), the sex of a parent (`Patient.contact:nameOfParent`) is now conveyed via `contact.gender` (eCH-0021 nameOfParent/sex, eCH-0044:sexType) while the relationship stays the gender-neutral `v3-RoleCode#PRN` — the sex is not encoded through the relationship code. Updated the eCH-0021 reference (index page) from V7.0 to V8.1.0 and the UPI EPR Test Krcmarevic example.
-* [#462](https://github.com/hl7ch/ch-core/issues/462): CH Core Immunization - Definitions
 * [#463](https://github.com/hl7ch/ch-core/issues/463): CH Core Immunization - Definitions usage NUVA
 * [#464](https://github.com/hl7ch/ch-core/issues/464): CH Core Immunization - Definitions Immunoglobulin vs Immunsera
 
