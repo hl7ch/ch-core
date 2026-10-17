@@ -146,3 +146,41 @@ Description: "Example of a Patient Portal used in CH Core Consent profile"
 * identifier.value = "DemoPatientPortal"
 * name = "DemoPatientPortal"
 * category.text = "Patient Portal"
+
+
+// Negative test for issue #450: a HealthcareService grantee (performer.extension[grantee],
+// alternate-reference) is intended to be forbidden in CHCoreGeneralConsent.
+// This instance is expected to be INVALID.
+Instance: GC-HealthcareService-grantee
+InstanceOf: CHCoreGeneralConsent
+Usage: #example
+Title: "General Consent with HealthcareService grantee (negative test, #450)"
+Description: "Negative test example for issue #450: General Consent with a HealthcareService as grantee via performer.extension[grantee] (alternate-reference). This is intended to be rejected by the CH Core General Consent profile."
+* status = #active
+* scope = $consentscope#research
+* category.coding.system = $loinc
+* category.coding.code = #59284-0 //Patient Consent
+* patient.reference = "Patient/MaxMuster"
+* dateTime = "2025-03-17"
+* provision.period.start = "2025-03-17"
+// R5 'grantor' via xver extension
+* extension[grantor].valueReference.reference = "Patient/MaxMuster"
+* extension[grantor].valueReference.type = "Patient"
+// R5 'grantee' = HealthcareService -> performer.extension[grantee] (alternate-reference), should be forbidden
+* performer.extension[grantee].valueReference.reference = "HealthcareService/healthcareService-DemoPatientPortal"
+* performer.extension[grantee].valueReference.type = "HealthcareService"
+* performer.extension[grantee].valueReference.identifier.system = "urn:oid:2.16.756.5.30.1"
+* performer.extension[grantee].valueReference.identifier.value = "DemoPatientPortal"
+* performer.extension[grantee].valueReference.display = "DemoPatientPortal"
+// R5 'manager' via xver extension
+* extension[manager].valueReference.reference = "HealthcareService/healthcareService-DemoCIS"
+* extension[manager].valueReference.type = "HealthcareService"
+// R5 'controller' via xver extension
+* extension[controller].valueReference.reference = "Organization/SpitalSeeblick"
+* extension[controller].valueReference.type = "Organization"
+* policy.uri = "https://www.unimedsuisse.ch/de/projekte/generalkonsent"
+* modifierExtension[decision].valueCode = #permit
+* provision.code.coding.system = $CSConsentProvisionCodes
+* provision.code.coding.code = #GC //General Consent
+* provision.purpose.system = $v3-ActReason
+* provision.purpose.code = #HRESCH //Healthcare research
