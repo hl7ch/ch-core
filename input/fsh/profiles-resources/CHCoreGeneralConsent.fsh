@@ -28,10 +28,11 @@ Description:    "Specialization of CHCoreConsent for the Unimedsuisse Generalkon
 * policy.uri = "https://www.unimedsuisse.ch/de/projekte/generalkonsent"
 
 // --- grantee: only Organization, HealthcareService alternate-reference forbidden ---
+// The inherited xver slice performer.extension:grantee (alternate-reference) is constrained to 0..0,
+// a second slice on the same extension url would be ambiguous (#450).
 * performer ^short = "Grantee (Organization). HealthcareService grantees are NOT allowed in this profile."
-* performer.extension contains
-    http://hl7.org/fhir/StructureDefinition/alternate-reference named alternateRef 0..0
-* performer.extension[alternateRef] ^short = "Forbidden: HealthcareService as grantee is excluded in the CH Core General Consent."
+* performer.extension[grantee] 0..0
+* performer.extension[grantee] ^short = "Forbidden: HealthcareService as grantee is excluded in the CH Core General Consent."
 
 // --- provision.purpose: must be HRESCH (healthcare research, CH) ---
 * provision.purpose 1..
