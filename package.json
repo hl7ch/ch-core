@@ -11,7 +11,7 @@
   "scripts": {
     "build:ig": "./scripts/_genonce.sh",
     "build:ig:continuous": "./scripts/_gencontinuous.sh",
-    "update:publisher": "cd scripts && ._updatePublisher.sh",
+    "update:publisher": "./scripts/_updatePublisher.sh",
     "serve:ig": "cd output && http-server -p 8080",
     "open:ig": "open output/index.html"
   },
