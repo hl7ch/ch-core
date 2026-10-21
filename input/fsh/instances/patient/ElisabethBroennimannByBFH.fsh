@@ -68,6 +68,14 @@ Description: "Patient with insurance card number as identifier, contact details,
 * address[=].country = "Schweiz"
 * address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
 * address[=].country.extension.valueCoding = urn:iso:std:iso:3166#DE
+// [6] ch-addr-2 correct (Chile, ISO code starts with CH but is not Switzerland)
+* address[+].use = #home
+* address[=].line = "Avenida Libertador Bernardo O'Higgins 1449"
+* address[=].city = "Santiago"
+* address[=].state = "Región Metropolitana"
+* address[=].country = "Chile"
+* address[=].country.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-codedString"
+* address[=].country.extension.valueCoding = urn:iso:std:iso:3166#CHL
 */
 * maritalStatus.coding[0] = $ech-11-maritalstatus#2 "verheiratet"
 * maritalStatus.coding[+] = $v3-MaritalStatus#M "married"

@@ -13,6 +13,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 #### Fixed
 * [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
 `zsr-check-digit`, that were rejecting some valid identifiers.
+* [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 
 ### STU 7 Ballot (2026-06-10)
 
