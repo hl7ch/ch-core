@@ -28,16 +28,16 @@ Description: "Base definition of the ImmunizationRecommendation resource for use
 
 * recommendation.forecastReason from $SwissImmunizationRecommendationCategoriesVS (preferred)
 * recommendation.forecastReason ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* recommendation.forecastReason ^binding.extension[=].valueString = "Disease"
+* recommendation.forecastReason ^binding.extension[=].valueString = "ImmunizationRecommendationReason"
 * recommendation.forecastReason ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * recommendation.forecastReason ^binding.extension[=].valueBoolean = true
 * recommendation.forecastReason ^binding.description = "The reason the forecast is done."
 
 * recommendation.forecastStatus from $SwissRecommendationForecastStatus (preferred)
 * recommendation.forecastStatus ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* recommendation.forecastStatus ^binding.extension[=].valueString = "Disease"
+* recommendation.forecastStatus ^binding.extension[=].valueString = "ImmunizationRecommendationStatus"
 * recommendation.forecastStatus ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding"
 * recommendation.forecastStatus ^binding.extension[=].valueBoolean = true
-* recommendation.forecastStatus ^binding.description = "The reason the forecast is done."
+* recommendation.forecastStatus ^binding.description = "The patient's status with respect to a vaccination protocol."
 
 * recommendation.supportingImmunization only Reference(CHCoreImmunization or ImmunizationEvaluation)
