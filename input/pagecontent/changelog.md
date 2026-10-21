@@ -10,6 +10,10 @@ All significant changes to this FHIR implementation guide will be documented on 
 * Update dependency hl7.terminology.r4 from 7.1.0 to 7.4.0
 * [#453](https://github.com/hl7ch/ch-core/issues/453): Unique binding keys and names: CH Core Immunization additional binding keys `swissmedic-immunoglobulin` and `swissmedic-immunsera` (previously both `swissmedic`), CH Core Immunization Recommendation binding names `ImmunizationRecommendationReason` (forecastReason) and `ImmunizationRecommendationStatus` (forecastStatus) (previously both `Disease`), and corrected binding description of forecastStatus
 
+#### Fixed
+* [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
+`zsr-check-digit`, that were rejecting some valid identifiers.
+
 ### STU 7 Ballot (2026-06-10)
 
 #### Added
