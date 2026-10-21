@@ -70,7 +70,7 @@ Description: "Example of a patient used in the claim example"
 Instance: ClaimProvider
 InstanceOf: CHCoreOrganization
 Usage: #example
-Title: "Klinik für Psychiatrie"
+Title: "Klinik für Psychiatrie (Provider)"
 Description: "Example of a organization used in the claim example"
 * identifier[ZSR].system = "urn:oid:2.16.756.5.30.1.123.100.2.1.1"
 * identifier[ZSR].value = "Y604801"
@@ -90,7 +90,7 @@ Description: "Example of a organization used in the claim example"
 Instance: ClaimBiller
 InstanceOf: CHCoreOrganization
 Usage: #example
-Title: "Klinik für Psychiatrie"
+Title: "Klinik für Psychiatrie (Biller)"
 Description: "Example of a organization used in the claim example"
 * identifier[UIDB].system = "urn:oid:2.16.756.5.35"
 * identifier[UIDB].value = "CHE108791452"
