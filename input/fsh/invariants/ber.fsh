@@ -6,4 +6,7 @@ Expression: "matches('^[A-B][1-9][0-9]{7}$')"
 Invariant: ber-modulus-11
 Description: "BER must pass the modulus 11 check"
 Severity: #warning
-Expression: "11-((substring(1,1).toInteger()*5)+(substring(2,1).toInteger()*4)+(substring(3,1).toInteger()*3)+(substring(4,1).toInteger()*2)+(substring(5,1).toInteger()*7)+(substring(6,1).toInteger()*6)+(substring(7,1).toInteger()*5))mod(11)=substring(8,1).toInteger()"
+Expression: "(11 - ((substring(1,1).toInteger()*5) + (substring(2,1).toInteger()*4) + (substring(3,1).toInteger()*3) + (substring(4,1).toInteger()*2) + (substring(5,1).toInteger()*7) + (substring(6,1).toInteger()*6) + (substring(7,1).toInteger()*5)) mod 11) mod 11 = substring(8,1).toInteger()"
+// The check digit is confirmed in https://www.bfs.admin.ch/bfs/de/home/statistiken/kataloge-datenbanken.assetdetail.36842787.html
+// but isn't specified officially.
+// See https://github.com/hl7ch/ch-core/issues/452 for a documentation of this algorithm

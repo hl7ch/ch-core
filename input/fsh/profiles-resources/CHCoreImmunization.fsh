@@ -27,7 +27,7 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 
 * vaccineCode ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * vaccineCode ^binding.extension[=].extension[0].url = "key"
-* vaccineCode ^binding.extension[=].extension[=].valueId = swissmedic
+* vaccineCode ^binding.extension[=].extension[=].valueId = swissmedic-immunoglobulin
 * vaccineCode ^binding.extension[=].extension[+].url = "purpose"
 * vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
 * vaccineCode ^binding.extension[=].extension[+].url = "valueSet"
@@ -39,7 +39,7 @@ Description: "Base definition of the Immunization resource for use in Swiss spec
 
 * vaccineCode ^binding.extension[+].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * vaccineCode ^binding.extension[=].extension[0].url = "key"
-* vaccineCode ^binding.extension[=].extension[=].valueId = swissmedic
+* vaccineCode ^binding.extension[=].extension[=].valueId = swissmedic-immunsera
 * vaccineCode ^binding.extension[=].extension[+].url = "purpose"
 * vaccineCode ^binding.extension[=].extension[=].valueCode = #candidate
 * vaccineCode ^binding.extension[=].extension[+].url = "valueSet"

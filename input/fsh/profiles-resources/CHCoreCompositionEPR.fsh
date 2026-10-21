@@ -5,11 +5,6 @@ Title: "CH Core Composition EPR"
 Description: "Definition of the Composition resource for use in the context of the electronic patient record (EPR)."
 * . ^short = "CH Core Composition EPR"
 * language 1..
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension contains
-    EPRDataEnterer named dataEnterer 0..1
 * identifier 1..
 * identifier.system 1..
 * identifier.system = "urn:ietf:rfc:3986" (exactly)
@@ -21,12 +16,6 @@ Description: "Definition of the Composition resource for use in the context of t
 * subject 1..
 * subject only Reference(CHCorePatientEPR)
 * author only Reference(CHCorePractitionerEPR or CHCorePractitionerRoleEpr or Device or CHCorePatientEPR or CHCoreRelatedPerson or CHCoreOrganizationEPR)
-* author.extension ^slicing.discriminator.type = #value
-* author.extension ^slicing.discriminator.path = "url"
-* author.extension ^slicing.rules = #open
-* author.extension contains 
-    EPRTime named time 0..1
-* author.extension[time] ^short = "Timestamp of the authorship/data input"
 * confidentiality 1..
 * confidentiality.extension ^slicing.discriminator.type = #value
 * confidentiality.extension ^slicing.discriminator.path = "url"
