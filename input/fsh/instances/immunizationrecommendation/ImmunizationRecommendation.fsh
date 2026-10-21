@@ -6,8 +6,9 @@ Usage: #example
 * patient = Reference(ImmunizationPatientExample)
 * authority = Reference(ImmunizationOrganizationExample)
 * date = "2021-06-01T00:00:00+02:00"
-* recommendation.vaccineCode = $SwissMedicVacCS#58317 "Fluad"
-* recommendation.targetDisease = $sct#63650001 "Cholera (disorder)"
+* recommendation.extension[indicationCode].valueString = "12345.01"
+* recommendation.vaccineCode = $sct#243789007 "Administration of vaccine product containing only Hepatitis A virus antigen (procedure)"
+* recommendation.targetDisease = $sct#40468003 "Viral hepatitis, type A (disorder)"
 * recommendation.forecastStatus = http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due
 * recommendation.forecastReason = http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs#41503 "Empfohlene Impfungen für Risikogruppen"
 * recommendation.dateCriterion.code = $loinc#30980-7 "Date vaccine due"

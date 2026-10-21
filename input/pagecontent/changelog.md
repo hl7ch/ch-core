@@ -4,6 +4,15 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 #### Changed
 * [#443](https://github.com/hl7ch/ch-core/issues/443): Adopt eCH-0021 V8.1.0. Building on [#181](https://github.com/hl7ch/ch-core/issues/181), the sex of a parent (`Patient.contact:nameOfParent`) is now conveyed via `contact.gender` (eCH-0021 nameOfParent/sex, eCH-0044:sexType) while the relationship stays the gender-neutral `v3-RoleCode#PRN` — the sex is not encoded through the relationship code. Updated the eCH-0021 reference (index page) from V7.0 to V8.1.0 and the UPI EPR Test Krcmarevic example.
+* [#448](https://github.com/hl7ch/ch-core/issues/448): Moved the indicationCode extension slice from ImmunizationRecommendation.extension to ImmunizationRecommendation.recommendation.extension (context of the extension)
+* [#449](https://github.com/hl7ch/ch-core/issues/449): CH Core Immunization - default Valueset
+* [#475](https://github.com/hl7ch/ch-core/pull/475): Cleanup of `sushi-config.yaml` (`releaseLabel`, trailing whitespace) and fix of IG Publisher 3.0.0 errors (unique titles for example instances, broken links)
+* Update dependency hl7.terminology.r4 from 7.1.0 to 7.4.0
+* [#453](https://github.com/hl7ch/ch-core/issues/453): Unique binding keys and names: CH Core Immunization additional binding keys `swissmedic-immunoglobulin` and `swissmedic-immunsera` (previously both `swissmedic`), CH Core Immunization Recommendation binding names `ImmunizationRecommendationReason` (forecastReason) and `ImmunizationRecommendationStatus` (forecastStatus) (previously both `Disease`), and corrected binding description of forecastStatus
+
+#### Fixed
+* [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
+`zsr-check-digit`, that were rejecting some valid identifiers.
 * [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 
 ### STU 7 Ballot (2026-06-10)
@@ -194,7 +203,7 @@ See also open issues on [GitHub](https://github.com/hl7ch/ch-core/issues).
 #### Changed / Updated
 * [#150](https://github.com/hl7ch/ch-core/issues/150): Expansion of the context of the extension [EPR Time](StructureDefinition-ch-ext-epr-time.html)
 * [#160](https://github.com/hl7ch/ch-core/issues/160): Slicing on repeating element
-* [#154](https://github.com/hl7ch/ch-core/issues/154): Improve description of example instances, see [Artifacts](artifacts.html#example-example-instances)
+* [#154](https://github.com/hl7ch/ch-core/issues/154): Improve description of example instances, see [Artifacts](artifacts.html)
 * [#162](https://github.com/hl7ch/ch-core/issues/162): Update narrative text in examples
 * [#176](https://github.com/hl7ch/ch-core/issues/176): Clean up differentials
 * [#175](https://github.com/hl7ch/ch-core/issues/175): Rename the profile [CH Core EPR-Consent](StructureDefinition-ch-core-epr-consent.html)
