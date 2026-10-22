@@ -10,6 +10,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#475](https://github.com/hl7ch/ch-core/pull/475): Cleanup of `sushi-config.yaml` (`releaseLabel`, trailing whitespace) and fix of IG Publisher 3.0.0 errors (unique titles for example instances, broken links)
 * Update dependency hl7.terminology.r4 from 7.1.0 to 7.4.0
 * [#453](https://github.com/hl7ch/ch-core/issues/453): Unique binding keys and names: CH Core Immunization additional binding keys `swissmedic-immunoglobulin` and `swissmedic-immunsera` (previously both `swissmedic`), CH Core Immunization Recommendation binding names `ImmunizationRecommendationReason` (forecastReason) and `ImmunizationRecommendationStatus` (forecastStatus) (previously both `Disease`), and corrected binding description of forecastStatus
+* [#457](https://github.com/hl7ch/ch-core/issues/457): **Breaking change** - CH Core EPR-Consent: `provision.type` is not permitted on the root provision in FHIR R4. The root `provision.type` and `provision.data` are now prohibited (0..0), excluded encounters are expressed as nested provisions `provision.provision` with `type` = `deny` (1..1). Migration: move `provision.type`/`provision.data` into `provision.provision`.
 
 #### Fixed
 * [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
