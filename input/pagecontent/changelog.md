@@ -16,6 +16,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 `zsr-check-digit`, that were rejecting some valid identifiers.
 * [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 * [#450](https://github.com/hl7ch/ch-core/issues/450): CH Core General Consent - forbid HealthcareService grantees by constraining the inherited slice `Consent.performer.extension:grantee` to 0..0 instead of adding a second, ambiguous `alternateRef` slice on the same extension url
+* [#455](https://github.com/hl7ch/ch-core/issues/455): Address Line Type extension binding strength changed from extensible to required (code data type cannot have extensible bindings, follow-up of [#381](https://github.com/hl7ch/ch-core/issues/381))
+* [#456](https://github.com/hl7ch/ch-core/issues/456): Name extension requires value[x] (`valueCode` 1..1, follow-up of [#373](https://github.com/hl7ch/ch-core/issues/373))
 
 ### STU 7 Ballot (2026-06-10)
 
