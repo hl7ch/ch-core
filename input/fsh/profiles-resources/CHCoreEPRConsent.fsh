@@ -3,7 +3,7 @@ Parent: Consent
 Id: ch-core-epr-consent
 Title: "CH Core EPR-Consent"
 Description: "Definition of the Consent resource to document in an external system (outside the EPR) that a patient has an electronic patient record (EPR) in Switzerland. 
-This profile is used by healthcare organizations to track which patients have an EPR. Optionally, specific encounters can be excluded from EPR publication by referencing them in the provision element, documenting the patient's request that certain information should not be published to their EPR. 
+This profile is used by healthcare organizations to track which patients have an EPR. Optionally, specific encounters can be excluded from EPR publication by referencing them in the provision element, documenting the patient's request that certain information should not be published to their EPR. Each excluded encounter is expressed as a nested provision (provision.provision) with type deny.
 
 Note: This profile is NOT used to manage actual consent conditions within the EPR itself - those are managed through proper PPQ Consents (see CH EPR FHIR IG).
 "
@@ -29,11 +29,14 @@ Note: This profile is NOT used to manage actual consent conditions within the EP
 * organization only Reference(CHCoreOrganization)
 * policyRule = $consentpolicycodes#ch-epr
 * provision ^short = "Exceptions to the EPR consent"
-* provision.type 1..
-* provision.type = #deny (exactly)
-* provision.type ^short = "deny"
-* provision.type ^definition = "Encounters can be added here where the consent for publication to the EPR do not apply."
-* provision.data.meaning = #instance (exactly)
-* provision.data.reference only Reference(CHCoreEncounter)
-* provision.data.reference ^short = "Excluded encounter for EPR"
-* provision.data.reference ^definition = "A reference to the encounter where the consent for publication to the EPR do not apply."
+* provision.type 0..0
+* provision.data 0..0
+* provision.provision ^short = "Encounter excluded from EPR publication"
+* provision.provision.type 1..
+* provision.provision.type = #deny (exactly)
+* provision.provision.type ^short = "deny"
+* provision.provision.type ^definition = "Encounters can be added here where the consent for publication to the EPR do not apply."
+* provision.provision.data.meaning = #instance (exactly)
+* provision.provision.data.reference only Reference(CHCoreEncounter)
+* provision.provision.data.reference ^short = "Excluded encounter for EPR"
+* provision.provision.data.reference ^definition = "A reference to the encounter where the consent for publication to the EPR do not apply."
