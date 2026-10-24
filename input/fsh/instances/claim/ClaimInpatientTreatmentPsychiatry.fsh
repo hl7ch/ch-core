@@ -10,6 +10,9 @@ Description: "Example for CH Core Claim"
 * type = http://fhir.ch/ig/ch-core/CodeSystem/bfs-medstats-20-encounterclass#3 "stationär"
 * use = #claim
 * patient = Reference(Patient/ClaimPatient)
+* billablePeriod
+  * start = "2017-10-27"
+  * end = "2017-11-23"
 * created = "2017-11-24"
 * provider = Reference(Organization/ClaimProvider)
 * priority = http://terminology.hl7.org/CodeSystem/processpriority#normal "Normal"
