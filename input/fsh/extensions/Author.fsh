@@ -22,10 +22,4 @@ Description: "Extension to reference the person (and her/his organization) who i
 * value[x] 1..
 * value[x] only Reference(CHCorePatient or CHCorePractitionerRole or CHCoreRelatedPerson)
 * value[x] ^short = "Author of the content"
-* value[x].extension ^slicing.discriminator.type = #value
-* value[x].extension ^slicing.discriminator.path = "url"
-* value[x].extension ^slicing.rules = #open
-* value[x].extension contains 
-    EPRTime named time 0..1
-* value[x].extension[time] ^short = "Timestamp of the authorship/data input"
 * value[x].reference 1..

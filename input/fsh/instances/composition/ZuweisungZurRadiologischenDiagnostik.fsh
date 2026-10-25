@@ -1,7 +1,7 @@
 Instance: ZuweisungZurRadiologischenDiagnostik
 InstanceOf: CHCoreCompositionEPR  
 Usage: #example
-Title: "Zuweisung zur radiologischen Diagnostik"
+Title: "Zuweisung zur radiologischen Diagnostik (Composition)"
 Description: "Composition EPR with the information about the transfer in different sections"
 * meta.profile[0] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition"
 * meta.profile[+] = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-composition-epr"

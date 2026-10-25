@@ -1,8 +1,14 @@
 ### Vaccine Code Bindings
 
 #### Default
-The [CH VACD All Swiss Vaccine Codes](https://fhir.ch/ig/ch-term/ValueSet/ch-vacd-vaccines-vs) is the default binding for Immunization.vaccineCode.
-The ValueSet contains the codes for from the CodeSystems [CH VACD Swissmedic Authorized Vaccines](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs) and [CH VACD Old Swiss Vaccines (Swiss Legacy)](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-myvaccines-cs).
+The [CH VACD All Swiss Vaccine Codes ValueSet](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-vs) is the default binding for Immunization.vaccineCode. It includes the code [Vaccine product (medicinal product)](http://snomed.info/id/787859002) and two other ValueSets.
+
+The first ValueSet, [CH VACD Swissmedic Authorized Vaccine Codes](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-swissmedic-vaccines-vs), contains the codes from the CodeSystem [CH VACD Swissmedic Authorized Vaccines](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs).
+
+The second ValueSet, [CH VACD Old Swiss Vaccine Codes](http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-oldswiss-vaccines-vs), contains the codes from the CodeSystem [CH VACD Old Swiss Vaccines (Swiss Legacy)](http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-myvaccines-cs).
+
+The additional code [Vaccine product (medicinal product)](http://snomed.info/id/787859002) is included so that a custom vaccination can be defined: use this code as the vaccineCode and specify the diseases the vaccination targets in protocolApplied.targetDisease.
+
 
 #### Additional
 In some situations a vaccination has to be documented, but no suitable code is available in the default ValueSet (e.g. the product has no Swissmedic authorization, or it is used off-label), while a code does exist in another ValueSet. In these cases, a code from one of the additional ValueSets can be used.
