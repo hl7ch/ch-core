@@ -2,7 +2,7 @@ Instance: GC-accepted
 InstanceOf: CHCoreGeneralConsent
 Usage: #example
 Title: "General Consent accepted"
-Description: "Example of a General Consent accepted by the patient"
+Description: "Example of a General Consent accepted by the patient: decision deny by default, the provision permits healthcare research (HRESCH)"
 * status = #active
 * scope = $consentscope#research
 * category.coding.system = $loinc
@@ -36,7 +36,7 @@ Description: "Example of a General Consent accepted by the patient"
 // R5 'policyBasis.url' -> R4 'policy.uri'
 * policy.uri = "https://www.unimedsuisse.ch/de/projekte/generalkonsent"
 // R5 'decision' via xver modifierExtension
-* modifierExtension[decision].valueCode = #deny //decision will change in provision
+* modifierExtension[decision].valueCode = #deny //default deny, the provision is the exception: research is permitted (GC accepted)
 * provision.code.coding.system = $CSConsentProvisionCodes
 * provision.code.coding.code = #GC //General Consent
 * provision.purpose.system = $v3-ActReason
@@ -47,7 +47,7 @@ Instance: GC-denied
 InstanceOf: CHCoreGeneralConsent
 Usage: #example
 Title: "General Consent denied"
-Description: "Example of a General Consent denied by a legal representative"
+Description: "Example of a General Consent denied by a legal representative: decision permit by default, the provision denies healthcare research (HRESCH)"
 * status = #active
 * scope = $consentscope#research
 * category.coding.system = $loinc
@@ -77,7 +77,7 @@ Description: "Example of a General Consent denied by a legal representative"
 * extension[controller].valueReference.identifier.value = "7601000618306"
 * extension[controller].valueReference.display = "SpitalSeeblick"
 * policy.uri = "https://www.unimedsuisse.ch/de/projekte/generalkonsent"
-* modifierExtension[decision].valueCode = #permit //decision will change in provision
+* modifierExtension[decision].valueCode = #permit //default permit, the provision is the exception: research is denied (GC denied)
 * provision.code.coding.system = $CSConsentProvisionCodes
 * provision.code.coding.code = #GC //General Consent
 * provision.purpose.system = $v3-ActReason
@@ -120,7 +120,7 @@ Description: "Example of a Consent for participation in a Patient Portal accepte
 * extension[controller].valueReference.identifier.value = "7601000618306"
 * extension[controller].valueReference.display = "SpitalSeeblick"
 * policy.uri = "https://example.org/patient-portal-policy"
-* modifierExtension[decision].valueCode = #deny //decision will change in provision
+* modifierExtension[decision].valueCode = #deny //default deny, the provision is the exception: participation is permitted
 * provision.code.coding.system = $CSConsentProvisionCodes
 * provision.code.coding.code = #PATPORTAL //Patient Portal
 * provision.purpose.system = $v3-ActReason

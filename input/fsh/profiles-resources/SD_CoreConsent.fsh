@@ -28,8 +28,14 @@ Description: "Base definition of the Consent resource for use in Swiss specific 
 // R5 'controller' via xver extension
 * extension[controller].valueReference only Reference(Organization)
 
+// R5 'decision' via xver modifierExtension: default rule, provisions are exceptions to it
+* modifierExtension[decision] ^short = "deny | permit - default rule, provisions state the exceptions"
+* modifierExtension[decision] ^definition = "The default decision of the consent (permit or deny). The provisions state the exceptions to this base decision, i.e. what is described in a provision has the opposite decision."
+* modifierExtension[decision] ^comment = "The decision must not be interpreted without the provisions. E.g. a decision 'deny' with a provision for a purpose means that the purpose is permitted."
+
 * provision 1..
 * provision ^short = "Exceptions/Constraints to the base decision"
+* provision ^definition = "An exception to the base decision of this consent: the activities described by the provision have the opposite of Consent.decision."
 
 * provision.code 1..
 * provision.code from ConsentProvisionCodesVS (required)
