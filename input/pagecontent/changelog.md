@@ -10,12 +10,15 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#475](https://github.com/hl7ch/ch-core/pull/475): Cleanup of `sushi-config.yaml` (`releaseLabel`, trailing whitespace) and fix of IG Publisher 3.0.0 errors (unique titles for example instances, broken links)
 * Update dependency hl7.terminology.r4 from 7.1.0 to 7.4.0
 * [#453](https://github.com/hl7ch/ch-core/issues/453): Unique binding keys and names: CH Core Immunization additional binding keys `swissmedic-immunoglobulin` and `swissmedic-immunsera` (previously both `swissmedic`), CH Core Immunization Recommendation binding names `ImmunizationRecommendationReason` (forecastReason) and `ImmunizationRecommendationStatus` (forecastStatus) (previously both `Disease`), and corrected binding description of forecastStatus
+* [#463](https://github.com/hl7ch/ch-core/issues/463): CH Core Immunization - Definitions usage NUVA
+* [#464](https://github.com/hl7ch/ch-core/issues/464): CH Core Immunization - Definitions Immunoglobulin vs Immunsera
 
 #### Fixed
 * [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
 `zsr-check-digit`, that were rejecting some valid identifiers.
 * [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 * [#450](https://github.com/hl7ch/ch-core/issues/450): CH Core General Consent - forbid HealthcareService grantees by constraining the inherited slice `Consent.performer.extension:grantee` to 0..0 instead of adding a second, ambiguous `alternateRef` slice on the same extension url
+
 
 ### STU 7 Ballot (2026-06-10)
 
