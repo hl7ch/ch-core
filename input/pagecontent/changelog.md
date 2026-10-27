@@ -17,6 +17,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 * [#450](https://github.com/hl7ch/ch-core/issues/450): CH Core General Consent - forbid HealthcareService grantees by constraining the inherited slice `Consent.performer.extension:grantee` to 0..0 instead of adding a second, ambiguous `alternateRef` slice on the same extension url
 
+#### Fixed
+* Fix `releaselabel` → `releaseLabel` (SUSHI is case-sensitive; lowercase key was silently ignored). Plus removed trailing whitespace and updated stale `branches/master` → `branches/main` doc links (GitHub renamed default branch → 404).
+
 ### STU 7 Ballot (2026-06-10)
 
 #### Added
