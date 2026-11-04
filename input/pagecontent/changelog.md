@@ -13,6 +13,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#463](https://github.com/hl7ch/ch-core/issues/463): CH Core Immunization - Definitions usage NUVA
 * [#464](https://github.com/hl7ch/ch-core/issues/464): CH Core Immunization - Definitions Immunoglobulin vs Immunsera
 * [#462](https://github.com/hl7ch/ch-core/issues/462): Extension [Indication Code](StructureDefinition-ch-ext-epl-regulated-authorization-limitation-indication-code.html): documented the background (Forum Datenaustausch generalInvoice 5.0 `SLIndication`, CH ALIS Connect), the regulation (FOPH circular of 19 February 2026), the usage and the source of the code list
+* [#466](https://github.com/hl7ch/ch-core/issues/466): CH Core Consent / CH Core General Consent: documented how to interpret `decision` (default rule) together with `provision` (exception), `decision` is now mandatory in CH Core Consent (and therefore in the General Consent), a nested provision has the opposite decision of its parent provision, and clarified the descriptions of the examples [GC-accepted](Consent-GC-accepted.html) and [GC-denied](Consent-GC-denied.html)
 
 #### Fixed
 * [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
