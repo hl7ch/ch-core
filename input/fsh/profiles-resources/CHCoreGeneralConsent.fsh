@@ -37,7 +37,6 @@ Description:    "Specialization of CHCoreConsent for the Unimedsuisse Generalkon
 // --- decision: default rule, the provision (GC/HRESCH) is the exception (#466) ---
 //   deny   = GC accepted (research permitted by the provision)
 //   permit = GC denied (research denied by the provision)
-* modifierExtension[decision] 1..1
 * modifierExtension[decision] ^short = "deny = GC accepted | permit = GC denied (provision states the exception)"
 * modifierExtension[decision] ^definition = "Default rule of the General Consent. The mandatory provision (GC, HRESCH) states the exception: decision 'deny' means research is permitted (GC accepted), decision 'permit' means research is denied (GC denied)."
 * modifierExtension[decision] ^comment = "The decision must not be interpreted without the provision, it is the opposite of the answer of the patient. The default rule applies only within the scope (research) and policy (Unimedsuisse Generalkonsent) of this Consent."
