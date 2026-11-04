@@ -10,6 +10,8 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#475](https://github.com/hl7ch/ch-core/pull/475): Cleanup of `sushi-config.yaml` (`releaseLabel`, trailing whitespace) and fix of IG Publisher 3.0.0 errors (unique titles for example instances, broken links)
 * Update dependency hl7.terminology.r4 from 7.1.0 to 7.4.0
 * [#453](https://github.com/hl7ch/ch-core/issues/453): Unique binding keys and names: CH Core Immunization additional binding keys `swissmedic-immunoglobulin` and `swissmedic-immunsera` (previously both `swissmedic`), CH Core Immunization Recommendation binding names `ImmunizationRecommendationReason` (forecastReason) and `ImmunizationRecommendationStatus` (forecastStatus) (previously both `Disease`), and corrected binding description of forecastStatus
+* [#463](https://github.com/hl7ch/ch-core/issues/463): CH Core Immunization - Definitions usage NUVA
+* [#464](https://github.com/hl7ch/ch-core/issues/464): CH Core Immunization - Definitions Immunoglobulin vs Immunsera
 
 #### Fixed
 * [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
@@ -19,6 +21,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#454](https://github.com/hl7ch/ch-core/issues/454): CH Core EPR-Consent - removed the fixed version `3.0.1` from `Consent.policyRule.coding` (pattern `consentpolicycodes#ch-epr`), which was unintentionally introduced in the STU 7 Ballot and made instances without a coding version invalid
 * [#455](https://github.com/hl7ch/ch-core/issues/455): Address Line Type extension binding strength changed from extensible to required (code data type cannot have extensible bindings, follow-up of [#381](https://github.com/hl7ch/ch-core/issues/381))
 * [#456](https://github.com/hl7ch/ch-core/issues/456): Name extension requires value[x] (`valueCode` 1..1, follow-up of [#373](https://github.com/hl7ch/ch-core/issues/373))
+
 
 ### STU 7 Ballot (2026-06-10)
 
