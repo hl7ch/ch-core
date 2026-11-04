@@ -16,6 +16,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 `zsr-check-digit`, that were rejecting some valid identifiers.
 * [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 * [#450](https://github.com/hl7ch/ch-core/issues/450): CH Core General Consent - forbid HealthcareService grantees by constraining the inherited slice `Consent.performer.extension:grantee` to 0..0 instead of adding a second, ambiguous `alternateRef` slice on the same extension url
+* [#454](https://github.com/hl7ch/ch-core/issues/454): CH Core EPR-Consent - removed the fixed version `3.0.1` from `Consent.policyRule.coding` (pattern `consentpolicycodes#ch-epr`), which was unintentionally introduced in the STU 7 Ballot and made instances without a coding version invalid
 
 ### STU 7 Ballot (2026-06-10)
 
