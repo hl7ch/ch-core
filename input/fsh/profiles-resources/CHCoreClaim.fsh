@@ -2,7 +2,7 @@ Profile: CHCoreClaim
 Parent: Claim
 Id: ch-core-claim
 Title: "CH Core Claim"
-Description: "Base definition of the claim resource for the representation of a list of professional services (e.g. doctor's visit) and products (e.g. medication) that have been or are to be provided for a patient. The profile defines general basic elements that can occur in Swiss use cases. In Switzerland, there are external standards for administrative processes between service providers and payers (e.g. Forum Datenaustausch, SHIP, eCH), therefore see the corresponding mapping."
+Description: "Base definition of the claim resource for the representation of a list of professional services (e.g. doctor's visit) and products (e.g. medication) that have been or are to be provided for a patient. The profile defines general basic elements that can occur in Swiss use cases. In Switzerland, the content of invoices between service providers and payers is defined by the XML standards of the Forum Datenaustausch; a mapping to the 'Generelle Rechnung 5.0' (generalInvoice 5.0) is provided (see Mappings)."
 * extension contains Biller named biller 0..1
 * extension[biller] ^short = "Biller in the case of a professional service or product provided."
 * type from BfsMedstats20Encounterclass (extensible) // original binding is already extensible
