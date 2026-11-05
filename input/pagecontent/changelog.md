@@ -25,6 +25,9 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#456](https://github.com/hl7ch/ch-core/issues/456): Name extension requires value[x] (`valueCode` 1..1, follow-up of [#373](https://github.com/hl7ch/ch-core/issues/373))
 
 
+#### Fixed
+* Fix `releaselabel` → `releaseLabel` (SUSHI is case-sensitive; lowercase key was silently ignored). Plus removed trailing whitespace and updated stale `branches/master` → `branches/main` doc links (GitHub renamed default branch → 404).
+
 ### STU 7 Ballot (2026-06-10)
 
 #### Added
