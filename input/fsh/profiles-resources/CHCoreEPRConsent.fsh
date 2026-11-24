@@ -29,7 +29,7 @@ Note: This profile is NOT used to manage actual consent conditions within the EP
 * organization only Reference(CHCoreOrganization)
 * policyRule = $consentpolicycodes#ch-epr
 * provision ^short = "Exceptions to the EPR consent"
-* provision.type 0..0
+// root provision.type is left unconstrained: its meaning in R4 is under discussion (FHIR-59913, see #490)
 * provision.data 0..0
 * provision.provision ^short = "Encounter excluded from EPR publication"
 * provision.provision.type 1..

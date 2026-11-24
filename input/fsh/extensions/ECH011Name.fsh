@@ -8,7 +8,7 @@ Description: "eCH-0011: Extension to define name type"
 
 * . ^definition = "Extension for eCH-0011 - namedatatype"
 * url only uri
-* valueCode 0..1
+* valueCode 1..1
 * valueCode only code
 * valueCode from $ech-11-namedatatype (required)
 * valueCode ^short = "Value of extension"

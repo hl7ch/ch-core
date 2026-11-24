@@ -10,13 +10,21 @@ All significant changes to this FHIR implementation guide will be documented on 
 * [#475](https://github.com/hl7ch/ch-core/pull/475): Cleanup of `sushi-config.yaml` (`releaseLabel`, trailing whitespace) and fix of IG Publisher 3.0.0 errors (unique titles for example instances, broken links)
 * Update dependency hl7.terminology.r4 from 7.1.0 to 7.4.0
 * [#453](https://github.com/hl7ch/ch-core/issues/453): Unique binding keys and names: CH Core Immunization additional binding keys `swissmedic-immunoglobulin` and `swissmedic-immunsera` (previously both `swissmedic`), CH Core Immunization Recommendation binding names `ImmunizationRecommendationReason` (forecastReason) and `ImmunizationRecommendationStatus` (forecastStatus) (previously both `Disease`), and corrected binding description of forecastStatus
-* [#457](https://github.com/hl7ch/ch-core/issues/457): **Breaking change** - CH Core EPR-Consent: `provision.type` is not permitted on the root provision in FHIR R4. The root `provision.type` and `provision.data` are now prohibited (0..0), excluded encounters are expressed as nested provisions `provision.provision` with `type` = `deny` (1..1). Migration: move `provision.type`/`provision.data` into `provision.provision`.
+* [#463](https://github.com/hl7ch/ch-core/issues/463): CH Core Immunization - Definitions usage NUVA
+* [#464](https://github.com/hl7ch/ch-core/issues/464): CH Core Immunization - Definitions Immunoglobulin vs Immunsera
+* [#462](https://github.com/hl7ch/ch-core/issues/462): Extension [Indication Code](StructureDefinition-ch-ext-epl-regulated-authorization-limitation-indication-code.html): documented the background (Forum Datenaustausch generalInvoice 5.0 `SLIndication`, CH ALIS Connect), the regulation (FOPH circular of 19 February 2026), the usage and the source of the code list
+* [#466](https://github.com/hl7ch/ch-core/issues/466): CH Core Consent / CH Core General Consent: documented how to interpret `decision` (default rule) together with `provision` (exception), `decision` is now mandatory in CH Core Consent (and therefore in the General Consent), a nested provision has the opposite decision of its parent provision, and clarified the descriptions of the examples [GC-accepted](Consent-GC-accepted.html) and [GC-denied](Consent-GC-denied.html)
+* [#457](https://github.com/hl7ch/ch-core/issues/457): **Breaking change** - CH Core EPR-Consent: excluded encounters are now expressed as nested provisions `provision.provision` with `type` = `deny` (1..1), `provision.data` on the root provision is prohibited (0..0). The root `provision.type` is no longer fixed to `deny` and is left unconstrained, because the meaning of the root `provision.type` in FHIR R4 is under discussion at HL7 International ([FHIR-59913](https://jira.hl7.org/browse/FHIR-59913), see [#490](https://github.com/hl7ch/ch-core/issues/490)). Migration: move `provision.type`/`provision.data` into `provision.provision`.
 
 #### Fixed
 * [#452](https://github.com/hl7ch/ch-core/issues/452): Fix the constraints `ber-modulus-11`, `uidb-modulus-11` and 
 `zsr-check-digit`, that were rejecting some valid identifiers.
 * [#451](https://github.com/hl7ch/ch-core/issues/451): Invariant `ch-addr-2` (CH Core Address) now checks for the country codes `CH` or `CHE` instead of codes starting with `CH`, so that addresses from e.g. Chile (`CHL`) or China (`CHN`) are no longer required to use a Swiss canton abbreviation
 * [#450](https://github.com/hl7ch/ch-core/issues/450): CH Core General Consent - forbid HealthcareService grantees by constraining the inherited slice `Consent.performer.extension:grantee` to 0..0 instead of adding a second, ambiguous `alternateRef` slice on the same extension url
+* [#454](https://github.com/hl7ch/ch-core/issues/454): CH Core EPR-Consent - removed the fixed version `3.0.1` from `Consent.policyRule.coding` (pattern `consentpolicycodes#ch-epr`), which was unintentionally introduced in the STU 7 Ballot and made instances without a coding version invalid
+* [#455](https://github.com/hl7ch/ch-core/issues/455): Address Line Type extension binding strength changed from extensible to required (code data type cannot have extensible bindings, follow-up of [#381](https://github.com/hl7ch/ch-core/issues/381))
+* [#456](https://github.com/hl7ch/ch-core/issues/456): Name extension requires value[x] (`valueCode` 1..1, follow-up of [#373](https://github.com/hl7ch/ch-core/issues/373))
+
 
 ### STU 7 Ballot (2026-06-10)
 
