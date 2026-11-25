@@ -12,7 +12,7 @@ Description: "Consent that Patient has a Swiss EPR but exclude it for a specific
 * organization.display = "Stammgemeinschaft XYZ"
 * policy.authority = "https://www.admin.ch/opc/de/classified-compilation/20111795/index.html"
 * policyRule = $consentpolicycodes#ch-epr
-* provision.type = #deny
-* provision.data.meaning = #instance
-* provision.data.reference.type = "Encounter"
-* provision.data.reference.reference = "Encounter/EncounterAccidentBroennimann"
+* provision.provision[0].type = #deny
+* provision.provision[0].data.meaning = #instance
+* provision.provision[0].data.reference.type = "Encounter"
+* provision.provision[0].data.reference.reference = "Encounter/EncounterAccidentBroennimann"
