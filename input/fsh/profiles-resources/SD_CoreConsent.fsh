@@ -2,7 +2,7 @@ Profile: CHCoreConsent
 Parent: http://hl7.org/fhir/5.0/StructureDefinition/profile-Consent
 Id: CHCoreConsent
 Title: "CH Core Consent"
-Description: "Base definition of the Consent resource for use in Swiss specific use cases. Uses the cross-version profile from hl7.fhir.uv.xver-r5.r4 to expose R5 Consent fields (grantor, manager, controller, decision, ...) as extensions on R4 Consent."
+Description: "Base definition of the Consent resource for use in Swiss specific use cases. Uses the cross-version profile from hl7.fhir.uv.xver-r5.r4 to expose R5 Consent fields (grantor, manager, controller, decision, ...) as extensions on R4 Consent. Warning: the use of the R5 decision extension on R4 is under discussion (FHIR-59913, https://github.com/hl7ch/ch-core/issues/490) and may change in a future version."
 
 * category 1..
 * category from ConsentCategoriesVS (required)
