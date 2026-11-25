@@ -2,7 +2,7 @@ Profile:        CHCoreGeneralConsent
 Parent:         CHCoreConsent
 Id:             CHCoreGeneralConsent
 Title:          "CH Core General Consent" 
-Description:    "Specialization of CHCoreConsent for the Unimedsuisse Generalkonsent (GC)."
+Description:    "Specialization of CHCoreConsent for the Unimedsuisse Generalkonsent (GC). Warning: the use of the R5 decision extension on R4 is under discussion (FHIR-59913, https://github.com/hl7ch/ch-core/issues/490) and may change in a future version."
 
 // --- status: only active | inactive in the GC context ---
 // Semantics:
