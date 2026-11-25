@@ -2,7 +2,7 @@ Profile: CHCoreConsent
 Parent: http://hl7.org/fhir/5.0/StructureDefinition/profile-Consent
 Id: CHCoreConsent
 Title: "CH Core Consent"
-Description: "Base definition of the Consent resource for use in Swiss specific use cases. Uses the cross-version profile from hl7.fhir.uv.xver-r5.r4 to expose R5 Consent fields (grantor, manager, controller, decision, ...) as extensions on R4 Consent."
+Description: "Base definition of the Consent resource for use in Swiss specific use cases. Uses the cross-version profile from hl7.fhir.uv.xver-r5.r4 to expose R5 Consent fields (grantor, manager, controller, decision, ...) as extensions on R4 Consent. Warning: the use of the R5 decision extension on R4 is under discussion (FHIR-59913, https://github.com/hl7ch/ch-core/issues/490) and may change in a future version."
 
 * category 1..
 * category from ConsentCategoriesVS (required)
@@ -28,8 +28,16 @@ Description: "Base definition of the Consent resource for use in Swiss specific 
 // R5 'controller' via xver extension
 * extension[controller].valueReference only Reference(Organization)
 
+// R5 'decision' via xver modifierExtension: default rule, provisions are exceptions to it
+// mandatory: the mandatory provisions (exceptions) cannot be interpreted without a default rule
+* modifierExtension[decision] 1..1
+* modifierExtension[decision] ^short = "deny | permit - default rule, provisions state the exceptions"
+* modifierExtension[decision] ^definition = "The default decision of the consent (permit or deny). The provisions state the exceptions to this base decision, i.e. what is described in a provision has the opposite decision."
+* modifierExtension[decision] ^comment = "The decision must not be interpreted without the provisions. E.g. a decision 'deny' with a provision for a purpose means that the purpose is permitted."
+
 * provision 1..
 * provision ^short = "Exceptions/Constraints to the base decision"
+* provision ^definition = "An exception to the base decision of this consent: the activities described by the provision have the opposite of the decision of its parent (Consent.decision for the first level)."
 
 * provision.code 1..
 * provision.code from ConsentProvisionCodesVS (required)

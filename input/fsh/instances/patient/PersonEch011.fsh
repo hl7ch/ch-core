@@ -43,7 +43,7 @@ Description: "Patient eCH-011 with names, marital status and separation type, de
 * contact.name.given = "Fabio Nicola"
 * contact.address.line[0] = "addressLine1 sollte für personifizierte Adressangaben verwendet werden (z.B. c/o- Adresse)."
 * contact.address.line[+] = "addressLine2 solle für unpersonifizierte Adressangaben verwendet werden (z.B. Zu- satzangaben zur Lokalisation, z.B. Chalet Edelweiss)."
-* contact.address.line[+] = "Strassenbezeichnungen in Postadressen. Es kann sich dabei auch um den Namen einer Lokalität, eines Weilers etc. handeln. No. 10 Wohung 5"
+* contact.address.line[+] = "Strassenbezeichnungen in Postadressen. Es kann sich dabei auch um den Namen einer Lokalität, eines Weilers etc. handeln. No. 10 Wohnung 5"
 * contact.address.line[+] = "Postfach"
 * contact.address.line[0].extension.url = "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-ech-10-linetype"
 * contact.address.line[=].extension.valueCode = #addressLine1
